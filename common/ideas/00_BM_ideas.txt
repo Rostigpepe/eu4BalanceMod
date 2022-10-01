@@ -219,3 +219,123 @@ BOH_ideas = {
 		same_culture_advisor_cost = -0.25
 	}
 }
+
+BUR_Ideas = {
+	start = {
+		land_morale = 0.1
+		ae_impact = -0.1
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = BUR
+	}
+	free = yes
+	
+	golden_fleece = {
+		prestige = 1
+	}
+	compagnies_ordonnance = {
+		land_forcelimit_modifier = 0.15
+	}
+	bur_estates_general = {
+		diplomatic_upkeep = 2
+		liberty_desire = -10
+	}
+	reform_of_feudal_army = {
+		discipline = 0.05
+	}
+	integrated_towns = {
+		trade_efficiency = 0.10
+	}
+	freedom_of_worship = {
+		global_unrest = -1
+		religious_unity = 0.15
+	}
+	bur_regimental_system = {
+		global_manpower_modifier = 0.25
+	}
+}
+
+LOT_ideas = {
+	start = {
+		infantry_power = 0.1
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = LOT
+	}
+	free = yes		#will be added at load.
+	
+	lot_legacy_of_the_carolingians = {
+		prestige_decay = -0.005
+		prestige = 0.5
+	}
+	lot_glory_of_charlemagne = {
+		land_morale = 0.15
+	}
+	lot_dutch_cities = {
+		trade_efficiency = 0.1
+	}
+	lot_carolingian_renaissance_II = {
+		idea_cost = -0.1
+	}
+	lot_court_of_europe = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	lot_land_of_abbeys = {
+		papal_influence = 2
+		papal_influence_from_cardinals = 1
+	}
+	lot_european_empire = {
+		core_creation = -0.2
+	}
+}
+
+ITA_ideas = {
+	start = {
+		global_trade_power = 0.20
+		diplomatic_reputation = 2
+	}
+	
+	bonus = {
+		defensiveness = 0.33
+	}
+	
+	trigger = {
+		tag = ITA
+	}
+	free = yes
+	
+	no_a_geographical_construct = {
+		core_creation = -0.25 # Risorgomento
+	}
+	tradition_of_the_legion = {
+		technology_cost = -0.1 # Italian Universities
+	}
+	mare_nostrum = {
+		infantry_power = 0.15 # The Tradition of The Legion
+	}
+	office_of_censor = {
+		global_ship_cost = -0.15
+		galley_power = 0.20
+	}
+	italian_tax_reform = {
+		global_manpower_modifier = 0.33 # The Office of Censor
+	}
+	heir_to_the_empire = {
+		global_tax_modifier = 0.20 # Italian Tax Reform
+	}
+	path_to_citizenship = {
+		discipline = 0.05 # Heir to the Empire
+	}
+}
+
