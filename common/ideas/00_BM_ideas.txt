@@ -156,7 +156,7 @@ ENG_ideas = {
 		trade_efficiency = 0.1
 	}
 	eng_red_coats = {
-		fire_damage = 0.1
+		fire_damage = 0.25
 		allowed_marine_fraction = 0.25
 	}
 	sick_and_hurt_board = {
