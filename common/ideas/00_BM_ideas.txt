@@ -7,12 +7,12 @@
 
 ENG_ideas = {
 	start = {
-		infantry_power = 0.10 # agincourt
-		global_unrest = -1 # magna carta, parliament
+		infantry_power = 0.10 # agincourt get fucked XD
+		global_tax_modifier = 0.10
 	}
 
 	bonus = {
-		free_leader_pool = 1
+		development_cost = -0.1
 	}
 	
 	trigger = {
@@ -21,7 +21,7 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-			navy_tradition = 0.25
+			navy_tradition = 0.50
 			heavy_ship_power = 0.10
 	}
 	eltham_ordinance = {
@@ -42,6 +42,7 @@ ENG_ideas = {
 	}
 	british_bill_of_rights = {
 		years_of_nationalism = -5
+		global_unrest = -1
 	}
 }
 
@@ -65,19 +66,23 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.2
 	}
 	city_upon_a_hill = {
-		global_colonial_growth = 20
+		years_of_nationalism = -5
+		global_unrest = -2
 	}
 	british_merchant_navy = {
-		global_tariffs = 0.15
-	}
-	gbr_the_royal_society = {
-		technology_cost = -0.05
-	}
-	reform_of_comission_buying = {
 		discipline = 0.05
 	}
+	gbr_the_royal_society = {
+		idea_cost = -0.05
+		global_institution_spread = 0.2
+	}
+	reform_of_comission_buying = {
+		global_colonial_growth = 15
+		vassal_forcelimit_bonus = 0.5
+	}
 	british_industrialization = {
-		global_trade_goods_size_modifier = 0.2
+		development_cost = -0.1
+		production_efficiency = 0.1
 	}
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
