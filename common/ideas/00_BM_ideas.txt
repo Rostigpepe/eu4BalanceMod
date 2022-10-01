@@ -64,28 +64,76 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.2
 	}
 	city_upon_a_hill = {
-		years_of_nationalism = -5 # City Upon A Hill
+		years_of_nationalism = -5 # City Upon A Hill / Parliamentarianism
 		global_unrest = -2
 	}
 	british_merchant_navy = {
-		discipline = 0.05
+		discipline = 0.05 # Establish British Merchant Navy / British Stoicism
 	}
 	gbr_the_royal_society = {
-		idea_cost = -0.05
+		idea_cost = -0.05 # The Royal Society / Enlightened Philosophy
 		global_institution_spread = 0.2
 	}
 	reform_of_comission_buying = {
-		global_colonial_growth = 15
+		global_colonial_growth = 15 # Reform of Comission Buying / British Colonial Holdings
 		vassal_forcelimit_bonus = 0.5
 	}
 	british_industrialization = {
-		development_cost = -0.1
+		development_cost = -0.1 # Early Industrialization
 		production_efficiency = 0.1
 	}
 	britanna_rules_the_waves = {
-		leader_naval_manuever = 1
+		leader_naval_manuever = 1 # Britannia Rules the Waves
 		blockade_efficiency = 0.33
 		allowed_marine_fraction = 0.50
 	}
 }
 
+HAB_ideas = {
+	start = {
+		land_morale = 0.10
+		improve_relation_modifier = 0.33
+	}
+	
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	
+	trigger = {
+		OR = {
+			tag = HAB
+			AND = {
+				tag = STY
+				dynasty = "von Habsburg"
+			}
+		}
+	}
+	free = yes		#will be added at load.
+
+	imperial_ambitions = {
+		state_governing_cost = 0.05
+		diplomatic_upkeep = 2
+	}
+	military_border = {
+		global_garrison_growth = 0.25
+		fort_maintenance_modifier = -0.20
+	}
+	fugger_banks = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	habsburg_dominance = {
+	vassal_forcelimit_bonus = 0.5
+	diplomatic_annexation_cost = -0.15
+	}
+	edict_of_restitution = {
+		global_missionary_strength = 0.02
+	}
+	austrian_court = {
+		reinforce_speed = 0.33
+		discipline = 0.025
+	}
+	hofkriegsrat = {
+		infantry_power = 0.10
+	}
+}
