@@ -1,0 +1,46 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+### Nation specific idea groups
+
+CAE_ideas = {
+	start = {		
+		advisor_cost = -0.15
+		ae_impact = -0.1
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+		tag = CAE
+	}
+	free = yes
+	
+	compacta_of_prague = {
+		tolerance_heretic = 3
+	}
+	cae_elbe_trade = {
+		trade_efficiency = 0.15
+		development_cost = -0.1
+	}
+	wagenburg = {
+		infantry_power = 0.10
+		shock_damage_received = -0.05
+	}
+	elbian_industry = {
+		trade_goods_size_modifier = 0.10
+	}
+	hussite_legacy = {
+		technology_cost = -0.1
+	}
+	kutnohorian_deal = {
+		stability_cost_modifier = -0.10
+	}
+	expanding_confederation = {
+		core_creation = -0.1
+		years_of_nationalism = -5
+	}
+}

@@ -1,0 +1,1115 @@
+elbian_missions_1_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }		
+		tag = CAE		
+	}
+	has_country_shield = yes
+	
+	cae_incorporate_bohemia = {
+		icon = bohemian_commonwealth
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area
+				area = erzgebirge_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			bohemia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cae_incorporated_bohemia
+				duration = -1
+			}
+			moravia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_incorporate_moravia = {
+		icon = restore_great_moravia
+		required_missions = { cae_incorporate_bohemia }
+		provinces_to_highlight = {
+			OR = {
+				area = moravia_area
+			}
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			moravia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			silesia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = THIS }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_incorporate_silesia = {
+		icon = mission_eastern_european_city
+		required_missions = { cae_incorporate_moravia cae_incorporate_lusetia }
+		provinces_to_highlight = {
+			area = silesia_area
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			silesia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			silesia_area = {
+				limit = { owned_by = root }
+				add_nationalism = -10
+				add_province_modifier = {
+					name = cae_elbian_settlement
+					duration = 10950
+				}
+			}
+		}
+	}
+	
+	cae_bohemian_crystal = {
+		icon = bohemian_crystal
+		required_missions = { cae_incorporate_silesia }
+		provinces_to_highlight = {
+			province_id = 1771
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 20 }
+				has_production_building_trigger = no
+			}
+		}
+		trigger = {
+			1771 = {
+				owned_by = ROOT
+				development = 20
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { has_global_flag = bohemian_glass_flag } }
+				set_country_flag = bohemian_crystal_flag				
+				country_event = { id = prices.43 }				
+				add_prestige = 20
+			}
+			
+		}
+	}
+	
+	cae_development_one = {
+		icon = mission_have_manufactories
+		required_missions = { cae_bohemian_crystal }
+		completed_by = 1720.1.1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+			OR = {
+				NOT = { has_building = cathedral }
+				NOT = { has_building = university }
+			}
+		}
+		trigger = {
+			capital_scope = {
+				has_building = cathedral
+				has_building = university
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					263 = {
+						owned_by = ROOT
+					}
+				}
+				263 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+				}
+			}
+			if = {
+				limit = {
+					4237 = {
+						owned_by = ROOT
+					}
+				}
+				4237 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+				}
+				else = {
+					capital_scope = {
+						add_base_tax = 3
+						add_base_production = 3
+						add_base_manpower = 3
+					}
+				}
+			}
+		}
+	}
+}
+
+elbian_missions_2_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }		
+		tag = CAE		
+	}
+	has_country_shield = yes
+	
+	cae_incorporate_lusetia = {
+		icon = bohemian_borderlands
+		required_missions = { cae_incorporate_bohemia cae_incorporate_saxony }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = lusatia_area
+			}
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			lusatia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			lusatia_area = {
+				limit = { owned_by = root }
+				add_nationalism = -10
+				add_province_modifier = {
+					name = cae_elbian_settlement
+					duration = 10950
+				}
+			}
+		}
+	}
+	
+	cae_incorporate_lower_saxony = {
+		icon = conquer_lower_saxony
+		required_missions = { cae_incorporate_thuringia }
+		provinces_to_highlight = {
+			OR = {
+				area = northern_saxony_area
+				area = lower_saxony_area
+				area = weser_area
+				province_id = 1931
+				province_id = 53
+				province_id = 52
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					area = northern_saxony_area
+					area = lower_saxony_area
+					area = weser_area
+				}
+			}			
+			1931 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			53 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			52 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			braunschweig_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_incorporate_westphalia = {
+		icon = westphalian_conquest
+		required_missions = { cae_incorporate_lower_saxony }
+		provinces_to_highlight = {
+			OR = {
+				area = braunschweig_area
+				area = north_westphalia_area
+				area = westphalia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = braunschweig_area
+					area = north_westphalia_area
+					area = westphalia_area
+				}
+			}
+		}
+		effect = {
+			north_rhine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_incorporate_rhineland = {
+		icon = rhineland_conquest
+		required_missions = { cae_incorporate_westphalia }
+		provinces_to_highlight = {
+			OR = {
+				area = north_rhine_area
+				area = lower_rhineland_area
+				area = hesse_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					area = north_rhine_area
+					area = lower_rhineland_area
+					area = hesse_area
+				}
+			}			
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elbian_rhine"
+				duration = 18250
+			}
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_german_empire = {
+		icon = ger_kaiserreich
+		required_missions = { cae_incorporate_rhineland }
+		provinces_to_highlight = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 90
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cae_german_confederation"
+				duration = -1
+			}
+		}
+	}	
+}
+
+elbian_missions_3_slot = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }		
+		tag = CAE		
+	}
+	has_country_shield = yes
+	
+	cae_incorporate_saxony = {
+		icon = electorate_of_saxony
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = south_saxony_area
+			}
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			south_saxony_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cae_elbian_zwinger
+				duration = -1
+			}
+			
+			thuringia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			4716 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	cae_incorporate_thuringia = {
+		icon = avoid_fragmentation
+		required_missions = { cae_incorporate_saxony }
+		provinces_to_highlight = {
+			OR = {
+				area = thuringia_area
+				province_id = 4716
+			}
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			thuringia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			4716 = { owned_by = ROOT }
+		}
+		effect = {			
+			northern_saxony_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1931 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	cae_incorporate_mecklenburg = {
+		icon = defend_the_city
+		required_missions = { cae_incorporate_thuringia cae_reclaim_neumark }
+		provinces_to_highlight = {
+			area = mecklenburg_area			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			mecklenburg_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {							
+			1775 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4141 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	cae_incorporate_holstein = {
+		icon = reclaim_our_ancestral_lands
+		required_missions = { cae_incorporate_lower_saxony cae_incorporate_mecklenburg }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1775
+				province_id = 4141
+			}
+		}
+		trigger = {
+			1775 = { owned_by = ROOT }
+			4141 = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cae_elbe_company_modifier"
+				duration = 7300
+			}
+			
+			holstein_area = {
+				limit = { owned_by = root }
+				add_nationalism = -10
+				add_province_modifier = {
+					name = cae_elbian_settlement
+					duration = 10950
+				}
+			}
+		}
+	}
+	
+	cae_elbe_infrastructure= {
+		icon = construct_the_kiel_canal
+		required_missions = { cae_incorporate_holstein }
+		provinces_to_highlight = {
+			OR = {
+				along_elbe_river = yes
+			}
+			NOT = { development = 15 }
+		}
+		trigger = {	
+			custom_trigger_tooltip = { # Hide because hard to understand
+				tooltip = cae_hold_all_elbe
+				AND = {
+					266 = {
+						owned_by = ROOT
+						development = 15
+					}
+					1771 = {
+						owned_by = ROOT
+						development = 15
+					}
+					61 = {
+						owned_by = ROOT
+						development = 15
+					}
+					59 = {
+						owned_by = ROOT
+						development = 15
+					}
+					58 = {
+						owned_by = ROOT
+						development = 15
+					}
+					52 = {
+						owned_by = ROOT
+						development = 15
+					}
+					2964 = {
+						owned_by = ROOT
+						development = 15
+					}
+					53 = {
+						owned_by = ROOT
+						development = 15
+					}
+					1857 = {
+						owned_by = ROOT
+						development = 15
+					}
+					44 = {
+						owned_by = ROOT
+						development = 15
+					}
+				}				
+			}
+		}
+		effect = {			
+		custom_tooltip = cae_river_movement_speed
+			hidden_effect = { # Hidden to prevent clutter
+				every_owned_province = { 
+					limit = {
+						OR = {
+							along_elbe_river = yes
+						}
+					}
+					add_province_modifier = {
+						name = "cae_elbe_infrastructure"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+elbian_missions_4_slot = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }		
+		tag = CAE		
+	}
+	has_country_shield = yes
+	
+	cae_incorporate_brandenburg = {
+		icon = electorate_of_brandenburg
+		required_missions = { }
+		provinces_to_highlight = {
+			area = mittelmark_area
+			NOT = {
+				owned_by ROOT
+			}
+		}
+		trigger = {
+			mittelmark_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cae_incorporated_brandenburg
+				duration = -1
+			}
+			neumark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cae_reclaim_neumark = {
+		icon = mission_have_two_subjects
+		required_missions = { cae_incorporate_brandenburg }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 49
+				province_id = 4747
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 49
+			owns_core_province = 4747
+		}
+		effect = {
+			mecklenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_incorporate_pomerania = {
+		icon = mission_hanseatic_city
+		required_missions = { cae_reclaim_neumark }
+		provinces_to_highlight = {
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			west_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	cae_incorporate_prussia = {
+		icon = an_army_with_a_state
+		required_missions = { cae_incorporate_pomerania }
+		provinces_to_highlight = {
+			OR = {
+				area = west_prussia_area
+				area = east_prussia_area
+				area = mittelmark_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			wielkopolska_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kuyavia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			38 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	cae_partitions_poland = {
+		icon = mission_conquer_5_states
+		required_missions = { cae_incorporate_prussia }
+		provinces_to_highlight = {
+			OR = {
+				area = kuyavia_area
+				area = wielkopolska_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kuyavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wielkopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "polish_partitions"
+				duration = 7300
+			}
+			
+			kuyavia_area = {
+				limit = { owned_by = root }
+				add_nationalism = -10
+				add_province_modifier = {
+					name = cae_elbian_settlement
+					duration = 10950
+				}
+			}
+			
+			wielkopolska_area = {
+				limit = { owned_by = root }
+				add_nationalism = -10
+				add_province_modifier = {
+					name = cae_elbian_settlement
+					duration = 10950
+				}
+			}
+		}
+	}	
+}
+
+elbian_missions_5_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }		
+		tag = CAE		
+	}
+	has_country_shield = yes
+	
+	cae_found_wittenberg = {
+		icon = wittenberg_university
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 59
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_tax_building_trigger = no
+						has_courthouse_building_trigger = no
+					}
+				}
+				AND = {
+					is_capital_of = root
+					ROOT = { NOT = { has_institution = renaissance } }
+				}
+			}
+		}
+		trigger = {
+			has_institution = renaissance
+			59 = {
+				owned_by = root
+				development = 15
+				has_tax_building_trigger = yes
+				has_courthouse_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cae_wittenberg_uni
+				duration = 7300
+			}
+			59 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+		}
+	}
+	
+	cae_meissen_porcelain = {
+		icon = porcelain_from_meissen
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 61
+			OR = {
+				NOT = { is_strongest_trade_power = root }
+				NOT = { owned_by = root }
+				has_production_building_trigger = no
+			}
+		}
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = emp_sax_meissen_porcelain_trigger_tooltip
+					has_global_flag = europeans_in_china_happened
+				}
+				is_year = 1700
+			}
+			61 = {
+				owned_by = root
+				has_production_building_trigger = yes
+				development = 20
+			}
+			61 = {
+				is_strongest_trade_power = root
+			}
+			share_of_starting_income = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = bottger_happened }
+				}
+				country_event = { id = prices.3 days = 1 }
+			}
+			else = {
+				61 = {
+					add_base_production = 4
+					add_province_modifier = {
+						name = cae_meissen_development
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	
+	cae_industrialisation = {
+		icon = mission_rb_build_furnaces
+		required_missions = { cae_meissen_porcelain }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					owned_by = root
+					OR = {
+						AND = {
+							has_manufactory_trigger = yes
+							NOT = { development = 20 }
+						}
+						AND = {
+							has_manufactory_trigger = no
+							development = 20
+						}
+					}
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								has_manufactory_trigger = yes
+								development = 20
+							}
+						}
+					}
+				}
+				AND = {
+					NOT = { owned_by = root }
+					any_neighbor_province = {
+						owned_by = root
+					}
+					has_manufactory_trigger = yes
+					development = 20
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								has_manufactory_trigger = yes
+								development = 20
+							}
+						}
+					}
+				}
+				AND = {
+					ROOT = { has_dlc = "Rule Britannia" }
+					OR = {
+						province_id = 62
+						AND = {
+							province_id = 1763
+							owned_by = root
+						}
+					}
+					OR = {
+						NOT = { owned_by = root }
+						has_manufactory_trigger = no
+						NOT = { development = 20 }
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_manufactory_trigger = yes
+				development = 20
+			}
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				62 = {
+					owned_by = root
+					has_manufactory_trigger = yes
+					development = 20
+				}
+				if = {
+					limit = {
+						1763 = { owned_by = root }
+					}
+					1763 = {
+						owned_by = root
+						has_manufactory_trigger = yes
+						development = 20
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cae_production_prospering
+				duration = -1
+			}
+		}
+	}
+	
+	cae_renovate_berlin = {
+		icon = renovate_berlin
+		required_missions = { cae_incorporate_pomerania }
+		provinces_to_highlight = {
+			province_id = 50
+			NOT = {
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			50 = {
+				owned_by = ROOT
+				development = 25
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			set_country_flag = renovate_berlin_flag
+			country_event = { id = flavor_brapru.20 }
+		}
+	}
+	
+	cae_konigsberg_development = {
+		icon = develop_konigsberg
+		required_missions = { cae_incorporate_prussia }
+		provinces_to_highlight = {
+			province_id = 41
+			OR = {
+				NOT = {	owned_by = ROOT }
+				NOT = {	development = 30 }
+			}
+		}
+		trigger = {
+			41 = {
+				owned_by = ROOT
+				development = 30
+			}
+		}
+		effect = {
+			set_country_flag = konigsberg_university_flag
+			country_event = { id = CAE.2 }
+		}
+	}
+}

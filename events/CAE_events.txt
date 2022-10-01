@@ -1,0 +1,376 @@
+namespace = CAE
+
+country_event = {
+	id = CAE.1
+	title = CAE.1.t
+	desc = CAE.1.d
+	picture = SEJM_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = CAE.1.a
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		
+		change_primary_culture = bohemian
+		remove_accepted_culture = czech
+		remove_accepted_culture = sorbian
+		capital_scope = {
+			change_culture = bohemian
+		}
+		
+		hidden_effect = { # Hide to prevent clutter
+			every_owned_province = {
+				limit = { culture = czech }
+				add_province_modifier = {
+					name = cae_czech_germanization
+					duration = 10950
+				}
+			}
+			
+			set_ruler_culture = bohemian
+			set_heir_culture = bohemian
+			set_consort_culture = bohemian
+		}
+		
+		custom_tooltip = cae_germanize_czech_tooltip
+		
+		every_known_country = { # Remove all non-Germanic personal union CBs
+			limit = {
+				NOT = { culture_group = germanic } 
+				PREV = {
+					has_casus_belli = {
+						type = cb_restore_personal_union
+						target = PREV
+					}
+				}
+			}
+			reverse_remove_casus_belli = {
+				target = PREV
+				type = cb_restore_personal_union
+			}
+		}
+		
+		every_subject_country = { # Remove all non-Germanic personal unions 
+			limit = { 
+				NOT = { culture_group = germanic } 
+				is_subject_of_type = personal_union
+			}
+			grant_independence = yes
+		}		
+	}
+	
+	option = {
+		name = CAE.1.b
+		add_prestige = 25
+		add_stability = 1
+	}
+}
+
+country_event = {
+	id = CAE.2
+	title = CAE.2.t
+	desc = CAE.2.d
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = konigsberg_university_flag
+			AND = {
+				NOT = { has_dlc = "Emperor" }
+				OR = {
+					tag = CAE
+				}
+				owns = 41
+				is_year = 1540
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_konigsberg_university
+		}
+	}
+	
+	option = {
+		name = CAE.2.a
+		add_years_of_income = -0.25
+		add_prestige = 5
+		add_adm_power = 100
+		41 = {
+			if = {
+				limit = {
+					NOT = { has_building = university }
+				}
+				add_building = university
+			}
+		}
+	}
+	option = {
+		name = CAE.2.b
+		add_prestige = -1
+		41 = {
+			if = {
+				limit = {
+					NOT = { has_building = university }
+				}
+				add_building = university
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CAE.3
+	title = CAE.3.t
+	desc = CAE.3.d
+	picture = SEJM_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		266 = {
+			change_culture = bohemian
+		}
+		name = CAE.3.a
+		
+		hidden_effect = {
+			every_owned_province = { # Hide to prevent clutter
+				limit = { culture = czech }
+				add_province_modifier = {
+					name = cae_czech_germanization
+					duration = 10950
+				}
+			}
+		}
+		
+		custom_tooltip = cae_germanize_czech_tooltip
+	}
+	
+	option = {
+		name = CAE.3.b
+		add_dip_power = -50
+		add_accepted_culture = czech		
+		hidden_effect = { # Hide to prevent clutter
+			every_owned_province = {
+				limit = { culture = czech }
+				add_province_modifier = {
+					name = cae_czech_acceptance
+					duration = 10950
+				}
+			}
+		}
+		custom_tooltip = cae_accept_czech_tooltip
+	}
+}
+
+country_event = {
+	id = CAE.4
+	title = CAE.4.t
+	desc = CAE.4.d
+	picture = {
+		trigger = { has_dlc = "Common Sense" }
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	picture = {
+		trigger = { NOT = { has_dlc = "Common Sense" } }
+		picture = ELECTION_REPUBLICAN_eventPicture
+	}
+	
+	trigger = {
+		tag = CAE		
+		NOT = { exists = KUR }
+		38 = {			
+			culture_group = germanic
+			is_core = ROOT			
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = { # Take direct control
+		name = CAE.4.a
+		
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = curonia_area
+					area = estonia_ingria_area
+					area = livonia_area
+				}
+			}
+			add_local_autonomy = -25
+			add_province_modifier = { name = autonomy_decreased duration = 10950 }
+		}
+	}
+	
+	option = { # Establish a German Baltic state
+		name = CAE.4.b
+		
+		custom_tooltip = release_kurland_tt			
+		
+		hidden_effect = {
+			38 = {	
+				add_core = KUR
+				remove_core = ROOT
+			}
+			create_vassal = KUR
+			
+			every_owned_province = { # Cede other baltic provinces
+				limit = {
+					OR = {
+						area = curonia_area
+						area = estonia_ingria_area
+						area = livonia_area
+					}
+				}
+				
+				if = {
+					limit = { is_core = ROOT }
+					add_core = KUR
+					remove_core = ROOT
+					cede_province = KUR
+				}
+				else = {
+					cede_province = KUR
+				}
+			}
+		}
+		
+		KUR = {
+			add_country_modifier = { 
+				name = kur_renew_ostsiedlung
+				duration = -1  
+			}
+		}
+	}
+	
+	option = { # Establish a German Baltic state with claims
+		name = CAE.4.c
+		
+		custom_tooltip = release_kurland_tt
+		
+		curonia_area = {
+			limit = { NOT = { owned_by = KUR } }
+			add_permanent_claim = KUR
+		}
+		
+		estonia_ingria_area = {
+			limit = { NOT = { owned_by = KUR } }
+			add_permanent_claim = KUR			
+		}
+		
+		livonia_area = {
+			limit = { NOT = { owned_by = KUR } }
+			add_permanent_claim = KUR			
+		}	
+		
+		custom_tooltip = claim_kurland_tt
+		
+		hidden_effect = {
+			38 = {	
+				add_core = KUR
+				remove_core = ROOT
+			}
+			create_vassal = KUR
+			
+			every_owned_province = { # Cede other baltic provinces
+				limit = {
+					OR = {
+						area = curonia_area
+						area = estonia_ingria_area
+						area = livonia_area
+					}
+				}
+				
+				if = {
+					limit = { is_core = ROOT }
+					add_core = KUR
+					remove_core = ROOT
+					cede_province = KUR
+				}
+				else = {
+					cede_province = KUR
+				}
+			}
+			
+			curonia_area = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = rus_claimed_courland
+					}
+				}
+			}
+			
+			estonia_ingria_area = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = rus_claimed_courland
+					}
+				}
+			}
+			
+			livonia_area = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = rus_claimed_courland
+					}
+				}
+			}
+		}
+
+		KUR = {
+			add_country_modifier = { 
+				name = kur_renew_ostsiedlung
+				duration = -1  
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CAE.5
+	title = CAE.5.t
+	desc = CAE.5.d
+	picture = {
+		trigger = { has_dlc = "Art of War" }
+		picture = REFUGEES_ESCAPING_eventPicture
+	}
+	
+	picture = {
+		trigger = { NOT = { has_dlc = "Common Sense" } }
+		picture = STREET_SPEECH_eventPicture
+	}
+	
+	trigger = {
+		tag = KUR
+		is_subject = no
+		has_country_modifier = kur_renew_ostsiedlung
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = kur_renew_ostsiedlung		
+	}
+	
+	option = {
+		name = CAE.5.a		
+	}
+}

@@ -1,0 +1,52 @@
+in_elbian_areas = {
+	OR = {
+		area = erzgebirge_area
+		area = south_saxony_area
+		area = northern_saxony_area
+		area = thuringia_area
+		area = neumark_area
+		area = mittelmark_area
+		area = bohemia_area
+		area = moravia_area
+		area = lusatia_area
+		area = vorpommern_area
+		area = hinter_pommern_area
+		area = mecklenburg_area
+		area = silesia_area
+	}
+}
+
+along_elbe_river = {
+	OR = {
+		province_id = 266
+		province_id = 1771
+		province_id = 61
+		province_id = 59
+		province_id = 58
+		province_id = 52
+		province_id = 2964
+		province_id = 53
+		province_id = 1857
+		province_id = 44
+	}
+}
+
+along_oder_river = {
+	OR = {
+		province_id = 263
+		province_id = 4723
+		province_id = 264
+		province_id = 2966
+		province_id = 2969
+		province_id = 50
+		province_id = 2993
+		province_id = 1858
+	}
+}
+
+along_havel_river = {
+	OR = {
+		province_id = 1759
+		province_id = 4748
+	}
+}

@@ -1,0 +1,68 @@
+# Elbian confederation missions
+cae_elbian_settlement = {
+	picture = "global_colonial_growth"
+	local_culture_conversion_cost = -0.33
+	local_development_cost = -0.1
+}
+
+cae_czech_germanization = {
+	picture = "culture_conversion_cost"
+	local_culture_conversion_cost = -0.5
+	local_unrest = 6
+}
+
+cae_czech_acceptance = {
+	picture = "num_accepted_cultures"
+	local_culture_conversion_cost = 0.5
+	local_unrest = -3
+}
+
+cae_incorporated_brandenburg = {
+	infantry_power = 0.05
+	discipline = 0.025
+}
+
+cae_elbe_company_modifier = {
+	global_ship_trade_power = 0.25
+	movement_speed_onto_off_boat_modifier = 0.2
+}
+
+cae_elbian_zwinger = {
+	diplomatic_reputation = 1
+}
+
+cae_incorporated_bohemia = {
+	fort_maintenance_modifier = -0.10
+		defensiveness = 0.10
+}
+
+cae_german_confederation = {
+	administrative_efficiency = 0.05
+}
+
+elbian_rhine = {
+	ae_impact = -0.15
+}
+
+cae_wittenberg_uni = {
+	global_missionary_strength = 0.02
+	legitimacy = 1
+}
+
+cae_production_prospering = {
+	production_efficiency = 0.1
+}
+
+cae_meissen_development = {
+	trade_goods_size_modifier = 0.2
+}
+
+cae_elbe_infrastructure = {
+	picture = "estuary_icon"
+	local_friendly_movement_speed = 0.50
+}
+
+kur_renew_ostsiedlung = {
+	development_cost = -0.5
+	culture_conversion_cost = -0.25
+}
