@@ -2,17 +2,15 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new groups or ideas, make sure they are unique.
 
-# This one is the first for the case that some country manages to become fully Norse.
-
 
 ENG_ideas = {
 	start = {
-		infantry_power = 0.10 # agincourt get fucked XD
+		infantry_power = 0.10 # agincourt, english longbowmen, etc
 		global_tax_modifier = 0.10
 	}
 
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.1 
 	}
 	
 	trigger = {
@@ -34,11 +32,11 @@ ENG_ideas = {
 		trade_efficiency = 0.1
 	}
 	eng_red_coats = {
-		fire_damage = 0.10
+		fire_damage = 0.10 # removal of Marines as SOME people find them "larp units"
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10
-		manpower_recovery_speed = 0.10
+		manpower_recovery_speed = 0.10 # Change idea description for something more fitting
 	}
 	british_bill_of_rights = {
 		years_of_nationalism = -5
