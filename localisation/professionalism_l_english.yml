@@ -1,0 +1,7 @@
+﻿l_english:
+ ARMY_PROFESSIONALISM_VALUE:0 "Army Professionalism: $VALUE|Y%2$"
+ supply_depot_modifier:1 "Salaried Soldiers"
+ refill_garrison_modifier:1 "Regimental Mustering"
+ return_manpower_modifier:1 "Conscription Army"
+ general_cost_modifier:1 "Permanent Army"
+ reserves_organisation_modifier:1 "Professional Army"

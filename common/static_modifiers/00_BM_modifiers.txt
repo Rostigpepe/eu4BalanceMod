@@ -1,0 +1,31 @@
+### ARMY PROFESSIONALISM & DRILL CHANGES ###
+    ### GOBO TIME ###
+
+low_army_professionalism = {
+	mercenary_cost = -0.30
+	mercenary_manpower = 0.20
+}
+
+high_army_professionalism = {
+	fire_damage = 0.20
+	shock_damage = 0.20
+	siege_ability = 0.30
+    drill_decay_modifier = -0.75
+    drill_gain_modifier = 1
+    reinforce_cost_modifier = -0.10
+}
+
+drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
+	yearly_army_professionalism = 0.025
+}
+
+regiment_drill_modifier = { # Used by individual regiments
+	shock_damage = 0.2
+	fire_damage = 0.2
+	fire_damage_received = -0.25
+	shock_damage_received = -0.25
+}
+
+army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
+	movement_speed = 0.30 
+}
