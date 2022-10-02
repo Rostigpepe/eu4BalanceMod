@@ -3,7 +3,7 @@
 graphical_culture = westerngfx
 
 color = { 237 41 57 }
-revolutionary_colors = { 255  205  7 }
+revolutionary_colors = { 16  8  16 }
 
 preferred_religion = catholic
 
@@ -36,8 +36,8 @@ historical_units = {
 }
 
 monarch_names = {
-	"Václav #4" = 50
-	"Jirí #0" = 25
+	"Voclav #4" = 50
+	"Jiri #0" = 25
 	"Karel #5" = 40
 	"Premysl #0" = 10
 	"Premysl Otakar #3" = 25
@@ -47,24 +47,24 @@ monarch_names = {
 	"Josef #0" = 5
 	"Frantisek Josef #0" = 0
 	"Bocek #0" = 0
-	"Jan Jirí #0" = 5
-	"Ludvík #0" = 0
+	"Jan Jirï¿½ #0" = 5
+	"Ludvok #0" = 0
 	"Vladislav #0" = 20
-	"Vladimír #0" = 10
+	"Vladimir #0" = 10
 	"Petr #0" = 5
 	"Jan Petr #0" = 5
-	"Viktorín #0" = 0
-	"Jan Václav #0" = 0
-	"Josef Václav #0" = 0
+	"Viktorn #0" = 0
+	"Jan Veclav #0" = 0
+	"Josef Veclav #0" = 0
 	"Karel Josef #0" = 0
-	"Matyáš #0" = 0
+	"Matyn #0" = 0
 	"Ferdinand #0" = 5
 	"Otakar #0" = 10
 	"Vratislav #3" = 5
 	"Boleslav #4" = 10
-	"Vilém #0" = 5
+	"Vilim #0" = 5
 	"Viktor #0" = 0
-	"Jaromír #0" = 5
+	"Jaromer #0" = 5
 	"Jaroslav #0" = 1
 	"Anezka #0" = -1
 	"Eliska #0" = -1
@@ -75,9 +75,9 @@ monarch_names = {
 }
 
 leader_names = {
-	Zajíc
+	Zajic
 	Jiskra
-	Zelezný
+	Zelezna
 	Capek
 	Thurn
 	Kolowrat
@@ -85,14 +85,14 @@ leader_names = {
 	"z Rozmberka"
 	Velen
 	Sokol
-	"ze Zerotína"
+	"ze Zerotina"
 	"z Husi"
 	"z Polzic"
 	Harant
-	"z Brandýsa"
+	"z Brandisa"
 	Purkyne
-	"z Veleslavína"
-	"z Rozmitálu"
+	"z Veleslavona"
+	"z Rozmitalu"
 	Berka
 	"z Pardubic"
 	"ze Lvovic"
@@ -101,39 +101,39 @@ leader_names = {
 	"ze Svamberka"
 	"z Vartemberka"
 	"z Mitrovic"
-	Píka
+	Puka
 	Mansfeld
-	Veliký
-	Syrový
+	Veliko
+	Syrovi
 	"z Otradovic"
 	"z Falkensteina"
 }
 
 ship_names = {
-	"Svatý Vaclav"
-	"Svatá Ludmila"
-	"Svatý Jan Nepomucký"
-	"Svatý Mikulás"
-	"Svatý Jirí"
-	"Svatá Anezká"
-	"Nejsvetejsí Trojice"
-	"Král Karel"
-	"Král Boleslav"
-	"Král Premysl"
-	"Panna Maria Vitezná"
+	"Svato Vaclav"
+	"Svato Ludmila"
+	"Svato Jan Nepomucki"
+	"Svato Mikulos"
+	"Svato Jira"
+	"Svato Anezke"
+	"Nejsvetejse Trojice"
+	"Krel Karel"
+	"Krel Boleslav"
+	"Krel Premysl"
+	"Panna Maria Vitezne"
 	"Jan Hus"
 	"Jan Zizka"
-	"Prokop Holý"
-	"Kníze Bretislav"
+	"Prokop Hola"
+	"Knsze Bretislav"
 	"Premysl Orac"
 	Ctirad
 	Cechy
 	Morava
 	Libuse
-	Odvázný
-	Neporazitelný
-	Rychlý
-	Bystrý
+	Odvozna
+	Neporazitelna
+	Rychle
+	Bystro
 	Orel
 	Sokol
 	Slezsko
