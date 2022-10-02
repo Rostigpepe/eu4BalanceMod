@@ -32,7 +32,7 @@ ENG_ideas = {
 		trade_efficiency = 0.1 # The Navigation Acts
 	}
 	eng_red_coats = {
-		fire_damage = 0.10 # Redcoats
+		fire_damage = 0.10 # Redcoats / English Longbowmen
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10 # The Sick and Hurt Board
@@ -131,7 +131,7 @@ HAB_ideas = {
 	}
 	austrian_court = {
 		reinforce_speed = 0.33 # Hofkriegsrat
-		discipline = 0.025
+		discipline = 0.03
 	}
 	hofkriegsrat = {
 		infantry_power = 0.10 # K.U.K Armee Reform
