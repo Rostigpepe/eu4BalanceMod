@@ -1,5 +1,4 @@
-### ARMY PROFESSIONALISM & DRILL CHANGES ###
-    ### GOBO TIME ###
+###   ARMY PROFESSIONALISM & DRILL CHANGES   ###
 
 low_army_professionalism = {
 	mercenary_cost = -0.30
@@ -28,4 +27,25 @@ regiment_drill_modifier = { # Used by individual regiments
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
 	movement_speed = 0.30 
+}
+
+
+###   ATTRITION CHANGES   ###
+
+land_province = {
+	max_attrition = 8						#Maximum Attrition is now 8
+	local_manpower_modifier = 0.25			#25% of manpower.
+}
+
+
+###   ADMINISTRATIVE CHANGES   ###
+
+# At 100% over capacity, this modifier will be fully used
+over_governing_capacity_modifier = {
+	stability_cost_modifier = 1.0
+	ae_impact = 0.75
+	improve_relation_modifier = -0.5
+	advisor_cost = 1.0
+	monthly_militarized_society = -1.0
+	administrative_efficiency = -0.5
 }
