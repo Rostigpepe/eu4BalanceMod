@@ -339,3 +339,87 @@ ITA_ideas = {
 	}
 }
 
+TUR_ideas = {
+	start = {
+		core_creation = -0.20
+		tolerance_heathen = 3
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+
+	trigger = {
+		tag = TUR
+	}
+	free = yes		#will be added at load.
+	
+	millets = {
+		discipline = 0.05 # Kapu Kulu & Eyalet Organization
+	
+	}	
+	ghazi = {
+		cavalry_power = 0.15 # Sipahi Cavalry
+		cavalry_cost = -0.10
+	}		
+	timariot_system = {
+		yearly_corruption = -0.1 # Autonomous Pashas
+		governing_capacity_modifier = 0.05
+	}
+	autonmous_pashas = {
+		artillery_power = 0.10 # Ottoman Cavalry
+	}		
+	lawcode_of_suleiman_01 = {
+		naval_morale = 0.1 # Naval Shipyards of Anatolia
+	}
+	tulip_period = {
+		global_unrest = -1 # Sipahi & Janissary functionality
+	}
+	imperial_school_of_naval_engineering = {
+		trade_efficiency = 0.10  # The Ottoman Caliphate
+		autonomy_change_time = -0.25 
+	}
+}
+
+MAM_ideas = {
+	start = {
+		diplomatic_upkeep = 2
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = MAM
+	}
+	free = yes
+	
+	red_sea_trade = {
+		vassal_income = 0.33 # Arabian Subjugation
+		vassal_forcelimit_bonus = 1
+	}
+	monuments_to_greatness = {
+		prestige = 1
+		great_project_upgrade_cost = -0.15
+	}
+	purchase_new_mamelukes = {
+		global_trade_power = 0.05 # Red Sea Trade
+		trade_steering = 0.15
+	}
+	mam_army_reform = {
+		manpower_recovery_speed = 0.10 # Mamlukean Slave Trade
+		global_trade_goods_size_modifier = 0.1
+	}
+	reform_fellah_system = {
+		global_missionary_strength = 0.02 # Custodian of the Holy Cities
+	}
+	reformed_succession = {
+		discipline = 0.05 # Mamlukean Warrior Caste
+	}
+	mam_monopoly_ports = {
+		diplomatic_annexation_cost = -0.2 # The Caliphs' Decree
+		diplomatic_reputation = 1
+	}
+}
