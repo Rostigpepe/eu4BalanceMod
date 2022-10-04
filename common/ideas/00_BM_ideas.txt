@@ -423,3 +423,50 @@ MAM_ideas = {
 		diplomatic_reputation = 1
 	}
 }
+
+NED_ideas = {
+	start = {
+		global_manpower_modifier = 0.25
+		naval_forcelimit_modifier = 0.50
+	}
+	
+	bonus = {
+		trade_efficiency = 0.20
+	}
+
+	trigger = {
+		OR = {
+			tag = NED
+			tag = HOL
+		}
+	}
+	free = yes		#will be added at load.
+	
+	amsterdam_wisselbank = {
+		idea_cost = -0.1 # Embrace Humanism
+	}
+	dutch_trading_spirit = {
+		merchants = 1
+		trade_steering = 0.15 # Dutch Seafaring Spirit
+	}
+	polders = {
+		local_build_cost = -0.20 # Dutch Land Reclamation Projects
+		global_allowed_num_of_buildings = 1
+	}
+	instructie_voor_de_admiraliteiten = {
+		leader_naval_fire = 2
+		allowed_marine_fraction = 0.25
+	}
+	embrace_humanism = {
+		global_trade_goods_size_modifier = 0.1 # The Tulip Period
+		inflation_reduction = -0.1
+	}
+	army_sappers = {
+		discipline = 0.05 # Enlist Mercenary Expertise
+	}
+	platoon_fire = {
+		fire_damage = 0.1 # The Coom Gun
+		dip_tech_cost_modifier = -0.1
+	}
+}
+
