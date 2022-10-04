@@ -465,7 +465,7 @@ NED_ideas = {
 		discipline = 0.05 # Enlist Mercenary Expertise
 	}
 	platoon_fire = {
-		fire_damage = 0.1 # The Coom Gun
+		fire_damage = 0.1 # Je Maintiendrai
 		dip_tech_cost_modifier = -0.1
 	}
 }

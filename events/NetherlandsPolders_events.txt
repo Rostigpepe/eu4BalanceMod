@@ -1,0 +1,35 @@
+}
+
+amsterdam_dike = {
+	local_development_cost = -0.15
+}
+
+}
+
+den_haag_dike = {
+	local_development_cost = -0.15
+}
+
+}
+
+zeeland_dike = {
+	local_development_cost = -0.15
+}
+
+}
+
+antwerpen_dike = {
+	local_development_cost = -0.15
+}
+
+}
+
+gent_dike = {
+	local_development_cost = -0.15
+}
+
+}
+
+brugge_dike = {
+	local_development_cost = -0.15
+}
