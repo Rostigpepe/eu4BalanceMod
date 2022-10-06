@@ -130,7 +130,7 @@ HAB_ideas = {
 		global_missionary_strength = 0.02
 	}
 	austrian_court = {
-		reinforce_speed = 0.33 # Hofkriegsrat
+		reinforce_speed = 0.30 # Hofkriegsrat
 		discipline = 0.03
 	}
 	hofkriegsrat = {
@@ -329,7 +329,7 @@ ITA_ideas = {
 		galley_power = 0.20
 	}
 	italian_tax_reform = {
-		global_manpower_modifier = 0.33 # The Office of Censor
+		global_manpower_modifier = 0.20 # The Office of Censor
 	}
 	heir_to_the_empire = {
 		global_tax_modifier = 0.20 # Italian Tax Reform
@@ -470,3 +470,46 @@ NED_ideas = {
 	}
 }
 
+RUS_ideas = {
+	start = {
+		army_tradition = 1
+		manpower_in_culture_group_provinces = 0.33
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		tag = RUS
+	}
+	free = yes		#will be added at load.
+
+	land_of_the_rus = {
+		culture_conversion_cost = -0.15
+		years_of_nationalism = -5
+	}
+	siberian_frontier = {
+		may_establish_frontier = yes # The Siberian Frontier Awaits!
+		auto_explore_adjacent_to_colony = yes
+	}
+	russian_artillery_yard = {
+		fire_damage = 0.10 # Taming of the Steppe
+		shock_damage_received = -0.10
+	}
+	life_long_conscription  = {
+		advisor_cost = -0.10 # The Table of Ranks
+	}
+
+	abolish_the_mestnichestvo = {
+		artillery_power = 0.10 # Russian Artillery Yard
+	}
+	table_of_ranks = {
+		hostile_attrition = 1
+		land_attrition = -0.15
+	}	
+	curriculum_of_the_cadet_corps = {
+		min_autonomy_in_territories = 0.15 # The Great Russian Empire
+		trade_company_investment_cost = -0.15
+	}
+}
