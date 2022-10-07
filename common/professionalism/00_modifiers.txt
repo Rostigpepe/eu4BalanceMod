@@ -20,7 +20,7 @@ supply_depot_modifier = {
 		always = yes
 	}
 
-    global_regiment_cost = -0.10
+	global_regiment_cost = -0.10
     global_regiment_recruit_speed = -0.15
 }
 
@@ -33,7 +33,8 @@ refill_garrison_modifier = {
 	trigger = {
 		always = yes
 	}
-    manpower_recovery_speed = 0.10
+	
+	manpower_recovery_speed = 0.10
     global_manpower_modifier = 0.10
 	may_refill_garrison = yes
 }
@@ -49,7 +50,7 @@ return_manpower_modifier = {
 		always = yes
 	}
 
-    reserves_organisation = 0.5
+	reserves_organisation = 0.5
     recover_army_morale_speed = 0.05
 }
 
@@ -64,9 +65,7 @@ general_cost_modifier = {
 		always = yes
 	}
 
-    general_cost = -0.50
-    infantry_breakthrough = 0.05
-    cavalry_breakthrough = 0.05
+	general_cost = -0.50
     may_return_manpower_on_disband = yes
 }
 
@@ -81,7 +80,7 @@ reserves_organisation_modifier = {
 		always = yes
 	}
 
-    special_unit_forcelimit= 0.15
+	special_unit_forcelimit= 0.15
     military_tactics = 0.25
 	drill_gain_modifier = 1
 }
