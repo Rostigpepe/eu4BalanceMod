@@ -321,7 +321,7 @@ technology = {
 	#Spanish Square
 	sprite_level = 2
     
-    may_build_supply_depot = yes
+    #may_build_supply_depot = yes
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
 
