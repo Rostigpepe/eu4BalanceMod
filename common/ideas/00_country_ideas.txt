@@ -806,15 +806,15 @@ TUR_ideas = {
 	free = yes		#will be added at load.
 	
 	kapu_eyalet = {
-		discipline = 0.05 # Kapu Kulu & Eyalet Organization
+		discipline = 0.05 
 	
 	}	
 	sipahi_cavalry = {
-		cavalry_power = 0.15 # Sipahi Cavalry
+		cavalry_power = 0.15 
 		cavalry_cost = -0.10
 	}		
 	autonmous_pashas = {
-		yearly_corruption = -0.1 # Autonomous Pashas
+		yearly_corruption = -0.1 
 		governing_capacity_modifier = 0.05
 	}
 	ottoman_artillery = {
@@ -827,7 +827,7 @@ TUR_ideas = {
 		global_unrest = -1 
 	}
 	ottoman_caliphate = {
-		trade_efficiency = 0.10  # The Ottoman Caliphate
+		trade_efficiency = 0.10 
 		autonomy_change_time = -0.25 
 	}
 }
