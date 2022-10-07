@@ -155,15 +155,15 @@ ENG_ideas = {
 	navigation_acts = {
 		trade_efficiency = 0.1 # The Navigation Acts
 	}
-	eng_red_coats = {
-		fire_damage = 0.10 # Redcoats / English Longbowmen
+	english_longbowmen = {
+		fire_damage = 0.10 
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10 # The Sick and Hurt Board
 		manpower_recovery_speed = 0.10 
 	}
-	british_bill_of_rights = {
-		years_of_nationalism = -5 # English Bill of Rights
+	english_bill_of_rights = {
+		years_of_nationalism = -5
 		global_unrest = -1
 	}
 }
@@ -183,31 +183,31 @@ GBR_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	gbr_acts_of_union = {
-		diplomatic_upkeep = 1 # The Acts of Union / Proclamation of The British Empire
+	proclamation_of_the_british_empire = {
+		diplomatic_upkeep = 1
 		governing_capacity_modifier = 0.2
 	}
-	city_upon_a_hill = {
-		years_of_nationalism = -5 # City Upon A Hill / Parliamentarianism
+	parliamentarianism = {
+		years_of_nationalism = -5
 		global_unrest = -2
 	}
-	british_merchant_navy = {
-		discipline = 0.05 # Establish British Merchant Navy / British Stoicism
+	british_stoicism = {
+		discipline = 0.05
 	}
-	gbr_the_royal_society = {
-		idea_cost = -0.05 # The Royal Society / Enlightened Philosophy
+	enlightened_philosophy = {
+		idea_cost = -0.05
 		global_institution_spread = 0.2
 	}
-	reform_of_comission_buying = {
-		global_colonial_growth = 15 # Reform of Comission Buying / British Colonial Holdings
+	british_colonial_holdings = {
+		global_colonial_growth = 15
 		vassal_forcelimit_bonus = 0.5
 	}
-	british_industrialization = {
-		development_cost = -0.1 # Early Industrialization
+	early_industrialization = {
+		development_cost = -0.1
 		production_efficiency = 0.1
 	}
 	britanna_rules_the_waves = {
-		leader_naval_manuever = 1 # Britannia Rules the Waves
+		leader_naval_manuever = 1
 		blockade_efficiency = 0.33
 		allowed_marine_fraction = 0.50
 	}
@@ -805,28 +805,28 @@ TUR_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	millets = {
+	kapu_eyalet = {
 		discipline = 0.05 # Kapu Kulu & Eyalet Organization
 	
 	}	
-	ghazi = {
+	sipahi_cavalry = {
 		cavalry_power = 0.15 # Sipahi Cavalry
 		cavalry_cost = -0.10
 	}		
-	timariot_system = {
+	autonmous_pashas = {
 		yearly_corruption = -0.1 # Autonomous Pashas
 		governing_capacity_modifier = 0.05
 	}
-	autonmous_pashas = {
-		artillery_power = 0.10 # Ottoman Cavalry
+	ottoman_artillery = {
+		artillery_power = 0.10
 	}		
-	lawcode_of_suleiman_01 = {
-		naval_morale = 0.1 # Naval Shipyards of Anatolia
+	anatolian_shipyards = {
+		naval_morale = 0.1 
 	}
-	tulip_period = {
-		global_unrest = -1 # Sipahi & Janissary functionality
+	sipahi_janissary_functions = {
+		global_unrest = -1 
 	}
-	imperial_school_of_naval_engineering = {
+	ottoman_caliphate = {
 		trade_efficiency = 0.10  # The Ottoman Caliphate
 		autonomy_change_time = -0.25 
 	}
@@ -1679,11 +1679,11 @@ HAB_ideas = {
 	edict_of_restitution = {
 		global_missionary_strength = 0.02
 	}
-	austrian_court = {
+	hofkriegsrat = {
 		reinforce_speed = 0.30 # Hofkriegsrat
 		discipline = 0.03
 	}
-	hofkriegsrat = {
+	kukarmeereform = {
 		infantry_power = 0.10 # K.U.K Armee Reform
 	}
 }
@@ -1905,27 +1905,27 @@ HUN_ideas = {
 	}
 	free = yes
 	
-	hun_renaissanse_knowledge = {
+	order_of_the_dragon = {
 		land_morale = 0.10 # Order of the Dragon
 		warscore_cost_vs_other_religion = -0.10
 	}
-	bulwark_of_christianity = {
+	hungarian_tax_system = {
 		global_tax_modifier = 0.15 # The Hungarian Tax System
 	}
 	found_the_black_army = {
 		discipline = 0.05
 	}
-	reformed_coinage = {
+	strengthened_towns = {
 		global_own_trade_power = 0.25 # Strengthen the Towns
 	}
-	curtailed_peasantry = {
+	tripartum_diet = {
 		global_manpower_modifier = 0.20 # Tripartum and the Diet of 1514
 	}
-	strengthened_towns = {
+	southern_tensions = {
 		local_defensiveness = 0.1 # Southern Tensions
 		max_hostile_attrition = 1
 	}
-	hungarian_estates_general = {
+	decretum_maius = {
 		yearly_corruption = -0.1 # Decretum Maius
 		monarch_admin_power = 1
 	}
