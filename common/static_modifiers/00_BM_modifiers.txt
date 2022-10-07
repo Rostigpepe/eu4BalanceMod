@@ -49,3 +49,18 @@ over_governing_capacity_modifier = {
 	monthly_militarized_society = -1.0
 	administrative_efficiency = -0.5
 }
+
+# Changes to province debuffs based on culture
+same_culture_group = {
+	local_tax_modifier = -0.3				
+	local_manpower_modifier = -0.3
+	local_sailors_modifier = -0.25
+}
+
+non_accepted_culture = {
+	local_tax_modifier = -0.60
+	local_missionary_strength = -0.01
+	local_manpower_modifier = -0.60
+	local_sailors_modifier = -0.50
+	local_unrest = 2					
+}
