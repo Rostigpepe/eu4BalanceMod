@@ -7,7 +7,7 @@
 NDefines.NMilitary.FORTRESS_COST = 1
 
 --Insufficient support to positive
-NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.10
+NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.15
 
 NDefines.NMilitary.LOOTED_MAX = 100
 
