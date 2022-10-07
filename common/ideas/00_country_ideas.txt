@@ -805,28 +805,28 @@ TUR_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	millets = {
+	kapu_eyalet = {
 		discipline = 0.05 # Kapu Kulu & Eyalet Organization
 	
 	}	
-	ghazi = {
+	sipahi_cavalry = {
 		cavalry_power = 0.15 # Sipahi Cavalry
 		cavalry_cost = -0.10
 	}		
-	timariot_system = {
+	autonmous_pashas = {
 		yearly_corruption = -0.1 # Autonomous Pashas
 		governing_capacity_modifier = 0.05
 	}
-	autonmous_pashas = {
-		artillery_power = 0.10 # Ottoman Cavalry
+	ottoman_artillery = {
+		artillery_power = 0.10
 	}		
-	lawcode_of_suleiman_01 = {
-		naval_morale = 0.1 # Naval Shipyards of Anatolia
+	anatolian_shipyards = {
+		naval_morale = 0.1 
 	}
-	tulip_period = {
-		global_unrest = -1 # Sipahi & Janissary functionality
+	sipahi_janissary_functions = {
+		global_unrest = -1 
 	}
-	imperial_school_of_naval_engineering = {
+	ottoman_caliphate = {
 		trade_efficiency = 0.10  # The Ottoman Caliphate
 		autonomy_change_time = -0.25 
 	}
@@ -1921,11 +1921,11 @@ HUN_ideas = {
 	tripartum_diet = {
 		global_manpower_modifier = 0.20 # Tripartum and the Diet of 1514
 	}
-	strengthened_towns = {
+	southern_tensions = {
 		local_defensiveness = 0.1 # Southern Tensions
 		max_hostile_attrition = 1
 	}
-	hungarian_estates_general = {
+	decretum_maius = {
 		yearly_corruption = -0.1 # Decretum Maius
 		monarch_admin_power = 1
 	}
