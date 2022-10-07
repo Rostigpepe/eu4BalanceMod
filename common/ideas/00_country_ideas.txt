@@ -1661,7 +1661,7 @@ HAB_ideas = {
 	free = yes		#will be added at load.
 
 	imperial_ambitions = {
-		state_governing_cost = 0.05
+		state_governing_cost = -0.05
 		diplomatic_upkeep = 2
 	}
 	military_border = {

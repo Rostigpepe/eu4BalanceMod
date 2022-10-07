@@ -16,7 +16,7 @@ is_city = yes
 add_permanent_province_modifier = {
 	name = the amber trade
 	duration = -1
-
+}
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
