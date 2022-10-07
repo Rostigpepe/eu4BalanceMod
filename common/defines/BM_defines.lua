@@ -10,7 +10,7 @@ NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.10
 NDefines.NMilitary.LOOTED_MAX = 100
 
 NDefines.NMilitary.CAVALRY_SPEED = 1.0
-NDefines.NMilitary.CAVALRY_COST = 30.0
+NDefines.NMilitary.CAVALRY_COST = 15.0
 
 --N AI STUFFS
 NDefines.NAI.MIN_CAV_PERCENTAGE = 10
