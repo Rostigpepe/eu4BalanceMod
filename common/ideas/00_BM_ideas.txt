@@ -154,27 +154,27 @@ HUN_ideas = {
 	free = yes
 	
 	hun_renaissanse_knowledge = {
-		land_morale = 0.10
+		land_morale = 0.10 # Order of the Dragon
 		warscore_cost_vs_other_religion = -0.10
 	}
 	bulwark_of_christianity = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.15 # The Hungarian Tax System
 	}
 	found_the_black_army = {
 		discipline = 0.05
 	}
 	reformed_coinage = {
-		global_own_trade_power = 0.25
+		global_own_trade_power = 0.25 # Strengthen the Towns
 	}
 	curtailed_peasantry = {
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.20 # Tripartum and the Diet of 1514
 	}
 	strengthened_towns = {
-		local_defensiveness = 0.1
+		local_defensiveness = 0.1 # Southern Tensions
 		max_hostile_attrition = 1
 	}
 	hungarian_estates_general = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.1 # Decretum Maius
 		monarch_admin_power = 1
 	}
 }
@@ -195,7 +195,7 @@ BOH_ideas = {
 	free = yes
 	
 	compacta_of_prague = {
-		tolerance_own = 1
+		tolerance_own = 1 
 		enforce_religion_cost = -0.5
 	}
 	boh_elective_monarchy = {
