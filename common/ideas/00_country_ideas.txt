@@ -163,8 +163,8 @@ ENG_ideas = {
 		manpower_recovery_speed = 0.10 
 	}
 	english_bill_of_rights = {
-		years_of_nationalism = -5
 		global_unrest = -1
+		years_of_nationalism = -5
 	}
 }
 
@@ -1801,8 +1801,8 @@ BUR_Ideas = {
 		trade_efficiency = 0.10
 	}
 	freedom_of_worship = {
-		global_unrest = -1
 		religious_unity = 0.15
+		global_unrest = -1
 	}
 	bur_regimental_system = {
 		global_manpower_modifier = 0.25
@@ -1926,8 +1926,8 @@ HUN_ideas = {
 		max_hostile_attrition = 1
 	}
 	decretum_maius = {
-		yearly_corruption = -0.1 # Decretum Maius
 		monarch_admin_power = 1
+		yearly_corruption = -0.1 
 	}
 }
 
@@ -1992,8 +1992,8 @@ MAM_ideas = {
 		vassal_forcelimit_bonus = 1
 	}
 	monuments_to_greatness = {
-		prestige = 1
 		great_project_upgrade_cost = -0.15
+		prestige = 1
 	}
 	purchase_new_mamelukes = {
 		global_trade_power = 0.05 # Red Sea Trade
@@ -2517,7 +2517,6 @@ BOH_ideas = {
 		legitimacy = 1
 	}
 	wagenburg = {
-		land_morale = 0.05
 		shock_damage_received = -0.10
 	}
 	letter_of_majesty = {
