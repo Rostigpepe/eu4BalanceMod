@@ -1,0 +1,29 @@
+namespace = ratio
+
+#Adds the base cav ratio compensation
+country_event = {
+	id = ratio.1
+	title = "ratio.1.t"
+	desc = "ratio.1.d"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	hidden = yes
+
+	trigger = {
+			mil_tech = 1
+			NOT = {	has_country_modifier =  "ratio_compensation_1" }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "ratio.1.a"
+		ai_chance = { factor = 100 }
+			add_country_modifier = {
+				name = "ratio_compensation_1"
+				duration = -1
+		}
+	}
+}
