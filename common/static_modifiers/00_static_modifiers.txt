@@ -1869,7 +1869,7 @@ over_governing_capacity_modifier = {
 	improve_relation_modifier = -0.5
 	advisor_cost = 1.0
 	monthly_militarized_society = -1.0
-	administrative_efficiency = -0.5
+	administrative_efficiency = -0.2
 }
 
 
