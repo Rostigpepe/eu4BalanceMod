@@ -38,7 +38,7 @@ CAE_ideas = {
 	}
 	north_german_army_professionalism = {
 		infantry_power = 0.10
-		yearly_army_professionalism = 0.05
+		yearly_army_professionalism = 0.005
 	}
 	expanding_confederation = {
 		discipline = 0.025
