@@ -97,7 +97,7 @@ country_decisions = {
 				value = 30
 			}
 			
-			adm_tech = 10
+			adm_tech = 16
 		}
 		effect = {
 			change_tag = CAE
