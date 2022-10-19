@@ -1243,8 +1243,8 @@ low_army_professionalism = {
 }
 
 high_army_professionalism = {
-	fire_damage = 0.20
-	shock_damage = 0.20
+	fire_damage = 0.10
+	shock_damage = 0.10
 	siege_ability = 0.30
     drill_decay_modifier = -0.75
     drill_gain_modifier = 1
@@ -1443,7 +1443,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.025
+	yearly_army_professionalism = 0.015
 }
 
 ##################################################################################################
@@ -1766,8 +1766,8 @@ zaidi_scholar_modifier = {
 # Regiment Types Modifiers
 ########################################
 regiment_drill_modifier = { # Used by individual regiments
-	shock_damage = 0.2
-	fire_damage = 0.2
+	shock_damage = 0.15
+	fire_damage = 0.15
 	fire_damage_received = -0.25
 	shock_damage_received = -0.25
 }
@@ -1817,8 +1817,8 @@ cossacks_regiment = {
 }
 
 carolean_regiment = {
-	morale_damage = 0.05
-	drill_decay_modifier = -0.25
+	morale_damage = 0.1
+	drill_decay_modifier = -0.5
 }
 
 revolutionary_guard_regiment = {
