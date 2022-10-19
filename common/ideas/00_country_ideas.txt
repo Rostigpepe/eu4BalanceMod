@@ -188,7 +188,7 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.2
 	}
 	parliamentarianism = {
-		years_of_nationalism = -5
+		state_maintenance_modifier = -0.10
 		global_unrest = -2
 	}
 	british_stoicism = {
@@ -603,22 +603,22 @@ RUS_ideas = {
 		may_establish_frontier = yes # The Siberian Frontier Awaits!
 		auto_explore_adjacent_to_colony = yes
 	}
-	russian_artillery_yard = {
+	taming_of_the_steppe = {
 		fire_damage = 0.10 # Taming of the Steppe
 		shock_damage_received = -0.10
 	}
-	life_long_conscription  = {
+	table_of_ranks  = {
 		advisor_cost = -0.10 # The Table of Ranks
 	}
 
-	abolish_the_mestnichestvo = {
-		artillery_power = 0.10 # Russian Artillery Yard
+	russian_artillery_yard = {
+		artillery_power = 0.10 
 	}
-	table_of_ranks = {
-		hostile_attrition = 1
+	russian_winter = {
+		hostile_attrition = 1	
 		land_attrition = -0.15
 	}	
-	curriculum_of_the_cadet_corps = {
+	great_russian_empire = {
 		min_autonomy_in_territories = 0.15 # The Great Russian Empire
 		trade_company_investment_cost = -0.15
 	}
@@ -721,29 +721,29 @@ NED_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	amsterdam_wisselbank = {
-		idea_cost = -0.1 # Embrace Humanism
+	embrace_humanism = {
+		idea_cost = -0.1 
 	}
 	dutch_trading_spirit = {
 		merchants = 1
 		trade_steering = 0.15 # Dutch Seafaring Spirit
 	}
 	polders = {
-		local_build_cost = -0.20 # Dutch Land Reclamation Projects
+		local_build_cost = -0.20 
 		global_allowed_num_of_buildings = 1
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
 		allowed_marine_fraction = 0.25
 	}
-	embrace_humanism = {
-		global_trade_goods_size_modifier = 0.1 # The Tulip Period
+	tulip_mania = {
+		global_trade_goods_size_modifier = 0.20
 		inflation_reduction = -0.1
 	}
-	army_sappers = {
+	mercenary_expertise = {
 		discipline = 0.05 # Enlist Mercenary Expertise
 	}
-	platoon_fire = {
+	je_maintiendrai = {
 		fire_damage = 0.1 # Je Maintiendrai
 		dip_tech_cost_modifier = -0.1
 	}
@@ -827,7 +827,6 @@ TUR_ideas = {
 		global_unrest = -1 
 	}
 	ottoman_caliphate = {
-		trade_efficiency = 0.10 
 		autonomy_change_time = -0.25 
 	}
 }
@@ -1987,7 +1986,7 @@ MAM_ideas = {
 	}
 	free = yes
 	
-	red_sea_trade = {
+	arabian_subjugation = {
 		vassal_income = 0.33 # Arabian Subjugation
 		vassal_forcelimit_bonus = 1
 	}
@@ -1999,17 +1998,18 @@ MAM_ideas = {
 		global_trade_power = 0.05 # Red Sea Trade
 		trade_steering = 0.15
 	}
-	mam_army_reform = {
+	mamlukean_slave_trade = {
 		manpower_recovery_speed = 0.10 # Mamlukean Slave Trade
 		global_trade_goods_size_modifier = 0.1
 	}
-	reform_fellah_system = {
-		global_missionary_strength = 0.02 # Custodian of the Holy Cities
+	custodian_of_the_holy_cities = {
+		global_missionary_strength = 0.02 
+		accept_vassalization_reasons = 15
 	}
-	reformed_succession = {
+	mamlukean_warrior_caste = {
 		discipline = 0.05 # Mamlukean Warrior Caste
 	}
-	mam_monopoly_ports = {
+	the_caliph_decree = {
 		diplomatic_annexation_cost = -0.2 # The Caliphs' Decree
 		diplomatic_reputation = 1
 	}
@@ -2144,7 +2144,7 @@ MUG_ideas = {
 	}
 	
 	bonus = {
-		technology_cost = -0.05
+		artillery_power = 0.10
 	}
 	
 	trigger = {
@@ -2152,26 +2152,32 @@ MUG_ideas = {
 	}
 	free = yes
 	
-	mansabdari_system = {
+	jagir_mansabdari_system = {
 		discipline = 0.05
 	}
-	control_of_the_ulema = {
-		global_unrest = -1
+	the_many_estates_of_india = {
+		all_estate_loyalty_equilibrium = 0.05
+		allow_free_estate_privilege_revocation = yes
 	}
 	mughal_ibadat_khana = {
 		idea_cost = -0.1
+		religious_unity = 0.25
 	}
-	an_indian_padshah = {
+	zamindars_and_marzabans = {
 		free_mil_policy = 1
+		governing_capacity_modifier = 0.1
 	}
-	zabt_system = {
-		global_tax_modifier = 0.1
-	}
-	mughal_architecture = {
+	pinnacle_of_architecture = {
+		great_project_upgrade_cost = -0.15
 		prestige = 1
 	}
-	fatawa_e_alamgiri = {
-		stability_cost_modifier = -0.10
+	roots_never_forgotten = {
+		shock_damage = 0.10
+		movement_speed = 0.10
+	}
+	industrialization_of_india = {
+		production_efficiency = 0.15
+		global_trade_goods_size_modifier = 0.05
 	}
 }
 
@@ -2525,9 +2531,9 @@ BOH_ideas = {
 	hussite_legacy = {
 		technology_cost = -0.1
 	}
-	kutnohorian_deal = {
-		artillery_power = 0.05 # The origin of Modern Warfare
-		movement_speed = 0.10
+	the_origin_of_modern_warfare = {
+		artillery_power = 0.05 
+		fire_damage = 0.05
 	}
 	czech_nationalism = {
 		same_culture_advisor_cost = -0.25
@@ -15196,7 +15202,7 @@ LOT_ideas = {
 	lot_carolingian_renaissance_II = {
 		idea_cost = -0.1
 	}
-	lot_court_of_europe = {
+	lot_breadbasket_of_europe = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	lot_land_of_abbeys = {
