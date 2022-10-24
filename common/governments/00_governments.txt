@@ -689,15 +689,17 @@ tribal = {
 			reforms = {
 				horde_barbaric_despoilers_reform
 				horde_tribal_unity_reform
-				tribe_becomes_monarchy_reform
-				tribe_becomes_republic_reform
-				tribe_becomes_theocracy_reform
-				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
 				tribal_feudal_subjects_reform
 				tribal_advanced_tribe_reform
 				tribal_cossacks_reform
+				tribal_law_of_yassa_reform
+				tribal_mandate_heaven_reform
+				tribe_becomes_monarchy_reform
+				tribe_becomes_republic_reform
+				tribe_becomes_theocracy_reform
+				tribe_becomes_horde_reform
 			}
 		}
 	}
