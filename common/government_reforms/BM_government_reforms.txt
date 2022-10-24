@@ -1,0 +1,721 @@
+steppe_horde = {
+	icon = "horde_riding"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			culture_group = altaic
+			culture_group = tartar
+			primary_culture = altaic_new 
+		}
+		has_reform = steppe_horde
+		NOT = { has_reform = great_mongol_state_reform }
+	}
+	legacy_equivalent = steppe_horde_legacy
+	nomad = yes
+	raze_province = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = nomad_group
+	}
+
+	lock_level_when_selected = yes
+
+	start_territory_to_estates = 0.5
+
+	modifiers = {
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		reinforce_cost_modifier = -0.5
+		years_of_nationalism = -5
+
+        #Changes
+        #Spread from -0.15 to -0.25
+        global_institution_spread = -0.25
+        #Loot from 0.5 to 1
+        loot_amount = 1
+        #Ration from 0.25 to 0.1
+        cav_to_inf_ratio = 0.1
+        #Speed from 0.2 to 0.3
+        movement_speed = 0.3
+
+        #Added
+        embracement_cost = 0.25
+        development_cost = 0.1
+		available_province_loot = 1
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+
+great_mongol_state_reform = {
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_reform = great_mongol_state_reform
+			have_had_reform = great_mongol_state_reform
+			tag = MGE
+		}
+	}
+	legacy_equivalent = great_mongol_state_legacy
+	fixed_rank = 3
+	valid_for_nation_designer = no
+	nomad = yes
+	raze_province = yes
+	modifiers = {
+		horde_unity = 1
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		reinforce_cost_modifier = -0.5
+		years_of_nationalism = -5
+
+		#Changes
+		loot_amount = 1
+		cav_to_inf_ratio = 0.1
+		movement_speed = 0.35
+		available_province_loot = 2
+	}
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+
+###   TIER 2 REFORMS   ###
+
+tribal_herders_steppes_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		min_autonomy_in_territories = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_slave_raids_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+		
+	}
+	modifiers = {
+		production_efficiency = 0.05
+		global_prov_trade_power_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_pax_mongolica_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+		
+	}
+	modifiers = {
+		global_unrest = -2
+		num_accepted_cultures = 2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_three_tribes_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			tag = MCH
+			tag = MJZ
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+		land_attrition = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_snow_life_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		native_uprising_chance = -0.5
+		movement_speed = 0.1
+		native_assimilation = 0.25
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 3 REFORMS   ###
+
+tribal_tolerance_church_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+		
+	}
+	modifiers = {
+		state_maintenance_modifier = -0.1
+		tolerance_heathen = 2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_tengri_world_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+	}
+	modifiers = {
+		tolerance_heathen = 2
+		tolerance_heretic = 1
+		tolerance_own = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_charade_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			tag = MCH
+			tag = MJZ
+		}
+	}
+	modifiers = {
+		global_unrest = -2
+		diplomatic_reputation = 2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_one_on_high_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		tolerance_own = 2
+		cavalry_shock = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 4 REFORMS   ###
+tribal_gunpowder_weapons_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		mil_tech_cost_modifier = -0.1
+		nomadic_tribes_loyalty_modifier = -0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_traditionalism_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		available_province_loot = 2
+		shock_damage = 0.05
+		nomadic_tribes_loyalty_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_tatar_raiders_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+	}
+	modifiers = {
+		loot_amount = 1
+		shock_damage = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_lessons_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+	}
+	modifiers = {
+		leader_siege = 1
+		leader_land_manuever = 1
+		shock_damage = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_mongol_ties_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		cavalry_cost = -0.1
+		reinforce_cost_modifier = -0.2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 5 REFORMS   ###
+
+tribal_subject_relations_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		vassal_income = 0.25
+	}
+	custom_attributes = {
+		subject_tax_modifier_25 = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_territorial_rights_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+		production_efficiency = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_legacy_gol_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+	}
+	modifiers = {
+		vassal_income = 0.5
+		diplomatic_upkeep = 1
+		accept_vassalization_reasons = 25
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_silk_road_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.1
+		merchants = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_jurchen_tea_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			tag = MCH
+			tag = MJZ
+		}
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_settle_hinterlands_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		colonists = 1
+		native_assimilation = 0.25
+		colonist_placement_chance = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 6 REFORMS   ###
+#Changed
+retain_tribal_hierarchy_reform = {
+	icon = "retain_tribal_hierarchy"
+	allow_normal_conversion = yes
+	modifiers = {
+		governing_capacity = 200
+		max_absolutism = 10
+		core_creation = -0.1
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					is_territorial_core = root
+				}
+			}
+		}
+	}
+}
+
+tribal_succession_laws_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		stability_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_bashqaq_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+	}
+	modifiers = {
+		global_unrest = -2
+		governing_capacity = 250
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_dirham_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.2
+		diplomatic_annexation_cost = -0.2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_birth_manchu_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			tag = MCH
+			tag = MJZ
+		}
+	}
+	modifiers = {
+		idea_cost = -0.1
+		culture_conversion_cost = -0.2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_fur_exchange_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		trade_range_modifier = 0.33
+		placed_merchant_power = 10
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 7 REFORMS   ###
+
+tribal_feudal_subjects_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		#Enable nobility estate
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_advanced_tribe_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+			has_reform = siberian_native_council
+		}
+	}
+	modifiers = {
+		development_cost_modifier = -0.1
+		global_institution_spread = 0.1
+		governing_capacity_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_cossacks_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = tartar
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = tartar
+			}
+		}
+	}
+	modifiers = {
+		reinforce_speed = 0.25
+		reinforce_cost_modifier = -0.25
+		war_exhaustion = -0.02
+	}
+	ai = {
+		factor = 2
+	}
+}
