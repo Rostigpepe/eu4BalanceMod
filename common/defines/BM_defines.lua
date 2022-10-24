@@ -13,7 +13,7 @@ NDefines.NMilitary.LOOTED_MAX = 100
 
 NDefines.NMilitary.CAVALRY_SPEED = 1.0
 --Cavalry upkeep = 1.5 base
-NDefines.NMilitary.CAVALRY_COST = 15.0
+NDefines.NMilitary.CAVALRY_COST = 20.0
 
 --N AI STUFFS
 --AI amount of cav
