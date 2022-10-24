@@ -1767,7 +1767,8 @@ PER_ideas = {
 		manpower_in_accepted_culture_provinces = 0.15
 	}
 	fires_flames_force = {
-		global_tax_modifier = 0.10
+		administrative_efficiency = 0.05
+
 	}
 }
 
