@@ -638,18 +638,51 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
+				tribal_herders_steppes_reform
+				tribal_slave_raids_reform
+				tribal_pax_mongolica_reform
+				tribal_three_tribes_reform
+				tribal_snow_life_reform
 			}
 		}
 		tribal_religion = {
 			reforms = {
 				religious_societies_reform
 				lip_service_reform
+				tribal_tolerance_church_reform
+				tribal_tengri_world_reform
+				tribal_charade_reform
+				tribal_one_on_high_reform
+			}
+		}
+		tribal_militarization = {
+			reforms = {
+				tribal_gunpowder_weapons_reform
+				tribal_traditionalism_reform
+				tribal_tatar_raiders_reform
+				tribal_lessons_reform
+				tribal_mongol_ties_reform
+			}
+		}
+		tribal_regional_pursuit = {
+			reforms = {
+				tribal_subject_relations_reform
+				tribal_territorial_rights_reform
+				tribal_legacy_gol_reform
+				tribal_silk_road_reform
+				tribal_jurchen_tea_reform
+				tribal_settle_hinterlands_reform
 			}
 		}
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
+				tribal_succession_laws_reform
+				tribal_bashqaq_reform
+				tribal_dirham_reform
+				tribal_birth_manchu_reform
+				tribal_fur_exchange_reform
 			}
 		}
 		tribal_reformation = {
@@ -662,6 +695,9 @@ tribal = {
 				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
+				tribal_feudal_subjects_reform
+				tribal_advanced_tribe_reform
+				tribal_cossacks_reform
 			}
 		}
 	}
