@@ -666,9 +666,11 @@ tribal_feudal_subjects_reform = {
 		}
 	}
 	modifiers = {
-		#Enable nobility estate
 		vassal_income = 0.25
 		vassal_forcelimit_bonus = 1
+	}
+	custom_attributes = {
+		enables_estate_nobles = yes
 	}
 	ai = {
 		factor = 2
@@ -714,6 +716,53 @@ tribal_cossacks_reform = {
 		reinforce_speed = 0.25
 		reinforce_cost_modifier = -0.25
 		war_exhaustion = -0.02
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_law_of_yassa_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = altaic
+			}
+		}
+	}
+	modifiers = {
+		no_religion_penalty = yes
+		harsh_treatment_cost = -0.33
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+		tolerance_of_heathens_capacity = 1
+		tolerance_of_heretics_capacity = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribal_mandate_heaven_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			tag = MCH
+			tag = MJZ
+		}
+	}
+	modifiers = {
+		unjustified_demands = -0.25
+		artillery_levels_available_vs_fort = 1
+		backrow_artillery_damage = 0.1
 	}
 	ai = {
 		factor = 2
