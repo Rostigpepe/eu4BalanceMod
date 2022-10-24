@@ -2,6 +2,7 @@ version="1.0.0"
 tags={
 	"Balance"
 }
-picture="bmmodthumbnail.png"
-name="BM Mod"
+name="bmmod"
+picture="bmmod.png"
 supported_version="1.34.*"
+remote_file_id="2879418522"
