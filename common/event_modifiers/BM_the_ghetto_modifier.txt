@@ -1,0 +1,4 @@
+bm_the_amber_trade = {
+	trade_goods_size = 0.2
+	interest = -0.5
+}
