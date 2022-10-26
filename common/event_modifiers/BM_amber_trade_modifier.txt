@@ -1,3 +1,4 @@
 bm_the_amber_trade = {
-	province_trade_power_modifier = -0.2
+	trade_value_modifier = 0.5
+	trade_goods_size_modifier = 0.10
 }
