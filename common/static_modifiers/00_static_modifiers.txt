@@ -314,7 +314,7 @@ colony_level = {
 }
 
 native_assimilation = {
-	trade_goods_size = 0.05
+	trade_goods_size = 0.10
 }
 
 native_aggressiveness = {
@@ -688,21 +688,21 @@ inflation = {
 
 bankruptcy = {
 	interest = 5
-	land_morale = -0.5
-	naval_morale = -0.5
+	land_morale = -0.33
+	naval_morale = -0.33
 	reinforce_speed = -0.25					#Slower reinforce
 	bureaucrats_influence = 0.25
 	mr_guilds_influence = 0.25
-	manpower_recovery_speed = -1.0
-	sailors_recovery_speed = -1.0
+	manpower_recovery_speed = -0.75
+	sailors_recovery_speed = -0.75
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
 	monthly_militarized_society = -0.5
 	yearly_absolutism = -2.0
-	technology_cost = 0.5
-	idea_cost = 0.5
+	technology_cost = 0.33
+	idea_cost = 0.33
 	imperial_mandate = -0.1
 	great_project_upgrade_cost = 0.5
 }
@@ -809,7 +809,7 @@ navy_tradition = {
 
 positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
-	global_manpower_modifier = 0.20
+	defensiveness = 0.20
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
@@ -820,7 +820,7 @@ positive_piety = { #As of 1.23 Legalism
 negative_piety = { #As of 1.23 Mysticism
 	land_morale = 0.10
 	global_missionary_strength = 0.03
-	defensiveness = 0.20
+	global_manpower_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = 0.1
 	church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
