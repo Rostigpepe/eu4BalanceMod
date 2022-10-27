@@ -11,7 +11,7 @@ CAE_ideas = {
 	}
 	
 	bonus = {
-		artillery_fire = 1
+		artillery_power = 0.10
 	}
 	
 	trigger = {
@@ -25,7 +25,6 @@ CAE_ideas = {
 	}
 	cae_elbe_trade = {
 		trade_efficiency = 0.10
-		development_cost = -0.1
 	}
 	modernized_wagenburg_tactics = {
 		fire_damage_received = -0.10 
@@ -38,7 +37,6 @@ CAE_ideas = {
 	}
 	north_german_army_professionalism = {
 		infantry_power = 0.10
-		yearly_army_professionalism = 0.005
 	}
 	expanding_confederation = {
 		discipline = 0.025
