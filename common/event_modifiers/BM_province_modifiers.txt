@@ -47,7 +47,7 @@ brugge_dike = {
 }
 
 #GHETTO
-bm_the_amber_trade = {
+bm_the_ghetto = {
 	trade_goods_size = 0.2
 	interest = -0.5
 }
