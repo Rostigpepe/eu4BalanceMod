@@ -1,5 +1,6 @@
 ﻿l_english:
  CAV_TO_INF_RATIO: "This modifier is an indicator of the overall reliance on cavalry within your army, And excluding Artillery, your army should be comprised of more than §Y$MAX$%§W Cavalry if you wish to obtain the Protected Flanks bonus which reduces casualties in combat."
  MAX_CAV_TO_INF: "- Receives the Protected Flanks bonus if the amount of Cavalry in an army is more than "
- COMBATVIEW_CAVALRY_DESC: "The army's cavalry ratio is §Y$VALUE$%§W. If the ratio of cavalry to infantry is above §Y$VALUE2$%§W then the army will receive the Protected Flanks (+10% tactics) modifier. Cavalry can only attack from the first row of units."
+ COMBATVIEW_CAVALRY_DESC: "The army's cavalry ratio is §Y$RATIO$%§. If the ratio of cavalry to infantry is above §Y$RATIO$%§ then the army will receive the Protected Flanks (+10% tactics) modifier. Cavalry can only attack from the first row of units."
  ratio_compensation_1:0 "Base Cavalry Ratio Adjustment"
+COMBATVIEW_CAVALRY_DESC:1 "The front row's cavalry ratio is §Y$RATIO$%§!. If the ratio of cavalry to infantry is too high, the cavalry will receive the §YInsufficient Support§! modifier. Cavalry can only attack from the first row of units."
