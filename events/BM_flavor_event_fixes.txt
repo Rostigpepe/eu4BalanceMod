@@ -1,0 +1,43 @@
+# Yingzong Emperor leads the army against the Oirats
+country_event = {
+	id = flavor_oir.1
+	title = flavor_oir.1.t
+	desc = flavor_oir.1.d
+	picture = MONGOL_BANNERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		war_with = OIR
+		NOT = { is_year = 1500 }
+		NOT = { MIL = 2 }
+		NOT = { has_regency = yes }
+		is_female = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # what an idiot
+		name = "flavor_oir.1.a"
+		if = {
+			limit = {
+				NOT = { is_monarch_leader = yes }
+			}
+			define_ruler_to_general = {
+				fire = 1
+				shock = 0
+				manuever = 0
+				siege = 0
+			}
+		}
+		
+		MNG = {
+			add_mandate = -25
+		}
+
+		set_ruler_flag = mng_militry_incompetence
+	}
+}

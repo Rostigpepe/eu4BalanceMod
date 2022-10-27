@@ -29,17 +29,14 @@ steppe_horde = {
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
+		movement_speed = 0.3
 
         #Changes
         #Spread from -0.15 to -0.25
         global_institution_spread = -0.25
         #Loot from 0.5 to 1
         loot_amount = 1
-        #Ration from 0.25 to 0.1
-        cav_to_inf_ratio = 0.1
-        #Speed from 0.2 to 0.3
-        movement_speed = 0.3
-
+        
         #Added
         embracement_cost = 0.25
         development_cost = 0.1
@@ -77,11 +74,10 @@ great_mongol_state_reform = {
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
+		movement_speed = 0.35
 
 		#Changes
 		loot_amount = 1
-		cav_to_inf_ratio = 0.1
-		movement_speed = 0.35
 		available_province_loot = 2
 	}
 	conditional = {
