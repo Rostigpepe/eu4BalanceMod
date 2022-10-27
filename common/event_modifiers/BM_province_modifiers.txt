@@ -1,0 +1,59 @@
+#AMBER TRADE
+bm_the_amber_trade = {
+	trade_value_modifier = -0.25
+	trade_goods_size_modifier = 0.10
+}
+
+#GRANARY
+bm_granary_of_the_mediterranean = {
+	trade_goods_size = 2.0
+    trade_value_modifier = 0.25
+}
+
+#MOROCCAN RUG
+bm_moroccan_rug = {
+    province_trade_power_modifier = 0.20
+    trade_value_modifier = 0.20
+}
+
+#POLDERS
+amsterdam_dike = {
+	local_development_cost = -0.15
+}
+
+
+den_haag_dike = {
+	local_development_cost = -0.15
+}
+
+
+zeeland_dike = {
+	local_development_cost = -0.15
+}
+
+
+antwerpen_dike = {
+	local_development_cost = -0.15
+}
+
+
+gent_dike = {
+	local_development_cost = -0.15
+}
+
+
+brugge_dike = {
+	local_development_cost = -0.15
+}
+
+#GHETTO
+bm_the_amber_trade = {
+	trade_goods_size = 0.2
+	interest = -0.5
+}
+
+#TOLEDO STEEL
+bm_toledo_steel = {
+	trade_goods_size = 1
+    trade_value_modifier = 0.20
+}
