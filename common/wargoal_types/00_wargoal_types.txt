@@ -2381,9 +2381,9 @@ take_capital_take_mandate = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.25
-		prestige_factor = 2.0
-		peace_cost_factor = 0.25
+		badboy_factor = 0.4
+		prestige_factor = 1.5
+		peace_cost_factor = 0.4
 
 		peace_options = {
 			po_demand_provinces
@@ -2395,9 +2395,9 @@ take_capital_take_mandate = {
 	}
 	
 	defender = {
-		badboy_factor = 0.25
-		prestige_factor = 2.0
-		peace_cost_factor = 0.25
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 0.75
 
 		peace_options = {
 			po_demand_provinces
