@@ -4380,7 +4380,7 @@ TRE_ideas = {
 GEO_ideas = {
 	start = {
 		defensiveness = 0.25
-		infantry_power = 0.1
+		infantry_power = 0.15
 	}
 	
 	bonus = {
