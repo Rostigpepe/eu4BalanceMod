@@ -1817,6 +1817,7 @@ banner_regiment = {
 
 streltsy_regiment = {
     fire_damage = 0.1
+	regiment_manpower_usage = -0.25
 }
 
 cossacks_regiment = {
@@ -1844,7 +1845,7 @@ innovativeness = {
 rajput_regiment = {
 	drill_decay_modifier = -0.25
 	reinforce_cost_modifier = -0.5
-	land_morale = 0.05
+	land_morale = 0.10
 }
 
 raiding_parties_modifier = {
