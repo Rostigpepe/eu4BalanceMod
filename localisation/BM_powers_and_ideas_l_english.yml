@@ -281,3 +281,23 @@ holy_father_commands:0 "The Holy Father Commands..."
  holy_father_commands_desc:0 "The Pope has issued a blessing of a command that all citizens must now contribute to the building of our Holy-State. From foraging and farming the lands to contributing more of their free time to working. By implementing a minimum work-time of at least 10 hours a day, we can reap the rewards and put more people into working for God."
  flock_obeys:0 "...And His Flock Obeys"
  flock_obeys_desc:0 "Our Holy Father, the Pope, ruler of the Papal States and all the Christian world has utmost command of our people, being the direct link to God. There are those that don't believe in our message however. Stronger powers think that we are but a small administrative justification for the catholic faith, we shall prove them wrong. By declaring our enemies heretics and excommunicating them we can rile up the Christian world against them. No one dares, or can, doubt the word of the Pope, for his word is the word of God."
+
+
+###    ARISTOCRATIC IDEAS      ###
+aristocracy_ideas:0 "Aristocratic Ideas"
+ aristocracy_ideas_bonus:0 "Full Aristocracy"
+ noble_knights:0 "Noble Knights"
+ noble_knights_desc:0 "Supporting cavalry requires a lot of work, both economically and logistically. If we were to guarantee the privileges of our noble class to not only have the right to raise hosts of cavalry, but also serve as Chivalrous knights in our armies, they would be happy to do much of the work to supply us with the cavalry we need. Our court fool described it as service guarantees serfs."
+ serfdom:0 "Serfdom"
+ serfdom_desc:0 "A foot soldier in the army is not quite the career that anyone wanted, what with the poor food, low pay, and virtually nonexistent medical services. If we were to tie our peasants to the land we would know exactly where to look for recruits."
+ noble_officers:0 "Noble Officers"
+ noble_officers_desc:0 "Who leads our troops is an important choice. Our nobility is seeking to ensure that preference is given to them. It will give them a chance to show their valor by giving the enemy cold steel and we will allow them to do this."
+ local_nobility:0 "Local Nobility"
+ local_nobility_desc:0 "The nobility know they are simply better than normal people and will give their loyalty to those that are worthy. If we confirm their privileges, they will of course remember our largess and be more resistant to the inducements of foreign powers."
+ international_nobility:0 "International Nobility"
+ international_nobility_desc:0 "International relations are a tricky business. Some say that the merchant class who are used to dealing with foreigners are best for this. Those who say this ignore the kindred ties that our noble families have established through the years, these ties should be taken advantage of to help our cause diplomatically."
+ noble_connections:0 "Noble Connections"
+ noble_connections_desc:0 "When our ruler dies without an heir, it is quite unfortunate that Nobles come like hungry wolves at the door, waiting to strike against our Royal household to seize power for themselves. By appointing a secondary-heir in advance from one noble families, we can ensure that the claims of our heir to their rightful throne is reinforced."
+ military_traditions:0 "Military Traditions"
+ military_traditions_desc:0 "Military thought is constantly evolving and we ensure that our military thought evolves with it. By encouraging a tradition of service amongst our nobility, to be a man of status is to be a man who has won glory on the battlefield. Although bravery and stuff like that is always useful, there is nothing quite like outclassing your enemy to make it easy."
+ 
