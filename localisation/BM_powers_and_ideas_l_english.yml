@@ -300,4 +300,35 @@ aristocracy_ideas:0 "Aristocratic Ideas"
  noble_connections_desc:0 "When our ruler dies without an heir, it is quite unfortunate that Nobles come like hungry wolves at the door, waiting to strike against our Royal household to seize power for themselves. By appointing a secondary-heir in advance from one noble families, we can ensure that the claims of our heir to their rightful throne is reinforced."
  military_traditions:0 "Military Traditions"
  military_traditions_desc:0 "Military thought is constantly evolving and we ensure that our military thought evolves with it. By encouraging a tradition of service amongst our nobility, to be a man of status is to be a man who has won glory on the battlefield. Although bravery and stuff like that is always useful, there is nothing quite like outclassing your enemy to make it easy."
- 
+
+
+###     HUMANIST IDEAS      ###
+ humanist_ideas:0 "Humanist Ideas"
+ humanist_ideas_bonus:0 "Full Humanist"
+ local_traditions:0 "Local Traditions"
+ local_traditions_desc:0 "Governing a large nation means ruling over many diverse peoples, each with their own customs and traditions. By incorporating these traditions into our official code of laws we create a happy and loyal populace."
+ indirect_rule:0 "Indirect Rule"
+ indirect_rule_desc:0 "Sometimes the best way to get people to do what you want is to let them believe that they're making their own choices. Such a system of indirect rule will reduce the unrest in newly acquired provinces."
+ cultural_ties:0 "Cultural Ties"
+ cultural_ties_desc:0 "Different cultures have different customs, and for some reason tend to resist attempts from above to change said customs. We can turn this weakness into a strength by incorporating local leaders into our system of government and having them carry out our will in a way that is palatable to them."
+ benevolence:0 "Benevolence"
+ benevolence_desc:0 "Our nation is a bastion of tolerance and enlightenment. By ensuring that we can foster better relations with the various cultures and religions within our borders."
+
+
+###     ADMINISTRATIVE IDEAS      ###
+administrative_ideas:0 "Administrative Ideas"
+ administrative_ideas_bonus:0 "Fully Administrative"
+ organised_payment:0 "Organized Payments"
+ organised_payment_desc:0 "Sometimes money is short and we need to borrow. Lenders always worry that they will not be paid back. By maintaining meticulous records, we will be able to ensure that everyone gets paid and that will allow us to negotiate lower rates of interest."
+adaptability:0 "Adaptability"
+ adaptability_desc:0 "There is what is ours and what is part of our ancestral domain that will never be surrendered. A bit of flexibility here will see much more land being considered never surrenderable and should the worst happen the whole world will know our crusade to recover it will be just."
+benefits_for_servants:0 "Benefits for Royal Servants"
+benefits_for_servants_desc:0 "Royal Servants are a canny lot. They would sell any piece of information to our rivals for pouch of ducats given the chance. We will make sure that our servants are well rewarded for their services and publically execute those who betray us to make an example to those who yet haven't. This will make sure that none of our secrets in the future will be told to our enemies."
+ royal_academies:0 "Royal Academies"
+ royal_academies_desc:0 "By sending our rulers and coming heirs to so-called 'Royal Academies', we can ensure that our Monarchs learn skills useful that will help them manage the state."
+expanded_administration:0 "Expanded Administration"
+ expanded_administration_desc:0 "As our administrators and governing bodies grow more efficient at managing our state, so grows our ability to expand and adapt to those expansions."
+ administrative_efficiency_idea:0 "Administrative Efficiency"
+ administrative_efficiency_idea_desc:0 "The most important part of any government is getting the right advice. We must ensure that we are as inclusive as possible when it comes to advisors so we can maximize the number of different viewpoints we are presented with."
+civil_servants:0 "Civil Service"
+ civil_servants_desc:0 "By establishing a Civil Service of eager young bureaucrats will ensure that we are able to quickly adapt to new advances in administration and governance."
