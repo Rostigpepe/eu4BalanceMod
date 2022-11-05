@@ -1822,6 +1822,7 @@ streltsy_regiment = {
 
 cossacks_regiment = {
     shock_damage = 0.1
+	loot_amount = 0.5
 }
 
 carolean_regiment = {
