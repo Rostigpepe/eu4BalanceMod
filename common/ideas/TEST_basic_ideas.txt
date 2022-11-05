@@ -1,0 +1,39 @@
+military_dictatorship_gov_ideas = {
+	category = MIL
+	
+	bonus = {
+		
+	}
+	
+	trigger = {
+		has_government_attribute = military_dictatorship_idea_group
+	}
+	servants_of_god = {
+		
+	}
+	by_the_grace_of_god = {
+		
+	}
+	friends_in_high_places = {
+		
+	}
+	flesh_is_weak = {
+		
+	}
+	alpha_and_omega = {
+		
+	}
+	conviction_of_sin = {
+		
+	}
+	martyrs = {
+		
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+	}
+}
