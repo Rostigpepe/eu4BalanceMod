@@ -101,4 +101,3 @@
 4881 = { "Adreuli" "Adreuli" }             #Early (County in Georgia)
 
 2025 = "Kinulovani Sakartvelo" #Icy Georgia
-

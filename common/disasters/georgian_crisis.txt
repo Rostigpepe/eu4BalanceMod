@@ -5,7 +5,7 @@ georgian_crisis = {
 		NOT = { mission_completed = geo_consolidate_georgia }
 		NOT = { has_country_modifier = georgian_crisis_aftermath }
 		is_free_or_tributary_trigger = yes
-		IME = ( 
+		IME = { 
 		    core_claim = GEO
 		}
 		SME = {

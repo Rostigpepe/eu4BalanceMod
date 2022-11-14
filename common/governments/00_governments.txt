@@ -62,6 +62,10 @@ monarchy = {
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
+				#Georgian modded Governments
+				georgian_principality_reform
+				georgian_monarchy_reform
+				georgian_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -104,6 +108,8 @@ monarchy = {
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
+				saeristavo_reform_mon
+				sadrosho_reform_mon
 			}
 		}
 		state_and_religion = {
@@ -166,6 +172,7 @@ monarchy = {
 				become_a_republic_reform
 				install_theocratic_government_reform
 				become_rev_republic_reform
+				karavi_reform
 			}
 		}
 		economical_matters = {
@@ -257,6 +264,7 @@ monarchy = {
 	}
 	
 	# Dictatorships etc
+	# Georgian "Republic" is a Stratocratic Dictatorship of eristavis
 	exclusive_reforms = {
 		military_dictatorship_reform
 		protectorate_parliament_reform
@@ -268,6 +276,7 @@ monarchy = {
 		lottery_reform
 		dutch_republic
 		force_reelection_reform
+		georgian_republic_reform
 	}
 
 	#States General works with few others
@@ -374,6 +383,8 @@ republic = {
 				united_cantons_reform
 				kongsi_federation
 				millenarian_theocracy_reform
+				#Georgian Elective government ruled by Eristavis
+				georgian_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -449,6 +460,8 @@ republic = {
 				union_of_states_reform
 				penal_colonies_reform
 				cultural_administration_reform
+				saeristavo_reform_rep
+				sadrosho_reform_rep
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -496,6 +509,8 @@ republic = {
 				absolute_president_reform
 				revolutionary_council_reform
 				allotment_system
+				broaden_functions_of_karavi_reform
+				broaden_functions_of_darbazi_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -559,6 +574,7 @@ republic = {
 		pirate_republic_reform
 		protectorate_parliament_reform
 		prussian_republic_reform
+		georgian_republic_reform
 	}
 	exclusive_reforms = {
 		lottery_reform
@@ -569,6 +585,7 @@ republic = {
 		military_rulership_reform
 		prussian_republic_reform
 		military_dictatorship_reform
+		georgian_republic_reform
 	}
 	exclusive_reforms = {
 		free_city
@@ -784,6 +801,7 @@ theocracy = {
 				militarized_crusader_order_reform
 				merchant_theocracy_reform
 				reformer_state_reform
+				georgian_theocracy_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -841,6 +859,8 @@ theocracy = {
 				pious_merchants_reform
 				monastic_breweries_reform
 				warrior_monks_reform
+				saeristavo_reform_theo
+				sadrosho_reform_theo
 			}
 		}
 		secularization = {
@@ -921,6 +941,7 @@ theocracy = {
 		prussian_theocratic_reform
 		militarized_crusader_order_reform
 		monastic_elections_reform
+		georgian_theocracy_reform
 	}
 }
 

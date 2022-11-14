@@ -8,10 +8,10 @@ military_dictatorship_gov_ideas = {
 	trigger = {
 		has_government_attribute = military_dictatorship_idea_group
 	}
-	servants_of_god = {
+	servants_of_our_autocrat = {
 		
 	}
-	by_the_grace_of_god = {
+	the_law_of_the_jungle = {
 		
 	}
 	friends_in_high_places = {

@@ -5,8 +5,7 @@ envoy_travel_time_i = {
 	potential = {
 	NOT = { 
 		dip_tech = 10 
-		}
-	player = yes	
+		}	
 	dip_tech = 0
 	}
 
@@ -23,8 +22,7 @@ envoy_travel_time_ii = {
 	potential = {
 	NOT = { 
 		dip_tech = 13 
-		}
-	player = yes	
+		}	
 	dip_tech = 2
 	}
 
@@ -41,8 +39,7 @@ envoy_travel_time_iii = {
 	potential = {
 	NOT = { 
 		dip_tech = 17 
-		}
-	player = yes	
+		}	
 	dip_tech = 10
 	}
 
@@ -59,8 +56,7 @@ envoy_travel_time_iv = {
 	potential = {
 	NOT = { 
 		dip_tech = 22 
-		}
-	player = yes	
+		}	
 	dip_tech = 13
 	}
 
@@ -77,8 +73,7 @@ envoy_travel_time_v = {
 	potential = {
 	NOT = { 
 		dip_tech = 26 
-		}
-	player = yes	
+		}	
 	dip_tech = 17
 	}
 
@@ -92,8 +87,7 @@ envoy_travel_time_v = {
 }
 
 envoy_travel_time_vi = {
-	potential = {
-	player = yes	
+	potential = {	
 	dip_tech = 22
 	}
 
