@@ -1,0 +1,27 @@
+kat_hab_units_clone = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = AHE
+	}
+
+	sprite_infantry = {
+		0 = HAB_NEW_INFANTRY_1
+		1 = HAB_INFANTRY_2
+		2 = HAB_NEW_INFANTRY_3
+		3 = HAB_NEW_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = HAB_NEW_CAVALRY_1
+		1 = HAB_CAVALRY_2
+		2 = HAB_NEW_CAVALRY_3
+		3 = HAB_NEW_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = HAB_ARTILLERY_1
+		1 = HAB_ARTILLERY_2
+		2 = HAB_ARTILLERY_3
+		3 = HAB_ARTILLERY_4
+	}
+}
