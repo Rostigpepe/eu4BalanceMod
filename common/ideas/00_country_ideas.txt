@@ -1755,10 +1755,10 @@ PER_ideas = {
 	}
 	the_persian_phoenix = {
 		war_exhaustion = -0.05
-		province_trade_power_modifier = 0.1
+		global_prov_trade_power_modifier = 0.1
 	}
 	isfahan_school_of_islamic_philosophy = {
-		monthly_piety = -0.1
+		monthly_piety = -0.01
 		idea_cost = -0.1
 	}
 	found_the_ghulams = {
