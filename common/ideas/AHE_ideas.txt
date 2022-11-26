@@ -5,7 +5,7 @@ AHE_ideas = {
 	}
 	
 	bonus = {
-		administrative_efficiency = 0.5
+		administrative_efficiency = 0.05
 	}
 	
 	trigger = {
@@ -19,7 +19,7 @@ AHE_ideas = {
 		
 	}
 	donau_river_dominance_ahe = {
-		global_prov_trade_power_modifier = 0.1
+		global_prov_trade_power_modifier = 0.25
 	}
 	ethnic_minorities_act_ahe = {
 		morale_damage_received = -0.05

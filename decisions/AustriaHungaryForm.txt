@@ -124,8 +124,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			legitimacy = 80
-			custom_trigger_tooltip = {
-				tooltip = forming_ah_diplomatically_tooltip
+			adm_tech = 20
 					AND = {
 						tag = HAB
 						HUN = {	is_subject_of = HAB	}
