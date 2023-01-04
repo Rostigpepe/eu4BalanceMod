@@ -1049,8 +1049,8 @@ humanist_ideas = {
 		religious_unity = 0.25
 	}
 	local_traditions = {
-		global_autonomy = 0.03
-		manpower_in_accepted_culture_provinces = 0.10
+		global_autonomy = -0.05
+		manpower_in_accepted_culture_provinces = 0.25
 	}
 	ecumenism = {
 		tolerance_heretic = 2

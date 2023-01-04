@@ -25,11 +25,11 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		manpower_in_culture_group_provinces = 0.25
+		global_manpower_modifier = 0.25
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
-		movement_speed = 0.25
+		movement_speed = 0.35
 
         #Changes
         #Spread from -0.15 to -0.25
@@ -39,7 +39,6 @@ steppe_horde = {
         
         #Added
         embracement_cost = 0.25
-        development_cost = 0.1
 		available_province_loot = 1
 	}
 	custom_attributes = {

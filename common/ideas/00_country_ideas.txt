@@ -9501,7 +9501,7 @@ YUA_ideas = {
 		cavalry_power = 0.20
 	}
 	bonus = {
-		governing_capacity_modifier = 0.1
+		governing_capacity_modifier = 0.25
 	}
 	trigger = {
 		tag = YUA
@@ -9512,10 +9512,10 @@ YUA_ideas = {
 		core_creation = -0.25
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
-		technology_cost = -0.1
+		technology_cost = -0.15
 	}
 	yua_keshik_and_weijun = {
 		shock_damage = 0.1
@@ -9525,7 +9525,7 @@ YUA_ideas = {
 		envoy_travel_time = -0.1
 	}
 	yua_sino_mongol_administration = {
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.1
 	}
 	yua_pax_mongolica = {
 		global_trade_goods_size_modifier = 0.1
@@ -14920,7 +14920,7 @@ OIR_ideas = {
 	
 	fearsome_warriors_of_tumu = {
 		leader_land_manuever = 1
-		cavalry_cost = -0.1
+		cavalry_cost = -0.33
 	}
 	life_of_steppe_warrior = { #also used in Horde ideas, KHA_ideas
 		land_attrition = -0.20
