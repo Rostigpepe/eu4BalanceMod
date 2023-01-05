@@ -151,6 +151,10 @@ tribal_pax_mongolica_reform = {
 				has_reform = steppe_horde
 				culture_group = altaic
 			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+			}
 		}
 		
 	}
@@ -238,6 +242,10 @@ tribal_tengri_world_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}
@@ -364,6 +372,10 @@ tribal_lessons_reform = {
 				has_reform = steppe_horde
 				culture_group = altaic
 			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+			}
 		}
 	}
 	modifiers = {
@@ -474,6 +486,10 @@ tribal_silk_road_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}
@@ -602,6 +618,10 @@ tribal_dirham_reform = {
 				has_reform = steppe_horde
 				culture_group = altaic
 			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+			}
 		}
 	}
 	modifiers = {
@@ -729,6 +749,10 @@ tribal_law_of_yassa_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}

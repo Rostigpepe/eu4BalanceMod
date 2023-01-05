@@ -16,8 +16,7 @@ country_decisions = {
 				HUN = { ai = yes }
 			}
 			OR = {
-				culture_group = germanic
-				primary_culture = austrian
+				tag = HAB
 			}
 			is_colonial_nation = no
 			OR = {

@@ -9512,7 +9512,7 @@ YUA_ideas = {
 		core_creation = -0.25
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
-		cavalry_cost = -0.2
+		cavalry_cost = -0.33
 		land_morale = 0.15
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
