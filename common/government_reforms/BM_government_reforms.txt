@@ -29,7 +29,7 @@ steppe_horde = {
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
-		movement_speed = 0.25
+		movement_speed = 0.20
 
         #Changes
         #Spread from -0.15 to -0.25
@@ -74,7 +74,7 @@ great_mongol_state_reform = {
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
-		movement_speed = 0.3
+		movement_speed = 0.25
 
 		#Changes
 		loot_amount = 1

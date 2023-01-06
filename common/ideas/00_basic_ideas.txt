@@ -1037,14 +1037,12 @@ administrative_ideas = {
 
 humanist_ideas = {
 	category = ADM
-
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
 	}
-
 	tolerance_idea = {
 		religious_unity = 0.25
 	}
