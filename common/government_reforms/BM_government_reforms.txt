@@ -106,7 +106,7 @@ tribal_herders_steppes_reform = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.1
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.2
 	}
 	ai = {
 		factor = 2
