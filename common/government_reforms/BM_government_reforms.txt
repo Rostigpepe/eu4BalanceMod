@@ -107,7 +107,7 @@ tribal_herders_steppes_reform = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.1
-		min_autonomy_in_territories = -0.2
+		min_autonomy_in_territories = -0.1
 	}
 	ai = {
 		factor = 2
@@ -327,7 +327,7 @@ tribal_traditionalism_reform = {
 		}
 	}
 	modifiers = {
-		available_province_loot = 2
+		available_province_loot = 1
 		shock_damage = 0.05
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
