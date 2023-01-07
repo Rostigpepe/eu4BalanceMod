@@ -612,7 +612,8 @@ RUS_ideas = {
 	}
 
 	russian_artillery_yard = {
-		artillery_power = 0.10 
+		artillery_power = 0.10
+		
 	}
 	russian_winter = {
 		hostile_attrition = 1	
