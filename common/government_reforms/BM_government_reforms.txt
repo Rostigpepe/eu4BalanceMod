@@ -25,11 +25,15 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		manpower_in_culture_group_provinces = 0.25
+		global_manpower_modifier = 0.25
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
+<<<<<<< HEAD
 		movement_speed = 0.20
+=======
+		movement_speed = 0.35
+>>>>>>> f8a5bfdc4c3228ad2de53cf3df01ed3b7a6ef7e7
 
         #Changes
         #Spread from -0.15 to -0.25
@@ -39,7 +43,6 @@ steppe_horde = {
         
         #Added
         embracement_cost = 0.25
-        development_cost = 0.1
 		available_province_loot = 1
 	}
 	custom_attributes = {
@@ -107,7 +110,7 @@ tribal_herders_steppes_reform = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.1
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.2
 	}
 	ai = {
 		factor = 2
@@ -151,6 +154,10 @@ tribal_pax_mongolica_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 		
@@ -239,6 +246,10 @@ tribal_tengri_world_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}
@@ -365,6 +376,10 @@ tribal_lessons_reform = {
 				has_reform = steppe_horde
 				culture_group = altaic
 			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+			}
 		}
 	}
 	modifiers = {
@@ -475,6 +490,10 @@ tribal_silk_road_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}
@@ -603,6 +622,10 @@ tribal_dirham_reform = {
 				has_reform = steppe_horde
 				culture_group = altaic
 			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+			}
 		}
 	}
 	modifiers = {
@@ -730,6 +753,10 @@ tribal_law_of_yassa_reform = {
 			AND = {
 				has_reform = steppe_horde
 				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
 			}
 		}
 	}
