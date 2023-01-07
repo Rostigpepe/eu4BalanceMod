@@ -33,13 +33,13 @@ steppe_horde = {
 
         #Changes
         #Spread from -0.15 to -0.25
-        global_institution_spread = -0.20
+        global_institution_spread = -0.25
         #Loot from 0.5 to 1
         loot_amount = 1
         
         #Added
-		development_cost_modifier = 0.05
-        embracement_cost = 0.20
+		development_cost_modifier = 0.10
+        embracement_cost = 0.25
 		available_province_loot = 0.5
 	}
 	custom_attributes = {
@@ -75,10 +75,15 @@ great_mongol_state_reform = {
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
 		movement_speed = 0.25
+		
+		#Changes2
+		development_cost_modifier = 0.10
+        embracement_cost = 0.25
+		global_institution_spread = -0.25
 
 		#Changes
 		loot_amount = 1
-		available_province_loot = 2
+		available_province_loot = 1
 	}
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
@@ -160,7 +165,7 @@ tribal_pax_mongolica_reform = {
 		
 	}
 	modifiers = {
-		global_unrest = -2
+		global_unrest = -1
 		num_accepted_cultures = 2
 	}
 	ai = {
@@ -252,7 +257,7 @@ tribal_tengri_world_reform = {
 	}
 	modifiers = {
 		tolerance_heathen = 2
-		tolerance_heretic = 1
+		tolerance_heretic = 2
 		tolerance_own = 1
 	}
 	ai = {
@@ -270,8 +275,8 @@ tribal_charade_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -2
-		diplomatic_reputation = 2
+		global_unrest = -1
+		diplomatic_reputation = 1
 	}
 	ai = {
 		factor = 2
@@ -382,7 +387,6 @@ tribal_lessons_reform = {
 	modifiers = {
 		leader_siege = 1
 		leader_land_manuever = 1
-		shock_damage = 0.05
 	}
 	ai = {
 		factor = 2
@@ -548,7 +552,6 @@ retain_tribal_hierarchy_reform = {
 	modifiers = {
 		governing_capacity = 200
 		max_absolutism = 10
-		core_creation = -0.1
 	}
 	ai = {
 		factor = 1
@@ -598,7 +601,7 @@ tribal_bashqaq_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -2
+		global_unrest = -1
 		governing_capacity = 250
 	}
 	ai = {
@@ -626,7 +629,7 @@ tribal_dirham_reform = {
 		}
 	}
 	modifiers = {
-		trade_efficiency = 0.2
+		trade_efficiency = 0.15
 		diplomatic_annexation_cost = -0.2
 	}
 	ai = {
