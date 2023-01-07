@@ -1,3 +1,198 @@
+tsardom_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		governing_capacity = 300
+		global_manpower_modifier = 0.20
+		yearly_absolutism = 0.5
+		global_autonomy = -0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+###		TIER 2 TSARDOM		###
+
+muscovite_manorialism_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+			tag = MOS
+		}
+	}
+	modifiers = {
+		infantry_cost = -0.10
+		nobles_influence_modifier = 0.05
+
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 3 TSARDOM		###
+
+oprichnina_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+			tag = MOS
+		}
+	}
+	modifiers = {
+		nobles_influence_modifier = -0.1
+		unjustified_demands = -0.25
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 4 TSARDOM		###
+
+academy_of_sciences_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+		}
+	}
+	modifiers = {
+		spy_offence = 0.15
+		technology_cost = -0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 5 TSARDOM		###
+
+siberian_frontier_expeditionaries_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+			tag = NOV
+		}
+	}
+	modifiers = {
+		trade_company_investment_cost = -0.10
+		min_autonomy_in_territories = -0.10
+		may_explore = yes
+		burghers_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 6 TSARDOM		###
+
+russian_autocratism_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+		}
+	}
+	modifiers = {
+		allow_free_estate_privilege_revocation = yes
+		all_estate_influence_modifier = -0.05
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 7 TSARDOM		###
+
+toleration_of_all_faiths_edict_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+		}
+	}
+	modifiers = {
+		min_autonomy_in_territories = -0.05
+		state_maintenance_modifier = -0.20
+		religious_unity = 0.10
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		TIER 8 TSARDOM		###
+
+the_governing_senate_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			has_reform = tsardom_legacy
+			culture_group = east_slavic
+			tag = RUS
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		national_focus_years = -5
+		governing_capacity = 150
+	}
+	ai = {
+		factor = 2
+	}
+}
+
 steppe_horde = {
 	icon = "horde_riding"
 	allow_normal_conversion = no
@@ -1363,3 +1558,4 @@ native_clan_council_reform = {
 		all_power_cost = 0.2
 	}
 }
+
