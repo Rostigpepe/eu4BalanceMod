@@ -185,7 +185,7 @@ the_governing_senate_reform = {
 	}
 	modifiers = {
 		national_focus_years = -5
-		governing_capacity = 150
+		governing_capacity = 200
 	}
 	ai = {
 		factor = 2
