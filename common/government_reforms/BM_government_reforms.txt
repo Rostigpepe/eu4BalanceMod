@@ -74,15 +74,15 @@ oprichnina_reform = {
 		}
 	}
 	modifiers = {
-		nobles_influence_modifier = -0.1
-		unjustified_demands = -0.25
+		nobles_influence_modifier = -0.05
+		unjustified_demands = -0.20
 	}
 	ai = {
 		factor = 2
 	}
 }
 
-###		TIER 4 TSARDOM		###
+###		TIER 6 TSARDOM		###
 
 academy_of_sciences_reform = {
 	allow_normal_conversion = yes
@@ -103,7 +103,7 @@ academy_of_sciences_reform = {
 	}
 }
 
-###		TIER 5 TSARDOM		###
+###		TIER 7 TSARDOM		###
 
 siberian_frontier_expeditionaries_reform = {
 	allow_normal_conversion = yes
@@ -118,7 +118,7 @@ siberian_frontier_expeditionaries_reform = {
 	}
 	modifiers = {
 		trade_company_investment_cost = -0.10
-		min_autonomy_in_territories = -0.10
+		min_autonomy_in_territories = -0.05
 		may_explore = yes
 		burghers_influence_modifier = 0.1
 	}
@@ -127,7 +127,7 @@ siberian_frontier_expeditionaries_reform = {
 	}
 }
 
-###		TIER 6 TSARDOM		###
+###		TIER 8 TSARDOM		###
 
 russian_autocratism_reform = {
 	allow_normal_conversion = yes
@@ -149,7 +149,7 @@ russian_autocratism_reform = {
 	}
 }
 
-###		TIER 7 TSARDOM		###
+###		TIER 9 TSARDOM		###
 
 toleration_of_all_faiths_edict_reform = {
 	allow_normal_conversion = yes
@@ -171,7 +171,7 @@ toleration_of_all_faiths_edict_reform = {
 	}
 }
 
-###		TIER 8 TSARDOM		###
+###		TIER 10 TSARDOM		###
 
 the_governing_senate_reform = {
 	allow_normal_conversion = yes
@@ -184,7 +184,6 @@ the_governing_senate_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = 5
 		national_focus_years = -5
 		governing_capacity = 150
 	}
@@ -1088,7 +1087,7 @@ georgian_empire_reform = {
 
 #Growth of Administration
 
-saeristavo_reform_mon = {
+saeristavo_reform_ = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	
@@ -1131,7 +1130,7 @@ saeristavo_reform_mon = {
 	}
 }
 
-sadrosho_reform_mon = {
+sadrosho_reform = {
 	icon = "clergyman"
 	allow_normal_conversion = yes
 	

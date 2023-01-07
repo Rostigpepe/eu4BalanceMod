@@ -88,6 +88,7 @@ monarchy = {
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
 				grant_military_command_reform
+				muscovite_manorialism_reform
 			}
 		}
 		bureaucracy = {
@@ -108,8 +109,9 @@ monarchy = {
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
-				saeristavo_reform_mon
-				sadrosho_reform_mon
+				saeristavo_reform
+				sadrosho_reform
+				oprichnina_reform
 			}
 		}
 		state_and_religion = {
@@ -173,6 +175,7 @@ monarchy = {
 				install_theocratic_government_reform
 				become_rev_republic_reform
 				karavi_reform
+				academy_of_sciences_reform
 			}
 		}
 		economical_matters = {
@@ -185,6 +188,7 @@ monarchy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
+				siberian_frontier_expeditionaries_reform
 			}
 		}
 		legitimation_of_power = {
@@ -194,6 +198,7 @@ monarchy = {
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
+				russian_autocratism_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -205,6 +210,7 @@ monarchy = {
 				consulate_reform
 				military_electorate_reform
 				revolutionary_council_reform
+				toleration_of_all_faiths_edict_reform
 			}
 		}
 		separation_of_power = {
@@ -214,6 +220,7 @@ monarchy = {
 				presidential_monarchy_reform
 				emperor_of_the_revolution_reform
 				enlightened_monarchy_reform
+				the_governing_senate_reform
 			}
 		}
 	}
