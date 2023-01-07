@@ -282,6 +282,25 @@ holy_father_commands:0 "The Holy Father Commands..."
  flock_obeys:0 "...And His Flock Obeys"
  flock_obeys_desc:0 "Our Holy Father, the Pope, ruler of the Papal States and all the Christian world has utmost command of our people, being the direct link to God. There are those that don't believe in our message however. Stronger powers think that we are but a small administrative justification for the catholic faith, we shall prove them wrong. By declaring our enemies heretics and excommunicating them we can rile up the Christian world against them. No one dares, or can, doubt the word of the Pope, for his word is the word of God."
 
+###   PRUSSIAN IDEAS    ###
+PRU_ideas:0 "Prussian Ideas"
+ PRU_ideas_start:0 "Prussian Traditions"
+ PRU_ideas_bonus:0 "Prussian Ambition"
+ at_the_confluence_of_two:0 "At the Confluence of Two"
+ at_the_confluence_of_two_desc:0 "The Lands of Prussia are in a precarious position as it is. To the south lie the Poles, historically strong and stalwart in their ways and certainly a threat to Prussia; to the west lie the domains of our humble beginning, the Holy Roman Empire, a place of great prestige and also great tension and blodshed. We of Prussia need to work on making sure both avenues are safe and secure diplomatically, and when intrigue or opportunity arises that we can take advantage of, we will strike whilst the iron is hot and take what land we can."
+ prussian_secularization:0 "Religious Toleration"
+ prussian_secularization_desc:1 "Stability at home is the key to our success. If we wish to expand by encouraging tolerance of different religions, not only do we improve stability at home, but our realm will become a haven for those who flee persecution elsewhere."
+ the_friedrich_wilhelm_reforms:0 "The Friedrich Wilhelm's Reforms"
+ the_friedrich_wilhelm_reforms_desc:0 "Friedrich Wilhelm the Great reorganized the prussian economy, by establishing additional protections for religious minorities, a national bank, tax reforms and industrial investments. As a direct result from these policies and reforms, many immigrants came into the less developed parts of the nation, and both the industrial output and the state solvency soared."
+ military_industrial_complexes:0 "Military-Industrial Complexes"
+ military_industrial_complexes_desc:0 "As the needs of our troops expand, demands for reliable and streamlined forms of military equipment is rising. Already blacksmiths and rich barons are building complexes and workshops for producing military goods. By further investing and promoting these industrial sectors we can not only meet the demands of our military, but also expanding our homegrown markets."
+ goose_step:0 "The Goose Step"
+ goose_step_desc:0 "Although looking rather odd, the goose step was specifically developed to ensure that our men help hold their line as they advanced towards the enemy. This gives our armies a real advantage on the battlefield."
+ eagle_in_the_north:0 "Eagle In The North"
+ eagle_in_the_north_desc:0 "Never has a great power as militarily mighty as ours emerged from such a previously small and poor land. But that is exactly what we have managed. All across Europe, Lords, Kings, and Emperors shall fear the rythmic thumping of Prussian boots crossing their borders. The trumpets of war grow louder, and we shall take the initiative with the finest army across the land!"
+ regimental_cantons:0 "Regimental Cantons"
+ regimental_cantons_desc:0 "Peasants are naturally not keen on a lifetime of service in the Army, so they tend to run away when recruiters come along. Now we give each regiment a recruiting district to draw manpower from. Each youth is expected to train for 3 months of the year so he is ready for service. This should ensure a steadier supply of manpower for armies."
+
 
 ###    ARISTOCRATIC IDEAS      ###
 aristocracy_ideas:0 "Aristocratic Ideas"
