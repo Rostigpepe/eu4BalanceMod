@@ -285,6 +285,38 @@ religious_ideas = {
 		church_loyalty_modifier = 0.1
 	}
 
+	trigger = {
+		NOT = {
+			OR = {
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = orthodox
+			religion_group  = muslim
+			religion = shinto
+			religion = norse_pagan_reformed
+			religion = buddhism
+			religion = confucianism
+			religion_group = dharmic
+			religion = tengri_pagan_reformed
+			religion = coptic
+			religion_group = jewish_group
+			religion = animism
+			religion = shamanism 
+			religion = zoroastrian 
+			religion = vajrayana
+			religion = mahayana
+			religion = anglican
+			religion = mesoamerican_religion
+			religion = inti
+			religion = totemism
+			religion = nahuatl
+			religion = hussite
+			religion = dreamtime
+			}
+		}
+	}
+
 	missionary_schools = {
 		missionaries = 1
 	}

@@ -1183,8 +1183,7 @@ feti0 = {
 	category = ADM
 	trigger = {
 		OR = {
-			religion = shamanism 
-			religion_group = african_pagan 
+			religion = shamanism
 		}
 	}
 	bonus = {
