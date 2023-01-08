@@ -264,7 +264,7 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 300
+	cost = 350
 	time = 30
 	modifier = {
 		fort_level = 2
@@ -589,7 +589,7 @@ regimental_camp = {
 }
 
 fort_16th = {
-	cost = 600
+	cost = 700
 	time = 30
 	make_obsolete = fort_15th
 	modifier = {
@@ -998,7 +998,7 @@ training_fields = {
 
 
 fort_17th = {
-	cost = 900
+	cost = 1050
 	time = 30
 
 	make_obsolete = fort_16th
@@ -1383,7 +1383,7 @@ conscription_center = {
 
 
 fort_18th = {
-	cost = 1200
+	cost = 1400
 	time = 30
 
 

@@ -4,7 +4,7 @@
 
 -- N MILITARY STUFFS
 --Fortress upkeep
-NDefines.NMilitary.FORTRESS_COST = 1
+NDefines.NMilitary.FORTRESS_COST = 0.7
 
 --Insufficient support to positive
 NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.15

@@ -1087,7 +1087,7 @@ georgian_empire_reform = {
 
 #Growth of Administration
 
-saeristavo_reform_ = {
+saeristavo_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	
