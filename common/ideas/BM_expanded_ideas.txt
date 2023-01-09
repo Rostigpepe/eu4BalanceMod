@@ -1,0 +1,87 @@
+centralisation_ideas0 = {
+	category = ADM
+
+	trigger = {
+		NOT = {
+			has_idea_group = decentralisation_ideas0
+			}}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	centralisation_ideas1 = {
+		state_maintenance_modifier = -0.33
+	}
+	centralisation_ideas2 = {
+		global_autonomy = -0.05	
+	}
+	centralisation_ideas3 = {
+		state_governing_cost = -0.15
+		governing_capacity_modifier = -0.15
+	}
+	centralisation_ideas4 = {
+		expand_administration_cost = -0.25
+		reform_progress_growth = 0.15
+	}
+	centralisation_ideas5 = {
+		#Development efficiency
+		development_cost_modifier = -0.025
+	}
+	centralisation_ideas6 = {
+		global_prosperity_growth = 0.25
+	}
+	centralisation_ideas7 = {
+		build_cost = -0.1
+		state_governing_cost = -0.1
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_idea_group = administrative_ideas
+		}
+	}
+}
+
+decentralisation_ideas0 = {
+	category = ADM
+	
+	trigger = {
+		NOT = {
+			has_idea_group = centralisation_ideas0
+		}}
+	bonus = {
+		governing_capacity_modifier = 0.33
+	}
+	
+	decentralisation_ideas1 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas2 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas3 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas4 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas5 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas6 = {
+		min_autonomy_in_territories = -0.05
+	}
+	decentralisation_ideas7= {
+		min_autonomy_in_territories = -0.05
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_idea_group = administrative_ideas
+		}
+	}
+}
