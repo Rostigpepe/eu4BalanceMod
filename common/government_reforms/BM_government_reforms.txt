@@ -450,8 +450,8 @@ tribal_tengri_world_reform = {
 		}
 	}
 	modifiers = {
-		tolerance_heathen = 2
-		tolerance_heretic = 2
+		tolerance_heathen = 1
+		tolerance_heretic = 1
 		tolerance_own = 1
 	}
 	ai = {
@@ -486,7 +486,7 @@ tribal_one_on_high_reform = {
 		}
 	}
 	modifiers = {
-		tolerance_own = 2
+		tolerance_own = 1
 		cavalry_shock = 1
 	}
 	ai = {
@@ -745,7 +745,7 @@ retain_tribal_hierarchy_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		governing_capacity = 200
-		max_absolutism = 10
+		core_creation = -0.05
 	}
 	ai = {
 		factor = 1
@@ -823,8 +823,8 @@ tribal_dirham_reform = {
 		}
 	}
 	modifiers = {
-		trade_efficiency = 0.15
-		diplomatic_annexation_cost = -0.2
+		trade_efficiency = 0.10
+		diplomatic_annexation_cost = -0.15
 	}
 	ai = {
 		factor = 2
@@ -901,7 +901,7 @@ tribal_advanced_tribe_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.1
+		development_cost_modifier = -0.05
 		global_institution_spread = 0.1
 		governing_capacity_modifier = 0.1
 	}
