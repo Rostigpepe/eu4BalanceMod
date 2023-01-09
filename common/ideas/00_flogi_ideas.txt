@@ -1005,7 +1005,7 @@ coptic0 = {
 
 
 ########################################################
-####### Jüdische Ideen / Jewish Ideas
+####### Jï¿½dische Ideen / Jewish Ideas
 ########################################################
 
 
@@ -1183,8 +1183,7 @@ feti0 = {
 	category = ADM
 	trigger = {
 		OR = {
-			religion = shamanism 
-			religion_group = african_pagan 
+			religion = shamanism
 		}
 	}
 	bonus = {
