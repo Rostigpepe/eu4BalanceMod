@@ -57,7 +57,7 @@ marketplace = {
 }
 
 workshop = {
-	cost = 100
+	cost = 150
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
@@ -90,7 +90,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.4
+		local_tax_modifier = 0.5
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -681,7 +681,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 0.6
+		local_tax_modifier = 0.75
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
