@@ -1,0 +1,188 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_catholic_ideas0"
+		texturefile = "gfx/interface/ideas/BM_catholic_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_protestant_ideas0"
+		texturefile = "gfx/interface/ideas/BM_protestant_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_reformed_ideas0"
+		texturefile = "gfx/interface/ideas/BM_reformed_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_orthodox_ideas0"
+		texturefile = "gfx/interface/ideas/BM_orthodox_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_sunni_ideas0"
+		texturefile = "gfx/interface/ideas/BM_sunni_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_tengri_ideas0"
+		texturefile = "gfx/interface/ideas/BM_tengri_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_dharmic_ideas0"
+		texturefile = "gfx/interface/ideas/BM_dharmic_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_confucian_ideas0"
+		texturefile = "gfx/interface/ideas/BM_confucian_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_buddhism_ideas0"
+		texturefile = "gfx/interface/ideas/BM_buddhism_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_norse_ideas0"
+		texturefile = "gfx/interface/ideas/BM_norse_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_shinto_ideas0"
+		texturefile = "gfx/interface/ideas/BM_shinto_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_coptic_ideas0"
+		texturefile = "gfx/interface/ideas/BM_coptic_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_jewish_ideas0"
+		texturefile = "gfx/interface/ideas/BM_jewish_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_animist_ideas0"
+		texturefile = "gfx/interface/ideas/BM_animist_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_fetish_ideas0"
+		texturefile = "gfx/interface/ideas/BM_fetish_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_zoroastrian_ideas0"
+		texturefile = "gfx/interface/ideas/BM_zoroastrian_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_anglican_ideas0"
+		texturefile = "gfx/interface/ideas/BM_anglican_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_nahuatl_ideas0"
+		texturefile = "gfx/interface/ideas/BM_nahuatl_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_mesoamerican_ideas0"
+		texturefile = "gfx/interface/ideas/BM_mesoamerican_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_inti_ideas0"
+		texturefile = "gfx/interface/ideas/BM_inti_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_totemist_ideas0"
+		texturefile = "gfx/interface/ideas/BM_totemist_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_shia_ideas0"
+		texturefile = "gfx/interface/ideas/BM_shia_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_ibadi_ideas0"
+		texturefile = "gfx/interface/ideas/BM_ibadi_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_hussite_ideas0"
+		texturefile = "gfx/interface/ideas/BM_hussite_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_dreamtime_ideas0"
+		texturefile = "gfx/interface/ideas/BM_dreamtime_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_centralisation_ideas0"
+		texturefile = "gfx/interface/ideas/BM_centralism_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_decentralisation_ideas0"
+		texturefile = "gfx/interface/ideas/BM_decentralism_icon.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+}
