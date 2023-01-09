@@ -16,7 +16,7 @@ catholic_ideas0 = {
 	}
 	catholic_ideas3 = {
 		papal_influence = 2
-		devotion = 2
+		devotion = 1
 	}
 	catholic_ideas4 = {
 		cb_on_religious_enemies = yes
@@ -89,7 +89,7 @@ protestant_ideas0 = {
 	}
 	protestant_ideas1 = {
 		cb_on_religious_enemies = yes
-		free_leader_pool = 1
+		discipline = 0.025
 	}
 	protestant_ideas2 = {
 		missionaries = 1
@@ -175,7 +175,7 @@ reformed_ideas0 = {
 		tolerance_heretic = 2
 	}
 	reformed_ideas3 = {
-		siege_ability = 0.15
+		siege_ability = 0.10
 	}
 	reformed_ideas4 = {
 		morale_damage_received = -0.025
@@ -184,10 +184,10 @@ reformed_ideas0 = {
 		stability_cost_modifier = -0.15
 	}
 	reformed_ideas6 = {
-		discipline = 0.05
+		discipline = 0.025
 	}
 	reformed_ideas7 = {
-		monthly_fervor_increase = 3
+		monthly_fervor_increase = 1
 	}
 	
 	ai_will_do = {
@@ -241,6 +241,7 @@ orthodox_ideas0 = {
 	category = ADM
 	bonus = {
 		cb_on_religious_enemies = yes
+		land_morale = 0.10
 	}
 	trigger = {
 		religion = orthodox
@@ -633,7 +634,7 @@ buddhism_ideas0 = {
 		idea_cost = -0.05
 	}
 	buddhism_ideas2 = {
-		prestige = 1
+		prestige_decay = -0.01
 	}
 	buddhism_ideas3 = {
 		diplomatic_reputation = 1
@@ -786,7 +787,6 @@ shinto_ideas0 = {
 		religion  = shinto
 	}
 	bonus = {
-		missionaries = 1
 		global_missionary_strength = 0.02
 	}
 	shinto_ideas1 = {
@@ -967,7 +967,7 @@ jewish_ideas0 = {
 		interest = -1	
 	}
 	jewish_ideas7 = {
-		discipline = 0.05
+		discipline = 0.025
 	}
 
 	ai_will_do = {
@@ -1199,7 +1199,7 @@ zoroastrian_ideas0 = {
 		yearly_absolutism = 1.0
 	}
 	zoroastrian_ideas5 = {
-		infantry_power = 0.05
+		stability_cost_modifier = -0.20
 	}
 	zoroastrian_ideas6 = {
 		global_missionary_strength = 0.02
@@ -1271,7 +1271,7 @@ anglican_ideas0 = {
 		global_tax_modifier = 0.15
 	}
 	anglican_ideas3 = {
-		harsh_treatment_cost = -0.33
+		harsh_treatment_cost = -0.25
 		global_unrest = -1	
 	}
 	anglican_ideas4 = {
@@ -1427,8 +1427,8 @@ mesoamerican_ideas0 = {
 		global_tax_modifier = 0.20
 	}
 	mesoamerican_ideas2 = {
-		monthly_splendor = 1
-		infantry_power = 0.15
+		monthly_splendor = 3
+		infantry_power = 0.10
 	}
 	mesoamerican_ideas3 = {
 		monarch_military_power = 1
@@ -1742,7 +1742,7 @@ ibadi_ideas0 = {
 		same_culture_advisor_cost = -0.25
 	}
 	ibadi_ideas2 = {
-		development_cost_modifier = -0.10
+		development_cost_modifier = -0.05
 	}
 	ibadi_ideas3 = {
 		idea_cost = -0.10
@@ -1750,24 +1750,14 @@ ibadi_ideas0 = {
 	ibadi_ideas4 = {
 		prestige = 1
 	}
-<<<<<<< HEAD:common/ideas/00_flogi_ideas.txt
 	ibadi5 = {
 		global_missionary_strength = 0.03
-=======
-	ibadi_ideas5 = {
-		defensiveness = 0.1
->>>>>>> ae50a0e1e7c10def6249f0f33641e6d990de77ac:common/ideas/BM_religious_ideas.txt
 	}
 	ibadi_ideas6 = {
 		manpower_in_true_faith_provinces = 0.10
 	}
-<<<<<<< HEAD:common/ideas/00_flogi_ideas.txt
 	ibadi7 = {
 		missionaries = 1
-=======
-	ibadi_ideas7 = {
-		global_spy_defence = 0.33
->>>>>>> ae50a0e1e7c10def6249f0f33641e6d990de77ac:common/ideas/BM_religious_ideas.txt
 	}	
 
 	ai_will_do = {
@@ -1833,7 +1823,7 @@ hussite_ideas0 = {
 		innovativeness_gain = 0.5
 	}
 	hussite_ideas3 = {
-		governing_capacity_modifier = 0.15
+		governing_capacity_modifier = 0.10
 	}
 	hussite_ideas4 = {
 		global_missionary_strength = 0.02
@@ -1902,7 +1892,7 @@ dreamtime_ideas0 = {
 		religion = dreamtime
 	}
 	bonus = {
-		missionaries = 2
+		missionaries = 1
 	}	
 	dreamtime_ideas1 = {
 		innovativeness_gain = 0.5

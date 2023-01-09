@@ -31,6 +31,7 @@ centralisation_ideas0 = {
 		global_prosperity_growth = 0.25
 	}
 	centralisation_ideas7 = {
+		#Find way to make it only apply to provinces with 20 development
 		build_cost = -0.1
 		state_governing_cost = -0.1
 	}
