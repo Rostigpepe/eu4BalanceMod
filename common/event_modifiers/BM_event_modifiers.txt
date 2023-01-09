@@ -119,8 +119,7 @@ geo_golden_age = {
 	reduced_liberty_desire = 33
 }
 
-#provincial Modifiers
-
+#Provincial Modifiers
 geo_thriving_tbilisi = {
     local_development_cost = -0.10
 	local_tax_modifier = 0.25
@@ -150,6 +149,3 @@ geo_georgian_georgia_usa = {
 	trade_goods_size_modifier = 0.05
 	local_manpower_modifier = 0.15
 }
-
-
-    
