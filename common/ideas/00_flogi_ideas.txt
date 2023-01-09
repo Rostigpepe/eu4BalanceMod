@@ -1879,13 +1879,13 @@ ibadi0 = {
 		prestige = 1
 	}
 	ibadi5 = {
-		defensiveness = 0.1
+		global_missionary_strength = 0.03
 	}
 	ibadi6 = {
 		manpower_in_true_faith_provinces = 0.10
 	}
 	ibadi7 = {
-		global_spy_defence = 0.33
+		missionaries = 1
 	}	
 
 	ai_will_do = {
