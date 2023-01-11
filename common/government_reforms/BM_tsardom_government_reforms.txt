@@ -18,7 +18,7 @@ tsardom_legacy = {
 
     fixed_rank = 3
 	modifiers = {
-		governing_capacity = 300
+		governing_capacity = 350
 		global_manpower_modifier = 0.20
 		yearly_absolutism = 0.5
 		global_autonomy = -0.05
@@ -52,7 +52,9 @@ muscovite_manorialism_reform = {
 	}
 	modifiers = {
 		infantry_cost = -0.10
+		monthly_reform_progress_modifier = 0.1
 		nobles_influence_modifier = 0.05
+		church_influence_modifier = 0.05
 
 	}
 	ai = {
@@ -118,7 +120,7 @@ siberian_frontier_expeditionaries_reform = {
 	}
 	modifiers = {
 		trade_company_investment_cost = -0.10
-		min_autonomy_in_territories = -0.05
+		min_autonomy_in_territories = -0.10
 		may_explore = yes
 		burghers_influence_modifier = 0.1
 	}
@@ -162,9 +164,8 @@ toleration_of_all_faiths_edict_reform = {
 		}
 	}
 	modifiers = {
-		min_autonomy_in_territories = -0.05
 		state_maintenance_modifier = -0.20
-		religious_unity = 0.10
+		religious_unity = 0.15
 	}
 	ai = {
 		factor = 2
@@ -184,8 +185,8 @@ the_governing_senate_reform = {
 		}
 	}
 	modifiers = {
-		national_focus_years = -5
 		governing_capacity = 200
+		free_policy = 1
 	}
 	ai = {
 		factor = 2
