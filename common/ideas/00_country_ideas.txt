@@ -3531,11 +3531,11 @@ TUS_ideas = {
 USA_ideas = {
 	start = {
 		merchants = 1
-		allowed_marine_fraction = 0.5
+		can_colony_boost_development = yes
 	}
 	
 	bonus = {
-		republican_tradition = 0.3
+		development_cost = -0.1
 	}
 	
 	trigger = {
@@ -3545,24 +3545,27 @@ USA_ideas = {
 	
 	freedom_of_religion = {
 		tolerance_heretic = 5
+		no_religion_penalty = yes
+
 	}
 	usa_bill_of_rights = {
 		global_unrest = -2
 	}
 	manifest_destiny = {
-		colonists = 1
+		may_establish_frontier = yes
 	}
 	lessons_of_valley_forge = {
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 	workshop_of_the_world = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.20
 	}
 	shining_city_on_a_hill = {
 		prestige = 1
+		development_cost_modifier = -0.05
 	}
 	empire_of_liberty = {
-		min_autonomy_in_territories = -0.10
+		morale_damage_received = -0.05
 		global_autonomy = -0.025
  	}
 }
