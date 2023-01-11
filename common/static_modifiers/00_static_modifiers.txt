@@ -180,6 +180,8 @@ land_province = {
 mild_winter = {
 	local_hostile_attrition = 1
 	supply_limit_modifier = -0.1
+	local_hostile_movement_speed = -0.10
+	local_friendly_movement_speed = -0.10
 
 	picture = "winter_mild"
 }
@@ -187,6 +189,8 @@ mild_winter = {
 normal_winter = {
 	local_hostile_attrition = 2
 	supply_limit_modifier = -0.2
+	local_hostile_movement_speed = -0.20
+	local_friendly_movement_speed = -0.20
 	migration_cost = 0.1
 
 	picture = "winter_normal"
@@ -195,13 +199,15 @@ normal_winter = {
 severe_winter = {
 	local_hostile_attrition = 3
 	supply_limit_modifier = -0.3
+	local_hostile_movement_speed = -0.30
+	local_friendly_movement_speed = -0.30
 	migration_cost = 0.2
 
 	picture = "winter_severe"
 }
 
 mild_monsoon = {
-	local_hostile_attrition = 0.5
+	local_hostile_attrition = 2
 	local_hostile_movement_speed = -0.20
 	local_friendly_movement_speed = -0.20
 
@@ -209,15 +215,15 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 1
-	local_hostile_movement_speed = -0.25
-	local_friendly_movement_speed = -0.25
+	local_hostile_attrition = 3
+	local_hostile_movement_speed = -0.3
+	local_friendly_movement_speed = -0.3
 
 	picture = "monsoon_normal"
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 1.5
+	local_hostile_attrition = 5
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -1304,12 +1310,13 @@ new_world_exploitation_modifier = {
 crown_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
+	global_garrison_growth = 0.15
 }
 
 private_enterprise_overlord = {
 	merchants = 1
-	global_trade_power = 0.05
-	global_tariffs = -0.05
+	global_trade_power = 0.10
+	global_tariffs = 0.05
 }
 
 self_governing_colony_overlord = {
@@ -1455,21 +1462,21 @@ drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
 # Scripted and used from Diplomatic System
 ##################################################################################################
 recruitment_sabotaged = {
-	manpower_recovery_speed = -0.2
-	sailors_recovery_speed = -0.2
+	manpower_recovery_speed = -0.25
+	sailors_recovery_speed = -0.25
 }
 
 merchants_slandered = {
-	global_trade_power = -0.1
+	global_trade_power = -0.25
 }
 
 discontent_sowed = {
-	global_unrest = 2
-	legitimacy = -1
-	republican_tradition = -0.2
-	devotion = -1
-	horde_unity = -1
-	meritocracy = -0.5
+	global_unrest = 3
+	legitimacy = -2
+	republican_tradition = -0.5
+	devotion = -2
+	horde_unity = -2
+	meritocracy = -1
 }
 
 reputation_sabotaged = {
@@ -1477,7 +1484,7 @@ reputation_sabotaged = {
 }
 
 corrupt_officials = {
-	yearly_corruption = 0.1
+	yearly_corruption = 0.15
 }
 
 scaled_trade_league_leader = { #scaled by number of members
