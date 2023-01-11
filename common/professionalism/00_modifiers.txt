@@ -65,6 +65,7 @@ general_cost_modifier = {
 		always = yes
 	}
 
+	special_unit_forcelimit= 0.10
 	general_cost = -0.50
     may_return_manpower_on_disband = yes
 }
@@ -80,7 +81,7 @@ reserves_organisation_modifier = {
 		always = yes
 	}
 
-	special_unit_forcelimit= 0.15
-    military_tactics = 0.25
+	
+    military_tactics = 0.15
 	drill_gain_modifier = 1
 }

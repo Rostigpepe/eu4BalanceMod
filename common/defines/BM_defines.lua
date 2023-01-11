@@ -7,12 +7,14 @@
 NDefines.NMilitary.FORTRESS_COST = 0.7
 
 --Insufficient support to positive
-NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.15
+NDefines.NMilitary.INSUFFICIENT_SUPPORT = 0.05
 
 NDefines.NMilitary.LOOTED_MAX = 100
 
 NDefines.NMilitary.CAVALRY_SPEED = 1.0
---Cavalry upkeep = 1.5 base
+--Infanrty upkeep = 10
+--Cavalry upkeep = 25 normally
+--Translates to 150% higher cost
 NDefines.NMilitary.CAVALRY_COST = 22.5
 
 --N AI STUFFS

@@ -9501,7 +9501,7 @@ YUA_ideas = {
 		cavalry_power = 0.20
 	}
 	bonus = {
-		governing_capacity_modifier = 0.25
+		governing_capacity_modifier = 0.10
 	}
 	trigger = {
 		tag = YUA
@@ -9513,23 +9513,23 @@ YUA_ideas = {
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
 		cavalry_cost = -0.20
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
 		technology_cost = -0.10
 	}
 	yua_keshik_and_weijun = {
-		shock_damage = 0.1
+		shock_damage = 0.10
 	}
 	yua_a_thousand_miles_as_if_at_home = {
-		movement_speed = 0.10
-		envoy_travel_time = -0.1
+		movement_speed = 0.15
+		envoy_travel_time = -0.10
 	}
 	yua_sino_mongol_administration = {
-		administrative_efficiency = 0.1
+		administrative_efficiency = 0.10
 	}
 	yua_pax_mongolica = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.10
 	}
 }
 
