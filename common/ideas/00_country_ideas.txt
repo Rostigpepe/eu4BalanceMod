@@ -357,6 +357,7 @@ FIN_ideas = {
 	}
 	hakkapelitta_fin = {
  		cavalry_power = 0.15
+		 cavalry_shock = 0.5
 	}	
 	the_fourth_estate = {
 		production_efficiency = 0.1
@@ -370,6 +371,7 @@ FIN_ideas = {
 	}
 	the_white_death = {
 		hostile_attrition = 1
+		max_hostile_attrition = 1
 	}
 	anjala_conspiracy = {
 		land_morale = 0.1
@@ -499,11 +501,11 @@ GOT_ideas = {
 SCA_ideas = {
 	start = {
 		discipline = 0.05
-		global_trade_goods_size_modifier = 0.15
+		infantry_power = 0.2
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.2
+		possible_policy = 1
 	}
 	
 	trigger = {
@@ -512,12 +514,11 @@ SCA_ideas = {
 	free = yes
 	
 	sca_united_craftsman = {
-		global_allowed_num_of_buildings = 1
-		build_cost = -0.05
+		global_trade_goods_size_modifier = 0.10
+		build_cost = -0.10
 	}
 	sca_unified_scandinavian = {
-		possible_policy = 1
-		administrative_efficiency = 0.05
+		manpower_in_culture_group_provinces = 0.20
 	}
 	sca_danish_baltic_fleet = {
 		trade_efficiency = 0.1
@@ -528,14 +529,15 @@ SCA_ideas = {
 	}
 	sca_finnish_hakkapeliita = {
 		cavalry_fire = 0.5
-		cavalry_cost = -0.15
+		cavalry_cost = -0.10
 	}
 	sca_swedish_carolean = {
-		infantry_power = 0.2
+		has_carolean = yes
+		amount_of_carolean = 0.15
 	}
 	sca_empire_of_the_north = {
-		max_absolutism = 10
-		yearly_absolutism = 1
+		max_absolutism = 5
+		yearly_absolutism = 0.5
 	}
 }
 
@@ -613,10 +615,11 @@ RUS_ideas = {
 
 	russian_artillery_yard = {
 		artillery_power = 0.10
-		
+		artillery_cost = -0.10
 	}
 	russian_winter = {
 		hostile_attrition = 1	
+		max_hostile_attrition = 1
 		land_attrition = -0.15
 	}	
 	great_russian_empire = {
@@ -628,7 +631,7 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		artillery_fire = 1
+		morale_damage_received = -0.05
 	}
 	
 	bonus = {
@@ -642,6 +645,7 @@ SPA_ideas = {
 
 	devout_catholisism = {
 		papal_influence = 2
+		curia_powers_cost = -0.15
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -660,16 +664,18 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
+		free_dip_policy = 1
 	}
 	siglo_de_oro = {
 		prestige = 1
+		prestige_decay = -0.01
 	}
 }
 
 CAS_ideas = {
 	start = {
 		land_morale = 0.15
-		allowed_marine_fraction = 0.25
+		global_missionary_strength = 0.03
 	}
 	bonus = {
 		global_colonial_growth = 25
@@ -680,9 +686,10 @@ CAS_ideas = {
 	free = yes		#will be added at load.
 	the_reconquista = {
 		army_tradition_decay = -0.01
+
 	}
 	spanish_inquisition = {
-		global_missionary_strength = 0.02
+		establish_order_cost = -0.25
 		missionaries = 1
 	}
 	cabildos = {
@@ -751,8 +758,8 @@ NED_ideas = {
 
 FRA_ideas = {
 	start = {
-		diplomatic_reputation = 1
-		global_manpower_modifier = 0.20
+		cavalry_power = 0.15	#French Noble Knights
+		manpower_recovery_speed = 0.20
 	}
 	
 	bonus = {
@@ -765,20 +772,22 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	french_language_in_all_courts = {
+		diplomatic_reputation = 1
 		diplomatic_upkeep = 1
 	}
 	elan = {
 		land_morale = 0.20
 	}
 	estates_general = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.20
 	}
 	native_trading_principles = {
 		native_uprising_chance = -0.5
 		native_assimilation = 0.5
 	}
 	vauban_fortifications = {
-		fort_maintenance_modifier = -0.2
+		fort_maintenance_modifier = -0.10
+		defensiveness = 0.20
 	}
 	the_philosophes = {
 		technology_cost = -0.1
@@ -1454,7 +1463,7 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	peichota_wybraniecka = {
-		global_manpower_modifier = 0.25
+		manpower_in_own_culture_provinces = 0.25
 		infantry_power = 0.1
 	}
 	winged_hussars = {
@@ -1490,12 +1499,15 @@ LIT_ideas = {
 	
 	warlord_dukes = {
 		leader_land_shock = 1
+		leader_land_manuever = 1
 	}
 	auksine_laisve = {
-		stability_cost_modifier = -0.1
+		no_stability_loss_on_monarch_death = yes
+		all_estate_influence_modifier = 0.1
 	}
 	magdeburg_laws = {
 		global_tax_modifier = 0.1
+		development_cost = -0.1
 	}
 	magnate_estates = {
 		production_efficiency = 0.1
@@ -1508,7 +1520,7 @@ LIT_ideas = {
 		global_unrest = -2
 	}
 	lithuanian_renaissance = {
-		technology_cost = -0.05
+		technology_cost = -0.10
 	}
 }
 
@@ -1530,9 +1542,11 @@ LIT2_ideas = {
 	
 	warlord_dukes = {
 		leader_land_shock = 1
+		leader_land_manuever = 1
 	}
 	auksine_laisve = {
-		stability_cost_modifier = -0.1
+		no_stability_loss_on_monarch_death = yes
+		all_estate_influence_modifier = 0.1
 	}
 	lit_new_magdeburg_laws = {
 		development_cost = -0.1
@@ -1549,7 +1563,7 @@ LIT2_ideas = {
 		global_unrest = -2
 	}
 	lithuanian_renaissance = {
-		technology_cost = -0.05
+		technology_cost = -0.10
 	}
 }
 
@@ -1612,27 +1626,28 @@ PLC_LIT_ideas = {
 	
 	warlord_dukes = {
 		leader_land_shock = 1 
+		leader_land_manuever = 1
 	}
 	plc_tempered_by_neighbors = { 
 		discipline = 0.05
 	}
 	lit_new_magdeburg_laws = {
 		development_cost = -0.1
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 	reciprocal_guarantee_of_two_nations = {
 		all_estate_loyalty_equilibrium = 0.05
 		diplomatic_annexation_cost = -0.15
 	}
 	lithuanian_hussars = {
-		cavalry_power = 0.25
+		cavalry_power = 0.30
 		can_recruit_hussars = yes 
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
 	}
 	lithuanian_renaissance = {
-		technology_cost = -0.05
+		technology_cost = -0.10
 	}
 }
 
@@ -3981,7 +3996,7 @@ HUR_ideas = {
 
 IRO_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 		diplomatic_reputation = 1
 	}
 	
@@ -3995,7 +4010,7 @@ IRO_ideas = {
 	free = yes		# will be added at load
 	
 	kainerekowa = {
-		war_exhaustion_cost = -0.15
+		war_exhaustion_cost = -0.20
 	}
 	keepers_of_the_western_door = {
 		global_manpower_modifier = 0.25
@@ -6890,12 +6905,12 @@ ZAZ_ideas = {
 
 CAN_ideas = {
 	start = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
 		land_attrition = -0.15
 	}
 	
 	bonus = {
-		republican_tradition = 0.3
+		republican_tradition = 0.5
 		legitimacy = 1
 	}
 	
@@ -6906,31 +6921,34 @@ CAN_ideas = {
 	
 		
 	singing_lumberjacks = {
-		production_efficiency = 0.10
+		production_efficiency = 0.15
 	}	
 	the_hudson_bay_company = {
 		merchants = 1
 	}
     settling_the_interior = {
 		colonists = 1
+		can_colony_boost_development = yes
 	}
 	the_maritimes = {
 		navy_tradition = 1
+		global_ship_cost = -0.1
 	}
 	the_quebec_act = {
 		tolerance_heretic = 2
+		manpower_in_accepted_culture_provinces = 0.10
 	}
 	legacy_of_the_empire = {
 		trade_steering = 0.15
 	}
 	the_forests_of_canada = {
-		global_ship_cost = -0.1
+		global_ship_cost = -0.20
 	}
 }
 
 QUE_ideas = {
 	start = {
-		infantry_power = 0.10
+		infantry_power = 0.15
 		tolerance_own = 2
 	}
 	
@@ -6945,25 +6963,27 @@ QUE_ideas = {
 	
 		
 	coureurs_des_bois = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.15
 	}	
 	the_seigneurial_system = {
 		global_tax_modifier = 0.15
 	}
 	relations_with_natives = {
 		diplomatic_upkeep = 1
+		native_assimilation = 0.50
 	}
 	fortifications_of_quebec = {
 		defensiveness = 0.15
 	}
 	college_of_quebec = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.25
 	}
 	commissions_for_noble_sons = {
 		free_leader_pool = 1
+		leader_land_fire = 1
 	}
 	jesuit_missions = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02
 	}
 }
 
@@ -6985,12 +7005,15 @@ MEX_ideas = {
 		
 	rebuilding_mexico = {
 		build_cost = -0.10
+		monthly_splendor = 1
 	}	
 	the_republic_of_indians = {
 		num_accepted_cultures = 1
+		reserves_organisation = 0.33
 	}
     peace_by_purchase = {
 		years_of_nationalism = -5
+		development_cost = -0.10
 	}
 	casa_de_las_campanas = {
 		idea_cost = -0.10
@@ -7002,7 +7025,7 @@ MEX_ideas = {
 		leader_land_shock = 1
 	}
 	grito_de_delores = {
-		land_morale = 0.10	
+		land_morale = 0.15
 	}
 }
 
@@ -7205,10 +7228,10 @@ CND_ideas = {
 BRZ_ideas = {
 	start = {
 		hostile_attrition = 1
-		envoy_travel_time = -0.25
+		innovativeness_gain = 0.5
 	}
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.15
 	}	
 	trigger = {
 		tag = BRZ
@@ -7216,25 +7239,28 @@ BRZ_ideas = {
 	free = yes
 
 	governorate_general = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.20
 	}
 	research_of_nassau = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.15
+		technology_cost = -0.05
 	}
 	mines_of_minas_gerais = {
 		inflation_reduction = 0.1
 	}
 	halting_foreign_incursions = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 	}
 	entradas_and_bandeiras = {
-		core_creation = -0.15
+		colonist_placement_chance = 0.05
+		can_colony_boost_development = yes
 	}
 	inconfidencia_mineira = {
-		stability_cost_modifier = -0.1
+		stability_cost_modifier = -0.20
 	}
 	old_seat_of_the_empire = {
 		legitimacy = 1
+		monthly_splendor = 1
 	}
 }
 
@@ -14528,7 +14554,7 @@ TEX_ideas = {
 
 AUS_ideas = {
 	start = {	
-		global_ship_recruit_speed = -0.2
+		infantry_power = 0.10
 		global_colonial_growth = 25
 	}
 	bonus = {
@@ -14549,11 +14575,11 @@ AUS_ideas = {
 		global_manpower_modifier = 0.2
 	}
 	AUS_sandpaper_and_cheating = {
-		infantry_power = 0.1
+		shock_damage_received = -0.15
 		allowed_marine_fraction = 0.5
 	}
 	AUS_royal_navy = {
-		global_ship_cost = -0.1
+		own_coast_naval_combat_bonus = 1.0
 		disengagement_chance = 0.05
 	}
 	AUS_bushrangers = {
@@ -14567,7 +14593,7 @@ AUS_ideas = {
 NZL_ideas = {
 	start = {	
 		diplomatic_upkeep = 1
-		global_trade_power = 0.1
+		global_trade_power = 0.2
 	}
 	bonus = {
 		colonists = 1
@@ -14578,7 +14604,7 @@ NZL_ideas = {
 	free = yes
 	NZL_maori_seats = {
 		no_religion_penalty = yes
-		republican_tradition = 0.15
+		republican_tradition = 0.2
 	}
 	NZL_otago_gold = {
 		global_trade_goods_size_modifier = 0.1
@@ -14591,7 +14617,8 @@ NZL_ideas = {
 		shock_damage = 0.1
 	}
 	NZL_company = {
-		global_colonial_growth = 25
+		global_colonial_growth = 15
+		can_colony_boost_development = yes
 	}
 	NZL_rejecting_australia = {
 		land_morale = 0.15
@@ -14603,7 +14630,7 @@ NZL_ideas = {
 
 ALA_ideas = {
 	start = {	
-		light_ship_power = 0.15
+		trade_efficiency = 0.2
 		naval_morale = 0.2
 	}
 	bonus = {
@@ -14644,7 +14671,7 @@ CSC_ideas = {
 		build_cost = -0.1
 	}
 	bonus = {
-		global_ship_trade_power = 0.25
+		can_colony_boost_development = yes
 	}
 	trigger = {
 		tag = CSC
@@ -14662,6 +14689,7 @@ CSC_ideas = {
 	}
 	CSC_settling_boundaries = {
 		global_spy_defence = 0.33
+		monthly_splendor = 1
 	}
 	CSC_nookta_sound = {
 		global_own_trade_power = 0.25
@@ -14670,7 +14698,7 @@ CSC_ideas = {
 		# shared with Canada
 	}
 	CSC_oregon_trail = {
-		land_attrition = -0.2
+		land_attrition = -0.25
 	}
 }
 
@@ -14704,7 +14732,7 @@ WSI_ideas = {
 		num_accepted_cultures = 2
 	}
 	WSI_Interconnected_Relations = {
-		diplomatic_reputation = 1
+		diplomatic_reputation = 2
 	}
 	WSI_Colonial_Legacy = {
 		naval_forcelimit_modifier = 0.25
@@ -14713,7 +14741,7 @@ WSI_ideas = {
 
 SNA_ideas = {
 	start = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.20
 		prestige = 1
 	}
 	bonus = {
@@ -14728,24 +14756,25 @@ SNA_ideas = {
 		mercenary_manpower = 0.5
 	}
 	SNA_sale_of_script = {
-		core_creation = -0.1
+		core_creation = -0.25
 	}
 	SNA_Good_Use_Of_Gold = {
 		inflation_reduction = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	SNA_cowboy_country = {
-		fire_damage = 0.1
+		fire_damage = 0.2
 	}
 	SNA_take_what_is_yours = {
 		light_ship_cost = -0.1
-		privateer_efficiency = 0.1
+		privateer_efficiency = 0.33
 	}
 	SNA_uniting_the_outlaws = {
 		land_forcelimit_modifier = 0.33
 	}
 	SNA_taking_the_fight_south = {
 		movement_speed = 0.15
-		prestige_from_land = 0.5
+		prestige_from_land = 1
 	}
 }
 
@@ -14762,11 +14791,11 @@ VRM_ideas = {
 	}
 	free = yes      #will be added at load.
 	VRM_home_of_the_revolution = {
-		land_morale = 0.15
-		max_revolutionary_zeal = 10
+		land_morale = 0.20
+		max_revolutionary_zeal = 15
 	}
 	VRM_tea_party = {
-		embargo_efficiency = 0.25
+		embargo_efficiency = 1
 		prestige = 0.5
 	}
 	VRM_American_Frontier = {
@@ -14775,15 +14804,17 @@ VRM_ideas = {
 	}
 	VRM_Cheese_wheels = {
 		global_tax_modifier = 0.1
+		merchants = 1
 	}
 	VRM_vermont_constitution = {
-		num_accepted_cultures = 2
+		can_colony_boost_development = yes
 	}
 	VRM_Liberty_is_Life = {
-		liberty_desire_from_subject_development = -0.25
+		global_unrest = -1
+		morale_damage_received = -0.10
 	}
 	VRM_What_we_do_best = {
-		trade_company_investment_cost = -0.1
+		trade_efficiency = 0.1
 	}
 }
 
