@@ -14535,7 +14535,7 @@ TEX_ideas = {
 		fire_damage = 0.1
 	}
 	cotton_plantations = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.15
 	}
 	vaqueros = {
 		land_attrition = -0.1
