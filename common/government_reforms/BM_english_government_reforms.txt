@@ -2,7 +2,7 @@
 
 curia_regis_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "council"
 	potential = {
 		OR = {
 			tag = ENG
@@ -23,7 +23,7 @@ curia_regis_english = {
 
 abolish_bastard_feudalism_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "paper_with_seal_3"
 	potential = {
 		OR = {
 			tag = ENG
@@ -45,7 +45,7 @@ abolish_bastard_feudalism_english = {
 
 henrician_reforms_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "black_army_reform"
 	potential = {
 		OR = {
 			tag = ENG
@@ -64,7 +64,7 @@ henrician_reforms_english = {
 
 redcoats_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "admiralty_reform"
 	potential = {
 		OR = {
 			tag = GBR
@@ -84,7 +84,7 @@ redcoats_english = {
 
 the_supreme_governor_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "british_queen"
 	potential = {
 		OR = {
 			tag = ENG
@@ -105,7 +105,7 @@ the_supreme_governor_english = {
 
 tariffs_trading_rights_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "merchant_ship"
 	potential = {
 		OR = {
 			tag = ENG
@@ -129,7 +129,7 @@ tariffs_trading_rights_english = {
 
 bill_of_rights_english = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "man_on_podium"
 	potential = {
 		OR = {
 			tag = ENG

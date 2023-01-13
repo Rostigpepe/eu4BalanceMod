@@ -13,6 +13,7 @@ henrician_reforms_english:0 "Henrician Reforms"
 henrician_reforms_english_desc:0 "Following the continued rise of militarism in the French, Spanish, and Imperial German states, the English crown had a standing army of a few hundred men and a couple of fort garrisons. The Lord's and Nobles were expected, but not obligated, to supply their Vassal and March armies to service the crown during war. This caused the English army to be outnumbered, and the few soldiers that were supplied were armed with billhooks and crossbows, rather then muskets and pikes. The Henrician Reforms was the creation of a much extended army and navy, re-organizing the militia system and creating a series of coastal forts against potential invasions."
 
 redcoats_english
+fix
 
 ###   ENGLISH6   ###
 the_supreme_governor_english:0 "The Supreme Governor"

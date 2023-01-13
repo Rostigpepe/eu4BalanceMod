@@ -3,7 +3,7 @@
 
 blood_tax_france_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "soldiers_5"
 	potential = {
 		OR = {
 			tag = FRA
@@ -23,7 +23,7 @@ blood_tax_france_reform = {
 
 centralising_french_feudal_lords_france_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "tribal_centralize_power"
 	potential = {
 		OR = {
 			tag = FRA
@@ -40,7 +40,7 @@ centralising_french_feudal_lords_france_reform = {
 
 independent_vassals_france_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "castle"
 	potential = {
 		OR = {
 			tag = FRA
@@ -62,7 +62,7 @@ independent_vassals_france_reform = {
 ###		Tier 5 France		###
 corps_diplomatique_france_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "paper_with_seal"
 	potential = {
 		OR = {
 			tag = FRA
@@ -81,7 +81,7 @@ corps_diplomatique_france_reform = {
 ###		Tier 6 France		###
 the_rise_of_bourgeoisie_aristocracy_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "dutch_republic"
 	potential = {
 		OR = {
 			tag = FRA
@@ -101,7 +101,7 @@ the_rise_of_bourgeoisie_aristocracy_reform = {
 ###		Tier 7 France		###
 continental_system_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "map"
 	potential = {
 		OR = {
 			tag = FRA
@@ -120,7 +120,7 @@ continental_system_reform = {
 
 counsil_souverein_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "private_enterprise_colony_government"
 	potential = {
 		OR = {
 			tag = FRA
@@ -139,7 +139,7 @@ counsil_souverein_reform = {
 ###		Tier 8 France		###
 droit_divin_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "king"
 	potential = {
 		OR = {
 			tag = FRA
@@ -159,7 +159,7 @@ droit_divin_reform = {
 ###		Tier 10 France		###
 royaume_du_soleil_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "enlightened_monarchy_reform"
 	potential = {
 		OR = {
 			tag = FRA

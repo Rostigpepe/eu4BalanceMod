@@ -41,7 +41,7 @@ tsardom_legacy = {
 
 muscovite_manorialism_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "soldiers_7"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -66,7 +66,7 @@ muscovite_manorialism_reform = {
 
 oprichnina_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "blackmailing"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -88,7 +88,7 @@ oprichnina_reform = {
 
 academy_of_sciences_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "judge"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -109,7 +109,7 @@ academy_of_sciences_reform = {
 
 siberian_frontier_expeditionaries_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "self_governing_colony_government"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -133,7 +133,7 @@ siberian_frontier_expeditionaries_reform = {
 
 russian_autocratism_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "king_2"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -155,7 +155,7 @@ russian_autocratism_reform = {
 
 toleration_of_all_faiths_edict_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "paper_with_seal"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
@@ -176,7 +176,7 @@ toleration_of_all_faiths_edict_reform = {
 
 the_governing_senate_reform = {
 	allow_normal_conversion = yes
-	icon = "chieftain"
+	icon = "united_cantons_reform"
 	potential = {
 		OR = {
 			has_reform = tsardom_legacy
