@@ -132,7 +132,6 @@ bill_of_rights_english = {
 	icon = "man_on_podium"
 	potential = {
 		OR = {
-			tag = ENG
 			tag = GBR
 		}
 	}
