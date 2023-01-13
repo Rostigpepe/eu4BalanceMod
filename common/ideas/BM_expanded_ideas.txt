@@ -15,7 +15,7 @@ centralisation_ideas0 = {
 		global_autonomy = -0.05	
 	}
 	centralisation_ideas3 = {
-		governing_capacity_modifier = -0.15
+		governing_capacity_modifier = -0.10
 		state_governing_cost_increase = -20
 	}
 	centralisation_ideas4 = {
