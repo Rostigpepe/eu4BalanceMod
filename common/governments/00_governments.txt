@@ -89,6 +89,8 @@ monarchy = {
 				blackmail_nobility_reform
 				grant_military_command_reform
 				muscovite_manorialism_reform
+				curia_regis_english
+				blood_tax_france_reform
 			}
 		}
 		bureaucracy = {
@@ -112,6 +114,9 @@ monarchy = {
 				saeristavo_reform
 				sadrosho_reform
 				oprichnina_reform
+				abolish_bastard_feudalism_english
+				centralising_french_feudal_lords_france_reform
+				independent_vassals_france_reform
 			}
 		}
 		state_and_religion = {
@@ -157,6 +162,9 @@ monarchy = {
 				imperial_principle_reform
 				sakdina_system_reform
 				allotment_system
+				henrician_reforms_english
+				redcoats_english
+				corps_diplomatique_france_reform
 			}
 		}
 		deliberative_assembly = {
@@ -176,6 +184,8 @@ monarchy = {
 				become_rev_republic_reform
 				karavi_reform
 				academy_of_sciences_reform
+				the_supreme_governor_english
+				the_rise_of_bourgeoisie_aristocracy_reform
 			}
 		}
 		economical_matters = {
@@ -189,6 +199,9 @@ monarchy = {
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
 				siberian_frontier_expeditionaries_reform
+				tariffs_trading_rights_english
+				continental_system_reform
+				counsil_souverein_reform
 			}
 		}
 		legitimation_of_power = {
@@ -199,6 +212,7 @@ monarchy = {
 				the_leviathan_reform
 				the_social_contract_reform
 				russian_autocratism_reform
+				droit_divin_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -211,6 +225,7 @@ monarchy = {
 				military_electorate_reform
 				revolutionary_council_reform
 				toleration_of_all_faiths_edict_reform
+				bill_of_rights_english
 			}
 		}
 		separation_of_power = {
@@ -221,6 +236,7 @@ monarchy = {
 				emperor_of_the_revolution_reform
 				enlightened_monarchy_reform
 				the_governing_senate_reform
+				royaume_du_soleil_reform
 			}
 		}
 	}

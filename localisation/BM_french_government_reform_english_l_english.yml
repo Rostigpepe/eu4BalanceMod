@@ -1,0 +1,35 @@
+###     FRANCE REFORMS      ###
+
+###   FRANCE 2 NOBLES     ###
+blood_tax_france_reform:0 "Blood Tax"
+blood_tax_france_reform_desc:0 "The Nobility is a special class, with special privileges and special responsibilities. Chief among these is the 'Blood Tax', where the nobility pays their taxes not in ducats or goods, but in the form of soldiers, knights and levies. No gold for the treasury or grain for the granary, but blood ready to be spilled."
+
+###   FRANCE 3 Bureaucracy     ###
+centralising_french_feudal_lords_france_reform "Centralising The French Feudal Lords"
+centralising_french_feudal_lords_france_reform_desc:0 "France had since the days of Charlemagne practiced a loose form of feudalism, a system in which the nobles reigned over vast swathes of land, and in return were expected to supply Knights and Levies to the King during times of war. However, the French feudal system of Lords. Knights, and Nobles was so loose that the Nobles often had more power than the king, ruling their counties and duchies in disregard of authority from French king, effectively working as smaller, independent, states inside the kingdom of France. At the end of the 100 Years War, the French King sought to centralise the various Feudal Lords that were scattered around the French countryside. A system of Generalites, governing divisions of the French land, was established in which royal collectors were given authority to reign in the lesser nobles and lords through fiscal means. By slowly and economically driving the lesser nobility to indebtedness, forcing them to sell their estates to the crown, the French monarchy managed to centralise their previously highly autonomous realm into a highly concentrated powerhouse."
+
+independent_vassals_france_reform:0 "Independent Vassals"
+independent_vassals_france_reform_desc:0 "Our initial attempt at reigning in our vassals has been twarted by local lords and their privileges. But if we instead utilize the local lords by letting them gain more autonomy, we will not only let our vassals grow economically independent of us, but also ensure that their contributions in form of Blood Tax and other taxes will be more fruitful."
+
+###   FRANCE 5 Cadre     ###
+corps_diplomatique_france_reform:0 "Corps Diplomatique"
+corps_diplomatique_france_reform_desc:0 "There is no language more noble and cultured than French. This is why ambassadors, heralds, and diplomats all around Europe don't use their own language to communicate, but instead use French. Let ust establish a Diplomatic Corps that can capitalize on the 'Lingua Franca' and send skilled diplomats to every court that seeks our attention."
+
+###   FRANCE 6 Assembly     ###
+the_rise_of_bourgeoisie_aristocracy_reform:0 "The Rise of the Bourgeoisie Aristocracy"
+the_rise_of_bourgeoisie_aristocracy_reform_desc:0 "In the wake of the Hundred Years War, and the great plagues that followed, many nobles were serving as knights in wars and fielded large peasant levies. Due to the fact that during war people often die, many noble estates died out or fell into decline, forced by royal collectors to sell their lands and estates to the new-born bourgheoisie aristocracy. This had the effect that previous Noble Aristocracy lost their sway over their respective lands and the new Bourgeoisie Aristocracy took over, bringing a new praxis of feudalism to France."
+
+###   FRANCE 7 NOBLES     ###
+continental_system_reform:0 "Continental System"
+continental_system_reform_desc:0 "In order to centralise the economic power of the continent into France, we need to unite with our allies nad stop our rival's hold on trade. By coordinating a continental-wide system of embargoes we will bleed our rivals dry."
+
+counsil_souverein_reform:0 "Conseil Souverain"
+counsil_souverein_reform_desc:0 "Let us focus on trading and supplying the natives in our colonial regions. Why bother setting up expensive plantations with the immortality of slavery when we can just trade with the natives in order to acquire all the exotic goods we need."
+
+###   FRANCE 8 NOBLES     ###
+droit_divin_reform:0 "Droit Divin"
+blood_tax_france_reform_desc:0 "We have had our right to rule determined through salic law and justified through the clerical declaration, this will no longer do, our right to rule comes not from the church, but from God Himself."
+
+###   FRANCE 10 NOBLES     ###
+royaume_du_soleil_reform:0 "Royaume du Soleil"
+royaume_du_soleil_reform_desc:0 "God's mandate dictates that we cannot be constrained by the needs of the estates and no one but God may judge us. By the Grace of God we must bring France to new heights and step forward."
