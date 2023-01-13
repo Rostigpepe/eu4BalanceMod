@@ -654,11 +654,11 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 
 negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
 	global_trade_goods_size_modifier = -0.5
-	fire_damage_received = 0.33
-	shock_damage_received = 0.33
+	fire_damage_received = 0.4
+	shock_damage_received = 0.4
 	global_unrest = 5
-	mercenary_manpower = -0.33
-	global_manpower_modifier = -0.33
+	mercenary_manpower = -0.4
+	global_manpower_modifier = -0.4
 }
 
 lost_mandate_of_heaven = {
@@ -1474,10 +1474,10 @@ merchants_slandered = {
 
 discontent_sowed = {
 	global_unrest = 3
-	legitimacy = -2
+	legitimacy = -1.5
 	republican_tradition = -0.5
-	devotion = -2
-	horde_unity = -2
+	devotion = -1.5
+	horde_unity = -1
 	meritocracy = -1
 }
 
