@@ -91,6 +91,7 @@ monarchy = {
 				muscovite_manorialism_reform
 				curia_regis_english
 				blood_tax_france_reform
+				house_of_knights_swe
 			}
 		}
 		bureaucracy = {
@@ -145,6 +146,8 @@ monarchy = {
 				restoration_of_clergy_reform
 				cult_of_reason_reform
 				secularization_of_the_state_reform
+				swedish_church_ordinance_swe
+				the_church_of_sweden_swe
 			}
 		}
 		growth_of_administration = {
@@ -186,6 +189,7 @@ monarchy = {
 				academy_of_sciences_reform
 				the_supreme_governor_english
 				the_rise_of_bourgeoisie_aristocracy_reform
+				parliamentary_order_swe
 			}
 		}
 		economical_matters = {
@@ -202,6 +206,7 @@ monarchy = {
 				tariffs_trading_rights_english
 				continental_system_reform
 				counsil_souverein_reform
+				competing_with_foreign_powers_swe
 			}
 		}
 		legitimation_of_power = {
@@ -226,6 +231,7 @@ monarchy = {
 				revolutionary_council_reform
 				toleration_of_all_faiths_edict_reform
 				bill_of_rights_english
+				times_of_peace_and_of_security_swe
 			}
 		}
 		separation_of_power = {
