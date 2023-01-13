@@ -1826,24 +1826,26 @@ banner_regiment = {
 
 streltsy_regiment = {
     fire_damage = 0.1
+	shock_damage_received = -0.05
 	regiment_manpower_usage = -0.5
 }
 
 cossacks_regiment = {
     shock_damage = 0.1
+	movement_speed = 0.15
 	loot_amount = 0.5
 }
 
 carolean_regiment = {
 	morale_damage = 0.1
+	infantry_shock = 0.2
 	drill_decay_modifier = -0.5
 }
 
 revolutionary_guard_regiment = {
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
-	drill_gain_modifier = 1.0
-	drill_decay_modifier = -0.5
+	morale_damage_received = -0.1
 }
 
 innovativeness = {

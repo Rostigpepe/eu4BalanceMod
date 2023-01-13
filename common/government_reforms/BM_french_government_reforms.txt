@@ -11,6 +11,7 @@ blood_tax_france_reform = {
 		}
 	}
 	modifiers = {
+		# Gain +4% Manpower Modifier and -2% Regiment Cost per Subject, up to a maximum of 5
 		vassal_forcelimit_bonus = 0.05
 		nobles_influence_modifier = 0.1
 	}

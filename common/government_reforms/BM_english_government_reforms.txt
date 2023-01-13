@@ -115,7 +115,7 @@ tariffs_trading_rights_english = {
 	modifiers = {
 		development_cost = -0.05
 		global_prov_trade_power_modifier = 0.10
-		global_tariffs = 25
+		global_tariffs = 0.25
 	}
 	custom_attributes = {
 		extra_trade_goods_for_colonial_subjects = yes
