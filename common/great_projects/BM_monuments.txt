@@ -919,7 +919,7 @@ bran_castle = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 1500
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -1070,7 +1070,7 @@ cologne_cathedral = {
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1500
+			factor = 2000
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -1717,7 +1717,7 @@ prague = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2000
+			factor = 2500
 		}
 		province_modifiers = {
 			trade_value_modifier = 0.15
@@ -1742,7 +1742,7 @@ prague = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 3000
+			factor = 5000
 		}
 		province_modifiers = {
 			trade_value_modifier = 0.25
@@ -1981,7 +1981,7 @@ holy_city_jerusalem = {
 			global_heretic_missionary_strength = 0.03
 			missionaries = 1
 			monthly_fervor_increase = 1.5
-			church_power_modifier = 0.25
+			church_power_modifier = 0.2
 			papal_influence = 3
 		}
 
@@ -2611,7 +2611,7 @@ visby_city = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3000
 		}
 		province_modifiers = {
 			ship_recruit_speed = -0.5
@@ -2833,8 +2833,8 @@ malta_forts = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
-			hostile_fleet_attrition = 5
-			hostile_disembark_speed = 3
+			hostile_fleet_attrition = 2
+			hostile_disembark_speed = 1
 			block_slave_raid = yes
 		}
 		area_modifier = {
@@ -2856,7 +2856,7 @@ malta_forts = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.5
-			hostile_fleet_attrition = 5
+			hostile_fleet_attrition = 3
 			hostile_disembark_speed = 2
 			block_slave_raid = yes
 		}
@@ -2977,7 +2977,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 250
-			province_trade_power_value = 0.3
+			province_trade_power_value = 0.2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -3009,7 +3009,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 500
-			province_trade_power_value = 0.6
+			province_trade_power_value = 0.4
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -3042,7 +3042,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 1000
-			province_trade_power_value = 0.9
+			province_trade_power_value = 0.6
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -3374,7 +3374,7 @@ mount_fuji = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.1
+			development_cost = -0.05
 			global_monthly_devastation = 0.05
 		}
 
@@ -3707,7 +3707,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 0.2
+			province_trade_power_value = 0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -3738,7 +3738,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 0.4
+			province_trade_power_value = 0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -3750,7 +3750,7 @@ petra = {
 		country_modifiers = {
 			diplomatic_reputation = 1
 			envoy_travel_time = -0.25
-			caravan_power = 0.2
+			caravan_power = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -3771,7 +3771,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 0.6
+			province_trade_power_value = 0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -3784,7 +3784,7 @@ petra = {
 			diplomatic_reputation = 2
 			envoy_travel_time = -0.33
 			diplomatic_upkeep = 1
-			caravan_power = 0.33
+			caravan_power = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -5472,7 +5472,7 @@ versailles = {
 #####			Patrick Cathedral			#####
 gme_patrick_cathedral = {
 	# province it starts in
-	start = 373
+	start = 373 #Pale
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge
@@ -5647,10 +5647,10 @@ gme_patrick_cathedral = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_own = 1
-			papal_influence = 1
-			church_power_modifier = 0.1
-			monthly_fervor_increase = 1
+			tolerance_own = 2
+			papal_influence = 2
+			church_power_modifier = 0.2
+			monthly_fervor_increase = 2
 		}
 
 		#what effects happen when this tier is achieved
@@ -5664,7 +5664,7 @@ gme_patrick_cathedral = {
 #####			Rock of Chasel			#####
 gme_rock_chasel = {
 	# province it starts in
-	start = 373
+	start = 4118 #Cork
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge
@@ -5852,7 +5852,7 @@ gme_rock_chasel = {
 #####			Mont Saint-Michel			#####
 gme_mont_michel = {
 	# province it starts in
-	start = 4385
+	start = 4385 #Cotentin
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge
@@ -6075,7 +6075,7 @@ gme_mont_michel = {
 #####			Sagres School of Navigation			#####
 gme_sagres_school_navigation = {
 	# province it starts in
-	start = 230
+	start = 230 #Algarve
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge
@@ -6260,7 +6260,7 @@ gme_sagres_school_navigation = {
 #####			Leaning Tower of Pisa / Torre Di Pisa			#####
 gme_torre_pisa = {
 	# province it starts in
-	start = 115
+	start = 115 #Pisa
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge
@@ -6427,7 +6427,6 @@ gme_torre_pisa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			advisor_cost = -0.05
 			advisor_pool = 1
 			innovativeness_gain = 0.2
 		}
@@ -6489,7 +6488,6 @@ gme_torre_pisa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			advisor_cost = -0.1
 			advisor_pool = 1
 			innovativeness_gain = 0.3
 		}
@@ -6628,7 +6626,7 @@ gme_castello_estense = {
 			local_regiment_cost = -0.10
 		}
 		country_modifiers = {
-			artillery_cost = -0.1
+			artillery_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -6650,7 +6648,7 @@ gme_castello_estense = {
 			local_regiment_cost = -0.15
 		}
 		country_modifiers = {
-			artillery_cost = -0.2
+			artillery_cost = -0.1
 			artillery_power = 0.05
 		}
 		on_upgraded = {
@@ -7498,7 +7496,6 @@ gme_kruje_castle = {
 			max_attrition = 2
 		}
 		country_modifiers = {
-			general_cost = -0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -7527,7 +7524,7 @@ gme_kruje_castle = {
 			max_attrition = 3
 		}
 		country_modifiers = {
-			general_cost = -0.25
+			general_cost = -0.15
 			mil_tech_cost_modifier = -0.05
 		}
 		on_upgraded = {
@@ -7540,3 +7537,4 @@ gme_kruje_castle = {
 		}
 	}
 }
+
