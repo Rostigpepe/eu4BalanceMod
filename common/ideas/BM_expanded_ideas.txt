@@ -15,7 +15,7 @@ centralisation_ideas0 = {
 		global_autonomy = -0.05	
 	}
 	centralisation_ideas3 = {
-		governing_capacity_modifier = -0.10
+		governing_capacity_modifier = -0.25
 		state_governing_cost_increase = -20
 	}
 	centralisation_ideas4 = {
@@ -32,7 +32,7 @@ centralisation_ideas0 = {
 	centralisation_ideas7 = {
 		#Find way to make it only apply to provinces with 20 development
 		build_cost = -0.1
-		state_governing_cost = -0.1
+		state_governing_cost = -0.3
 	}
 	
 	ai_will_do = {
