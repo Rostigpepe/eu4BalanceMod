@@ -1626,7 +1626,7 @@ heddal_stave_church = {
 		country_modifiers = {
 			stability_cost_modifier = -0.25
 			missionaries = 1
-			build_cost = -0.2
+			build_cost = -0.1
 		}
 
 		#what effects happen when this tier is achieved
