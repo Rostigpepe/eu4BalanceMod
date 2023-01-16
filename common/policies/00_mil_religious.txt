@@ -1,0 +1,54 @@
+monkey_ninjas = { 
+	monarch_power = MIL
+	
+	potential = {
+		AND = {
+			has_idea_group = spy_ideas
+			OR = {
+				has_idea_group = fetish_ideas0
+				has_idea_group = animist_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = spy_ideas
+			OR = {
+				full_idea_group = fetish_ideas0
+				full_idea_group = animist_ideas0
+			}
+		}
+	}
+	
+	land_morale = 0.05
+	discipline = 0.025
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+valhalla_assassins = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = norse_ideas0
+	}
+	
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = norse_ideas0
+	}
+	
+	recover_army_morale_speed = 0.10
+	leader_land_shock = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+

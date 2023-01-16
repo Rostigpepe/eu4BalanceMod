@@ -18,3 +18,285 @@ state_enforced_defenestration = {
 	}
 }
 
+diplomatic_cardinals = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = catholic_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = catholic_ideas0
+	}
+	
+	papal_influence_from_cardinals = 0.25
+	curia_powers_cost = 0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+pentarchic_patriarchy = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+		has_idea_group = diplomatic_ideas
+			OR = {
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = diplomatic_ideas
+			OR = {
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	prestige_per_development_from_conversion = 0.2
+	merc_maintenance_modifier = -0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+jewish_diplomatic_guilds = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = jewish_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = jewish_ideas0
+	}
+	
+	trade_range_modifier = 0.2
+	dip_advisor_cost = -0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+diplomatic_leagues_of_the_eternal_fire = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = zoroastrian_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = zoroastrian_ideas0
+	}
+	
+	accept_vassalization_reasons = 15
+	stability_cost_to_declare_war = -1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+open_doors_of_nippon = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = shinto_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = shinto_ideas0
+	}
+	
+	trade_efficiency = 0.1
+	monthly_reform_progress_modifier = 0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_flower_alliances = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = dreamtime_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = dreamtime_ideas0
+	}
+	
+	development_cost = -0.1
+	diplomatic_reputation = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+first_contact_policies = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = dreamtime_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = dreamtime_ideas0
+	}
+	
+	global_institution_spread = 0.15
+	diplomatic_reputation = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_hashashin_order = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+		has_idea_group = spy_ideas
+			OR = {
+				has_idea_group = sunni_ideas0
+				has_idea_group = shia_ideas0
+				has_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = spy_ideas
+			OR = {
+				full_idea_group = sunni_ideas0
+				full_idea_group = shia_ideas0
+				full_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	rebel_support_efficiency = 0.5
+	siege_ability = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+first_contact_policies = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = buddhism_ideas0
+	}
+	
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = buddhism_ideas0
+	}
+	
+	missionaries = 1
+	global_heathen_missionary_strength = 0.02
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+ninja_training_camp = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = shinto_ideas0
+	}
+	
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = shinto_ideas0
+	}
+	
+	leader_siege = 1
+	artillery_levels_available_vs_fort = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+native_educations_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = exploration_ideas
+			OR = {
+				full_idea_group = anglican_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+				full_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	native_assimilation = 0.5
+	native_uprising_chance = -0.50
+
+	ai_will_do = {
+		factor = 1
+	}
+}

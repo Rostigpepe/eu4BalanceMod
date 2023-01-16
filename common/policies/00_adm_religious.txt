@@ -11,7 +11,7 @@ diplomatic_immunity = {
 			}
 		}
 	}
-	
+
 	allow = {
 		AND = {
 			full_idea_group = diplomatic_ideas
@@ -30,4 +30,399 @@ diplomatic_immunity = {
 		factor = 1
 	}
 }
+
+
+sino_cultural_hegemony = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = diplomatic_ideas
+			OR = {
+				has_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = diplomatic_ideas
+			OR = {
+				full_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	num_accepted_cultures = 1
+	merchants = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+inter_caste_diplomatic_exchange = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = diplomatic_ideas
+			OR = {
+				has_idea_group = dharmic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = diplomatic_ideas
+			OR = {
+				full_idea_group = dharmic_ideas0
+			}
+		}
+	}
+	
+	all_estate_loyalty_equilibrium = 0.1
+	all_estate_influence_modifier = -0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+christian_supremacy_thought = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			OR = {
+				full_idea_group = anglican_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+				full_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	enforce_religion_cost = -0.33
+	culture_conversion_cost = -0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_satrapies_administration_act = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			OR = {
+				has_idea_group = zoroastrian_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			OR = {
+				full_idea_group = zoroastrian_ideas0
+			}
+		}
+	}
+	
+	allow_client_states = yes
+	diplomatic_annexation_cost = -0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+subjugation_of_the_castes = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			OR = {
+				has_idea_group = dharmic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			OR = {
+				full_idea_group = dharmic_ideas0
+			}
+		}
+	}
+	
+	unjustified_demands = -0.25
+	diplomatic_reputation = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_heavenly_kingdom_act = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			OR = {
+				has_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			OR = {
+				full_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	meritocracy = 0.5
+	yearly_harmony = 0.5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+kingdoms_of_the_little = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			OR = {
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			OR = {
+				full_idea_group = confucian_ideas0
+				full_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	global_trade_goods_size_modifier = 0.05
+	merchants = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+kingdoms_of_the_little = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			OR = {
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			OR = {
+				full_idea_group = confucian_ideas0
+				has_idea_group = coptic_ideas0
+			}
+		}
+	}
+	
+	global_trade_goods_size_modifier = 0.05
+	merchants = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+sinofication_of_the_blue_sky = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = aristocracy_ideas
+			OR = {
+				has_idea_group = tengri_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = aristocracy_ideas
+			OR = {
+				full_idea_group = tengri_ideas0
+			}
+		}
+	}
+	
+	development_cost = -0.05
+	monarch_admin_power = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+of_valkers_and_valkyrias = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = aristocracy_ideas
+			OR = {
+				has_idea_group = norse_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = aristocracy_ideas
+			OR = {
+				full_idea_group = norse_ideas0
+			}
+		}
+	}
+	
+	global_missionary_strength = 0.01
+	stability_cost_modifier = -0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+inter_schools_of_islamic_law = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+		has_idea_group = diplomatic_ideas
+			OR = {
+				has_idea_group = sunni_ideas0
+				has_idea_group = shia_ideas0
+				has_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = diplomatic_ideas
+			OR = {
+				full_idea_group = sunni_ideas0
+				full_idea_group = shia_ideas0
+				full_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	institution_spread_from_true_faith = 0.25
+	diplomatic_reputation = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_inquisitions_act = { 
+	monarch_power = ADM
+	
+	potential = {
+		AND = {
+			has_idea_group = spy_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = catholic_ideas0
+				has_idea_group = jewish_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = spy_ideas
+			OR = {
+				full_idea_group = anglican_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+				full_idea_group = catholic_ideas0
+				full_idea_group = jewish_ideas0
+			}
+		}
+	}
+	
+	global_missionary_strength = 0.01
+	spy_offence = 0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 
