@@ -1,0 +1,20 @@
+state_enforced_defenestration = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = hussite_ideas0
+	}
+	
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = hussite_ideas0
+	}
+	
+	monthly_splendor = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
