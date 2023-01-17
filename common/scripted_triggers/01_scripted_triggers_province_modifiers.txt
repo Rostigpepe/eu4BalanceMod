@@ -66,7 +66,7 @@ has_river_estuary_trigger = {
 			has_province_modifier = kongo_estuary_modifier
 			has_province_modifier = amur_estuary_modifier
 			has_province_modifier = orinoco_estuary_modifier
-			has_province_modifier = amazon_estuary_modifier
+			has_province_modifier = bm_amazon_estuary_modifier
 		}
 	}
 }

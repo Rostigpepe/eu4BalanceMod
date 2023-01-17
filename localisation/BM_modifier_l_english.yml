@@ -36,7 +36,13 @@ bm_the_ghetto:0 "The Ghetto"
 bm_the_ghetto_desc:0 ""
 
 bm_city_of_gold:0 "The City of Gold"
-bm_city_of_gold_desc:0 ""
+bm_city_of_gold_desc:0 "The Andes Mountains host large deposits of salt, silver, gold, and other ores. Cuzco, the cultural and administrative centre of the Incas, has become fabled to be built out of the gold extracted from the mountain. This fable, whilst not technically true, still holds some value to it as Cuzco is home to one of the larger gold deposits of the Andes Mountains."
 
-bm_copper_of_benin:0 "The Copper-Making of Benin"
-bm_copper_of_benin_desc:0 ""
+bm_bronze_of_benin:0 "The Bronze-Making of Benin"
+bm_bronze_of_benin_desc:0 "The Kingdom of Benin is rich in materials, such as iron, copper, and tin, and has cultivated a large bronze-making tradition of creating sculptures out of the materials. Many of these sculptures are used to decorate the royal palaces, bringin awe to our neighbours. The technique of our bronze-making is in fact so advanced that none of our neighbours are able to replicate it. Even if a foreign power more advanced than us, were to conquer us, burning down our city and stripping our royal palace of our bronze sculptures, they will be perplexed hundreds of years later over our masterful skills in bronze-making."
+
+bm_amazon_estuary_modifier:0 "Amazon Estuary"
+bm_amazon_estuary_modifier_desc:0 "Controlling the important opening to the Amazonian rivers strengthens our hold of the trade in the region."
+
+bm_niagara_falls_modifier:0 "Niagara Falls"
+bm_niagara_falls_modifier_desc:0 "Niagara Falls is the collective name for three waterfalls that form the southern end of the Niagara Gorge. Located on the Niagara River, which drains Lake Erie into Lake Ontario. The Niagara River is often used for fur trading by the local tribes. Nagivating the Niagara River is treacherous, but possible, by using the Native Canoes or other smaller forms of water vessels."
