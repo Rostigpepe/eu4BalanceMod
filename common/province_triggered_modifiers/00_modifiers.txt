@@ -1,0 +1,26 @@
+###     Province Modifiers that are triggered by specific requirements      ###
+bm_artillery_yard_of_smolensk = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			mil_tech = 7
+		}
+	}
+
+	artillery_cost = -0.10
+	local_garrison_size = 0.25
+	trade_value_modifier = 0.2
+	
+	#Province scope
+	on_activation = {
+	change_trade_goods = iron
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

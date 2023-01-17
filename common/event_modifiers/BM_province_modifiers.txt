@@ -81,8 +81,17 @@ bm_amazon_estuary_modifier = {
 	picture = "estuary_icon"
 }
 
+#The Niagara Falls "Estuaries"
 bm_niagara_falls_modifier = {
 	province_trade_power_value = 5
 	trade_value_modifier = 0.25
 	picture = "estuary_icon"
+}
+
+#African Precious Minerals
+bm_african_precious_minerals = {
+	trade_goods_size = 0.25
+	trade_value = 0.5
+	trade_value_modifier = 0.05
+	picture = "trade_value_modifier"
 }

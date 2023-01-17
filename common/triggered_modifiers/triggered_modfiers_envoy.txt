@@ -15,7 +15,7 @@ envoy_travel_time_i = {
 	}
 
 	
-	envoy_travel_time = -0.075
+	envoy_travel_time = -0.05
 }
 
 envoy_travel_time_ii = {
@@ -83,7 +83,7 @@ envoy_travel_time_v = {
 	}
 
 	
-	envoy_travel_time = -0.30
+	envoy_travel_time = -0.25
 }
 
 envoy_travel_time_vi = {
@@ -97,5 +97,5 @@ envoy_travel_time_vi = {
 	}
 
 	
-	envoy_travel_time = -0.45
+	envoy_travel_time = -0.30
 }
