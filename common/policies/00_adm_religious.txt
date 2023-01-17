@@ -38,18 +38,14 @@ sino_cultural_hegemony = {
 	potential = {
 		AND = {
 			has_idea_group = diplomatic_ideas
-			OR = {
-				has_idea_group = confucian_ideas0
-			}
+			has_idea_group = confucian_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = diplomatic_ideas
-			OR = {
-				full_idea_group = confucian_ideas0
-			}
+			full_idea_group = confucian_ideas0
 		}
 	}
 	
@@ -68,18 +64,14 @@ inter_caste_diplomatic_exchange = {
 	potential = {
 		AND = {
 			has_idea_group = diplomatic_ideas
-			OR = {
-				has_idea_group = dharmic_ideas0
-			}
+			has_idea_group = dharmic_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = diplomatic_ideas
-			OR = {
-				full_idea_group = dharmic_ideas0
-			}
+			full_idea_group = dharmic_ideas0
 		}
 	}
 	
@@ -140,18 +132,14 @@ the_satrapies_administration_act = {
 	potential = {
 		AND = {
 			has_idea_group = influence_ideas
-			OR = {
-				has_idea_group = zoroastrian_ideas0
-			}
+			has_idea_group = zoroastrian_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = influence_ideas
-			OR = {
-				full_idea_group = zoroastrian_ideas0
-			}
+			full_idea_group = zoroastrian_ideas0
 		}
 	}
 	
@@ -170,18 +158,14 @@ subjugation_of_the_castes = {
 	potential = {
 		AND = {
 			has_idea_group = influence_ideas
-			OR = {
-				has_idea_group = dharmic_ideas0
-			}
+			has_idea_group = dharmic_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = influence_ideas
-			OR = {
-				full_idea_group = dharmic_ideas0
-			}
+			full_idea_group = dharmic_ideas0
 		}
 	}
 	
@@ -200,18 +184,14 @@ the_heavenly_kingdom_act = {
 	potential = {
 		AND = {
 			has_idea_group = influence_ideas
-			OR = {
-				has_idea_group = confucian_ideas0
-			}
+			has_idea_group = confucian_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = influence_ideas
-			OR = {
-				full_idea_group = confucian_ideas0
-			}
+			full_idea_group = confucian_ideas0
 		}
 	}
 	
@@ -294,18 +274,14 @@ sinofication_of_the_blue_sky = {
 	potential = {
 		AND = {
 			has_idea_group = aristocracy_ideas
-			OR = {
-				has_idea_group = tengri_ideas0
-			}
+			has_idea_group = tengri_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = aristocracy_ideas
-			OR = {
-				full_idea_group = tengri_ideas0
-			}
+			full_idea_group = tengri_ideas0
 		}
 	}
 	
@@ -324,18 +300,14 @@ of_valkers_and_valkyrias = {
 	potential = {
 		AND = {
 			has_idea_group = aristocracy_ideas
-			OR = {
-				has_idea_group = norse_ideas0
-			}
+			has_idea_group = norse_ideas0
 		}
 	}
 	
 	allow = {
 		AND = {
 			full_idea_group = aristocracy_ideas
-			OR = {
-				full_idea_group = norse_ideas0
-			}
+			full_idea_group = norse_ideas0
 		}
 	}
 	
@@ -424,5 +396,3 @@ the_inquisitions_act = {
 		factor = 1
 	}
 }
-
-
