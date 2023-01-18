@@ -1457,7 +1457,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.015
+	yearly_army_professionalism = 0.0125
 }
 
 ##################################################################################################
@@ -1469,7 +1469,7 @@ recruitment_sabotaged = {
 }
 
 merchants_slandered = {
-	global_trade_power = -0.25
+	global_trade_power = -0.15
 }
 
 discontent_sowed = {
@@ -1486,7 +1486,7 @@ reputation_sabotaged = {
 }
 
 corrupt_officials = {
-	yearly_corruption = 0.15
+	yearly_corruption = 0.10
 }
 
 scaled_trade_league_leader = { #scaled by number of members
