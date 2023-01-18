@@ -92,6 +92,7 @@ monarchy = {
 				curia_regis_english
 				blood_tax_france_reform
 				house_of_knights_swe
+				empowering_the_junker_class_prussia
 			}
 		}
 		bureaucracy = {
@@ -118,6 +119,7 @@ monarchy = {
 				abolish_bastard_feudalism_english
 				centralising_french_feudal_lords_france_reform
 				independent_vassals_france_reform
+				generalkriegskommissariat_prussia
 			}
 		}
 		state_and_religion = {
@@ -168,6 +170,7 @@ monarchy = {
 				henrician_reforms_english
 				redcoats_english
 				corps_diplomatique_france_reform
+				kreditwerk_prussia
 			}
 		}
 		deliberative_assembly = {
@@ -190,6 +193,7 @@ monarchy = {
 				the_supreme_governor_english
 				the_rise_of_bourgeoisie_aristocracy_reform
 				parliamentary_order_swe
+				reformed_legal_system_prussia
 			}
 		}
 		economical_matters = {
@@ -207,6 +211,7 @@ monarchy = {
 				continental_system_reform
 				counsil_souverein_reform
 				competing_with_foreign_powers_swe
+				frederick_wilhelm_reforms_prussia
 			}
 		}
 		legitimation_of_power = {

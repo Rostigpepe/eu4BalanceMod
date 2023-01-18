@@ -1,0 +1,101 @@
+###		Tier 2 NOBLE PRIVILEGES PRUSSIA	###
+
+empowering_the_junker_class_prussia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = PRU
+		}
+	}
+	modifiers = {
+		global_manpower_modifier = 0.15
+		nobles_influence_modifier = 0.1
+		leader_cost = -10
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 3 BUREAUCRACY PRUSSIA	###
+generalkriegskommissariat_prussia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = PRU
+		}
+	}
+	modifiers = {
+		global_regiment_cost = -0.10
+		war_taxes_cost_modifier = -0.5
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.05
+	
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 5 CADRE PRUSSIA	###
+kreditwerk_prussia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = PRU
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.05
+		interest = -0.5
+		all_estate_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 6 ASSEMBLY PRUSSIA		###
+reformed_legal_system_prussia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = PRU
+		}
+	}
+	modifiers = {
+		state_governing_cost = -0.1
+		global_autonomy = -0.025
+		possible_adm_policy = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 7 ECONOMICAL MATTERS PRUSSIA		###
+frederick_wilhelm_reforms_prussia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = PRU
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.1
+		build_time = -0.2
+	}
+	ai = {
+		factor = 2
+	}
+}

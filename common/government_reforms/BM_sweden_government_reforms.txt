@@ -125,13 +125,13 @@ times_of_peace_and_of_security_swe = {
 		states_general_mechanic = {
 			statists = {
 				legitimacy = -0.5
-				idea_cost = -0.1
-				monthly_reform_progress_modifier = 0.15
+				idea_cost = -0.05
+				monthly_reform_progress_modifier = 0.10
 			}
 			monarchists = {
 				country_admin_power = 1
-				max_absolutism = 10
-				manpower_in_own_culture_provinces = 0.10
+				max_absolutism = 5
+				manpower_in_own_culture_provinces = 0.05
 			}
 		}
 	}
