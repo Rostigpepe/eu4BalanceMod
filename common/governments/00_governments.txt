@@ -93,6 +93,9 @@ monarchy = {
 				blood_tax_france_reform
 				house_of_knights_swe
 				empowering_the_junker_class_prussia
+				albertine_line_austria
+				turkic_qasilbash_heirs_persia
+				recruiting_the_sky_keepers_persia
 			}
 		}
 		bureaucracy = {
@@ -120,6 +123,9 @@ monarchy = {
 				centralising_french_feudal_lords_france_reform
 				independent_vassals_france_reform
 				generalkriegskommissariat_prussia
+				reorganize_the_imperial_army_austria
+				tajik_administration_persia
+				satrapies_persia
 			}
 		}
 		state_and_religion = {
@@ -150,6 +156,7 @@ monarchy = {
 				secularization_of_the_state_reform
 				swedish_church_ordinance_swe
 				the_church_of_sweden_swe
+				imperial_inquisition_austria
 			}
 		}
 		growth_of_administration = {
@@ -171,6 +178,8 @@ monarchy = {
 				redcoats_english
 				corps_diplomatique_france_reform
 				kreditwerk_prussia
+				declaratio_ferdinandei_austria
+				abbas_reforms_persia
 			}
 		}
 		deliberative_assembly = {
@@ -194,6 +203,8 @@ monarchy = {
 				the_rise_of_bourgeoisie_aristocracy_reform
 				parliamentary_order_swe
 				reformed_legal_system_prussia
+				diverse_estates_of_austria
+				ghulam_governates_persia
 			}
 		}
 		economical_matters = {
@@ -212,6 +223,8 @@ monarchy = {
 				counsil_souverein_reform
 				competing_with_foreign_powers_swe
 				frederick_wilhelm_reforms_prussia
+				utilising_donau_elbian_industrial_sectors_austria
+				silk_traders_persia
 			}
 		}
 		legitimation_of_power = {
@@ -223,6 +236,7 @@ monarchy = {
 				the_social_contract_reform
 				russian_autocratism_reform
 				droit_divin_reform
+				the_robot_patent_austria
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -237,6 +251,8 @@ monarchy = {
 				toleration_of_all_faiths_edict_reform
 				bill_of_rights_english
 				times_of_peace_and_of_security_swe
+				revoke_reichsfreiheit_austria
+				principle_of_fiqh_persia
 			}
 		}
 		separation_of_power = {

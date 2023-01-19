@@ -25,7 +25,7 @@ catholic_ideas0 = {
 		tolerance_own = 1
 	}
 	catholic_ideas6 = {
-		enforce_religion_cost = -0.33
+		enforce_religion_cost = -0.25
 		imperial_authority_value = 0.05
 	}
 	catholic_ideas7 = {
