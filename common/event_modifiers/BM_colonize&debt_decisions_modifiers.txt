@@ -3,8 +3,8 @@ BM_hired_conquistador = {
 BM_hired_explorer = {
 }
 BM_free_colonist = {
-	colonists = 2
-	range = 2
+	colonists = 1
+	range = 1
 	global_colonial_growth = 20
 }
 
