@@ -24,3 +24,46 @@ bm_artillery_yard_of_smolensk = {
 	}
 	
 }
+
+
+bm_restored_silk_centre = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		development = 10
+		AND = {
+			OR = {
+			has_building = marketplace
+			has_building = trade_depot
+			has_building = stock_exchange
+				AND = {
+					OR = {
+						has_opinion = {
+							who = PER
+							value = 75
+						}
+						OR = {
+							owner = PER
+						}
+					}
+				}
+			}
+		}
+	}
+
+	local_development_cost = -0.1
+	trade_value_modifier = 0.05
+	province_trade_power_modifier = 0.05
+	
+	#Province scope
+	on_activation = {
+	change_trade_goods = silk
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
