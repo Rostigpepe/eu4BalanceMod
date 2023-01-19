@@ -1,0 +1,32 @@
+﻿ #Muscovy Occupies Novgorod Event. Start of Subjugation of Novgorod Event Chain.
+ BM_muscovy_conquest_of_novgorod1_title: "The Subjugation of Novgorod"
+ BM_muscovy_conquest_of_novgorod1_desc: "After sieging down and occupying the city of Novgorod, many think that the war will be over. We could send a diplomat to their leaders with demands: Be annexed and we will end the violence. The people are begging for peace and dying in the streets. The chances of this offer being accepted is high but some military advisors and nobles would like a different offer. Anyhow, victory is ours!"
+ BM_muscovy_conquest_of_novgorod.1A: "Let us see how much they care about their people..."
+ BM_muscovy_conquest_of_novgorod.1B: "We shall make our own version of peace!"
+
+#Peace Offer To Novgorod (Novgorod Gets Event)
+ BM_peace_offer_to_novgorod1_title: "The Subjugation of Novgorod"
+ BM_peace_offer_to_novgorod1_desc: "A diplomat has come from the vile Rurikovich hound. He offers to end the violence if we agree to be annexed. While the war has been gruesome and hard for our people, perhaps there is still a chance of victory?"
+ BM_peace_offer_to_novgorod.1A: "Let us end this bloodshed."
+ BM_peace_offer_to_novgorod.1B: "God shall guide us to revenge!"
+
+#Novgorod Surrenders. Consolidation of lands. (Give land to nobles or seize it yourself)
+ BM_muscovite_consolidation_of_novgorod_lands1_title: "Consolidation of Lands"
+ BM_muscovite_consolidation_of_novgorod_lands1_desc: "Now that we control vast lands north of Moscow, we need to decide how to manage these lands. Many nobles are eager to take control of the various castles and villages but that would allow them to increase their influence. Perhaps the Crown should seize the lands and control it directly? Doing this would infuriate the nobles though..."
+ BM_muscovite_consolidation_of_novgorod_lands.1A: "Castles for the Nobles!"
+ BM_muscovite_consolidation_of_novgorod_lands.1B: "The Crown shall rule these lands."
+
+ BM_muscovite_consolidation_of_novgorod_lands.1ATooltip: "Gain §R2.00§! unrest in §YEvery Owned Province§! without core of §Y[From.GetName]§!.\n"
+ BM_muscovite_consolidation_of_novgorod_lands.1BToolTip: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YNoble Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+50.00§!\n"
+ BM_muscovite_consolidation_of_novgorod_lands.1CTooltip: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YCrown Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+35.00§!\n"
+
+#The Governing of Novgorod
+ BM_the_governing_of_novgorod1_title: "The Governing of Novgorod"
+ BM_the_governing_of_novgorod1_desc: "Some Nobles from the former republic have come to us with a plea. They ask to reconsider our decision about the former Republican lands. They say that the citizens are treated poorly and unequally. They suggest that we give some concessions to improve the situation. While this would be beneficial some of our advisors say that cracking down on such traitorous talk should be our priority."
+
+ BM_the_governing_of_novgorod.1A: "Crack down on the separatists."
+ BM_the_governing_of_novgorod.1B: "Grant some concessions."
+ BM_the_governing_of_novgorod.1C: "The situation works for now."
+
+ BM_the_governing_of_novgorod.1ATooltip: "Every Owned Province with §YNoble Lands§! loses '§YNoble Lands§!' and set §YLocal Autonomy§! to §Y10.00§!\n"
+ BM_the_governing_of_novgorod.1BTooltip: "Every Owned Province with §YCrown Lands§! loses '§YCrown Lands§!' and set §YLocal Autonomy§! to §Y35.00§!\n"

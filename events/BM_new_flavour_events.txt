@@ -1,0 +1,278 @@
+#Subjugation of Novgorod and subsequent coring
+namespace = BM_muscovy_conquest_of_novgorod.1
+country_event = {
+	id = BM_muscovy_conquest_of_novgorod.1
+	title = "BM_muscovy_conquest_of_novgorod1_title"
+	desc = "BM_muscovy_conquest_of_novgorod1_desc"
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = BM_muscovy_conquest_of_novgorod.1A
+
+		NOV = {
+			country_event = {
+				id = BM_peace_offer_to_novgorod.1 #A Merciful Offer
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = BM_muscovy_conquest_of_novgorod.1B
+
+		add_country_modifier = {
+			name = muscovy_muscovite_supremacy
+			duration = -1 #until the end of the war
+			desc = muscovy_muscovite_supremacy_tt
+		}
+	}
+}
+
+country_event = {
+	id = BM_peace_offer_to_novgorod.1
+	title = BM_peace_offer_to_novgorod1_title
+	desc = BM_peace_offer_to_novgorod1_desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = BM_peace_offer_to_novgorod.1A
+
+		ai_chance = { factor = 1 }
+
+		tooltip = {
+			FROM = { inherit = ROOT }
+		}
+		hidden_effect = {
+			every_owned_province = { cede_province = FROM }
+		}
+
+		FROM = {
+			country_event = {
+				id = BM_muscovite_consolidation_of_novgorod_lands.1 #Consolidation of Lands
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = BM_peace_offer_to_novgorod.1B
+
+		ai_chance = { factor = 0 }
+
+		add_war_exhaustion = -2
+	}
+}
+
+country_event = {
+	id = BM_muscovite_consolidation_of_novgorod_lands.1
+	title = BM_muscovite_consolidation_of_novgorod_lands1_title
+	desc = BM_muscovite_consolidation_of_novgorod_lands1_desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = BM_muscovite_consolidation_of_novgorod_lands.1A
+
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1ATooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = FROM }
+				}
+				add_unrest = 2
+			}
+		}
+
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1BToolTip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+					NOT = { is_core = ROOT }
+				}
+				add_territorial_core = ROOT
+
+				set_local_autonomy = 50
+				add_province_modifier = {
+					name = muscovy_noble_lands
+					duration = 9125 #25 years
+				}
+			}
+		}
+
+		set_country_flag = muscovy_noble_lands
+
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 10
+		}
+	}
+
+	option = {
+		name = BM_muscovite_consolidation_of_novgorod_lands.1B
+
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1ATooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = FROM }
+				}
+				add_unrest = 2
+			}
+		}
+
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1CTooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+					NOT = { is_core = ROOT }
+				}
+				add_territorial_core = ROOT
+
+				set_local_autonomy = 35
+				add_province_modifier = {
+					name = muscovy_crown_lands
+					duration = 9125 #25 years
+				}
+			}
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+
+		set_country_flag = muscovy_crown_lands
+
+		310 = { add_core = ROOT }
+		33 = { add_core = ROOT }
+		1955 = { add_core = ROOT }
+
+		add_adm_power = -200
+
+		change_estate_land_share = {
+			estate = all
+			share = -10
+		}
+	}
+}
+
+country_event = {
+	id = BM_the_governing_of_novgorod.1
+	title = BM_the_governing_of_novgorod1_title
+	desc = BM_the_governing_of_novgorod1_desc
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			had_country_flag = {
+				flag = muscovy_noble_lands
+				days = 3650 #10 years
+			}
+			had_country_flag = {
+				flag = muscovy_crown_lands
+				days = 3650 #10 years
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = muscovy_noble_lands
+		clr_country_flag = muscovy_crown_lands
+	}
+
+	option = {
+		name = BM_the_governing_of_novgorod.1A
+
+		if = {
+			limit = { has_country_flag = muscovy_noble_lands }
+			add_yearly_manpower = 0.1
+			custom_tooltip = BM_the_governing_of_novgorod.1ATooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_noble_lands }
+					remove_province_modifier = muscovy_noble_lands
+					set_local_autonomy = 10
+				}
+			}
+		}
+		else = {
+			add_years_of_income = 0.083
+			custom_tooltip = BM_the_governing_of_novgorod.1BTooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_crown_lands }
+					remove_province_modifier = muscovy_crown_lands
+					set_local_autonomy = 35
+				}
+			}
+		}
+
+		add_adm_power = -150
+		add_stability = -1
+	}
+
+	option = {
+		name = BM_the_governing_of_novgorod.1B
+
+		if = {
+			limit = { has_country_flag = muscovy_noble_lands }
+			custom_tooltip = BM_the_governing_of_novgorod.1ATooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_noble_lands }
+					remove_province_modifier = muscovy_noble_lands
+					set_local_autonomy = 10
+				}
+			}
+		}
+		else = {
+			custom_tooltip = BM_the_governing_of_novgorod.1BTooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_crown_lands }
+					remove_province_modifier = muscovy_crown_lands
+					set_local_autonomy = 35
+				}
+			}
+		}
+
+		add_prestige = -50
+		add_accepted_culture_or_dip_power = { culture = novgorodian }
+	}
+
+	option = {
+		name = BM_the_governing_of_novgorod.1C
+
+		add_prestige = -15
+	}
+}
+
+country_event = {
+	id = BM_muscovy_conquest_of_novgorod.2
+	title = BM_the_governing_of_novgorod1_title
+	desc = BM_muscovite_consolidation_of_novgorod_lands1_desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_country_modifier = muscovy_muscovite_supremacy
+		NOT = { war_with = NOV }
+	}
+
+	immediate = { remove_country_modifier = muscovy_muscovite_supremacy }
+
+	option = { }
+}
