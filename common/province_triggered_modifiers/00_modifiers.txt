@@ -42,10 +42,11 @@ bm_restored_silk_centre = {
 					OR = {
 						has_opinion = {
 							who = PER
-							value = 75
-						}
-						OR = {
-							owner = PER
+							value = 30
+								OR = {
+									owner = PER
+								}
+							}
 						}
 					}
 				}
@@ -59,11 +60,20 @@ bm_restored_silk_centre = {
 	
 	#Province scope
 	on_activation = {
-	change_trade_goods = silk
+		change_trade_goods = silk
+			add_trade_modifier = {
+				who = PER
+				duration = -1
+				power = 20
+				key = STRONG_MERCHANTS
+			}
+		}
 	}
 	
 	on_deactivation = {
-	
+		remove_trade_modifier = {
+			who = PER
+			key = STRONG_MERCHANTS
+		}
 	}
-	
 }
