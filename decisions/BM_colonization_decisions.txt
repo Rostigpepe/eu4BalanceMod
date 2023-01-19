@@ -1,0 +1,147 @@
+country_decisions = {
+	BM_hire_explorer = {	
+		potential = {
+				is_bankrupt = no
+				ai = no
+				#has_institution = new_world_i
+				NOT = { has_country_modifier = BM_hired_explorer }
+			}
+			allow = {
+				#has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.1
+				create_explorer = { tradition = 10 }
+				add_country_modifier = {
+				name = "BM_hired_explorer"
+				duration = 1825
+				hidden = yes
+				}
+			}
+		}	
+		
+	BM_hire_conquistador = {	
+		potential = {
+				is_bankrupt = no
+				ai = no
+				#has_institution = new_world_i
+				NOT = { has_country_modifier = BM_hired_conquistador }
+			}
+			allow = {
+				#has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.2
+				create_conquistador = { tradition = 10 }
+				add_country_modifier = {
+				name = "BM_hired_conquistador"
+				duration = 1825
+				hidden = yes
+				}
+			}	
+		}
+		BM_free_colonist = {
+		potential = {
+				NOT = {
+					capital_scope = {
+						continent = north_america
+					}
+				}
+				NOT = {
+					capital_scope = {
+						continent = south_america
+					}
+				}
+				NOT = {
+					capital_scope = {
+						continent = asia
+					}
+				}
+				NOT = {
+					capital_scope = {
+						region = ural_region
+					}
+				}
+				NOT = { has_country_modifier = BM_free_colonist}	
+				###X###
+				ai = no
+				dip_tech = 6
+				#######
+			}
+
+		allow = {
+			dip_tech = 6
+		}
+		effect = {
+			add_years_of_income = -0.2
+			add_country_modifier = {
+				name = "BM_free_colonist"
+				duration = 3650
+			}
+		}
+	}	
+}
+BM_debt_restructure = {
+	major = yes
+	potential = {
+		is_year = 1445
+		ai = no
+		is_bankrupt = no
+		is_at_war = no
+		NOT = { has_country_flag = gecko_tackle_debt }
+		NOT = { has_country_modifier = gecko_debt_tackled_2 }
+		NOT = { has_country_modifier = gecko_tackle_debt_timer }
+		###X###
+		num_of_loans = 10
+		#######
+	}
+	allow = {
+		ai = no
+		num_of_loans = 10
+	}
+	effect = {
+		set_country_flag = gecko_tackle_debt
+		set_country_flag = gecko_tackle_debt_timer_2
+		add_country_modifier = {
+			name = "gecko_tackle_debt_timer"
+			duration = 3650
+			hidden = yes
+		} 
+		add_country_modifier = {
+			name = "gecko_debt_tackled"
+			duration = -1
+		}
+		add_years_of_income = 1
+		add_mercantilism = -10
+	}
+}
+
+BM_debt_restructure2 = {
+	major = yes
+	potential = {
+		is_year = 1445
+		ai = no
+		is_bankrupt = no
+		has_country_flag = gecko_tackle_debt
+	}
+	allow = {
+		NOT = { years_of_income = 1.0 }
+		is_in_deficit = no
+		hidden_trigger = {
+			had_country_flag = {
+				flag = gecko_tackle_debt_timer_2
+				days = 30
+			}
+		}
+	}
+	effect = {
+		clr_country_flag = gecko_tackle_debt
+		clr_country_flag = BM_tackle_debt_timer_2
+		remove_country_modifier = gecko_debt_tackled
+		
+		add_country_modifier = {
+			name = "gecko_debt_tackled_2"
+			duration = 1825
+		}
+	}
+}

@@ -16,3 +16,22 @@
 
  development_of_brugge_title:0 "Land Reclamation in Brugge"
  development_of_brugge_desc:0 "Flood control have always been an important issue for the people who decided to settle on the swamps and floodlands of the lowlands. Ever since Ancient times, floods, tides and storm surges from the sea have been documented as especially dangerous in the Netherlands; Pytheas, the Greek geographer noted of the Low Countries that more people died in the struggle against water than in the struggle against men. For hundreds of years the people's of the lowlands have begun projects of Land Reclamation by building drainage systems, river controls, dams, dikes, polders and other hydraulic engineeering works. By continuing these works we can further uncover the cultivable land, growing our farms and giving use more land to settle."
+
+#EXPLORERS + COLONIZATION
+ BM_hire_explorer_title:0 "Hire A Foreign Explorer"
+ BM_hire_explorer_desc:0 "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By hiring foreing explorers we can avoid having to establish our own exploration bureau."
+ BM_hire_conquistador_title:0 "Hire A Foreign Conquistador"
+ BM_hire_conquistador_desc:0 "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By hiring foreing conquistadors we can avoid having to establish our own exploration bureau."
+ BM_free_colonist_title:0 "Establishing a Colonization Bureau"
+ BM_free_colonist_desc:0 "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By establishing our own colonization-bureau we can also start colonising."
+
+#DEBT DECISIONS
+ BM_debt_restructure:0 "Tackle the National Debt"
+ BM_debt_restructure_desc:0 "Attempt to lessen the debt burden faced by our country. This will stand down our armies for the duration."
+ BM_debt_restructure2_title:0 "Cease Debt Repayments"
+ BM_debt_restructure2_desc:0 "Refocus our economy away from debt repayments."
+
+ BM_tackle_debt_timer_2:0 "Economic Recovery"
+ gecko_b:0 "Recent Bankruptcy"
+ gecko_debt_tackled:0 "Economic Recovery"
+ gecko_debt_tackled_2:0 "Slowed Military Build-up"
