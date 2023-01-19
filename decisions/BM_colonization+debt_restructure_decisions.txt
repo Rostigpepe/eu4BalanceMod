@@ -14,7 +14,7 @@ country_decisions = {
 				create_explorer = { tradition = 10 }
 				add_country_modifier = {
 				name = "BM_hired_explorer"
-				duration = 1825
+				duration = 365
 				hidden = yes
 				}
 			}
@@ -31,35 +31,20 @@ country_decisions = {
 				#has_institution = new_world_i
 			}
 			effect = {
-				add_years_of_income = -0.2
+				add_years_of_income = -0.1
 				create_conquistador = { tradition = 10 }
 				add_country_modifier = {
 				name = "BM_hired_conquistador"
-				duration = 1825
+				duration = 365
 				hidden = yes
 				}
 			}	
 		}
 		BM_free_colonist = {
 		potential = {
-				NOT = {
+				AND = {
 					capital_scope = {
-						continent = north_america
-					}
-				}
-				NOT = {
-					capital_scope = {
-						continent = south_america
-					}
-				}
-				NOT = {
-					capital_scope = {
-						continent = asia
-					}
-				}
-				NOT = {
-					capital_scope = {
-						region = ural_region
+						superregion = europe_superregion
 					}
 				}
 				NOT = { has_country_modifier = BM_free_colonist}	
@@ -70,7 +55,7 @@ country_decisions = {
 			}
 
 		allow = {
-			dip_tech = 6
+			dip_tech = 7
 		}
 		effect = {
 			add_years_of_income = -0.2
@@ -104,7 +89,7 @@ BM_debt_restructure = {
 		set_country_flag = gecko_tackle_debt_timer_2
 		add_country_modifier = {
 			name = "gecko_tackle_debt_timer"
-			duration = 3650
+			duration = 10950
 			hidden = yes
 		} 
 		add_country_modifier = {
@@ -125,7 +110,6 @@ BM_debt_restructure2 = {
 		has_country_flag = gecko_tackle_debt
 	}
 	allow = {
-		NOT = { years_of_income = 1.0 }
 		is_in_deficit = no
 		hidden_trigger = {
 			had_country_flag = {
@@ -141,7 +125,7 @@ BM_debt_restructure2 = {
 		
 		add_country_modifier = {
 			name = "gecko_debt_tackled_2"
-			duration = 1825
+			duration = 3650
 		}
 	}
 }
