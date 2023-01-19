@@ -1,4 +1,5 @@
 #Subjugation of Novgorod and subsequent coring
+
 namespace = BM_muscovy_conquest_of_novgorod.1
 country_event = {
 	id = BM_muscovy_conquest_of_novgorod.1
@@ -7,7 +8,19 @@ country_event = {
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			AND = {
+				war_with = NOV
+				war_score_against = {
+					who = NOV
+					value = 75
+				}
+				controls = 310
+			}
+			owns_core_province = 310
+		}
+	}
 
 	option = {
 		name = BM_muscovy_conquest_of_novgorod.1A
