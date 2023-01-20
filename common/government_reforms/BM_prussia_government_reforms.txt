@@ -91,9 +91,11 @@ frederick_wilhelm_reforms_prussia = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
 		build_cost = -0.1
 		build_time = -0.2
+	}
+	custom_attributes = {
+		enables_immigrant_settlements = yes
 	}
 	ai = {
 		factor = 2
