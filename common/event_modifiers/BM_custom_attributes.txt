@@ -1,5 +1,5 @@
 #Prussian Frederick Wilhelm Reforms
-GE_immigrant_settlements = {
+BM_immigrant_settlements = {
 	local_development_cost = -0.1
 	trade_goods_size_modifier = 0.1
 }
