@@ -1939,7 +1939,7 @@ HUN_ideas = {
 		global_manpower_modifier = 0.20 
 	}
 	southern_tensions = {
-		local_defensiveness = 0.1 
+		defensiveness = 0.15
 		max_hostile_attrition = 1
 	}
 	decretum_maius = {
