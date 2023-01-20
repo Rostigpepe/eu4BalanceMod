@@ -24,22 +24,22 @@ CAE_ideas = {
 		yearly_absolutism = 0.5
 	}
 	cae_elbe_trade = {
-		trade_efficiency = 0.10
+		trade_efficiency = 0.1
 	}
 	modernized_wagenburg_tactics = {
-		fire_damage_received = -0.10 
+		fire_damage_received = -0.1
 	}
 	elbian_industry = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.1
 	}
 	hussite_scientific_traditions = {
 		technology_cost = -0.1 
 	}
 	north_german_army_professionalism = {
-		infantry_power = 0.10
+		infantry_power = 0.1
 	}
 	expanding_confederation = {
 		discipline = 0.025
-		general_cost = -0.10
+		general_cost = -0.1
 	}
 }
