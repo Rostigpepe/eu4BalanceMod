@@ -52,8 +52,7 @@ bm_restored_silk_centre = {
 				}
 			}
 		}
-	}
-
+	
 	local_development_cost = -0.1
 	trade_value_modifier = 0.05
 	province_trade_power_modifier = 0.05
@@ -68,7 +67,7 @@ bm_restored_silk_centre = {
 				key = STRONG_MERCHANTS
 			}
 		}
-	}
+	
 	
 	on_deactivation = {
 		remove_trade_modifier = {
