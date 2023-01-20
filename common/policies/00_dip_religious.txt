@@ -336,3 +336,45 @@ native_educations_act = {
 		factor = 1
 	}
 }
+
+
+second_islamic_exploration_age = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = exploration_ideas
+			OR = {
+				full_idea_group = anglican_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+				full_idea_group = catholic_ideas0
+			}
+		}
+	}
+	
+	native_assimilation = 0.5
+	native_uprising_chance = -0.50
+
+	ai_will_do = {
+		factor = 1
+	}
+}

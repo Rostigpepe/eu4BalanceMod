@@ -143,7 +143,7 @@ the_satrapies_administration_act = {
 		}
 	}
 	
-	allow_client_states = yes
+	vassal_income = 0.33
 	diplomatic_annexation_cost = -0.2
 
 	ai_will_do = {

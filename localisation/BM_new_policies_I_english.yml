@@ -1,0 +1,52 @@
+﻿l_english:
+#ADM POLICIES
+ diplomatic_immunity:0 "Diplomatic Unity"
+ diplomatic_immunity_desc:0 "By entering into agreement with our neighbours of granting our diplomats diplomatic unity, we can inter-religious dialogue without it devolving into religious violence and war."
+
+ sino_cultural_hegemony:0 "Sino Cultural Hegemony"
+ sino_cultural_hegemony_desc:0 "With promises and assurances of safety and tolerance, we can convince the unbelievers, both domestic and foreign, to remain open to our influence."
+
+ inter_caste_diplomatic_exchange:0 "Inter-Caste Diplomatic Exchange"
+ inter_caste_diplomatic_exchange_desc:0 "The management of all the estates in our state can be tricky. In India especially, there are not only the standard social classes of priests, nobles, peasants, and burghers, but also a layer of religious castes. By promoting all these castes and estates to solve their disagreements through political means, we can both ensure their loyalty, and their subjugation. "
+
+ christian_supremacy_thought:0 "Christian Supremacy"
+ christian_supremacy_thought_desc:0 "By focusing our devout faith, unity, and religious customs, we can make it easier to assimilate not only nonbelievers, but also foreigners."
+
+ the_satrapies_administration_act:0 "The Satrapies Administration"
+ the_satrapies_administration_act_desc:0 "By taking inspiration from the ancient Persian Empire and their use of Satrapies, we can utilise our subjects more effectively."
+
+ subjugation_of_the_castes:0 "Subjugation of the Castes"
+ subjugation_of_the_castes_desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+#DIP POLICIES
+
+
+
+#MIL POLICIES
