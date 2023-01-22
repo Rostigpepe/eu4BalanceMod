@@ -1923,7 +1923,7 @@ HUN_ideas = {
 	free = yes
 	
 	hungarian_tax_system = {
-		global_tax_modifier = 0.15 
+		global_tax_modifier = 0.15
 	}
 	found_the_black_army = {
 		discipline = 0.05
