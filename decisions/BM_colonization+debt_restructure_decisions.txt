@@ -3,11 +3,11 @@ country_decisions = {
 		potential = {
 				is_bankrupt = no
 				ai = no
-				#has_institution = new_world_i
+				has_institution = new_world_i
 				NOT = { has_country_modifier = BM_hired_explorer }
 			}
 			allow = {
-				#has_institution = new_world_i
+				has_institution = new_world_i
 			}
 			effect = {
 				add_years_of_income = -0.1
@@ -24,11 +24,11 @@ country_decisions = {
 		potential = {
 				is_bankrupt = no
 				ai = no
-				#has_institution = new_world_i
+				has_institution = new_world_i
 				NOT = { has_country_modifier = BM_hired_conquistador }
 			}
 			allow = {
-				#has_institution = new_world_i
+				has_institution = new_world_i
 			}
 			effect = {
 				add_years_of_income = -0.1
@@ -50,7 +50,7 @@ country_decisions = {
 				NOT = { has_country_modifier = BM_free_colonist}	
 				###X###
 				ai = no
-				dip_tech = 6
+				has_institution = new_world_i
 				#######
 			}
 
