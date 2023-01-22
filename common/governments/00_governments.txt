@@ -66,6 +66,7 @@ monarchy = {
 				georgian_principality_reform
 				georgian_monarchy_reform
 				georgian_empire_reform
+				emirate_of_andalusia_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -96,6 +97,7 @@ monarchy = {
 				albertine_line_austria
 				turkic_qasilbash_heirs_persia
 				recruiting_the_sky_keepers_persia
+				council_of_sheikhs_andalus
 			}
 		}
 		bureaucracy = {
@@ -126,6 +128,7 @@ monarchy = {
 				reorganize_the_imperial_army_austria
 				tajik_administration_persia
 				satrapies_persia
+				taifa_governors_andalus
 			}
 		}
 		state_and_religion = {
@@ -157,6 +160,7 @@ monarchy = {
 				swedish_church_ordinance_swe
 				the_church_of_sweden_swe
 				imperial_inquisition_austria
+				cultural_investment_andalus
 			}
 		}
 		growth_of_administration = {
@@ -180,6 +184,7 @@ monarchy = {
 				kreditwerk_prussia
 				declaratio_ferdinandei_austria
 				abbas_reforms_persia
+				taha_divisions_andalus
 			}
 		}
 		deliberative_assembly = {

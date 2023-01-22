@@ -1447,7 +1447,7 @@ POL_ideas = {
 	}
 	
 	bonus = {
-	 	tolerance_heretic = 3
+	tolerance_heretic = 3
 	}
 	
 	trigger = {
@@ -2114,7 +2114,7 @@ SIC_ideas = {
 
 ARA_ideas = {
 	start = {
-		galley_power = 0.2
+		galley_power = 0.25
 		trade_efficiency = 0.1
 	}
 	
@@ -2129,9 +2129,10 @@ ARA_ideas = {
 	
 	mercenary_princes = {
 		merc_maintenance_modifier = -0.15
+		mercenary_discipline = 0.025
 	}
 	protection_of_coastlines = {
-		naval_forcelimit_modifier = 0.10
+		naval_forcelimit_modifier = 0.15
 		global_sailors_modifier = 0.25
 	}
 	ara_mediterranean_trade = {
@@ -14442,7 +14443,7 @@ SYN_ideas = {
 MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
-		naval_forcelimit_modifier = 0.25
+		shock_damage = 0.1
 	}
 	bonus = {
 		hostile_attrition = 1
@@ -14452,7 +14453,7 @@ MOR_ideas = {
 	}
 	free = yes
 	mor_powerful_viziers = {
-		same_culture_advisor_cost = -0.2
+		same_culture_advisor_cost = -0.25
 	}
 	mor_marabouts = {
 		idea_cost = -0.1
@@ -14466,14 +14467,16 @@ MOR_ideas = {
 		galley_power = 0.2
 	}
 	mor_pirate_republics = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.25
+		light_ship_cost = -0.25
 	}
 	mor_slave_soldiers = {
 		land_maintenance_modifier = -0.05
-		cavalry_power = 0.1
+		infantry_power = 0.1
 	}
 	mor_curb_power_of_the_tribes = {
-		global_autonomy = -0.05
+		possible_adm_policy = 1
+		free_adm_policy = 1
 	}
 }
 
@@ -14856,7 +14859,7 @@ ASU_ideas = {
 ADU_ideas = {
 	start = {
 		land_morale = 0.15 
-		global_ship_trade_power = 0.25 
+		global_ship_trade_power = 0.5
 	}
 
 	bonus = {
@@ -14873,9 +14876,11 @@ ADU_ideas = {
 	}
 	adu_taifa_adminstration = {
 		vassal_forcelimit_bonus = 1
+		vassal_income = 0.2
     }
 	adu_ahl_uhl_dhimma = {
 		tolerance_heathen = 3
+		unrest_catholic_provinces = -2
     }
 	adu_legacy_of_ibn_arabi = {
 		idea_cost = -0.1
@@ -14889,8 +14894,8 @@ ADU_ideas = {
 		colonists = 1
 	}
 	adu_al_awasim = {
-		defensiveness = 0.1
-		rival_border_fort_maintenance = -0.25
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.15
 	}
 }
 

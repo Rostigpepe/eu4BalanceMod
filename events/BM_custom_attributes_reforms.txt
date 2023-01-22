@@ -66,3 +66,84 @@ country_event = {
 		
 	}
 }
+
+#EMIRATE OF ANDALUSIA CUSTOM IBERIAN HAREM
+country_event = {
+	id = reform_me_events.222
+	title = reform_me_events.222.t
+	desc = reform_me_events.222.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_government_attribute = enables_iberian_harem
+		NOT = {
+			OR = {
+				has_heir = yes
+				has_country_flag = GE_Iberian_Harem_Flag
+			}
+		}
+		ruler_age = 30
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	immediate = {
+		set_country_flag = GE_Iberian_Harem_Flag
+	}
+	
+	option = {
+		name = reform_me_events.222.a
+		define_heir = {
+			culture = castillian
+			dynasty = root
+			adm = 0
+			dip = 0
+			mil = 3
+		}
+		set_heir_flag = GE_Iberian_Harem_Castillian
+		custom_tooltip = GE_Iberian_Harem_Castillian_TT
+	}
+	option = {
+		name = reform_me_events.222.b
+		define_heir = {
+			culture = andalucian
+			dynasty = root
+			adm = 3
+			dip = 0
+			mil = 0
+		}
+		set_heir_flag = GE_Iberian_Harem_Andalucian
+		custom_tooltip = GE_Iberian_Harem_Andalucian_TT
+	}
+	option = {
+		name = reform_me_events.222.c
+		define_heir = {
+			culture = portugese
+			dynasty = root
+			adm = 0
+			dip = 3
+			mil = 0
+		}
+		set_heir_flag = GE_Iberian_Harem_Portugese
+		custom_tooltip = GE_Iberian_Harem_Portugese_TT
+	}
+	option = {
+		name = reform_me_events.222.e
+		define_heir = {
+			culture = catalan
+			dynasty = root
+			adm = 1
+			dip = 1
+			mil = 1
+		}
+		set_heir_flag = GE_Iberian_Harem_Catalan
+		custom_tooltip = GE_Iberian_Harem_Catalan_TT
+	}
+	
+	after = {
+		clr_country_flag = GE_Iberian_Harem_Flag
+	}
+}
