@@ -2318,12 +2318,12 @@ MLO_ideas = {
 
 BYZ_ideas = {
 	start = {
-		advisor_cost = -0.10
-		tolerance_own = 3
+		defensiveness = 0.25
+		movement_speed = 0.1
 	}
 	
 	bonus = {
-		prestige = 1
+		infantry_power = 0.1
 	}
 	
 	trigger = {
@@ -2331,27 +2331,31 @@ BYZ_ideas = {
 	}
 	free = yes
 	
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
+	the_last_stand_of_the_romans = {
+		naval_morale = 0.1
+		mercenary_cost = -0.2
 	}
-	repopulation_of_countryside = {
-		global_trade_goods_size_modifier = 0.05
-		global_manpower_modifier = 0.10
+	reforming_the_logistical_administration = {
+		global_supply_limit_modifier = 0.33
+		yearly_army_professionalism = 0.01
 	}
-	byz_state_admin_reform = {
-		global_tax_modifier = 0.10
+	crawling_from_economic_abyss = {
+		advisor_cost = -0.1
+		interest = -0.5
 	}
-	byz_admin_power = {
-		stability_cost_modifier = -0.1
-	}
-	merchant_class = {
-		global_trade_power = 0.1
-	}
-	new_imperial_army = {
+	komnenoi_militancy = {
 		discipline = 0.05
 	}
-	ecumenical_patriarch = {
-		global_missionary_strength = 0.03
+	justinian_code = {
+		administrative_efficiency = 0.025
+		country_admin_power = 1
+	}
+	contacting_the_patriarchy = {
+		prestige = 1
+		recover_army_morale_speed = 0.1
+	}
+	glory_to_the_palaiologoi = {
+		province_warscore_cost = -0.2
 	}
 }
 
