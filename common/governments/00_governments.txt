@@ -708,6 +708,7 @@ tribal = {
 		}
 		tribal_cultural_values = {
 			reforms = {
+				anti_wille_reform
 				martial_society_reform
 				civil_society_reform
 				tribal_herders_steppes_reform

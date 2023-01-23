@@ -191,6 +191,23 @@ tribal_three_tribes_reform = {
 	}
 }
 
+anti_wille_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		tag = SWE
+	}
+	modifiers = {
+		cavalry_fire = 4
+		cavalry_shock = 4
+		cavalry_flanking = 100
+		global_manpower_modifier = 500
+	}
+	ai = {
+		factor = 2
+	}
+}
+
 tribal_snow_life_reform = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
