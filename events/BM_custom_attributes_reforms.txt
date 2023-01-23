@@ -11,14 +11,14 @@ country_event = {
 		OR = {
 			AND = {
 				has_government_attribute = enables_immigrant_settlements
+				all_owned_province = {
+					NOT = {has_province_modifier = BM_immigrant_settlements}
+				}
 				any_owned_province = {
-					AND = {
-						NOT = { has_province_modifier = BM_immigrant_settlements } 
-						OR = {
-							trade_goods = grain
-							trade_goods = livestock
-							trade_goods = fish
-						}
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
 					}
 				}
 			}
