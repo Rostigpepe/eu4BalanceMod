@@ -21,8 +21,11 @@
  native_harmony:0 "Native Harmony"
  native_harmony_desc:0 "Rather then driving the natives from their land, we should instead seek to understand them, mending our differences, and peacefully integrating them. This way we can not only avoid conflict, but also gain access to a local workforce in the area."
 
- :0 ""
- _desc:0 ""
+ the_solar_kingdom:0 "The Solar Kingdom"
+ _desc:0 "The failure of previous administrations to properly manage our subjects in our realm cannot be allwed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions. Instead of being the center of the mandala, we will become the center of an Empire."
+
+ integration_of_the_daymio_clans:0 "Integration of the Daymio Clans"
+ integration_of_the_daymio_clans_desc:0 "We have struggled for years and through conquest and diplomacy we have established our clan as one of the strongest on the island. By expanding our state administration over newly taken land, the other Daimyos as well as the Shogun himself will realise our rightful claimant to the Shogunate."
 
  :0 ""
  _desc:0 ""
@@ -52,14 +55,11 @@
  promised_land_reclamation_act:0 "Promised Land Reclamation Act"
  promised_land_reclamation_act_desc:0 "It is our holy duty to reclaim the land that was promised to us. We shall let the world know that we mean no harm, as long as it is peacefully given to us."
 
- the_solar_kingdom:0 "The Solar Kingdom"
- _desc:0 "The failure of previous administrations to properly manage our subjects in our realm cannot be allwed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions. Instead of being the center of the mandala, we will become the center of an Empire."
+ federation_of_tribes:0 "Federation of Tribes"
+ federation_of_tribes_desc:0 "We have attained a status that many tribes and groups around us have not; Unity! It is a simple concept to some, but to many it is something that is rare and hard to come by. This unity of ours exude power and strength not only in numbers, but in diplomatic prowess as well."
 
- :0 ""
- _desc:0 ""
-
- :0 ""
- _desc:0 ""
+ the_calling_of_the_sea:0 "The Calling of the Sea"
+ the_calling_of_the_sea_desc:0 "Our religious devotion, coupled with our investments into establishing naval ports and trade, has created a strong cultural tie to the Sea. Increasing our production of goods as well as strengthening our navy."
 
  :0 ""
  _desc:0 ""
