@@ -55,7 +55,7 @@ country_decisions = {
 			}
 
 		allow = {
-			dip_tech = 7
+			dip_tech = 8
 		}
 		effect = {
 			add_years_of_income = -0.2
