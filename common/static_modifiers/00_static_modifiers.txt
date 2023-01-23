@@ -1122,12 +1122,18 @@ republican_tradition = {
 	global_unrest = -2
 	rr_jacobins_influence = 0.1
 	reform_progress_growth = 1.0
-	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
+	burghers_loyalty_modifier = 0.1
+	vaisyas_loyalty_modifier = 0.1
+	nobles_loyalty_modifier = -0.1
 }
 
 inverse_republican_tradition = {
-	stability_cost_modifier = 2.0
+	stability_cost_modifier = 1
+	yearly_corruption = 0.25
+	burghers_loyalty_modifier = -0.1
+	vaisyas_loyalty_modifier = -0.1
+	nobles_loyalty_modifier = 0.1
+	nobles_influence_modifier = 0.1
 	rr_jacobins_influence = -0.1
 }
 
