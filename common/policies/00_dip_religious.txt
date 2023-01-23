@@ -345,13 +345,9 @@ second_islamic_exploration_age = {
 		AND = {
 			has_idea_group = exploration_ideas
 			OR = {
-				has_idea_group = anglican_ideas0
-				has_idea_group = protestant_ideas0
-				has_idea_group = reformed_ideas0
-				has_idea_group = hussite_ideas0
-				has_idea_group = orthodox_ideas0
-				has_idea_group = coptic_ideas0
-				has_idea_group = catholic_ideas0
+				has_idea_group = sunni_ideas0
+				has_idea_group = shia_ideas0
+				has_idea_group = ibadi_ideas0
 			}
 		}
 	}
@@ -360,19 +356,214 @@ second_islamic_exploration_age = {
 		AND = {
 			full_idea_group = exploration_ideas
 			OR = {
+				full_idea_group = sunni_ideas0
+				full_idea_group = shia_ideas0
+				full_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	range = 0.5
+	leader_land_manuever = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_empty_still_ocean = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = shinto_ideas0
+				has_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = exploration_ideas
+			OR = {
+				full_idea_group = shinto_ideas0
+				full_idea_group = confucian_ideas0
+			}
+		}
+	}
+	
+	colonist_placement_chance = 0.05
+	global_sailors_modifier = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+sunset_invasion_explo = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = mayan_ideas
+				has_idea_group = inti_ideas0
+				has_idea_group = nahuatl_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = exploration_ideas
+			OR = {
+				full_idea_group = mayan_ideas
+				full_idea_group = inti_ideas0
+				full_idea_group = nahuatl_ideas0
+			}
+		}
+	}
+	
+	landing_penalty = -2
+	movement_speed_onto_off_boat_modifier = 2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+calling_of_our_forefathers = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = exploration_ideas
+			has_idea_group = norse_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = exploration_ideas
+			full_idea_group = norse_ideas0
+		}
+	}
+	
+	naval_attrition = -0.25
+	movement_speed_in_fleet_modifier = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+promised_land_reclamation_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			has_idea_group = jewish_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			full_idea_group = jewish_ideas0
+		}
+	}
+	
+	ae_impact = -0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+federation_of_tribes = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = influence_ideas
+			has_idea_group = totemist_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = influence_ideas
+			full_idea_group = totemist_ideas0
+		}
+	}
+	
+	monthly_federation_favor_growth = 0.05
+	monthly_favor_modifier = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_calling_of_the_sea = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = maritime_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = jewish_ideas0
+				has_idea_group = zoroastrian_ideas0
+				has_idea_group = dharmic_ideas0
+				has_idea_group = buddhism_ideas0
+				has_idea_group = confucian_ideas0
+				has_idea_group = tengri_ideas0
+				has_idea_group = animist_ideas0
+				has_idea_group = fetish_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = maritime_ideas
+			OR = {
 				full_idea_group = anglican_ideas0
 				full_idea_group = protestant_ideas0
 				full_idea_group = reformed_ideas0
 				full_idea_group = hussite_ideas0
 				full_idea_group = orthodox_ideas0
 				full_idea_group = coptic_ideas0
-				full_idea_group = catholic_ideas0
+				full_idea_group = jewish_ideas0
+				full_idea_group = zoroastrian_ideas0
+				full_idea_group = dharmic_ideas0
+				full_idea_group = buddhism_ideas0
+				full_idea_group = confucian_ideas0
+				full_idea_group = tengri_ideas0
+				full_idea_group = animist_ideas0
+				full_idea_group = fetish_ideas0
 			}
 		}
 	}
 	
-	native_assimilation = 0.5
-	native_uprising_chance = -0.50
+	naval_morale = 0.15
+	global_trade_goods_size_modifier = 0.15
 
 	ai_will_do = {
 		factor = 1
