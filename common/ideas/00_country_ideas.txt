@@ -2563,11 +2563,11 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		diplomatic_reputation = 2
+		defensiveness = 0.33
 	}
 	
 	bonus = {
-		defensiveness = 0.33
+		administrative_efficiency = 0.025
 	}
 	
 	trigger = {
@@ -2589,7 +2589,7 @@ ITA_ideas = {
 		galley_power = 0.20
 	}
 	italian_tax_reform = {
-		global_manpower_modifier = 0.20 # The Office of Censor
+		global_manpower_modifier = 0.25 # The Office of Censor
 	}
 	heir_to_the_empire = {
 		global_tax_modifier = 0.20 # Italian Tax Reform
