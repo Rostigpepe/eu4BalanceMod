@@ -98,10 +98,10 @@ great_mongol_state_reform = {
 	}
 }
 
-
+###		YUAN HORDE REFORMS		###
 ###   TIER 2 REFORMS   ###
 
-yuan_horde_tier2 = {
+yuan_horde_reform2 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {
@@ -129,7 +129,7 @@ yuan_horde_tier2 = {
 
 ###   TIER 3 REFORMS   ###
 
-tribal_tengri_world_reform = {
+yuan_horde_reform3 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {
@@ -156,7 +156,7 @@ tribal_tengri_world_reform = {
 
 ###   TIER 4 REFORMS   ###
 
-tribal_lessons_reform = {
+yuan_horde_reform4 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {
@@ -183,7 +183,7 @@ tribal_lessons_reform = {
 
 ###   TIER 5 REFORMS   ###
 
-tribal_silk_road_reform = {
+yuan_horde_reform6 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {
@@ -211,7 +211,7 @@ tribal_silk_road_reform = {
 ###   TIER 6 REFORMS   ###
 #Changed
 
-tribal_dirham_reform = {
+yuan_horde_reform6 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {
@@ -238,7 +238,7 @@ tribal_dirham_reform = {
 
 ###   TIER 7 REFORMS   ###
 
-tribal_law_of_yassa_reform = {
+yuan_horde_reform7 = {
 	allow_normal_conversion = yes
 	icon = "chieftain"
 	potential = {

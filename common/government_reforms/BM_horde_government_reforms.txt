@@ -25,7 +25,7 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		manpower_in_accepted_culture_provinces = 0.2
+			manpower_in_culture_group_provinces = 0.2
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
