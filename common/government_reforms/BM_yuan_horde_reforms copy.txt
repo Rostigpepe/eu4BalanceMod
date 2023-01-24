@@ -1,0 +1,257 @@
+steppe_horde = {
+	icon = "horde_riding"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			culture_group = altaic
+			culture_group = tartar
+			primary_culture = altaic_new 
+		}
+		has_reform = steppe_horde
+		NOT = { has_reform = great_mongol_state_reform }
+	}
+	legacy_equivalent = steppe_horde_legacy
+	nomad = yes
+	raze_province = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = nomad_group
+	}
+
+	lock_level_when_selected = yes
+
+	start_territory_to_estates = 0.5
+
+	modifiers = {
+		manpower_in_culture_group_provinces = 0.2
+		land_forcelimit_modifier = 0.2
+		reinforce_cost_modifier = -0.5
+		years_of_nationalism = -5
+		movement_speed = 0.2
+
+        #Changes
+        #Spread from -0.15 to -0.25
+        global_institution_spread = -0.25
+        #Loot from 0.5 to 1
+        loot_amount = 1
+        
+        #Added
+		development_cost_modifier = 0.10
+        embracement_cost = 0.25
+		available_province_loot = 0.5
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+
+great_mongol_state_reform = {
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_reform = great_mongol_state_reform
+			have_had_reform = great_mongol_state_reform
+			tag = MGE
+		}
+	}
+	legacy_equivalent = great_mongol_state_legacy
+	fixed_rank = 3
+	valid_for_nation_designer = no
+	nomad = yes
+	raze_province = yes
+	modifiers = {
+		horde_unity = 1
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		reinforce_cost_modifier = -0.5
+		years_of_nationalism = -5
+		movement_speed = 0.25
+		
+		#Changes2
+		development_cost_modifier = 0.10
+        embracement_cost = 0.25
+		global_institution_spread = -0.25
+
+		#Changes
+		loot_amount = 1
+		available_province_loot = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+
+###   TIER 2 REFORMS   ###
+
+yuan_horde_tier2 = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+		
+	}
+	modifiers = {
+		global_unrest = -1
+		num_accepted_cultures = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 3 REFORMS   ###
+
+tribal_tengri_world_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = east_asian
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+	}
+	modifiers = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 4 REFORMS   ###
+
+tribal_lessons_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+	}
+	modifiers = {
+		leader_siege = 1
+		leader_land_manuever = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 5 REFORMS   ###
+
+tribal_silk_road_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.1
+		merchants = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 6 REFORMS   ###
+#Changed
+
+tribal_dirham_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.10
+		diplomatic_annexation_cost = -0.15
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###   TIER 7 REFORMS   ###
+
+tribal_law_of_yassa_reform = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		OR = {
+			AND = {
+				has_reform = great_mongol_state_reform
+				culture_group = altaic
+			}
+			AND = {
+				has_reform = steppe_horde
+				culture_group = east_asian
+				tag = YUA
+			}
+		}
+	}
+}

@@ -25,11 +25,11 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		manpower_in_accepted_culture_provinces = 0.25
+		manpower_in_accepted_culture_provinces = 0.2
 		land_forcelimit_modifier = 0.2
 		reinforce_cost_modifier = -0.5
 		years_of_nationalism = -5
-		movement_speed = 0.20
+		movement_speed = 0.2
 
         #Changes
         #Spread from -0.15 to -0.25
@@ -166,7 +166,7 @@ tribal_pax_mongolica_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
-		num_accepted_cultures = 2
+		num_accepted_cultures = 1
 	}
 	ai = {
 		factor = 2
@@ -258,7 +258,6 @@ tribal_tengri_world_reform = {
 	modifiers = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
-		tolerance_own = 1
 	}
 	ai = {
 		factor = 2
@@ -334,6 +333,7 @@ tribal_traditionalism_reform = {
 	modifiers = {
 		available_province_loot = 1
 		shock_damage = 0.05
+		mil_tech_cost_modifier = 0.05
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	ai = {

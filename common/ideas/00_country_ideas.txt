@@ -2337,7 +2337,7 @@ BYZ_ideas = {
 	}
 	reforming_the_logistical_administration = {
 		global_supply_limit_modifier = 0.33
-		yearly_army_professionalism = 0.01
+		yearly_army_professionalism = 0.0025
 	}
 	crawling_from_economic_abyss = {
 		advisor_cost = -0.1
@@ -9531,11 +9531,11 @@ GLH_ideas = {
 
 YUA_ideas = {
 	start = {
-		global_manpower_modifier = 0.25
-		cavalry_power = 0.20
+		core_creation = -0.25
+		cavalry_power = 0.2
 	}
 	bonus = {
-		governing_capacity_modifier = 0.10
+		governing_capacity_modifier = 0.1
 	}
 	trigger = {
 		tag = YUA
@@ -9543,27 +9543,29 @@ YUA_ideas = {
 	free = yes
 	
 	yua_da_zai_qian_yuan = {
-		core_creation = -0.25
+		horde_unity = 0.5
+		meritocracy = 0.5
+		imperial_mandate = 0.1
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
-		cavalry_cost = -0.20
+		manpower_in_culture_group_provinces = 0.25
 		land_morale = 0.10
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
-		technology_cost = -0.10
+		technology_cost = -0.05
 	}
 	yua_keshik_and_weijun = {
-		shock_damage = 0.10
+		shock_damage = 0.1
 	}
 	yua_a_thousand_miles_as_if_at_home = {
-		movement_speed = 0.15
-		envoy_travel_time = -0.10
+		movement_speed = 0.1
+		envoy_travel_time = -0.2
 	}
 	yua_sino_mongol_administration = {
-		administrative_efficiency = 0.10
+		administrative_efficiency = 0.05
 	}
 	yua_pax_mongolica = {
-		global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.1
 	}
 }
 
@@ -16081,7 +16083,7 @@ MSA_ideas = {
 SIA_ideas = {
 	start = {
 		land_morale = 0.1
-		global_manpower_modifier = 0.3
+		manpower_in_culture_group_provinces = 0.15
 	}
 	bonus = {
 		discipline = 0.05
@@ -16091,12 +16093,12 @@ SIA_ideas = {
 	}
 	free = yes
 	sia_royal_poets = {
-		prestige = 0.5
-		idea_cost = -0.1
+		prestige = 1
+		idea_cost = -0.05
 	}
 	sia_advanced_elephant_warfare = {
 		cavalry_power = 0.15
-		cavalry_fire = 1
+		cavalry_fire = 0.5
 	}
 	sia_experienced_ambassadors = {
 		diplomatic_reputation = 2
@@ -16108,7 +16110,7 @@ SIA_ideas = {
 		diplomatic_annexation_cost = -0.2
 	}
 	sia_education_reform = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	sia_royal_absolutism = {
 		yearly_absolutism = 1
@@ -16118,8 +16120,8 @@ SIA_ideas = {
 
 LFA_ideas = {
 	start = {
-		inflation_reduction = 0.1
-		infantry_power = 0.1
+		gold_depletion_chance_modifier = -0.25
+		infantry_power = 0.15
 	}
 	bonus = {
 		possible_policy = 1
@@ -16144,13 +16146,14 @@ LFA_ideas = {
 		hostile_attrition = 1.0
 	}
 	lfa_integrate_local_communities = {
-		num_accepted_cultures = 2
+		num_accepted_cultures = 1
+		manpower_in_accepted_culture_provinces = 0.1
 	}
 	lfa_improved_mining_techniques = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	lfa_state_expansion = {
-		expand_administration_cost = -0.3
+		expand_administration_cost = -0.25
 		development_cost = -0.1
 	}
 }
