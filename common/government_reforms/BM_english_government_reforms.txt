@@ -66,8 +66,9 @@ redcoats_english = {
 	allow_normal_conversion = yes
 	icon = "admiralty_reform"
 	potential = {
-		OR = {
+		AND = {
 			tag = GBR
+			is_year = 1600
 		}
 	}
 	modifiers = {
@@ -108,7 +109,6 @@ tariffs_trading_rights_english = {
 	icon = "merchant_ship"
 	potential = {
 		OR = {
-			tag = ENG
 			tag = GBR
 		}
 	}

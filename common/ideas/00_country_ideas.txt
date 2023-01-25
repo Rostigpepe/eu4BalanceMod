@@ -203,7 +203,7 @@ GBR_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 	early_industrialization = {
-		development_cost = -0.1
+		development_cost = -0.05
 		production_efficiency = 0.1
 	}
 	britanna_rules_the_waves = {
@@ -514,12 +514,12 @@ SCA_ideas = {
 	free = yes
 	
 	sca_united_craftsman = {
-		global_trade_goods_size_modifier = 0.10
-		build_cost = -0.10
+		global_trade_goods_size_modifier = 0.1
+		build_cost = -0.1
 	}
 	sca_unified_scandinavian = {
 		possible_policy = 1
-		manpower_in_culture_group_provinces = 0.25
+		manpower_in_culture_group_provinces = 0.2
 	}
 	sca_danish_baltic_fleet = {
 		trade_efficiency = 0.1
@@ -529,12 +529,12 @@ SCA_ideas = {
 		naval_morale = 0.2
 	}
 	sca_finnish_hakkapeliita = {
-		cavalry_fire = 0.5
+		cavalry_fire = 0.2
 		cavalry_cost = -0.10
 	}
 	sca_swedish_carolean = {
 		has_carolean = yes
-		amount_of_carolean = 0.15
+		amount_of_carolean = 0.1
 	}
 	sca_empire_of_the_north = {
 		max_absolutism = 10
