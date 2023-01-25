@@ -557,15 +557,3 @@ sadrosho_reform_theo = {
 		}
 	}
 }
-
-native_clan_council_reform = {
-	icon = "native_clan_council_reform"
-	allow_normal_conversion = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 20
-	modifiers = {
-		diplomatic_upkeep = 1
-		diplomats = 1
-		all_power_cost = 0.2
-	}
-}
