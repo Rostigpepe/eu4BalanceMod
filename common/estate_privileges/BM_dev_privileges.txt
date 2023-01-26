@@ -5,39 +5,44 @@ estate_burghers_forest_expansion = {
 	influence = 0.15
 	loyalty = 0.1
 	is_valid = {
-		or = {
+		OR = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_forest_expansion }
-			# RUSSIA/RUSSIAN MINORS
-			tag = RUS
-			tag = MOS
-			tag = KRL
-			tag = NOV
-			tag = PSK
-			tag = TVE
-			tag = YAR
-			tag = RSO
-			tag = NZH
-			tag = OKA
-			tag = RYA
-			tag = PRM
-			tag = BLO
-			# BALTIC + LITHUANIA
-			tag = SMO
-			tag = PLT
-			tag = LIT
-			tag = LIV
-			tag = LVA
-			tag = KUR
-			tag = EST
-			tag = LTG
-			tag = CHR
-			# SAMI + KARELIA
-			tag = KRL
-			tag = SMI
-			# COLONIAL NATIONS
-			tag = QUE
-			tag = CAN
-			tag = USA
+			OR = {
+				AND = {
+					is_year = 1444
+				}
+				# RUSSIA/RUSSIAN MINORS
+				tag = RUS
+				tag = MOS
+				tag = KRL
+				tag = NOV
+				tag = PSK
+				tag = TVE
+				tag = YAR
+				tag = RSO
+				tag = NZH
+				tag = OKA
+				tag = RYA
+				tag = PRM
+				tag = BLO
+				# BALTIC + LITHUANIA
+				tag = SMO
+				tag = PLT
+				tag = LIT
+				tag = LIV
+				tag = LVA
+				tag = KUR
+				tag = EST
+				tag = LTG
+				tag = CHR
+				# SAMI + KARELIA
+				tag = KRL
+				tag = SMI
+				# COLONIAL NATIONS
+				tag = QUE
+				tag = CAN
+				tag = USA
+			}
 		}
 	}
 	can_select = {
@@ -117,26 +122,32 @@ estate_burghers_hydraulic_rights = {
 	influence = 0.15
 	loyalty = 0.1
 	is_valid = {
-		or = {
+		OR = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
-			# MOROCCAN + MINORS
-			tag = MOR
-			tag = GRA
-			tag = MRK
-			tag = SOS
-			tag = TFL
-			tag = FEZ
-			tag = TET
-			tag = SLE
-			# TLEMCEN + LIBYA
-			tag = TLC
-			tag = ALG
-			tag = KBA
-			#TUNIS + NORTH SAHARAN
-			tag = MZB
-			tag = TGT
-			tag = GHD
-			tag = FZA
+			OR = {
+				AND = {
+					is_year = 1444
+				}
+				# MOROCCAN + MINORS
+				tag = MOR
+				tag = GRA
+				tag = MRK
+				tag = SOS
+				tag = TFL
+				tag = FEZ
+				tag = TET
+				tag = SLE
+				# TLEMCEN + LIBYA
+				tag = TLC
+				tag = ALG
+				tag = KBA
+				#TUNIS + NORTH SAHARAN
+				tag = MZB
+				tag = TGT
+				tag = GHD
+				tag = FZA
+			}
+			
 		}
 	}
 	can_select = {
@@ -242,53 +253,58 @@ estate_burghers_mountain_expansion = {
 	influence = 0.15
 	loyalty = 0.1
 	is_valid = {
-		or = {
+		OR = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_mountain_expansion }
-			# CAUCASIA
-			tag = GEO
-			tag = IME
-			tag = SME
-			tag = TRE
-			tag = ARM
-			tag = MLK
-			tag = BTL
-			# PERSIA REGION
-			tag = TBR
-			tag = MGR
-			tag = QAR
-			tag = BHT
-			tag = ARL
-			tag = ARD
-			tag = BPI
-			tag = KRY
-			tag = TAB
-			tag = LRI
-			tag = ISF
-			tag = PER
-			# TIMURID VASSALS
-			tag = BAL
-			tag = AFG
-			tag = YZD
-			tag = KRM
-			# SWITZERLAND
-			tag = SWI
-			# ANDES
-			tag = QTO
-			tag = CJA
-			tag = CHM
-			tag = CYA
-			tag = HJA
-			tag = WKA
-			tag = ICM
-			tag = CSU
-			tag = CLA
-			tag = KRM
-			tag = PCJ
-			tag = CRA
-			tag = CCQ
-			tag = MEX
-			# ETHIOPIA
-			tag = ETH
+			OR = {
+				AND = {
+					is_year = 1444
+				}
+				# CAUCASIA
+				tag = GEO
+				tag = IME
+				tag = SME
+				tag = TRE
+				tag = ARM
+				tag = MLK
+				tag = BTL
+				# PERSIA REGION
+				tag = TBR
+				tag = MGR
+				tag = QAR
+				tag = BHT
+				tag = ARL
+				tag = ARD
+				tag = BPI
+				tag = KRY
+				tag = TAB
+				tag = LRI
+				tag = ISF
+				tag = PER
+				# TIMURID VASSALS
+				tag = BAL
+				tag = AFG
+				tag = YZD
+				tag = KRM
+				# SWITZERLAND
+				tag = SWI
+				# ANDES
+				tag = QTO
+				tag = CJA
+				tag = CHM
+				tag = CYA
+				tag = HJA
+				tag = WKA
+				tag = ICM
+				tag = CSU
+				tag = CLA
+				tag = KRM
+				tag = PCJ
+				tag = CRA
+				tag = CCQ
+				tag = MEX
+				# ETHIOPIA
+				tag = ETH
+			}
 		}
 	}
 	can_select = {
