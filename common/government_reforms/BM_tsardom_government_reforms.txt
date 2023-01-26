@@ -144,7 +144,8 @@ russian_autocratism_reform = {
 	modifiers = {
 		allow_free_estate_privilege_revocation = yes
 		all_estate_influence_modifier = -0.05
-		max_absolutism = 10
+		all_estate_loyalty_equilibrium = -0.15
+		max_absolutism = 5
 	}
 	ai = {
 		factor = 2
@@ -186,7 +187,7 @@ the_governing_senate_reform = {
 	}
 	modifiers = {
 		governing_capacity = 200
-		free_policy = 1
+		free_dip_policy = 1
 	}
 	ai = {
 		factor = 2

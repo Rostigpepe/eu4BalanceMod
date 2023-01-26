@@ -42,7 +42,10 @@ country_decisions = {
 		}
 		BM_free_colonist = {
 		potential = {
-				AND = {
+				OR = {
+					tag = RUS
+					tag = KUR
+					tag = LVA
 					capital_scope = {
 						superregion = europe_superregion
 					}
