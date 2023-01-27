@@ -95,3 +95,13 @@ bm_african_precious_minerals = {
 	trade_value_modifier = 0.05
 	picture = "trade_value_modifier"
 }
+
+#Djerban Jewish Population
+bm_djerban_jewish_community = {
+	local_unrest = -3
+	local_prosperity_growth = 0.2
+	local_production_efficiency = 0.25
+	local_development_cost = -0.15
+	local_missionary_strength = -0.05
+	picture = "jewish"
+}
