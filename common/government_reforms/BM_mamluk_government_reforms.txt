@@ -1,0 +1,105 @@
+###		Tier 2 NOBLE PRIVILIGES		###
+
+mamluk_privileges_mamluks = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		production_efficiency = 0.10
+		land_maintenance_modifier = -0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+enlist_arabian_tribesmen = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+	}
+	modifiers = {
+		cavalry_cost = -0.1
+		shock_damage = 0.05
+	}
+	custom_attributes = {
+		enables_arabian_horses = yes # 3% Cavalry Combat Ability per Arab vassal
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+###		Tier 3 Bureaucracy		###
+
+revive_the_hisbah_mamluks = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+	}
+	modifiers = {
+			yearly_corruption = -0.05
+			interest = -0.5
+			burghers_influence_modifier = -0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 5 Administrative Cadre		###
+
+turkicized_elite_mamluks = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		governing_capacity = 100
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 6 Assembly		###
+
+foreign_recruitment_mamluks = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+	}
+	modifiers = {
+		merchants = 1
+		mercenary_manpower = 0.5
+		merc_maintenance_modifier = -0.2
+	}
+	ai = {
+		factor = 2
+	}
+}
