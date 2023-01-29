@@ -689,7 +689,7 @@ CAS_ideas = {
 
 	}
 	spanish_inquisition = {
-		establish_order_cost = -0.25
+		establish_order_cost = -0.15
 		missionaries = 1
 	}
 	cabildos = {
