@@ -2,7 +2,7 @@
 
 mamluk_privileges_mamluks = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "muslim"
 	potential = {
 		OR = {
 			tag = MAM
@@ -21,7 +21,7 @@ mamluk_privileges_mamluks = {
 
 enlist_arabian_tribesmen = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "horde_riding"
 	potential = {
 		OR = {
 			tag = MAM
@@ -44,7 +44,7 @@ enlist_arabian_tribesmen = {
 
 revive_the_hisbah_mamluks = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "noble_muslim"
 	potential = {
 		OR = {
 			tag = MAM
@@ -66,7 +66,7 @@ revive_the_hisbah_mamluks = {
 
 turkicized_elite_mamluks = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "ottoman_government"
 	potential = {
 		OR = {
 			tag = MAM
@@ -87,7 +87,7 @@ turkicized_elite_mamluks = {
 
 foreign_recruitment_mamluks = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "siddhi_recruitment"
 	potential = {
 		OR = {
 			tag = MAM

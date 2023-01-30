@@ -36,7 +36,7 @@ emirate_of_andalusia_reform = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		government_abilities = {
-			feudal_theocracy_mechanic
+			feudal_theocracy_mechanic = yes
 		}
 	}
 	ai = {
@@ -48,7 +48,7 @@ emirate_of_andalusia_reform = {
 
 council_of_sheikhs_andalus = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "assembly_hall"
 	potential = {
 		OR = {
 			tag = ADU
@@ -56,7 +56,7 @@ council_of_sheikhs_andalus = {
 		}
 	}
 	modifiers = {
-		manpower_recovery_speed = 0.2
+		manpower_recovery_speed = 0.15
 		legitimacy = 0.5
 		nobles_influence_modifier = 0.1
 	}
@@ -70,7 +70,7 @@ council_of_sheikhs_andalus = {
 
 taifa_governors_andalus = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "map_2"
 	potential = {
 		OR = {
 			tag = ADU
@@ -94,7 +94,7 @@ taifa_governors_andalus = {
 
 cultural_investment_andalus = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "trading_city"
 	potential = {
 		OR = {
 			tag = ADU
@@ -117,7 +117,7 @@ cultural_investment_andalus = {
 
 taha_divisions_andalus = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "soldiers_7"
 	potential = {
 		OR = {
 			tag = ADU
