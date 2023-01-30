@@ -1344,7 +1344,6 @@ PRU_ideas = {
 	}
 	the_friedrich_wilhelm_reforms = {
 		development_cost = -0.10
-		build_cost = -0.10
 	}	
 	military_industrial_complexes = {
 		production_efficiency = 0.10
