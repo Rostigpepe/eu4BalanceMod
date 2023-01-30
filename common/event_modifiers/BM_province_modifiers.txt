@@ -105,3 +105,13 @@ bm_djerban_jewish_community = {
 	local_missionary_strength = -0.05
 	picture = "jewish"
 }
+
+#Epstein Island Bornholm
+bm_epstein_island = {
+	block_slave_raid = yes
+	local_unrest = 3
+	papal_influence = 0.5
+	local_missionary_strength = -0.03
+	local_development_cost = -0.15
+	picture = "ab_allow_religion_enforced"
+}
