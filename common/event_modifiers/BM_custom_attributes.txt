@@ -20,6 +20,3 @@ Arabian_Horses_4 = {
 Arabian_Horses_5 = {
 	cavalry_power = 0.15
 }
-
-
-#ENGLISH REDCOATS

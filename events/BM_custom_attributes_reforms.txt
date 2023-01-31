@@ -454,3 +454,44 @@ country_event = {
 		
 	}
 }
+
+
+#ENGLISH REDCOATS CUSTOM ATTRIBUTE
+	country_event = {
+		id = english_redcoats_event1
+		title = english_redcoats_event1.t
+		desc = english_redcoats_event1.d
+		picture = TRADEGOODS_eventPicture
+		
+		hidden = yes
+		
+		trigger = {
+			AND = {
+				has_government_attribute = enables_english_redcoats
+			}
+			NOT = {
+				has_country_modifier = BM_marines
+				has_country_modifier = BM_english_marines
+			}
+		}
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = BM_marines
+			duration = -1  
+			desc = BM_marines
+			hidden = yes
+		}
+		add_country_modifier = { 
+			name = BM_english_marines
+			duration = -1  
+			desc = BM_english_marines
+			hidden = yes
+		}
+		else = {
+			remove_country_modifier = BM_marines
+			remove_country_modifier = BM_english_marines
+			}
+		}
+	}
+}
