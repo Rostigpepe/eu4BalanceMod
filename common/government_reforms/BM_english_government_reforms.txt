@@ -76,6 +76,9 @@ redcoats_english = {
 		manpower_in_culture_group_provinces = 0.10
 		land_morale = 0.05
 	}
+	custom_attributes = {
+		enables_english_redcoats = yes
+	}
 	ai = {
 		factor = 2
 	}

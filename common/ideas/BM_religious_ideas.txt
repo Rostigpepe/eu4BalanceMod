@@ -9,7 +9,6 @@ catholic_ideas0 = {
 	}
 	catholic_ideas1 = {
 		missionaries = 1
-		# <<WIKI>> free_cardinal = 1
 	}
 	catholic_ideas2 = {
 		global_missionary_strength = 0.02

@@ -569,3 +569,86 @@ the_calling_of_the_sea = {
 		factor = 1
 	}
 }
+
+the_barbary_pirates = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+		has_idea_group = maritime_ideas
+			OR = {
+				has_idea_group = sunni_ideas0
+				has_idea_group = shia_ideas0
+				has_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = maritime_ideas
+			OR = {
+				full_idea_group = sunni_ideas0
+				full_idea_group = shia_ideas0
+				full_idea_group = ibadi_ideas0
+			}
+		}
+	}
+	
+	may_perform_slave_raid = yes
+	allowed_marine_fraction = 0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+kamikaze_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = maritime_ideas
+			has_idea_group = shinto_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = maritime_ideas
+			full_idea_group = shinto_ideas0
+		}
+	}
+	
+	sunk_ship_morale_hit_recieved = -0.33
+	galley_power = 0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+north_sea_empire = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = maritime_ideas
+			has_idea_group = norse_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = maritime_ideas
+			full_idea_group = norse_ideas0
+		}
+	}
+	
+	recover_navy_morale_speed = 0.1
+	recover_army_morale_speed = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}

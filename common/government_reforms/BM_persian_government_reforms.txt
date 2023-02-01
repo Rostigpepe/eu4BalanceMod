@@ -2,7 +2,7 @@
 
 turkic_qasilbash_heirs_persia = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "soldiers_3"
 	potential = {
 		AND = {
 			religion = shiite
@@ -24,7 +24,7 @@ turkic_qasilbash_heirs_persia = {
 
 recruiting_the_sky_keepers_persia = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "chieftain"
 	potential = {
 		AND = {
 			religion = zoroastrian
@@ -48,7 +48,7 @@ recruiting_the_sky_keepers_persia = {
 
 tajik_administration_persia = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "tribal_centralize_power"
 	potential = {
 		OR = {
 			tag = ARL
@@ -59,7 +59,7 @@ tajik_administration_persia = {
 		num_accepted_cultures = 1
 		monthly_piety = -0.01
 		global_autonomy = -0.05
-		reinforce_cost_modifier = 0.1
+		reinforce_cost_modifier = -0.1
 		nobles_influence_modifier = 0.1
 	}
 	ai = {
@@ -144,7 +144,7 @@ ghulam_governates_persia = {
 
 silk_traders_persia = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "trading_city"
 	potential = {
 		OR = {
 			tag = ARL

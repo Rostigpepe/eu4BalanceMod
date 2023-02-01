@@ -61,6 +61,24 @@
  the_calling_of_the_sea:0 "The Calling of the Sea"
  the_calling_of_the_sea_desc:0 "Our religious devotion, coupled with our investments into establishing naval ports and trade, has created a strong cultural tie to the Sea. Increasing our production of goods as well as strengthening our navy."
 
+ the_barbary_pirates:0 "The Barbary Pirates"
+ the_barbary_pirates_desc:0 "The Barbary Pirates, also known as the Corsairs, are feared Privateers and slavers, operating from North Africa. By hiring these pirates and granting them access to our ports and shipyards, we can employ them as Raiders for ourselves."
+
+ kamikaze_act:0 "The Kamikaze Act"
+ kamikaze_act_desc:0 "Kamikaze, the Divine Wind, is the name originated from the many major typhoons that dispersed and sunk the Mongol fleets when their invasion of Nippon began. This spirit of expelling all foreign invaders with a wind of willpower to defend our homeland no matter the cost must be instituted."
+
+ north_sea_empire:0 "The North Sea Empire"
+ north_sea_empire_desc:0 "Despite being short-lived, the North Sea Empire has left a lasting legacy of the vikings. By channeling this legacy, and attempting to recreate it, we will surely reclaim our glory!"
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
+ :0 ""
+ _desc:0 ""
+
  :0 ""
  _desc:0 ""
 

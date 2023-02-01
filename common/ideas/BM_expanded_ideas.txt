@@ -20,7 +20,7 @@ centralisation_ideas0 = {
 	}
 	centralisation_ideas4 = {
 		expand_administration_cost = -0.5
-		reform_progress_growth = 0.15
+		reform_progress_growth = 0.20
 	}
 	centralisation_ideas5 = {
 		#Development efficiency
@@ -52,7 +52,7 @@ decentralisation_ideas0 = {
 			has_idea_group = centralisation_ideas0
 		}}
 	bonus = {
-		governing_capacity = 200
+		governing_capacity = 250
 	}
 	
 	decentralisation_ideas1 = {
@@ -66,7 +66,7 @@ decentralisation_ideas0 = {
 		core_creation = -0.1
 	}
 	decentralisation_ideas4 = {
-		global_unrest = -1
+		trade_efficiency = 0.1
 	}
 	decentralisation_ideas5 = {
 		min_autonomy_in_territories = -0.10
@@ -84,6 +84,57 @@ decentralisation_ideas0 = {
 		modifier = {
 			factor = 2
 			has_idea_group = administrative_ideas
+		}
+	}
+}
+
+
+absolutism_ideas0 = { 
+	category = ADM 
+	
+	bonus = {
+		administrative_efficiency = 0.025
+	}
+	
+	trigger = {
+		is_year = 1580
+		NOT = { has_government_attribute = enables_plutocratic_idea_group }
+	}
+	
+	absolute_state = {
+		yearly_absolutism = 1 
+		yearly_revolutionary_zeal = 1
+	}
+	regulate_factions_and_estates = {
+		all_estate_influence_modifier = -0.1
+		unjustified_demands = -0.15
+	}
+	state_police = {
+		yearly_corruption = -0.1
+		harsh_treatment_cost = -0.25 
+	}
+	enforcement_of_the_ruler = {
+		all_power_cost = -0.025
+	}
+	legitimate_rule = {
+		max_absolutism = 10
+		max_revolutionary_zeal= 10
+	}
+	carrot_and_stick_policy = {
+		reduced_liberty_desire = 5
+		vassal_forcelimit_bonus = 1
+	}
+	great_power_politics = {
+		imperial_authority = 0.1
+		imperial_mandate = 0.1
+		land_forcelimit_modifier = 0.15
+	}
+	ai_will_do = {
+		factor = 2
+		
+		modifier = {
+			factor = 5
+			ROOT = { absolutism = 25 }
 		}
 	}
 }

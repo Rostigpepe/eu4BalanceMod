@@ -2,7 +2,7 @@
 
 albertine_line_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "imperial_nobility_reform"
 	potential = {
 		OR = {
 			tag = HAB
@@ -24,7 +24,7 @@ albertine_line_austria = {
 
 reorganize_the_imperial_army_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "soldiers_3"
 	potential = {
 		OR = {
 			tag = HAB
@@ -46,7 +46,7 @@ reorganize_the_imperial_army_austria = {
 
 imperial_inquisition_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "religious_leader_highlighted"
 	potential = {
 		OR = {
 			tag = HAB
@@ -70,7 +70,7 @@ imperial_inquisition_austria = {
 
 declaratio_ferdinandei_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "monks"
 	potential = {
 		OR = {
 			tag = HAB
@@ -92,7 +92,7 @@ declaratio_ferdinandei_austria = {
 
 diverse_estates_of_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "blackmailing"
 	potential = {
 		OR = {
 			tag = HAB
@@ -114,7 +114,7 @@ diverse_estates_of_austria = {
 
 utilising_donau_elbian_industrial_sectors_austria = {
 	allow_normal_conversion = yes
-	icon = "castle"
+	icon = "paper_money_map"
 	potential = {
 		OR = {
 			tag = HAB
@@ -138,7 +138,7 @@ utilising_donau_elbian_industrial_sectors_austria = {
 
 the_robot_patent_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "revolutionary_republic"
 	potential = {
 		OR = {
 			tag = HAB
@@ -161,7 +161,7 @@ the_robot_patent_austria = {
 
 revoke_reichsfreiheit_austria = {
 	allow_normal_conversion = yes
-	icon = "council"
+	icon = "austrian_dual_monarchy_reform"
 	potential = {
 		OR = {
 			tag = HAB

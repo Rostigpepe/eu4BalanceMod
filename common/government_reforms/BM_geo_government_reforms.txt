@@ -243,7 +243,6 @@ georgian_principality_reform = {
 		primary_culture = georgian
 		religion = orthodox
 	}
-	
 	militarised_society = yes
 	modifiers = {
 	    global_manpower_modifier = 0.20
