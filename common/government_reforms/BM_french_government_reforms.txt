@@ -5,15 +5,16 @@ blood_tax_france_reform = {
 	allow_normal_conversion = yes
 	icon = "soldiers_5"
 	potential = {
-		OR = {
+		AND = {
 			tag = FRA
-			#Must Have French Strong Duchies
+			has_estate_privilege = estate_nobles_french_strong_duchies
 		}
 	}
 	modifiers = {
-		# Gain +4% Manpower Modifier and -2% Regiment Cost per Subject, up to a maximum of 5
-		vassal_forcelimit_bonus = 0.05
 		nobles_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_blood_tax = yes #5% Manpower per vassal, up to 25%
 	}
 	ai = {
 		factor = 2
@@ -31,7 +32,7 @@ centralising_french_feudal_lords_france_reform = {
 		}
 	}
 	modifiers = {
-		global_autonomy = -0.05
+		global_autonomy = 0.025
 		diplomatic_annexation_cost = -0.15
 	}
 	ai = {
@@ -43,14 +44,14 @@ independent_vassals_france_reform = {
 	allow_normal_conversion = yes
 	icon = "castle"
 	potential = {
-		OR = {
+		AND = {
 			tag = FRA
+			has_estate_privilege = estate_nobles_french_strong_duchies
 		}
 	}
 	modifiers = {
 		vassal_income = 0.25
 		vassal_forcelimit_bonus = 0.05
-		#Must Have French Strong Duchies
 	}
 	custom_attributes = {
 		subject_tax_modifier_25 = yes
@@ -109,9 +110,9 @@ continental_system_reform = {
 		}
 	}
 	modifiers = {
-		global_prov_trade_power_modifier = 0.25
-		transfer_trade_power_reasons = 20
-		trade_efficiency = 0.1
+		global_prov_trade_power_modifier = 0.20
+		transfer_trade_power_reasons = 10
+		trade_efficiency = 0.05
 		embargo_efficiency = 0.50
 	}
 	ai = {
@@ -131,6 +132,9 @@ counsil_souverein_reform = {
 		global_tariffs = 0.20
 		trade_steering = 0.20
 		trade_company_investment_cost = -0.1
+	}
+	custom_attributes = {
+		extra_trade_goods_for_colonial_subjects = yes
 	}
 	ai = {
 		factor = 2

@@ -30,3 +30,21 @@ siamese_national_shame = {
 	global_unrest = 2
 	legitimacy = -0.25
 }
+
+
+#FRENCH VASSAL SWARM
+Blood_Tax_1 = {
+	global_manpower_modifier = 0.05
+}
+Blood_Tax_2 = {
+	global_manpower_modifier = 0.10
+}
+Blood_Tax_3 = {
+	global_manpower_modifier = 0.15
+}
+Blood_Tax_4 = {
+	global_manpower_modifier = 0.20
+}
+Blood_Tax_5 = {
+	global_manpower_modifier = 0.25
+}
