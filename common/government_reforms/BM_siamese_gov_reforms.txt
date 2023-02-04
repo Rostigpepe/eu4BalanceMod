@@ -1,0 +1,186 @@
+###		Tier 2 NOBLE PRIVILIGES AUSTRIA		###
+
+honor_of_thai_kingdoms_people = {
+	icon = soldiers_6
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+		}	
+	}
+	modifiers = {
+		manpower_in_own_culture_provinces = 0.20
+	}
+	custom_attributes = {
+		enables_siamese_honor = yes #-2 unrest if <50 legitimacy, +5% ICA if >75 legitimacy
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+###		Tier 3 Bureaucracy AUSTRIA		###
+
+reorganize_the_imperial_army_austria = {
+	allow_normal_conversion = yes
+	icon = "soldiers_3"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		imperial_mercenary_cost = -0.15
+		manpower_against_imperial_enemies = 0.15
+		global_supply_limit_modifier = 0.25
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 4 State and Religion AUSTRIA		###
+
+imperial_inquisition_austria = {
+	allow_normal_conversion = yes
+	icon = "religious_leader_highlighted"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		papal_influence = 1
+		prestige_per_development_from_conversion = 0.1
+		enforce_religion_cost = -0.25
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 5 Administrative Cadre AUSTRIA		###
+
+declaratio_ferdinandei_austria = {
+	allow_normal_conversion = yes
+	icon = "monks"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		religious_unity = 0.2
+		global_unrest = -1
+		imperial_authority = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 6 Assembly AUSTRIA		###
+
+diverse_estates_of_austria = {
+	allow_normal_conversion = yes
+	icon = "blackmailing"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		diplomats = 1
+		national_focus_years = -5
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 6 Assembly AUSTRIA		###
+
+utilising_donau_elbian_industrial_sectors_austria = {
+	allow_normal_conversion = yes
+	icon = "paper_money_map"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+		global_tax_modifier = 0.1
+	}
+	custom_attributes = {
+		subject_tax_modifier_25 = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 8 Legitimation of Power AUSTRIA		###
+
+the_robot_patent_austria = {
+	allow_normal_conversion = yes
+	icon = "revolutionary_republic"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		development_cost_modifier = -0.05
+		imperial_authority = 0.05
+		global_unrest = -1
+		global_manpower_modifier = -0.10
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 9 Absolutism & Constitutionalism AUSTRIA		###
+
+revoke_reichsfreiheit_austria = {
+	allow_normal_conversion = yes
+	icon = "austrian_dual_monarchy_reform"
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
+	}
+	modifiers = {
+		ae_impact = -0.15
+		diplomatic_annexation_cost = -0.15
+		core_creation = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}

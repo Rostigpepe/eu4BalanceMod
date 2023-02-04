@@ -495,3 +495,97 @@ country_event = {
 		}
 	}
 }
+
+#Siamese Government Reform
+country_event = {
+	id = reform_me_events.184
+	title = reform_me_events.184.t
+	desc = reform_me_events.184.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = enables_siamese_honor
+				OR = {
+					AND = {
+						legitimacy = 75
+						NOT = { has_country_modifier = siamese_national_pride }
+					}
+					AND = {
+						NOT = { legitimacy = 75 }
+						has_country_modifier = siamese_national_pride
+					}
+					AND = {
+						NOT = {	legitimacy = 50	}
+						NOT = { has_country_modifier = siamese_national_shame }
+					}
+					AND = {
+						legitimacy = 50
+						has_country_modifier = siamese_national_shame
+					}
+				}
+			}
+			AND = {
+				OR = {
+					has_country_modifier = siamese_national_pride
+					has_country_modifier = siamese_national_shame
+				}
+				NOT = { has_government_attribute = enables_siamese_honor }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				legitimacy = 75
+				NOT = { has_country_modifier = siamese_national_pride }
+			}
+			add_country_modifier = {
+				name = siamese_national_pride 
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { legitimacy = 75 }
+				has_country_modifier = siamese_national_pride
+			}
+			remove_country_modifier = siamese_national_pride 
+		}
+		if = {
+			limit = {
+				NOT = {	legitimacy = 50	}
+				NOT = { has_country_modifier = siamese_national_shame }
+			}
+			add_country_modifier = {
+				name = siamese_national_shame
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				legitimacy = 50
+				has_country_modifier = siamese_national_shame
+			}
+			remove_country_modifier = siamese_national_shame 
+		}
+		if = {
+			limit = {
+				NOT = { has_government_attribute = enables_siamese_honor }
+			}
+			remove_country_modifier = siamese_national_pride
+		}
+	}
+	
+	option = {
+		name = reform_me_events.184.a
+		
+	}
+}

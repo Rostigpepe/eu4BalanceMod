@@ -20,3 +20,13 @@ Arabian_Horses_4 = {
 Arabian_Horses_5 = {
 	cavalry_power = 0.15
 }
+
+
+#SIAMESE GOV REFORM
+siamese_national_pride = {
+	infantry_power = 0.05
+}
+siamese_national_shame = {
+	global_unrest = 2
+	legitimacy = -0.25
+}

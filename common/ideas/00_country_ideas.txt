@@ -630,7 +630,7 @@ RUS_ideas = {
 
 SPA_ideas = {
 	start = {
-		land_morale = 0.15
+		land_morale = 0.20
 		morale_damage_received = -0.05
 	}
 	
@@ -645,7 +645,7 @@ SPA_ideas = {
 
 	devout_catholisism = {
 		papal_influence = 2
-		curia_powers_cost = -0.15
+		curia_powers_cost = -0.1
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -664,7 +664,6 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
-		free_dip_policy = 1
 	}
 	siglo_de_oro = {
 		prestige = 1
@@ -823,7 +822,7 @@ TUR_ideas = {
 	}		
 	autonmous_pashas = {
 		yearly_corruption = -0.1 
-		governing_capacity_modifier = 0.05
+		governing_capacity_modifier = 0.1
 	}
 	ottoman_artillery = {
 		artillery_power = 0.10
@@ -16086,7 +16085,7 @@ MSA_ideas = {
 SIA_ideas = {
 	start = {
 		land_morale = 0.1
-		manpower_in_culture_group_provinces = 0.15
+		manpower_in_culture_group_provinces = 0.3
 	}
 	bonus = {
 		discipline = 0.05
@@ -16110,7 +16109,8 @@ SIA_ideas = {
 		development_cost = -0.1
 	}
 	sia_integrating_the_realm = {
-		diplomatic_annexation_cost = -0.2
+		adm_tech_cost_modifier = -0.05
+		free_adm_policy = 1
 	}
 	sia_education_reform = {
 		technology_cost = -0.05
