@@ -85,7 +85,7 @@ grain = {
 wine = {
 	color = { 0.36 0.13 0.28 }
 	modifier = {
-		global_unrest = -1
+		idea_cost = -0.05
 	}
 	province = {
 		local_unrest = -1
@@ -314,7 +314,7 @@ fish = {
 fur = {
 	color = { 0.54 0.40 0.31 }
 	modifier = {
-		land_attrition = -0.10
+		land_attrition = -0.05
 	}
 	province = {
 		province_trade_power_modifier = 0.10
@@ -1033,7 +1033,7 @@ chinaware = {
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		trade_steering = 0.15
+		trade_steering = 0.10
 	}
 	province = {
 		local_monthly_devastation = -0.1
@@ -1308,7 +1308,7 @@ tobacco = {
 		global_spy_defence = 0.25
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	chance = {
 		factor = 15
@@ -1488,7 +1488,7 @@ dyes = {
 		heir_chance = 0.33
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	
 	chance = {
