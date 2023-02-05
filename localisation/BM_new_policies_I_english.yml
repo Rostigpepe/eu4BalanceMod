@@ -70,14 +70,14 @@
  north_sea_empire:0 "The North Sea Empire"
  north_sea_empire_desc:0 "Despite being short-lived, the North Sea Empire has left a lasting legacy of the vikings. By channeling this legacy, and attempting to recreate it, we will surely reclaim our glory!"
 
- :0 ""
- _desc:0 ""
+ religious_merchants:0 "Religious Merchants"
+ religious_merchants_desc:0 "Our Clergymen have sponsored our merchants to spread the word of God."
 
- :0 ""
- _desc:0 ""
+ jewish_trade_banking_expertise:0 "Jewish Trade and Banking Expertise"
+ jewish_trade_banking_expertise_desc:0 "Us Jews has always been good at integrating into societies and establishing ourselves as skilled merchants and bankers."
 
- :0 ""
- _desc:0 ""
+ the_spice_and_silk_trade:0 "The Spice and Silk Trade"
+ the_spice_and_silk_trade_desc:0 "From the spice islands and China flows the spices and silk to central asia, into the middle east and out towards the rest of the world. Controlling this flow of trade will grant us great profits."
 
  :0 ""
  _desc:0 ""

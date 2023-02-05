@@ -652,3 +652,120 @@ north_sea_empire = {
 		factor = 1
 	}
 }
+
+
+religious_merchants = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			OR = {
+				has_idea_group = anglican_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = orthodox_ideas0
+				has_idea_group = coptic_ideas0
+				has_idea_group = jewish_ideas0
+				has_idea_group = zoroastrian_ideas0
+				has_idea_group = dharmic_ideas0
+				has_idea_group = buddhism_ideas0
+				has_idea_group = confucian_ideas0
+				has_idea_group = tengri_ideas0
+				has_idea_group = animist_ideas0
+				has_idea_group = fetish_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			OR = {
+				full_idea_group = anglican_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = orthodox_ideas0
+				full_idea_group = coptic_ideas0
+				full_idea_group = jewish_ideas0
+				full_idea_group = zoroastrian_ideas0
+				full_idea_group = dharmic_ideas0
+				full_idea_group = buddhism_ideas0
+				full_idea_group = confucian_ideas0
+				full_idea_group = tengri_ideas0
+				full_idea_group = animist_ideas0
+				full_idea_group = fetish_ideas0
+			}
+		}
+	}
+	
+	global_missionary_strength = 0.01
+	trade_efficiency = 0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+jewish_trade_banking_expertise = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			has_idea_group = jewish_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			full_idea_group = jewish_ideas0
+		}
+	}
+	
+	trade_efficiency = 0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+the_spice_and_silk_trade = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			OR = {
+				has_idea_group = zoroastrian_ideas0
+				has_idea_group = ibadi_ideas0
+				has_idea_group = shia_ideas0
+				has_idea_group = sunni_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			OR = {
+				full_idea_group = zoroastrian_ideas0
+				full_idea_group = ibadi_ideas0
+				full_idea_group = shia_ideas0
+				full_idea_group = sunni_ideas0
+			}
+		}
+	}
+	
+	global_foreign_trade_power = 0.15
+	placed_merchant_power = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+}

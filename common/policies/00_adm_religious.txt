@@ -480,3 +480,4 @@ integration_of_the_daymio_clans = {
 		factor = 1
 	}
 }
+
