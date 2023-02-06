@@ -12,7 +12,7 @@ mamluk_privileges_mamluks = {
 	modifiers = {
 		global_unrest = -1
 		production_efficiency = 0.10
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.10
 	}
 	ai = {
 		factor = 2
@@ -30,7 +30,6 @@ enlist_arabian_tribesmen = {
 	}
 	modifiers = {
 		cavalry_cost = -0.1
-		shock_damage = 0.05
 	}
 	custom_attributes = {
 		enables_arabian_horses = yes # 3% Cavalry Combat Ability per Arab vassal

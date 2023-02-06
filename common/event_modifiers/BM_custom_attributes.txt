@@ -48,3 +48,10 @@ Blood_Tax_4 = {
 Blood_Tax_5 = {
 	global_manpower_modifier = 0.25
 }
+
+
+# REGENT INVESTMENTS DUTCH REPUBLIC REFORM
+Regent_Investments = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.10
+}

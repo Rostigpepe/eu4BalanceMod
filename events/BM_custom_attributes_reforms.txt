@@ -864,3 +864,52 @@ country_event = {
 		
 	}
 }
+
+
+# DUTCH REGENT INVESTMENTS REFORM
+country_event = {
+	id = reform_me_events.10
+	title = reform_me_events.10.t
+	desc = reform_me_events.10.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_reform = regents_reform
+		any_owned_province = {
+			development = 20
+			OR = {
+				culture = dutch
+				culture = flemish
+			}
+			NOT = {	has_province_modifier = Regent_Investments }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				development = 20
+				OR = {
+					culture = dutch
+					culture = flemish
+				}
+				NOT = {	has_province_modifier = Regent_Investments }
+            }
+			add_province_modifier = {
+				name = "Regent_Investments"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.10.a
+		
+	}
+}
