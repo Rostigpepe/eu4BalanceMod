@@ -79,11 +79,26 @@
  the_spice_and_silk_trade:0 "The Spice and Silk Trade"
  the_spice_and_silk_trade_desc:0 "From the spice islands and China flows the spices and silk to central asia, into the middle east and out towards the rest of the world. Controlling this flow of trade will grant us great profits."
 
- :0 ""
- _desc:0 ""
+ the_elephant_route:0 "The Elephant Route"
+ the_elephant_route_desc:0 "In south-east asia, the trading of elephants, either as purchase or as gifts, have long been established along the routes of trade."
 
- :0 ""
- _desc:0 ""
+ neo_buddhist_exchange_of_thought:0 "Neo-Buddhist Exchange of Thought"
+ neo_buddhist_exchange_of_thought_desc:0 "If Buddhism has taught us anything, it's that being open to new ideas spread from far away is always a good idea. By opening up ourselves to new schools of thought we can improve ourselves."
+
+the_dirlam_age:0 "The Dirlam Age"
+the_dirlam_age_desc:0 "Dirlam has a lot of different meanings across the world depending on the language being spoken. But it also refers to the 'Age of Dirlam', a period never-before seen during the Mongol Empire where the steppes where peaceful. During this short period, merchants and travellers could freely, under the official protection of Mongol Keshigs, travel and perform trade wherever they wished inside the borders of the Mongol Empire."
+
+mesoamerican_trade_routes:0 "Mesoamerican Trade Routes"
+mesoamerican_trade_routes_desc:0 "In Mesoamerica, trade routes where not only used by merchants, but also by travelling philosophers, prophets, free thinkers, and officials to spread their influence across the region."
+
+the_qapaq_nan:0 "The Qhapac Ñan"
+the_qapaq_nan_desc:0 "Spanning over 30.000km across plains, hills, jungle, highland and mountains, the Qhapac Ñan connects the massive Incan Empire, stimulating trade, communication, defence and infrastructure of the Andean region."
+
+:0 ""
+_desc:0 ""
+
+:0 ""
+_desc:0 ""
 
 
 #MIL POLICIES
