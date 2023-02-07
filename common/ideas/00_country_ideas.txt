@@ -737,7 +737,7 @@ NED_ideas = {
 		trade_steering = 0.15 # Dutch Seafaring Spirit
 	}
 	polders = {
-		local_build_cost = -0.20 
+		build_cost = -0.20 
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
@@ -758,7 +758,7 @@ NED_ideas = {
 FRA_ideas = {
 	start = {
 		cavalry_power = 0.15	#French Noble Knights
-		leader_land_shock = 1
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {
@@ -2180,7 +2180,7 @@ MUG_ideas = {
 	}
 	zamindars_and_marzabans = {
 		free_mil_policy = 1
-		governing_capacity_modifier = 0.1
+		governing_cost = -0.15
 	}
 	pinnacle_of_architecture = {
 		great_project_upgrade_cost = -0.10

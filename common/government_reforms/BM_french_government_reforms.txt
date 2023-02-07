@@ -23,23 +23,6 @@ blood_tax_france_reform = {
 
 ###		Tier 3 France		###
 
-centralising_french_feudal_lords_france_reform = {
-	allow_normal_conversion = yes
-	icon = "tribal_centralize_power"
-	potential = {
-		OR = {
-			tag = FRA
-		}
-	}
-	modifiers = {
-		global_autonomy = 0.025
-		diplomatic_annexation_cost = -0.15
-	}
-	ai = {
-		factor = 2
-	}
-}
-
 independent_vassals_france_reform = {
 	allow_normal_conversion = yes
 	icon = "castle"
@@ -154,7 +137,7 @@ droit_divin_reform = {
 		unjustified_demands = -0.25
 		max_absolutism = 5
 		church_influence_modifier = -0.1
-		global_unrest = 1
+		global_unrest = -1
 	}
 	ai = {
 		factor = 2

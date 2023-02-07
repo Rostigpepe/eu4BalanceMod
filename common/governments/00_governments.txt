@@ -125,7 +125,6 @@ monarchy = {
 				sadrosho_reform
 				oprichnina_reform
 				abolish_bastard_feudalism_english
-				centralising_french_feudal_lords_france_reform
 				independent_vassals_france_reform
 				generalkriegskommissariat_prussia
 				reorganize_the_imperial_army_austria
