@@ -879,9 +879,11 @@ country_event = {
 		has_reform = regents_reform
 		any_owned_province = {
 			development = 20
-			OR = {
+			OR = { 
 				culture = dutch
 				culture = flemish
+				culture = walloon
+				culture = frisian
 			}
 			NOT = {	has_province_modifier = Regent_Investments }
 		}
@@ -898,6 +900,8 @@ country_event = {
 				OR = {
 					culture = dutch
 					culture = flemish
+					culture = walloon
+					culture = frisian
 				}
 				NOT = {	has_province_modifier = Regent_Investments }
             }
