@@ -917,3 +917,89 @@ the_qapaq_nan = {
 		factor = 1
 	}
 }
+
+
+maize_and_fur_trade = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			has_idea_group = totemist_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			full_idea_group = totemist_ideas0
+		}
+	}
+	
+	global_own_trade_power = 0.15
+	mercantilism_cost = -0.2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+spread_of_our_faith = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			OR = {
+				has_idea_group = animist_ideas0
+				has_idea_group = fetish_ideas0
+				has_idea_group = dreamtime_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			OR = {
+				full_idea_group = animist_ideas0
+				full_idea_group = fetish_ideas0
+				full_idea_group = dreamtime_ideas0
+			}
+		}
+	}
+	
+	global_missionary_strength = 0.02
+	trade_range_modifier = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+to_go_viking = { 
+	monarch_power = DIP
+	
+	potential = {
+		AND = {
+			has_idea_group = trade_ideas
+			has_idea_group = norse_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = trade_ideas
+			full_idea_group = norse_ideas0
+		}
+	}
+	
+	merchants = 1
+	global_trade_power = 0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}

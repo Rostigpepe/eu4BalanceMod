@@ -93,12 +93,15 @@ absolutism_ideas0 = {
 	category = ADM 
 	
 	bonus = {
-		administrative_efficiency = 0.025
+		administrative_efficiency = 0.05
 	}
 	
 	trigger = {
-		is_year = 1580
+		is_year = 1605
 		NOT = { has_government_attribute = enables_plutocratic_idea_group }
+		NOT = { has_government_attribute = enables_horde_idea_group }
+		NOT = { has_government_attribute = enables_divine_idea_group }
+		NOT = { has_government_attribute = enables_natives_idea_group }
 	}
 	
 	absolute_state = {
@@ -106,15 +109,15 @@ absolutism_ideas0 = {
 		yearly_revolutionary_zeal = 1
 	}
 	regulate_factions_and_estates = {
-		all_estate_influence_modifier = -0.1
+		all_estate_influence_modifier = -0.05
 		unjustified_demands = -0.15
 	}
 	state_police = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.05
 		harsh_treatment_cost = -0.25 
 	}
 	enforcement_of_the_ruler = {
-		all_power_cost = -0.025
+		all_power_cost = -0.02
 	}
 	legitimate_rule = {
 		max_absolutism = 10
@@ -127,7 +130,7 @@ absolutism_ideas0 = {
 	great_power_politics = {
 		imperial_authority = 0.1
 		imperial_mandate = 0.1
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 2

@@ -406,7 +406,7 @@ tengri_ideas0 = {
 		religious_unity = 0.25
 	}
 	tengri_ideas7 = {
-		core_creation = -0.15
+		cb_on_religious_enemies = yes
 	}
 	
 	ai_will_do = {
@@ -477,7 +477,7 @@ dharmic_ideas0 = {
 		diplomatic_reputation = 2
 	}
 	dharmic_ideas5 = {
-		land_morale = 0.10
+		cb_on_religious_enemies = yes
 	}
 	dharmic_ideas6 = {
 		dip_tech_cost_modifier = -0.10
@@ -543,7 +543,7 @@ confucian_ideas0 = {
 		religion  = confucianism
 	}
 	bonus = {
-		siege_ability = 0.1
+		cb_on_religious_enemies = yes
 	}
 	confucian_ideas1 = {
 		legitimacy = 1
@@ -639,7 +639,7 @@ buddhism_ideas0 = {
 		diplomatic_reputation = 1
 	}
 	buddhism_ideas4 = {
-		global_unrest = -2
+		cb_on_religious_enemies = yes
 	}
 	buddhism_ideas5 = {
 		tolerance_heathen = 1
@@ -706,7 +706,7 @@ norse_ideas0 = {
 		religion = norse_pagan_reformed
 	}
 	bonus = {
-		leader_naval_shock = 1
+		cb_on_religious_enemies = yes
 	}
 	norse_ideas1 = {
 		may_perform_slave_raid = yes
@@ -789,7 +789,7 @@ shinto_ideas0 = {
 		global_missionary_strength = 0.02
 	}
 	shinto_ideas1 = {
-		infantry_power = 0.10
+		infantry_cost = 0.10
 	}
 	shinto_ideas2 = {
 		development_cost = -0.05
@@ -804,7 +804,7 @@ shinto_ideas0 = {
 		global_sailors_modifier = 0.10
 	}
 	shinto_ideas6 = {
-		heir_chance = 0.5
+		cb_on_religious_enemies = yes
 	}
 	shinto_ideas7 = {
 		legitimacy = 1
@@ -944,7 +944,7 @@ jewish_ideas0 = {
 		religion_group = jewish_group
 	}
 	bonus = {
-		global_tax_modifier = 0.15
+		cb_on_religious_enemies = yes
 	}
 	jewish_ideas1 = {
 		global_trade_power = 0.1
@@ -1903,7 +1903,7 @@ dreamtime_ideas0 = {
 		global_unrest = -2
 	}
 	dreamtime_ideas4 = {
-		discipline = 0.05
+		cb_on_religious_enemies = yes
 	}
 	dreamtime_ideas5 = {
 		ae_impact = -0.1

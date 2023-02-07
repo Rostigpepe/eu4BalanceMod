@@ -27,8 +27,26 @@
  integration_of_the_daymio_clans:0 "Integration of the Daymio Clans"
  integration_of_the_daymio_clans_desc:0 "We have struggled for years and through conquest and diplomacy we have established our clan as one of the strongest on the island. By expanding our state administration over newly taken land, the other Daimyos as well as the Shogun himself will realise our rightful claimant to the Shogunate."
 
- :0 ""
- _desc:0 ""
+ noble_mission_of_crusade:0 "Noble Mission of Crusade"
+ noble_mission_of_crusade_desc:0 ""
+
+ the_caliphs_decree:0 "The Caliph's Decree"
+ the_caliphs_decree_desc:0 ""
+
+ uplifting_the_deities:0 "Uplifting the Deities"
+ uplifting_the_deities_desc:0 ""
+
+ administration_of_the_holy_sites:0 "Administration of the Holy Land"
+ administration_of_the_holy_sites_desc:0 ""
+
+ edict_of_resistance:0 "Edict of Resistance"
+ edict_of_resistance_desc:0 ""
+
+ the_first_reformation:0 "The First Reformation"
+ the_first_reformation_desc:0 ""
+
+ enforce_religious_laws:0 "Enforce Religious Law"
+ enforce_religious_laws_desc:0 ""
 
  :0 ""
  _desc:0 ""
@@ -38,6 +56,7 @@
 
  :0 ""
  _desc:0 ""
+
 
 #DIP POLICIES
  the_empty_still_ocean:0 "The Empty, Still, Ocean"
@@ -85,20 +104,89 @@
  neo_buddhist_exchange_of_thought:0 "Neo-Buddhist Exchange of Thought"
  neo_buddhist_exchange_of_thought_desc:0 "If Buddhism has taught us anything, it's that being open to new ideas spread from far away is always a good idea. By opening up ourselves to new schools of thought we can improve ourselves."
 
-the_dirlam_age:0 "The Dirlam Age"
-the_dirlam_age_desc:0 "Dirlam has a lot of different meanings across the world depending on the language being spoken. But it also refers to the 'Age of Dirlam', a period never-before seen during the Mongol Empire where the steppes where peaceful. During this short period, merchants and travellers could freely, under the official protection of Mongol Keshigs, travel and perform trade wherever they wished inside the borders of the Mongol Empire."
+ the_dirlam_age:0 "The Dirlam Age"
+ the_dirlam_age_desc:0 "Dirlam has a lot of different meanings across the world depending on the language being spoken. But it also refers to the 'Age of Dirlam', a period never-before seen during the Mongol Empire where the steppes where peaceful. During this short period, merchants and travellers could freely, under the official protection of Mongol Keshigs, travel and perform trade wherever they wished inside the borders of the Mongol Empire."
 
-mesoamerican_trade_routes:0 "Mesoamerican Trade Routes"
-mesoamerican_trade_routes_desc:0 "In Mesoamerica, trade routes where not only used by merchants, but also by travelling philosophers, prophets, free thinkers, and officials to spread their influence across the region."
+ mesoamerican_trade_routes:0 "Mesoamerican Trade Routes"
+ mesoamerican_trade_routes_desc:0 "In Mesoamerica, trade routes where not only used by merchants, but also by travelling philosophers, prophets, free thinkers, and officials to spread their influence across the region."
 
-the_qapaq_nan:0 "The Qhapac Ñan"
-the_qapaq_nan_desc:0 "Spanning over 30.000km across plains, hills, jungle, highland and mountains, the Qhapac Ñan connects the massive Incan Empire, stimulating trade, communication, defence and infrastructure of the Andean region."
+ the_qapaq_nan:0 "The Qhapac Ñan"
+ the_qapaq_nan_desc:0 "Spanning over 30.000km across plains, hills, jungle, highland and mountains, the Qhapac Ñan connects the massive Incan Empire, stimulating trade, communication, defence and infrastructure of the Andean region."
 
-:0 ""
-_desc:0 ""
+ maize_and_fur_trade:0 "The Maize and Fur Trade"
+ maize_and_fur_trade_desc:0 ""
 
-:0 ""
-_desc:0 ""
+ spread_of_our_faith:0 "Spread of our Faith"
+ spread_of_our_faith_desc:0 ""
 
+ to_go_viking:0 "To go Viking"
+ to_go_viking_desc:0 ""
 
 #MIL POLICIES
+ nobles_patriarchy_cooperation:0 "Nobles and Patriarchy Cooperation"
+ nobles_patriarchy_cooperation_desc:0 ""
+
+
+ the_holy_leagues:0 "The Holy Leagues"
+ the_holy_leagues_desc:0 ""
+
+
+ never_surrender:0 "Never Surrender"
+ never_surrender_desc:0 ""
+
+
+ harsh_conditions:0 "Harsh Conditions"
+ harsh_conditions_desc:0 ""
+
+
+ defence_of_the_patriarchs:0 "In Defence of the Patriarchs"
+ defence_of_the_patriarchs_desc:0 ""
+
+
+ the_promised_land:0 "The Promised Land"
+ the_promised_land_desc:0 ""
+
+
+ fatwa:0 "Fatwa"
+ fatwa_desc:0 ""
+
+
+ walls_of_fire:0 "Walls of Fire"
+ walls_of_fire_desc:0 ""
+
+
+ rivers_of_death:0 "Rivers of Death"
+ rivers_of_death_desc:0 ""
+
+
+ enforced_reincarnation:0 "Enforced Reincarnation"
+ enforced_reincarnation_desc:0 ""
+
+
+ great_walls:0 "Great Walls"
+ great_walls_desc:0 ""
+
+
+ defensive_isolationism:0 "Defensive Isolationism"
+ defensive_isolationism_desc:0 ""
+
+
+ :0 ""
+ _desc:0 ""
+
+
+ :0 ""
+ _desc:0 ""
+
+
+ :0 ""
+ _desc:0 ""
+
+
+ :0 ""
+ _desc:0 ""
+
+
+ :0 ""
+ _desc:0 ""
+
