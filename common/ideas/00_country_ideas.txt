@@ -175,7 +175,7 @@ GBR_ideas = {
 	}
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.10
 	}
 	
 	trigger = {
@@ -203,13 +203,12 @@ GBR_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 	early_industrialization = {
-		development_cost = -0.05
-		production_efficiency = 0.1
+		production_efficiency = 0.15
 	}
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
+		allowed_marine_fraction = 0.10
 	}
 }
 
@@ -632,7 +631,7 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.20
-		morale_damage_received = -0.05
+		artillery_fire = 1
 	}
 	
 	bonus = {
@@ -658,6 +657,7 @@ SPA_ideas = {
 	}
 	spanish_armada = {
 		heavy_ship_power = 0.15
+		allowed_marine_fraction = 0.05
 	}
 	spa_casa_de_contracion = {
 		envoy_travel_time = -0.33
@@ -675,7 +675,7 @@ SPA_ideas = {
 CAS_ideas = {
 	start = {
 		land_morale = 0.15
-		global_missionary_strength = 0.03
+		global_missionary_strength = 0.02
 	}
 	bonus = {
 		global_colonial_growth = 25
@@ -686,7 +686,6 @@ CAS_ideas = {
 	free = yes		#will be added at load.
 	the_reconquista = {
 		army_tradition_decay = -0.01
-
 	}
 	spanish_inquisition = {
 		establish_order_cost = -0.10

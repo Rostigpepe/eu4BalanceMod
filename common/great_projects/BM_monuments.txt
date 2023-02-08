@@ -6078,8 +6078,8 @@ gme_sagres_school_navigation = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = iberian
-		has_owner_accepted_culture = yes
+		culture = portugese
+		has_owner_culture = yes
 	}
 
 	#what to do when it's built
@@ -6092,14 +6092,14 @@ gme_sagres_school_navigation = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = iberian
-		has_owner_accepted_culture = yes
+		culture = portugese
+		has_owner_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = iberian
-		has_owner_accepted_culture = yes
+		culture = portugese
+		has_owner_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?

@@ -100,7 +100,7 @@ portuguese_marines =
 	country_modifier = {
 		siege_blockade_progress = 1
 		global_naval_barrage_cost = -0.4
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.10
 	}
 
 	button_gfx = 7
@@ -110,8 +110,8 @@ raiders_doctrine =
 	can_select = {
 		is_primitive = no
 		OR = {
-			primary_culture = japanese_g
-			primary_culture = malay
+			primary_culture = japanese
+			primary_culture = malayan
 		}
 	}
 

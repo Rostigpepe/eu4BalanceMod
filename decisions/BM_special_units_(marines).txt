@@ -1,0 +1,131 @@
+BM_marines_decision = {
+	major = yes
+	potential = {
+		NOT = { has_country_flag = BM_marines }
+		OR = {
+			culture_group = latin
+			tag = POR
+			tag = USA
+			tag = HOL
+			tag = GBR
+			tag = SPA
+			AND = {
+				tag = NED
+				primary_culture = dutch
+			}
+		}
+	}
+	provinces_to_highlight = {
+		OR = {
+			NOT = { base_production = 5 }
+			NOT = { base_manpower = 5 }
+			AND = { 
+				NOT = { has_shipyard_building_trigger = yes }
+				NOT = { has_dock_building_trigger = yes }
+			}
+			AND = {
+				NOT = { has_manpower_building_trigger = yes }
+				NOT = { has_forcelimit_building_trigger = yes }
+			}
+		}
+		owned_by = ROOT
+		has_port = yes
+	}
+	allow = {
+		if = {
+			limit = {
+				OR = {
+					tag = HOL
+					AND = {
+						tag = NED
+						primary_culture = dutch
+					}
+				}
+			}
+			mil_tech = 15
+		}
+		sailors = 20000
+		mil_tech = 12
+		num_of_owned_provinces_with = {
+			has_port = yes
+			value = 10
+			base_production = 5
+			base_manpower = 5
+			OR = {
+				has_shipyard_building_trigger = yes
+				has_dock_building_trigger = yes
+			}
+			OR = {
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+		}
+	}
+	effect = {
+		hidden_effect = { set_country_flag = BM_marines }
+		add_country_modifier = {
+			name = BM_marines
+			duration = -1
+		}
+		if = {
+			limit = {
+				tag = USA
+			}
+			add_country_modifier = {
+				name = BM_usa_marines
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				culture_group = latin
+			}
+			add_country_modifier = {
+				name = BM_italian_marines
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				tag = POR
+			}
+			add_country_modifier = {
+				name = BM_portugese_marines
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = HOL
+					AND = {
+						tag = NED
+						primary_culture = dutch
+					}
+				}
+			}
+			add_country_modifier = {
+				name = BM_dutch_marines
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				tag = GBR
+			}
+			add_country_modifier = {
+				name = BM_english_marines
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				tag = GBR
+			}
+			add_country_modifier = {
+				name = BM_spanish_marines
+				duration = -1
+			}
+		}
+	}
+}

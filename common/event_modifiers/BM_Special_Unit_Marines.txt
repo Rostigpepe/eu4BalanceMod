@@ -18,6 +18,8 @@ BM_italian_marines = {
 BM_portugese_marines = {
 	is_marine_modifier = yes
 	shock_damage_received = -0.1
+	land_attrition = -0.25
+	infantry_shock = 0.2
 }
 BM_dutch_marines = {
 	is_marine_modifier = yes
@@ -33,12 +35,7 @@ BM_english_marines = {
 }
 BM_spanish_marines = {
 	is_marine_modifier = yes
-	shock_damage_received = -0.1
+	shock_damage_received = -0.2
 	movement_speed = -0.2
 	morale_damage_received = -0.1
-}
-BM_genoa_marines = {
-	is_marine_modifier = yes
-	shock_damage_received = -0.2
-	discipline = 0.05
 }
