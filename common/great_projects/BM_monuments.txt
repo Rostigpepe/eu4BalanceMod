@@ -6158,7 +6158,6 @@ gme_sagres_school_navigation = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			allowed_marine_fraction = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -6189,7 +6188,7 @@ gme_sagres_school_navigation = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			allowed_marine_fraction = 0.1
+			allowed_marine_fraction = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -6222,7 +6221,7 @@ gme_sagres_school_navigation = {
 		country_modifiers = {
 			navy_tradition_decay = -0.01
 			sailor_maintenance_modifer = -0.2
-			allowed_marine_fraction = 0.15
+			allowed_marine_fraction = 0.10
 		}
 
 		#what effects happen when this tier is achieved

@@ -30,12 +30,11 @@ BM_dutch_marines = {
 BM_english_marines = {
 	is_marine_modifier = yes
 	shock_damage_received = -0.1
-	infantry_fire = 0.2
-	land_morale = 0.05
+	infantry_fire = 0.2	
 }
 BM_spanish_marines = {
 	is_marine_modifier = yes
 	shock_damage_received = -0.2
 	movement_speed = -0.2
-	morale_damage_received = -0.1
+	morale_damage_received = -0.05
 }
