@@ -42,9 +42,9 @@ BM_marines_decision = {
 					}
 				}
 			}
-			mil_tech = 15
+			mil_tech = 12
 		}
-		sailors = 20000
+		sailors = 10000
 		mil_tech = 12
 		num_of_owned_provinces_with = {
 			has_port = yes
