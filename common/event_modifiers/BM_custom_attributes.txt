@@ -56,3 +56,31 @@ Regent_Investments = {
 	allowed_num_of_buildings = 1
 	local_development_cost = -0.10
 }
+
+
+#Cortez
+Cortes_Piety = {
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+}
+Cortes_Discipline = {
+	discipline = 0.025
+}
+Cortes_Morale = {
+	land_morale = 0.05
+}
+Cortes_Manpower = {
+	manpower_recovery_speed = 0.15
+	reinforce_speed = 0.1
+}
+Cortes_Goods = {
+	global_trade_goods_size_modifier = 0.1
+}
+Cortes_Trade = {
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.25
+}
+Cortes_Navy = {
+	global_ship_trade_power = 0.25
+	naval_maintenance_modifier = -0.1
+}

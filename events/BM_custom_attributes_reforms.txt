@@ -917,3 +917,163 @@ country_event = {
 		
 	}
 }
+
+###			PORTUGESE CORTEz REFORM			###
+
+country_event = {
+	id = reform_me_events.1
+	title = reform_me_events.1.t
+	desc = reform_me_events.1.d
+	picture = LIBERIUM_VETO_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = { set_country_flag = Cortes_Navy }
+				10 = { set_country_flag = Cortes_Trade }
+				10 = { set_country_flag = Cortes_Goods }
+			}
+			random_list = {
+				10 = { set_country_flag = Cortes_Manpower }
+				10 = { set_country_flag = Cortes_Morale }
+				10 = { set_country_flag = Cortes_Discipline }
+			}
+			random_list = {
+				10 = { set_country_flag = Cortes_Piety }
+				10 = { set_country_flag = Cortes_Gold }
+				10 = { set_country_flag = Cortes_Pope }
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.1.a
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Cortes_Navy = {
+				add_country_modifier = {
+					name = "Cortes_Navy"
+					duration = 3650
+				}
+				clr_country_flag = Cortes_Navy
+			}
+			Cortes_Trade = {
+				add_country_modifier = {
+					name = "Cortes_Trade"
+					duration = 3650
+				}
+				clr_country_flag = Cortes_Trade
+			}
+			Cortes_Goods = {
+				add_country_modifier = {
+					name = "Cortes_Goods"
+					duration = 3650
+				}
+				clr_country_flag = Cortes_Goods
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCES
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		clr_country_flag = Cortes_Manpower
+		clr_country_flag = Cortes_Morale
+		clr_country_flag = Cortes_Discipline
+		clr_country_flag = Cortes_Piety
+		clr_country_flag = Cortes_Pope
+		clr_country_flag = Cortes_Gold
+	}
+	
+	option = {
+		name = reform_me_events.1.b
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Cortes_Manpower = {
+				add_country_modifier = {
+					name = "Cortes_Manpower"
+					duration = 7300
+				}
+				clr_country_flag = Cortes_Manpower
+			}
+			Cortes_Morale = {
+				add_country_modifier = {
+					name = "Cortes_Morale"
+					duration = 7300
+				}
+				clr_country_flag = Cortes_Morale
+			}
+			Cortes_Discipline = {
+				add_country_modifier = {
+					name = "Cortes_Discipline"
+					duration = 7300
+				}
+				clr_country_flag = Cortes_Discipline
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		clr_country_flag = Cortes_Trade
+		clr_country_flag = Cortes_Navy
+		clr_country_flag = Cortes_Goods
+		clr_country_flag = Cortes_Piety
+		clr_country_flag = Cortes_Pope
+		clr_country_flag = Cortes_Gold
+	}
+	
+	option = {
+		name = reform_me_events.1.c
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Cortes_Piety = {
+				add_country_modifier = {
+					name = "Cortes_Piety"
+					duration = 7300
+				}
+				clr_country_flag = Cortes_Piety
+			}
+			Cortes_Pope = {
+				add_papal_influence = 10
+				clr_country_flag = Cortes_Pope
+			}
+			Cortes_Gold = {
+				add_years_of_income = 0.8
+				clr_country_flag = Cortes_Gold
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_ADVANCE
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		clr_country_flag = Cortes_Manpower
+		clr_country_flag = Cortes_Morale
+		clr_country_flag = Cortes_Discipline
+		clr_country_flag = Cortes_Trade
+		clr_country_flag = Cortes_Navy
+		clr_country_flag = Cortes_Goods
+	}
+}

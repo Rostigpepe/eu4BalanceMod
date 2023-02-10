@@ -67,6 +67,7 @@ monarchy = {
 				georgian_monarchy_reform
 				georgian_empire_reform
 				emirate_of_andalusia_reform
+				kingdom_of_portugal
 			}
 		}
 		hereditary_vs_nobility = {
@@ -101,6 +102,7 @@ monarchy = {
 				honor_of_thai_kingdoms_people 
 				mamluk_privileges_mamluks
 				enlist_arabian_tribesmen
+				portugese_cortez_reform
 			}
 		}
 		bureaucracy = {
@@ -132,6 +134,7 @@ monarchy = {
 				satrapies_persia
 				taifa_governors_andalus
 				revive_the_hisbah_mamluks
+				portugese_casa_de_india
 			}
 		}
 		state_and_religion = {

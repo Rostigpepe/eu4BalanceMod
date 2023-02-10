@@ -10,7 +10,7 @@ house_of_knights_swe = {
 		}
 	}
 	modifiers = {
-		prestige = 1
+		prestige = 0.5
 		leader_cost = -0.15
 		nobles_influence_modifier = 0.05
 	}
@@ -34,8 +34,7 @@ swedish_church_ordinance_swe = {
 		}
 	}
 	modifiers = {
-		religious_unity = 0.15
-		church_power_modifier = 0.05
+		religious_unity = 0.10
 		church_loyalty_modifier = 0.1
 		tolerance_heretic = 1
 	}
@@ -147,6 +146,3 @@ times_of_peace_and_of_security_swe = {
 		}
 	}
 }
-	ai = {
-		factor = 2
-	}
