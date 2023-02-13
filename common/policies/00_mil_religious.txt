@@ -409,3 +409,69 @@ defensive_isolationism = {
 		factor = 1
 	}
 }
+
+
+warrior_monasteries = { 
+	monarch_power = MIL
+	
+	potential = {
+		AND = {
+		has_idea_group = theocracy_ideas
+			OR = {
+				has_idea_group = catholic_ideas0
+				has_idea_group = protestant_ideas0
+				has_idea_group = reformed_ideas0
+				has_idea_group = hussite_ideas0
+				has_idea_group = anglican_ideas0
+				has_idea_group = orthodox_ideas0
+			}
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = theocracy_ideas
+			OR = {
+				full_idea_group = catholic_ideas0
+				full_idea_group = protestant_ideas0
+				full_idea_group = reformed_ideas0
+				full_idea_group = hussite_ideas0
+				full_idea_group = anglican_ideas0
+				full_idea_group = orthodox_ideas0
+			}
+		}
+	}
+	
+	land_morale = 0.05
+	land_maintenance_modifier = -0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+essenes_warrior_spirit = { 
+	monarch_power = MIL
+	
+	potential = {
+		AND = {
+			has_idea_group = theocracy_ideas
+			has_idea_group = jewish_ideas0
+		}
+	}
+	
+	allow = {
+		AND = {
+			full_idea_group = theocracy_ideas
+			full_idea_group = jewish_ideas0
+		}
+	}
+	
+	land_attrition = -0.10
+	war_exhaustion = -0.02
+
+	ai_will_do = {
+		factor = 1
+	}
+}
