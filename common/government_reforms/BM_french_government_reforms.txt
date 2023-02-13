@@ -33,6 +33,7 @@ independent_vassals_france_reform = {
 		}
 	}
 	modifiers = {
+		diplomatic_upkeep = 1
 		vassal_income = 0.25
 		vassal_forcelimit_bonus = 0.05
 	}
