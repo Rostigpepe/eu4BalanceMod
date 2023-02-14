@@ -33,6 +33,7 @@ envoy_travel_time_ii = {
 
 	
 	envoy_travel_time = -0.10
+	global_ship_recruit_speed = -0.10
 }
 
 envoy_travel_time_iii = {
@@ -50,6 +51,7 @@ envoy_travel_time_iii = {
 
 	
 	envoy_travel_time = -0.15
+	transport_attrition = -0.5
 }
 
 envoy_travel_time_iv = {
@@ -67,6 +69,7 @@ envoy_travel_time_iv = {
 
 	
 	envoy_travel_time = -0.20
+	naval_attrition = -0.1
 }
 
 envoy_travel_time_v = {
@@ -84,6 +87,7 @@ envoy_travel_time_v = {
 
 	
 	envoy_travel_time = -0.25
+	trade_range_modifier = 0.15
 }
 
 envoy_travel_time_vi = {
@@ -98,4 +102,5 @@ envoy_travel_time_vi = {
 
 	
 	envoy_travel_time = -0.30
+	ship_power_propagation = 0.25
 }
