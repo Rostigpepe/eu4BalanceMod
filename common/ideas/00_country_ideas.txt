@@ -2664,7 +2664,7 @@ MCH_ideas = {
 		core_creation = -0.15
 	}
 	manchu_eight_banners = {
-		amount_of_banners = 0.25
+		amount_of_banners = 0.15
 	}
 	the_manchu_alphabet = {
 		global_institution_spread = 0.05
@@ -2689,7 +2689,7 @@ MCH_ideas = {
 QNG_ideas = {
 	start = {
 		core_creation = -0.2
-		ae_impact = -0.1
+		adm_tech_cost_modifier = -0.1
 	}
 	
 	bonus = {
@@ -2703,7 +2703,7 @@ QNG_ideas = {
 	
 	
 	expand_the_banners = {
-		amount_of_banners = 0.3
+		amount_of_banners = 0.25
 	}
 	the_green_standard_army = {
 		manpower_recovery_speed = 0.15
@@ -9530,7 +9530,7 @@ GLH_ideas = {
 
 YUA_ideas = {
 	start = {
-		core_creation = -0.25
+		manpower_in_culture_group_provinces = 0.25
 		cavalry_power = 0.2
 	}
 	bonus = {
@@ -9547,7 +9547,6 @@ YUA_ideas = {
 		imperial_mandate = 0.1
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
-		manpower_in_culture_group_provinces = 0.25
 		land_morale = 0.10
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
