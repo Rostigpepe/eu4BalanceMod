@@ -1,0 +1,189 @@
+###		Tier 2 NOBLE PRIVILIGES PERSIA		###
+
+BM_turkic_qasilbash_heirs_persia = {
+	allow_normal_conversion = yes
+	icon = "soldiers_3"
+	potential = {
+		AND = {
+			religion = shiite
+			OR = {
+				tag = ARL
+				tag = PER
+			}
+		}
+	}
+	modifiers = {
+		shock_damage = 0.05
+		missionary_maintenance_cost = -0.33
+		nobles_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+BM_recruiting_the_sky_keepers_persia = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	potential = {
+		AND = {
+			religion = zoroastrian
+			OR = {
+				tag = ARL
+				tag = PER
+			}
+		}
+	}
+	modifiers = {
+		# All Mountain provinces with a fort gain +2 Attrition for enemies and -25% enemy movement speed
+		global_manpower_modifier = 0.10
+		global_supply_limit_modifier = 0.2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 3 BUREAUCRACY PERSIA		###
+
+BM_tajik_administration_persia = {
+	allow_normal_conversion = yes
+	icon = "tribal_centralize_power"
+	potential = {
+		OR = {
+			tag = ARL
+			tag = PER
+		}
+	}
+	modifiers = {
+		num_accepted_cultures = 1
+		monthly_piety = -0.01
+		global_autonomy = -0.05
+		reinforce_cost_modifier = -0.1
+		nobles_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+BM_satrapies_persia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = ARL
+			tag = PER
+		}
+	}
+	modifiers = {
+		allow_client_states = yes
+		administrative_efficiency = 0.025
+		diplomatic_upkeep = 1
+		vassal_income = 0.25
+	}
+	custom_attributes = {
+		subject_tax_modifier_25 = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 5 CADRE PERSIA		###
+
+BM_abbas_reforms_persia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		OR = {
+			tag = ARL
+			tag = PER
+		}
+	}
+	modifiers = {
+		artillery_cost = -0.10
+		advisor_pool = 1
+		nobles_influence_modifier = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 6 ASSEMBLY PERSIA		###
+
+BM_ghulam_governates_persia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		AND = {
+			religion = shiite
+			OR = {
+				tag = ARL
+				tag = PER
+			}
+		}
+	}
+	modifiers = {
+		#Enables the Ghulam Estate
+		yearly_absolutism = 0.05
+		max_absolutism = 5
+		dhimmi_loyalty_modifier = 0.1
+		nobles_influence_modifier = -0.1
+		church_loyalty_modifier = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 7 ECONOMICAL MATTERS PERSIA		###
+
+BM_silk_traders_persia = {
+	allow_normal_conversion = yes
+	icon = "trading_city"
+	potential = {
+		OR = {
+			tag = ARL
+			tag = PER
+		}
+	}
+	modifiers = {
+		# Silk provinces gain +10% Production Efficiency as well as +10% Trade Value
+		merchants = 1
+		global_foreign_trade_power = 0.2
+		production_efficiency = 0.05
+		burghers_loyalty_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 9 ABSOLUTISM PERSIA		###
+
+BM_principle_of_fiqh_persia = {
+	allow_normal_conversion = yes
+	icon = "council"
+	potential = {
+		AND = {
+			religion = shiite
+			OR = {
+				tag = ARL
+				tag = PER
+			}
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		tolerance_own = 1
+		max_absolutism = 5
+	}
+	ai = {
+		factor = 2
+	}
+}

@@ -1,0 +1,148 @@
+###		Tier 2 NOBLE PRIVILIGES Sweden		###
+
+BM_house_of_knights_swe = {
+	allow_normal_conversion = yes
+	icon = "protectorate_parliament_reform"
+	potential = {
+		OR = {
+			tag = SWE
+			tag = SCA
+		}
+	}
+	modifiers = {
+		prestige = 0.5
+		leader_cost = -0.15
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 4 STATE & RELIGION Sweden		###
+BM_swedish_church_ordinance_swe = {
+	allow_normal_conversion = yes
+	icon = "pope_highlighted"
+	potential = {
+		OR = {
+			tag = SCA
+		}
+			AND = {
+			tag = SWE
+			religion = protestant
+		}
+	}
+	modifiers = {
+		religious_unity = 0.10
+		church_loyalty_modifier = 0.1
+		tolerance_heretic = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+BM_the_church_of_sweden_swe = {
+	allow_normal_conversion = yes
+	icon = "reformer"
+	potential = {
+		OR = {
+			tag = SCA
+		}
+			AND = {
+			tag = SWE
+			religion = protestant
+		}
+	}
+	modifiers = {
+		global_heretic_missionary_strength = 0.01
+		church_power_modifier = 0.15
+		church_loyalty_modifier = -0.05
+		church_influence_modifier = -0.05
+		tolerance_heretic = -1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 6 ASSEMBLY Sweden		###
+BM_parliamentary_order_swe = {
+	allow_normal_conversion = yes
+	icon = "parliament_hall"
+	potential = {
+		OR = {
+			tag = SWE
+			tag = SCA
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.1
+		reform_progress_growth = 0.1
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 7 ECON Sweden		###
+BM_competing_with_foreign_powers_swe = {
+	allow_normal_conversion = yes
+	icon = "great_sea"
+	potential = {
+		OR = {
+			tag = SWE
+			tag = SCA
+		}
+	}
+	modifiers = {
+		global_ship_trade_power = 0.33
+		production_efficiency = 0.05
+		mercantilism_cost = -0.15
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+###		Tier 9 ABSOLUTISM Sweden		###
+BM_times_of_peace_and_of_security_swe = {
+	allow_normal_conversion = yes
+	icon = "three_classes_reform"
+	potential = {
+		OR = {
+			tag = SWE
+			tag = SCA
+		}
+	}
+	modifiers = {
+		max_absolutism = -10
+		candidate_random_bonus = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		states_general_mechanic = {
+			statists = {
+				legitimacy = -0.5
+				idea_cost = -0.05
+				monthly_reform_progress_modifier = 0.10
+			}
+			monarchists = {
+				country_admin_power = 1
+				max_absolutism = 5
+				manpower_in_own_culture_provinces = 0.05
+			}
+		}
+	}
+}

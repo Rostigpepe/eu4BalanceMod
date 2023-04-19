@@ -1,31 +1,31 @@
 ﻿
- albertine_line_austria:0 "The Albertine Line"
- albertine_line_austria_desc:0 "As our family holds most of the Austrian Heartlands, we never have to look far for potential heirs or willing soldiers. Just as when the Albertine Line did in 1457, we took over our cousin's crown, and our cousins are more then willing to continue carrying our banner should our strength run short."
+ BM_albertine_line_austria:0 "The Albertine Line"
+ BM_albertine_line_austria_desc:0 "As our family holds most of the Austrian Heartlands, we never have to look far for potential heirs or willing soldiers. Just as when the Albertine Line did in 1457, we took over our cousin's crown, and our cousins are more then willing to continue carrying our banner should our strength run short."
 
 
- reorganize_the_imperial_army_austria:0 "Re-Organize the Imperial Army"
- reorganize_the_imperial_army_austria_desc:0 "During our Imperial wars with the French, Turks and Heretics of the Empire, we have often employed soldiers of our own to fight for us. But with the age of seasonal warfare ending, where armies aren't disbaned by fall and recruited again by spring, we need a better alternative to this. If we were hire the veterans of the various Imperial Wars, captains and sergeants from all around the Empire, we can use them to both raise and train our armies, as well as serve in them."
+ BM_reorganize_the_imperial_army_austria:0 "Re-Organize the Imperial Army"
+ BM_reorganize_the_imperial_army_austria_desc:0 "During our Imperial wars with the French, Turks and Heretics of the Empire, we have often employed soldiers of our own to fight for us. But with the age of seasonal warfare ending, where armies aren't disbaned by fall and recruited again by spring, we need a better alternative to this. If we were hire the veterans of the various Imperial Wars, captains and sergeants from all around the Empire, we can use them to both raise and train our armies, as well as serve in them."
 
 
- imperial_inquisition_austria:0 "Imperial Inquisition"
- imperial_inquisition_austria_desc:0 "To fight the preachings of the vile Lutherian followers, we have decided to institute the 'Imperial Inquisitions', an inquisition not unlike those from Spain and Portugal, to fight our heretical enemies."
+ BM_imperial_inquisition_austria:0 "Imperial Inquisition"
+ BM_imperial_inquisition_austria_desc:0 "To fight the preachings of the vile Lutherian followers, we have decided to institute the 'Imperial Inquisitions', an inquisition not unlike those from Spain and Portugal, to fight our heretical enemies."
 
 
- declaratio_ferdinandei_austria:0 "Declaratio Ferdinandei"
- declaratio_ferdinandei_austria_desc:0 "The principle known as 'Declaratio Ferdinandei' exempted knights and some cities from the requirement of religious uniformity, if the reformed religion had been practised there since the mid 1520'. This allowed for a few mixed cities and towns to have both Catholic and Lutherans living together. It also protected the authority of the princely families, the knights and Landsknecht, and some cities to determine independently waht that religious uniformity meant. Emperor Ferdinand inserted this decree just before his death, on his own authority."
+ BM_declaratio_ferdinandei_austria:0 "Declaratio Ferdinandei"
+ BM_declaratio_ferdinandei_austria_desc:0 "The principle known as 'Declaratio Ferdinandei' exempted knights and some cities from the requirement of religious uniformity, if the reformed religion had been practised there since the mid 1520'. This allowed for a few mixed cities and towns to have both Catholic and Lutherans living together. It also protected the authority of the princely families, the knights and Landsknecht, and some cities to determine independently waht that religious uniformity meant. Emperor Ferdinand inserted this decree just before his death, on his own authority."
 
 
- diverse_estates_of_austria:0 "Diverse Estates"
- diverse_estates_of_austria_desc:0 "Having to keep both the Hungarian, German, and Bohemian, as well as our domestic estates, loyal to our Emperors authority is a challenge. Our experience in juggling their influence and loyalty, placating them with promises, privileges, ducats, or threats, has left us with a rather experience diplomatic corps that can be employed in managing our estates, as well as our foreign affairs."
+ BM_diverse_estates_of_austria:0 "Diverse Estates"
+ BM_diverse_estates_of_austria_desc:0 "Having to keep both the Hungarian, German, and Bohemian, as well as our domestic estates, loyal to our Emperors authority is a challenge. Our experience in juggling their influence and loyalty, placating them with promises, privileges, ducats, or threats, has left us with a rather experience diplomatic corps that can be employed in managing our estates, as well as our foreign affairs."
 
 
- utilising_donau_elbian_industrial_sectors_austria:0 "Utilising the Donau & Elbian Industrial Sectors"
- utilising_donau_elbian_industrial_sectors_austria_desc:0 "We are in control of two important european rivers. Along the Donau, in Hungary, large fields produce grain and livestock roam the countryside. By appropriating the lands of the lesser Hungarian Feudal Lords, kicking out the peasantry, and creating enclosures and 'Crown-Farms', we can re-invite the lords, lending them the funds necessary for them to rent the land, buy the tools, and re-employ the pesants. This way, we gain both the indirect control of the production that the farms and enclosures produce, as well as a source of income through the rent system. Along the Elbe, in Bohemia, lumber mills, iron mines, as well as industrial centres, are plenty. By providing state subsidies to these areas we can bolster the infrastructure and industrial capabilities of our economy."
+ BM_utilising_donau_elbian_industrial_sectors_austria:0 "Utilising the Donau & Elbian Industrial Sectors"
+ BM_utilising_donau_elbian_industrial_sectors_austria_desc:0 "We are in control of two important european rivers. Along the Donau, in Hungary, large fields produce grain and livestock roam the countryside. By appropriating the lands of the lesser Hungarian Feudal Lords, kicking out the peasantry, and creating enclosures and 'Crown-Farms', we can re-invite the lords, lending them the funds necessary for them to rent the land, buy the tools, and re-employ the pesants. This way, we gain both the indirect control of the production that the farms and enclosures produce, as well as a source of income through the rent system. Along the Elbe, in Bohemia, lumber mills, iron mines, as well as industrial centres, are plenty. By providing state subsidies to these areas we can bolster the infrastructure and industrial capabilities of our economy."
 
 
- the_robot_patent_austria:0 "The Robot Patent"
- the_robot_patent_austria_desc:0 "Serfdom has been a dominant economic and political force for the nobility across Europe. For over a millenia the peasants has been serving as slaves for the nobles, who themselves has been under the authority of the Monarch, lending their levies to fight in wars. For hundreds of years this has been a good deal for Austria. But with the development of lesser lords who exploit their serfs and peasants inefficiently, as well as nobles who contribute nothing more than asking for more privileges and tax exemptions, it is due time that we do the right thing; the peasants shall be free. With the will of our Emperor, the 'Robot Patent' (Robot meaning compulsory labor, and Patent meaning decree) shall be issued, outlawing all forms of compulsory labor, serfdoms, and feudal practices."
+ BM_the_robot_patent_austria:0 "The Robot Patent"
+ BM_the_robot_patent_austria_desc:0 "Serfdom has been a dominant economic and political force for the nobility across Europe. For over a millenia the peasants has been serving as slaves for the nobles, who themselves has been under the authority of the Monarch, lending their levies to fight in wars. For hundreds of years this has been a good deal for Austria. But with the development of lesser lords who exploit their serfs and peasants inefficiently, as well as nobles who contribute nothing more than asking for more privileges and tax exemptions, it is due time that we do the right thing; the peasants shall be free. With the will of our Emperor, the 'Robot Patent' (Robot meaning compulsory labor, and Patent meaning decree) shall be issued, outlawing all forms of compulsory labor, serfdoms, and feudal practices."
 
 
- revoke_reichsfreiheit_austria:0 "Revoke Reichsfreiheit"
- revoke_reichsfreiheit_austria_desc:0 "For long we have taken the mantle as Emperors of the Holy Roman Empire, but despite being the rightful claimants to Romes' legacy, the Empire does not reflect that. Instead, hundreds of duchies, kingdoms, and tollbooth-castles litter the Empire, scattered, disunited, and most begrudgingly of all; Independent. It is due time that this Holy Empire of ours finally unites. 'Austriae est imperare orbi universo'."
+ BM_revoke_reichsfreiheit_austria:0 "Revoke Reichsfreiheit"
+ BM_revoke_reichsfreiheit_austria_desc:0 "For long we have taken the mantle as Emperors of the Holy Roman Empire, but despite being the rightful claimants to Romes' legacy, the Empire does not reflect that. Instead, hundreds of duchies, kingdoms, and tollbooth-castles litter the Empire, scattered, disunited, and most begrudgingly of all; Independent. It is due time that this Holy Empire of ours finally unites. 'Austriae est imperare orbi universo'."

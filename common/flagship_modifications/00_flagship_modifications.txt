@@ -78,7 +78,7 @@ command_aftercastle = {
         }
     }
 	modifier = {
-        morale_in_fleet_modifier = 0.10
+        morale_in_fleet_modifier = 0.05
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
@@ -231,7 +231,7 @@ spanish_grand_armada = {
         normal_or_historical_nations = yes
     }
 	modifier = {
-        naval_attrition_in_fleet_modifier = -0.33
+        naval_attrition_in_fleet_modifier = -0.3
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
@@ -259,7 +259,7 @@ spanish_treasure_fleet = {
     }
 	modifier = {
         cannons_for_hunting_pirates_in_fleet = 1
-        naval_maintenance_flagship_modifier = 0.25
+        naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
         factor = 0
@@ -312,7 +312,7 @@ dutch_courage = {
         normal_or_historical_nations = yes
     }
     modifier = {
-        morale_in_fleet_modifier = 0.2
+        morale_in_fleet_modifier = 0.1
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -341,7 +341,7 @@ portuguese_corps_of_fusiliers = {
     modifier = {
         movement_speed_onto_off_boat_modifier = 0.66
         landing_penalty = -2
-        naval_maintenance_flagship_modifier = 0.4
+        naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
         factor = 0
@@ -371,7 +371,6 @@ integrated_marines = {
         }
     }
     modifier = {
-        admiral_skill_gain_modifier = 0.03
         movement_speed_onto_off_boat_modifier = 0.33
         naval_maintenance_flagship_modifier = 0.5
     }
@@ -393,8 +392,7 @@ scandinavian_flag_officers = {
         normal_or_historical_nations = yes
     }
     modifier = {
-        admiral_skill_gain_modifier = 0.05
-        prestige_from_battles_in_fleet_modifier = 1
+        admiral_skill_gain_modifier = 0.03
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -449,7 +447,7 @@ flag_officers = {
 spare_jolly_roger = {
     modifier = {
         privateering_efficiency_in_fleet_modifier = 0.25
-        naval_maintenance_flagship_modifier = 0.25
+        naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
 	    factor = 1

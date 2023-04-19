@@ -1,0 +1,119 @@
+###		Tier 6 ASSEMBLY France		###
+BM_corps_diplomatique_france_reform = {
+	allow_normal_conversion = yes
+	icon = "paper_with_seal"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		diplomats = 1
+		improve_relation_modifier = 0.2
+		dip_advisor_cost = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 7 France		###
+BM_the_rise_of_bourgeoisie_aristocracy_reform = {
+	allow_normal_conversion = yes
+	icon = "dutch_republic"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+		caravan_power = 0.15
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 8 France		###
+BM_continental_system_reform = {
+	allow_normal_conversion = yes
+	icon = "map"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.20
+		transfer_trade_power_reasons = 10
+		trade_efficiency = 0.05
+		embargo_efficiency = 0.50
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+BM_counsil_souverein_reform = {
+	allow_normal_conversion = yes
+	icon = "private_enterprise_colony_government"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		global_tariffs = 0.20
+		trade_steering = 0.20
+		trade_company_investment_cost = -0.1
+	}
+	custom_attributes = {
+		extra_trade_goods_for_colonial_subjects = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 9 France		###
+BM_droit_divin_reform = {
+	allow_normal_conversion = yes
+	icon = "king"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		unjustified_demands = -0.25
+		max_absolutism = 5
+		church_influence_modifier = -0.1
+		global_unrest = -1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+###		Tier 10 France		###
+BM_royaume_du_soleil_reform = {
+	allow_normal_conversion = yes
+	icon = "enlightened_monarchy_reform"
+	potential = {
+		OR = {
+			tag = FRA
+		}
+	}
+	modifiers = {
+		monarch_admin_power = 1
+		yearly_absolutism = 0.05
+		max_absolutism = 5
+		global_unrest = 1
+	}
+	ai = {
+		factor = 2
+	}
+}

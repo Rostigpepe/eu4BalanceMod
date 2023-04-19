@@ -11,33 +11,6 @@ estate_burghers_forest_expansion = {
 				AND = {
 					is_year = 1444
 				}
-				# RUSSIA/RUSSIAN MINORS
-				tag = RUS
-				tag = MOS
-				tag = KRL
-				tag = NOV
-				tag = PSK
-				tag = TVE
-				tag = YAR
-				tag = RSO
-				tag = NZH
-				tag = OKA
-				tag = RYA
-				tag = PRM
-				tag = BLO
-				# BALTIC + LITHUANIA
-				tag = SMO
-				tag = PLT
-				tag = LIT
-				tag = LIV
-				tag = LVA
-				tag = KUR
-				tag = EST
-				tag = LTG
-				tag = CHR
-				# SAMI + KARELIA
-				tag = KRL
-				tag = SMI
 				# COLONIAL NATIONS
 				tag = QUE
 				tag = CAN

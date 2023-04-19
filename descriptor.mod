@@ -4,5 +4,5 @@ tags={
 }
 name="BMMod"
 picture="thumbnail.png"
-supported_version="1.34.*"
+supported_version="1.35.*"
 remote_file_id="2879418522"

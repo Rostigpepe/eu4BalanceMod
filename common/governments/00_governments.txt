@@ -110,7 +110,10 @@ monarchy = {
 				tibetan_dual_government_reform
 				sisterhood_of_jeanne_darc_reform
 				#MODDED
-				emirate_of_andalusia_reform
+				#Georgian modded Governments
+				georgian_principality_reform
+				georgian_monarchy_reform
+				georgian_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -144,6 +147,7 @@ monarchy = {
 				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
 				#MODDED
+				BM_council_of_sheikhs_andalus
 				BM_house_of_knights_swe
 				BM_turkic_qasilbash_heirs_persia
 				BM_recruiting_the_sky_keepers_persia
@@ -177,10 +181,13 @@ monarchy = {
 				namestnik_reform
 				consulate_of_the_sea
 				#MODDED
-				BM_independent_vassals_france_reform
+				BM_taifa_governors_andalus
 				BM_tajik_administration_persia
 				BM_satrapies_persia
 				BM_portugese_casa_de_india
+				BM_abolish_bastard_feudalism_english
+				saeristavo_reform
+				sadrosho_reform
 			}
 		}
 		state_and_religion = {
@@ -220,6 +227,7 @@ monarchy = {
 				anglican_state_church_reform
 				english_conciliarism_reform
 				#MODDED
+				BM_cultural_investment_andalus
 				BM_swedish_church_ordinance_swe
 				BM_the_church_of_sweden_swe
 				BM_imperial_inquisition_austria
@@ -283,8 +291,9 @@ monarchy = {
 				merchant_arsenal_reform
 				tercios_reform
 				#MODDED
-				BM_blood_tax_france_reform
+				BM_henrician_reforms_english
 				BM_reorganize_the_imperial_army_austria
+				BM_honor_of_thai_kingdoms_people
 			}
 		}
 		deliberative_assembly = {
@@ -315,6 +324,8 @@ monarchy = {
 				BM_parliamentary_order_swe
 				BM_ghulam_governates_persia
 				BM_diverse_estates_of_austria
+				BM_the_supreme_governor_english
+				karavi_reform
 			}
 		}
 		growth_of_administration = {
@@ -338,6 +349,7 @@ monarchy = {
 				administration_of_the_parliament_reform
 				strengthened_parliament_reform
 				#MODDED
+				BM_taha_divisions_andalus
 				BM_the_rise_of_bourgeoisie_aristocracy_reform
 				BM_abbas_reforms_persia
 				BM_academy_of_sciences_reform
@@ -364,6 +376,7 @@ monarchy = {
 				royal_charters_reform
 				commercial_trade_empire_reform
 				#MODDED
+				BM_tariffs_trading_rights_english
 				BM_continental_system_reform
 				BM_counsil_souverein_reform
 				BM_competing_with_foreign_powers_swe
@@ -402,6 +415,7 @@ monarchy = {
 				BM_principle_of_fiqh_persia
 				BM_toleration_of_all_faiths_edict_reform
 				BM_revoke_reichsfreiheit_austria
+				BM_bill_of_rights_english
 			}
 		}
 		separation_of_power = {
@@ -416,7 +430,6 @@ monarchy = {
 				nizam_i_cedid_reform
 				#MODDED
 				BM_royaume_du_soleil_reform
-				BM_the_governing_senate_reform
 			}
 		}
 	}
@@ -1076,6 +1089,16 @@ tribal = {
 				BM_tribal_mongol_ties_reform
 			}
 		}
+		#tribal_regional_pursuit = { ###      TO BE FIXED      ###
+			#reforms = {
+				#tribal_subject_relations_reform
+				#tribal_territorial_rights_reform
+				#tribal_legacy_gol_reform
+				#tribal_silk_road_reform
+				#tribal_jurchen_tea_reform
+				#tribal_settle_hinterlands_reform
+			}
+		}
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
@@ -1099,13 +1122,6 @@ tribal = {
 				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
-				#MODDED
-				BM_retain_tribal_hierarchy_reform
-				BM_tribal_succession_laws_reform
-				BM_tribal_bashqaq_reform
-				BM_tribal_dirham_reform
-				BM_tribal_birth_manchu_reform
-				BM_tribal_fur_exchange_reform
 				
 				#MODDED TIER 7:
 				BM_tribal_feudal_subjects_reform

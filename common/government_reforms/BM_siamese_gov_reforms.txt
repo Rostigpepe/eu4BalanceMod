@@ -1,0 +1,27 @@
+###		Tier 2 NOBLE PRIVILIGES AUSTRIA		###
+
+BM_honor_of_thai_kingdoms_people = {
+	icon = soldiers_6
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+		}	
+	}
+	modifiers = {
+		manpower_in_own_culture_provinces = 0.20
+	}
+	custom_attributes = {
+		enables_siamese_honor = yes #-2 unrest if <50 legitimacy, +5% ICA if >75 legitimacy
+	}
+	ai = {
+		factor = 100
+	}
+}
