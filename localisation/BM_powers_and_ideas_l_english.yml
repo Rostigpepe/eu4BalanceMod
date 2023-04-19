@@ -20,6 +20,7 @@ ENG_ideas:0 "English Ideas"
  english_bill_of_rights:0 "English Bill of Rights"
  english_bill_of_rights_desc:1 "A sweeping series of reforms focused on the limits of royal power, in particular focused on the judiciary. The monarch may not unilaterally raise armies, prescribe cruel and unusual punishment, or interfere with the free election of members of Parliament."
 
+
 ### BRITISH IDEAS ###
 GBR_ideas:0 "British ideas"
  GBR_ideas_start:0 "British Traditions"
@@ -38,6 +39,7 @@ GBR_ideas:0 "British ideas"
  early_industrialization_desc:0 "Rapid advances in technology are creating possibilities never before dreamt of. People flock to the cities to work in new, highly efficient factories outfitted with astonishing modern machinery. Britain must be at the heart of this industrial revolution, as any nation that fails to modernize will be swept away by those that do."
  britanna_rules_the_waves:0 "Britannia Rules the Waves"
  britanna_rules_the_waves_desc:0 "Rule Britannia!\nBritannia rule the waves.\nBritons never, never, never shall be slaves."
+
 
 ### AUSTRIAN IDEAS ###
 HAB_ideas:0 "Austrian Ideas"
@@ -58,6 +60,7 @@ HAB_ideas:0 "Austrian Ideas"
  kukarmeereform:0 "K.U.K Armee Reform"
  kukarmeereform_desc:0 "The Kaiserlich und Königliche Armee, or K.U.K, have been in our service since the coronation of our Emperor in 1438. The army has always been a limited and poorly trained, but a core part of our Imperial Army. It is due time that we generously fund and reinforce this force with our newest equipment, more regiments, and finally integrate the Honvédség and Landwehr into our Joint Imperial and Royal Army."
 
+
  ### HUNGARY IDEAS ###
  HUN_ideas_bonus:0 "Hungarian Ambition"
  order_of_the_dragon:0 "Order of the Dragon"
@@ -74,6 +77,7 @@ HAB_ideas:0 "Austrian Ideas"
  southern_tensions_desc:0 "The Ottoman Empire is an existential threat to the Kingdom of Hungary, none doubt that. The southern border with them is almost always in contention and it is rare that we are not involved in some sort of conflict against the Ottoman turks. Should time come, we need to ensure that our castles and forts are strong enough to withstand any prolonged war against the fiends to the south."
  decretum_maius:0 "Decretum Maius and the Masked Monarch"
  decretum_maius_desc:0 "We have known for long just how much power the palatine, a high level official in our judicial court, has over our judicial matters. The power he has is seen by some to be just, but to many of the court it is a needless stumbling block that we have had to work around for a long time. It is time to institute the 'Decretum Maius' and officially cut down the power of the palatine in favour of the county magistrates. The Decretum Maius provides our magistrates the authority to bring misdeeds and corruption to light without reprimands from vengeful nobles. It is rumoured our monarch has even taken this job upon himself, disguised as a magistrate with a partial mask to cover his true identity, fighting to root out corruptive elements in our judicial system, and to uncover treacherous, plotting Nobles."
+
 
 ###   BOHEMIAN IDEAS   ###
 BOH_ideas:0 "Bohemian Ideas"
@@ -94,6 +98,7 @@ BOH_ideas:0 "Bohemian Ideas"
  czech_nationalism:0 "Czech Nationalism"
  czech_nationalism_desc:0 "The Czech people have survived everything the world has thrown at them, we have shown our resilience."
 
+
 ###   BURGUNDIAN IDEAS   ###
 BUR_Ideas:0 "Burgundian Ideas"
  BUR_Ideas_start:0 "Burgundian Traditions"
@@ -112,6 +117,7 @@ BUR_Ideas:0 "Burgundian Ideas"
  freedom_of_worship_desc:0 "Although the Church is putting pressure on us to enforce greater religious orthodoxy, the towns citing the doctrine of Renaissance Humanism have been urging greater toleration. Although we cannot completely ignore the clergy the towns are simply too important to ignore."
  bur_regimental_system:0 "Create the Regimental System"
  bur_regimental_system_desc:0 "In order to facilitate more efficient recruitment to our armies we are tying regiments to regions and making each region responsible for providing recruits to its local regiment. This will streamline the process of recruiting and result in more available manpower."
+
 
 ###   LOTHARINGIA IDEAS   ###
 LOT_ideas:0 "Lotharingian Ideas"
@@ -132,6 +138,7 @@ LOT_ideas:0 "Lotharingian Ideas"
  lot_european_empire:0 "Europa Universalis Imperii"
  lot_european_empire_desc:0 "Charlemagne briefly united much of Europe under his sway. Our destiny is to complete what he started and restore the unity last seen in the days of Rome to Europe."
 
+
 ###   ITALIAN IDEAS   ###
 ITA_ideas:0 "Italian Ideas"
  ITA_ideas_start:0 "Italian Traditions"
@@ -151,24 +158,6 @@ ITA_ideas:0 "Italian Ideas"
  path_to_citizenship:0 "The Path to Citizenship"
  path_to_citizenship_desc:0 "The Roman Empire's strength was its ability to make those they ruled want to be part of the Empire. We will emulate this system to make those who are part of our domains seek to become part of our empire." 
 
-###  OTTOMAN IDEAS  ###
- TUR_ideas:0 "Ottoman Ideas"
- TUR_ideas_start:0 "Ottoman Traditions"
- TUR_ideas_bonus:0 "Ottoman Ambition"
- kapu_eyalet:1 "Kapu Kulu & Eyalet Organization"
- kapu_eyalet_desc:1 "The military forces of Europeans and Muslims around us are something that we should not only learn from, but also strive to be above as time goes on. Organizing our military into two sections, a central force, and a peripheral force, will help with this and instill a sense of discipline in the core part of our military as well as the outer part since both will be relied upon as we continue our fight into Europe, Africa, and Asia"
- sipahi_cavalry:0 "Ghazi"
- sipahi_cavalry_desc:2 "Cavalry has been a key component of our military since the time we were a mere Beylik. Our ancestors of the Seljuk Empire even deployed Sipahi cavalry which attests to the history of the unit itself. But we of the Ottoman Empire are ina much different time compared to our ancestors. Our Sipahi must learn more skilled strategies and tactics, how to use gunpowder weapons whilst on their horses, and also how to conduct themselves in line with our Janissaries and artillery."
- autonmous_pashas:0 "Autonomous Pashas"
- autonmous_pashas_desc:0 "Balancing local needs versus national interests is the hardest part of government. Especially with the pace of communications, it can take a long time for the most basic directives to reach even relatively close provinces. We must encourage the local governors towards more autonomy to ensure that local interests are served."
- ottoman_artillery:0 "Ottoman Artillery"
- ottoman_artillery_desc:0 "Whilst the Europeans and other Muslim states around us progress very little in terms of gunpowder technology, we are absolutely keen on using the fiery material to its greatest extent! Grenades, weapons that are larger than muskets but smaller than cannons, even cannons that seem too big to even be fired properly, all of this will be utilized and tried out by the Ottoman military. Only the best designs will survive the test of time and this strive for gundpowder prowess will make our artillery outdo anything Europe or Asia can put fourth."
- anatolian_shipyards:0 "Naval Shipyards of Anatolia"
- anatolian_shipyards_desc:0 "When we took Karamursel, our fleet was small and not able to compete with the likes of Venice or other mediterranean powers. Now that the entirety of Anatolia is under our control, and our navy has been building up in a variety of ways, we will sail forth to dominate the mediterranean trade routes and even the sea itself!"
- sipahi_janissary_functions:0 "Sipahi & Janissary functionality"
- sipahi_janissary_functions_desc:0 "The professional Sipahi cavalrymen are not just used in combat; unlike the Janissaries, but also granted land called 'timars' and are expected to enforce law and order in the lands they are given. As a sort of informal police force of sorts yet also an effective cavalry force, the Sipahi variable role in Ottoman society means that we will need more of them as times go on, especially as our empire continues to expand into new territories."
- ottoman_caliphate:0 "The Ottoman Caliphate"
- ottoman_caliphate_desc:0 "Few if any in the Muslim world have reached our heights and claimed as much power as we currently have. The piety in our rulers and the power we are gathering shows all in the Islamic world that we, the Ottoman Empire, are the true protectors of Muslims from outside forces. Though some Islamic states would defy our righteous authority, in time they will submit to us, either through peaceful talks or the fires of war."
 
 ###  MAMLUK IDEAS ###
 MAM_ideas:0 "Mamluk Ideas"
@@ -189,6 +178,7 @@ MAM_ideas:0 "Mamluk Ideas"
  the_caliph_decree:0 "The Caliph's Decree"
  the_caliph_decree_desc:0 "We have held the Caliph in Qahirah since 1261. While we have merely used his presence to legitimize our rule, there was a 6 month period were a caliph ruled as the Sultan of Egypt. During this period, a number of sultans of the Islamic world sent gifts and recognised our authority. We should incorporate the caliph into our state bureaucracy and claim the title of the Caliphate officially this time."
 
+
 ###   NETHERLANDS IDEAS   ###
 NED_ideas:0 "Dutch Ideas"
  NED_ideas_start:0 "Dutch Traditions"
@@ -207,6 +197,7 @@ NED_ideas:0 "Dutch Ideas"
  mercenary_expertise_desc:0 "Netherlands has always had a smaller population than contemporary powers around it, severely limiting the amount of soldiers it can muster during times of war. By enlisting foreign experts from foreign powers and developing a quality-over-quantity mindset when it comes to the creation of our armies, we can keep up with the arms development and still be able to match our opponents."
  je_maintiendrai:0 "Je Maintiendrai"
  je_maintiendrai_desc:0 "Je Maintiendrai, 'I will maintain', was the motto of the House of Orange-Nassau since the time of William of Orange. This became a sort of national spirit for the people's of the lowlands as it historically was subjugated and under the threat of subjugation by foreign powers. It was later adapted as the Coat of Arms for the Dutch Republic as well as the banner of the Netherlands, representing the seven provinces of the Union of Utrecht and a Lion that guards them, ensuring that Netherlands will forever maintain."
+
 
 ###   MUGHAL IDEAS    ###
 MUG_ideas:0 "Mughal Ideas"
@@ -227,6 +218,7 @@ the_many_estates_of_india_desc:0 "With our recent incursions and conquests of th
  industrialization_of_india:0 "Industrialization of India"
  industrialization_of_india_desc:0 "As the years go by in our empire and throughout its growth we are seeing villages turn into towns, and towns into cities. Urban populations are growing like never before, new production techniques are being utilized by textile weavers, and industries such as shipbuilding, metalware and agriculture are expanding at an unprecedented pace. Whilst our administration might struggle to keep up with how high our internal development is growing, we will be sure to profit greatly from this rising tide of industrial output. We will have little need of outside imports if we can truly harness the power we have here in India."
 
+
 ###   RUSSIAN IDEAS   ###
 RUS_ideas:0 "Russian Ideas"
  land_of_the_rus:0 "Land of the Rus"
@@ -243,6 +235,7 @@ RUS_ideas:0 "Russian Ideas"
  russian_winter_desc:0 "The Winter in Russia has always been an indifferent, cruel and deadly force of nature for as long as anyone can remember, claiming anyone who dared be unprepared for it. By using the harsh winter and cold climate to our advantage during wars, tactics such as razing food supplies, fields, and villages, depriving our enemies of shelter and food, letting them starve and freeze to death, we hardly have to do any fighting ourselves. When the enemy armies are frozen cold, dying of starvation and begging to return, in their most weakened state, that's when we strike! "
  great_russian_empire:0 "Rossiyskaya Imperiya"
  great_russian_empire_desc:0 "Grom pobedy, razdavaysia! \nVeselisya, khrabry Ross! \nZvuchnoy slavoy ukrashaysya. \nS nami Bog!"
+
 
 ###   PERSIAN IDEAS   ###
 PER_ideas:0 "Persian Ideas"
@@ -262,6 +255,7 @@ PER_ideas:0 "Persian Ideas"
  found_the_ghulams_desc:0 "The Persian army has traditionally been levied from nobles or foreign powers, but with Abba's army reforms, the decision to create a standirng army is clear. The new standing army is to be composed mainly of our conquered Georgian, Armenian, Circassian, and Caucasian subjects. Inspired by Ottoman Janissaries, by converting our Caucasian subjects, teaching and training them in military service as well as issuing them positions as governors of crown provinces, we can create a large, trained and most importantly, loyal army."
  fires_flames_force:0 "Rulers of Fires, the Flames, and the Force"
  fires_flames_force_desc:0 "The Persian Empire has always been born from flame, rising and growing in power, only to wither and fall to ash, but in that ash, the embers of the Empire is relit and reborn like a Phoenix, sparking into fire and burning bright again. Being placed in a melting pot of cultures, religions, traditions, trade and people, many foreign powers wonder how the Persian Empire can rise like it always does. It is through our integration of these many aspects of cultures, religions and traditions that we burn bright, and every time we fall into ash we are reborn with a new-found flame like the ever-burning kindling fires throughout our ancient ancestors homelands. Forever-again shall Persia fall, and forever-again shall we rise!"
+
 
 ###   PAPAL STATES IDEAS    ###
 PAP_ideas:0 "Papal Ideas"
@@ -300,58 +294,6 @@ PRU_ideas:0 "Prussian Ideas"
  eagle_in_the_north_desc:0 "Never has a great power as militarily mighty as ours emerged from such a previously small and poor land. But that is exactly what we have managed. All across Europe, Lords, Kings, and Emperors shall fear the rythmic thumping of Prussian boots crossing their borders. The trumpets of war grow louder, and we shall take the initiative with the finest army across the land!"
  regimental_cantons:0 "Regimental Cantons"
  regimental_cantons_desc:0 "Peasants are naturally not keen on a lifetime of service in the Army, so they tend to run away when recruiters come along. Now we give each regiment a recruiting district to draw manpower from. Each youth is expected to train for 3 months of the year so he is ready for service. This should ensure a steadier supply of manpower for armies."
-
-
-###    ARISTOCRATIC IDEAS      ###
-aristocracy_ideas:0 "Aristocratic Ideas"
- aristocracy_ideas_bonus:0 "Full Aristocracy"
- noble_knights:0 "Noble Knights"
- noble_knights_desc:0 "Supporting cavalry requires a lot of work, both economically and logistically. If we were to guarantee the privileges of our noble class to not only have the right to raise hosts of cavalry, but also serve as Chivalrous knights in our armies, they would be happy to do much of the work to supply us with the cavalry we need. Our court fool described it as service guarantees serfs."
- serfdom:0 "Serfdom"
- serfdom_desc:0 "A foot soldier in the army is not quite the career that anyone wanted, what with the poor food, low pay, and virtually nonexistent medical services. If we were to tie our peasants to the land we would know exactly where to look for recruits."
- noble_officers:0 "Noble Officers"
- noble_officers_desc:0 "Who leads our troops is an important choice. Our nobility is seeking to ensure that preference is given to them. It will give them a chance to show their valor by giving the enemy cold steel and we will allow them to do this."
- local_nobility:0 "Local Nobility"
- local_nobility_desc:0 "The nobility know they are simply better than normal people and will give their loyalty to those that are worthy. If we confirm their privileges, they will of course remember our largess and be more resistant to the inducements of foreign powers."
- international_nobility:0 "International Nobility"
- international_nobility_desc:0 "International relations are a tricky business. Some say that the merchant class who are used to dealing with foreigners are best for this. Those who say this ignore the kindred ties that our noble families have established through the years, these ties should be taken advantage of to help our cause diplomatically."
- noble_connections:0 "Noble Connections"
- noble_connections_desc:0 "When our ruler dies without an heir, it is quite unfortunate that Nobles come like hungry wolves at the door, waiting to strike against our Royal household to seize power for themselves. By appointing a secondary-heir in advance from one noble families, we can ensure that the claims of our heir to their rightful throne is reinforced."
- military_traditions:0 "Military Traditions"
- military_traditions_desc:0 "Military thought is constantly evolving and we ensure that our military thought evolves with it. By encouraging a tradition of service amongst our nobility, to be a man of status is to be a man who has won glory on the battlefield. Although bravery and stuff like that is always useful, there is nothing quite like outclassing your enemy to make it easy."
-
-
-###     HUMANIST IDEAS      ###
- humanist_ideas:0 "Humanist Ideas"
- humanist_ideas_bonus:0 "Full Humanist"
- local_traditions:0 "Local Traditions"
- local_traditions_desc:0 "Governing a large nation means ruling over many diverse peoples, each with their own customs and traditions. By incorporating these traditions into our official code of laws we create a happy and loyal populace."
- indirect_rule:0 "Indirect Rule"
- indirect_rule_desc:0 "Sometimes the best way to get people to do what you want is to let them believe that they're making their own choices. Such a system of indirect rule will reduce the unrest in newly acquired provinces."
- cultural_ties:0 "Cultural Ties"
- cultural_ties_desc:0 "Different cultures have different customs, and for some reason tend to resist attempts from above to change said customs. We can turn this weakness into a strength by incorporating local leaders into our system of government and having them carry out our will in a way that is palatable to them."
- benevolence:0 "Benevolence"
- benevolence_desc:0 "Our nation is a bastion of tolerance and enlightenment. By ensuring that we can foster better relations with the various cultures and religions within our borders."
-
-
-###     ADMINISTRATIVE IDEAS      ###
-administrative_ideas:0 "Administrative Ideas"
- administrative_ideas_bonus:0 "Fully Administrative"
- organised_payment:0 "Organized Payments"
- organised_payment_desc:0 "Sometimes money is short and we need to borrow. Lenders always worry that they will not be paid back. By maintaining meticulous records, we will be able to ensure that everyone gets paid and that will allow us to negotiate lower rates of interest."
-adaptability:0 "Adaptability"
- adaptability_desc:0 "There is what is ours and what is part of our ancestral domain that will never be surrendered. A bit of flexibility here will see much more land being considered never surrenderable and should the worst happen the whole world will know our crusade to recover it will be just."
-benefits_for_servants:0 "Benefits for Royal Servants"
-benefits_for_servants_desc:0 "Royal Servants are a canny lot. They would sell any piece of information to our rivals for pouch of ducats given the chance. We will make sure that our servants are well rewarded for their services and publically execute those who betray us to make an example to those who yet haven't. This will make sure that none of our secrets in the future will be told to our enemies."
- royal_academies:0 "Royal Academies"
- royal_academies_desc:0 "By sending our rulers and coming heirs to so-called 'Royal Academies', we can ensure that our Monarchs learn skills useful that will help them manage the state."
-expanded_administration:0 "Expanded Administration"
- expanded_administration_desc:0 "As our administrators and governing bodies grow more efficient at managing our state, so grows our ability to expand and adapt to those expansions."
- administrative_efficiency_idea:0 "Administrative Efficiency"
- administrative_efficiency_idea_desc:0 "The most important part of any government is getting the right advice. We must ensure that we are as inclusive as possible when it comes to advisors so we can maximize the number of different viewpoints we are presented with."
-civil_servants:0 "Civil Service"
- civil_servants_desc:0 "By establishing a Civil Service of eager young bureaucrats will ensure that we are able to quickly adapt to new advances in administration and governance."
-
 
 
 ###     BYZANTIUM IDEAS     ###

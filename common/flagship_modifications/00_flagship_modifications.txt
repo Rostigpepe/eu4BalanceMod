@@ -928,11 +928,11 @@ ming_coast_fleet = {
 
 ming_engagement_fleet = {
     trigger = {
-       OR = {
-       tag = MNG
-	   tag = QNG
-	   }
-       normal_or_historical_nations = yes
+        OR = {
+        tag = MNG
+	    tag = QNG
+	    }
+        normal_or_historical_nations = yes
     }
 	modifier = {
         flagship_naval_engagement_modifier = 2
