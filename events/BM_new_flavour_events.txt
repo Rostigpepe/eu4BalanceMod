@@ -1,6 +1,5 @@
 #Subjugation of Novgorod and subsequent coring
 
-namespace = BM_muscovy_conquest_of_novgorod
 country_event = {
 	id = BM_muscovy_conquest_of_novgorod.1
 	title = "BM_muscovy_conquest_of_novgorod.1.t"
