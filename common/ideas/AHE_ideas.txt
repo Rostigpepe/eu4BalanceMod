@@ -1,0 +1,43 @@
+AHE_ideas = {
+	start = {
+		land_morale = 0.10
+		state_governing_cost = -0.1
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+			tag = AHE
+	}
+	free = yes		#will be added at load.
+
+	multi_cultural_empire_ahe = {
+		manpower_in_accepted_culture_provinces = 0.10
+		num_accepted_cultures = 2
+		
+	}
+	donau_river_dominance_ahe = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	ethnic_minorities_act_ahe = {
+		morale_damage_received = -0.05
+		reserves_organisation = 0.15
+	}
+	a_i_e_o_u_ahe = {
+		all_estate_loyalty_equilibrium = 0.1
+		global_missionary_strength = 0.03
+	}
+	austrian_ministry_of_war_ahe = {
+		reinforce_speed = 0.33
+		recover_army_morale_speed = 0.05
+	}
+	fekete_magyar_huszar_ahe = {
+		discipline = 0.05
+	}
+	supremacy_of_the_monarchy_ahe = {
+		max_absolutism = 10
+		allow_free_estate_privilege_revocation = yes
+	}
+}
