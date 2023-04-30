@@ -1,6 +1,0 @@
-#Modifiers to change cav inf ratio, makes getting sufficient support modifier doable
-
-#Base compensation for everyone
-ratio_compensation_1 = {
-	cav_to_inf_ratio = -0.30
-}
