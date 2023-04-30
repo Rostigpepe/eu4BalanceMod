@@ -57,13 +57,13 @@ country_event = {
 			FROM = { inherit = ROOT }
 		}
 		hidden_effect = {
-			every_owned_province = { cede_province = FROM }
+			every_owned_province = { cede_province = MOS }
 		}
 
-		FROM = {
+		MOS = {
 			country_event = {
 				id = BM_muscovite_consolidation_of_novgorod_lands.1 #Consolidation of Lands
-				days = 0
+				days = 1
 			}
 		}
 	}
