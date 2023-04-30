@@ -1,0 +1,142 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 237 41 57 }
+revolutionary_colors = { 16  8  16 }
+
+preferred_religion = catholic
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Voclav #4" = 50
+	"Jiri #0" = 25
+	"Karel #5" = 40
+	"Premysl #0" = 10
+	"Premysl Otakar #3" = 25
+	"Zikmund #0" = 0
+	"Frantisek #0" = 0
+	"Jindrich #0" = 5
+	"Josef #0" = 5
+	"Frantisek Josef #0" = 0
+	"Bocek #0" = 0
+	"Jan Jir� #0" = 5
+	"Ludvok #0" = 0
+	"Vladislav #0" = 20
+	"Vladimir #0" = 10
+	"Petr #0" = 5
+	"Jan Petr #0" = 5
+	"Viktorn #0" = 0
+	"Jan Veclav #0" = 0
+	"Josef Veclav #0" = 0
+	"Karel Josef #0" = 0
+	"Matyn #0" = 0
+	"Ferdinand #0" = 5
+	"Otakar #0" = 10
+	"Vratislav #3" = 5
+	"Boleslav #4" = 10
+	"Vilim #0" = 5
+	"Viktor #0" = 0
+	"Jaromer #0" = 5
+	"Jaroslav #0" = 1
+	"Anezka #0" = -1
+	"Eliska #0" = -1
+	"Katerina #0" = -1
+	"Marie #0" = -1
+	"Ludmila #0" = -1
+	"Alzbeta #0" = -1
+}
+
+leader_names = {
+	Zajic
+	Jiskra
+	Zelezna
+	Capek
+	Thurn
+	Kolowrat
+	Schwarzenberg
+	"z Rozmberka"
+	Velen
+	Sokol
+	"ze Zerotina"
+	"z Husi"
+	"z Polzic"
+	Harant
+	"z Brandisa"
+	Purkyne
+	"z Veleslavona"
+	"z Rozmitalu"
+	Berka
+	"z Pardubic"
+	"ze Lvovic"
+	Kaspar
+	Reiner
+	"ze Svamberka"
+	"z Vartemberka"
+	"z Mitrovic"
+	Puka
+	Mansfeld
+	Veliko
+	Syrovi
+	"z Otradovic"
+	"z Falkensteina"
+}
+
+ship_names = {
+	"Svato Vaclav"
+	"Svato Ludmila"
+	"Svato Jan Nepomucki"
+	"Svato Mikulos"
+	"Svato Jira"
+	"Svato Anezke"
+	"Nejsvetejse Trojice"
+	"Krel Karel"
+	"Krel Boleslav"
+	"Krel Premysl"
+	"Panna Maria Vitezne"
+	"Jan Hus"
+	"Jan Zizka"
+	"Prokop Hola"
+	"Knsze Bretislav"
+	"Premysl Orac"
+	Ctirad
+	Cechy
+	Morava
+	Libuse
+	Odvozna
+	Neporazitelna
+	Rychle
+	Bystro
+	Orel
+	Sokol
+	Slezsko
+	Sipka
+	Hvezda
+}

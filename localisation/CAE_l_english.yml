@@ -1,0 +1,65 @@
+﻿l_english:
+  # Countries
+ CAE: "Elbian Confederation"
+ CAE_ADJ: "Elbian"
+ 
+ # Cultures
+ bohemian:0 "Bohemian"
+ 
+ # Events
+ CAE.1.t: "The Confederation Act"
+ CAE.1.d: "The Elbian Confederation has been declared and is now at a crossroads, a decision must be made regarding the direction of the state. We can either choose to Germanize our court and government or maintain the current Slavic dominance. Westward expansion of the confederation would be easier as a Germanized state whereas we our prospects to the east are better as a Slavic state. No matter which direction we choose the future looks bright for the Elbian Confederation!"
+ CAE.1.a: "Western Route: Germanize"
+ CAE.1.b: "Eastern Route: Remain Slavic"
+ 
+ CAE.3.t: "The issue of the Czechs"
+ CAE.3.d: "Ever since Bohemia was absorbed into the confederation the question of the language barrier between the Czechs and the Germans has been much discussed. A solution has been proposed and currently the [ROOT.Monarch.GetTitle] must decide if the Czechs are to be Germanized or if we will leave the situation as it is. Germanizing the Czechs will undoubtedly cause some dissent among the population but it will bring the people of the Elbian Confederation closer together in the end. Whichever way we will take, a decision must be made now."
+ CAE.3.a: "Germanize the Czechs"
+ CAE.3.b: "Leave the Czechs be"
+ 
+ CAE.4.t: "The Council of Riga"
+ CAE.4.d: "Ever since the Livonian crusade Germans have been settling in the city of Riga, this has lead to it becoming one of the most important ports of the Baltic coast. Now that we have taken ownership of this historic city a conferance has been called to discuss the future of the Baltic Germans.\n\nThe conferance was attended by many prominent Germans from all over Livonia, Curonia and Estonia. During the many speeches a strong desire for unification of the Baltic Germans was expressed by many attendees who pleaded for the creation of a Baltic German state.\n\nIf such a state were to be created it could claim suzerainty over all Baltic Germans. Pushing such extensive claims would however sour diplomatic relations with other powers in the region significantly."
+ CAE.4.a: "Maintain direct control"
+ CAE.4.b: "Create a Baltic German vassal state"
+ CAE.4.c: "Pledge to unify all Baltic Germans"
+ 
+ CAE.5.t: "The End of Ostsiedlung"
+ CAE.5.d: "Now that we have gained our independence the stream of Germans settlers that had been arriving in our country has stopped."
+ CAE.5.a: "Regrettable"
+ 
+ # Decisions
+ elbian_nation_title: "Form the Confederation at the Elbe"
+ elbian_nation_desc: "Ever since both Saxons and Bohemians came under our leadership a Elbian identity has started emerging. By the embracing this Elbian identity and integrating the other Elbian princes we can govern all Elbians as equals."
+
+ # Ideas 
+ CAE_ideas: "Elbian Ideas"
+ CAE_ideas_start: "Elbian Traditions"
+ CAE_ideas_bonus: "Elbian Ambition"
+bohemian_cultural_renaissance: "Bohemian Cultural Renaissance"
+bohemian_cultural_renaissance_desc: "Having fully blended with the Germans of the Elbe, the Czech people have found themselves Germanized into a new Germanic culture; Bohemian. By rebranding previously Czech language, architecture, sculpture, artworks and other prestigious things we can uphold the Bohemian culture as a truly Germanic one."
+ cae_elbe_trade: "Elbe Trade Settlements"
+ cae_elbe_trade_desc: "The river Elbe flows from the North Sea throught the heartland of our confederation all the way to Bohemia. By investing in trading settlements along the Elbe we can improve our hold on trade flowing through and along it while stimulating the local economies at the same time."
+modernized_wagenburg_tactics: "Modernized Wagenburg Tactics"
+modernized_wagenburg_tactics_desc: "During the Hussite wars and the Hussite Resurgence, our armies relied on wagon forts, mounted and mobile cannons, as well as firearms to win battles we otherwise would've lost. Although we many not always use wagons, using infantry sharp shooters and mobile cannons from defensive positions will become the tactic of choice for our ever invincible Bohemian armies."
+ elbian_industry: "Elbian Industry"
+ elbian_industry_desc: "The Elbian hartlands hold many valuable resources, by encouraging mining and manufacturing industries we can become one of the leading industrial powers in Europe."
+hussite_scientific_traditions: "Hussite Scientific Traditions"
+hussite_scientific_traditions_desc: "While the Church in Rome gets increasingly reactionary in the face of theological challenges, rejecting science and progress, the Reformed and Protestant abandon the true words of christ in favour of their own gready and self-fulfilling hungers for technological advancements. The Hussite church does neither. By combining scientific schools of thought with theological schools we can achieve the best of both worlds."
+north_german_army_professionalism: "North German Army Professionalism"
+north_german_army_professionalism_desc: "The North Germans have always been the bravest of soldiers, guarding the empire from threats of the east. With our conquests of the Margrave of Brandenburg and our eventual expansion into the Prussian heartlands, our ranks are filled with militaristic, professional and elite soldiers that are ready to fight and defeat any threat to the Confederation."
+ expanding_confederation: "Expanding the Confederation"
+ expanding_confederation_desc: "The Elbian Confederation is a multicultural nation originally consisting of Bohemians and Germans. Because of its multicultural origins and the adoption of the Germanic language, our combined armies have an easier time establishing comraderie between their respective regiments."
+ 
+ # Modifiers
+ cae_czech_germanization: "Czech Germanization"
+ desc_cae_czech_germanization: "The Czech population is being encouraged to adopt the German language leading to some unrest among the population."
+ cae_czech_acceptance: "Czech Acceptance"
+ desc_cae_czech_acceptance: "The Czech people are treated and seen as equals to the Germans making them much more resistant to abandoning their traditions."
+ kur_renew_ostsiedlung: "Renewed Ostsiedlung"
+ desc_kur_renew_ostsiedlung: "The Ostsiedlung was the eastward migration of ethnic Germans beyond the Elbe river. Thanks to our benefactors in the Elbian Confederation this process has started back up leading to a steady stream of German settlers to strengthen our state."
+ 
+ # Tooltips
+ cae_germanize_czech_tooltip: "All Czech provinces will be easier to convert but will have higher unrest."
+ cae_accept_czech_tooltip: "All Czech provinces will be harder to convert but will have lower unrest."
+ release_kurland_tt: "§YKurland§! will be released as a vassal and receive every province owned by us in the §YEstonia§!, §YLivonia§! and §YCuronia§! areas."
+ claim_kurland_tt: "We will incur §R-25§! opinion penalty with every country owning a province in the §YEstonia§!, §YLivonia§! and §YCuronia§! for each province they own there."

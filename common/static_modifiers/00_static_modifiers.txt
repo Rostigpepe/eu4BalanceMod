@@ -175,7 +175,7 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 8						#Maximum Attrition is now 8
+	max_attrition = 5						#Maximum Attrition is 5
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes
 	local_has_streltsy = yes
@@ -184,8 +184,6 @@ land_province = {
 mild_winter = {
 	local_hostile_attrition = 1
 	supply_limit_modifier = -0.1
-	local_hostile_movement_speed = -0.10
-	local_friendly_movement_speed = -0.10
 
 	picture = "winter_mild"
 }
@@ -193,8 +191,6 @@ mild_winter = {
 normal_winter = {
 	local_hostile_attrition = 2
 	supply_limit_modifier = -0.2
-	local_hostile_movement_speed = -0.20
-	local_friendly_movement_speed = -0.20
 	migration_cost = 0.1
 
 	picture = "winter_normal"
@@ -203,15 +199,13 @@ normal_winter = {
 severe_winter = {
 	local_hostile_attrition = 3
 	supply_limit_modifier = -0.3
-	local_hostile_movement_speed = -0.30
-	local_friendly_movement_speed = -0.30
 	migration_cost = 0.2
 
 	picture = "winter_severe"
 }
 
 mild_monsoon = {
-	local_hostile_attrition = 2
+	local_hostile_attrition = 0.5
 	local_hostile_movement_speed = -0.20
 	local_friendly_movement_speed = -0.20
 
@@ -219,15 +213,15 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 3
-	local_hostile_movement_speed = -0.3
-	local_friendly_movement_speed = -0.3
+	local_hostile_attrition = 1
+	local_hostile_movement_speed = -0.25
+	local_friendly_movement_speed = -0.25
 
 	picture = "monsoon_normal"
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 5
+	local_hostile_attrition = 1.5
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -238,7 +232,7 @@ blockaded = {
 	regiment_recruit_speed = 0.2
 	ship_recruit_speed = 0.2
 	local_monthly_devastation = 0.25
-	province_trade_power_modifier = -0.5
+	province_trade_power_modifier = -1
 }
 
 no_adjacent_controlled = {
@@ -268,7 +262,6 @@ cardinals_spread_institution = {
 
 manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.
-	regiment_recruit_speed = -0.01
 }
 
 province_razed = {
@@ -300,8 +293,7 @@ capital_city = {
 
 patriarch_state = {
 	local_state_maintenance_modifier = 0.1
-	local_monthly_devastation = -0.10
-	local_tax_modifier = 0.10
+	local_monthly_devastation = -0.05
 }
 
 # Multiplied in provinces of same religion.
@@ -318,7 +310,7 @@ patriarch_authority_global = {
 
 pasha_state = {
 	local_governing_cost = -0.2
-	min_local_autonomy = 10
+	min_local_autonomy = 20
 	state_maintenance_modifier = -0.33
 	local_autonomy = -0.1
 	local_tolerance_of_heathens = 10
@@ -330,7 +322,7 @@ colony_level = {
 }
 
 native_assimilation = {
-	trade_goods_size = 0.10
+	trade_goods_size = 0.05
 }
 
 native_aggressiveness = {
@@ -410,17 +402,17 @@ gbr_emperor_of_india_overlord_bonus = {
 }
 
 same_culture_group = {
-	local_tax_modifier = -0.3				
-	local_manpower_modifier = -0.3
-	local_sailors_modifier = -0.25
+	local_tax_modifier = -0.15				#10% penalty if same culture group but nothing else. Not applied if the controller is the Union Tag of the culture group, or has culture_group_union set.
+	local_manpower_modifier = -0.15
+	local_sailors_modifier = -0.1
 }
 
 non_accepted_culture = {
-	local_tax_modifier = -0.60
-	local_missionary_strength = -0.01
-	local_manpower_modifier = -0.60
-	local_sailors_modifier = -0.50
-	local_unrest = 2					
+	local_tax_modifier = -0.33
+	local_missionary_strength = -0.02
+	local_manpower_modifier = -0.33
+	local_sailors_modifier = -0.2
+	local_unrest = 2					#1% revolt risk!
 }
 
 accepted_culture_demoted = {
@@ -624,8 +616,6 @@ war_taxes = {
 	land_maintenance_modifier = -0.15
 	naval_maintenance_modifier = -0.15
 	merc_maintenance_modifier = -0.05
-	global_tax_modifier = 0.15
-	global_unrest = 1
 }
 
 stability = {
@@ -735,8 +725,8 @@ bankruptcy = {
 	reinforce_speed = -0.25					#Slower reinforce
 	bureaucrats_influence = 0.25
 	mr_guilds_influence = 0.25
-	manpower_recovery_speed = -0.75
-	sailors_recovery_speed = -0.75
+	manpower_recovery_speed = -1.0
+	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
 	global_autonomy = 0.05
@@ -826,11 +816,9 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-	embargo_efficiency = 1.5
-	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
-	production_efficiency = 0.25
-	treasure_fleet_income = 1.0
+	embargo_efficiency = 1
+	burghers_loyalty_modifier = 0.1
+	vaisyas_loyalty_modifier = 0.1
 }
 
 army_tradition = {
@@ -867,7 +855,7 @@ navy_tradition = {
 
 positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
-	defensiveness = 0.20
+	global_manpower_modifier = 0.20
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
@@ -982,13 +970,6 @@ negative_karma = {
 # Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
 country_development = {
 	horde_unity = -3
-	yearly_tribal_allegiance = -3
-}
-
-# Multiplied by Tribal Allegiance / 100
-tribal_allegiance = {
-	manpower_recovery_speed = 0.33
-	global_unrest = -3
 }
 
 # Multiplied by current Legitimacy - 50
@@ -1084,15 +1065,6 @@ recovery_motivation = {
 	horde_unity = 10
 }
 
-militarized_society = {
-
-	discipline = 0.10
-	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.20
-
-}
-
-
 luck = {
 	#core
 	global_missionary_strength = 0.01
@@ -1180,12 +1152,7 @@ republican_tradition = {
 }
 
 inverse_republican_tradition = {
-	stability_cost_modifier = 1
-	yearly_corruption = 0.2
-	burghers_loyalty_modifier = -0.1
-	vaisyas_loyalty_modifier = -0.1
-	nobles_loyalty_modifier = 0.1
-	nobles_influence_modifier = 0.1
+	stability_cost_modifier = 2.0
 	rr_jacobins_influence = -0.1
 }
 
@@ -1252,7 +1219,7 @@ production_leader = {
 
 
 trade_company_bonus = {
-	trade_goods_size_modifier = 0.75
+	trade_goods_size_modifier = 1.0
 }
 
 bonus_from_merchant_republics = {
@@ -1329,8 +1296,8 @@ absolutism = {
 }
 
 low_army_professionalism = {
-	mercenary_cost = -0.30
-	mercenary_manpower = 0.20
+	mercenary_cost = -0.15
+	mercenary_manpower = 0.15
 }
 
 high_army_professionalism = {
@@ -1423,13 +1390,12 @@ gbr_colonial_investment = {
 crown_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
-	global_garrison_growth = 0.15
 }
 
 private_enterprise_overlord = {
 	merchants = 1
-	global_trade_power = 0.10
-	global_tariffs = 0.05
+	global_trade_power = 0.05
+	global_tariffs = -0.05
 }
 
 self_governing_colony_overlord = {
@@ -1490,7 +1456,7 @@ subject_nation = {
 }
 
 vassal_nation = {
-	development_cost = 0.25
+	development_cost = 0.5
 }
 
 primitive_nation = {
@@ -1581,28 +1547,28 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.0125
+	yearly_army_professionalism = 0.01
 }
 
 ##################################################################################################
 # Scripted and used from Diplomatic System
 ##################################################################################################
 recruitment_sabotaged = {
-	manpower_recovery_speed = -0.25
-	sailors_recovery_speed = -0.25
+	manpower_recovery_speed = -0.2
+	sailors_recovery_speed = -0.2
 }
 
 merchants_slandered = {
-	global_trade_power = -0.15
+	global_trade_power = -0.1
 }
 
 discontent_sowed = {
-	global_unrest = 3
-	legitimacy = -1.5
-	republican_tradition = -0.5
-	devotion = -1.5
+	global_unrest = 2
+	legitimacy = -1
+	republican_tradition = -0.2
+	devotion = -1
 	horde_unity = -1
-	meritocracy = -1
+	meritocracy = -0.5
 }
 
 reputation_sabotaged = {
@@ -1822,7 +1788,7 @@ lenient_taxation_modifier = {
 }
 
 train_horsemanship_modifier = {
-	cavalry_power = 0.20
+	cavalry_power = 0.15
 }
 
 promote_culture_in_government_modifier = {
@@ -2003,19 +1969,18 @@ hussars_regiment = {
 
 marine_regiment = {
     regiment_disembark_speed = 2
-    shock_damage_received = 0.1
-    regiment_disembark_speed = 2 #requires a new country modifier
+	shock_damage_received = 0.1
 }
 
 banner_regiment = {
 	discipline = 0.05
 	land_maintenance_modifier = -0.5
+	regiment_manpower_usage = -0.75
 	reinforce_speed = -0.5
-	regiment_manpower_usage = -0.5
 }
 
 streltsy_regiment = {
-    fire_damage = 0.1
+	fire_damage = 0.1
 	fire_damage_received = -0.1
 }
 

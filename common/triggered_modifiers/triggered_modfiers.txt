@@ -1,0 +1,139 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+envoy_travel_time_i = {
+	potential = {
+	NOT = { 
+		dip_tech = 10 
+		}	
+	dip_tech = 0
+	}
+
+	trigger = {
+	
+	dip_tech = 2
+	}
+
+	
+	envoy_travel_time = -0.05
+}
+
+envoy_travel_time_ii = {
+	potential = {
+	NOT = { 
+		dip_tech = 13 
+		}	
+	dip_tech = 2
+	}
+
+	trigger = {
+	
+	dip_tech = 10
+	}
+
+	
+	envoy_travel_time = -0.10
+	global_ship_recruit_speed = -0.10
+}
+
+envoy_travel_time_iii = {
+	potential = {
+	NOT = { 
+		dip_tech = 17 
+		}	
+	dip_tech = 10
+	}
+
+	trigger = {
+	
+	dip_tech = 13
+	}
+
+	
+	envoy_travel_time = -0.15
+	transport_attrition = -0.5
+}
+
+envoy_travel_time_iv = {
+	potential = {
+	NOT = { 
+		dip_tech = 22 
+		}	
+	dip_tech = 13
+	}
+
+	trigger = {
+	
+	dip_tech = 17
+	}
+
+	
+	envoy_travel_time = -0.20
+	naval_attrition = -0.1
+}
+
+envoy_travel_time_v = {
+	potential = {
+	NOT = { 
+		dip_tech = 26 
+		}	
+	dip_tech = 17
+	}
+
+	trigger = {
+	
+	dip_tech = 22
+	}
+
+	
+	envoy_travel_time = -0.25
+	trade_range_modifier = 0.15
+}
+
+envoy_travel_time_vi = {
+	potential = {	
+	dip_tech = 22
+	}
+
+	trigger = {
+	
+	dip_tech = 26
+	}
+
+	
+	envoy_travel_time = -0.30
+	ship_power_propagation = 0.25
+}
+
+#Primitive #Native #Feudalism
+rapid_collapse_of_society = {
+	potential = {
+		normal_or_historical_nations = yes
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+			}
+		}
+		
+	}
+	trigger = {
+		NOT = { has_institution = feudalism }
+		custom_trigger_tooltip = {
+			tooltip = rapid_collapse_of_society_tooltip
+			has_country_flag = european_diseases_struck
+			NOT = {
+				had_country_flag = {
+					flag = european_diseases_struck
+					days = 9125
+				}
+			}
+		}
+	}
+	tribal_development_growth = -0.05
+	all_power_cost = 0.33
+	discipline = -0.1
+	land_morale = -0.2
+	manpower_recovery_speed = -0.50
+}

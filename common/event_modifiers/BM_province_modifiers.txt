@@ -1,0 +1,117 @@
+#AMBER TRADE
+bm_the_amber_trade = {
+	trade_value_modifier = -0.25
+	trade_goods_size_modifier = 0.10
+}
+
+#GRANARY
+bm_granary_of_the_mediterranean = {
+	trade_goods_size = 2.0
+    trade_value_modifier = 0.25
+}
+
+#MOROCCAN RUG
+bm_moroccan_rug = {
+    province_trade_power_modifier = 0.20
+    trade_value_modifier = 0.20
+}
+
+#POLDERS
+amsterdam_dike = {
+	local_development_cost = -0.15
+}
+
+
+den_haag_dike = {
+	local_development_cost = -0.15
+}
+
+
+zeeland_dike = {
+	local_development_cost = -0.15
+}
+
+
+antwerpen_dike = {
+	local_development_cost = -0.15
+}
+
+
+gent_dike = {
+	local_development_cost = -0.15
+}
+
+
+brugge_dike = {
+	local_development_cost = -0.15
+}
+
+#GHETTO
+bm_the_ghetto = {
+	trade_goods_size = 0.5
+	interest = -0.5
+	picture = "jewish"
+}
+
+#TOLEDO STEEL
+bm_toledo_steel = {
+	trade_goods_size = 1
+    trade_value_modifier = 0.20
+	picture = "privilege_monopoly_of_goods_iron"
+}
+
+#CITY OF GOLD CUZCO
+bm_city_of_gold = {
+	trade_goods_size = 3
+    local_gold_depletion_chance_modifier = -0.25
+	picture = "trade_goods_size_modifier"
+}
+
+#The Bronze-Making of Benin
+bm_bronze_of_benin = {
+	trade_goods_size = 1
+	local_production_efficiency = 0.1
+	trade_value_modifier = 0.25
+	picture = "trade_goods_size_modifier"
+}
+
+#Estuaries
+bm_amazon_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+#The Niagara Falls "Estuaries"
+bm_niagara_falls_modifier = {
+	province_trade_power_value = 5
+	trade_value_modifier = 0.25
+	picture = "estuary_icon"
+}
+
+#African Precious Minerals
+bm_african_precious_minerals = {
+	trade_goods_size = 0.25
+	trade_value = 0.5
+	trade_value_modifier = 0.05
+	picture = "trade_value_modifier"
+}
+
+#Djerban Jewish Population
+bm_djerban_jewish_community = {
+	local_unrest = -3
+	local_prosperity_growth = 0.2
+	local_production_efficiency = 0.25
+	local_development_cost = -0.15
+	local_missionary_strength = -0.05
+	picture = "jewish"
+}
+
+#Epstein Island Bornholm
+bm_epstein_island = {
+	block_slave_raid = yes
+	local_unrest = 3
+	papal_influence = 0.5
+	local_missionary_strength = -0.03
+	local_development_cost = -0.15
+	picture = "ab_allow_religion_enforced"
+}
