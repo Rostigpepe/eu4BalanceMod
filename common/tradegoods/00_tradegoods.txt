@@ -736,7 +736,7 @@ gold = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				province_id = 2613		# Sitka (Alaska)
 				province_id = 977		#Yakutat (Alaska)
@@ -754,7 +754,7 @@ gold = {
 			region = peru_region
 		}
 		modifier = {
-			factor = 4.0
+			factor = 4
 			OR = {
 				province_id = 852		# Mexico
 				province_id = 853		# Huastec
