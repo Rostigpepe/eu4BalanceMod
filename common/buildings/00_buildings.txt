@@ -1693,16 +1693,29 @@ wharf = {
 	}
 	onmap = yes
 	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		OR = {
+			add_development_from_building = {
+				building = manufactory
+				type = production
+				value = 2
+			}
+			add_dev_from_building = {
+				building = manufactory 
+				type = production 
+				value = 1 
+			}
+			TAG = {
+				SCA = {
+					add_development_from_building = {
+						building = manufactory
+						type = production
+						value = 3
+					}
+					add_dev_from_building = {
+						building = manufactory 
+						type = production 
+						value = 2 
+					}
 		
 	}
 	on_destroyed = {

@@ -602,7 +602,7 @@ SCA_ideas = {
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.15
+		manpower_in_culture_group_provinces = 0.2
 	}
 	
 	trigger = {
@@ -611,12 +611,12 @@ SCA_ideas = {
 	free = yes
 	
 	sca_united_craftsman = {
-		global_allowed_num_of_buildings = 1
-		build_cost = -0.05
+		expand_infrastructure_cost_modifier = -0.25
+		build_cost = -0.1
 	}
 	sca_unified_scandinavian = {
 		possible_policy = 1
-		administrative_efficiency = 0.05
+		monthly_splendor = 1
 	}
 	sca_danish_baltic_fleet = {
 		trade_efficiency = 0.1
@@ -633,7 +633,7 @@ SCA_ideas = {
 		infantry_power = 0.2
 	}
 	sca_empire_of_the_north = {
-		max_absolutism = 10
+		country_admin_power = 1
 		yearly_absolutism = 1
 	}
 }
@@ -1513,8 +1513,8 @@ PRU_ideas = {
 		army_tradition_decay = -0.01
 	}
 	army_professionalism = {
-		yearly_army_professionalism = 0.1
-		military_tactics = 0.05
+		yearly_army_professionalism = 0.002
+		military_tactics = 0.15
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
@@ -2117,7 +2117,7 @@ HUN_ideas = {
 		global_own_trade_power = 0.25
 	}
 	hungarian_estates_general = {
-		monthly_reform_progress = 0.1
+		reform_progress_growth = 0.1
 	}
 }
 
@@ -2340,7 +2340,7 @@ MUG_ideas = {
 	}
 	
 	bonus = {
-		technology_cost = -0.05
+		artillery_fire = 0.5
 	}
 	
 	trigger = {
