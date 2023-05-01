@@ -141,6 +141,8 @@ monarchy = {
 				house_of_lords_reform
 				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
+				#Modded BM:
+				empowering_the_junker_class_prussia
 			}
 		}
 		bureaucracy = {
@@ -288,6 +290,8 @@ monarchy = {
 				catalan_cortes_reform
 				great_council_of_mechelen_reform
 				parliament_vs_monarchy_reform
+				#Modded BM:
+				reformed_legal_system_prussia
 			}
 		}
 		growth_of_administration = {
@@ -310,6 +314,8 @@ monarchy = {
 				direct_royal_administration_reform
 				administration_of_the_parliament_reform
 				strengthened_parliament_reform
+				#Modded BM:
+				kreditwerk_prussia
 			}
 		}
 		economical_matters = {
@@ -331,6 +337,8 @@ monarchy = {
 				thalassocracy_reform
 				royal_charters_reform
 				commercial_trade_empire_reform
+				#Modded BM:
+				frederick_wilhelm_reforms_prussia
 			}
 		}
 		legitimation_of_power = {

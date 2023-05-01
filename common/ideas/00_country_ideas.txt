@@ -1514,7 +1514,7 @@ PRU_ideas = {
 	}
 	army_professionalism = {
 		yearly_army_professionalism = 0.002
-		military_tactics = 0.15
+		military_tactics = 0.25
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
@@ -1527,7 +1527,7 @@ PRU_ideas = {
 		manpower_in_culture_group_provinces = 0.25
 	}
 	religious_toleration = {
-		development_cost = -0.1
+		global_unrest = -1
 		tolerance_heretic = 1
 	}
 }
