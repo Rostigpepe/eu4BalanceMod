@@ -2144,6 +2144,16 @@ gems = {
 			}
 		}
 		modifier = {
+			factor = 5.0
+			OR = {
+				province_id = 1177
+				province_id = 1179
+				province_id = 2856
+				province_id = 1172
+				province_id = 1167
+			}
+		}
+		modifier = {
 			factor = 1.5
 			region = brazil_region
 		}
