@@ -12,14 +12,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
+		AND = {
 			controls = 310
-			AND = {
-				war_with = NOV
-				war_score_against = {
-					who = NOV
-					value = 75
-				}
+			war_with = NOV
+			war_score_against = {
+				who = NOV
+				value = 75
 			}
 		}
 	}
