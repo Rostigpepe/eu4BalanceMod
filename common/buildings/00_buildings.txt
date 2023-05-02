@@ -94,7 +94,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.4
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -299,7 +299,7 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 250
+	cost = 200
 	time = 30
 	modifier = {
 		fort_level = 2
@@ -682,7 +682,7 @@ regimental_camp = {
 }
 
 fort_16th = {
-	cost = 500
+	cost = 400
 	time = 30
 	make_obsolete = fort_15th
 	modifier = {
@@ -792,7 +792,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 0.75
+		local_tax_modifier = 0.6
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -1112,7 +1112,7 @@ training_fields = {
 		}
 		update_improved_military_buildings_modifier = {
 			building = training_fields
-	}
+		}
 		if = {
 			limit = {
 				FROM = {
@@ -1140,7 +1140,7 @@ training_fields = {
 
 
 fort_17th = {
-	cost = 800
+	cost = 600
 	time = 30
 
 	make_obsolete = fort_16th
@@ -1588,7 +1588,7 @@ conscription_center = {
 
 
 fort_18th = {
-	cost = 1000
+	cost = 800
 	time = 30
 
 
@@ -1693,29 +1693,16 @@ wharf = {
 	}
 	onmap = yes
 	on_built = {
-		OR = {
-			add_development_from_building = {
-				building = manufactory
-				type = production
-				value = 2
-			}
-			add_dev_from_building = {
-				building = manufactory 
-				type = production 
-				value = 1 
-			}
-			TAG = {
-				SCA = {
-					add_development_from_building = {
-						building = manufactory
-						type = production
-						value = 3
-					}
-					add_dev_from_building = {
-						building = manufactory 
-						type = production 
-						value = 2 
-					}
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
 		
 	}
 	on_destroyed = {
@@ -1946,8 +1933,8 @@ farm_estate = {
 	}
 	on_destroyed = {
 		add_dev_from_building = {
-			building = manufactory
-			type = production
+			building = manufactory 
+			type = production 
 			value = 1 
 		}
 		remove_dev_from_building = {
@@ -2056,7 +2043,7 @@ ramparts = {
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
+	
 	on_built = {
 		add_dev_from_building = {
 			building = manufactory 
