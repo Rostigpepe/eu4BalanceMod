@@ -1492,8 +1492,8 @@ DAL_ideas = {
 
 PRU_ideas = {
 	start = {
-		land_morale = 0.20
-		governing_capacity_modifier = 0.10
+		land_morale = 0.2
+		governing_capacity_modifier = 0.2
 	}
 	
 	bonus = {
@@ -1506,22 +1506,22 @@ PRU_ideas = {
 	free = yes		#will be added at load.
 	
 	teutonic_legacy = {
-		ae_impact = -0.10
+		ae_impact = -0.1
 		diplomatic_reputation = 1
 	}
 	soldier_king = {
-		army_tradition_decay = -0.01
+		army_tradition = 0.01
 	}
 	army_professionalism = {
 		yearly_army_professionalism = 0.002
 		military_tactics = 0.25
 	}	
 	noble_cadets = {
-		nobles_loyalty_modifier = 0.10
+		nobles_loyalty_modifier = 0.1
 		army_tradition_decay = -0.01
 	}
 	goose_step = {
-		infantry_power = 0.20
+		infantry_power = 0.2
 	}
 	regimental_cantons = {
 		manpower_in_culture_group_provinces = 0.25
