@@ -1,0 +1,293 @@
+namespace = BM_Muscovy_Events
+
+
+#Subjugation of Novgorod
+country_event = {
+	id = BM_Muscovy_Events.1
+	title = ME_Muscovy_Events.1.t
+	desc = ME_Muscovy_Events.1.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			controls = 310
+			AND = {
+				war_with = NOV
+				war_score_against = {
+					who = NOV
+					value = 75
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ME_Muscovy_Events.10.a
+
+		NOV = {
+			country_event = {
+				id = ME_Muscovy_Events.2 #A Merciful Offer
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = ME_Muscovy_Events.1.b
+
+		add_country_modifier = {
+			name = muscovy_muscovite_supremacy
+			duration = -1 #until the end of the war
+			desc = muscovy_muscovite_supremacy_tt
+		}
+	}
+}
+
+country_event = {
+	id = ME_Muscovy_Events.2
+	title = ME_Muscovy_Events.2.t
+	desc = ME_Muscovy_Events.2.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Muscovy_Events.2.a
+
+		ai_chance = { factor = 1 }
+
+		tooltip = {
+			FROM = { inherit = ROOT }
+		}
+		hidden_effect = {
+			every_owned_province = { cede_province = FROM }
+		}
+
+		FROM = {
+			country_event = {
+				id = ME_Muscovy_Events.3 #Consolidation of Lands
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = ME_Muscovy_Events.2.b
+
+		ai_chance = { factor = 0 }
+
+		add_war_exhaustion = -2
+	}
+}
+
+country_event = {
+	id = ME_Muscovy_Events.3
+	title = ME_Muscovy_Events.3.t
+	desc = ME_Muscovy_Events.3.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Muscovy_Events.3.a
+
+		custom_tooltip = ME_Muscovy_Events.3.tta
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = FROM }
+				}
+				add_unrest = 2
+			}
+		}
+
+		custom_tooltip = ME_Muscovy_Events.3.ttb
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+					NOT = { is_core = ROOT }
+				}
+				add_territorial_core = ROOT
+
+				set_local_autonomy = 50
+				add_province_modifier = {
+					name = muscovy_noble_lands
+					duration = 9125 #25 years
+				}
+			}
+		}
+
+		set_country_flag = muscovy_noble_lands
+
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 10
+		}
+	}
+
+	option = {
+		name = ME_Muscovy_Events.3.b
+
+		custom_tooltip = ME_Muscovy_Events.3.tta
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = FROM }
+				}
+				add_unrest = 2
+			}
+		}
+
+		custom_tooltip = ME_Muscovy_Events.3.ttc
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+					NOT = { is_core = ROOT }
+				}
+				add_territorial_core = ROOT
+
+				set_local_autonomy = 25
+				add_province_modifier = {
+					name = muscovy_crown_lands
+					duration = 9125 #25 years
+				}
+			}
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+
+		set_country_flag = muscovy_crown_lands
+
+		310 = { add_core = ROOT }
+		33 = { add_core = ROOT }
+		1955 = { add_core = ROOT }
+
+		add_adm_power = -250
+
+		change_estate_land_share = {
+			estate = all
+			share = -10
+		}
+	}
+}
+
+country_event = {
+	id = ME_Muscovy_Events.4
+	title = ME_Muscovy_Events.4.t
+	desc = ME_Muscovy_Events.4.d
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			had_country_flag = {
+				flag = muscovy_noble_lands
+				days = 3650 #10 years
+			}
+			had_country_flag = {
+				flag = muscovy_crown_lands
+				days = 3650 #10 years
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = muscovy_noble_lands
+		clr_country_flag = muscovy_crown_lands
+	}
+
+	option = {
+		name = ME_Muscovy_Events.4.a
+
+		if = {
+			limit = { has_country_flag = muscovy_noble_lands }
+			add_yearly_manpower = 0.1
+			custom_tooltip = ME_Muscovy_Events.4.tta
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_noble_lands }
+					remove_province_modifier = muscovy_noble_lands
+					set_local_autonomy = 10
+				}
+			}
+		}
+		else = {
+			add_years_of_income = 0.083
+			custom_tooltip = ME_Muscovy_Events.4.ttb
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_crown_lands }
+					remove_province_modifier = muscovy_crown_lands
+					set_local_autonomy = 25
+				}
+			}
+		}
+
+		add_adm_power = -100
+		add_stability = -1
+	}
+
+	option = {
+		name = ME_Muscovy_Events.4.b
+
+		if = {
+			limit = { has_country_flag = muscovy_noble_lands }
+			custom_tooltip = ME_Muscovy_Events.4.tta
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_noble_lands }
+					remove_province_modifier = muscovy_noble_lands
+					set_local_autonomy = 10
+				}
+			}
+		}
+		else = {
+			custom_tooltip = ME_Muscovy_Events.4.ttb
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = muscovy_crown_lands }
+					remove_province_modifier = muscovy_crown_lands
+					set_local_autonomy = 25
+				}
+			}
+		}
+
+		add_prestige = -25
+		add_accepted_culture_or_dip_power = { culture = novgorodian }
+	}
+
+	option = {
+		name = ME_Muscovy_Events.4.c
+
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = ME_Muscovy_Events.5
+	title = ME_Muscovy_Events.5.t
+	desc = ME_Muscovy_Events.5.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_country_modifier = muscovy_muscovite_supremacy
+		NOT = { war_with = NOV }
+	}
+
+	immediate = { remove_country_modifier = muscovy_muscovite_supremacy }
+
+	option = { }
+}
