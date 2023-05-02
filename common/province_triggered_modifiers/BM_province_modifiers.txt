@@ -10,13 +10,13 @@ bm_artillery_yard_of_smolensk = {
 		}
 	}
 
-	artillery_cost = -0.10
-	local_garrison_size = 0.25
+	backrow_artillery_damage = 0.05
+	siege_ability = 0.10
 	trade_value_modifier = 0.2
 	
 	#Province scope
 	on_activation = {
-	change_trade_goods = iron
+	change_trade_goods = copper
 	}
 	
 	on_deactivation = {
@@ -71,4 +71,28 @@ bm_restored_silk_centre = {
 			key = STRONG_MERCHANTS
 		}
 	}
+}
+
+
+bm_the_sulfur_of_iceland = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		is_year = 1750
+		}
+
+	attrition = 1
+	trade_value_modifier = 0.25
+	
+	#Province scope
+	on_activation = {
+	change_trade_goods = salt
+	}
+	
+	on_deactivation = {
+	
+	}
+	
 }

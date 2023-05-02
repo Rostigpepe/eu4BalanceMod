@@ -1,10 +1,9 @@
 #Subjugation of Novgorod and subsequent coring
 
-namespace = BM_muscovy_conquest_of_novgorod.1
 country_event = {
 	id = BM_muscovy_conquest_of_novgorod.1
-	title = "BM_muscovy_conquest_of_novgorod1_title"
-	desc = "BM_muscovy_conquest_of_novgorod1_desc"
+	title = "BM_muscovy_conquest_of_novgorod.1.t"
+	desc = "BM_muscovy_conquest_of_novgorod.1.d"
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
@@ -22,18 +21,16 @@ country_event = {
 	}
 
 	option = {
-		name = BM_muscovy_conquest_of_novgorod.1A
-
+		name = BM_muscovy_conquest_of_novgorod.1.A
 		NOV = {
 			country_event = {
 				id = BM_peace_offer_to_novgorod.1 #A Merciful Offer
-				days = 0
+				days = 1
 			}
 		}
 	}
 	option = {
-		name = BM_muscovy_conquest_of_novgorod.1B
-
+		name = BM_muscovy_conquest_of_novgorod.1.B
 		add_country_modifier = {
 			name = muscovy_muscovite_supremacy
 			duration = -1 #until the end of the war
@@ -44,55 +41,47 @@ country_event = {
 
 country_event = {
 	id = BM_peace_offer_to_novgorod.1
-	title = BM_peace_offer_to_novgorod1_title
-	desc = BM_peace_offer_to_novgorod1_desc
+	title = BM_peace_offer_to_novgorod.1.t
+	desc = BM_peace_offer_to_novgorod.1.d
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = BM_peace_offer_to_novgorod.1A
+		name = BM_peace_offer_to_novgorod.1.A
 
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 999 }
 
 		tooltip = {
 			FROM = { inherit = ROOT }
 		}
 		hidden_effect = {
-			every_owned_province = { cede_province = FROM }
+			every_owned_province = { cede_province = MOS }
 		}
 
-		FROM = {
+		MOS = {
 			country_event = {
 				id = BM_muscovite_consolidation_of_novgorod_lands.1 #Consolidation of Lands
-				days = 0
+				days = 1
 			}
 		}
-	}
-
-	option = {
-		name = BM_peace_offer_to_novgorod.1B
-
-		ai_chance = { factor = 0 }
-
-		add_war_exhaustion = 10
 	}
 }
 
 country_event = {
 	id = BM_muscovite_consolidation_of_novgorod_lands.1
-	title = BM_muscovite_consolidation_of_novgorod_lands1_title
-	desc = BM_muscovite_consolidation_of_novgorod_lands1_desc
+	title = BM_muscovite_consolidation_of_novgorod_lands.1.t
+	desc = BM_muscovite_consolidation_of_novgorod_lands.1.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = BM_muscovite_consolidation_of_novgorod_lands.1A
+		name = BM_muscovite_consolidation_of_novgorod_lands.1.A
 
-		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1ATooltip
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1.ATooltip
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -102,7 +91,7 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1BToolTip
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1.BToolTip
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -128,9 +117,9 @@ country_event = {
 	}
 
 	option = {
-		name = BM_muscovite_consolidation_of_novgorod_lands.1B
+		name = BM_muscovite_consolidation_of_novgorod_lands.1.B
 
-		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1ATooltip
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1.ATooltip
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -141,7 +130,7 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1CTooltip
+		custom_tooltip = BM_muscovite_consolidation_of_novgorod_lands.1.CTooltip
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -180,8 +169,8 @@ country_event = {
 
 country_event = {
 	id = BM_the_governing_of_novgorod.1
-	title = BM_the_governing_of_novgorod1_title
-	desc = BM_the_governing_of_novgorod1_desc
+	title = BM_the_governing_of_novgorod.1.t
+	desc = BM_the_governing_of_novgorod.1.d
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
@@ -205,12 +194,12 @@ country_event = {
 	}
 
 	option = {
-		name = BM_the_governing_of_novgorod.1A
+		name = BM_the_governing_of_novgorod.1.A
 
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
 			add_yearly_manpower = 0.1
-			custom_tooltip = BM_the_governing_of_novgorod.1ATooltip
+			custom_tooltip = BM_the_governing_of_novgorod.1.ATooltip
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
@@ -221,7 +210,7 @@ country_event = {
 		}
 		else = {
 			add_years_of_income = 0.5
-			custom_tooltip = BM_the_governing_of_novgorod.1BTooltip
+			custom_tooltip = BM_the_governing_of_novgorod.1.BTooltip
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
@@ -235,11 +224,11 @@ country_event = {
 	}
 
 	option = {
-		name = BM_the_governing_of_novgorod.1B
+		name = BM_the_governing_of_novgorod.1.B
 
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
-			custom_tooltip = BM_the_governing_of_novgorod.1ATooltip
+			custom_tooltip = BM_the_governing_of_novgorod.1.ATooltip
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
@@ -249,7 +238,7 @@ country_event = {
 			}
 		}
 		else = {
-			custom_tooltip = BM_the_governing_of_novgorod.1BTooltip
+			custom_tooltip = BM_the_governing_of_novgorod.1.BTooltip
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
@@ -264,7 +253,7 @@ country_event = {
 	}
 
 	option = {
-		name = BM_the_governing_of_novgorod.1C
+		name = BM_the_governing_of_novgorod.1.C
 
 		add_adm_power = 50
 		add_dip_power = 50
@@ -274,8 +263,8 @@ country_event = {
 
 country_event = {
 	id = BM_muscovy_conquest_of_novgorod.2
-	title = BM_the_governing_of_novgorod1_title
-	desc = BM_muscovite_consolidation_of_novgorod_lands1_desc
+	title = BM_muscovy_conquest_of_novgorod.2.t
+	desc = BM_muscovy_conquest_of_novgorod.2.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	fire_only_once = yes

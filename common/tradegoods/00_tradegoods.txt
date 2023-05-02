@@ -79,13 +79,22 @@ grain = {
 				region = ruthenia_region
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = grain }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = grain } }
+				}
+			}
+		}
 	}
 }
 
 wine = {
 	color = { 0.36 0.13 0.28 }
 	modifier = {
-		global_unrest = -1
+		idea_cost = -0.05
 	}
 	province = {
 		local_unrest = -1
@@ -141,9 +150,11 @@ wine = {
 		}
 		modifier = {
 			factor = 1.5
+			OR = {
 			area = cuyo_area
 			region = france_region
 			region = italy_region
+		}
 		}
 		modifier = {
 			factor = 1.1
@@ -152,6 +163,15 @@ wine = {
 					culture_group = french
 					culture_group = iberian
 					culture_group = latin
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = wine }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = wine } }
 				}
 			}
 		}
@@ -215,10 +235,12 @@ wool = {
 		}
 		modifier = {
 			factor = 0.15
+			OR = {
 			has_terrain = grasslands
 			has_terrain = hills
 			has_terrain = forest
 			has_terrain = woods
+		}
 		}
 		modifier = {
 			factor = 1.25
@@ -239,8 +261,13 @@ wool = {
 			region = tibet_region
 		}
 		modifier = {
-			factor = 0.5
-			
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = wool }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = wool } }
+				}
+			}
 		}
 	}
 }
@@ -266,6 +293,15 @@ cloth = {
 		modifier = {
 			factor = 2.0
 			development_discounting_tribal = 22
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = cloth }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = cloth } }
+				}
+			}
 		}
 	}
 }
@@ -308,13 +344,22 @@ fish = {
 			factor = 1.2
 			has_terrain = glacier
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = fish }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = fish } }
+				}
+			}
+		}
 	}
 }
 
 fur = {
 	color = { 0.54 0.40 0.31 }
 	modifier = {
-		land_attrition = -0.10
+		land_attrition = -0.05
 	}
 	province = {
 		province_trade_power_modifier = 0.10
@@ -385,6 +430,15 @@ fur = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = fur }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = fur } }
+				}
+			}
+		}
 	}
 }
 
@@ -429,6 +483,15 @@ salt = {
 		modifier = {
 			factor = 5.0
 			area = western_sahara_area
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = salt }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = salt } }
+				}
+			}
 		}
 	}
 }
@@ -494,6 +557,15 @@ naval_supplies = {
 				has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = naval_supplies }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = naval_supplies } }
+				}
 			}
 		}
 	}
@@ -587,6 +659,15 @@ copper = {
 				region = east_siberia_region
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = copper }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = copper } }
+				}
+			}
+		}
 	}
 }
 
@@ -673,7 +754,7 @@ gold = {
 			region = peru_region
 		}
 		modifier = {
-			factor = 4.0
+			factor = 4
 			OR = {
 				province_id = 852		# Mexico
 				province_id = 853		# Huastec
@@ -704,6 +785,15 @@ gold = {
 				OR = {
 					has_country_flag = por_bandeirantes_flag
 					colonial_parent = { has_country_flag = por_bandeirantes_flag }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = gold }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = gold } }
 				}
 			}
 		}
@@ -768,6 +858,15 @@ iron = {
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = iron }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = iron } }
+				}
+			}
+		}
 	}
 }
 
@@ -823,6 +922,15 @@ slaves = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = slaves }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = slaves } }
+				}
+			}
+		}
 	}
 }
 
@@ -866,9 +974,11 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
+			OR = {
 			region = malaya_region
 			region = moluccas_region
 			region = indonesia_region
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -881,6 +991,15 @@ ivory = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = ivory }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = ivory } }
+				}
 			}
 		}
 	}
@@ -986,6 +1105,15 @@ tea = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = tea }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = tea } }
+				}
+			}
+		}
 	}
 }
 
@@ -1027,13 +1155,22 @@ chinaware = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = chinaware }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = chinaware } }
+				}
+			}
+		}
 	}
 }
 
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		trade_steering = 0.15
+		trade_steering = 0.10
 	}
 	province = {
 		local_monthly_devastation = -0.1
@@ -1091,6 +1228,15 @@ spices = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = spices }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = spices } }
+				}
 			}
 		}
 	}
@@ -1156,6 +1302,15 @@ coffee = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = coffee }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = coffee } }
+				}
 			}
 		}
 	}
@@ -1235,6 +1390,15 @@ cotton = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = cotton }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = cotton } }
+				}
+			}
+		}
 	}
 }
 
@@ -1299,6 +1463,15 @@ sugar = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = sugar }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = sugar } }
+				}
+			}
+		}
 	}
 }
 
@@ -1308,7 +1481,7 @@ tobacco = {
 		global_spy_defence = 0.25
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	chance = {
 		factor = 15
@@ -1366,6 +1539,15 @@ tobacco = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = tobacco }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = tobacco } }
+				}
+			}
+		}
 	}
 }
 
@@ -1410,6 +1592,15 @@ cocoa = {
 				has_winter = mild_winter
 				has_winter = normal_winter
 				has_winter = severe_winter
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = cocoa }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = cocoa } }
+				}
 			}
 		}
 	}
@@ -1479,6 +1670,15 @@ silk = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = silk }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = silk } }
+				}
+			}
+		}
 	}
 }
 
@@ -1488,7 +1688,7 @@ dyes = {
 		heir_chance = 0.33
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	
 	chance = {
@@ -1527,6 +1727,15 @@ dyes = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = dyes }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = dyes } }
+				}
+			}
+		}
 	}
 }
 
@@ -1556,14 +1765,25 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
+			OR = {
 			region = malaya_region
 			region = moluccas_region
 			region = indonesia_region
+			}
 		}
 		modifier = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = tropical_wood }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = tropical_wood } }
+				}
 			}
 		}
 	}
@@ -1660,6 +1880,15 @@ livestock = {
 			factor = 1.5
 			region = central_africa_region
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = livestock }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = livestock } }
+				}
+			}
+		}
 	}
 }
 
@@ -1708,6 +1937,15 @@ incense = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = incense }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = incense } }
+				}
+			}
+		}
 	}
 }
 
@@ -1733,6 +1971,15 @@ glass = {
 			factor = 2.0
 			development_discounting_tribal = 22
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = glass }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = glass } }
+				}
+			}
+		}
 	}
 }
 
@@ -1757,6 +2004,15 @@ paper = {
 		modifier = {
 			factor = 2.0
 			development_discounting_tribal = 22
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = paper }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = paper } }
+				}
+			}
 		}
 	}
 }
@@ -1888,6 +2144,16 @@ gems = {
 			}
 		}
 		modifier = {
+			factor = 5.0
+			OR = {
+				province_id = 1177
+				province_id = 1179
+				province_id = 2856
+				province_id = 1172
+				province_id = 1167
+			}
+		}
+		modifier = {
 			factor = 1.5
 			region = brazil_region
 		}
@@ -1917,6 +2183,15 @@ gems = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = gems }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = gems } }
+				}
+			}
+		}
 	}
 }
 
@@ -1932,11 +2207,28 @@ coal = {
 			development_discounting_tribal = 20
 			owner = { innovativeness = 20 }
 		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_country_flag = earlier_coal_available }
+				}
+			}
 		provincial_institution_progress = {
 			which = enlightenment
 			value = 100
 		}
 		owner = { has_institution = enlightenment }
+		}
+		else = {
+			provincial_institution_progress = {
+				which = manufactories
+				value = 100
+			}
+			owner = {
+				has_institution = manufactories
+				adm_tech = 23
+			}
+		}
 	}
 	
 	modifier = {
@@ -1975,6 +2267,15 @@ cloves = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = cloves }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = cloves } }
+				}
 			}
 		}
 	}
