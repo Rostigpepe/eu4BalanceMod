@@ -659,6 +659,7 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	global_unrest = -2.5
 	all_estate_loyalty_equilibrium = 0.1
 	war_exhaustion = -0.05
+	yearly_harmony = 1
 }
 
 negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
@@ -1015,6 +1016,7 @@ meritocracy = {
 	global_spy_defence = 1.0
 	advisor_cost = -0.5
 	reform_progress_growth = 0.5
+	imperial_mandate = 0.1
 }
 
 # Multiplied by 50 - meritocracy

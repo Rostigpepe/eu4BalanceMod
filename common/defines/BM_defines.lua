@@ -27,3 +27,6 @@ NDefines.NCountry.CULTURE_COST_DIFF_ORIGINAL = -50
 NDefines.NCountry.CULTURE_COST_DIFF_ADJACENT = -25
 NDefines.NCountry.CULTURE_COST_DIFF_PRIMARY = 0
 
+--Fixes for playing as emperor of china
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_COST = 50
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_STABILITY_COST = 1
