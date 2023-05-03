@@ -4,6 +4,8 @@
 muscovy_muscovite_supremacy:0 "Muscovite Supremacy"
 desc_muscovy_muscovite_supremacy:0 "We shall dictate our own peace in Novgorod!"
 muscovy_muscovite_supremacy_tt:0 "-10% War Score Cost"
+muscovy_crown_lands:0 "Muscovite Crownlands"
+muscovite_boyar_lands:0 "Muscovite Boyar Lands"
 
 #Muscovite Subjugates Novgorod
 ME_Muscovy_Events.1.t: "The Subjugation of Novgorod"
