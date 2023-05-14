@@ -1511,7 +1511,7 @@ PRU_ideas = {
 		diplomatic_reputation = 1
 	}
 	soldier_king = {
-		army_tradition = 0.01
+		army_tradition = 1
 	}
 	army_professionalism = {
 		yearly_army_professionalism = 0.002
