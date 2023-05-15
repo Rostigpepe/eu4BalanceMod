@@ -44,7 +44,6 @@ country_decisions = {
 		BM_free_colonist = {
 		potential = {
 				OR = {
-					tag = RUS
 					tag = KUR
 					tag = LVA
 					capital_scope = {
@@ -68,9 +67,8 @@ country_decisions = {
 			}
 		}
 	}	
-}
 
-country_decisions = {
+	
 	BM_debt_restructure = {
 	potential = {
 		ai = no
