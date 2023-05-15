@@ -1,4 +1,6 @@
 ﻿ l_english:
+
+ #PRUSSIA
  empowering_the_junker_class_prussia:0 "Empowering the Junker Class"
  empowering_the_junker_class_prussia_desc:0 "Let us empower the Junker Class to support our reign. This class of lower nobility is strong enough to form a powerful base against the magnates, burghers, and clergy. From this we can dominate our enemies, both foreign and domestic."
 
@@ -10,3 +12,29 @@
 
  frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
  frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
+
+ BM_Kreditwork:0 "Kreditwork"
+ BM_immigrant_settlements:0 "Immigrant Settlements"
+
+
+ #MAMLUKS
+ mamluk_privileges_mamluks:0 "Mamluk Privileges"
+ mamluk_privileges_mamluks_desc:0 "The foreign born pseudo-nobility that dominated the mamluk sultanate were distinguished from their egyptian lessers through a multitude of laws and privileges. Such as the right to bear arms or to rise to the higher civic positions."
+
+ enlist_arabian_tribesmen:0 "Arabian Horses"
+ enlist_arabian_tribesmen_desc:0 "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
+
+ Arabian_Horses_1:0 "Arabian Horses"
+ Arabian_Horses_2:0 "Arabian Horses"
+ Arabian_Horses_3:0 "Arabian Horses"
+ Arabian_Horses_4:0 "Arabian Horses"
+ Arabian_Horses_5:0 "Arabian Horses"
+
+ revive_the_hisbah_mamluks:0 "Revive the Hisbah"
+ revive_the_hisbah_mamluks_desc:0 "The Hisbah was founded during the early mamluk rule, in order to root out corruption amongst merchants and bankers. Later it started to also apply to the iqta system, which had slowly become heriditary and thus less effective. Under later rule this system became corrupt itself, as nobles attempted to become one of the muhtasib, or inspector generals, of this organization to wield to organization for political goals. Let is revive this organization and bring it back to the weeding out of corrupt merchants and the removal of local hereditary iqta holders."
+
+ turkicized_elite_mamluks:0 "Turkicized Elite"
+ turkicized_elite_mamluks_desc:0 "The Mamluk Elite distinguised itself from their arabic-speaking subjects through their own turkic language, names and ethnicity. With Turkic Mamluks enjoying a higher status, and many fresh Mamluks being turkicized during their education. With the sons of Mamluks often serving in the Sultanate's civil administration"
+
+ foreign_recruitment_mamluks:0 "Foreign Recruitment"
+ foreign_recruitment_mamluks_desc:0 "By sending our merchants off to many foreign places—we can ensure our supply of new Mamluks— which will never be cut off again as it was during the Mongol and Crusader Invasions."

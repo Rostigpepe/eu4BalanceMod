@@ -49,9 +49,9 @@ kreditwerk_prussia = {
 		}
 	}
 	modifiers = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.2
 		interest = -0.5
-		all_estate_influence_modifier = 0.05
+		all_estate_influence_modifier = -0.05
 	}
 	ai = {
 		factor = 2
@@ -73,6 +73,9 @@ frederick_wilhelm_reforms_prussia = {
 		build_cost = -0.15
 		build_time = -0.2
 	}
+	custom_attributes = {
+        enables_immigrants_settlements = yes
+    }    
 	ai = {
 		factor = 2
 	}

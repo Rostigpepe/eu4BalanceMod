@@ -2088,12 +2088,12 @@ ned_ceylon_mod = {
 ned_zeelandia_mod = {
 	local_defensiveness = 0.25
 	province_trade_power_modifier = 0.5
+	ship_recruit_speed = -0.25
 }
 
 ned_lowlands_victory = {
 	land_morale = 0.1
 	recover_army_morale_speed = 0.15
-	ship_recruit_speed = -0.25
 }
 
 # Irish Missions
@@ -4977,6 +4977,7 @@ hab_invested_in_provinces = {
 
 hab_austrian_netherlands = {
 	may_explore = yes
+	colonists = 1
 	global_colonial_growth = 15
 }
 
@@ -4997,7 +4998,7 @@ hab_ascendancy_in_empire = {
 
 hab_empire_united_in_religion_mod_catholic = {
 	papal_influence = 1
-	papal_influence_from_cardinals = 1.0
+	papal_influence_from_cardinals = 0.33
 }
 
 hab_empire_united_in_religion_mod_protestant = {
@@ -5316,7 +5317,7 @@ ven_political_monopolist = {
 }
 
 ven_la_francocrazia = {
-	prestige_from_naval = 15
+	prestige_from_naval = 1.5
 	galley_cost = -0.15
 }
 
@@ -9333,7 +9334,7 @@ fra_university_of_paris_modifier = {
 fra_developing_urban_center_modifier = {
 	local_build_cost = -0.1
 	local_build_time = -0.15
-	local_prosperity_growth = -0.02
+	local_prosperity_growth = 0.1
 }
 
 fra_provincial_road_system = {
@@ -9412,14 +9413,14 @@ fra_musketeers_modifier = {
 
 fra_catholic_supremacy_modifier = {	
 	enforce_religion_cost = -0.25
-	papal_influence_from_cardinals = 0.5 
-	warscore_cost_vs_other_religion = -0.05
-	global_religious_conversion_resistance = -0.25
+	papal_influence_from_cardinals = 0.1
+	global_religious_conversion_resistance = 0.25
 }
 
 fra_heart_of_protestantism_modifier = {
 	tolerance_own = 1
 	enforce_religion_cost = -0.25 
+	global_heretic_missionary_strength = 0.01
 	missionaries = 1 
 }
 

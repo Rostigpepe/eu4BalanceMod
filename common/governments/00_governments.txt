@@ -143,6 +143,7 @@ monarchy = {
 				separation_of_boyars_from_court_reform
 				#Modded BM:
 				empowering_the_junker_class_prussia
+				mamluk_privileges_mamluks
 			}
 		}
 		bureaucracy = {
@@ -168,6 +169,8 @@ monarchy = {
 				ottoman_provincial_government_system_reform
 				namestnik_reform
 				consulate_of_the_sea
+				#BM MODDED
+				revive_the_hisbah_mamluks
 			}
 		}
 		state_and_religion = {
@@ -265,6 +268,8 @@ monarchy = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
+				#MODDED BM
+				enlist_arabian_tribesmen
 			}
 		}
 		deliberative_assembly = {
@@ -292,6 +297,7 @@ monarchy = {
 				parliament_vs_monarchy_reform
 				#Modded BM:
 				reformed_legal_system_prussia
+				turkicized_elite_mamluks
 			}
 		}
 		growth_of_administration = {
@@ -316,6 +322,7 @@ monarchy = {
 				strengthened_parliament_reform
 				#Modded BM:
 				kreditwerk_prussia
+				foreign_recruitment_mamluks
 			}
 		}
 		economical_matters = {
