@@ -74,7 +74,7 @@ frederick_wilhelm_reforms_prussia = {
 		build_time = -0.2
 	}
 	custom_attributes = {
-        enables_immigrants_settlements = yes
+        enables_immigrant_settlements = yes
     }    
 	ai = {
 		factor = 2

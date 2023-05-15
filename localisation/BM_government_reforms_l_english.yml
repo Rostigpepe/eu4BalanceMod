@@ -15,6 +15,7 @@
 
  BM_Kreditwork:0 "Kreditwork"
  BM_immigrant_settlements:0 "Immigrant Settlements"
+ BM_immigrant_settlements_desc:0 "Religious immigrants are settling in this area."
 
 
  #MAMLUKS
@@ -23,6 +24,8 @@
 
  enlist_arabian_tribesmen:0 "Arabian Horses"
  enlist_arabian_tribesmen_desc:0 "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
+
+ enables_arabian_horses:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
 
  Arabian_Horses_1:0 "Arabian Horses"
  Arabian_Horses_2:0 "Arabian Horses"

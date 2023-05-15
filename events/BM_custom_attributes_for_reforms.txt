@@ -8,19 +8,16 @@ country_event = {
 
 
 	trigger = {
-		OR = {
-			AND = {
-				has_government_attribute = enables_immigrant_settlements
-				all_owned_province = {
-					NOT = {has_province_modifier = BM_immigrant_settlements}
-				}
-				any_owned_province = {
-					OR = {
-						trade_goods = grain
-						trade_goods = livestock
-						trade_goods = fish
-					}
-				}
+		has_government_attribute = enables_immigrant_settlements
+		all_owned_province = {
+			NOT = {has_province_modifier = BM_immigrant_settlements}
+		}
+		any_owned_province = {
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = fish
+				trade_goods = naval_supplies
 			}
 		}
 	}
@@ -39,6 +36,7 @@ country_event = {
 					trade_goods = grain
 					trade_goods = livestock
 					trade_goods = fish
+					trade_goods = naval_supplies
 				}
 				add_province_modifier = {
 					name = BM_immigrant_settlements
@@ -52,10 +50,8 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = reform_me_events.243.a
-
 	}
 }
 
