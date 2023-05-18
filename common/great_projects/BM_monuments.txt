@@ -1528,7 +1528,6 @@ gme_university_graz = {
 			factor = 2500
 		}
 		province_modifiers = {
-			institution_growth = 0.5
 		}
 		area_modifier = {
 			local_institution_spread = 0.15
@@ -1553,10 +1552,9 @@ gme_university_graz = {
 			factor = 5000
 		}
 		province_modifiers = {
-			institution_growth = 1
 		}
 		area_modifier = {
-			local_institution_spread = 0.15
+			local_institution_spread = 0.25
 			local_development_cost = -0.1
 		}
 		country_modifiers = {
