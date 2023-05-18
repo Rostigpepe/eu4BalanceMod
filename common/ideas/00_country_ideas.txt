@@ -1717,7 +1717,7 @@ LIT2_ideas = {
 	
 	warlord_dukes = {
 		leader_land_shock = 1
-		leader_land_manuever = 1
+		leader_cost = -0.10
 	}
 	auksine_laisve = {
 		no_stability_loss_on_monarch_death = yes
@@ -1871,7 +1871,7 @@ HAB_ideas = {
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.3
-		discipline = 0.05
+		discipline = 0.03
 	}
 }
 
