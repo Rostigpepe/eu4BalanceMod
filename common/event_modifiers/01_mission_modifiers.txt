@@ -9044,7 +9044,7 @@ chi_imperial_center_of_commerce_modifier = {
 
 fra_reintegration_of_burgundian_lands_modifier = { 
 	country_admin_power = 1
-	global_monthly_devastation = 0.05
+	global_monthly_devastation = -0.05
 }
 fra_charlemagne_legacy_modifier = {
 	diplomatic_reputation = 2
