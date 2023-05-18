@@ -131,7 +131,7 @@ rapid_collapse_of_society = {
 			}
 		}
 	}
-	tribal_development_growth = -0.05
+	tribal_development_growth = -0.1
 	all_power_cost = 0.33
 	discipline = -0.1
 	land_morale = -0.2

@@ -15,11 +15,11 @@ native_basic_reform = {
 	}
 	modifiers = {
 		reform_progress_growth = -1.0
-		monthly_reform_progress = 0.3
-		land_maintenance_modifier = -0.25
+		monthly_reform_progress = 0.1
+		land_maintenance_modifier = -0.15
 		diplomatic_upkeep = -2
-		global_institution_spread = -0.33
-		governing_capacity_modifier = -0.50
+		global_institution_spread = -0.5
+		governing_capacity_modifier = -0.75
 		administrative_efficiency = -0.5
 		province_warscore_cost = 2
 		global_manpower = -5
