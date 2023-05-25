@@ -1,0 +1,16 @@
+﻿l_english:
+ 
+ NGF: "North German Confederation"
+ NGF_ADJ: "North German"
+ NGF_annex_subects_effect_tt: "Annex all subject nations with their capital in the §YNorth Germany§! region."
+ form_NGF_decision_title: "Unite the North Germans"
+ form_NGF_decision_desc: "The North German Confederation was initially a German military alliance established which was transformed in the subsequent year into a confederated state, and a de facto federal state. The formation of the Confederation proved to be an important milestone of German Unification, and it was the earliest continual legal predecessor of the modern German nation-state."
+
+ #IDEAS
+ NGF_idea_4: "Fraternal Diplomacy"
+ NGF_idea_4_desc: "The uniting of the German peoples under one single nation-state has begun in the northern portions of the Fatherland, and now we must push south and unite out southern brethren, be it via the gun or the pen."
+ NGF_idea_1: "Expansion of the Realm"
+ NGF_idea_1_desc: "Conquering terretory to grow the Fatherland, we shall incorporate more Germans into the realm, as is our right."
+ NGF_ideas: "North German Ideas"
+ NGF_ideas_start: "North German Traditions"
+ NGF_ideas_bonus: "North German Ambitions"

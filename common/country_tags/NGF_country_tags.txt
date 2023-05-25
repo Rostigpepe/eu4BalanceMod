@@ -1,0 +1,1 @@
+NGF	= "countries/NorthGermanFederation.txt"
