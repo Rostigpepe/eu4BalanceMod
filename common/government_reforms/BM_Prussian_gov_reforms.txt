@@ -6,6 +6,8 @@ empowering_the_junker_class_prussia = {
 		OR = {
 			tag = PRU
 			tag = BRA
+			tag = NGF
+			tag = GER
 		}
 	}
 	modifiers = {
@@ -26,6 +28,8 @@ reformed_legal_system_prussia = {
 	potential = {
 		OR = {
 			tag = PRU
+			tag = NGF
+			tag = GER
 		}
 	}
 	modifiers = {
@@ -46,6 +50,8 @@ kreditwerk_prussia = {
 	potential = {
 		OR = {
 			tag = PRU
+			tag = NGF
+			tag = GER
 		}
 	}
 	modifiers = {
@@ -66,6 +72,8 @@ frederick_wilhelm_reforms_prussia = {
 	potential = {
 		OR = {
 			tag = PRU
+			tag = NGF
+			tag = GER
 		}
 	}
 	modifiers = {
