@@ -39,7 +39,7 @@ oligarchy_reform = {
 	}
 	modifiers = {
 		burghers_loyalty_modifier = 0.05
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.1
 		global_unrest = -0.5
 	}
 	custom_attributes = {
@@ -248,7 +248,7 @@ prussian_republic_reform = {
 		global_autonomy = -0.075
 		republican_tradition = -0.5
 		max_absolutism = 30
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.35
 	}
 	
 	conditional = {
