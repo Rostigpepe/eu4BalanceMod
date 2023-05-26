@@ -1683,8 +1683,8 @@ stadthalter_monarchy_reform = {
 		has_term_election = yes
 		states_general_mechanic = {
 			statists = {
-				naval_forcelimit_modifier = 0.10
-				global_trade_power = 0.05
+				development_cost = -0.1
+				global_trade_power = 0.25
 				legitimacy = -0.5
 			}
 
@@ -2142,7 +2142,7 @@ al_andalusia_government = {
 	modifiers = {
 		idea_cost = -0.1
 		tolerance_of_heathens_capacity = 2
-		tolerance_heathen = 1
+		tolerance_heathen = 2
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -2432,7 +2432,7 @@ tsardom = {
 		global_manpower_modifier = 0.20
 		yearly_absolutism = 0.5
 		global_autonomy = -0.05
-		governing_capacity = 350
+		governing_capacity = 400
 		has_streltsy = yes
 		allowed_streltsy_fraction = 0.2
 	}
@@ -2508,7 +2508,7 @@ ruthenian_tsardom = {
 		manpower_in_true_faith_provinces = 0.2
 		max_absolutism = 5
 		reform_progress_growth = 0.2
-		governing_capacity = 350
+		governing_capacity = 400
 		has_streltsy = yes
 		allowed_streltsy_fraction = 0.2
 	}
@@ -2545,7 +2545,7 @@ russian_empire_reform = {
 		global_autonomy = -0.05
 		global_manpower_modifier = 0.20
 		embracement_cost = -0.5
-		governing_capacity = 350
+		governing_capacity = 500
 	}
 
 	conditional = {
@@ -2988,7 +2988,7 @@ misl_confederacy_reform = {
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		global_manpower_modifier = 0.1
-		land_maintenance_modifier = -0.1
+		land_maintenance_modifier = -0.15
 	}
 }
 
@@ -3017,7 +3017,8 @@ rajput_kingdom = {
 	}
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
-		army_tradition = 0.25
+		army_tradition = 0.5
+		special_unit_forcelimit = 0.15
 	}
 }
 
@@ -3034,6 +3035,7 @@ siamese_absolutism = {
 	modifiers = {
 		max_absolutism = 10
 		monarch_admin_power = 1
+		culture_conversion_time = -0.1
 	}
 	free_concentrate_development = yes
 }
@@ -3085,7 +3087,7 @@ korean_monarchy = {
 	modifiers = {
 		development_cost_in_primary_culture = -0.1
 		same_culture_advisor_cost = -0.1
-		global_institution_spread = 0.15
+		global_institution_spread = 0.1
 	}
 	effect = {
 		hidden_effect = {
@@ -3204,7 +3206,8 @@ negusa_nagast = {
 	modifiers = {
 		move_capital_cost_modifier = -0.75
 		global_unrest = -1
-		stability_cost_modifier = -0.1
+		stability_cost_modifier = -0.15
+		heir_chance = 0.5
 	}
 
 	conditional = {
@@ -3360,7 +3363,7 @@ musa_rule = {
 	}
 	modifiers = {
 		advisor_pool = 1
-		stability_cost_modifier = -0.05
+		stability_cost_modifier = -0.15
 		legitimacy = 0.5
 	}
 
@@ -3424,7 +3427,7 @@ polish_elective_monarchy = {
 		global_unrest = -1
 		max_absolutism = -30
 		nobles_influence_modifier = 0.05
-		reform_progress_growth = -0.2
+		reform_progress_growth = -0.1
 	}
 
 	conditional = {
@@ -3473,7 +3476,7 @@ polish_autocratic_monarchy = {
 		has_dlc = "Lions of the North"
 	}
 	modifiers = {
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.025
 		max_absolutism = 10 
 		global_manpower_modifier = 0.2 
 		reform_progress_growth = 0.1
@@ -3500,6 +3503,7 @@ lithuanian_grand_kingdom = {
 		no_religion_penalty = yes
 		global_autonomy = -0.05 
 		governing_capacity = 250 
+		reform_progress_growth = 0.1
 	}
 }
 
@@ -3527,6 +3531,7 @@ lithuanian_grand_empire = {
 		no_religion_penalty = yes
 		monarch_admin_power = 2
 		governing_capacity = 300 
+		reform_progress_growth = 0.25
 	}
 }
 
@@ -3568,7 +3573,7 @@ livonian_military_monarchy = {
 		development_cost = -0.05
 		monarch_military_power = 2
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.33
 	}
 
 	conditional = {
@@ -3639,7 +3644,8 @@ livonian_naval_monarchy = {
 			monarchists = {
 				navy_tradition = 1
 				naval_morale = 0.1
-				legitimacy = 0.5
+				legitimacy = 1
+				prestige_from_naval = 0.5
 			}
 		}
 	}
@@ -3679,7 +3685,7 @@ livonian_trade_monarchy = {
 
 	modifiers = {
 		merchants = 1
-		global_ship_trade_power = 0.25
+		global_ship_trade_power = 0.5
 		global_trade_goods_size_modifier = 0.15
 		burghers_influence_modifier = 0.05
 	}
@@ -3754,7 +3760,7 @@ livonian_theocratic_monarchy = {
 
 	modifiers = {
 		tolerance_own = 2
-		papal_influence = 0.5
+		papal_influence = 2
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 0.25
 		church_influence_modifier = 0.25
@@ -3943,10 +3949,10 @@ livonian_diplomatic_monarchy = {
 	modifiers = {
 		diplomatic_upkeep = 2
 		diplomatic_reputation = 2
-		vassal_forcelimit_bonus = 0.5
+		vassal_forcelimit_bonus = 2
 		vassal_income = 0.5
-		global_manpower_modifier = -0.33
-		land_forcelimit_modifier = -0.33
+		global_manpower_modifier = -0.15
+		land_forcelimit_modifier = -0.15
 	}
 
 	conditional = {
@@ -4288,7 +4294,7 @@ norwegian_parliamentary_monarchy = {
 	modifiers = {
 		legitimacy = 1
 		global_unrest = -1
-		max_absolutism = -30
+		max_absolutism = -20
 		nobles_influence_modifier = -0.1
 	}
 
