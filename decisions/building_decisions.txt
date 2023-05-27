@@ -1,0 +1,17 @@
+country_decisions = {
+	delete_buildings = {
+		title = delete_buildings_title
+		desc = delete_buildings_desc
+
+		major = yes
+		potential = {
+			ai = no
+		}
+		effect = {
+			country_event = { id = building.1 } 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
