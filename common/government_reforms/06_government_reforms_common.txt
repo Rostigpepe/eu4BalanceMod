@@ -3407,8 +3407,8 @@ lessons_of_the_hussite_wars_reform = {
 			primary_culture = czech_new
 			primary_culture = sorbian_new
 			primary_culture = schlesian_new
+			primary_culture = bohemian
 		}
-		religion = hussite
 		NOT = { tag = PRU }
 		OR = {
 			NOT = { tag = PRU }
