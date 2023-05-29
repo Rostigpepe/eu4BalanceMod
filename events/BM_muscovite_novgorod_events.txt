@@ -145,7 +145,7 @@ country_event = {
 				}
 				add_territorial_core = ROOT
 
-				set_local_autonomy = 25
+				set_local_autonomy = 50
 				add_province_modifier = {
 					name = muscovy_crown_lands
 					duration = 9125 #25 years
@@ -212,7 +212,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
 					remove_province_modifier = muscovy_noble_lands
-					set_local_autonomy = 10
+					set_local_autonomy = 25
 				}
 			}
 		}
@@ -223,7 +223,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
-					set_local_autonomy = 25
+					set_local_autonomy = 35
 				}
 			}
 		}
@@ -242,7 +242,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
 					remove_province_modifier = muscovy_noble_lands
-					set_local_autonomy = 10
+					set_local_autonomy = 25
 				}
 			}
 		}
@@ -252,7 +252,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
-					set_local_autonomy = 25
+					set_local_autonomy = 35
 				}
 			}
 		}

@@ -28,8 +28,8 @@ BM_Muscovy_Events.3.d: "Now that we control vast lands north of Moscow, we need 
 BM_Muscovy_Events.3.a: "Castles for the Nobles!"
 BM_Muscovy_Events.3.b: "The Crown shall rule these lands."
 BM_Muscovy_Events.3.tta: "Gain §R2.00§! unrest in §YEvery Owned Province§! without core of §Y[From.GetName]§!.\n"
-BM_Muscovy_Events.3.ttb: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YNoble Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+50.00§!\n"
-BM_Muscovy_Events.3.ttc: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YCrown Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+35.00§!\n"
+BM_Muscovy_Events.3.ttb: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YNoble Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+80.00§!\n"
+BM_Muscovy_Events.3.ttc: "Every Owned Province with core of §Y[From.GetName]§! gains §YTerritorial Core§! and '§YCrown Lands§!' for §Y25 years§!, giving the following effects:\nMinimum Local Autonomy: §R+80.00§!\n"
 
 #Continuation of Consolidation
 BM_Muscovy_Events.4.t: "The Governing of Novgorod"
@@ -37,5 +37,5 @@ BM_Muscovy_Events.4.d: "Some Nobles from the former republic have come to us wit
 BM_Muscovy_Events.4.a: "Crack down on the separatists."
 BM_Muscovy_Events.4.b: "Grant some concessions."
 BM_Muscovy_Events.4.c: "The situation works for now."
-BM_Muscovy_Events.4.tta: "Every Owned Province with §YNoble Lands§! loses '§YNoble Lands§!' and set §YLocal Autonomy§! to §Y10.00§!\n"
+BM_Muscovy_Events.4.tta: "Every Owned Province with §YNoble Lands§! loses '§YNoble Lands§!' and set §YLocal Autonomy§! to §Y25.00§!\n"
 BM_Muscovy_Events.4.ttb: "Every Owned Province with §YCrown Lands§! loses '§YCrown Lands§!' and set §YLocal Autonomy§! to §Y35.00§!\n"
