@@ -158,7 +158,7 @@ french_missions_1 = {
 						BUR = { is_subject_of = ROOT } 
 						has_dlc = "Emperor"
 					}
-					country_event = { id = incidents_bur_inheritance.501 } 
+					add_prestige_or_monarch_power = 100
 				}
 				else_if = { 
 					limit = { 
