@@ -1,14 +1,15 @@
 ﻿l_english:
  AHE:0 "Austria-Hungary"
  AHE_ADJ:0 "Austro-Hungarian"
- formed_ah_flag:0 "Formed Austria-Hungary"
  ah_nation_diplomatically:0 "Form Austria-Hungary diplomatically"
  ah_nation_diplomatically_title:0 "Form Austria-Hungary diplomatically"
  ah_nation_diplomatically_desc:0 "Form Austria-Hungary diplomatically"
- ah_nation:0 "Form Austria-Hungary militarily"
- ah_nation_title:0 "Form Austria-Hungary militarily"
- ah_nation_desc:0 "Form Austria-Hungary militarily"
- 
+ ahe_nation:0 "Form Austria-Hungary militarily"
+ ahe_nation_title:0 "Form Austria-Hungary militarily"
+ ahe_nation_desc:0 "Form Austria-Hungary militarily"
+ forming_ah_diplomatically_tooltip:0 "You must have integrated Bohemia and have Hungary under Personal Union"
+
+
 AHE_ideas:0 "Austro-Hungarian ideas"
  AHE_ideas_start:0 "Austro-Hungarian traditions"
  AHE_ideas_bonus:0 "Austro-Hungarian ambition"

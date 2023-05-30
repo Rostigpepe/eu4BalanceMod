@@ -84,7 +84,7 @@ bm_the_sulfur_of_iceland = {
 		}
 
 	attrition = 1
-	trade_value_modifier = 0.25
+	trade_value_modifier = 0.75
 	
 	#Province scope
 	on_activation = {

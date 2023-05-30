@@ -27,7 +27,7 @@ country_decisions = {
 		}
 
 		allow = {
-			adm_tech = 15
+			adm_tech = 18
 			OR = {
 				NOT = { exists = PRU }
 				AND = {

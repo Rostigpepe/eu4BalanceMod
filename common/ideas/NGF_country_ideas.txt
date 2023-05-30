@@ -5,7 +5,7 @@ NGF_ideas = {
 	}
 	
 	bonus = {
-		ae_impact = -0.15
+		governing_capacity_modifier = 0.3
 	}	
 
 	trigger = {
@@ -25,7 +25,7 @@ NGF_ideas = {
 		discipline = 0.05
 	}
 	NGF_idea_4 = {
-		governing_capacity_modifier = 0.3
+		ae_impact = -0.15
 	}
 	army_professionalism = {
 		yearly_army_professionalism = 0.001

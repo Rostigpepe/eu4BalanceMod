@@ -147,7 +147,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				cavalry_flanking = 0.5
 			}
 			ai_will_do = {
 				factor = 10
@@ -340,7 +340,7 @@ age_of_reformation = {
 		
 		ab_warscore_vs_religion = {
 			modifier = {
-				warscore_cost_vs_other_religion = -0.25
+				warscore_cost_vs_other_religion = -0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -357,7 +357,7 @@ age_of_reformation = {
 		}
 		ab_ship_power_propagation = {
 			modifier = {
-				ship_power_propagation = 0.2
+				ship_power_propagation = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -388,7 +388,7 @@ age_of_reformation = {
 				tag = SPA
 			}
 			modifier = {
-				leader_land_shock = 1
+				leader_land_shock = 2
 			}
 			ai_will_do = {
 				factor = 100

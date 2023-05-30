@@ -75,7 +75,7 @@ country_decisions = {
 		is_bankrupt = no
 		is_at_war = no
 		NOT = { has_country_flag = gecko_tackle_debt }
-		NOT = { has_country_modifier = gecko_debt_tackled_2 }
+		NOT = { has_country_modifier = BM_debt_tackled_2 }
 		NOT = { has_country_modifier = gecko_tackle_debt_timer }
 		###X###
 		num_of_loans = 10
@@ -94,10 +94,10 @@ country_decisions = {
 			hidden = yes
 		} 
 		add_country_modifier = {
-			name = gecko_debt_tackled
+			name = BM_debt_tackled
 			duration = -1
 		}
-		add_years_of_income = 1
+		add_years_of_income = 10
 		add_mercantilism = -10
 		}
 	}
@@ -121,10 +121,10 @@ country_decisions = {
 		effect = {
 			clr_country_flag = gecko_tackle_debt
 			clr_country_flag = BM_tackle_debt_timer_2
-			remove_country_modifier = gecko_debt_tackled
+			remove_country_modifier = BM_debt_tackled
 			
 			add_country_modifier = {
-				name = gecko_debt_tackled_2
+				name = BM_debt_tackled_2
 				duration = 3650
 			}
 		}
