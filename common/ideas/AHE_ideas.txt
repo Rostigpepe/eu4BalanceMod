@@ -1,6 +1,6 @@
 AHE_ideas = {
 	start = {
-		land_morale = 0.10
+		land_morale = 0.15
 		state_governing_cost = -0.1
 	}
 	
@@ -14,9 +14,8 @@ AHE_ideas = {
 	free = yes		#will be added at load.
 
 	multi_cultural_empire_ahe = {
-		manpower_in_accepted_culture_provinces = 0.10
+		manpower_in_accepted_culture_provinces = 0.2
 		num_accepted_cultures = 2
-		
 	}
 	donau_river_dominance_ahe = {
 		global_prov_trade_power_modifier = 0.25
