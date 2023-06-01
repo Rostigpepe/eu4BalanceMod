@@ -1,0 +1,117 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 1  145  21 }
+revolutionary_colors = { 1 8 10 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Friedrich" = 100
+	"Ludwig" = 80
+	"Ruprecht" = 20
+	"Johann Wilhelm #0" = 20
+	"Karl" = 20
+	"Karl Ludwig" = 20
+	"Karl Philipp" = 20
+	"Karl Theodor" = 20
+	"Otto Heinrich" = 20
+	"Philipp" = 20
+	"Philipp Wilhelm" = 20
+	"Heinrich Friedrich" = 20
+	"Alexander Siegmund #0" = 20
+	"Friedrich Philipp" = 20
+	"Johann Friedrich" = 20
+	"Lothar #0" = 20
+	"Konrad #2" = 20
+	"Damian Hartrad" = 20
+	"Jakob" = 20
+	"Sebastian" = 20
+	"Lothar Franz" = 20
+	"Lothar Friedrich" = 20
+	"Matthias " = 20
+	"Anselm Kasimir #0" = 20
+
+	
+	"Josepha" = -1
+	"Klara" = -1
+	"Luzia" = -1
+	"Elisabeth" = -1
+	"Amalie" = -1
+	"Helena" = -1
+	"Barbara" = -1
+	"Katharina" = -1
+	"Anna Marie" = -1
+	"Dorothea" = -1
+	"Christine" = -1
+	"Anna Eleonore" = -1
+	"Sylvia" = -1
+	"Wilhelmine" = -1
+	"Alexis" = -1
+}
+
+leader_names = {
+	Blittersdorf
+	"von Gelnhausen"
+	"von Schöneck"
+	"von Dieblich"
+	Cölln
+	Bensenraede
+	Adenau
+	Gruithausen
+	Hohenfeld
+	"von Namedy"
+	Falkenberg
+	"von Clausbruch"
+	Hillensberg
+	Dammerscheidt
+	Elmpt
+	Naxleden
+	Schaluyn
+	"von Leyen"
+	Ansembourg
+	Zebnitsch
+}
+
+ship_names = {
+	Neustadt Kaiserslautern Elmstein Landstuhl
+	Rhodt Deidesheim Hochspeyer Neunkirchen
+	Wolfstein Winnweiler
+}
+
+
+army_names = {
+	"Kurfürstliche Garde" "Erzbischofliche Garde" "Armee von $PROVINCE$" 
+}
+
+fleet_names = {
+	"Kurfürstliche Flotte"
+}

@@ -1,0 +1,7 @@
+AHE = "countries/AustriaHungary.txt" #AUSTRIA-HUNGARY
+CAE = "countries/ElbianConfederation.txt" #ELBIAN CONF
+NGF	= "countries/NorthGermanFederation.txt" #NORTH GERMAN CONF
+BGM = "countries/Belgium.txt" #BELGIUM
+ILY = "countries/Illyria.txt" #ILLYRIA
+LML = "countries/LombardLeague.txt" #ILLYRIA
+REN = "countries/Rhineland.txt" #RHINELAND
