@@ -31,6 +31,8 @@ country_decisions = {
 			owns_core_province = 77 #Heidelberg
 			owns_core_province = 78 #Mainz
 			owns_core_province = 1876 #Frankfurt
+			owns_core_province = 1878 #Aachen
+			owns_core_province = 1762 #Niederhessen
 			num_of_owned_provinces_with = {
 				value = 7
 				culture = hessian
@@ -38,7 +40,7 @@ country_decisions = {
 				is_core = root
 			}
 			OR = { #just to make it not so easy
-				total_development = 75
+				total_development = 150
 				is_elector = yes
 			}
 		}

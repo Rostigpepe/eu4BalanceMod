@@ -163,7 +163,7 @@ BGM_ideas = { #Belgium
 	}
 }
 
-ILY_SER_ideas = {  #Illyria2
+ILY_ideas = {  #Illyria
 	start = {
 		land_morale = 0.10
 		cavalry_power = 0.15
@@ -228,8 +228,7 @@ LML_ideas = {  #Lombard League
 		land_morale = 0.10
 	}
 	cities_opposed_to_the_hre = {
-		state_maintenance_modifier = 0.25
-		land_forcelimit_modifier = 0.20
+		land_forcelimit_modifier = 0.15
 		recover_army_morale_speed = 0.10
 	}	
 	beyond_driot_de_regale = {

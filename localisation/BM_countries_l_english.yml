@@ -143,9 +143,9 @@
  illyrian_nation_title: "One to Rule them All!"
  illyrian_nation_desc: "Subjugation by outside forces is nothing new to South Slavs as the Ottomans, the Hungarians, and those of the Holy Roman Empire have sought out dominance of the Balkans for generations now. Yet they cannot stamp out the great embers burning within the hearts of every South Slav around! Whether they are descendants of the great Serbian Empire, the noble Bulgarian Empires, the precariously placed Bosnian Kingdom, the contested Croatian Kingdom, the great League of Lezhe, or even the small Slovene communities to the north, there will be one who will rise up amongst the warring factions and unite the South Slavs into a single political entity."
 
- ILY_SER_ideas: "Illyrian Ideas"
- ILY_SER_ideas_start: "Illyrian Traditions"
- ILY_SER_ideas_bonus: "Illyrian Ambition"
+ ILY_ideas: "Illyrian Ideas"
+ ILY_ideas_start: "Illyrian Traditions"
+ ILY_ideas_bonus: "Illyrian Ambition"
  many_governments_but_one_authority: "Many Governments, but One Authority"
  many_governments_but_one_authority_desc: "Ranging from the Tsars of Bulgaria to the Bans of Croatia and Bosnia and even toward the despots of Serbia, the various people of Illyria have known many governing bodies over the course of their history. South Slavic people have never stood truly united under one administration and to this day, we struggle sometimes in organizing Illyrian finances and projects because of the strongly rooted identities of each group. But where we have succeeded is in cultivating a much more formalized system of multiple smaller governments set across the territories we control, all under one strongly bureaucratic administration that seeks to overcome the differences from each South Slavic subgroup."
  in_brotherhood_as_we_are_in_statehood: "In Brotherhood, there is Hope"
