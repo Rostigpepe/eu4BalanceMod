@@ -1,0 +1,133 @@
+hessian_militarized_monarchy_reform = {
+	icon = new_order_regiments
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
+	}
+	modifiers = {
+		discipline = 0.025
+		governing_capacity_modifier = -0.1
+		manpower_in_own_culture_provinces = 0.1
+		mercenary_discipline = -0.05
+		yearly_army_professionalism = 0.001
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_modern_militarized_monarchy_reform = {
+	icon = fifth_monarchist
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_modern_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+		has_reform = hessian_modern_militarized_monarchy_reform
+		absolutism = 50
+	}
+	modifiers = {
+		discipline = 0.05
+		governing_capacity_modifier = -0.25
+		manpower_in_own_culture_provinces = 0.2
+		mercenary_discipline = -0.10
+		monarch_military_power = 1
+		yearly_army_professionalism = 0.002
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_military_complex_reform = {
+	icon = organized_military_staff
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_military_complex_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_military_complex_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.10
+	}
+	custom_attributes = {
+		enables_military_exports = yes #2% Goods Produced per 10% Army Professionalism
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+found_the_rothschilds_reform = {
+	icon = hesse_rothschild
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		inflation_reduction = 0.05
+		interest = -1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_elite_jaegers_reform = {
+	icon = line_infantry
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		fire_damage = 0.1
+		leader_land_fire = 1
+		global_regiment_cost = 0.10
+	}
+	ai = {
+		factor = 100
+	}
+}
