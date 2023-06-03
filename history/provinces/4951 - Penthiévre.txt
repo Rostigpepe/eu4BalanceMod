@@ -1,4 +1,4 @@
-# 4941 Penthiévre - Principal cities: Tréguler
+# 4951 Penthiévre - Principal cities: Tréguler
 
 owner = BRI
 controller = BRI
@@ -9,7 +9,7 @@ religion = catholic
 hre = no
 base_tax = 1
 base_production = 1
-trade_goods = naval_supplies
+trade_goods = grain
 base_manpower = 2
 add_core = BRI
 discovered_by = western
@@ -17,4 +17,3 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
-center_of_trade = 1
