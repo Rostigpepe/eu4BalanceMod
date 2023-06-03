@@ -189,7 +189,7 @@ mild_winter = {
 	# France 1.30
 	4694 4697 
 	#BM France
-	4942
+	4951
 	# North Coast of Spain
 	206 207 209 1745 4554
 	# Northern Italy

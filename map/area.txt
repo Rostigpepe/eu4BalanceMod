@@ -285,7 +285,7 @@ bahama_channel_area = {
 brittany_area = { #5
 	color = { 118  99  151 }
 
-	169 170 171 172 4384 4942
+	169 170 171 172 4384 4951
 }
 
 normandy_area = { #4
@@ -486,7 +486,7 @@ liguria_area = { #3
 corsica_sardinia_area = { #4
 	127 1247 2986 4735 
 	#BM 
-	4943
+	4952
 }
 
 sicily_area = { #3 # now Eastern Sicily
