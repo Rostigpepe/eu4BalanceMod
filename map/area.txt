@@ -484,7 +484,9 @@ liguria_area = { #3
 }
 
 corsica_sardinia_area = { #4
-	127 1247 2986 4735
+	127 1247 2986 4735 
+	#BM 
+	4943
 }
 
 sicily_area = { #3 # now Eastern Sicily
