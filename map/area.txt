@@ -490,11 +490,15 @@ corsica_sardinia_area = { #4
 }
 
 sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
+	126 2982 4953
 }
 
 western_sicily_area = { #3
 	125 4736 4737
+}
+
+northern_sicily_area = { #3
+	124 4954 4955
 }
 
 naples_area = { #3  #Campania

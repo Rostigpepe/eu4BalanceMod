@@ -2980,7 +2980,7 @@ province;red;green;blue;x;x
 2979;192;219;10;Novara;x
 2980;241;15;15;Lucca;x
 2981;222;108;69;Asti;x
-2982;227;135;53;Syracuse;x
+2982;227;135;53;Catania;x
 2983;150;159;47;Salerno;x
 2984;206;227;169;Costenza;x
 2985;223;236;73;Capitanata;x
@@ -4942,3 +4942,6 @@ province;red;green;blue;x;x
 4941;30;216;201;Lake Cahuilla;x
 4951;221;118;246;Penthiévre;x
 4952;217;85;105;Ajaccio;x
+4953;141;69;35;Siracusa;x
+4954;244;20;168;Nebrodi;x
+4955;241;157;17;Mesina;x
