@@ -187,6 +187,7 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
+		norte_area
 	}
 }
 

@@ -439,15 +439,19 @@ leon_area = { #3
 }
 
 extremadura_area = {
-	4788 218 1747
+	4956 4787 227
 }
 
-beieras_area = { #4
-	231 232 228 1851 4556
+beieras_area = { #3
+	228 1851 4957
 }
 
-alentejo_area = { #5
-	227 229 230 4150 4787
+alentejo_area = { #3
+	4150 229 230
+}
+
+norte_area = { #3
+	4958 231 232
 }
 
 macaronesia_area = { #3
