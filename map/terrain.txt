@@ -522,6 +522,7 @@ categories =  {
 			2702 #Philippines
 			4706 # 1.30 Greece and Bulgaria
 			4787 # BM Iberia, Portugal
+			4959 # BM Denmark
 		}
 	}
 	

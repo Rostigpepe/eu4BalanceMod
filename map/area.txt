@@ -1046,8 +1046,8 @@ weser_area = { #4
 	54 55 1874 4771
 }
 
-holstein_area = { #3
-	13 1775 4141 
+holstein_area = { #4
+	13 1775 4141 4959
 }
 
 lower_saxony_area = { #4
