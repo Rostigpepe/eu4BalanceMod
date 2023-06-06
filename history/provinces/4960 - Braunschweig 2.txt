@@ -1,0 +1,21 @@
+#4960 - Wolfenbüttel
+
+owner = BRU
+controller = BRU
+culture = lower_saxon
+religion = catholic
+capital = "Wolfenbüttel"
+trade_goods = salt
+hre = yes
+base_tax = 5
+base_production = 5
+base_manpower = 4
+is_city = yes
+add_core = BRU
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

@@ -111,6 +111,8 @@ categories =  {
 			# BM France
 			4951
 			
+			4962 4963 # Hungary
+
 			43 97 98 100 4382 4383 #Netherlands
 			
 			234 235 236 238 4367 4368 4371 4375 #British isles
@@ -303,8 +305,9 @@ categories =  {
 			4853 4852 4864
 
 			#BM Modded
-			124
+			124 #BM SICILY
 			4958 #BM Iberia, Portugal
+			4960 #BM NORTH GERMANY
 		}
 	}
 	
@@ -691,7 +694,7 @@ categories =  {
 			2303
 			2478 2489 2504 	 
 			252 784 2946 823
-			1773 127 1247 4952 2982#BM
+			1773 127 1247 4952 2982 4961#BM
 			1766
 			319 2298 
 			371 163 321

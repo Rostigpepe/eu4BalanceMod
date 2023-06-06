@@ -4879,7 +4879,7 @@ hun_great_city = {
 }
 
 hun_golden_age_of_hungary = {
-	global_prosperity_growth = 0.1
+	global_prosperity_growth = 1
 	monthly_splendor = 1
 }
 
