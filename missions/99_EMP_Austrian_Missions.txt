@@ -41,7 +41,7 @@ emp_hab_netherlands_branch = {
 		effect = {
 			add_country_modifier = {
 				name = hab_austrian_netherlands
-				duration = 7300
+				duration = 18250
 			}
 		}
 		ai_weight = {
