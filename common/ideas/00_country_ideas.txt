@@ -25,7 +25,7 @@ norse_ideas = {
 		war_exhaustion = -0.03
 	}
 	norse_ideas_norse_seamen = {
-		own_coast_naval_combat_bonus = 1
+		own_coast_naval_combat_bonus = 
 		naval_morale = 0.15	
 	}
 	norse_ideas_a_wall_of_shields_for_the_king = {
@@ -2746,7 +2746,7 @@ BOH_ideas = {
 		horde_unity = 1
 	}
 	wagenburg = {
-		infantry_power = 0.10
+		military_tactics = 0.1
 		shock_damage_received = -0.05
 	}
 	letter_of_majesty = {
