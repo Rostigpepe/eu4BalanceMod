@@ -1,0 +1,220 @@
+colonial_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 1
+	potential = {
+		is_colonial_nation = yes
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
+		NOT = { is_subject_of_type = crown_colony }
+		NOT = { is_subject_of_type = private_enterprise }
+		NOT = { is_subject_of_type = self_governing_colony }
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		global_heathen_missionary_strength = 0.02
+		global_autonomy = -0.05
+		recover_army_morale_speed = 0.05
+		embracement_cost = -0.33
+		colonist_placement_chance = 0.05
+		governing_capacity = 100
+		max_absolutism = 40
+		may_explore = yes
+		free_maintenance_on_expl_conq = yes
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = crown_colony }
+				add_government_reform = crown_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = crown_colony }
+				add_government_reform = crown_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	duration = 4
+}
+
+crown_colony_government = {
+	icon = "crown_colony_government"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 1
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = crown_colony_government
+			has_reform = private_enterprise_colony_government
+			has_reform = self_governing_colony_government
+		}
+	}
+	trigger = {
+		is_subject_of_type = crown_colony
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		global_heathen_missionary_strength = 0.02
+		recover_army_morale_speed = 0.05
+		embracement_cost = -0.33
+		governing_capacity = 100
+		core_creation = -0.15
+		max_absolutism = 40
+		may_explore = yes
+		free_maintenance_on_expl_conq = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
+
+private_enterprise_colony_government = {
+	icon = "private_enterprise_colony_government"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 1
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = crown_colony_government
+			has_reform = private_enterprise_colony_government
+			has_reform = self_governing_colony_government
+		}
+	}
+	trigger = {
+		is_subject_of_type = private_enterprise
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		global_heathen_missionary_strength = 0.02
+		global_ship_trade_power = 0.50
+		embracement_cost = -0.33
+		merchants = 1
+		production_efficiency = 0.10
+		max_absolutism = 40
+		may_explore = yes
+		free_maintenance_on_expl_conq = yes
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = crown_colony }
+				add_government_reform = crown_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = crown_colony }
+				add_government_reform = crown_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	duration = 4
+}
+
+self_governing_colony_government = {
+	icon = "self_governing_colony_government"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 1
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = crown_colony_government
+			has_reform = private_enterprise_colony_government
+			has_reform = self_governing_colony_government
+		}
+	}
+	trigger = {
+		is_subject_of_type = self_governing_colony
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		global_heathen_missionary_strength = 0.02
+		build_cost = -0.15
+		development_cost = -0.15
+		embracement_cost = -0.33
+		state_maintenance_modifier = -0.25
+		max_absolutism = 40
+		reduced_liberty_desire = -15
+		may_explore = yes
+		free_maintenance_on_expl_conq = yes
+	}
+}
