@@ -181,7 +181,7 @@ wine = {
 wool = {
 	color = { 0.83 0.83 0.83  }
 	modifier = {
-		placed_merchant_power = 5
+		placed_merchant_power_modifier = 0.25
 	}
 	province = {
 		local_friendly_movement_speed = 0.10
@@ -576,7 +576,7 @@ naval_supplies = {
 copper = {
 	color = { 0.85 0.46 0.15 }
 	modifier = {
-		global_regiment_recruit_speed = -0.2
+		infantry_cost = -0.1
 	}
 	province = {
 		regiment_recruit_speed = -0.2
@@ -754,7 +754,7 @@ gold = {
 			region = peru_region
 		}
 		modifier = {
-			factor = 4.0
+			factor = 4
 			OR = {
 				province_id = 852		# Mexico
 				province_id = 853		# Huastec
@@ -807,7 +807,7 @@ gold = {
 iron = {
 	color = { 0.2 0.2 0.2 }
 	modifier = {
-		global_regiment_cost = -0.05
+		global_regiment_cost = -0.1
 	}
 	province = {
 		local_build_time = -0.2
@@ -1123,11 +1123,11 @@ chinaware = {
 		legitimacy = 0.25
 		devotion = 0.25
 		horde_unity = 0.25
-		republican_tradition = 0.12
-		meritocracy = 0.1
+		republican_tradition = 0.25
+		meritocracy = 0.25
 	}
 	province = {
-		local_autonomy = -0.1
+		allowed_num_of_buildings = 1
 
 	}
 
@@ -1170,7 +1170,7 @@ chinaware = {
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		trade_steering = 0.10
+		trade_steering = 0.15
 	}
 	province = {
 		local_monthly_devastation = -0.1
@@ -1247,7 +1247,7 @@ spices = {
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = {
-		global_institution_spread = 0.05
+		global_institution_spread = 0.1
 	}
 	province = {
 		local_institution_spread = 0.1
@@ -1319,7 +1319,7 @@ coffee = {
 cotton = {
 	color = { 0.52 0.68 0.6 }
 	modifier = {
-		global_colonial_growth = 20
+		global_colonial_growth = 25
 	}
 	province = {
 		local_development_cost = -0.1
@@ -1478,10 +1478,10 @@ sugar = {
 tobacco = {
 	color = { 0.33 0.56 0.38 }
 	modifier = {
-		global_spy_defence = 0.25
+		global_own_trade_power = 0.15
 	}
 	province = {
-		province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.1
 	}
 	chance = {
 		factor = 15
@@ -1554,7 +1554,7 @@ tobacco = {
 cocoa = {
 	color = { 0.45 0.21 0.09 }
 	modifier = {
-		manpower_recovery_speed = 0.05
+		manpower_recovery_speed = 0.1
 	}
 	province = {
 		local_manpower_modifier = 0.10
@@ -1609,7 +1609,7 @@ cocoa = {
 silk = {
 	color = { 0.72 0.10 0.10 }
 	modifier = {
-		num_accepted_cultures = 1
+		caravan_power = 0.25
 	}
 	province = {
 		province_trade_power_value = 2
@@ -1952,7 +1952,7 @@ incense = {
 glass = {
 	color = { 0.0 0.60 0.45 }
 	modifier = {
-		dip_tech_cost_modifier = -0.05
+		dip_tech_cost_modifier = -0.1
 	}
 	province = {
 		local_production_efficiency = 0.1
@@ -1986,7 +1986,7 @@ glass = {
 paper = {
 	color = { 0.9 0.86 0.71 }
 	modifier = {
-		adm_tech_cost_modifier = -0.05
+		adm_tech_cost_modifier = -0.1
 	}
 	province = {
 		local_state_maintenance_modifier = -0.1
@@ -2020,7 +2020,7 @@ paper = {
 gems = {
 	color = { 0.96 0.78 0.78 }
 	modifier = {
-		inflation_reduction = 0.05
+		inflation_reduction = 0.1
 	}
 	province = {
 		local_tax_modifier = 0.15
@@ -2144,6 +2144,16 @@ gems = {
 			}
 		}
 		modifier = {
+			factor = 5.0
+			OR = {
+				province_id = 1177
+				province_id = 1179
+				province_id = 2856
+				province_id = 1172
+				province_id = 1167
+			}
+		}
+		modifier = {
 			factor = 1.5
 			region = brazil_region
 		}
@@ -2222,7 +2232,7 @@ coal = {
 	}
 	
 	modifier = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.2
 	}
 	
 	province = {
@@ -2237,7 +2247,7 @@ coal = {
 cloves = {
 	color = { 1.0 0.5 0.85 }
 	modifier = {
-		trade_efficiency = 0.05
+		trade_efficiency = 0.15
 	}
 	province = {
 		province_trade_power_modifier = 0.2

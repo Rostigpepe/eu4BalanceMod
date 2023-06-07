@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 svetitskhoveli_cathedral = {
 	# province it starts in
 	start = 4301
@@ -5452,6 +5453,8 @@ versailles = {
 
 
 
+=======
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 #####			Patrick Cathedral			#####
 gme_patrick_cathedral = {
 	# province it starts in
@@ -6573,7 +6576,11 @@ gme_castello_estense = {
 		province_modifiers = {
 			local_defensiveness = 0.15
 			local_regiment_cost = -0.10
+<<<<<<< HEAD
 			trade_goods_size = 0.1
+=======
+			trade_goods_size = 1
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		area_modifier = {
 		}
@@ -6591,11 +6598,20 @@ gme_castello_estense = {
 			factor = 2000
 		}
 		province_modifiers = {
+<<<<<<< HEAD
 			local_defensiveness = 0.25
 			trade_goods_size = 0.25
 		}
 		area_modifier = {
 			local_regiment_cost = -0.10
+=======
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_regiment_cost = -0.10
+			local_defensiveness = 0.25
+			trade_goods_size = 0.5
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		country_modifiers = {
 			artillery_cost = -0.05
@@ -6613,11 +6629,20 @@ gme_castello_estense = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
+<<<<<<< HEAD
 			trade_goods_size = 0.5
+=======
+			trade_goods_size = 2
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		area_modifier = {
 			local_production_efficiency = 0.1
 			local_regiment_cost = -0.15
+<<<<<<< HEAD
+=======
+			local_defensiveness = 0.33
+			trade_goods_size = 1
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		country_modifiers = {
 			artillery_cost = -0.1
@@ -6982,7 +7007,10 @@ gme_university_graz = {
 			factor = 2500
 		}
 		province_modifiers = {
+<<<<<<< HEAD
 			institution_growth = 0.5
+=======
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		area_modifier = {
 			local_institution_spread = 0.15
@@ -7007,6 +7035,7 @@ gme_university_graz = {
 			factor = 5000
 		}
 		province_modifiers = {
+<<<<<<< HEAD
 			institution_growth = 1
 		}
 		area_modifier = {
@@ -7015,6 +7044,15 @@ gme_university_graz = {
 		}
 		country_modifiers = {
 			technology_cost = -0.05
+=======
+		}
+		area_modifier = {
+			local_institution_spread = 0.25
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			development_cost_in_primary_culture = -0.05
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 		}
 		on_upgraded = {
 			if = {
@@ -7501,6 +7539,7 @@ gme_kruje_castle = {
 			}
 		}
 	}
+<<<<<<< HEAD
 }
 
 
@@ -8500,4 +8539,6 @@ kilwa_city = {
 		on_upgraded = {
 		}
 	}
+=======
+>>>>>>> 0315b6a9432ef64400e6e07dc9a553a1edec01a2
 }

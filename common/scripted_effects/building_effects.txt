@@ -1,0 +1,11 @@
+delete_building_and_call_event_effect = {
+	every_owned_province = {
+		remove_building	= $BUILDING$
+	}
+	ROOT = {
+		country_event = { 
+			id = building.1 
+			days = 1
+		} 
+	}
+}

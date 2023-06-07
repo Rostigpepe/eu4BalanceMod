@@ -4,7 +4,7 @@ BM_hired_explorer = {
 }
 BM_free_colonist = {
 	colonists = 1
-	range = 1
+	range = 0.5
 	global_colonial_growth = 20
 }
 
@@ -13,7 +13,7 @@ BM_debt_tackled = {
 	land_maintenance_modifier = -0.5
 	interest = -1
 	inflation_action_cost = -0.25
-	inflation_reduction = 0.5
+	inflation_reduction = 0.1
 	global_regiment_recruit_speed = 1
 	land_morale = -0.33
 	global_regiment_cost = 0.25
@@ -46,4 +46,7 @@ BM_debt_tackled_2 = {
 }
 
 gecko_tackle_debt_timer = {
+}
+
+BM_tackle_debt_timer_2 = {
 }

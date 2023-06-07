@@ -109,11 +109,9 @@ monarchy = {
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
 				sisterhood_of_jeanne_darc_reform
-				#MODDED
-				#Georgian modded Governments
-				georgian_principality_reform
-				georgian_monarchy_reform
-				georgian_empire_reform
+				#BM MODDED GOVERNMENTS
+				hessian_militarized_monarchy_reform
+				hessian_modern_militarized_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -146,15 +144,9 @@ monarchy = {
 				house_of_lords_reform
 				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
-				#MODDED
-				BM_council_of_sheikhs_andalus
-				BM_house_of_knights_swe
-				BM_turkic_qasilbash_heirs_persia
-				BM_recruiting_the_sky_keepers_persia
-				BM_muscovite_manorialism_reform
-				BM_portugese_cortez_reform
-				BM_albertine_line_austria
-
+				#Modded BM:
+				empowering_the_junker_class_prussia
+				mamluk_privileges_mamluks
 			}
 		}
 		bureaucracy = {
@@ -180,14 +172,8 @@ monarchy = {
 				ottoman_provincial_government_system_reform
 				namestnik_reform
 				consulate_of_the_sea
-				#MODDED
-				BM_taifa_governors_andalus
-				BM_tajik_administration_persia
-				BM_satrapies_persia
-				BM_portugese_casa_de_india
-				BM_abolish_bastard_feudalism_english
-				saeristavo_reform
-				sadrosho_reform
+				#BM MODDED
+				revive_the_hisbah_mamluks
 			}
 		}
 		state_and_religion = {
@@ -226,11 +212,6 @@ monarchy = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
-				#MODDED
-				BM_cultural_investment_andalus
-				BM_swedish_church_ordinance_swe
-				BM_the_church_of_sweden_swe
-				BM_imperial_inquisition_austria
 			}
 		}
 		military_doctrines = {
@@ -290,10 +271,9 @@ monarchy = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
-				#MODDED
-				BM_henrician_reforms_english
-				BM_reorganize_the_imperial_army_austria
-				BM_honor_of_thai_kingdoms_people
+				#MODDED BM
+				enlist_arabian_tribesmen
+				hessian_elite_jaegers_reform
 			}
 		}
 		deliberative_assembly = {
@@ -319,13 +299,10 @@ monarchy = {
 				catalan_cortes_reform
 				great_council_of_mechelen_reform
 				parliament_vs_monarchy_reform
-				#MODDED
-				BM_corps_diplomatique_france_reform
-				BM_parliamentary_order_swe
-				BM_ghulam_governates_persia
-				BM_diverse_estates_of_austria
-				BM_the_supreme_governor_english
-				karavi_reform
+				#Modded BM:
+				reformed_legal_system_prussia
+				turkicized_elite_mamluks
+				found_the_rothschilds_reform
 			}
 		}
 		growth_of_administration = {
@@ -348,12 +325,9 @@ monarchy = {
 				direct_royal_administration_reform
 				administration_of_the_parliament_reform
 				strengthened_parliament_reform
-				#MODDED
-				BM_taha_divisions_andalus
-				BM_the_rise_of_bourgeoisie_aristocracy_reform
-				BM_abbas_reforms_persia
-				BM_academy_of_sciences_reform
-				BM_declaratio_ferdinandei_austria
+				#Modded BM:
+				kreditwerk_prussia
+				foreign_recruitment_mamluks
 			}
 		}
 		economical_matters = {
@@ -375,14 +349,9 @@ monarchy = {
 				thalassocracy_reform
 				royal_charters_reform
 				commercial_trade_empire_reform
-				#MODDED
-				BM_tariffs_trading_rights_english
-				BM_continental_system_reform
-				BM_counsil_souverein_reform
-				BM_competing_with_foreign_powers_swe
-				BM_silk_traders_persia
-				BM_siberian_frontier_expeditionaries_reform
-				BM_utilising_donau_elbian_industrial_sectors_austria
+				#Modded BM:
+				frederick_wilhelm_reforms_prussia
+				hessian_military_complex_reform
 			}
 		}
 		legitimation_of_power = {
@@ -392,10 +361,6 @@ monarchy = {
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
-				#MODDED
-				BM_droit_divin_reform
-				BM_russian_autocratism_reform
-				BM_the_robot_patent_austria
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -410,12 +375,6 @@ monarchy = {
 				#1.35 Addition
 				mng_seal_of_the_emperor_reform
 				strengthen_bakuhan_system_reform
-				#MODDED
-				BM_times_of_peace_and_of_security_swe
-				BM_principle_of_fiqh_persia
-				BM_toleration_of_all_faiths_edict_reform
-				BM_revoke_reichsfreiheit_austria
-				BM_bill_of_rights_english
 			}
 		}
 		separation_of_power = {
@@ -428,8 +387,6 @@ monarchy = {
 				#1.35
 				peters_government_reform
 				nizam_i_cedid_reform
-				#MODDED
-				BM_royaume_du_soleil_reform
 			}
 		}
 	}
@@ -638,6 +595,7 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				# BM GOVERNMENTS
 			}
 		}
 		republican_virtues = {
@@ -659,8 +617,7 @@ republic = {
 				namestnik_reform
 				oprichnina_reform
 				consulate_of_the_sea
-				#MODDED
-				BM_moedernegotie_reform
+				#BM GOVERNMENTS REFORM 
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -678,7 +635,6 @@ republic = {
 				legislative_assembly_reform
 				national_constituent_reform
 				national_assembly_reform
-				BM_vroedschappen_reform
 			}
 		}
 		republic_and_religion = {
@@ -799,8 +755,6 @@ republic = {
 				#1.35
 				governing_senate_reform
 				enforced_autocracy_reform
-				#MODDED
-				BM_ware_vrijheid_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -810,8 +764,6 @@ republic = {
 				union_of_states_reform
 				cultural_administration_reform
 				penal_colonies_reform
-				#MODDED
-				BM_confederation_of_states_reform
 			}
 		}
 		economical_matters_republic = {
@@ -836,8 +788,6 @@ republic = {
 				thalassocracy_reform
 				royal_charters_reform
 				commercial_trade_empire_reform
-				#MODDED
-				BM_united_indian_companies_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -863,8 +813,6 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
-				#MODDED
-				BM_tolerant_principle_reform
 			}
 		}
 		electorate = {
@@ -878,8 +826,6 @@ republic = {
 				rule_through_plunder_reform
 				admiralty_reform
 				military_rulership_reform
-				#MODDED
-				BM_regents_reform
 			}
 		}
 		office_selection = {
@@ -888,8 +834,6 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				pirate_representation_reform
-				#MODDED
-				BM_raadspensionaris_reform
 			}
 		}
 		question_of_dictatorship = {
@@ -1005,23 +949,12 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
-				#MODDED
-				BM_tribal_herders_steppes_reform
-				BM_tribal_slave_raids_reform
-				BM_tribal_pax_mongolica_reform
-				BM_tribal_three_tribes_reform
-				BM_tribal_snow_life_reform
 			}
 		}
 		tribal_religion = {
 			reforms = {
 				religious_societies_reform
 				lip_service_reform
-				#MODDED
-				BM_tribal_tolerance_church_reform
-				BM_tribal_tengri_world_reform
-				BM_tribal_charade_reform
-				BM_tribal_one_on_high_reform
 			}
 		}
 		tribal_military_doctrines = {
@@ -1081,35 +1014,12 @@ tribal = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
-				#MODDED
-				BM_tribal_gunpowder_weapons_reform
-				BM_tribal_traditionalism_reform
-				BM_tribal_tatar_raiders_reform
-				BM_tribal_lessons_reform
-				BM_tribal_mongol_ties_reform
-			}
-		}
-		#tribal_regional_pursuit = { ###      TO BE FIXED      ###
-			#reforms = {
-				#tribal_subject_relations_reform
-				#tribal_territorial_rights_reform
-				#tribal_legacy_gol_reform
-				#tribal_silk_road_reform
-				#tribal_jurchen_tea_reform
-				#tribal_settle_hinterlands_reform
 			}
 		}
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
-				#MODDED
-				BM_tribal_subject_relations_reform
-				BM_tribal_territorial_rights_reform
-				BM_tribal_legacy_gol_reform
-				BM_tribal_silk_road_reform
-				BM_tribal_jurchen_tea_reform
-				BM_tribal_settle_hinterlands_reform
 			}
 		}
 		tribal_reformation = {
@@ -1122,13 +1032,6 @@ tribal = {
 				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
-				
-				#MODDED TIER 7:
-				BM_tribal_feudal_subjects_reform
-				BM_tribal_advanced_tribe_reform
-				BM_tribal_cossacks_reform
-				BM_tribal_law_of_yassa_reform
-				BM_tribal_mandate_heaven_reform
 			}
 		}
 	}

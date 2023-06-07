@@ -1,0 +1,23 @@
+country_decisions = {
+	reforms_GE_hesse_modernization = {
+		major = yes
+		potential = {
+			has_reform = hessian_militarized_monarchy_reform
+		}
+		allow = {
+			absolutism = 50
+			army_professionalism = 0.50
+			army_tradition = 75
+			mil = 4
+			stability = 3
+			mil_power = 300
+		}
+		effect = {
+			add_mil_power = -300
+			add_government_reform = hessian_modern_militarized_monarchy_reform
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

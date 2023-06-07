@@ -1,0 +1,255 @@
+# General building deletion
+
+country_event = {
+	id = building.1
+    title = building.1.t
+    desc = building.1.d
+	is_triggered_only = yes
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	option = {
+		name = building.1.manufactories
+        ROOT = {
+            country_event = { 
+                id = building.1.1
+                days = 1
+            } 
+        }
+	}
+
+	# Fort chain
+	option = {
+		name = building_fort_15th
+		trigger = { ROOT = { fort_15th = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = fort_15th }
+	}
+	option = {
+		name = building_fort_16th
+		trigger = { ROOT = { fort_16th = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = fort_16th }
+	}
+	option = {
+		name = building_fort_17th
+		trigger = { ROOT = { fort_17th = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = fort_17th }
+	}
+	option = {
+		name = building_fort_18th
+		trigger = { ROOT = { fort_18th = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = fort_18th }
+	}
+
+	# Marketplace chain
+	option = {
+		name = building_marketplace
+		trigger = { ROOT = { marketplace = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = marketplace }
+	}
+	option = {
+		name = building_trade_depot
+		trigger = { ROOT = { trade_depot = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = trade_depot }
+	}
+	option = {
+		name = building_stock_exchange
+		trigger = { ROOT = { stock_exchange = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = stock_exchange }
+	}
+
+	# Temple chain
+	option = {
+		name = building_temple
+		trigger = { ROOT = { temple = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = temple }
+	}
+	option = {
+		name = building_cathedral
+		trigger = { ROOT = { cathedral = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = cathedral }
+	}
+
+	# Workshop chain
+	option = {
+		name = building_workshop
+		trigger = { ROOT = { workshop = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = workshop }
+	}
+	option = {
+		name = building_counting_house
+		trigger = { ROOT = { counting_house = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = counting_house }
+	}	
+
+	# Govcap buildings chain
+	option = {
+		name = building_courthouse
+		trigger = { ROOT = { courthouse = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = courthouse }
+	}
+	option = {
+		name = building_town_hall
+		trigger = { ROOT = { town_hall = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = town_hall }
+	}
+
+	# Coastal defence chain
+	option = {
+		name = building_coastal_defence
+		trigger = { ROOT = { coastal_defence = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = coastal_defence }
+	}
+	option = {
+		name = building_naval_battery
+		trigger = { ROOT = { naval_battery = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = naval_battery }
+	}
+
+	# Education chain
+	option = {
+		name = building_university
+		trigger = { ROOT = { university = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = university }
+	}
+
+	# Manpower chain
+	option = {
+		name = building_barracks
+		trigger = { ROOT = { barracks = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = barracks }
+	}
+	option = {
+		name = building_training_fields
+		trigger = { ROOT = { training_fields = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = training_fields }
+	}
+
+	# Land FL chain
+	option = {
+		name = building_regimental_camp
+		trigger = { ROOT = { regimental_camp = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = regimental_camp }
+	}
+	option = {
+		name = building_conscription_center
+		trigger = { ROOT = { conscription_center = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = conscription_center }
+	}
+	
+	# Shipyard chain
+	option = {
+		name = building_shipyard
+		trigger = { ROOT = { shipyard = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = shipyard }
+	}
+	option = {
+		name = building_grand_shipyard
+		trigger = { ROOT = { grand_shipyard = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = grand_shipyard }
+	}
+
+	# Dock chain
+	option = {
+		name = building_dock
+		trigger = { ROOT = { dock = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = dock }
+	}
+	option = {
+		name = building_drydock
+		trigger = { ROOT = { drydock = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = drydock }
+	}
+
+	option = {
+		name = building.1.exit
+	}
+}
+
+# Manufactory removal
+
+country_event = {
+	id = building.1.1
+    title = building.1.1.t
+    desc = building.1.1.d
+	is_triggered_only = yes
+	picture = CITY_DEVELOPMENT_eventPicture
+    
+	option = {
+		name = building_tradecompany
+		trigger = { ROOT = { tradecompany = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = tradecompany }
+	}
+    
+	option = {
+		name = building_textile
+		trigger = { ROOT = { textile = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = textile }
+	}
+    
+	option = {
+		name = building_wharf
+		trigger = { ROOT = { wharf = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = wharf }
+	}
+    
+	option = {
+		name = building_plantations
+		trigger = { ROOT = { plantations = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = plantations }
+	}
+    
+	option = {
+		name = building_farm_estate
+		trigger = { ROOT = { farm_estate = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = farm_estate }
+	}
+    
+	option = {
+		name = building_mills
+		trigger = { ROOT = { mills = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = mills }
+	}
+    
+	option = {
+		name = building_furnace
+		trigger = { ROOT = { furnace = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = furnace }
+	}
+    
+	option = {
+		name = building_soldier_households
+		trigger = { ROOT = { soldier_households = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = soldier_households }
+	}
+    
+	option = {
+		name = building_impressment_offices
+		trigger = { ROOT = { impressment_offices = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = impressment_offices }
+	}
+    
+	option = {
+		name = building_ramparts
+		trigger = { ROOT = { ramparts = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = ramparts }
+	}
+    
+	option = {
+		name = building_state_house
+		trigger = { ROOT = { state_house = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = state_house }
+	}
+
+	option = {
+		name = building.1.general_buildings
+        ROOT = {
+            country_event = { 
+                id = building.1
+                days = 1
+            } 
+        }
+	}
+
+	option = {
+		name = building.1.exit
+	}
+}

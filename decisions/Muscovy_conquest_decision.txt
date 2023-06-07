@@ -1,0 +1,27 @@
+country_decisions = {
+
+	conquest_of_novgorod_decision = {
+		potential = {
+			tag = MOS
+			NOT = { has_country_flag = conquest_of_novgorod_flag }
+		}
+		allow = {
+			controls = 310
+			war_score_against = {
+				who = NOV
+				value = 75
+			}
+		}
+		effect = {
+			country_event = { 
+				id = BM_Muscovy_Events.1
+				days = 1
+				tooltip = BM_CONQUEST_OF_NOVGOROD_TOOLTIP
+			}
+			set_country_flag = conquest_of_novgorod_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

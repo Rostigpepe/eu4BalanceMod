@@ -1,0 +1,70 @@
+﻿ l_english:
+
+ #PRUSSIA
+ empowering_the_junker_class_prussia:0 "Empowering the Junker Class"
+ empowering_the_junker_class_prussia_desc:0 "Let us empower the Junker Class to support our reign. This class of lower nobility is strong enough to form a powerful base against the magnates, burghers, and clergy. From this we can dominate our enemies, both foreign and domestic."
+
+ kreditwerk_prussia:0 "The Kreditwerk"
+ kreditwerk_prussia_desc:0 "The margraves of Brandenburg, and later Prussia, had historically been tasked with financing the monarch with tax income. But in the 16th-century, many of these margraves had become financially careless, highly indepted, and insolvent. To avoid this insolvency of spreading and affecting the states' income, the Kreditwerk were established. This institution was administratively independent from the elector and the Großer Ausschuß ('Great Committee') of the estates, and was tasked with strictly regulating the margrave's liabilities, private income, as well as their financial contributions to the state."
+
+ reformed_legal_system_prussia:0 "Reformed Legal System"
+ reformed_legal_system_prussia_desc:0 "As our Kaiserreich has expanded, and aged, the extent and complexity of overlapping, and often inconsistent, legal practices has grown out of control. Legal cases are decided by local, often privately employed, judges that act according to rules that differ so much from case to case that it is impossible for the state to guarantee any form of legal certainty. Some courts are rendered impotent by the maze of local, feudal, state, and imperial jurisdiciton, and others make a fortune by corrupting the authority of our laws. It is time we put our great number of legal minds and scholars to use. A new, uniform, consistent, and well-regulated legal system will be put in place for our state."
+
+ frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
+ frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
+
+ BM_Kreditwork:0 "Kreditwork"
+
+ BM_immigrant_settlements:0 "Immigrant Settlements"
+ BM_immigrant_settlements_desc:0 "Religious immigrants are settling in this area."
+
+
+ #MAMLUKS
+ mamluk_privileges_mamluks:0 "Mamluk Privileges"
+ mamluk_privileges_mamluks_desc:0 "The foreign born pseudo-nobility that dominated the mamluk sultanate were distinguished from their egyptian lessers through a multitude of laws and privileges. Such as the right to bear arms or to rise to the higher civic positions."
+
+ enlist_arabian_tribesmen:0 "Arabian Horses"
+ enlist_arabian_tribesmen_desc:0 "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
+
+ enables_arabian_horses:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
+
+ Arabian_Horses_1:0 "Arabian Horses"
+ Arabian_Horses_2:0 "Arabian Horses"
+ Arabian_Horses_3:0 "Arabian Horses"
+ Arabian_Horses_4:0 "Arabian Horses"
+ Arabian_Horses_5:0 "Arabian Horses"
+
+ revive_the_hisbah_mamluks:0 "Revive the Hisbah"
+ revive_the_hisbah_mamluks_desc:0 "The Hisbah was founded during the early mamluk rule, in order to root out corruption amongst merchants and bankers. Later it started to also apply to the iqta system, which had slowly become heriditary and thus less effective. Under later rule this system became corrupt itself, as nobles attempted to become one of the muhtasib, or inspector generals, of this organization to wield to organization for political goals. Let is revive this organization and bring it back to the weeding out of corrupt merchants and the removal of local hereditary iqta holders."
+
+ turkicized_elite_mamluks:0 "Turkicized Elite"
+ turkicized_elite_mamluks_desc:0 "The Mamluk Elite distinguised itself from their arabic-speaking subjects through their own turkic language, names and ethnicity. With Turkic Mamluks enjoying a higher status, and many fresh Mamluks being turkicized during their education. With the sons of Mamluks often serving in the Sultanate's civil administration"
+
+ foreign_recruitment_mamluks:0 "Foreign Recruitment"
+ foreign_recruitment_mamluks_desc:0 "By sending our merchants off to many foreign places—we can ensure our supply of new Mamluks— which will never be cut off again as it was during the Mongol and Crusader Invasions."
+
+
+ #Hesse 
+hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
+ hessian_militarized_monarchy_reform_desc:0 "The Duchy of Hesse needs no undisciplined, greedy foreign mercenaries to defend her, she needs only her own men. We have militarized our state to a degree that one out of every seven men is in the army, and he will fight for his homeland, not the filling of his pocket."
+ hessian_modern_militarized_monarchy_reform:0 "Enlightened Hessian Military State"
+ hessian_modern_militarized_monarchy_reform_desc:0 "Friedrich of Cassel’s Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
+ hessian_military_complex_reform:0 "Hessian Military-Industrial Complex"
+ hessian_military_complex_reform_desc:0 "The income from our troops' expeditions in foreign lands will go to turning Hesse into a prosperous home for the returning men. Let us make sure our population can all afford wine and meat."
+ hessian_elite_jaegers_reform:0 "Elite Jägers"
+ hessian_elite_jaegers_reform_desc:0 "The Hessian Jäger (Sharpshooter) is armed with three things; ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
+ found_the_rothschilds_reform:0 "Found the Rothschild Dynasty"
+ found_the_rothschilds_reform_desc:0 "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
+ mechanic_enables_military_exports_yes:0 "Military-Industrial Complex; §G2%§! Goods Produced per 10% Army Professionalism.  Up to a maximum of §G20%§! Goods Produced."
+ Military_Industry_1:0 "Meagre Arms Workshops"
+ Military_Industry_2:0 "Arms Workshops"
+ Military_Industry_3:0 "Expanded Arms Industry"
+ Military_Industry_4:0 "Meagre Military Works"
+ Military_Industry_5:0 "Military Works"
+ Military_Industry_6:0 "Expanded Military Works"
+ Military_Industry_7:0 "Minor Military Industrial Factory"
+ Military_Industry_8:0 "Military Industrial Factory"
+ Military_Industry_9:0 "Expanded Military Factory"
+ Military_Industry_10:0 "Early Military-Industrial Complex"
+ reforms_GE_hesse_modernization_title:1 "Modernize Hesse"
+ reforms_GE_hesse_modernization_desc:1 "Friedrich of Cassel’s Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
