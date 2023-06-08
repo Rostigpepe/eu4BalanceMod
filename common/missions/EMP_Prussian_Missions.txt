@@ -16,7 +16,6 @@ emp_bra_pru_1 = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = NGF
 			AND = {
 				OR = {
 					NOT = { has_dlc = "Lions of the North" }
@@ -112,7 +111,6 @@ emp_bra_pru_1 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 10
 			west_prussia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -193,16 +191,16 @@ emp_bra_pru_1 = {
 				hidden_effect = { 
 					west_prussia_area = {
 						random_list = { 
-							1 = { add_base_tax = 2 } 
-							1 = { add_base_production = 2 } 
-							1 = { add_base_manpower = 2 } 
+							1 = { add_base_tax = 1 } 
+							1 = { add_base_production = 1 } 
+							1 = { add_base_manpower = 1 } 
 						}
 					}
 					east_prussia_area = {
 						random_list = { 
-							1 = { add_base_tax = 2 } 
-							1 = { add_base_production = 2 } 
-							1 = { add_base_manpower = 2 } 
+							1 = { add_base_tax = 1 } 
+							1 = { add_base_production = 1 } 
+							1 = { add_base_manpower = 1 } 
 						}
 					}
 				}
@@ -262,8 +260,8 @@ emp_bra_pru_1 = {
 					if = {
 						limit = { 
 							num_of_owned_provinces_with = {
-								development = 20
-								value = 10 
+								has_building = university 
+								value = 25 
 							}
 						}
 						add_ruler_modifier = {
@@ -297,7 +295,6 @@ emp_bra_pru_1 = {
 			}
 		}
 		effect = {
-			add_stability = 1
 			set_country_flag = renovate_berlin_flag
 			country_event = { id = flavor_brapru.20 }
 			
@@ -360,14 +357,8 @@ emp_bra_pru_1_b = {
 					NOT = { was_tag = TEU }
 					NOT = { was_tag = DNZ }
 				}
-			}		
-			OR = {
-				tag = PRU
-				AND = {
-					tag = NGF
-					was_tag = PRU
-				}
 			}
+			tag = PRU
 		}
 	}
 	has_country_shield = yes
@@ -475,7 +466,6 @@ emp_bra_pru_2 = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = NGF
 			AND = {
 				OR = {
 					NOT = { has_dlc = "Lions of the North" }
@@ -547,13 +537,10 @@ emp_bra_pru_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 15
+				value = 6
 				OR = {
 					area = franconia_area
 					area = upper_franconia_area
-					area = hesse_area 
-					area = thuringia_area 
-					area = palatinate_area 
 				}
 			}
 		}
@@ -576,21 +563,6 @@ emp_bra_pru_2 = {
 			}
 			add_mil_power = 100
 			add_accepted_culture_or_dip_power = { culture = franconian }
-			custom_tooltip = pru_uniting_franconia_success_tt:0
-			ANS = {
-				inherit = BYT
-				change_tag = FKN
-				on_change_tag_effect = yes
-				restore_country_name_effect = yes
-				set_country_flag = formed_franconia_flag
-				swap_non_generic_missions = yes
-			}
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 		}
 		ai_weight = {
 			factor = 75
@@ -838,7 +810,6 @@ emp_bra_pru_3 = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = NGF
 			AND = {
 				OR = {
 					NOT = { has_dlc = "Lions of the North" }
@@ -1225,7 +1196,6 @@ emp_bra_pru_4 = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = NGF
 			AND = {
 				OR = {
 					NOT = { has_dlc = "Lions of the North" }

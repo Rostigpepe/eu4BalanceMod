@@ -50,9 +50,6 @@ emp_burgundy_1 = {
 			4719 = {
 				add_permanent_claim = ROOT
 			}
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
 		}
 		ai_weight = {
 			factor = 500	#Integrate vassal
@@ -102,7 +99,6 @@ emp_burgundy_1 = {
 			102 = {
 				add_permanent_claim = ROOT
 			}
-			add_army_professionalism = 0.1
 		}
 		ai_weight = {
 			factor = 500	#Rivalry
@@ -589,34 +585,6 @@ emp_burgundy_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			flanders_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_core = ROOT
-			}
-			brabant_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_c = ROOT
-			}
-			holland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			north_brabant_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_core = ROOT
-			}
 		}
 	}
 	
@@ -648,14 +616,6 @@ emp_burgundy_3 = {
 			}
 			1742 = {
 				add_permanent_claim = ROOT
-			}
-			define_advisor = {
-				type = diplomat
-				name = "Guillame de Faeuvru"
-				skill = 2
-				culture = burgundian
-				religion = catholic
-				cost_multiplier = 0.25
 			}
 		}
 		ai_weight = {
@@ -693,7 +653,7 @@ emp_burgundy_3 = {
 		}
 		
 		effect = {
-			add_prestige = 25
+			add_prestige = 15
 			add_country_modifier = {
 				name = "bur_diplo_mod"
 				duration = 5475
@@ -728,13 +688,13 @@ emp_burgundy_3 = {
 		}
 		
 		effect = {
-			add_prestige = 25
-			add_mil_power = 150
+			add_prestige = 20
+			add_mil_power = 100
 			1975 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
-					power = 30
+					power = 20
 					key = bur_channel_ambition
 				}
 			}
@@ -795,7 +755,7 @@ emp_burgundy_3 = {
 					hidden_effect = {
 						change_estate_land_share = {
 							estate = all
-							share = -10
+							share = -5
 						}
 					}
 				}
@@ -845,7 +805,6 @@ emp_burgundy_3 = {
 			has_regency = no
 		}
 		effect = {
-			add_mil_power = 100
 			country_event_with_insight = {
 				id = new_flavour_bur.5
 				insight_tooltip = INSIGHT_JUST_TOOLTIP
@@ -1222,7 +1181,6 @@ emp_burgundy_4 = {
 			has_regency = no
 		}
 		effect = {
-			add_manpower = 10
 			if = {
 				limit = {
 					exists = FRA
@@ -1267,7 +1225,7 @@ emp_burgundy_4 = {
 					country_event = { id = new_flavour_bur.6 }
 					every_subject_country = {
 						limit = { capital_scope = { region = france_region } }
-						add_liberty_desire = 65
+						add_liberty_desire = 50
 					}
 				}
 			}
@@ -1536,7 +1494,7 @@ emp_burgundy_4 = {
 				add_legitimacy = 10
 			}
 			else = {
-				add_prestige = 25
+				add_prestige = 15
 			}
 			add_country_modifier = {
 				name = bur_influence_over_princes
@@ -1588,7 +1546,7 @@ emp_burgundy_4 = {
 			}
 		}
 		effect = {
-			add_prestige = 50
+			add_prestige = 20
 			if = {
 				limit = { hre_size = 1 }
 				add_imperial_influence = 25
@@ -1753,14 +1711,12 @@ emp_burgundy_5 = {
 					name = bur_special_place_in_popes_heart
 					duration = 7300
 				}
-				add_papal_influence = 25
 			}
 			else = {
 				add_country_modifier = {
 					name = bur_pope_is_hated
 					duration = 7300
 				}
-				add_power_projection = 10
 			}
 		}
 	}
@@ -1803,8 +1759,6 @@ emp_burgundy_5 = {
 			has_regency = no
 		}
 		effect = {
-			add_dip_power = 100
-			add_mil_power = 100
 			if = {
 				limit = {
 					exists = TUR

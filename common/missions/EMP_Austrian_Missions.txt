@@ -167,7 +167,7 @@ emp_hab_empire_branch = {
 								NOT = { is_subject_of = ROOT }
 								is_part_of_hre = yes
 								num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-									value = 20
+									value = 10
 									continent = europe
 								}
 							}
@@ -405,9 +405,7 @@ emp_hab_empire_branch = {
 			}
 		}
 		effect = {
-			add_prestige_or_monarch_power = {
-				amount = 50
-			}
+			add_prestige = 33
 			add_country_modifier = {
 				name = hab_empire_has_rome
 				duration = -1
@@ -612,9 +610,6 @@ emp_hab_prestige_branch = {
 						duration = 7300
 					}
 				}
-				add_stability_or_adm_power = {
-					amount = 100
-				}
 			}
 		}
 	}
@@ -656,7 +651,7 @@ emp_hab_prestige_branch = {
 			num_of_owned_provinces_with = {
 				value = 5
 				culture = austrian
-				has_production_building_trigger = yes
+				has_manufactory_trigger = yes
 			}
 		}
 		effect = {
@@ -688,7 +683,7 @@ emp_hab_prestige_branch = {
 						ROOT = {
 							num_of_owned_provinces_with = {
 								value = 5
-								development = 25
+								development = 30
 								is_part_of_hre = yes
 							}
 						}
@@ -704,14 +699,14 @@ emp_hab_prestige_branch = {
 				is_emperor = yes
 				num_of_owned_provinces_with = {
 					value = 5
-					development = 25
+					development = 30
 					is_part_of_hre = yes
 				}
 			}
 			else = {
 				num_of_owned_provinces_with = {
 					value = 5
-					development = 25
+					development = 30
 				}
 			}
 		}
@@ -738,7 +733,7 @@ emp_hab_prestige_branch = {
 		trigger = {
 			134 = {
 				owned_by = root
-				development = 40
+				development = 50
 				num_of_buildings_in_province = 6
 			}
 			has_adm_advisor_3 = yes
@@ -1144,7 +1139,7 @@ emp_hab_german_expansion_branch = {
 				add_nationalism = -5
 				add_province_modifier = {
 					name = hab_holdings_in_swabia
-					duration = -1
+					duration = 10950
 				}
 			}
 			lower_swabia_area = {
@@ -1152,7 +1147,7 @@ emp_hab_german_expansion_branch = {
 				add_nationalism = -5
 				add_province_modifier = {
 					name = hab_holdings_in_swabia
-					duration = -1
+					duration = 10950
 				}
 			}
 			upper_rhineland_area = {
@@ -1160,7 +1155,7 @@ emp_hab_german_expansion_branch = {
 				add_nationalism = -5
 				add_province_modifier = {
 					name = hab_holdings_in_swabia
-					duration = -1
+					duration = 10950
 				}
 			}
 		}
@@ -1350,7 +1345,7 @@ emp_hab_german_expansion_branch_2 = {
 			}
 		}
 		effect = {
-			add_mil_power = 250
+			add_dip_power = 250
 			if = {
 				limit = { exists = PRU }
 				if = {
@@ -1526,7 +1521,6 @@ emp_hab_western_expansion_branch = {
 			}
 		}
 		effect = {
-			add_army_professionalism = 0.1
 			bourgogne_area = {
 				limit = {
 					NOT = { is_core = root }
@@ -2032,7 +2026,7 @@ emp_hab_more_italy_branch = {
 		effect = {
 			add_country_modifier = {
 				name = hab_conquest_of_italy
-				duration = 7300
+				duration = -1
 			}
 			italy_region = {
 				limit = {

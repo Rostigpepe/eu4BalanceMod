@@ -25,7 +25,7 @@ norse_ideas = {
 		war_exhaustion = -0.03
 	}
 	norse_ideas_norse_seamen = {
-		own_coast_naval_combat_bonus = 
+		own_coast_naval_combat_bonus = 1
 		naval_morale = 0.15	
 	}
 	norse_ideas_a_wall_of_shields_for_the_king = {
@@ -597,11 +597,11 @@ GOT_ideas = {
 SCA_ideas = {
 	start = {
 		discipline = 0.05
-		global_trade_goods_size_modifier = 0.10
+		global_manpower_modifier = 0.2
 	}
 	
 	bonus = {
-		manpower_in_culture_group_provinces = 0.2
+		global_allowed_num_of_buildings = 1
 	}
 	
 	trigger = {
@@ -871,8 +871,7 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	fra_taille = {
-		global_tax_modifier = 0.1
-		war_taxes_cost_modifier = -0.5
+		global_tax_modifier = 0.15
 	}
 	lessons_hundred_years_war = {
 		army_tradition = 0.5
@@ -15948,25 +15947,25 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	lot_legacy_of_the_carolingians = {
-		prestige_decay = -0.005
-		prestige = 0.5
+		prestige_decay = -0.01
 	}
 	lot_glory_of_charlemagne = {
 		land_morale = 0.15
 	}
 	lot_dutch_cities = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 	lot_carolingian_renaissance_II = {
 		idea_cost = -0.1
 	}
 	lot_court_of_europe = {
-		prestige = 0.5
+		prestige = 1
 		advisor_cost = -0.1
 	}
 	lot_land_of_abbeys = {
 		papal_influence = 2
-		papal_influence_from_cardinals = 1
+		papal_influence_from_cardinals = 0.25
 	}
 	lot_european_empire = {
 		core_creation = -0.2

@@ -818,7 +818,6 @@ trade_refusal = {
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
 	global_own_trade_power = 0.25
-	reduced_trade_penalty_on_non_main_tradenode = -0.5
 	embargo_efficiency = 1
 	burghers_loyalty_modifier = 0.1
 	vaisyas_loyalty_modifier = 0.1
@@ -1462,13 +1461,13 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = 0
-	land_forcelimit	= 0
-	naval_forcelimit = 0
+	global_tax_income = 8
+	land_forcelimit	= 4
+	naval_forcelimit = 8
 }
 
 vassal_nation = {
-	development_cost = 0.25
+	development_cost = 0.10
 }
 
 primitive_nation = {

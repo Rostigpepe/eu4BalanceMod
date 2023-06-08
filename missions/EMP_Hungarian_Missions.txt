@@ -442,8 +442,9 @@ emp_hun_economy_political_branch = {
 			capital_scope = {
 				add_province_modifier = {
 					name = hun_great_city
-					duration = 7300
+					duration = -1
 				}
+				center_of_trade = 2
 			}
 		}
 	}

@@ -3343,10 +3343,6 @@ french_missions_3_normal_continued = {
 							estate = estate_church 
 							loyalty = 60 
 						}
-						estate_influence = { 
-							estate = estate_church 
-							influence = 80 
-						}
 						num_of_estate_agendas_completed = {
 							estate = estate_church 
 							value = 4 
@@ -3369,7 +3365,7 @@ french_missions_3_normal_continued = {
 		position = 17
 		trigger = {
 			OR = { 
-				crown_land_share = 90 
+				crown_land_share = 70 
 				monthly_mil = 16
 				if = {
 					limit = { has_dlc = "Cradle of Civilization" }
@@ -3782,10 +3778,17 @@ french_missions_4_normal = {
 							}
 						}
 					}
+					inherit = PRO
 					add_country_modifier = {
 						name = fra_close_ties_modifier
 						duration = 9125
 					}
+					limit = { 
+						LOR = { 
+							is_subject_of = PRO 
+						}
+					}
+					inherit = LOR
 				}
 			}
 		}

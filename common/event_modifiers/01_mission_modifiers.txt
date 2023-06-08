@@ -32,7 +32,7 @@ hegemonic_ambition = {
 #Generic Diplomatic Mission Rewards:
 
 influential_diplomacy = {
-	diplomatic_reputation = 1
+	diplomatic_reputation = 2
 }
 
 obedient_subjects = {
@@ -47,7 +47,7 @@ naval_enthusiasm_mission = {
 
 dominant_trade_hub = {
 	province_trade_power_value = 10
-	local_development_cost = -0.05
+	local_development_cost = -0.1
 	picture = "province_trade_power_value"
 }
 
@@ -59,7 +59,7 @@ growing_economy = {
 }
 
 building_spree = {
-	global_tax_income = 10
+	global_tax_income = 30
 }
 
 strong_treasury = {
@@ -67,7 +67,7 @@ strong_treasury = {
 }
 
 proto_industrialization = {
-	production_efficiency = 0.1
+	production_efficiency = 0.15
 }
 
 imperial_ambition = {
@@ -89,6 +89,7 @@ drove_back_the_turk = {
 succesful_bid_for_imperial_crown = {
 	prestige = 1
 	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
 }
 
 austrian_silesia = {
@@ -96,17 +97,18 @@ austrian_silesia = {
 }
 
 habsburg_bohemia = {
-	imperial_authority = 0.1
+	imperial_authority = 0.15
 	legitimacy = 1
 }
 
 austrian_empire = {
 	diplomatic_reputation = 1
-	global_unrest = -1
+	imperial_authority = 0.15
 }
 
 royal_hungary = {
 	global_manpower_modifier = 0.15
+	imperial_authority = 0.15
 }
 
 #Ottoman Missions:
@@ -166,6 +168,7 @@ russian_integration = {
 
 ruthenian_integration = {
 	local_autonomy = -0.1
+	core_creation = -0.1
 }
 
 convert_the_steppes = {
@@ -2140,13 +2143,13 @@ fra_into_germany = {
 }
 
 fra_colonial_enthusiasm = {
-	colonist_placement_chance = 0.05
-	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+	colonists = 1
 }
 
 fra_colonial_enthusiasm_2 = {
-	colonist_placement_chance = 0.05
-	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+	colonists = 1
 }
 
 # Omani missions
@@ -2491,6 +2494,7 @@ ori_bengal_inland_modifier = {
 
 rus_partition_poland_modifier = {
 	core_creation = -0.1
+	advisor_pool = 1
 }
 
 loyal_streltsy = {
@@ -2498,7 +2502,9 @@ loyal_streltsy = {
 }
 
 russian_autocracy = {
+	legitimacy = 1
 	global_autonomy = -0.1
+	all_estate_loyalty_equilibrium = -0.1
 }
 
 prikazy_modifier = {
@@ -2514,33 +2520,33 @@ rus_alaska_modifier = {
 third_rome_modifier = {	#Permanent, province
 	tolerance_own = 1
 	legitimacy = 1
-	local_manpower_modifier = 1
+	local_manpower_modifier = 1.5
 	local_development_cost = -0.2
 	local_defensiveness = 0.33
 	local_tax_modifier = 0.5
-	local_production_efficiency = 0.2
+	local_production_efficiency = 0.25
 }
 
 rus_reactionary_zeal = {
-	max_absolutism_effect = 0.1
+	all_power_cost = -0.025
 	administrative_efficiency = 0.05
 }
 
 mos_legitimacy_of_the_rurikovich = {
-	global_unrest = -1
-	legitimacy = 1
-	global_unrest = -1
-	global_rebel_suppression_efficiency = 0.2
+	global_unrest = -2
+	legitimacy = 1.5
+	global_autonomy = -0.1
 }
 
 mos_a_new_russian_authority = {
 	global_unrest = -1
+	legitimacy = 1
 	global_autonomy = -0.05
 }
 
 mos_the_secured_future_of_russia = {	#Permanent for ruler
 	national_focus_years = -20
-	all_estate_loyalty_equilibrium = 0.05
+	estate_interaction_cooldown_modifier = -0.2
 	reform_progress_growth = 0.25
 }
 
@@ -2583,10 +2589,12 @@ rus_unifier_of_russia = {
 
 rus_russian_caucasian_alliance = {	#Permanent until alliance is broken
 	diplomatic_upkeep = 1
+	tolerance_own = 1
 }
 
 rus_reinforced_defenses = {
-	local_fort_maintenance_modifier = -0.5
+	local_build_time = -0.25
+	local_fort_maintenance_modifier = -0.75
 	local_garrison_size = 0.33
 	local_defensiveness = 0.33
 }
@@ -2611,8 +2619,13 @@ rus_icon_pancreator_bonus = {
 
 rus_end_of_the_horde = {
 	land_morale = 0.05
-	global_prosperity_growth = 0.25
-	global_monthly_devastation = -0.1
+	shock_damage_received = -0.10
+}
+
+recovering_from_the_hordes = {
+	local_monthly_devastation = -0.05
+	local_culture_conversion_cost = -0.2
+	local_culture_conversion_time = -0.2
 }
 
 rus_local_russian_trade_center = {
@@ -2640,7 +2653,7 @@ rus_expansion_into_siberia = {
 rus_new_world_colonization = {
 	may_explore = yes
 	range = 0.25
-	colonists = 2
+	colonists = 1
 	global_colonial_growth = 20
 }
 
@@ -2660,16 +2673,18 @@ rus_the_realm_of_the_rus = {
 rus_support_of_the_boyars = {
 	nobles_loyalty_modifier = 0.15
 	manpower_recovery_speed = 0.1
+	regiment_manpower_usage = -0.1
 }
 
 rus_demoted_the_boyars = {
 	global_unrest = -2
-	reform_progress_growth = 0.25
+	estate_interaction_cooldown_modifier = -0.2
+	all_estate_influence_modifier = -0.1
 }
 
 rus_early_modernization_modifier = {
 	russian_modernization_gain_modifier = 0.5
-	innovativeness_gain = 0.5
+	yearly_innovativeness = 0.05
 }
 
 rus_center_of_modernization = {	#Permanent, province
@@ -2692,21 +2707,23 @@ rus_natural_scientist_focus = {
 	technology_cost = -0.1
 }
 rus_artist_focus = {
-	build_cost = -0.1
-	great_project_upgrade_cost = -0.1
+	build_cost = -0.2
+	great_project_upgrade_cost = -0.2
 }
 rus_treasurer_focus = {
-	global_tax_income = 24
+	global_tax_modifier = 0.25
 	advisor_cost = -0.15
 }
 rus_theologian_focus = {
-	tolerance_own = 2
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
 }
 rus_master_of_mint_focus = {
 	global_trade_goods_size_modifier = 0.1
 }
 rus_inquisitor_focus = {
 	missionaries = 1
+	global_missionary_strength = 0.01
 }
 
 rus_the_strong_motherland = {	#Permanent
@@ -2714,35 +2731,37 @@ rus_the_strong_motherland = {	#Permanent
 }
 
 rus_the_stable_empire = {
-	all_estate_loyalty_equilibrium = 0.05
-	stability_cost_modifier = -0.1
+	monarch_admin_power = 1
+	global_institution_spread = 0.15
+	stability_cost_modifier = -0.15
 }
 
 rus_trade_fleet = {	#Permanent
-	naval_maintenance_modifier = -0.05
+	naval_maintenance_modifier = -0.1
 	naval_tradition_from_trade = 0.5
-	global_ship_trade_power = 0.2
+	global_ship_trade_power = 0.25
 	trade_efficiency = 0.05
 }
 
 rus_war_fleet = {	#Permanent
-	naval_maintenance_modifier = -0.05
+	naval_maintenance_modifier = -0.1
 	naval_tradition_from_battle = 0.5
 	heavy_ship_power = 0.1
-	light_ship_power = 0.1
+	galley_power = 0.1
 }
 
 rus_supremacy_of_the_duna = {	#Permanent
 	estate_interaction_cooldown_modifier = -0.2
-	stability_cost_modifier = -0.1
+	parliament_backing_chance = 0.25
 }
 
 rus_absolute_rule = {	#Permanent
-	allow_free_estate_privilege_revocation = yes
+	yearly_absolutism = 1
+	max_absolutism_effect = 0.1
 }
 
 rus_early_center_of_industrialization = {	#Permanent, province
-	local_autonomy = -0.05
+	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 0.25
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
@@ -2825,24 +2844,32 @@ rus_religious_zeal = {	#Permanent
 }
 
 rus_western_military_tactics = {	#Permanent
-	discipline = 0.05
+	military_tactics = 0.1
 }
 
 rus_bureaucratic_adm_focus = {
 	reform_progress_growth = 0.25
+	centralize_state_cost = -0.25
 	adm_tech_cost_modifier = -0.1
 }
 rus_bureaucratic_dip_focus = {
-	trade_efficiency = 0.05
+	trade_efficiency = 0.1
+	placed_merchant_power_modifier = 0.1
 	dip_tech_cost_modifier = -0.1
 }
 rus_bureaucratic_mil_focus = {
-	army_tradition = 0.5
+	army_tradition = 1
+	reinforce_cost_modifier = -0.15
 	mil_tech_cost_modifier = -0.1
 }
 
 rus_freed_peasants = {	#Permanent
 	global_trade_goods_size_modifier = 0.1
+}
+
+rus_revolutionary_zeal = {	#Permanent
+	yearly_revolutionary_zeal = 0.5
+	max_revolutionary_zeal= 20
 }
 
 # TR Novgorodian missions
@@ -4958,7 +4985,7 @@ sax_lots_of_influence = {
 
 hab_conquest_of_italy = {
 	unjustified_demands = -0.2
-	ae_impact = -0.1
+	imperial_authority_value = 0.05
 }
 
 hab_victory_over_ottomans = {
@@ -5097,7 +5124,7 @@ hab_austrian_australia = {
 #Burgundian Missions
 
 bur_italian_king = {
-	global_institution_spread = 0.1
+	embracement_cost = -0.15
 	idea_cost = -0.05
 }
 
@@ -5125,6 +5152,7 @@ bur_carolingia = {
 
 bur_german_empire = {
 	num_accepted_cultures = 2
+	manpower_in_accepted_culture_provinces = 0.1
 }
 
 bur_seed_is_strong = {
@@ -5132,7 +5160,8 @@ bur_seed_is_strong = {
 }
 
 bur_we_shall_not_be_annexed = {
-	diplomatic_annexation_cost = -0.15
+	ae_impact = -0.1
+	diplomatic_reputation = 3
 }
 
 bur_special_place_in_popes_heart = {
@@ -5141,13 +5170,14 @@ bur_special_place_in_popes_heart = {
 }
 
 bur_pope_is_hated = {
-	prestige = 0.5
-	global_missionary_strength = 0.03
+	prestige = 1
+	power_projection_from_insults = 1
 }
 
 bur_lowlands_secured_mod = {
-	local_autonomy = -0.1
+	manpower_recovery_speed = 0.15
 	local_unrest = -2
+	global_autonomy = -0.2
 }
 
 bur_realm_united_mod = {
@@ -9279,7 +9309,7 @@ fra_colonial_rush_modifier = {
 	global_colonial_growth = 25
 }
 fra_french_bombards_modifier = { 
-	assault_fort_ability = 0.25
+	artillery_barrage_cost = -0.5
 	artillery_level_modifier = 1
 }
 fra_hudson_bay_fur_modifier = {
@@ -9349,11 +9379,11 @@ fra_trade_fair_prosperity_modifier = {
 }
 
 fra_letat_cest_moi_modifier = {
-	overextension_impact_modifier = -0.1
+	administrative_efficiency = 0.05
 }	
 
 fra_absolutism_modifier = {
-	administrative_efficiency = 0.05  
+	harsh_treatment_cost = -0.75
 }
 
 fra_french_industrial_revolution_modifier = {
@@ -9427,8 +9457,7 @@ fra_heart_of_protestantism_modifier = {
 fra_moderate_path_modifier = {
 	tolerance_of_heathens_capacity = 1 
 	tolerance_of_heretics_capacity = 1 
-	relation_with_heretics = 15
-	relation_with_heathens = 15
+	technology_cost = -0.1
 }
 
 fra_jerusalem_modifier = {
