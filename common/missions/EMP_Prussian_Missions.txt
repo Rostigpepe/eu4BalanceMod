@@ -537,7 +537,7 @@ emp_bra_pru_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 6
+				value = 15
 				OR = {
 					area = franconia_area
 					area = upper_franconia_area
