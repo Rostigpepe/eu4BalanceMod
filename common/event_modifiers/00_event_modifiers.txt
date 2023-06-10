@@ -4681,6 +4681,12 @@ ven_arsenal_marines = {
 	allowed_marine_fraction = 0.25
 }
 
+BM_ven_arsenal_marines = {
+	recover_army_morale_speed = 0.10
+	shock_damage = 0.10
+	is_marine_modifier = yes
+}
+
 venice_ghetto = {
 	trade_goods_size = 0.1
 }

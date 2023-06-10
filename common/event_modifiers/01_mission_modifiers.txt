@@ -5317,8 +5317,8 @@ ita_experienced_alpini = {
 }
 
 ven_aldine_monopoly_modifier = {
-	technology_cost = -0.1
-	idea_cost = -0.1
+	technology_cost = -0.025
+	idea_cost = -0.025
 }
 
 ven_venetian_carnevale = {
@@ -5334,6 +5334,12 @@ ven_standardized_relazioni = {
 ven_urban_renewal = {
 	local_build_time = -0.25
 	local_build_cost = -0.25
+}
+
+BM_venizian_expansion_projects = {
+	allowed_num_of_buildings = 1
+	trade_goods_size = 0.5
+	local_development_cost = -0.15
 }
 
 ven_autonomous_venetian_patriarchate = {
