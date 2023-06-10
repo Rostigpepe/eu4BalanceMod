@@ -5371,8 +5371,8 @@ ven_mercenaries_paid_with_land = {
 }
 
 ned_security_on_and_from_the_sea = {
-	ship_durability = 0.1
-	naval_morale = 0.1
+	ship_durability = 0.15
+	naval_morale = 0.15
 }
 
 ned_fixed_garrisons = {
@@ -5381,9 +5381,27 @@ ned_fixed_garrisons = {
 	garrison_damage = 0.5
 }
 
+BM_ned_unleash_the_dams = {
+	local_hostile_movement_speed = -0.25
+	supply_limit_modifier = -0.25
+	attrition = 3
+	max_attrition = 3
+}
+
+BM_leiden_university = {
+	idea_cost = -0.1
+	institution_growth = 0.1
+}
+
 ned_leiden_faculty = {
 	advisor_pool = 1
 	advisor_cost = -0.2
+}
+
+BM_dutc_control_of_east_indies = {
+	trade_goods_size = 0.2
+	trade_value_modifier = 0.1
+	local_unrest = -1
 }
 
 ned_sea_beggar_activity = {
@@ -5764,7 +5782,7 @@ republic_reformed_government = {
 # Bohemian missions
 
 defenestrations_of_prague = {
-	relation_with_heretics = -15
+	relation_with_heretics = -10
 	prestige_per_development_from_conversion = 0.5
 }
 
@@ -9379,7 +9397,7 @@ fra_trade_fair_prosperity_modifier = {
 }
 
 fra_letat_cest_moi_modifier = {
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.025
 }	
 
 fra_absolutism_modifier = {
