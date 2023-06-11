@@ -89,7 +89,7 @@ NGF_ideas = {
 	}
 	
 	bonus = {
-		governing_capacity_modifier = 0.3
+		governing_capacity_modifier = 0.15
 	}	
 
 	trigger = {
@@ -98,7 +98,6 @@ NGF_ideas = {
 	free = yes
 	
 	NGF_idea_1 = {
-		core_creation = -0.15
 		overextension_impact_modifier = -0.15
 	}
 	ger_junkers = {

@@ -295,10 +295,6 @@ emp_bra_pru_1 = {
 			custom_tooltip = BM_renovate_berlin_tt
 			hidden_effect = {
 				mittelmark_area = {
-					limit = { 
-						NOT = 50
-						}
-					}
 					add_base_tax = 1
 					add_base_production = 1
 					add_base_manpower = 1
@@ -608,14 +604,8 @@ emp_bra_pru_2 = {
 				country_event = { 
 					id = BM_FKM_conquest_event.1
 					days = 1
-					tooltip = CELESTIAL_EMPIRE_TOOLTIP
+					tooltip = BM_FKN_formable
 				}
-			}
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_weight = {

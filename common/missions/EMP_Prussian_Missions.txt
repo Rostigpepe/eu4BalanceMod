@@ -563,6 +563,14 @@ emp_bra_pru_2 = {
 			}
 			add_mil_power = 100
 			add_accepted_culture_or_dip_power = { culture = franconian }
+			ANS = {
+				inherit = BYT
+				country_event = { 
+					id = BM_events_FKN_conquest_event.1
+					days = 1
+					tooltip = BM_FKN_formable
+				}
+			}
 		}
 		ai_weight = {
 			factor = 75

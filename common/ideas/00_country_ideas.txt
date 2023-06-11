@@ -1492,7 +1492,7 @@ DAL_ideas = {
 PRU_ideas = {
 	start = {
 		land_morale = 0.2
-		governing_capacity_modifier = 0.2
+		build_cost = -0.15
 	}
 	
 	bonus = {

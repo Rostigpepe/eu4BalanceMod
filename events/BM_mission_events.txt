@@ -12,36 +12,34 @@ country_event = {
 
 	option = {
 		name = BM_events_FKN_conquest_event.1.a
-		effect = {
-			change_tag = FKN
-			on_change_tag_effect = yes
-			restore_country_name_effect = yes
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-			set_country_flag = formed_franconia_flag
+		change_tag = FKN
+		on_change_tag_effect = yes
+		restore_country_name_effect = yes
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = formed_franconia_flag
 
-			if = {
-				limit = {
-					total_development = 100
-					OR = {
-						is_elector = yes
-						is_part_of_hre = no
-					}
+		if = {
+			limit = {
+				total_development = 100
+				OR = {
+					is_elector = yes
+					is_part_of_hre = no
 				}
-				set_government_rank = 2
 			}
+			set_government_rank = 2
+		}
 
-			swap_non_generic_missions = yes
-			
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
+		swap_non_generic_missions = yes
+		
+		if = {
+			limit = {
+				is_playing_custom_nation = no
 			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 	}
 }
