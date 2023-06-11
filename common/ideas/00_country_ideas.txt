@@ -2165,49 +2165,6 @@ JAP_ideas = {
 }
 
 
-MAM_ideas = {
-	start = {
-		diplomatic_upkeep = 2
-		cavalry_power = 0.15
-	}
-	
-	bonus = {
-		manpower_recovery_speed = 0.15
-	}
-	
-	trigger = {
-		tag = MAM
-	}
-	free = yes
-	
-	red_sea_trade = {
-		global_trade_power = 0.05
-		trade_range_modifier = 0.10
-	}
-	monuments_to_greatness = {
-		prestige = 1
-	}
-	purchase_new_mamelukes = {
-		vassal_forcelimit_bonus = 1
-		vassal_income = 0.33
-	}
-	mam_army_reform = {
-		discipline = 0.05
-	}
-	reform_fellah_system = {
-		production_efficiency = 0.1
-		global_trade_goods_size_modifier = 0.1
-	}
-	reformed_succession = {
-		stability_cost_modifier = -0.1
-		diplomatic_annexation_cost = -0.2 
-	}
-	mam_monopoly_ports = {
-		trade_efficiency = 0.10
-	}
-}
-
-
 NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
@@ -17747,5 +17704,94 @@ UKR_ideas = {
 	birth_of_russian_orthodoxy = {
 		tolerance_own = 2
 		yearly_patriarch_authority = 0.005
+	}
+}
+
+
+MAM_ideas = {
+	start = {
+		diplomatic_upkeep = 2
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	
+	trigger = {
+		tag = MAM
+	}
+	free = yes
+	
+	red_sea_trade = {
+		global_trade_power = 0.05
+		trade_range_modifier = 0.10
+	}
+	monuments_to_greatness = {
+		prestige = 1
+	}
+	purchase_new_mamelukes = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.33
+	}
+	mam_army_reform = {
+		discipline = 0.05
+	}
+	reform_fellah_system = {
+		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	reformed_succession = {
+		stability_cost_modifier = -0.1
+		diplomatic_annexation_cost = -0.2 
+	}
+	mam_monopoly_ports = {
+		trade_efficiency = 0.10
+	}
+}
+
+
+EGY_ideas = {
+	start = {
+		cavalry_power = 0.2
+		trade_steering = 0.25
+	}
+	
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+	free = yes
+	
+	EGY_the_mamelukian_warrior_reforms = {
+		army_tradition = 1
+		infantry_power = 0.1
+	}
+	EGY_formation_of_a_distinct_identity = {
+		manpower_in_own_culture_provinces = 0.15
+		manpower_in_culture_group_provinces = 0.1
+	}
+	EGY_one_sultan_to_rule = {
+		stability_cost_modifier = -0.2
+		trade_efficiency = 0.1
+	}
+	EGY_barid_of_rukn = {
+		movement_speed = 0.15
+		global_trade_power = 0.1
+	}
+	EGY_the_industrialisation_of_egypt = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = 0.1
+	}
+	EGY_by_islamic_rites = {
+		discipline = 0.05
+	}
+	EGY_restore_the_caliphate = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
 	}
 }

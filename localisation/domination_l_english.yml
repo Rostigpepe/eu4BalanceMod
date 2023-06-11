@@ -7098,7 +7098,7 @@
  pru_spread_dev_tt:0 "\nEvery province in the §YEast§! and §YWest Prussia§! areas will receive §G2 Local Base Manpower§! development\n"
  pru_golden_era_20_unis_tt:0 "\nIf we complete this mission with §Y10§! provinces that have at least §Y20§! development, we will experience a §Ygolden era§! without expending our own for the duration of our ruler's life"
  until_its_sieged_desc:0 "until an enemy sieges or conquers the province of Berlin"
- BM_renovate_berlin_tt:0 "§G12§! development will be distributed in the §YMittelmark State§!."
+ BM_renovate_berlin_tt:0 "§G15§! development will be distributed in the §YMittelmark State§!."
  estate_nobles_consolidated_noble_contracts:0 "Consolidated Noble Contracts"
  estate_nobles_consolidated_noble_contracts_desc:0 "The nobles are a vital part of our realm in times of war. If we wish our military to focus on advancing our borders, we must align the powerful families of our realm to keep the peace in the interior."
  unlock_privilege_estate_nobles_consolidated_noble_contracts_tt:0 "\nUnlocks the nobility privilege '§YConsolidate Noble Contracts§!'"
