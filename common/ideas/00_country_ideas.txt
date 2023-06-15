@@ -723,11 +723,11 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		artillery_fire = 1
+		discipline = 0.05
 	}
 	
 	bonus = {
-		discipline = 0.05
+		artillery_fire = 0.5
 	}
 	
 	trigger = {
@@ -769,7 +769,7 @@ SPA_ideas = {
 
 CAS_ideas = {
 	start = {
-		land_morale = 0.15
+		land_morale = 0.1
 		global_missionary_strength = 0.02
 	}
 	bonus = {

@@ -418,7 +418,7 @@ age_of_reformation = {
 				}
 			}
 			modifier = {
-				global_trade_goods_size_modifier = 0.33
+				global_trade_goods_size_modifier = 0.25
 			}
 			ai_will_do = {
 				factor = 100
@@ -430,7 +430,7 @@ age_of_reformation = {
 				tag = PER
 			}
 			modifier = {
-				development_cost = -0.2
+				development_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -528,6 +528,7 @@ age_of_absolutism = {
 		ab_rival_border_fort = {
 			modifier = {
 				rival_border_fort_maintenance = -1.0
+				defensiveness = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -548,6 +549,7 @@ age_of_absolutism = {
 		ab_harsh_treatment = {
 			modifier = {
 				harsh_treatment_cost = -0.5
+				global_rebel_suppression_efficiency = -0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -557,7 +559,7 @@ age_of_absolutism = {
 	
 		ab_adm_efficiency = {
 			modifier = {
-				administrative_efficiency = 0.05
+				administrative_efficiency = 0.025
 			}
 			ai_will_do = {
 				factor = 10
@@ -590,7 +592,7 @@ age_of_absolutism = {
 				tag = NED
 			}
 			modifier = {
-				trade_steering = 0.33
+				trade_steering = 0.5
 			}
 			ai_will_do = {
 				factor = 100
@@ -604,7 +606,7 @@ age_of_absolutism = {
 				}
 			}
 			modifier = {
-				manpower_recovery_speed = 0.35
+				manpower_recovery_speed = 0.33
 			}
 			ai_will_do = {
 				factor = 100
@@ -762,7 +764,7 @@ age_of_revolutions = {
 		
 		ab_backrow_artillery = {
 			modifier = {
-				backrow_artillery_damage = 0.20
+				backrow_artillery_damage = 0.15
 			}
 			ai_will_do = {
 				factor = 15
@@ -808,7 +810,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				max_admiral_fire = 1
+				naval_maintenance_modifier = -0.25
 			}
 			ai_will_do = {
 				factor = 100
@@ -833,7 +835,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				morale_damage_received = -0.2
+				morale_damage_received = -0.15
 			}
 			ai_will_do = {
 				factor = 100
