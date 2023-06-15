@@ -954,7 +954,7 @@ TUR_ideas = {
 	}
 	
 	bonus = {
-		manpower_recovery_speed = 0.15
+		backrow_artillery_damage = 0.05
 	}
 
 	trigger = {
