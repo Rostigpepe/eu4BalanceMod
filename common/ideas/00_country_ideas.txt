@@ -1869,7 +1869,7 @@ HAB_ideas = {
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.3
-		discipline = 0.03
+		discipline = 0.05
 	}
 }
 

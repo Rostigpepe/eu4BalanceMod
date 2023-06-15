@@ -180,7 +180,7 @@ age_of_discovery = {
 				tag = TUR
 			}
 			modifier = {
-				leader_siege = 1 
+				artillery_levels_available_vs_fort = 1 
 			}
 			ai_will_do = {
 				factor = 100
@@ -193,7 +193,7 @@ age_of_discovery = {
 				tag = POR
 			}
 			modifier = {
-				global_colonial_growth = 50
+				global_colonial_growth = 30
 			}
 			ai_will_do = {
 				factor = 100

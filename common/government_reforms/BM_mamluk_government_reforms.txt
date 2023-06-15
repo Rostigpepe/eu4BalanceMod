@@ -96,8 +96,8 @@ foreign_recruitment_mamluks = {
 	}
 	modifiers = {
 		merchants = 1
-		mercenary_manpower = 0.5
-		merc_maintenance_modifier = -0.2
+		same_religion_advisor_cost = -0.15
+		all_estate_loyalty_equilibrium = -0.05
 	}
 	ai = {
 		factor = 2

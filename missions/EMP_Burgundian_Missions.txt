@@ -1760,7 +1760,6 @@ emp_burgundy_5 = {
 					name = bur_pope_is_hated
 					duration = 7300
 				}
-				add_power_projection = 10
 			}
 		}
 	}
