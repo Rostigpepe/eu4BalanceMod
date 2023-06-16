@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 
 		potential = {
+			NOT = { tag = CAE }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }			
 			was_never_end_game_tag_trigger = yes			
@@ -26,7 +27,7 @@ country_decisions = {
 		}
 
 		allow = {
-			adm_tech = 15
+			adm_tech = 16
 			OR = {
 				NOT = { exists = PRU }
 				AND = {
@@ -47,7 +48,7 @@ country_decisions = {
 			owns_or_non_sovereign_subject_of = 61
 			owns_or_non_sovereign_subject_of = 44
 			owns_or_non_sovereign_subject_of = 57
-			owns_or_non_sovereign_subject_of = 85
+			owns_or_non_sovereign_subject_of = 45
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = north_german_region
 				value = 25
@@ -71,7 +72,7 @@ country_decisions = {
 				province_id = 61
 				province_id = 44
 				province_id = 57
-				province_id = 85
+				province_id = 45
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}

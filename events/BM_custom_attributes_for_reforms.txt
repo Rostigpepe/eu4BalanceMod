@@ -8,16 +8,24 @@ country_event = {
 
 
 	trigger = {
-		has_government_attribute = enables_immigrant_settlements
-		all_owned_province = {
-			NOT = {has_province_modifier = BM_immigrant_settlements}
-		}
-		any_owned_province = {
-			OR = {
-				trade_goods = grain
-				trade_goods = livestock
-				trade_goods = fish
-				trade_goods = naval_supplies
+		OR = {
+			AND = {
+				has_government_attribute = enables_immigrant_settlements
+				any_owned_province = {
+					NOT = { has_province_modifier = BM_immigrant_settlements }
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = naval_supplies
+					trade_goods = grain
+				}
+			}
+			AND = {
+				NOT = {
+					has_government_attribute = enables_immigrant_settlements
+				}
+				any_owned_province = {
+					has_province_modifier = BM_immigrant_settlements
+				}
 			}
 		}
 	}
@@ -33,10 +41,10 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					trade_goods = grain
-					trade_goods = livestock
 					trade_goods = fish
+					trade_goods = livestock
 					trade_goods = naval_supplies
+					trade_goods = grain
 				}
 				add_province_modifier = {
 					name = BM_immigrant_settlements
@@ -50,8 +58,10 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = reform_me_events.243.a
+
 	}
 }
 
@@ -360,6 +370,274 @@ country_event = {
 
 	option = {
 		name = reform_me_events.22.a
+
+	}
+}
+
+
+# HESSIAN MILITARY GOVERNMENT
+country_event = {
+	id = reform_me_events.102
+	title = reform_me_events.102.t
+	desc = reform_me_events.102.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+
+	trigger = {
+		has_government_attribute = enables_military_exports
+		OR = {
+			AND = {
+				army_professionalism = 0.10
+				NOT = { army_professionalism = 0.20 }
+				NOT = { has_country_modifier = Military_Industry_1 }
+			}
+			AND = {
+				army_professionalism = 0.20
+				NOT = { army_professionalism = 0.30 }
+				NOT = { has_country_modifier = Military_Industry_2 }
+			}
+			AND = {
+				army_professionalism = 0.30
+				NOT = { army_professionalism = 0.40 }
+				NOT = { has_country_modifier = Military_Industry_3 }
+			}
+			AND = {
+				army_professionalism = 0.40
+				NOT = { army_professionalism = 0.50 }
+				NOT = { has_country_modifier = Military_Industry_4 }
+			}
+			AND = {
+				army_professionalism = 0.50
+				NOT = { army_professionalism = 0.60 }
+				NOT = { has_country_modifier = Military_Industry_5 }
+			}
+			AND = {
+				army_professionalism = 0.60
+				NOT = { army_professionalism = 0.70 }
+				NOT = { has_country_modifier = Military_Industry_6 }
+			}
+			AND = {
+				army_professionalism = 0.70
+				NOT = { army_professionalism = 0.80 }
+				NOT = { has_country_modifier = Military_Industry_7 }
+			}
+			AND = {
+				army_professionalism = 0.80
+				NOT = { army_professionalism = 0.90 }
+				NOT = { has_country_modifier = Military_Industry_8 }
+			}
+			AND = {
+				army_professionalism = 0.90
+				NOT = { army_professionalism = 1 }
+				NOT = { has_country_modifier = Military_Industry_9 }
+			}
+			AND = {
+				army_professionalism = 1
+				NOT = { has_country_modifier = Military_Industry_10 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				army_professionalism = 0.10
+				NOT = { army_professionalism = 0.20 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_1
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.20
+				NOT = { army_professionalism = 0.30 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_2
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.30
+				NOT = { army_professionalism = 0.40 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_3
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.40
+				NOT = { army_professionalism = 0.50 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_4
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.50
+				NOT = { army_professionalism = 0.60 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_5
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.60
+				NOT = { army_professionalism = 0.70 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_6
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.70
+				NOT = { army_professionalism = 0.80 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_7
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.80
+				NOT = { army_professionalism = 0.90 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_8
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 0.90
+				NOT = { army_professionalism = 1 }
+			}
+			add_country_modifier = {
+				name = Military_Industry_9
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_10
+		}
+		if = {
+			limit = {
+				army_professionalism = 1
+			}
+			add_country_modifier = {
+				name = Military_Industry_10
+				duration = -1
+			}
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+		}
+	}
+
+	option = {
+		name = reform_me_events.102.a
 
 	}
 }

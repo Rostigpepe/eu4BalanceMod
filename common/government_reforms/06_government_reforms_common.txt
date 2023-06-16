@@ -224,7 +224,7 @@ council_of_the_indies_reform = {
 		reduced_liberty_desire_on_other_continent = 5
 		treasure_fleet_income = 0.25
 		global_trade_power = 0.05
-		colony_cost_modifier = -1
+		colony_cost_modifier = -0.25
 	}
 	ai = {
 		factor = 2
@@ -3407,8 +3407,8 @@ lessons_of_the_hussite_wars_reform = {
 			primary_culture = czech_new
 			primary_culture = sorbian_new
 			primary_culture = schlesian_new
+			primary_culture = bohemian
 		}
-		religion = hussite
 		NOT = { tag = PRU }
 		OR = {
 			NOT = { tag = PRU }

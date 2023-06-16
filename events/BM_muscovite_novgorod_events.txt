@@ -4,59 +4,45 @@ namespace = BM_Muscovy_Events
 #Subjugation of Novgorod
 country_event = {
 	id = BM_Muscovy_Events.1
-	title = ME_Muscovy_Events.1.t
-	desc = ME_Muscovy_Events.1.d
+	title = BM_Muscovy_Events.1.t
+	desc = BM_Muscovy_Events.1.d
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-		OR = {
-			controls = 310
-			war_with = NOV
-			AND = {
-				war_score_against = {
-					who = NOV
-					value = 75
-				}
-			}
-		}
-	}
-
 	option = {
-		name = ME_Muscovy_Events.1.a
+		name = BM_Muscovy_Events.1.a
 
 		NOV = {
 			country_event = {
-				id = ME_Muscovy_Events.2 #A Merciful Offer
+				id = BM_Muscovy_Events.2 #A Merciful Offer
 				days = 0
 			}
 		}
 	}
 	option = {
-		name = ME_Muscovy_Events.1.b
+		name = BM_Muscovy_Events.1.b
 
 		add_country_modifier = {
 			name = muscovy_muscovite_supremacy
 			duration = -1 #until the end of the war
-			desc = muscovy_muscovite_supremacy_tt
 		}
 	}
 }
 
 #Novogords Event (Accept defeat or not)
 country_event = {
-	id = ME_Muscovy_Events.2
-	title = ME_Muscovy_Events.2.t
-	desc = ME_Muscovy_Events.2.d
+	id = BM_Muscovy_Events.2
+	title = BM_Muscovy_Events.2.t
+	desc = BM_Muscovy_Events.2.d
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ME_Muscovy_Events.2.a
+		name = BM_Muscovy_Events.2.a
 
 		ai_chance = { factor = 1 }
 
@@ -69,14 +55,14 @@ country_event = {
 
 		FROM = {
 			country_event = {
-				id = ME_Muscovy_Events.3 #Consolidation of Lands
+				id = BM_Muscovy_Events.3 #Consolidation of Lands
 				days = 0
 			}
 		}
 	}
 
 	option = {
-		name = ME_Muscovy_Events.2.b
+		name = BM_Muscovy_Events.2.b
 
 		ai_chance = { factor = 0 }
 
@@ -86,18 +72,18 @@ country_event = {
 
 #Consolidation of Lands
 country_event = {
-	id = ME_Muscovy_Events.3
-	title = ME_Muscovy_Events.3.t
-	desc = ME_Muscovy_Events.3.d
+	id = BM_Muscovy_Events.3
+	title = BM_Muscovy_Events.3.t
+	desc = BM_Muscovy_Events.3.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ME_Muscovy_Events.3.a #CASTLES FOR THE NOBLES
+		name = BM_Muscovy_Events.3.a #CASTLES FOR THE NOBLES
 
-		custom_tooltip = ME_Muscovy_Events.3.tta
+		custom_tooltip = BM_Muscovy_Events.3.tta
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -107,7 +93,7 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = ME_Muscovy_Events.3.ttb
+		custom_tooltip = BM_Muscovy_Events.3.ttb
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -138,9 +124,9 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Muscovy_Events.3.b #THE CROWN SHALL RULES THESE LANDS
+		name = BM_Muscovy_Events.3.b #THE CROWN SHALL RULES THESE LANDS
 
-		custom_tooltip = ME_Muscovy_Events.3.tta
+		custom_tooltip = BM_Muscovy_Events.3.tta
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -150,7 +136,7 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = ME_Muscovy_Events.3.ttc
+		custom_tooltip = BM_Muscovy_Events.3.ttc
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -159,7 +145,7 @@ country_event = {
 				}
 				add_territorial_core = ROOT
 
-				set_local_autonomy = 25
+				set_local_autonomy = 50
 				add_province_modifier = {
 					name = muscovy_crown_lands
 					duration = 9125 #25 years
@@ -190,9 +176,9 @@ country_event = {
 
 
 country_event = {
-	id = ME_Muscovy_Events.4
-	title = ME_Muscovy_Events.4.t #THE GOVERNING OF NOVOGOROD
-	desc = ME_Muscovy_Events.4.d
+	id = BM_Muscovy_Events.4
+	title = BM_Muscovy_Events.4.t #THE GOVERNING OF NOVOGOROD
+	desc = BM_Muscovy_Events.4.d
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
@@ -216,28 +202,28 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Muscovy_Events.4.a #CRACK DOWN ON SEPARATISTS
+		name = BM_Muscovy_Events.4.a #CRACK DOWN ON SEPARATISTS
 
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
 			add_yearly_manpower = 0.1
-			custom_tooltip = ME_Muscovy_Events.4.tta
+			custom_tooltip = BM_Muscovy_Events.4.tta
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
 					remove_province_modifier = muscovy_noble_lands
-					set_local_autonomy = 10
+					set_local_autonomy = 25
 				}
 			}
 		}
 		else = {
 			add_years_of_income = 0.083
-			custom_tooltip = ME_Muscovy_Events.4.ttb
+			custom_tooltip = BM_Muscovy_Events.4.ttb
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
-					set_local_autonomy = 25
+					set_local_autonomy = 35
 				}
 			}
 		}
@@ -247,26 +233,26 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Muscovy_Events.4.b #GRANT SOME CONCESSIONS
+		name = BM_Muscovy_Events.4.b #GRANT SOME CONCESSIONS
 
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
-			custom_tooltip = ME_Muscovy_Events.4.tta
+			custom_tooltip = BM_Muscovy_Events.4.tta
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
 					remove_province_modifier = muscovy_noble_lands
-					set_local_autonomy = 10
+					set_local_autonomy = 25
 				}
 			}
 		}
 		else = {
-			custom_tooltip = ME_Muscovy_Events.4.ttb
+			custom_tooltip = BM_Muscovy_Events.4.ttb
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
-					set_local_autonomy = 25
+					set_local_autonomy = 35
 				}
 			}
 		}
@@ -276,7 +262,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Muscovy_Events.4.c #THE SITUATION WORKS FOR NOW
+		name = BM_Muscovy_Events.4.c #THE SITUATION WORKS FOR NOW
 
 		add_prestige = -5
 	}
@@ -284,9 +270,9 @@ country_event = {
 
 # Removes Muscovite Supremacy (-10% War Score Cost)
 country_event = {
-	id = ME_Muscovy_Events.5
-	title = ME_Muscovy_Events.5.t
-	desc = ME_Muscovy_Events.5.d
+	id = BM_Muscovy_Events.5
+	title = BM_Muscovy_Events.5.t
+	desc = BM_BM_Muscovy_Events.5.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	fire_only_once = yes

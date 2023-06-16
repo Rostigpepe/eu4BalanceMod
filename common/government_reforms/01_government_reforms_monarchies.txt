@@ -1294,7 +1294,7 @@ scottish_monarchy_reform = {
 		nobles_influence_modifier = -0.1
 		diplomatic_reputation = 1 
 		defensiveness = 0.1
-		land_forcelimit_modifier = 0.15
+		development_cost_in_primary_culture = -0.05
 	}
 	
 	conditional = {
@@ -1602,12 +1602,14 @@ bohemian_elective_kingdom_reform = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
+			primary_culture = bohemian
 		}
 	}
 	nation_designer_trigger = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
+			primary_culture = bohemian
 		}
 	}
 	valid_for_nation_designer = yes

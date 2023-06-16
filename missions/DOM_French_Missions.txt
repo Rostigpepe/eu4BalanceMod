@@ -158,7 +158,7 @@ french_missions_1 = {
 						BUR = { is_subject_of = ROOT } 
 						has_dlc = "Emperor"
 					}
-					country_event = { id = incidents_bur_inheritance.501 } 
+					add_prestige_or_monarch_power = 100
 				}
 				else_if = { 
 					limit = { 
@@ -755,7 +755,6 @@ french_missions_1_Continuation_a = {
 		required_missions = {  }
 		position = 9
 		trigger = {
-			num_of_explorers = 1 
 			if = { 
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -821,6 +820,7 @@ french_missions_1_Continuation_a = {
 		}
 		effect = { 
 			add_dip_power = 50 
+			add_mercantilism = 10 
 			if = {
 				limit = { 
 					any_subject_country = {
@@ -851,7 +851,7 @@ french_missions_1_Continuation_a = {
 				}
 			}
 			else = { 
-				add_mercantilism = 5 
+				add_mercantilism = 10 
 			}
 		}
 	}	
@@ -918,7 +918,7 @@ french_missions_1_Continuation_a = {
 				name = fra_overseas_focus_modifier
 				duration = 9125 
 			}
-			add_mercantilism = 5 
+			add_mercantilism = 10 
 		}
 	}
 	
@@ -1496,6 +1496,7 @@ french_missions_2 = {
 			}
 		}
 		effect = { 
+			add_splendor = 50
 			country_event = { id = flavor_fra.103 }
 		}
 	}
@@ -1518,6 +1519,9 @@ french_missions_2 = {
 		}
 		effect = { 
 			country_event = { id = flavor_fra.104 }
+			brittany_region = {
+				add_prosperity = 5
+			}
 		}
 	}
 }
@@ -2168,6 +2172,7 @@ french_missions_2_Continuation_b = {
 			crown_land_share = 50 
 		}
 		effect = { 
+			add_legitimacy = 10
 			if = {
 				limit = { has_reform = feudal_france_reform }
 				#remove_government_reform = feudal_france_reform 
@@ -3343,10 +3348,6 @@ french_missions_3_normal_continued = {
 							estate = estate_church 
 							loyalty = 60 
 						}
-						estate_influence = { 
-							estate = estate_church 
-							influence = 80 
-						}
 						num_of_estate_agendas_completed = {
 							estate = estate_church 
 							value = 4 
@@ -3388,6 +3389,10 @@ french_missions_3_normal_continued = {
 			add_country_modifier = {
 				name = fra_musketeers_modifier
 				duration = -1 
+			}
+			add_great_project_tier = {
+				type = versailles
+				tier = 1
 			}
 		}
 	}
@@ -3543,19 +3548,19 @@ french_missions_3_normal_continued = {
 					limit = { 
 						2753 = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							development = 40 
+							development = 30 
 						}
 						196 = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							development = 40 
+							development = 30 
 						}
 						175 = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							development = 40 
+							development = 30 
 						}
 						174 = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							development = 40 
+							development = 30 
 						}
 					}
 					2753 = {
@@ -3773,6 +3778,21 @@ french_missions_4_normal = {
 			hidden_effect = {
 				if = { 
 					limit = { 
+						LOR = { 
+							is_subject_of = ROOT 
+							trust = { who = ROOT value = 100 }
+							has_opinion = {
+								who = ROOT 
+								value = 190
+							}
+						}
+					}
+					FRA = { 
+						inherit = LOR
+					}
+				}
+				if = { 
+					limit = { 
 						PRO = { 
 							is_subject_of = ROOT 
 							trust = { who = ROOT value = 100 }
@@ -3781,6 +3801,9 @@ french_missions_4_normal = {
 								value = 190
 							}
 						}
+					}
+					FRA= { 
+						inherit = PRO
 					}
 					add_country_modifier = {
 						name = fra_close_ties_modifier
@@ -4603,6 +4626,7 @@ french_missions_4_normal_contiuation = {
 			}
 		}
 		effect = {
+			add_adm_power = 100
 			country_event = { id = flavor_fra.203 }
 			custom_tooltip = fra_event_insight_203_tt
 		}	
@@ -6159,7 +6183,9 @@ fra_missions_5_continuation = {
 		effect = {
 			custom_tooltip = fra_every_coastal_with_dock_shipyard_gets_tt
 			tooltip = {
+				add_base_tax = 1
 				add_base_production = 1 
+				add_base_manpower = 1
 				add_province_modifier = {
 					name = fra_french_dockyard_industry_modifier
 					duration = -1 
@@ -6173,6 +6199,7 @@ fra_missions_5_continuation = {
 						name = fra_toulon_dockyards_modifier
 						duration = -1 
 					}
+					center_of_trade = 1
 				}
 			}
 			hidden_effect = {
@@ -6181,6 +6208,7 @@ fra_missions_5_continuation = {
 						OR = { 
 							full_idea_group = naval_ideas 
 							full_idea_group = maritime_ideas 
+							full_idea_group = trade_ideas
 						}
 					}
 					every_owned_province = {

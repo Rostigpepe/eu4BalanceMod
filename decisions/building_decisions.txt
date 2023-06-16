@@ -1,3 +1,4 @@
+namespace = BM_building
 country_decisions = {
 	delete_buildings = {
 		title = delete_buildings_title
@@ -8,7 +9,7 @@ country_decisions = {
 			ai = no
 		}
 		effect = {
-			country_event = { id = building.1 } 
+			country_event = { id = BM_building.1 } 
 		}
 		ai_will_do = {
 			factor = 0

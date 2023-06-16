@@ -12,11 +12,12 @@
 
  frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
  frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
+ mechanic_enables_immigrant_settlements:0 "Enables §YImmigrant Settlers§! in provinces with either fish, livestock, grain, or naval supplies, granting: §G-10%§! Development Cost \n§G-10%§! Goods Produced"
 
  BM_Kreditwork:0 "Kreditwork"
 
  BM_immigrant_settlements:0 "Immigrant Settlements"
- BM_immigrant_settlements_desc:0 "Religious immigrants are settling in this area."
+ desc_BM_immigrant_settlements:0 "Religious immigrants are settling in this area."
 
 
  #MAMLUKS
@@ -26,7 +27,7 @@
  enlist_arabian_tribesmen:0 "Arabian Horses"
  enlist_arabian_tribesmen_desc:0 "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
 
- enables_arabian_horses:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
+ mechanic_enables_arabian_horses:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
 
  Arabian_Horses_1:0 "Arabian Horses"
  Arabian_Horses_2:0 "Arabian Horses"
@@ -42,3 +43,29 @@
 
  foreign_recruitment_mamluks:0 "Foreign Recruitment"
  foreign_recruitment_mamluks_desc:0 "By sending our merchants off to many foreign places—we can ensure our supply of new Mamluks— which will never be cut off again as it was during the Mongol and Crusader Invasions."
+
+
+ #Hesse 
+hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
+ hessian_militarized_monarchy_reform_desc:0 "The Duchy of Hesse needs no undisciplined, greedy foreign mercenaries to defend her, she needs only her own men. We have militarized our state to a degree that one out of every seven men is in the army, and he will fight for his homeland, not the filling of his pocket."
+ hessian_modern_militarized_monarchy_reform:0 "Enlightened Hessian Military State"
+ hessian_modern_militarized_monarchy_reform_desc:0 "Friedrich of Casse's Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
+ hessian_military_complex_reform:0 "Hessian Military-Industrial Complex"
+ hessian_military_complex_reform_desc:0 "The income from our troops' expeditions in foreign lands will go to turning Hesse into a prosperous home for the returning men. Let us make sure our population can all afford wine and meat."
+ hessian_elite_jaegers_reform:0 "Elite Jägers"
+ hessian_elite_jaegers_reform_desc:0 "The Hessian Jäger (Sharpshooter) is armed with three things; ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
+ found_the_rothschilds_reform:0 "Found the Rothschild Dynasty"
+ found_the_rothschilds_reform_desc:0 "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
+ mechanic_enables_military_exports_yes:0 "Military-Industrial Complex; §G2%§! Goods Produced per 10% Army Professionalism.  Up to a maximum of §G20%§! Goods Produced."
+ Military_Industry_1:0 "Meagre Arms Workshops"
+ Military_Industry_2:0 "Arms Workshops"
+ Military_Industry_3:0 "Expanded Arms Industry"
+ Military_Industry_4:0 "Meagre Military Works"
+ Military_Industry_5:0 "Military Works"
+ Military_Industry_6:0 "Expanded Military Works"
+ Military_Industry_7:0 "Minor Military Industrial Factory"
+ Military_Industry_8:0 "Military Industrial Factory"
+ Military_Industry_9:0 "Expanded Military Factory"
+ Military_Industry_10:0 "Early Military-Industrial Complex"
+ reforms_GE_hesse_modernization_title:1 "Modernize Hesse"
+ reforms_GE_hesse_modernization_desc:1 "Friedrich of Cassel's Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."

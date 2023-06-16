@@ -109,6 +109,9 @@ monarchy = {
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
 				sisterhood_of_jeanne_darc_reform
+				#BM MODDED GOVERNMENTS
+				hessian_militarized_monarchy_reform
+				hessian_modern_militarized_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -270,6 +273,7 @@ monarchy = {
 				tercios_reform
 				#MODDED BM
 				enlist_arabian_tribesmen
+				hessian_elite_jaegers_reform
 			}
 		}
 		deliberative_assembly = {
@@ -298,6 +302,7 @@ monarchy = {
 				#Modded BM:
 				reformed_legal_system_prussia
 				turkicized_elite_mamluks
+				found_the_rothschilds_reform
 			}
 		}
 		growth_of_administration = {
@@ -346,6 +351,7 @@ monarchy = {
 				commercial_trade_empire_reform
 				#Modded BM:
 				frederick_wilhelm_reforms_prussia
+				hessian_military_complex_reform
 			}
 		}
 		legitimation_of_power = {
@@ -589,6 +595,7 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				# BM GOVERNMENTS
 			}
 		}
 		republican_virtues = {
@@ -610,6 +617,7 @@ republic = {
 				namestnik_reform
 				oprichnina_reform
 				consulate_of_the_sea
+				#BM GOVERNMENTS REFORM 
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {

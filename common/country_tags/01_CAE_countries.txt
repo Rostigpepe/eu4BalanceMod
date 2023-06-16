@@ -1,1 +1,0 @@
-CAE = "countries/ElbianConfederation.txt"

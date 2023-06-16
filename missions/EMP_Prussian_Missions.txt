@@ -112,6 +112,7 @@ emp_bra_pru_1 = {
 			}
 		}
 		effect = {
+			add_mercantilism = 10
 			west_prussia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -191,18 +192,10 @@ emp_bra_pru_1 = {
 				custom_tooltip = pru_spread_dev_tt
 				hidden_effect = { 
 					west_prussia_area = {
-						random_list = { 
-							1 = { add_base_tax = 1 } 
-							1 = { add_base_production = 1 } 
-							1 = { add_base_manpower = 1 } 
-						}
+						add_base_manpower = 2
 					}
 					east_prussia_area = {
-						random_list = { 
-							1 = { add_base_tax = 1 } 
-							1 = { add_base_production = 1 } 
-							1 = { add_base_manpower = 1 } 
-						}
+						add_base_manpower = 2
 					}
 				}
 				1926 = { 
@@ -261,8 +254,8 @@ emp_bra_pru_1 = {
 					if = {
 						limit = { 
 							num_of_owned_provinces_with = {
-								has_building = university 
-								value = 25 
+								development = 20
+								value = 10 
 							}
 						}
 						add_ruler_modifier = {
@@ -296,9 +289,17 @@ emp_bra_pru_1 = {
 			}
 		}
 		effect = {
+			add_stability = 1
 			set_country_flag = renovate_berlin_flag
 			country_event = { id = flavor_brapru.20 }
-			
+			custom_tooltip = BM_renovate_berlin_tt
+			hidden_effect = {
+				mittelmark_area = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
 			if = { 
 				limit = { has_dlc = "Domination" }
 				50 = { 
@@ -515,6 +516,27 @@ emp_bra_pru_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			thuringia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			if = { 
 				limit = { has_dlc = "Domination"  NOT = { has_country_flag = declined_ANS_union_flag } }
 				custom_tooltip = pru_access_franconian_conquest_success_tt
@@ -540,15 +562,21 @@ emp_bra_pru_2 = {
 			OR = {
 				area = franconia_area
 				area = upper_franconia_area
+				area = hesse_area
+				area = thuringia_area 
+				area = palatinate_area 
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 6
+				value = 15
 				OR = {
 					area = franconia_area
 					area = upper_franconia_area
+					area = hesse_area 
+					area = thuringia_area 
+					area = palatinate_area 
 				}
 			}
 		}
@@ -571,6 +599,14 @@ emp_bra_pru_2 = {
 			}
 			add_mil_power = 100
 			add_accepted_culture_or_dip_power = { culture = franconian }
+			custom_tooltip = pru_uniting_franconia_success_tt
+			ANS = {
+				country_event = { 
+					id = BM_FKM_conquest_event.1
+					days = 1
+					tooltip = BM_FKN_formable
+				}
+			}
 		}
 		ai_weight = {
 			factor = 75
@@ -1495,3 +1531,19 @@ emp_bra_pru_4 = {
 		}
 	}
 }
+
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+
+#######################################################################################################################################################################
+# BM PRUSSIAN EXPANSION MISSIONS
