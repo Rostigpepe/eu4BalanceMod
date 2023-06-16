@@ -90,14 +90,14 @@ country_decisions = {
 		set_country_flag = gecko_tackle_debt_timer_2
 		add_country_modifier = {
 			name = gecko_tackle_debt_timer
-			duration = 10950
+			duration = 3650
 			hidden = yes
 		} 
 		add_country_modifier = {
 			name = BM_debt_tackled
 			duration = -1
 		}
-		add_years_of_income = 10
+		add_years_of_income = 5
 		add_mercantilism = -10
 		}
 	}

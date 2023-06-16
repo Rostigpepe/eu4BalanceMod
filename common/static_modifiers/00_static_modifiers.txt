@@ -903,19 +903,19 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.7					#each state increases forcelimit by 0.7
-	global_manpower = 0.7	
+	land_forcelimit	= 0.6					#each state increases forcelimit by 0.7
+	global_manpower = 0.6	
 	global_tax_income = 1				#each gives 0.7 MP to the emperor.
 }
 
 free_cities_in_hre = {							#bonuses for each free city in the HRE.. as emperor
 	global_tax_income = 3
-	global_manpower = 1.2
-	land_forcelimit	= 1.2
+	global_manpower = 1.1
+	land_forcelimit	= 1.1
 }
 
 free_city_in_hre = {
-	global_tax_income = 24
+	global_tax_income = 6
 	diplomatic_reputation = 1
 }
 

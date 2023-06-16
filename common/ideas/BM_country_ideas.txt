@@ -14,14 +14,13 @@ AHE_ideas = {
 	free = yes		#will be added at load.
 
 	multi_cultural_empire_ahe = {
-		manpower_in_accepted_culture_provinces = 0.2
+		manpower_in_accepted_culture_provinces = 0.15
 		num_accepted_cultures = 2
 	}
 	donau_river_dominance_ahe = {
 		global_prov_trade_power_modifier = 0.25
 	}
 	ethnic_minorities_act_ahe = {
-		morale_damage_received = -0.05
 		reserves_organisation = 0.15
 	}
 	a_i_e_o_u_ahe = {
