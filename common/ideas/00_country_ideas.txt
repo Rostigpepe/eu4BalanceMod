@@ -1865,7 +1865,6 @@ HAB_ideas = {
 		global_missionary_strength = 0.02
 	}
 	austrian_court = {
-		diplomatic_annexation_cost = -0.15
 		diplomatic_reputation = 2
 	}
 	hofkriegsrat = {
