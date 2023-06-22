@@ -6398,15 +6398,15 @@ gme_torre_pisa = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			advisor_pool = 1
-			innovativeness_gain = 0.2
+			innovativeness_gain = 0.25
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 			owner = {
-				add_adm_power = 50
-				add_dip_power = 50
-				add_mil_power = 50
+				add_adm_power = 75
+				add_dip_power = 75
+				add_mil_power = 75
 				random_list = {
 					33 = {
 						define_advisor = {
@@ -6459,15 +6459,15 @@ gme_torre_pisa = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			advisor_pool = 1
-			innovativeness_gain = 0.3
+			innovativeness_gain = 0.33
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 			owner = {
-				add_adm_power = 50
-				add_dip_power = 50
-				add_mil_power = 50
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
 				random_list = {
 					33 = {
 						define_advisor = {
@@ -6568,7 +6568,7 @@ gme_castello_estense = {
 		province_modifiers = {
 			local_defensiveness = 0.15
 			local_regiment_cost = -0.10
-			trade_goods_size = 0.1
+			trade_goods_size = 0.5
 		}
 		area_modifier = {
 		}
@@ -6587,7 +6587,7 @@ gme_castello_estense = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
-			trade_goods_size = 0.25
+			trade_goods_size = 1
 		}
 		area_modifier = {
 			local_regiment_cost = -0.10
@@ -6608,7 +6608,7 @@ gme_castello_estense = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
-			trade_goods_size = 0.5
+			trade_goods_size = 2
 		}
 		area_modifier = {
 			local_production_efficiency = 0.1
@@ -7158,7 +7158,7 @@ gme_reichstag = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			yearly_corruption = -0.02
+			yearly_corruption = -0.05
 		}
 		on_upgraded = {
 			owner = {
@@ -7182,7 +7182,7 @@ gme_reichstag = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			yearly_corruption = -0.05
+			yearly_corruption = -0.1
 			expand_administration_cost = -0.15
 		}
 		on_upgraded = {
@@ -7210,7 +7210,7 @@ gme_reichstag = {
 		}
 		country_modifiers = {
 			governing_capacity_modifier = 0.10
-			yearly_corruption = -0.1
+			yearly_corruption = -0.15
 			expand_administration_cost = -0.25
 		}
 		on_upgraded = {
