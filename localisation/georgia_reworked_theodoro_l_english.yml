@@ -1,0 +1,148 @@
+﻿l_english:
+
+ #missions
+ #First Row
+ feo_build_an_army_title:0 "Build an Army"
+ feo_build_an_army_desc:0 "We are but a small principality surrounded by hostiles from all sides. From the north, Tatars treaten us with slavery and subjugation. So do genoese to the east. We need to create a powerful army to defend our beloved homeland!"
+ feo_military_infrastructure_title:0 "Military Infrastructure"
+ feo_military_infrastructure_desc:0 "In order to ensure the development of the strong and sustainable army for our country, we need to create an effective supportive military infrastructure. Let us fill our principality with barracks, so that all shall know that we wont be an easy target to be stomped upon."
+ feo_military_elites_title:0 "Officer Corps"
+ feo_military_elites_desc:0 "For the sake of the defence of our homeland, we must recruit additional officers and create a proper defensive structures in our capital!"
+ feo_orthodox_prussia_title:0 "Orthodox Prussia"
+ feo_orthodox_prussia_desc:0 "Just like our fellow Germanics in the west, we too, have rich military traditions. But unlike them, we didnt have opportunities such as they had, to develop them further. at least until now that is. With this newfound window of opportunity, let us create a truly professional army, feared by our foes and admired by our friends!"
+ feo_furor_gothicus_title:0 "Furor Gothicus"
+ feo_furor_gothicus_desc:0 "With a powerful and professional army, all fear the wrath of our warriros! The mere mention of our name shall strike fear at the hearts of our foes!"
+ #Second Row
+ feo_establish_a_faithful_alliance_title:0 "A Faithful Alliance"
+ feo_establish_a_faithful_alliance_desc:0 "Judging from our current position, it is fairly obvious that we cannot stand alone and hope that we will be able to defend ourselves from hordes of our barbarous enemies. We need either a trustworthy ally that will stand side by side with us, or at least a benevolent protector, who wont abuse our weakness agaisnst us. Our Brethren in faith in Trebizond and Georgia seem to be such candidates."
+ feo_conquer_crimea_title:0 "Conquer Crimea"
+ feo_conquer_crimea_desc:0 "Crimean Tatars are a the bane of the surrounding Christian states, enganging in constant pillaging and enslaving peaceful Christians. We must take their capital and teach a lesson to these vile savages before they will subjugate our people!"
+ feo_fortification_works_title:0 "Fortifications of Crimea"
+ feo_fortification_works_desc:0 "Some say that the best defence is an offence. Sure, they can believe it, but for us, the best defence is to fortify our lands to the point that enemies will think twice and trice, before they will even dare to attack us."
+ feo_naval_infrastructure_title:0 "Naval Infrastructure"
+ feo_naval_infrastructure_desc:0 "Crimean Peninsula virtually controls the entire trade in and around the Black Sea. We should utilize this beneficial location and construct an appropriate naval infrastructure, to control the area."
+ feo_black_sea_monopolies_title:0 "Black Sea Monopolies"
+ feo_black_sea_monopolies_desc:0 "These irritating Italian Republics are a constant annoyance to us, curbing our trade, slandering our merchants, and sometimes even outright attacking us with brute force. We must drive them out region permanently. Hm... we could convince our allies and protectors that replacing them with our merchants will be of the great benefit for them as well. This would make our engagement against the Italians much easier."
+ #Third Row
+ feo_build_a_fleet_title:0 "Construct a Fleet"
+ feo_build_a_fleet_desc:0 "While we do have a coast, we can barely use it, as the Genoese control the area with iron fist... and effective galleys. We cannot allow this to be an obstacle for our Nation! We should develope a formidable fleet to drive out any sort of naval invasion from our waters."
+ feo_conquer_caffa_title:0 "Conquer Caffa and Martega"
+ feo_conquer_caffa_desc:0 "The Genoese control the major trade centers to the east of us, curbing our trade and weakening our state. Not only that, but the Italians are engaging in a vile business of slave trade. We should drive them out of these cities and claim them!"
+ feo_principality_of_gothia_title:0 "Principality of Gothia"
+ feo_principality_of_gothia_desc:0 "We have managed to gain control of the entire peninsula. Our society has been deeply affected with both the recent victories against our long time rivals and the evergrowing influence of the Cossacks and their way of life. Now we should consolidate our government and the administration of our provinces to create a truly formidable state apparatus, befitting to the nation as glorious as ours!"
+ feo_advisory_board_title:0 "Advisory Board"
+ feo_advisory_board_desc:0 "As time passess on, it is becoming obvious that we cannot hope for the better future of our state, without professional and erudite advisors to help our monarch. We should employ the best and most professional cadres in our administration, to secure the prosperous future for our children."
+ feo_modern_state_title:0 "A Modern State"
+ feo_modern_state_desc:0 "We have managed to emerge from our perilous state victoriously, as it is befitting to our people. We shall reform the state so that our country will function as a well-oiled machine that is ready to overcome any challanges that stands on its path!"
+ #Fourth Row
+ feo_cave_monasteries_title:0 "Cave Monasteries"
+ feo_cave_monasteries_desc:0 "One of the remarkable features of our beautiful country are the cave monasteries, that served as a shelter to Orthodox Monks from various nations. We sould encurage the foundations of new monasteries that shall become the spiritual, scientific and cultural centers of our people."
+ feo_gothic_literature_title:0 "Gothic Literature"
+ feo_gothic_literature_desc:0 "Much time has passed since Bishop Wulfila and Jordanis and we werent able treate much scriptures and literary works since then. With so many cultural centers and the advancment of the printing press, however, we now may be able to change this stagnating situation. Let us sponsor our clergy and laymen, poets and pholosophers, to create literary marvels that shall stand against the test of time!"
+ feo_universities_of_gothia_title:0 "Universities of Gothia"
+ feo_universities_of_gothia_desc:0 "Our Monasteries and Seminaries are overburdened and cannot efficiently teach our people relevant sciences due to this. We must develope new universities throughout our Principality!"
+ feo_iconographic_school_title:0 "Iconography"
+ feo_iconographic_school_desc:0 "For centuries we have been but a minor nation, with virtually no say in Christendom. However, with our recent advancements in the cultural spheres, our small yet splendorous principality is renown throughout Europe. Let us found Schools of Iconography so glorious that other Christian nations may model our fine arts!"
+ feo_metropolitanate_of_gothia_title:0 "Church of Gothia"
+ feo_metropolitanate_of_gothia_desc:0 "Goths were one of the first Germanic nations to adopt the true faith of Christ (No, early Goths following Arian heresy is irrelevant) and played an important role of sprading the new faith among their brethren. Despite the turbulent history and constant struggle, now we have emerged as a fomidable power with unique and renewed culture and traditions. We think that it would be proper, if the Gothic Church would have an Autonomy, as we have all the requirements to lead the faithful ourselves."
+ #Fifth Row
+ feo_legitimate_state_title:0 "A Legitimate State"
+ feo_legitimate_state_desc:0 "Due to the Historical Misfortunes we were chained to the irrelevant patch of land at the shores of Crimea for centuries. We must legitimize our state in the eyes of our people, if we want to start the development of our country in the first place."
+ feo_peninsula_of_workshops_title:0 "Peninsula of Workshops"
+ feo_peninsula_of_workshops_desc:0 "With Crimea being a major hub of trade in the Eastern European Markets, it would be appropriate to develope the industries on the peninsula and spread our products all over the continent."
+ feo_develope_the_peninsula_title:0 "Peninsula of Workshops"
+ feo_develope_the_peninsula_desc:0 "With Crimea being a major hub of trade in the Eastern European Markets, it would be appropriate to develope the industries on the peninsula and spread our products all over the continent."
+ feo_gothic_architecture_title:0 "Gothic Architecture"
+ feo_gothic_architecture_desc:0 "The new architectural style has been developed in the west, ones with massive buildings and breathtaking detalization. Italians have been refering to them as 'Gothic'. While, this is obviously meant to be an insult, we will take this as an actual complement and use the style to develope our own architectural school!"
+ feo_riga_of_the_black_sea_title:0 "Amethyst of the Black Sea"
+ feo_riga_of_the_black_sea_desc:0 "With Gothia reaching prosperity levels not seen by our people before, now it is time to turn our splendid country into a true jewel of the Black Sea!"
+ 
+ #modifiers
+ feo_military_infrastructure_modifier:0 "Military Infrastructure"
+ desc_feo_military_infrastructure_modifier:0 "Our New military infrastructure allows us to field larger and more efficient armies."
+
+ feo_military_elites_modifier:0 "Military Elite"
+ desc_feo_military_elites_modifier:0 "We have managed to create a new military commanding elites for our armies."
+ 
+ feo_furor_gothicus_modifier:0 "Furor Gothicus"
+ desc_feo_furor_gothicus_modifier:0 "The very name of our soldiers strike fear at the hearts of of our foes!"
+ 
+ feo_fortification_of_crimea:0 "Fortifications of Crimea"
+ desc_feo_fortification_of_crimea:0 "The fortifications of the Peninsula effectively guard the small principality from any potential harm."
+ 
+ feo_naval_infrastructure_modifier:0 "Naval Infrastructure"
+ desc_feo_naval_infrastructure_modifier:0 "Our New Naval infrastructure allows us to build a formiddable fleet to defend our shores."
+ 
+ feo_enhanced_trade:0 "Gothic Trade"
+ desc_feo_enhanced_trade:0 "With Italian Republics driven out from the Black Sea, we can finally engage commerce without any additional burdens."
+ 
+ feo_gothic_merchants:0 "Gothic Merchants"
+ desc_feo_enhanced_trade:0 "Thanks to the Statutes of Monopolies by their overlords, Gothic Merchants can safely trade in this province, contributing to its production development."
+ 
+ geo_statutes_of_monopolies:0 "Statutes of Monopolies"
+ desc_geo_statutes_of_monopolies:0 "Our agreements with out Protectorate allows them privileges on certain markets that we control. While this aids the local production, it also curbs our trade efficiency greatly."
+ 
+ feo_fleetbuilding:0 "Gothic Fleet"
+ desc_feo_fleetbuilding:0 "Our recently constructed fleet will be a fine asset against our foes at the high seas."
+ 
+ feo_modern_state_modifier:0 "A Modern State"
+ desc_feo_modern_state_modifier:0 "We have managed to establish a modern, well developed country that others will emulate and take example from!"
+ 
+ feo_gothic_literature_modifier:0 "Gothic Literature"
+ desc_feo_gothic_literature_modifier:0 "We have created a rich literary tradition! Let us hope that our name will be associated with high art and spendor, and not something as cringeworthy as youngsters with suicidal tendencies..."
+ 
+ feo_university_of_gothia:0 "University of Gothia"
+ desc_feo_university_of_gothia:0 "This province is the major centre of learning of the country."
+ 
+ feo_iconographic_school_modifier:0 "School of Iconography"
+ desc_feo_iconographic_school_modifier:0 "Other Orthodox countries look with great respect at our Iconographic School!"
+ 
+ feo_metropolitanate_of_gothia_modifier:0 "Metropolitanate of Gothia"
+ desc_feo_metropolitanate_of_gothia_modifier:0 "This province is a seat for the Metropolitan of Gothia."
+ 
+ feo_prosperity_of_crimea:0 "Prosperity of Crimea"
+ desc_feo_prosperity_of_crimea:0 "The new infrastructure contributes greatly to the prosperity of the peninsula."
+ 
+ feo_prosperous_provinces:0 "Prosperous Gothia"
+ desc_feo_prosperous_provinces:0 "Our wise rule now bears fruit. The provinces under our administration are to be envied by all!"
+ 
+ feo_gothic_architecture_modifier:0 "Gothic Architecture"
+ desc_feo_gothic_architecture_modifier:0 "Our Architectural School has allowed us to to find more ways of efficient construction."
+ 
+ metropolitan_seat_of_gothia:0 "Metropolitan Seat of Gothia"
+ desc_metropolitan_seat_of_gothia:0 "This Province is a home of the grand Cathedral of Theodosia. The Metropolitan of Gothia has his residence here."
+ 
+ main_port_of_gothia:0 "Metropolitan Seat of Gothia"
+ desc_main_port_of_gothia:0 "This Province is the major Naval center of the Black Sea"
+ 
+ admirality_of_gothia:0 "Admirality of Gothia"
+ desc_admirality_of_gothia:0 "Admirality of Gothia controls a suprisingly large fleet of a seemingly small nation."
+ 
+ army_academy_of_gothia:0 "Military Academy of Gothia"
+ desc_army_academy_of_gothia:0 "Military Academy of Gothia ensures that the country never lacks professional soldiers, ready to defend their home"
+ 
+ feo_gothic_orthodox_church:0 "Gothic Orthodox Church"
+ desc_feo_gothic_orthodox_church:0 "Other Orthodox Churches have recognized the autonomy of the Gothic Church. The believers in Theodoro are rejoicing."
+ 
+ feo_gothic_embassy:0 "Gothic Embassy"
+ desc_metropolitan_seat_of_gothia:0 "Theodoro is maintaining a constant embassy at our court. This allows us to have permanent contacts with them without any additional burden on our Diplomatic Corps."
+ 
+ feo_georgian_governor_general:0 "Governor-General of Georgia"
+ desc_feo_georgian_governor_general:0 "Interests of Georgia in our country is represented by the Georgian Governor-General. He also ensures that the treaty of perpetual protection and alliance is upheld by both parties."
+ 
+ #events
+
+ #Governments
+
+ #Monarchical
+ gothic_principality_reform:1 "Gothic Principality"
+ metropolitanate_of_gothia_reform_desc:0 "This small Principality has been can muster an efficient fighting force, despite its small size."
+
+ #Republican
+ gothic_republic_reform:1 "Gothic Republic"
+ gothic_republic_reform_desc:0 "Gothic Republic is a mix between a Merchant Republic and the Ruling Traditions of the Cossacks."
+
+ #Theocratic
+ metropolitanate_of_gothia_reform:1 "Metropolitanate of Gothia"
+ metropolitanate_of_gothia_reform_desc:0 "The Metropolitan Bishopof the Goths is alsoa head of the State of his people, who are, in turn, more than willing to defend their faith and homeland."
+

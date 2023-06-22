@@ -1,0 +1,126 @@
+##############################
+### Relative Power Classes ###
+##############################
+# 0 = none (vanilla)
+# 1 = only their own (vanilla)
+# 2 = vassals etc. (vanilla)
+# 3 = revolution_subject
+# 4 = persian_satrapy
+# 5 = trade_outpost
+# 6 = stato_da_mar_vassal
+##############################
+
+##############################
+### Diplomacy View Classes ###
+##############################
+# 0 = none (vanilla)
+# 1 = only their own (vanilla)
+# 2 = dominion, dominion_tc
+# 3 = autonomous_dominion, autonomous_dominion_tc
+##############################
+
+# Forward declaring all subject types so they can refer to each other in triggers etc.
+georgian_protectorate = { }
+
+georgian_protectorate = {
+	copy_from = march
+	count = march
+
+	# Graphics:
+	sprite = GFX_icon_georgian_protectorate
+	diplomacy_overlord_sprite = GFX_diplomacy_leadgeorgian_protectorate
+	diplomacy_subject_sprite = GFX_diplomacy_amgeorgian_protectorate
+
+	# Triggers:
+
+	# Properties:
+	is_march = yes
+	can_be_annexed = no
+	takes_diplo_slot = no
+	has_power_projection = yes
+	gets_help_with_rebels = yes
+	can_set_mil_focus = yes
+	extend_trading_range = yes
+	forms_trade_companies = yes
+    overlord_protects_external = yes
+
+	max_government_rank = 2
+	cities_required_for_bonuses = 0 #0
+	trust_on_start = 50
+
+	base_liberty_desire = -15.0
+	liberty_desire_development_ratio = 0.1
+	pays_overlord = 0.25
+	forcelimit_to_overlord = 0.25
+	naval_forcelimit_to_overlord = 0.25
+	military_focus = 1.75
+
+	relative_power_class = 2
+
+	can_fight = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	
+	can_rival = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	can_ally = {
+		same_overlord = georgian_protectorate
+	}
+	can_marry = {
+		always = yes
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	subsidize_armies = yes
+	send_officers = yes
+	fortify_march = yes
+	scutage = yes
+	# (immediate)
+	fortify_march = yes
+	takeondebt = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	knowledge_sharing = yes
+	place_relative_on_throne = no
+
+	# Modifiers:
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.25
+			}
+		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+}

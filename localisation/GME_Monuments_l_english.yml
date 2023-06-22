@@ -1,38 +1,44 @@
 ﻿l_english:
 
-#Balkans
+ #Balkans
  gme_kruje_castle: "Kruje Castle"
- gme_kruje_castle_desc: "§gThe castle was originally built in the 4th century AD by the Byzantine Emperor Justinian I, and it has a long and varied history. During the Middle Ages, the castle served as the capital of the Principality of Arbanon, an independent state that existed in what is now Albania from the 11th to the 13th century. In the 14th century, the castle was captured by the Ottoman Empire and became an important Ottoman military stronghold.§!"
+
  gme_smerederevo_fortress: "Smerederevo Fortress"
- gme_smerederevo_fortress_desc: "§g§!"
 
-#Britain
+
+ #Britain
  gme_patrick_cathedral: "St. Patrick's Cathedral"
- gme_patrick_cathedral_desc: "§gSt. Patrick's Cathedral is an Anglican cathedral located in Dublin, Ireland. It is the largest cathedral in the country and the National Cathedral of the Church of Ireland. The cathedral was built in the 12th century on the site of a earlier church that was founded by Saint Patrick, the patron saint of Ireland. It is a stunning example of Gothic architecture and is known for its beautiful interior, which includes a series of stained glass windows, chapels, and altars.§!"
+
  gme_rock_chasel: "Rock of Chasel"
- gme_rock_chasel_desc: "§gThe Rock of Cashel, also known as St. Patrick's Rock, is a historic site located in County Tipperary, Ireland. It is a rocky outcrop that rises dramatically from the surrounding plain and is home to a number of important historical and cultural landmarks, including a castle, a cathedral, and a chapel. The Rock of Cashel was the seat of the kings of Munster for many centuries and played a key role in the history of Ireland.§!"
 
-#France
+
+ #France
  gme_mont_michel: "Mont Saint-Michel"
- gme_mont_michel_desc: "§gIt is home to the famous abbey of Mont Saint-Michel, which is one of the most popular tourist attractions in France. The island has a long and fascinating history. According to legend, the island was first settled by the hermit Saint Michel in the 8th century. Over time, a small community of monks and pilgrims developed on the island, and in the 10th century, the abbey of Mont Saint-Michel was founded.§!"
 
-#Iberia
+
+ #Iberia
  gme_sagres_school_navigation: "Sagres School of Navigation"
- gme_sagres_school_navigation_desc: "§gThe Sagres School of Navigation was a maritime school founded in the 15th century by Prince Henry the Navigator, a Portuguese nobleman and explorer. It was located in the town of Sagres, on the southern coast of Portugal, and was dedicated to the study of navigation, cartography, and astronomy. The school was an important center of learning and innovation, and it played a key role in the development of Portuguese exploration and expansion during the Age of Discovery. Students at the Sagres School of Navigation were taught how to use celestial navigation techniques and create maps, as well as how to build and maintain ships. The school also served as a base for Portuguese expeditions to Africa, Asia, and the Americas.§!"
 
-#Italy
+
+ #Italy
  gme_castello_estense: "Castello Estense"
- gme_castello_estense_desc: "§gThe Castello Estense is a medieval castle located in the city of Ferrara, Italy. It was built in the 14th century by the Este family, who were rulers of the city at the time. The castle is built in a moat and has a high, thick wall surrounding it for protection. Inside, there are several rooms and chambers, including a chapel and a dungeon. The castle also features a drawbridge and a courtyard.§!"
+
  gme_torre_pisa: "Torre di Pisa"
- gme_torre_pisa_desc: "§gThe Leaning Tower of Pisa, is a freestanding bell tower in Pisa, Italy. It is located in the Piazza dei Miracoli and is the third-oldest building in the square. The tower is famous for its unintended tilt, which began during construction in the 12th century. Despite attempts to correct the lean, the tower remains tilted at an angle of about 3.97 degrees. The tower is made up of eight stories, each with a different number of arches, and is topped by a bell chamber.§!"
 
-#North Germany
+ #North Germany
  gme_reichstag: "Reichstag"
- gme_reichstag_desc: "§gThe Reichstag is a historic building in Berlin, Germany, that has served as the meeting place of the German parliament, the Bundestag, for much of its history. The first Reichstag building was constructed in 1894 and served as the parliament of the German Empire until the end of World War I in 1918. The building was severely damaged by fire in 1933, and it was subsequently rebuilt and redesigned by the architect Paul Wallot. The new building was completed in 1894 and served as the parliament of the Weimar Republic until 1933, when it was destroyed in another fire.§!"
 
-#South Germany
+ gme_schloss_oldenburg: "Schloss Oldenburg"
+
+ gme_royal_mint_jachymov: "Royal Mint"
+
+  gme_semper_oper: "Semper Oper"
+
+ #South Germany
  gme_bundeshaus: "Bundeshaus"
- gme_bundeshaus_desc: "§g§!"
 
  gme_university_graz: "University of Graz"
- gme_university_graz_desc: "§g§!"
+
+
+ #Lowlands 
+ gme_grote_raad_mechelen: "Grote Raad der Mechelen"

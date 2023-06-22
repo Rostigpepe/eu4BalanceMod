@@ -60,7 +60,7 @@ country_decisions = {
 			dip_tech = 8
 		}
 		effect = {
-			add_years_of_income = -0.2
+			add_years_of_income = -0.3
 			add_country_modifier = {
 				name = BM_free_colonist
 				duration = 3650
@@ -90,7 +90,7 @@ country_decisions = {
 		set_country_flag = gecko_tackle_debt_timer_2
 		add_country_modifier = {
 			name = gecko_tackle_debt_timer
-			duration = 3650
+			duration = 1825
 			hidden = yes
 		} 
 		add_country_modifier = {
@@ -112,6 +112,7 @@ country_decisions = {
 		allow = {
 			is_in_deficit = no
 			hidden_trigger = {
+				NOT = { has_country_modifier = gecko_tackle_debt_timer }
 				had_country_flag = {
 					flag = gecko_tackle_debt_timer_2
 					days = 30

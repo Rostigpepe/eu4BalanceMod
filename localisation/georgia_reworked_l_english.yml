@@ -1,0 +1,578 @@
+﻿l_english:
+
+ #missions
+ #First Row
+ geo_consolidate_georgia_title:0 "Consolidate Georgia"
+ geo_consolidate_georgia_desc:0 "Georgian Kingdom is at the verge of collapse due to hostilities among the members of the royal family and powerful noble houses. We cannot restore Georgia to its former glory if these petty squabbles will continue tearing our country apart."
+ geo_will_avert_crisis:0 "§GGeorgian Crisis will be averted.§!"
+ geo_recover_armenia_title:0 "Recover Armenia"
+ geo_recover_armenia_desc:0 "Following the weakening of the Georgian state, Armenian lands to the south fell at the hands of the Turkoman nomads. We must liberate the Armenians from the heathen dominance once more, as our most valiant kings did centuries ago."
+ geo_subjugate_shirvan_title:0 "Shirvanshah and Shahanshah"
+ geo_subjugate_shirvan_desc:0 "David IV and his successors subjugated Shirvan, exemplified by titles of "Shirvanshah and Shahanshah", and retained control until recently. Following wars against Tamerlane, the Shirvanshahs claimed independence from us. We must restore our rights to Shirvan."
+ geo_orthodox_empire_title:0 "Soldiers of St. George"
+ geo_orthodox_empire_desc:0 "As Third Rome and liberators of Constantinople, we shall fulfill our destiny as the defenders of the One True Catholic and Apostolic Orthodox Church. We shall make a covenant with the Almighty God and vow that we would rather die for His love, than retreat from the enemy. We shall fight bravely, and we will defeat not only the devil’s servants, but the devil himself!"
+ geo_city_of_constantine_title:0 "City of Constantine"
+ geo_city_of_constantine_desc:0 "Even after our victories against the heathens, there are still some that doubt our poisition as the successors of St. Constantine and the defenders of the Most Holy Faith. But the shall be convinced once the world will be awed by the magnificence of his city and the splendor it has achieved under our rule!"
+ geo_defend_against_turks_title:0 "Defend against the Turks"
+ geo_defend_against_turks_desc:0 "Turkish presence is a serious issue that must be dealt with. Being in a defensive position is not an option, as the enemy shall become stronger as time goes on. For Christendom to be safe, we must strike against the Turks at their heartland, in Anatolia."
+ geo_expell_turks_title:0 "Expunge the Turks"
+ geo_expell_turks_desc:0 "We have achieved some major victories against the Turks recently, maybe even greater than centuries ago on the fields of Didgori against the Seljuks. It would be foolish, however, to rejoice in our victory, while the enemy is recuperating and preparing for revenge. We must push our advantage and drive the Turks out once and for all, and restore Christian rule over these lands!"
+ emp_geo_expell_turks_trigger_tooltip:0 "Ottomans dont own any province in Europe"
+ geo_liberate_jerusalem_title:0 "Promise of Lasha Giorgi"
+ geo_liberate_jerusalem_desc:0 "We were a dependable ally to the crusaders, and George IV was preparing to invade Muslim-held Jerusalem to aid the Franks. Unfortunately, the expedition was aborted due to the sudden incursions of the Mongols. However, now that our state achieved might that has not been seen before, we may recapture the holy city for the glory of Christendom!"
+ geo_conquer_egypt_title:0 "Destroy the Mamluk State"
+ geo_conquer_egypt_desc:0 "Mamluks in the region of Egypt sustain their rule and armies through the extensive slave trade of Christians. The mere existence of such an abomination of a state is a constant insult to our Nation. We must disperse the Mameluks from Cairo and End their disgusting regime once and for all."
+ #Second Row
+ geo_restore_georgia_in_north_title:0 "Subjugate the North"
+ geo_restore_georgia_in_north_desc:0 "North Caucasus slipped away from our rule following the near-incessant wars against the Timurids. We must restore Georgian Control over the North Caucasus."
+ geo_pacify_the_north_title:0 "Pacify the North"
+ geo_pacify_the_north_desc:0 "Our control of the North Caucasus has been relatively loose both in the past and even now. We must establish firm control over these lands and settle our kin to consolidate Georgian authority over these lands."
+ estate_pacification_of_the_north_privilege:0 "Pacification of the North"
+ estate_pacification_of_the_north_privilege_desc:0 "The combination of our extensive military and administrative policies in the North Caucasus bore its fruits. The region is under our permanent control thanks to our settlers."
+ estate_pacification_of_the_north_privilege_tt:0 "Grants us §YPacification of the North§! Cossack Privilege, allowing us to recruit §YCossack Regiments§!, with §G+25%§! §YSpecial Units Ratio§! and §G+25%§! §YCavalry-to-Infantry Ratio§!"
+ geo_catholicate_of_khundzia_title:0 "Catholicate of Khundzia"
+ geo_catholicate_of_khundzia_desc:0 "During the Evangelization efforts of the North Caucasus, the Catholicate of Khundzia was established as a special division within Georgian Orthodox Church, which covered Dagestan and nearby areas. With North Caucasus under our control, we should resume our missionary activities and reestablish the Catholicate."
+ geo_rein_in_the_komnenoi_title:0 "Rein in the Komnenoi"
+ geo_rein_in_the_komnenoi_desc:0 "Empire of Trebizond, founded after Georgian military expeditions in Chaldea during the reign of Queen Tamar to aid her Comnenian relatives, served as an excellent buffer state between mainland Georgia, and the Sultanates and Beyliks in Anatolia. Our influence over the Trebizond diminished following the Mongol invasions, now with out might restored once more, we should reestablish our positions in the region."
+ geo_rein_in_the_komnenoi_tt1:0 "\nIf we manage to sway §YTrebizond§! with out Diplomatic Maneuvers, we will have an option to either establish our protectorate over them, or take our alliance a step further."
+ geo_rein_in_the_komnenoi_tt2:0 "If we choose a more hostile policy, towards §YTrebizond§!, we will have an option to vassalize them by force."
+ geo_rein_in_the_komnenoi_tt3:0 "If §YTrebizond§! doesnt exist and we hold the relevant province directly, OR if §YTrebizond§! is our vassal, we will gain the following bonus:"
+ geo_expedition_to_trebizond_title:0 "Campaign in Chaldea"
+ geo_expedition_to_trebizond_desc:0 "We have once more established our control over the Trapezuntine Empire, but with this, now we border the Islamic Turkish beyliks and sultans that occupy the lands that Trebizond once held. We must restore our control over These lands and expand them further, to gain a firm hold in Anatolia."
+ geo_assemble_the_navy_title:0 "Navy for Georgia"
+ geo_assemble_the_navy_desc:0 "Most recent attempt to construct a siezable Naval Forces in Georgia was during the Reign of George IV 'Lasha', to embark on a Crusade against the saracens on the holy land, but all of it was twarted with Mingol Invasions and internal turmoil. As we now control most if not all of the Eastern Black Sea coast, we have the great opportunity to create a nawy worthy for our country."
+ geo_assemble_the_navy_shipyards_tt:0 "Every province in the East Black Sea Coast will owned by us and our subjects will gain the highest possible Naval Building."
+ geo_conquer_crimea_title:0 "Campaign in Crimea"
+ geo_conquer_crimea_desc:0 "In the past, our influence spread up to Crimea, via Trebizond. However, nowadays the region is ravaged by nomadic hordes. We cannot properly develop our Economy, without securing the Black Sea. And we cannot properly Secure the Black Sea, without controlling Crimea. Thus, we must seize the peninsula, and restore and expand the devastated region's trading capabilities."
+ geo_expand_in_northern_black_sea_title:0 "The Georgian Sea"
+ geo_expand_in_northern_black_sea_desc:0 "There was a time when the Black Sea of today was called the Georgian Sea by some. We should make this true and thus expand to the northern shores. Not only will this benefit our trade greatly, but the local Orthodox Population might be more than eager to support our regime."
+ geo_autokrator_title:0 "Autokrator of East and West"
+ geo_autokrator_desc:0 "Georgian Sovereigns have long claimed the dignity of the Byzantine Emperors, reflected in their titles, but these claims were thwarted following the sudden incursion of Mongols. However, as we control the very center of the Empire itself, we have the opportunity to press these claims more vigorously than ever before."
+ geo_liberate_byzantine_lands_title:0 "Free Orthodox Lands"
+ geo_liberate_byzantine_lands_desc:0 "We have taken Constantinople and surrounding territories, but the Orthodox population in nearby regions is still under the deplorable rulership of the heathens. We must liberate our brethren from their tyranny!"
+ geo_renovate_ivirion_and_bachkovo_title:0 "Iviron and Petritson"
+ geo_renovate_ivirion_and_bachkovo_desc:0 "Our ancestors maintained major monasteries in the former Eastern Roman Empire, that served as cultural centers for our nation, where arts and innovations gained through interaction with other Orthodox nations enriched our culture. These monasteries were decimated and degraded under vile Turkish rule. Should we restore them, it will signal the resurgence of our devotion to our faith, as well as make them centers of cultural exchange with our brethren in Christ once more!"
+ geo_the_holy_city_title:0 "The Monastery of the Cross"
+ geo_the_holy_city_desc:0 "As a result of a deplorable rule of the Saracens, the Georgian monasteries in the holy land are in a depressing state, barely existing and remain to be a shadow of their former splendor. Well, no more... We shall be the guardians of these holy places once more!"
+ geo_the_golden_age_title:0 "The New Golden Age"
+ geo_the_golden_age_desc:0 "Sultans and Kings, barbaric Nomads and elite Janissaries, Heretics and Heathens, everyone that stood on our righteous path has been crushed to dust. Our foes tremble just by hearing our name, and our Friends stare with awe and joy at our success. This is a glorious age for our nation. Our ancestors in heavenly Georgia are watching us with bliss. Long Live our [Root.GovernmentName]! Long Live Georgia!"
+ #Third Row
+ geo_embassies_abroad_title:0 "Georgian Embassies"
+ geo_embassies_abroad_desc:0 "We will have a difficult time overcoming our enemies without a trustworthy and advanced ally. Historically, it was during the Crusades when we managed to prosper, and in order to restore our country to its former Glory, we should reinvigorate our ties with the West."
+ geo_balance_the_estates_title:0 "Consolidate Society"
+ geo_balance_the_estates_desc:0 "The Achilees Heel of this country was always the internal strife between the various parts of the government and the society. Before we may proceed to truly reinvigorate our country, we must first reinvigorate the cohersion and unity in our nation."
+ geo_balance_the_estates_tt:0 "§G1§! Base Production will be added in every province in Kartli-Kakheti, Imereti and Samtskhe Areas.."
+ geo_reestablish_protectorates_title:0 "Reestablish the Protectorates"
+ geo_embassies_abroad_title:0 "Georgian Embassies"
+ geo_embassies_abroad_desc:0 "The ascension of our country coincided with the beginning of the Crusades. Georgian and Frankish forces often helped each other out and thus managed to counter vastly numerous Muslim foes. The recent Turkish incursions have left us largely isolated from Mainland Europe. Our statesman believes that to counter the looming threats around us, we should try to maintain our ties with western powers."
+ geo_reestablish_protectorates_title:0 "Reestablish the Protectorates"
+ geo_reestablish_protectorates_desc:0 "Traditionally, Georgian monarchs established a series of buffer states around the kingdom proper, which both served as a convinient shield to defend the country and made the governance of the newly conquered lands easier. If we want our empire to prosper, we must reestablish the Protectorate system."
+ geo_diplomatic_expeditions_in_west_title:0 "Expeditions in the West"
+ geo_diplomatic_expeditions_in_west_desc:0 "Georgia is surrounded by numerous enemies, presenting an incessant threat to our country. Asides from this, the near-permanent wars have caused our institutions to stagnate and degrade. To counter this menace, we need to find a powerful fellow Christian Ally in the west, that will both help us against our enemies and can aid us to modernize our state."
+ geo_army_reform_title:0 "Modernization of the Army"
+ geo_army_reform_desc:0 "Our recent observations of the armies of our allies and enemies have revealed a rather disturbing fact, that our military institutions are becoming more and more inadequate as time passes by. Fortunately, we have a great opportunity to modernize our military with the expertise that our countrymen gained at our allies' courts."
+ geo_army_reform_effects_tt:0 "The event will allow us to switch from §YEarly Model Georgian Militarization§! to §YNew Model Georgian Militarization§!"
+ geo_intensive_diplomacy_title:0 "Georgian Diplomacy"
+ geo_intensive_diplomacy_desc:0 "Once our great poet said that 'He who doesn’t seek a friend, is his own foe.' To strengthen our nation, it would be wise to maintain faithful and trustworthy allies."
+ #Fourth Row
+ geo_restore_gelati_and_ikalto_title:0 "Gelati and Ikalto"
+ geo_restore_gelati_and_ikalto_desc:0 "Academies of Gelati and Ikalto were once centers of learning and culture in Georgia, where Georgian monks, that often came from the Eastern Roman Empire, taught both secular and divine sciences. Unfortunately, following the decline of the Georgian Kingdom, the academies fell into disarray. Knowledge is power, and we need as much power as possible to counter our numerous enemies. Thus, if we want to build a truly strong nation, we must restore and reinvigorate these old academies."
+ geo_new_ruis_urbnisi_title:0 "II Council of Ruis-Urbnisi"
+ geo_new_ruis_urbnisi_desc:0 "Georgian Orthodox Church is the bastion of the Georgian society as a whole, and in order to prevent her name being defiled by some of the least virtuous characters, that would try to get into the Ecclesiastic Ransk, we must summon the council, Similar to the Ruis-Urbnisi."
+ geo_decrees_of_new_ruis_urbnisi:0 "Event allows to adopt the §YDecretals of the Georgian Orthodox Church§! Government reform"
+ geo_rebuild_svetitskhoveli_title:0 "Rebuild Svetitskhoveli"
+ geo_rebuild_svetitskhoveli_desc:0 "Cathedral of the Living Pillar, one of our most Holy sites, the resting place of Christ's Mantle, the symbol of Georgia's ancient Christian heritage has been devastated by constant invasions by heathen nomads and wasn't been properly rebuilt for some time already. We should restore and refurbish the Magnificient Cathedral to the state it truly deserves!"
+ geo_georgian_orthodox_church_title:0 "Georgian Patriarchate"
+ geo_georgian_orthodox_church_desc:0 "Georgian Orthodox Church is one of the oldest Autocephalous Churches, gaining Autocephaly from the Church of Antioch, and served as a decisive player in shaping our state. We should further strengthen the Church if we wish to restore our country to its former glory."
+ geo_reform_georgian_language_title:0 "Georgian Language"
+ geo_reform_georgian_language_desc:0 "It is becoming obvious that the Georgian language needs certain reform and reorganization, that retains numerous archaisms and outdated characteristics. Furthermore, the simultaneous usage of three scripts presents an additional matter of concern, with Ecclesiastic authorities using older Asomtavruli and Nuskhuri, while laymen prefer a more common, “Military” script. With the support of Clergymen, we may be able to resolve these issues."
+ geo_relations_with_moscow_title:0 "Relations with Muscovites"
+ geo_relations_with_moscow_desc:0 "We are seeing Muscovites destroying the Various rump states of the former Golden Horde one after another and advancing to the south. The Fellow Orthodox Empire might be a natural ally against our heathen neighbors... Or an incredibly irritating foe to come."
+ geo_rus_foe:0 "If we choose to antagonize §YMuscovy§! (or §YRussia§!) and are valid for §YUnion§! we will gain the following reward (otherwise we will gain §Ypermanent claims§! on the regions of §YRussia§!, §YRuthenia§!, and §YPontic Steppes§!):"
+ geo_at_this_point_tt:0 "\nAt this point, we gain:\n"
+ geo_depends_on_tt:0 "The rewards for this mission depends on the way of its completion."
+ geo_rus_friend:0 "If we will manage to establish a long lasting alliance with the Russians, we will gain the following reward:"
+ geo_bagrations_in_moscow_title:0 "Bagrations in Moscow"
+ geo_bagrations_in_moscow_desc:0 "'If the dynasty of the Moscovites should be extinguished, the Princes of Georgia would succeed'"
+ geo_rus_was_foe:0 "If we resolved the mission by subjugating §YMuscovy§! (or §YRussia§!) or controlling §YMoscow§!, we will gain the following reward:"
+ geo_rus_was_friend:0 "If we resloved the mission by allying with §YMuscovy§! (or §YRussia§!), we will suggest to strenghten our ties and send an Embassy to them. This may result in a significant military cooperation between two countries, or, in case the Russians are in turmoil or our diplomatic ideas are strong enough, in a voluntary §GPersonal Union!§!. There is a very small chance, however, that the embassy will end up a diplomatic fiasco."
+ geo_north_america_title:0 "The Other Georgia"
+ geo_north_america_desc:0 "During the interactions with the western Empires, we heard the news that the region in North America is also called 'Georgia', a fact that some of our prominent statesmen, clergy and officers took as a sign that it rightfully belongs to us. While this notions sounds kind of bizarre, our political elite no doubt thinks that meddling in North American affairs will surely show the might of our Nation."
+ geo_america:0 "If we'll manage to establish actual colonial nation in North America, our colonies will gain a beneficial bonuses and we'll gain the following rewards:"
+ geo_america_alternatively:0 "If we'll establish cordial relations with the independent American state (such as the §YUSA§!) that owns the region, this relationship will evolve into friendship. Also, Georgians settlers will arrive in Georgia (the other one), that will gain beneficial provincial bonuses, and we'll get the following rewards:"
+ #Fifth Row
+ geo_defend_abkhazia_title:0 "Defend Abkhazia"
+ geo_defend_abkhazia_desc:0 "Our borders in Abkhazia are vulnerable, as various nomadic tribes of the north threaten our lands with raids and pillage. We must build proper fortifications in the region if we want to prevent them from devastating our country."
+ geo_wine_and_mulberry_title:0 "Grapewines and Mulberries"
+ geo_wine_and_mulberry_desc:0 "Two major industries that once made our country rich were winemaking and silk production. Our barbarous enemies were aware of this and the first thing that they would do during their invasions was to cut down grapevines, and mulberries, the leaves of which were fed to silkworms. We should restore these industries and develop them further, to restore our economy."
+ geo_parliamentarism_title:0 "The Idea of Karavi"
+ geo_parliamentarism_desc:0 "The Karavi was a concept of Parliament-like organ that emerged during the reign of Queen Tamar, advocated by the newly emerged gentry to counter the Monarch's and Large Feudal Houses' monopoly of power. As our state advances, expands and its economy grows, such gentry has reemerged once more. Its obvious, that we cannot ignore this matter anymore."
+ geo_parliamentarism_autocracy_tt:0 "If we will complete the Mission without having a §YParliament§!, we will gain the following:"
+ geo_mouravis_and_mandators_title:0 "Mandators and Mouravis"
+ geo_mouravis_and_mandators_desc:0 "Strong Country is founded on Just and Fair Laws and Courts. We must reform our outdated legal code and reinforce the judicial powers of the Judges over the Nobles and Arbitrary and Selfish 'Justice', so called."
+ geo_develope_tbilisi_title:0 "Develope Tbilisi"
+ geo_develope_tbilisi_desc:0 "Tbilisi is the center of the Caucasus and lies on vital trade routes from east to west. We should utilize its location and develop the city into a major center of trade in the region."
+ geo_wealth_of_colchis_title:0 "Wealth of Colchis"
+ geo_wealth_of_colchis_desc:0 "Industry in Western Georgia is thriving thanks to newly discovered coal in the Region. If Golden Fleece was the symbol of wealth and power of Ancient Colchis, the Black Stone shall be that of the Modern One."
+ geo_heraclian_reforms_title:0 "Heraclian Reforms"
+ geo_heraclian_reforms_desc:0 "New ideas are developing constantly both in the homeland and abroad. We should embrace those that may benefit our country and shouldn't shy away from learning from the experience of other countries."
+ geo_heraclian_reforms_ally_tooltip:0 "Is either a Great Power or has a Great Power from Western or Eastern Technology Group as an ally."
+ geo_revolution_is_coming_title:0 "Revolution is Coming!"
+ geo_revolution_is_coming_desc:0 "Its Coming! With Roar, with Thunder and with Might! The dream of the people is near! The desires of people shall soon be fulfilled!"
+
+ #modifiers
+ geo_subjugated_north:0 "Restored Georgian Rule in North Caucasus"
+ desc_geo_subjugated_north:0 "With Georgian Authority restored in North Caucasus, we should renew our missionary efforts and Christianize the local population."
+
+ geo_orthodox_unity:0 "Orthodox Unity"
+ desc_geo_orthodox_unity:0 "Our dedication to the true faith inspires unity in our Orthodox subjects."
+
+ geo_georgian_sea:0 "The Georgian Sea"
+ desc_geo_georgian_sea:0 "Either by direct control or via our loyal and noble allies and protectorates, the Black Sea is under our firm control, allowing us to expand our navies greatly."
+ 
+ geo_orthodox_empire:0 "The Church Militant"
+ desc_geo_orthodox_empire:0 "We are the foremost defenders of the true faith."
+ 
+ geo_golden_age:0 "Georgian Golden Age"
+ desc_geo_golden_age:0 "We have surprassed the deeds of even the greatest of our ancestors. The Nation has entered into the age of prosperity and jubilation."
+ 
+ geo_protectorate_system:0 "Georgian Protectorates"
+ desc_geo_protectorate_system:0 "We have managed to reestablish the system of Georgian Protectorates over your buffer states."
+ 
+ geo_mstovaris_reorganized:0 "Reorganized Mstovaris"
+ desc_geo_mstovaris_reorganized:0 "Our renewed Intelligence Services allows us to more effectively gather information on hostile countries and defend ourselves from enemy espionage."
+
+ geo_diplomatic_success:0 "Success of Georgian Diplomacy"
+ desc_geo_diplomatic_success:0 "Our diplomatic policy bore its fruit. Our ambassadors are respected in foreign courts."
+
+ geo_intensive_diplomatic_policy:0 "Intensive Georgian Diplomacy"
+ desc_geo_intensive_diplomatic_policy:0 "Through careful diplomatic policy, Georgia gained its reputation as a trustworthy partner."
+
+ geo_cossack_migrations:0 "Cossack Migrations"
+ desc_geo_cossack_migrations:0 "Cossacks are colonizing the areas abandoned by the Tatars."
+
+ geo_restored_gelati_and_ikalto:0 "Restoration of Gelati and Ikalto"
+ desc_geo_restored_gelati_and_ikalto:0 "Our prominent academies have been revived. Inspired Scholars and Intellectuals are intensively working in renewed temples of knowledge."
+
+ geo_mtskheta_holy_site:0 "Patriarchal Cathedral of Mtskheta"
+ desc_geo_mtskheta_holy_site:0 "Cathedral of Svetitskhoveli is the Patriarchal seat of the head of the Georgian Orthodox Church and sites several notable holy relics."
+
+ geo_mtskheta_holy_site:0 "Patriarchal Cathedral of Mtskheta"
+ desc_geo_mtskheta_holy_site:0 "Cathedral of Svetitskhoveli is the Patriarchal seat of the head of the Georgian Orthodox Church and sites several notable holy relics."
+ 
+ geo_georgian_russian_cooperation:0 "Georgian-Russian Cooperation"
+ desc_geo_georgian_russian_cooperation:0 "Our Countries cooperate and share each others' experience, enhancing the strength of both of our Nations."
+
+ geo_russo_georgian_cooperation:0 "Russo-Georgian Cooperation"
+ desc_geo_russo_georgian_cooperation:0 "Our Countries cooperate and share each others' experience, enhancing the strength of both of our Nations."
+ 
+ geo_bagrations_in_moscow:0 "Influence in Russia"
+ desc_geo_bagrations_in_moscow:0 "Our country has a major influence in Russian affairs, a notorious achievement that allows us to achieve our goals far easier."
+
+ geo_reviving_economy:0 "Reviving Economy"
+ desc_geo_reviving_economy:0 "Georgian Economy is recovering after years of devastation, thanks to our effective policies."
+
+ geo_thriving_tbilisi:0 "Thriving Tbilisi"
+ desc_geo_thriving_tbilisi:0 "Tbilisi has become a major and constantly developing city, one of the most important trade centers in the region."
+
+ geo_industrialization:0 "Industrialization of Georgia"
+ desc_geo_industrialization:0 "Our country is seeing rapid industrialization, following our regional economic policies."
+
+ geo_heraclian_reforms_modifier:0 "Heraclian Administrative Reforms"
+ desc_heraclian_reforms_modifier:0 "Our Government is intensively working to modernize our institutions, using both local and foreign experience and innovations."
+
+ geo_liberated_armenia:0 "Liberated Armenia"
+ desc_geo_liberated_armenia:0 "We have liberated the Armenian lands from the Mohammedans."
+
+ geo_sulkhan_saba_orbeliani:0 "Sulkhan-Saba Orbeliani"
+ desc_geo_sulkhan_saba_orbeliani:0 "A notoriously skilled statesman is leading our diplomatic corps."
+
+ geo_patriarch_anton:0 "Catholicos-Patriarch Anton of Georgia"
+ desc_geo_patriarch_anton:0 "The intensive translatory and education works of our Patriarch is bearing its fruit, as his pupils are aiding us to modernize the state."
+ 
+ geo_pacification_of_the_north:0 "Pacification of the North"
+ desc_geo_pacification_of_the_north:0 "The combination of our extensive military and administrative policies in the North Caucasus bore its fruits. The region is under our permanent control thanks to our settlers."
+ 
+ geo_revolutionary_zeal:0 "Revolutionary Zeal"
+ desc_geo_revolutionary_zeal:0 "It is our sacred mission to free the serfs, peasants and workers from the abysmal tyrants of the world."
+
+ georgian_crisis_aftermath:0 "Aftermath of the Crisis"
+ desc_georgian_crisis_aftermath:0 "The country is plagued by the aftershocks of a devastating crisis. The only remedy for it is to consolidate Georgia."
+
+ geo_georgian_georgia:0 "Georgian Georgia"
+ desc_georgian_georgia:0 "These provinces have large influx of settlers from Georgia."
+ 
+ geo_georgian_georgia_usa:0 "Georgian Georgia"
+ desc_georgian_georgia_usa:0 "These provinces have large influx of settlers from Georgia."
+ 
+ geo_georgian_america:0 "Georgia in America"
+ desc_georgian_america:0 "We have managed to establish our permanent presence on an American Continent."
+ 
+ geo_georgians_in_america:0 "Georgians in America"
+ desc_georgians_in_america:0 "We have managed to establish our permanent influence on an American Continent."
+ 
+ geo_jerusalem_under_christians:0 "Conquered Jerusalem"
+ geo_restored_koj:0 "Restored the Crusader State"
+ 
+ geo_go_revolutionary_tt:1 "If we complete this mission while being §YRevolutionary§!:"
+ geo_go_reactionary_tt:1 "If we complete this mission while NOT being §YRevolutionary§!:"
+ geo_revolutionary_zeal:0 "Revolutionary Georgia"
+ desc_geo_revolutionary_zeal:0 "We have took up the flag of the Revolution. We shall overthrow the tyrants throughout the world!"
+ geo_reactionary_zeal:0 "Counter-Revolutionary Georgia"
+ desc_geo_reactionary_zeal:0 "We have crushed the Revolution and the Chaos by which it threatened the world!"
+ 
+ geo_economic_hegemony_tt:0 "If we complete this mission while being a §YEconomic Hegemon§!, we will gain the following:"
+ geo_naval_hegemony_tt:0 "If we complete this mission while being a §YNaval Hegemon§!, we will gain the following:"
+ geo_alternatively_mil_hegemony_tt:0 "If we complete this mission while being a §YMilitary Hegemon§!, we will gain the following:"
+ 
+ geo_saffron_and_emerald:0 "Sky of Turquoise, Land of Emerald"
+ geo_navy_of_colchis:0 "Naval Might of Colchida"
+ geo_iberia_shall_be_radiant:0 "Iberia Shall be Radiant!"
+ 
+ geo_porto_megrelo:0 "Porto Megrelo"
+ desc_geo_porto_megrelo:0 "Sokhumi, known as Porto Megrelo, or 'Port of the Mingrelians' to Italian Merchants, now became a major Port in Georgia that serves both as a Commercial Hub and an important Naval Base"
+ 
+ geo_academy_of_gelati_modifier:0 "Academy of Gelati"
+ desc_geo_academy_of_gelatii_modifier:0 "We have Restored Academy of Gelati to its former glory! Refered by the people as 'New Hellas' and 'New Athos', the Monastery and Academy of Gelati, was originally built by king David IV 'the Builder'. It served as a vital center of learning of the Georgian culture, employing many Georgian scientists, theologians, and philosophers, many of whom had previously been active at various Orthodox monasteries abroad.:"
+ 
+ geo_academy_of_ikalto_modifier:0 "Academy of Ikalto"
+ desc_geo_academy_of_ikalto_modifier:0 "We have Restored Academy of Gelati to its former glory! The Academy was present on the territory of the Monastery of Ikalto in IX century, but it was destroyed during the Arab invasions. It was then revived during the reign of David IV 'the Building', with Arsen Ikaltoeli being its first rector. The academy of Ikalto had functioned for a long time, playing an important role in the history of Georgian enlightenment, with the teaching process basically following the Trivium-Quadrivium method.:"
+ 
+ geo_georgian_absolutism:0 "Georgian Absolutism"
+ desc_geo_georgian_absolutism:0 "Our Leader Governs the Country at his own discretion"
+ 
+ geo_caput_mundi:0 "Caput Mundi"
+ desc_geo_caput_mundi:0 "Some may have doubted it in the past, but now its clear to everyone: Constantinople is the World City and its holders - Universal Defenders of Christendom"
+ 
+ geo_law_of_vakhtang:0 "Code of Lord Vakhtang"
+ desc_geo_law_of_vakhtang:0 "Code of Lord Vakhtang effectively enforces the rule of central law over the Country"
+ 
+ geo_crimean_trade:0 "Georgian Dominance in Crimean Trade"
+ 
+ #Parliament Issues
+ geo_restrict_serfdom_act:0 "Support The Peasantry Act"
+ geo_support_of_the_church_act:0 "Expansion of the Monasteries Act"
+ geo_support_the_local_guilds_act:0 "Sponsorship of the Guilds Act"
+ geo_relations_with_protectorates_act:0 "Decretals of the Protectorate Guarantees"
+ geo_militarization_act:0 "Act of General Militarization"
+ geo_fortifications_act:0 "Act of Absolute Defense"
+ 
+ #Militarization Loc 
+ geo_access_normal_militarization_tt:0 "§GModernizing the Army will enable us to have a better Militarization Mechanics!§!"
+ 
+ ability_georgian_militarization_mechanic_1:0 "Early Georgian Militarization"
+ ability_georgian_militarization_mechanic_2:0 "New Model Georgian Militarization"
+ #
+ georgian_militarization_mechanic_1:0 "Early Model Georgian Militarization"
+ georgian_militarized_society_1:0 "Georgian Militarization"
+ #
+ georgian_militarization_mechanic_2:0 "New Model Georgian Militarization"
+ georgian_militarized_society_2:0 "Georgian Militarization"
+
+ #Buttons for Early Model Georgian Militarization
+ geo_boost_militarization:0 "Boost Militarization"
+ geo_boost_militarization_desc:0 "Technically, the history of Georgia is the history of wars and bloodshed, against both internal and external enemies. All-encompassing and near incessant warfare has made Georgian society heavily militarized, with nearly everything from culture to even cuisine centered around the warfare and majority of the population nearly constantly having weapons by their side, ready to follow their sovereign in war. While this indeed helped the relatively small country to survive and win against the invaders, at the same time it decimated the economy and usually made the country highly unstable, which had far-reaching consequences for the nation and its development.\n "
+ geo_total_mobilization:0 "Kudze Katsi"
+ geo_total_mobilization_desc:0 "'Kudze Katsi' means 'Every Man with a Hat', that is, every adult male in the country. While initially being a relatively general term, it later has essentially become the Georgian equivalent of 'Levée en Masse', the call for every able-bodied Georgian male to the military campaign. Technically, the defense of the realm and the general population was the obligation of the nobility, as it was common in the rest of feudal Europe. However, later on, as Georgia faced more rampant and frequent wars, this system essentially collapsed and the sovereigns would sometimes call as many able-bodied males as possible during the wars. This would naturally mean that the peasants and workers couldn't work at their jobs at the time, so this was usually a desperate measure for rapid responses against the ongoing threats.\n "
+ geo_general_mobilization_modifier:0 "General Mobilization"
+ desc_geo_general_mobilization_modifier:0 "We have summoned as much manpower as possible for our armies. While this enables us to replenish our armies with ease, it's also heavily affecting our economy. Desperate times call for desperate measures, as they say."
+ geo_fort_taxes:0 "Reimplement Satsikhistavo"
+ geo_fort_taxes_desc:0 "'Tsikhistavis', the Georgian term for 'Castellan', were the heads and commanders of the local Forts and 'Satsikhistavos', the areas under the administrative command of said forts. Asides from being an administrative designation, 'Satsikhistavo' was also a special tax paid by the populace to finance the sustenance of the Fortification. Thanks to this, fortifications were usually kept in decent shape despite the constant turmoil and thus eased the country's wars. With that being said, the additional tax burden had a heavy toll on the local populace, that wasn't really prosperous as it was.\n "
+ geo_fort_taxes_modifier:0 "Satsikhistavo Tax"
+ desc_geo_fort_taxes_modifier:0 "We have reimplemented the Satsikhistavo Taxes once more, to support the country's defensive capabilities, but at the cost of hindered development of our provinces."
+
+ #Buttons for New Model Georgian Militarization
+ geo_reform_regular_army:0 "Reform the Morige Lashkari"
+ geo_reform_regular_army_desc:0 "While the Professional Armies to some degree were more-or-less present in the earlier medieval history of Georgia, the actual Modern Standing Army, that is 'Morige Lashkari' was developed later during the reign of King Heraclius II. More or Less modeled after the Western and Russian systems, as part of the reform, every able-bodied male was required to serve for a certain amount of time in this New Model Army, with his equipment and foodstuff. This played a crucial part in stabilizing the realm and enhancing the defensive capabilities of the country against both the organized enemy forces and the marauding bands, while the limited and regulated time of service would ensure that the people would not be distracted from their work for too long for it to have it more severe impact on the Economy.\n "
+ geo_reform_regular_army_modifier:0 "Reformation of Morige Lashkari"
+ desc_geo_reform_regular_army_modifier:0 "As the Art of War keeps developing throughout the world, we too are reforming our Armies to match and deal with new challenges and threats."
+ geo_local_millitias:0 "Reorganize Samdevros"
+ geo_local_millitias_desc:0 "As outnumbered as they were, Georgians usually managed to overcome more numerous enemies due to various differing factors, but the actual plague of the country were the marauding bands that would raid and pillage the countryside. This was by far the most burdensome issue for the Georgians, as unlike facing the actual enemy armies, these smaller and more mobile bands were difficult to spot and rapidly respond to. For this reason, the villages and towns in the country were orgnaized into 'Samdeveros', where under the local commanders, the local millitia of 'Mdevaris', or 'Pursuers' would hunt down and deal with the marauding bands in mind. This provided the excellent part of the larger guerilla warfare in the defensive wars against invaders.\n "
+ geo_local_millitias_modifier:0 "Reorganized Samdevros"
+ desc_geo_local_millitias:0 "We have reorganized our local militias to have them be fit for our current challenges. On the other hand, it does limit our regular armies, as the manpower is needed on the local level."
+ 
+ #events
+ flavor_geo.EVTNAME1:0 "Fate of Armenia"
+ flavor_geo.EVTDESC1:1 "In older days, when Georgian Monarchs conquered Armenian lands from Muslim Turks, they reorganized the lands with the composition of the local population in mind: While these lands were incorporated into the Georgian Kingdom, the appointed governors were of Mkhargrdzeli Family, who were initially members of the Armenian Apostolic Church and retained a high degree of Autonomy. \n\nWith Armenian territories under our control once more, the matter of its organization presents an issue once more, with opinion in a court divided. Some prefer these lands to be directly incorporated into the Georgian crown, while others assume that having an appointed autonomous marcher lord on these lands might prove to be more useful."
+ flavor_geo.EVTOPTA1:0 "Appoint the Marcher Lord in Armenia"
+ flavor_geo.EVTOPTB1:0 "Incorporate the Armenian lands."
+ releasing_armenia_as_march:0 "§RArmenia will take control of provinces in Armenian Region and become a loyal march of Georgia. Armenia will lose cores and claims in Georgia proper.§"
+
+ flavor_geo.EVTNAME2:0 "Oh, New Rome..."
+ flavor_geo.EVTDESC2:1 "'Oh, new Rome, it was said about you, Rome, To be superior over all that exists…' \n\nGeorgian Sovereigns have long claimed the dignity of the Byzantine Emperors, reflected in their titles, But the incursions of Mongols and later devastating wars against Timurids, coupled with internal strife, weakened Georgian state severely and thus, these ambitions couldn’t be fulfilled due to troubling circumstances. \n\n However, now that we have managed to recover from these disastrous times and with the City of Constantine under our control, we can finally proclaim ourselves as the New Rome and the true 'Autocrats of the East and the West'. With such a mighty achievement, now is perhaps the best time to move our capital to Constantinople and refurbish it to the glory which it deserves."
+ flavor_geo.EVTOPTA2:0 "The City of Constantine shall be our new Capital!"
+ flavor_geo.EVTOPTB2:0 "[Root.Capital.GetName] shall be made even more glorious!"
+ geo_enact_empire:0 "§YIf Government form is Monarchy, this option will enact Imperial Administration.§!"
+
+ flavor_geo.EVTNAME3:0 "Sulkhan-Saba Orbeliani"
+ flavor_geo.EVTDESC3:1 "Sulkhan-Saba Orbeliani was a Georgian clergyman and diplomat, tutor of the Georgian monarch Vakhtang VI, and author of the pedagogical collection of fables, “the Book of Wisdom and Lies”, as well as the comprehensive dictionary of the Georgian Language. He, under royal instructions, traveled to the west to seek an alliance with Christian European powers against the Persians and the Ottomans. He met with Pope Clement IX and King of France Louis XIV, who promised him to aid Georgia in its wars against the Mohammedans. \n\nThis wasn’t without a price, however: Orbeliani promised that Georgia would recognize Papal primacy, which was opposed by the Georgian Orthodox Church. In addition to this, Louis XIV gave up the ghost soon after the agreement, so the promise didn’t come to effect. Nevertheless, his embassy was a notorious event and played its role in introducing a series of reforms and innovations in Georgia under the leadership of his pupil, Vakhtang IV."
+ flavor_geo.EVTOPTA3:0 "An excellent Advisor!"
+ flavor_geo.EVTOPTB3:0 "This man should head our diplomatic corps."
+
+ flavor_geo.EVTNAME4:0 "Catholicos-Patriarch Anton of Georgia"
+ flavor_geo.EVTDESC4:1 "Anton I Bagrationi Was Catholicos-Patriarch of the Georgian Church. A Notoriously erudite man, Anton patronized Georgian art and literature and was one of the first to start the reformation of the Georgian language, albeit with some rather unconventional ideas, such as coming up with three distinct writing styles (One for Theology and Sciences, Second for historiography and third for common usage). He also translated European scientific treatises of natural sciences (most notably Physics) into Georgian, which was thought later at Georgian Seminaries.\n\n However, his friendly relations with the members of the Catholic Capuchin Order led to him suspecting him of being a secretly Catholic, which was used by his enemies to dethrone and exile him. However, he managed to cleanse himself from these accusations in Russian Empire and was appointed as Bishop of Vladimir, during the Reign of Catherine “The Great”. When his Cousin, Heraclius II became king of Kartli-Kakheti, he returned to Georgia and was reelected as Catholicos-Patriarch again. His works and reforms immensely affected and influenced Georgian thought."
+ flavor_geo.EVTOPTA4:0 "An excellent Advisor!"
+ flavor_geo.EVTOPTB4:0 "Patronize his endevours and initiatives."
+
+ flavor_geo.EVTNAME8:0 "Georgians capture Jerusalem"
+ flavor_geo.EVTDESC8:1 "During the dawn of the Crusader Era, Georgia was an important ally for the Franks, providing support in a fight against the Islamic forces that threatened Christendom. In his letters to the Pope, our late King George IV (memory eternal), promised the Pontiff of the Holy See to aid the Crusaders in the war against the Muslims occupying Jerusalem. However, after the Mongol Invasions, the Georgian state was involved in devastating wars against the invading nomads. Thus, the potential Liberation of Jerusalem from the Mohammedans became a distant perspective.\n\n The times of troubles are in the past, however, as our fully recovered and rising empire captured the holy land and the holy city of Jerusalem. No doubt, this feat shall earn us great respect throughout the entire Christendom. However, we could, in theory, declare our recent victories as of late fulfillment of our distant promises for the Pope of Rome and Restore the Crusader Kingdom. Not only will this option be most appreciated by the Catholic states of the world, but will also create a convenient buffer state in the newly conquered lands, making the management of the Holy land much easier. Though our clergy might not respect giving up the Holy City at the hands of the Papists."
+ flavor_geo.EVTOPTA8:0 "Kingdom of Jerusalem is restored."
+ flavor_geo.EVTOPTB8:0 "We have liberated the Holy City and we shall be its custodians."
+ geo_released_jerusalem_as_march:0 "§GConquering Jerusalem will be rejoiced by the entire Christendom, improving relations with all Christian countries. Restoring the Crusader State of Jerusalem will surely please the Catholic world even more!"
+ geo_conquered_jerusalem:0 "§GConquering Jerusalem will be rejoiced by the entire Christendom, improving relations with all Christian countries!"
+
+ flavor_geo.EVTNAME9:0 "Governance of Crimea"
+ flavor_geo.EVTDESC9:1 "We have managed to gain control over the Crimean peninsula, that will greatly contribute to establishing our lasting control of the black sea. Now the question of the governance of the peninsula is presented. One of the most interesting potential in this regard is the presence of the Crimean Goths, that may greatly enhance our governing of the peninsula. We could directly administer these lands and resettle some of the Gothic population in the provinces with less loyal groups. On the other hand, our advisors also think that we should draw from an historical experience of the Georgian state and create a protectorate over these lands. Some even advise us to reform the future client in a way that they would fill in the role of the Genoese after the latter were driven out from the peninsula."
+ flavor_geo.EVTOPTA9:0 "Reestablish the Principality of Theodoro over the entire peninsula."
+ flavor_geo.EVTOPTB9:0 "Gothic merchants could greatly enhance the trade in our Empire."
+ flavor_geo.EVTOPTC9:0 "We shall administer the peninsula directly."
+ 
+ flavor_geo.EVTNAME10:0 "Ruthenian Cossacks flock the Steppes"
+ flavor_geo.EVTDESC10:1 "Most of the time in the recent history the northern shores of the Black Sea were less than hospitable land, being a constant battleground between Muslim Tatars and Orthodox Cossacks. Despite the harsh and dangerous environment, many of the serfs would flee to the wild fields to escape the clutches of serfdom, even at the risk of constant raids and pillages by Tatar hordes..\n\n Everything changed, however, with our [Root.GovernmentName] conquering the former Crimean Khanate. Our rapid expansion on these lands forced the Tatar hordes to migrate to safer places in the East. This created a massive vacuum in these provinces, which is being rapidly filled up by the migrating Ruthenian Cossacks on the former lands of the Khanate. We're yet to see the full results of the developing situation, but our military and statesmen were quite impressed by the martial abilities of these migrants and propose to use this opportunity. Some even suggest granting them autonomy in return for their military service."
+ flavor_geo.EVTOPTA10:0 "Establish the Ruthenian state in return for their services."
+ flavor_geo.EVTOPTB10:0 "These migrants will contribute to the glory of our country greatly."
+ geo_ruthenian_cossacks:0 "Ruthenian Cossacks will gain control and colonize the lands abandoned by the Tatars."
+ geo_ruthenia:0 "§GRemember, that Zaporozhian Missions might grant them further permanent claims over ruthenian lands, that you our Empire might utilize.§!"
+ 
+ flavor_geo.EVTNAME11:0 "Georgian Armies storm Cairo"
+ flavor_geo.EVTDESC11:1 "The Mamluk Sultanate was once a powerful state that maintained its strength through an extensive slave trade of abducted Christians. The enslaved would then be raised and trained to become loyal soldiers. While our expansion around the Black Sea greatly curtailed the Mamluk's ability to fill their ranks, the slave trade went on...until now.\nGeorgian troops managed to overrun the Mamluk forces in Egypt and stormed the capital city. This great victory was celebrated with Triumph in [From.Capital.GetCapitalName], where the defeated Mamluk sultan was paraded, before being publically executed by our shooting squad. After the rewarding of our most prominent commanders, the [Root.monarch.GetTitle] announced the end of the Slave trade all over the Empire, reading the decree of the Catholicos-Patriarch regarding the excommunication of all persons invoved in this deplorable business and announced that the convicted slave traders would be executed by being burned at the stake. While the vestiges of the Mamluk authority might hinge in some provinces, it isn't likely that should manage to rise to their former power."
+ flavor_geo.EVTOPTA11:0 "Good Riddance."
+ flavor_geo.EVTOPTB11:0 "Establishing a Protectorate on should make ruling these lands easier!"
+ geo_crushed_slave_traders:0 "Trading of Captives shall be outlawed throughout our Empire, including our subjects."	
+ geo_release_egypt:0 "§YEgypt shall be released as a very loyal Protectorate.§!"
+ 
+ geo_reinforce_slave_trade_ban_title:0 "Reinforce Ban on Trading of Captives"
+ geo_reinforce_slave_trade_ban_desc:0 "It appears that some of our subjects are still conducting the most abominable practice of slave trade. Reinforcement of the ban and summary execution of the criminals involved are due, as it seems..."
+ 
+ flavor_geo.EVTNAME12:0 "Legacy of King Alexander"
+ flavor_geo.EVTDESC12:1 "The Georgian Kingdom has been plagued by internal strife, following the devastating wars against the Timurids and Turkomans. In a desperate attempt to stabilize the situation, before King Alexander took the vows, he appointed his three sons as co-rulers, a concept not uncommon in Byzantine and Roman tradition. But the results are less than satisfactory, as Demetrius effectively rules as an independent sovereign in western Georgia, while the internal squabbles among the Bagrations allowed Atabegs of Samtskhe to exercise a high degree of autonomy, with their heir Kvarkvare already showing separatistic tendencies. \nThe recent passing of king Vakhtang brought up the matter of succession up once more. Technically, it is Demetrius who should become the ruler of Georgia, but the third brother, George, is already showing the signs of rebelion and will most likely cause internal strife with the help of his supporters. We must solve on the matter rather quickly!"
+ flavor_geo.EVTOPTA12:0 "Our Loyalties lie with Demetrius!"
+ flavor_geo.EVTOPTB12:0 "Our Loyalties lie with Giorgi!"
+ 
+ flavor_geo.EVTNAME12ALT:0 "A Rather Unexpected Turn of Events"
+ flavor_geo.EVTDESC12ALT:1 "The Georgian Kingdom has been plagued by internal strife, following the devastating wars against the Timurids and Turkomans. In a desperate attempt to stabilize the situation, before King Alexander took the vows, he appointed his three sons as co-rulers, a concept not uncommon in Byzantine and Roman tradition. But the results are less than satisfactory, as Demetrius effectively rules as an independent sovereign in western Georgia, while the internal squabbles among the Bagrations allowed Atabegs of Samtskhe to exercise a high degree of autonomy, with their heir Kvarkvare already showing separatistic tendencies. \nRecently, things have developed in an unexpected manner, however, as the late Demetrius Bagrationi, governor of the western Georgia has passed away and with him out of the picture, we're able to restore the central authority in the West."
+ flavor_geo.EVTOPTA12ALT:0 "A Welcome Development."
+ 
+ flavor_geo.EVTNAME13:0 "Georgian-Russian Pact of Cooperation"
+ flavor_geo.EVTDESC13:1 "Our alliance with the Russians have been active for a while now. It was full of difficulties, dissapointments and and certain issues to be resolved, but overtime, we have managed to stabilize the our relations and now our treaty is as firm as ever. With this in mind, the Georgian diplomats have decided to send a delegation to the Russians to broaden the pact between the two nations, ensuring the prosperity and might of the two nations."
+ flavor_geo.EVTOPTA13:0 "We await their answer..."
+ 
+ flavor_geo.EVTNAME14:0 "Georgian-Russian Pact of Cooperation"
+ flavor_geo.EVTDESC14:1 "Our alliance with the Georgians have been active for a while now and the Georgian diplomats have decided to send a delegation to us to broaden the pact between the two nations, ensuring the prosperity and might of the two nations. How should we respond to their offer?"
+ flavor_geo.EVTOPTA14:0 "The Georgian Sovereign shall lead our two Nations!"
+ flavor_geo.EVTOPTB14:0 "Our two Glorious Empires shall Prosper as equals!"
+ flavor_geo.EVTOPTC14:0 "They're better off staying in their mountain forts, while we do actual Empire Building."
+ 
+ geo_released_jerusalem_as_march:0 "§GConquering Jerusalem will be rejoiced by the entire Christendom, improving relations with all Christian countries. Restoring the Crusader State of Jerusalem will surely please the Catholic world even more!"
+ geo_conquered_jerusalem:0 "§GConquering Jerusalem will be rejoiced by the entire Christendom, improving relations with all Christian countries!"
+
+ geo_fall_of_constantinople:0 "Constantinople is not owned by an Eastern or Western European Christian state".
+
+ #disaster
+
+ georgian_crisis.EVTNAME1:0 "Triarchy"
+ georgian_crisis.EVTDESC1:1 "Georgia has been in disarray for some time now, due to dissenting nobility and the rivalry between different branches of the Bagrationi dynasty. Western Georgia, or Imereti, managed to successfully counter the Mongols and, unlike Eastern Georgia, remained completely free. However, this ultimately resulted in the formation of a diarchy, with threatens the country’s stability. With an inept monarch and heir, the rival branch from western Georgia decided to press claim on the throne and managed to gather large support. The Situation in the Eastern part of the country is also dire, which threatens this part of the state to split into two due to the local rivalries between the dynasts. However, the presence of the powerful and rebellious grand princes threatens the country to be shattered apart completely.\n\nAnother matter of concern is South Georgia. The Meskhetian lands are currently ruled by rebellious princes of house Jaqeli, which governed the province of Samtskhe autonomously and have shown their desire to contend for supremacy in Georgia. With the Crisis escalating, Samtskhe might decide to revolt against the Crown. \n\nWe must act quickly and restore the Unity of Georgia before the country collapses..."
+ georgian_crisis.EVTOPTA1:0 "Georgia shall endure!"
+ geo_dont_lose_the_capital:0 "§RIf the Rebels will manage to break the country, Georgia will disintegrate entirely."
+ geo_warning_about_samtskhe:0 "§RRebelious princes of Samtskhe may use this opportunity and start a revolt."
+
+ georgian_crisis.EVTNAME2:0 "Crisis escalates"
+ georgian_crisis.EVTDESC2:1 "The Crisis becomes more severe, as the pretenders gather large support in the regions."
+ georgian_crisis.EVTOPTA2:0 "...oh no."
+
+ georgian_crisis.EVTNAME3:0 "Crisis escalates"
+ georgian_crisis.EVTDESC3:1 "The Crisis becomes more severe, with grand princes and nobles gathering forces to further their agenda."
+ georgian_crisis.EVTOPTA3:0 "...oh no."
+
+ georgian_crisis.EVTNAME4:0 "The Central Authority weakens: Secede or Remain Loyal?"
+ georgian_crisis.EVTDESC4:1 "With the weakening of the Central Authority, we have an opportunity to assert our rights and confront the Bagration monarchs. What shall we do?"
+ georgian_crisis.EVTOPTA4:0 "We shall Revolt!"
+ georgian_crisis.EVTOPTB4:0 "We remain loyal to the crown."
+
+ georgian_crisis.EVTNAME5:0 "Samtskhe Rebels!"
+ georgian_crisis.EVTDESC5:1 "The Jaqeli dynasty of Samtskhe has shown signs of rebellion against the Bagartions for decades. With the country being torn apart in the civil war, the Meskhetian Prince uses the opportunity to rebel!"
+ georgian_crisis.EVTOPTA5:0 "Treachery!"
+
+ georgian_crisis.EVTNAME6:0 "Collapse of Unified Georgia"
+ georgian_crisis.EVTDESC6:1 "The Crisis, caused by the ineptitude of $MONARCHTITLE$ $MONARCH$, led to months and years of skirmishes and internal strife between the loyalists and the coalition of pretenders and nobility. The ensuing battles weakened both loyalists and rebels alike. This, coupled with schemes and endeavors of the local princes led the country to disintegration, with pretenders setting up a rival country in Western Georgia. Furthermore, the princes of Samtskhe managed to attain full independence from the center and are now governing their principality on their own.\n\n As the enemies around us become stronger, we face them with such disunity and chaos."
+ georgian_crisis.EVTOPTA6:0 "Woe unto us..."
+
+ georgian_crisis.EVTDESC99:1 "The Crisis ends with Rebels storming the capital city $CAPITAL_CITY$ and enforcing their demands. Unfortunately, this seems to be a temporary stalemate and the turmoil will likely continue for a while."
+ georgian_crisis.EVTOPTA99:0 "Disturbing..."
+
+ georgian_crisis.EVTNAME100:0 "The Crisis Ends"
+ georgian_crisis.EVTDESC100:0 "We have managed to resolve the crisis which plagued our country and threatened its integrity. The [Root.GovernmentName] stands firm against its enemies!"
+ georgian_crisis.EVTOPTA100:0 "Iberia shall be Radiant!"
+
+ #Various Events
+ flavor_geo.EVTNAME6:0 "Fall of Constantinople"
+ flavor_geo.EVTDESC6:1 "As if the [Root.GovernmentName] wasn’t plagued by numerous problems already, devastating news reaches $CAPITAL_CITY$ about the fall of Constantinople. While its inhabitants valiantly defended the city, the Mohammedans ultimately emerged victorious and sacked the once prosperous capital of the Roman Empire. This is catastrophic news indeed.\n\nWith one of the major cultural center and etalon for our nation fallen in heathen lands, and our [Root.GovernmentName] now being isolated from the rest of the Christendom, we should only expect worsening of already escalating Crisis that lies ahead of us."
+ flavor_geo.EVTOPTA6:0 "'...And when Constantinople was taken, was the time that the Sun darkened...'"
+ geo_fall_of_constantinople_destabilizes_georgia:0 "§RCrisis, that threatens the country with destabilization, will accelerate."
+
+ flavor_geo.EVTNAME7:0 "Kvarkvare Jaqeli Becomes Ruler of Samtskhe"
+ flavor_geo.EVTDESC7:1 "With the death of his brother, Aghbugha II, Kvarkvare becomes the Ruler of Samtskhe. He is very well known for his rebellious personality, rebelling unsuccessfully against his brother in 1440. Kvarkvare is already showing the signs of rebellion and will likely use any opportunity to secede from the central authority of Bagrations and Perhaps even contend against them for supremacy in Georgia. With Jaqelis already regularly defying central authority for a long time, reign of Kvarkvare might further worsen the already tense situation in the country."
+ flavor_geo.EVTOPTA7:0 "Well, thats disturbing..."
+ 
+ flavor_geo.EVTNAME15:0 "Giorgi Saakadze"
+ flavor_geo.EVTDESC15:1 "Often being called the 'Grand Mouravi', Giorgi Saakdze comes from the family of petty nobiles. His family served well and loyally to our previous rulers, and Giorgi himself proved to be a very competent military commander and administrator. While his actions and ambitions remain the subject to controversy, it is no doubt that his talents will prove useful for the country."
+ flavor_geo.EVTOPTA15:0 "He shall lead our Armies!"
+ flavor_geo.EVTOPTB15:0 "An excellent Advisor!"
+ flavor_geo.EVTOPTC15:0 "Let us appoint him a new [Root.monarch.GetTitle]!"
+          
+ flavor_geo.EVTNAME16:0 "Modernization of the Georgian Military"
+ flavor_geo.EVTDESC16:1 "While our people always had the courage and devotion to defend their motherland, these can only get you so far. As more time passes, it's becoming increasingly obvious that many of our military traditions and tactics, which were crucial parts in the defense of our country are becoming obsolete, and will soon prove to be more of a burden, rather than a genuine advantage. Thankfully, however, God hasn't abandoned us in this hardship. We are no longer isolated from the rest of the world as we were before, and with the help of our allies, we're ready to fundamentally reform our military institutions, so that our country can face its rivals with proper force."
+ flavor_geo.EVTOPTA16:0 "St. George Guide Us!"
+ 
+ flavor_geo.EVTNAME17:0 "Trapezuntine Empire and Georgia"
+ flavor_geo.EVTDESC17:1 "The Empire of Trebizond was established during the reign of Queen Tamar in the 13th Century to aid her Comnenian relatives and solidify the Georgian influence in the region. However, soon after the death of our most majestic Queen, the country was embroiled in devastating wars against the Mongols and the influence over Trebizond declined significantly. With our recent resurgence, however, we are once again in a position to extend our protectorate over the country."
+ flavor_geo.EVTOPTA17:0 "Offer to reestablish the Protectorate"
+ flavor_geo.EVTOPTB17:0 "Such action would be unwise on the long run."
+ flavor_geo.17.tt1:0 "We will send an envoy to §YTrebizond§! and ask them to become §Gour protectorate§!, which, however, is §Runannexable§! and we will have to maneuver with them later on in order to demote them to more dependant vassalage for annexation, should we desire such a course"
+ flavor_geo.17.WARNINGABOUTWARS:0 "§RWe're unable to call our allies should a Georgian Protectorate come under attack!§!"
+ flavor_geo.17.tt2:0 "While we wont make them our protectorate immediately, this course of action might make their direct §Gvassalization§! via diplomacy far easier!"
+ 
+ flavor_geo.EVTNAME18:0 "Envoys from Georgia"
+ flavor_geo.EVTDESC18:1 "Recently the Georgian ambassadors have arrived in our capital, reminding us that it is thanks to them that our throne existed in the first place. With their recent victories and diplomatic maneuvers, now they offer us to become their protectorate. While this might may sound like a much-needed relief, especially considering our position, this would essentially mean the submission to the Georgian state."
+ flavor_geo.EVTOPTA18:0 "We accept their offer."
+ flavor_geo.EVTOPTB18:0 "How dare they to ask this to the Emperor?!"
+ 
+ flavor_geo.EVTNAME19:0 "Trebizond becomes our Protectorate"
+ flavor_geo.EVTDESC19:1 "Trapezuntines have made the decision and now they have become our Protectorate. An expected result of such a long and fruitful alliance."
+ flavor_geo.EVTOPTA19:0 "They chose wisely."
+ 
+ flavor_geo.EVTNAME20:0 "The Audacity!"
+ flavor_geo.EVTDESC20:1 "Not only the ruler of Trebizond refused our offer, but furthermore, insulted us and our sovereignty by reminding us of the title, which includes "Emperor of Iberians" that the Trapezuntine rulers traditionally bore."
+ flavor_geo.EVTOPTA20:0 "Sounds like that we have to beat some sense of reality into them."
+ 
+ flavor_geo.EVTNAME21:0 "The Second Council of Ruis-Urbnisi"
+ flavor_geo.EVTDESC21:1 "Council of Ruisi-Urbnisi was a synod convened at Ruisi and Urbnisi by David IV in 1103, aimed at expelling the rebellious clergy, many of whom would originate from the landed Nobility and acquired the positions via indecent deeds, such as simony. The Council would set the modified legal bindings to the Clergy, based on the Byzantine Nomocanon, translated by Arsen of Ikalto. Centuries have passed since then and now it is obvious that the the convening of the synod is needed once more, as the wolves among the sheep have infiltrated the most Holy Church once More. With modernized institutions, however, the decisions issued by the synod at the Second Council now will be backed by the power of the State, guaranteeing that it will protect the church more than ever before, a true model of the concept of 'Symphonia'"
+ flavor_geo.EVTOPTA21:0 "Adopt the Decretals Immediately"
+ flavor_geo.EVTOPTB21:0 "Perhaps we should await the better Opportunity"
+ unlock_decretals_of_the_georgian_orthodox_church_reform_tt:0 "Unlocks §YDecretals of the Georgian Orthodox Church§! Government Reform"
+ 
+ flavor_geo.EVTNAME24:0 "The Revolution has Arrived!"
+ flavor_geo.EVTDESC24:0 "The Events that would result in such a cataclysm started as an uneventful unrest. As per old customs, peasants were obliged to perform some mandatory labor for the Landlords of the area. The peasants who brought their own grain simply asked their Employers for the free usage of the mills, while doing these services. Landlords refused to comply and demanded payment for the mills, which caused discontent among them. Led by a local blacksmith, they have taken the mills by force and refused to leave, before their demands would be fulfilled. This was not something out of the ordinary, such occurrences were not uncommon throughout history. What was uncommon, however, was the wave of support the peasants have gotten from the petty Nobility and the lower echelons of the Clergy, which began to critique the archaic institutions of the government and demanded radical changes, further fueling the revolt. By the time the Central Government could take any effective measures, it was too late.\n\nWhat started as an ordinary revolt, not unlike other peasant rebellions we've seen numerous times already has turned into a full-scale Revolutionary war that resulted in the overthrow of our old Government!"
+ flavor_geo.EVTOPTA24:0 "Gaumarjos Revolucias! Gaumarjos Sakartvelos!"
+ geo_revolutionary_commitee:0 "Revolutionary Georgia will adopt the §YRevolutionary Army Reform§! that will give us access to the §YGeorgian Militarization Mechanics§! even as a Revolutionary Republic or Empire!"
+ 
+ #misc
+ georgian_crisis:0 "Triarchy"
+ desc_georgian_crisis:0 "Our country is being torn apart by internal struggles and isolation of the country by hostile forces."
+ string_start_georgia:0 "In [GetYear] the Kingdom of §YGeorgia§! is in a dire situation. The kingdom still stands after wars against the §YTimurids§! and the §YQara Qoyunlu§!, but it is fatigued and torn by internal conflicts. Strengthening of the nobility and rivalry between different members of the Royal dynasty threatens the Country with collapse.\n\nHoping to lessen the disruptive powers of regional nobles, such as the autonomous Atabegs of §YSamtskhe§! Alexander I of Georgia abdicated in 1442 and made his sons co-rulers over the constituent parts of the kingdom. This way he secured the §YBagrationi§! dynasty's standing, but it didn't aid the situation, with the potential crisis threatening to tear the country apart.\n\n A very concerning news reaches the Kingdom, about the §YOttomans§! defeating the Crusader army at Varna, leaving the §YConstantinople§! virtually defenseless. If the city will fall at the hands of the Turks, it will have a devastating effect on Georgia, isolating us from the rest of Christendom and further escalating the turmoil."
+ incessant_warfare: "Incessant Warfare"
+ incessant_warfare_desc: "Georgia has been at a constant war both against external and internal foes. While this has been a curse of our nation for most of its history, it does have at least one particular blessing, that our people are always vigilant and constantly remember the experience gained from battles." 
+ monthly_georgian_militarized_society_1:0 "Monthly Early Model Georgian Militarization of State"
+ monthly_georgian_militarized_society_2:0 "Monthly New Model Georgian Militarization of State"
+
+ #Great Work
+ svetitskhoveli_cathedral_title: "Svetitskhoveli"
+ svetitskhoveli_cathedral: "Svetitskhoveli"
+ great_project_svetitskhoveli_cathedral: "Svetitskhoveli"
+
+ iviron_monastery_title: "Iviron Monastery"
+ iviron_monastery: "Iviron Monastery"
+ great_project_iviron_monastery: "Iviron Monastery"
+ 
+ bachkovo_monastery_title: "Petritson Monastery"
+ bachkovo_monastery: "Petritson Monastery"
+ great_project_bachkovo_monastery: "Petritson Monastery"
+ #Governments
+
+ #Monarchical
+ georgian_principality_reform:1 "Georgian Principality"
+ georgian_principality_reform_desc:0 "Large Georgian Principalities emerged after the general weakening of the central government in the kingdom. The incessant warfare both against rivaling Georgian polities and the invading Muslim forces resulted in a formation of a heavily militarized society, where every able man is sleeping with weapons under their bedsheets, constantly ready to follow their sovereign in war, when necessary."
+ georgian_monarchy_reform:1 "Georgian Monarchy"
+ georgian_monarchy_reform_desc:0 "The Georgian Monarchy is a result of a combination of ancient Georgian institutions, Roman and Byzantine influence, and a near-constant state of war against the much larger rivaling forces. Georgian Monarchs traditionally employed diverse administration of their realm, often forming vassalized buffer states around the Kingdom Proper."
+ georgian_empire_reform:1 "Georgian Empire"
+ georgian_empire_reform_desc:0 "Fulfilling the desires of previous Georgian sovereigns, this state took up the mantle of the Byzantine Empire as the New Rome and Universal defender of the Christendom."
+ saeristavo_reform_mon:1 "Establish Saeristavo System"
+ saeristavo_reform_mon_desc:0 "Originally being a form of elective polity in Georgia, Saeristavos later became military subdivisions, resembling Byzantine Themata, with its governors ('Eristavi', or 'Head of the Army') possessing both military and civilian authority over the lands."
+ sadrosho_reform_mon:1 "Establish Sadrosho System"
+ sadrosho_reform_mon_desc:0 "Local nobility have proven to be generally unruly and often entrenched themselves in the lands they governed, often making those lands their hereditary possessions. One of the solutions to these issues might be to appoint our Ecclesiarchs as the commanders of said military districts instead."
+ karavi_reform:1 "Karavi"
+ karavi_reform_desc:1 "Establishing 'Karavi' ('Tent') as an organ that would oppose the monarch's unlimited power was originally an idea that appeared during the reign of Queen Tamar. While the centuries have passed since then, the recent widespread appeal for Parliamentarism has convinced us to establish this idea as a proper state institution."
+
+ #Republican
+ georgian_republic_reform:1 "Georgian Republic"
+ georgian_republic_reform_desc:0 "Combination of preexisting Georgian institutions and ideas, such as Saeristavos and Karavi, and the Byzantine influences, Georgian Republic is governed by military commanders, or 'Eristavis', one of which is elected among them as a Leader of the State."
+ saeristavo_reform_rep:1 "Establish Saeristavo System"
+ saeristavo_reform_rep_desc:0 "We should strengthen the local authorities of our Eristavis to effectively organize our Armies."
+ sadrosho_reform_rep:1 "Establish Sadrosho System"
+ sadrosho_reform_rep_desc:0 "Appointing our Ecclesiarchs as the heads of the military districts will prevent any of the Eristavis becoming too powerful and entrenching themselves in the lands assigned to them, and establishing an autocratic rule or developing separatist intentions."
+ broaden_functions_of_karavi_reform:1 "Broaden the Functions of Karavi"
+ broaden_functions_of_karavi_reform_desc:1 "Broadening the functions of the legislative organ, 'Karavi' ('Tent'), will ensure better and fairer representation of the regions."
+ broaden_functions_of_darbazi_reform:1 "Broaden the Functions of Darbazi"
+ broaden_functions_of_darbazi_reform_desc:1 "'Darbazi' ('Hall') as an advisory monitoring organ, observing the recent developments in the realm and making sure that the public officials fulfill their duties diligently and honestly."
+
+ #Theocratic
+ georgian_theocracy_reform:1 "Chorbishopric"
+ georgian_theocracy_reform_desc:0 "Our most esteemed and pious State is led by the Holy Synod, represented in secular affairs by a Chorbishop."
+ saeristavo_reform_theo:1 "Establish Saeristavo System"
+ saeristavo_reform_theo_desc:0 "Originally being a form of elective polity in Georgia, Saeristavos later became military subdivisions, resembling Byzantine Themata, with its governors ('Eristavi', or 'Head of the Army') possessing both military and civilian authority over the lands."
+ sadrosho_reform_theo:1 "Establish Sadrosho System"
+ sadrosho_reform_theo_desc:0 "Local nobility have proven to be generally unruly. They are entrenching themselves in the lands they governed, making those lands their hereditary possessions and may one day, God Forbid, overthrow our pious government and establish their degenerate dynastic rulership with usual bloodbath and misery accompanying it. We should rather appoint Ecclesiarchs as heads of the local armies to prevent such threat."
+ 
+ #Mission Government Reforms
+ decretals_of_the_georgian_orthodox_church_reform:1 "Decretals of the Georgian Orthodox Church"
+ decretals_of_the_georgian_orthodox_church_reform_desc:0 "The Second Council of Ruis-Urbnisi has renewed and effectively regulated the canon law of the Georgian Orthodox Church, protecting her and her flock from any potential harm done by the corruptive influences of the unworthy People, be it Clerical or Layman"
+ 
+ #Revolutionary Republic - for Militarization
+ geo_revolutionary_army_reform:1 "Revolutionary Army"
+ geo_revolutionary_army_reform_desc:0 "Ancient Martial Traditions of Georgia form the basis and core of the new Revolutionary Army, that shall overthrow the tyrants of the world!"
+ 
+ #protectorates (intended to be used with "Subjects Expanded Mod")
+ establish_georgian_protectorate_title:0 "Establish Georgian Protectorate"
+ establish_georgian_protectorate_desc:0 "Make your vassal [From.GetName] to a §YGeorgian Protectorate§!. \nA Georgian Protectorate behaves like a march, but has less liberty desire and can only be created by the §YGeorgia§!, §YImereti§!, §YSamtskhe§! or any other country with Georgian culture. A Georgian protectorate doesnt take any additional diplomatic slots, Unlike regular march, pays small amount of money to its overlord, greater Land and Naval forcelimit bonus and overall enjoys high degree of diplomatic autonomy: it can form alliances and political marriages with co-subjects, as well as form rivalries wage wars against his and overlord's rivals independently (assuming that the country in mind isn't a subject of or allied to the protectorate's overlord). Also, the revocation of the protectorate status will have massive impact on stability (§R-3§!) and prestige (§R-50§!). Protectorate will then be demoted to a standard march.
+ establish_georgian_protectorate_tooltip:0 "Make your vassal [From.GetName] to a §YGeorgian Protectorate§!.\n"
+
+ cancel_georgian_protectorate_title: "Revoke Georgian Protectorate"
+ cancel_georgian_protectorate_desc: "Revert the status of §Y[From.GetName]§! to regular March once more."
+ cancel_georgian_protectorate_tooltip: "Cancel the Protectorate status of §Y[From.GetName]§!.\n"
+
+
+ display_information_for_georgian_protectorate_tt_conditions_overlord: "- is not a subject \n- is either @GEO §YGeorgia§!, @IME §YImereti§!, @SME §YSamtskhe§!, or has §Georgian§! as primary culture"
+ display_information_for_georgian_protectorate_tt_conditions_subject: "- is a §YVassal§! or §YMarch§! of the possible overlord"
+ display_information_for_georgian_protectorate_tt: "- subject can only be established diplomatically by Georgian States"
+ 
+ display_georgian_protectorate_desc_tt: "§g[georgian_protectorate_desc]§W"
+ 
+ georgian_protectorate: "Georgian Protectorate"
+ georgian_protectorate_title: "Georgian Protectorate"
+ georgian_protectorate_title_plural: "Georgian Protectorate"
+ georgian_protectorate_is_our: "§Y$NAME$§! is our Georgian Protectorate."
+ georgian_protectorate_desc: "A Georgian Protectorate behaves like a march, but has less liberty desire and can only be created by the §YGeorgia§!, §YImereti§!, §YSamtskhe§! or any other country with Georgian culture. A Georgian protectorate doesnt take any additional diplomatic slots; Unlike regular march, pays small amount of money to its overlord and overall enjoys high degree of diplomatic autonomy: it can form alliances and political marriages with co-subjects, as well as form rivalries wage wars against his and overlord's rivals independently (assuming that the country in mind isn't a subject of or allied to the protectorate's overlord). Also, the revocation of the protectorate status will have massive impact on stability (§Y-3§!) and prestige ((§Y-50§!). Protectorate will then be demoted to a standard march.\n"
+ georgian_protectorate_long_desc: "A Georgian Protectorate behaves like a march, but has less liberty desire and can only be created by the §YGeorgia§!, §YImereti§!, §YSamtskhe§! or any other country with Georgian culture. A Georgian protectorate doesnt take any additional diplomatic slots; Unlike regular march, pays small amount of money to its overlord and overall enjoys high degree of diplomatic autonomy: it can form alliances and political marriages with co-subjects, as well as form rivalries wage wars against his and overlord's rivals independently (assuming that the country in mind isn't a subject of or allied to the protectorate's overlord). Also, the revocation of the protectorate status will have massive impact on stability (§Y-3§!) and prestige ((§Y-50§!). Protectorate will then be demoted to a standard march.\n"
+ georgian_protectorate_no_overlord_dow: "You cannot declare war on your own Georgian Protectorate."
+ georgian_protectorate_overlord_title: "Sovereign"
+ 
+ #Govnames
+ MTAVARI:0 "Mtavari"
+ MTAVARI_fem:0 "Mtavari"
+ MEPE:0 "Mepe"
+ DEDOPALI:0 "Dedopali"
+ IMPERATORI:0 "Imperatori"
+ IMPERATRITSA:0 "Imperatritsa"
+ ERISTAVI:0 "Eristavi"
+ ERISTAVI_fem:0 "Eristavi"
+ ERISMTAVARI_fem:0 "Erismtavari"
+ ERISMTAVARI:0 "Erismtavari"
+ MAMASAKHLISI:0 "Mamasakhlisi"
+ DEDASAKHLISI:0 "Dedasakhlisi"
+ GEORGIANMETROPOLITANATE:0 "Metropolitanate"
+ CATHOLICATE:0 "Catholciate"
+ CHORBISHOP:0 "Chorbishop"
+ CHORBISHOPRIC:0 "Chorbishopric"
+ CATHOLICOSPATRIARCH:0 "Catholicos-Patriarch"
+ CHAIRMAN:0 "Chairman"
+ CHAIRMAN_fem:0 "Chairman"
+ STATE_SECRETARY:0 "State Secretary"
+ STATE_SECRETARY_fem:0 "State Secretary"
+ GENERAL_SECRETARY:0 "General Secretary"
+ GENERAL_SECRETARY_fem:0 "General Secretary"
+ SAERISTAVO:0 "Saeristavo"
+ SAERISMTAVRO:0 "Saerismtavro"
+ SAMEPO:0 "Samepo"
+ IMPERIA:0 "Imperia"
+ DEMOCRATIC_REPUBLIC:0 "Democratic Republic"
+ UNION_REPUBLIC:0 "Union Republic"

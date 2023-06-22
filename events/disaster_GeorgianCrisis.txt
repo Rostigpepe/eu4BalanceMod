@@ -1,0 +1,459 @@
+########################################
+# Crisis in XV Century Georgia
+# May fire due to retarded ruler and fall of Constantinople
+# If Rebels occupy the Capital, Georgia becomes disintegrated
+########################################
+
+namespace = georgian_crisis
+
+# Crisis Begins
+country_event = {
+	id = georgian_crisis.1
+	title = "georgian_crisis.EVTNAME1"
+	desc = "georgian_crisis.EVTDESC1"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = had_georgian_crisis
+		add_stability = -2
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_building = fort_15th
+				}
+				set_province_flag = georgian_crisis_start
+			}
+			random_owned_province = { #While primarily a pretender rebellion, grand princes desire to increase their influence in the country and gain larger autonomy
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = georgian_crisis_start } 
+					NOT = { has_province_flag = georgian_crisis_prov }
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+					win = yes
+				}
+			}
+		}
+	}
+	
+	option = {	# Georgia shall Endure!
+		name = "georgian_crisis.EVTOPTA1"
+		add_legitimacy = -20
+		random_owned_province = {
+			limit = {
+				has_province_flag = georgian_crisis_start
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				win = yes
+				leader_dynasty = "Bagrationi"
+			}
+			clr_province_flag = georgian_crisis_start
+		}
+		
+		custom_tooltip = "geo_warning_about_samtskhe"
+		
+		custom_tooltip = "geo_dont_lose_the_capital"
+	}
+}
+
+# Crisis Escalates-Pretenders
+country_event = {
+	id = georgian_crisis.2
+	title = "georgian_crisis.EVTNAME2"
+	desc = "georgian_crisis.EVTDESC2"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			continent = europe
+			is_capital = no
+			controlled_by = owner
+			NOT = { has_province_flag = the_crisis_escalates }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					continent = europe
+					is_capital = no
+					controlled_by = owner
+					NOT = { has_province_flag = the_crisis_escalates }
+				}
+				random_list = {
+					227 = { set_province_flag = georgian_revolt_1 }
+					4301 = { set_province_flag = georgian_revolt_1 }
+					462 = { set_province_flag = georgian_revolt_1 }
+				}
+				area = { set_province_flag = the_crisis_escalates }
+			}
+		}
+	}
+	
+	option = {		# Oh no...
+		name = "georgian_crisis.EVTOPTA2"
+		random_owned_province = {
+			limit = { has_province_flag = georgian_revolt_1 }
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+			clr_province_flag = georgian_revolt_1
+		}
+	}
+}
+
+# Crisis Escalates-Nobles
+country_event = {
+	id = georgian_crisis.3
+	title = "georgian_crisis.EVTNAME3"
+	desc = "georgian_crisis.EVTDESC3"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			continent = europe
+			is_capital = no
+			controlled_by = owner
+			NOT = { has_province_flag = the_crisis_escalates }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					continent = europe
+					is_capital = no
+					controlled_by = owner
+					NOT = { has_province_flag = the_crisis_escalates }
+				}
+				random_list = {
+					227 = { set_province_flag = georgian_revolt_1 }
+					4301 = { set_province_flag = georgian_revolt_1 }
+					462 = { set_province_flag = georgian_revolt_1 }
+				}
+				area = { set_province_flag = the_crisis_escalates }
+			}
+		}
+	}
+	
+	option = {		# Oh no...
+		name = "georgian_crisis.EVTOPTA3"
+		random_owned_province = {
+			limit = { has_province_flag = georgian_revolt_1 }
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+			clr_province_flag = georgian_revolt_1
+		}
+	}
+}
+
+#Samtskhe - Revolt or remain loyal?
+country_event = {
+	id = georgian_crisis.4
+	title = "georgian_crisis.EVTNAME4"
+	desc = "georgian_crisis.EVTDESC4"
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+	    GEO = {
+		    has_disaster = georgian_crisis
+		}
+		tag = SME
+		SME = {
+		    AND = {
+			    is_subject_of = GEO
+				liberty_desire = 50
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #War begins
+		name = "georgian_crisis.EVTOPTA4"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				SME = {
+				    liberty_desire = 75
+				}
+			}
+			modifier = {
+				factor = 2
+				SME = {
+				    liberty_desire = 100
+				}
+			}
+			modifier = {
+				factor = 2
+				SME = {
+				    ruler_has_personality = malevolent_personality
+				}
+			}
+		}
+		SME = {
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.3
+					artillery = 0.1
+				}
+			}
+        }
+		SME = {
+			declare_war_with_cb = {
+				who = GEO
+				casus_belli = cb_independence_war
+			}
+		}
+		GEO = {
+		    country_event = { id = georgian_crisis.5 }
+		}
+    }
+    option = { #Remain loyal
+		name = "georgian_crisis.EVTOPTB4"
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 1
+				ruler_has_personality = righteous_personality
+			}
+			modifier = {
+				factor = 1
+				ruler_has_personality = kind_hearted_personality
+			}
+		}
+		SME = {
+		    add_liberty_desire = -10
+		}
+    }
+}
+
+# Samtskhe Rebels!
+country_event = {
+	id = georgian_crisis.5
+	title = "georgian_crisis.EVTNAME5"
+	desc = "georgian_crisis.EVTDESC5"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Treason!
+		name = "georgian_crisis.EVTOPTA5"
+		
+		add_stability = -1
+    }
+}
+
+# Crisis Resolved
+country_event = {
+	id = georgian_crisis.100
+	title = "georgian_crisis.EVTNAME100" # the Crisis ends
+	desc = {
+		trigger = {
+		    mission_completed = geo_consolidate_georgia
+		}
+		desc = "georgian_crisis.EVTDESC100" # Georgia Consolidated
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+		        OR = {
+                    controlled_by = REB
+		            controlled_by = SME
+			    }
+		    }
+		}
+		desc = "georgian_crisis.EVTDESC99" # Cessation of Hostilities, Malus until Country is consolidated
+	}
+	desc = {
+		trigger = {
+		    AND = {
+			    capital_scope = {
+		            NOT = {
+                        controlled_by = REB
+		                controlled_by = SME
+					}
+			    }
+		        NOT = { mission_completed = geo_consolidate_georgia }
+			}
+		}
+		desc = "georgian_crisis.EVTDESC6" # Rebels break the country-Georgia Disintegrates
+	}
+	picture = CIVIL_WAR_eventPicture # Cessation of hostilities
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+	    name = "georgian_crisis.EVTOPTA6"
+	
+		trigger = {
+		    AND = {
+			    capital_scope = {
+		            NOT = {
+                        controlled_by = REB
+		                controlled_by = SME
+					}
+			    }
+		        NOT = { mission_completed = geo_consolidate_georgia }
+			}
+		}
+		
+        disband_rebels = pretender_rebels
+		disband_rebels = noble_rebels
+		every_owned_province = {
+			limit = {
+				province_id = 1856
+				province_id = 462
+				province_id = 422
+				province_id = 2196
+			}
+			add_core = IME
+			clear_rebels = yes
+		}
+		release = IME
+		IME = {
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.3
+					artillery = 0.1
+				}
+			}
+		    kill_ruler = yes
+        	define_ruler = {
+	     	    male = yes
+     	     	name = "Demetre II"
+	        	dynasty = "Bagrationi"
+                age = 35
+    	    	adm = 2
+	        	dip = 2
+	        	mil = 3
+			}
+			add_stability = 1
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			adopt_reform_progress = ROOT
+		}
+		if = {
+            limit = {
+                NOT = { exists = SME }
+            }
+            every_owned_province = {
+			    limit = {
+				    province_id = 2204
+				    province_id = 4303
+			    }
+			add_core = SME
+			clear_rebels = yes
+		    }
+			release = SME
+		}
+		else = {
+		    SME = {
+			    white_peace = GEO
+				grant_independence = yes
+			}
+		}
+		SME = {
+			capital_scope = {
+			    build_to_forcelimit = {
+			    	infantry = 0.6
+			    	cavalry = 0.3
+				    artillery = 0.1
+			    }
+			}
+		    change_government = monarchy
+		    add_government_reform = feudalism_reform
+		    adopt_reform_progress = ROOT
+		}
+    }
+	option = {
+		name = "georgian_crisis.EVTOPTA100"
+        
+		trigger = {
+		    mission_completed = geo_consolidate_georgia
+		}
+		
+		add_stability_or_adm_power = yes
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	    GEO = {
+		    capital_scope = {
+			    build_to_forcelimit = {
+			    	infantry = 0.6
+			    	cavalry = 0.3
+				    artillery = 0.1
+				}
+		    }
+		}
+	}
+	option = {
+		name = "georgian_crisis.EVTOPTA99"
+        
+	    trigger = {
+		    capital_scope = {
+		        OR = {
+                    controlled_by = REB
+		            controlled_by = SME
+			    }
+		    }
+		}
+		kill_ruler = yes
+		define_ruler = {
+		    male = yes
+     		name = "Demetre II"
+	    	dynasty = "Bagrationi"
+            age = 35
+    		adm = 2
+	    	dip = 2
+	    	mil = 3
+    	}
+		add_stability = -1
+		add_adm_power = -25
+		add_dip_power = -25
+		add_mil_power = -25
+		add_country_modifier = {
+		    name = "georgian_crisis_aftermath"
+			duration = -1
+		}
+	}
+}

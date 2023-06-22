@@ -5,12 +5,16 @@ country_decisions = {
 			has_reform = hessian_militarized_monarchy_reform
 		}
 		allow = {
-			absolutism = 50
-			army_professionalism = 0.50
-			army_tradition = 75
-			mil = 4
-			stability = 3
-			mil_power = 300
+			AND = {
+				absolutism = 50
+				army_tradition = 75
+				stability = 3
+				mil_power = 300
+				OR = {
+					mil = 6
+					army_professionalism = 0.50
+				}
+			}
 		}
 		effect = {
 			add_mil_power = -300

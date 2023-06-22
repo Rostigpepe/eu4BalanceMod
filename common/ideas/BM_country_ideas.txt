@@ -1,7 +1,7 @@
 AHE_ideas = {
 	start = {
 		land_morale = 0.15
-		state_governing_cost = -0.1
+		advisor_cost = -0.15
 	}
 	
 	bonus = {
@@ -128,7 +128,7 @@ BGM_ideas = { #Belgium
 	}
 	
 	bonus = {
-		global_prov_trade_power_modifier = 0.15
+		global_prov_trade_power_modifier = 0.25
 	}
 	
 	trigger = {
@@ -138,13 +138,13 @@ BGM_ideas = { #Belgium
 	free = yes
 	
 	the_belgian_revolution = { 
-		land_morale = 0.15
+		land_morale = 0.2
 	}
 	as_thrifty_as_any_dutchmen = { 
 		trade_efficiency = 0.15
 	}
 	distinct_from_dutch_and_french = { 
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.25
 		prestige = 1
 	}
 	satiate_german_and_french_minorities = { 

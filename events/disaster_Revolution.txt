@@ -200,6 +200,7 @@ country_event = {
 			country_event = { id = revolution.39 } #Netherlands
 			country_event = { id = revolution.40 } #China
 			country_event = { id = revolution.41 } #Indians
+			country_event = { id = flavor_geo.24 } #Georgia
 		}
 		ai_chance = {
 			factor = 2
@@ -927,6 +928,7 @@ country_event = {
 
 		#Alternative DLC versions
 		NOT = {
+		    tag = GEO #now has its own
 			tag = RUS #flavor_rus.2000
 			tag = FRA #revolution.15
 			#revolution.31

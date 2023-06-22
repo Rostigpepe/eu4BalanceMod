@@ -112,6 +112,12 @@ monarchy = {
 				#BM MODDED GOVERNMENTS
 				hessian_militarized_monarchy_reform
 				hessian_modern_militarized_monarchy_reform
+				#Georgian modded Governments
+				georgian_principality_reform
+				georgian_monarchy_reform
+				georgian_empire_reform
+				#Gothic
+				gothic_principality_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -174,6 +180,9 @@ monarchy = {
 				consulate_of_the_sea
 				#BM MODDED
 				revive_the_hisbah_mamluks
+				#Georgian Mechanics			
+				saeristavo_reform_mon
+				sadrosho_reform_mon
 			}
 		}
 		state_and_religion = {
@@ -212,6 +221,8 @@ monarchy = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
+				#Georgia
+				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -274,6 +285,8 @@ monarchy = {
 				#MODDED BM
 				enlist_arabian_tribesmen
 				hessian_elite_jaegers_reform
+				#Revolutionary Georgia
+				geo_revolutionary_army_reform
 			}
 		}
 		deliberative_assembly = {
@@ -303,6 +316,8 @@ monarchy = {
 				reformed_legal_system_prussia
 				turkicized_elite_mamluks
 				found_the_rothschilds_reform
+				#Georgian Parliament-Karavi				
+				karavi_reform
 			}
 		}
 		growth_of_administration = {
@@ -459,7 +474,8 @@ monarchy = {
 		livonian_diplomatic_monarchy
 	}
 	
-	# Dictatorships etc
+	# Dictatorships etc 
+	# Georgian "Republic" is a Stratocratic Dictatorship of eristavis
 	exclusive_reforms = {
 		military_dictatorship_reform
 		protectorate_parliament_reform
@@ -471,6 +487,7 @@ monarchy = {
 		lottery_reform
 		dutch_republic
 		force_reelection_reform
+		georgian_republic_reform
 	}
 
 	#States General works with few others
@@ -596,6 +613,10 @@ republic = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				# BM GOVERNMENTS
+				#Georgian Elective government ruled by Eristavis
+				georgian_republic_reform
+				#Gothic
+				gothic_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -675,6 +696,8 @@ republic = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
+				#Georgia
+				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -734,6 +757,8 @@ republic = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
+				#Revolutionary Georgia
+				geo_revolutionary_army_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -764,6 +789,9 @@ republic = {
 				union_of_states_reform
 				cultural_administration_reform
 				penal_colonies_reform
+				#Georgian Administration				
+				saeristavo_reform_rep
+				sadrosho_reform_rep
 			}
 		}
 		economical_matters_republic = {
@@ -801,6 +829,9 @@ republic = {
 				power_to_the_captains_reform
 				absolute_president_reform
 				revolutionary_council_reform
+				#Georgian Parliament - Karavi				
+				broaden_functions_of_karavi_reform
+				broaden_functions_of_darbazi_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -866,6 +897,7 @@ republic = {
 		pirate_republic_reform
 		protectorate_parliament_reform
 		prussian_republic_reform
+		georgian_republic_reform
 	}
 	exclusive_reforms = {
 		lottery_reform
@@ -876,6 +908,7 @@ republic = {
 		military_rulership_reform
 		prussian_republic_reform
 		military_dictatorship_reform
+		georgian_republic_reform
 	}
 	exclusive_reforms = {
 		free_city
@@ -1130,6 +1163,10 @@ theocracy = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				sisterhood_of_jeanne_darc_reform
+				#Chorepiscopate
+				georgian_theocracy_reform
+				#Gothic
+				metropolitanate_of_gothia_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -1183,6 +1220,8 @@ theocracy = {
 				strengthened_the_patriarchy_reform
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
+				#Georgia
+				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -1268,6 +1307,9 @@ theocracy = {
 				pious_merchants_reform
 				monastic_breweries_reform
 				warrior_monks_reform
+				#Georgian Reform
+				saeristavo_reform_theo
+				sadrosho_reform_theo
 			}
 		}
 		economical_matters = {

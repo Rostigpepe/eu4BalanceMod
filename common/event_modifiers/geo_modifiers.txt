@@ -1,0 +1,266 @@
+georgian_crisis_aftermath = {
+    global_unrest = 5
+	stability_cost_modifier	= 0.5
+	global_tax_modifier = -0.25
+	advisor_cost = 0.25
+	legitimacy = -0.5
+	global_institution_spread = -0.2
+}
+
+geo_subjugated_north = {
+    global_missionary_strength = 0.02
+}
+
+geo_orthodox_unity = {
+	tolerance_own = 2
+	global_missionary_strength = 0.01
+}
+
+geo_orthodox_empire = {
+	army_tradition_from_battle = 0.5
+	church_loyalty_modifier = 0.1
+}
+
+geo_mstovaris_reorganized = {
+    spy_offence = 0.25
+	global_spy_defence = 0.25
+}
+
+geo_diplomatic_success = {
+    diplomatic_reputation = 2
+}
+
+geo_statutes_of_monopolies = {
+    trade_efficiency = -0.1
+	mercantilism_cost = 0.1
+}
+
+geo_intensive_diplomatic_policy = {
+    diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+}
+
+geo_restored_gelati_and_ikalto = {
+    global_institution_spread = 0.33
+	embracement_cost = -0.33
+}
+
+geo_georgian_russian_cooperation = {
+    hostile_attrition = 1
+	artillery_power = 0.15
+}
+
+geo_russo_georgian_cooperation = {
+    defensiveness = 0.25
+	infantry_power = 0.15
+}
+
+geo_bagrations_in_moscow = {
+    diplomatic_reputation = 1
+	country_diplomatic_power = 1
+}
+
+geo_influence_on_russia = {
+    diplomatic_reputation = 1
+	country_diplomatic_power = 1
+}
+
+geo_reviving_economy = {
+    global_tax_modifier = 0.1
+	production_efficiency = 0.1
+}
+
+geo_industrialization = {
+    global_trade_goods_size_modifier = 0.1
+}
+
+geo_heraclian_reforms_modifier = {
+    reform_progress_growth = 0.5
+	technology_cost = -0.05
+}
+
+geo_liberated_armenia = {
+    tolerance_heretic = 2
+}
+
+geo_sulkhan_saba_orbeliani  = {
+    diplomatic_reputation = 1
+    improve_relation_modifier = 0.25
+}
+
+geo_patriarch_anton = {
+    technology_cost = -0.1
+	global_institution_spread = 0.2
+}
+
+geo_protectorate_system = {
+    reduced_liberty_desire = 15
+	vassal_forcelimit_bonus = 1
+	vassal_income = 0.25
+}
+
+geo_pacification_of_the_north = {
+    special_unit_forcelimit = 0.25
+	cossacks_loyalty_modifier = 0.10
+}
+
+geo_georgian_sea = {
+    naval_forcelimit_modifier = 0.2
+	trade_efficiency = 0.10
+}
+
+geo_georgian_america = {
+    naval_forcelimit_modifier = 0.1
+	merchants = 1
+}
+
+geo_georgians_in_america = {
+    merchants = 1
+	trade_efficiency = 0.10
+}
+
+geo_georgian_absolutism = {
+	max_absolutism = 25
+	yearly_absolutism = 1
+	governing_capacity_modifier = 0.1
+}
+
+geo_golden_age = {
+    development_cost_modifier = -0.05
+	reduced_liberty_desire = 33
+}
+
+geo_law_of_vakhtang = {
+	expand_administration_cost = -1 
+	expand_infrastructure_cost_modifier = -0.25
+}
+
+geo_saffron_and_emerald = {
+	global_trade_goods_size_modifier = 0.10
+	global_prosperity_growth = 0.25
+	min_autonomy_in_territories = -0.1
+}
+
+geo_navy_of_colchis = {
+	navy_tradition = 1
+	global_trade_power = 0.2
+	naval_morale = 0.20
+}
+
+geo_iberia_shall_be_radiant = {
+	infantry_power = 0.15
+	artillery_levels_available_vs_fort = 2 
+	land_morale = 0.20
+}
+
+geo_revolutionary_zeal = {
+	administrative_efficiency = 0.05
+	max_revolutionary_zeal = 30
+	yearly_revolutionary_zeal = 1
+}
+
+geo_reactionary_zeal = {
+	administrative_efficiency = 0.05
+	global_unrest = -2
+}
+#Militarization
+
+geo_general_mobilization_modifier = {
+	reinforce_speed = 0.33
+	land_forcelimit_modifier  = 0.20
+	global_trade_goods_size_modifier = -0.15
+}
+
+geo_fort_taxes_modifier = {
+	development_cost = 0.10
+	fort_maintenance_modifier = -0.33
+	garrison_size = 0.33
+}
+
+geo_reform_regular_army_modifier = {
+    land_maintenance_modifier = 0.1
+	yearly_army_professionalism = 0.02
+	drill_gain_modifier = 0.25
+	mil_tech_cost_modifier  = -0.1
+}
+
+geo_local_millitias_modifier = {
+	manpower_recovery_speed = -0.15
+	fort_maintenance_modifier = -0.33
+	garrison_size = 0.33
+	hostile_attrition = 2
+}
+
+#provincial Modifiers
+
+geo_academy_of_gelati_modifier = {
+	institution_growth = 6
+	technology_cost = -0.05
+}
+
+geo_academy_of_ikalto_modifier = {
+	institution_growth = 6
+	idea_cost = -0.10
+}
+
+geo_thriving_tbilisi = {
+    local_development_cost = -0.15
+	local_tax_modifier = 0.1
+	province_trade_power_modifier = 1
+}
+
+geo_mtskheta_holy_site = {
+    global_missionary_strength = 0.01
+    tolerance_own = 1
+}
+
+geo_cossack_migrations = {
+    local_development_cost = -0.15
+	local_manpower_modifier = 0.5
+}
+
+geo_georgian_georgia_usa = {
+    local_development_cost = -0.05
+	trade_goods_size_modifier = 0.05
+	local_manpower_modifier = 0.15
+}
+
+geo_georgian_georgia_usa = {
+	local_missionary_strength = -2
+	local_religious_unity_contribution = -1
+    local_development_cost = -0.05
+	trade_goods_size_modifier = 0.05
+	local_manpower_modifier = 0.15
+}
+
+geo_porto_megrelo = {
+	province_trade_power_value = 5
+	navy_tradition = 0.25
+	naval_forcelimit = 5
+}
+
+geo_caput_mundi = {
+    tolerance_own = 2 #Georgia already has additional +2 as an idea
+	tolerance_heretic = 4
+	diplomatic_reputation = 2
+	warscore_cost_vs_other_religion = -0.25
+	legitimacy = 1
+	devotion = 1
+	republican_tradition = 0.3
+	meritocracy = 1
+	horde_unity = 1
+	yearly_patriarch_authority = 0.01
+	papal_influence = 2
+	monthly_militarized_society = 0.01
+	monthly_georgian_militarized_society_1 = 0.015
+	monthly_georgian_militarized_society_2 = 0.03
+}
+feo_gothic_embassy = {
+	diplomatic_upkeep = 1
+}
+
+feo_gothic_merchants = {
+    trade_goods_size = 1
+	trade_goods_size_modifier = 0.20 
+}
+    

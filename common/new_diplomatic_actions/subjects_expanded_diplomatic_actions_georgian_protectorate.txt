@@ -1,0 +1,84 @@
+establish_georgian_protectorate = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		is_subject = no
+		OR = {
+			tag = GEO
+			tag = IME
+			tag = SME
+			primary_culture = georgian
+		}
+		religion = orthodox
+		FROM = { 
+		    is_subject_of = ROOT
+	    	NOT = { is_subject_of_type = georgian_protectorate } 
+		}
+	}
+
+	is_allowed = {
+		always = yes
+	}
+
+	on_accept = {
+		FROM = { grant_independence = yes }
+		create_subject = {
+			subject_type = georgian_protectorate
+			subject = FROM
+		}
+	}
+
+	ai_will_do = {
+		FROM = {
+			NOT = { liberty_desire = 50 }
+			is_subject_of_type = march
+			monthly_income = 20
+			production_income_percentage = 0.35
+			max_manpower = 20
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 10
+					is_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+cancel_georgian_protectorate = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = georgian_protectorate
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = georgian_protectorate
+			}
+		}
+		NOT = { truce_with = FROM }
+		prestige = 0
+		stability = 0
+	}
+	
+	on_accept = {
+		FROM = { grant_independence = yes }
+		create_subject = {
+			subject = FROM
+			subject_type = march
+		}
+		add_truce_with = FROM
+		add_prestige = -50
+		add_stability = -3
+	}
+}

@@ -1,0 +1,244 @@
+#"Autokrator" is a Byzantine imperial title, adopted by Georgian Sovereigns ("Tvitmpkrobeli" in Georgian). I have decided to leave it in original form. "Basileus" was also used by the Georgian Sovereigns, but less freaquently, than, "Autokrator". Georgian language is genderless, so both male and female sovereigns would use the same title.
+georgian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = SAMEPO
+		3 = IMPERIA
+	}
+
+	ruler_male = {
+		1 = MTAVARI
+		2 = MEPE
+		3 = AUTOKRATOR
+	}
+
+	ruler_female = {
+		1 = MTAVARI_fem
+		2 = DEDOPALI
+		3 = AUTOKRATOR
+	}
+	
+	trigger = {
+		government = monarchy
+		primary_culture = georgian
+		NOT = { tag = SME }
+	}
+}
+
+georgian_subordinates = {
+	rank = {
+		1 = SAERISTAVO
+		2 = SAERISMTAVRO
+		3 = VICEROYALTY
+	}
+
+	ruler_male = {
+		1 = ERISTAVI
+		2 = ERISMTAVARI
+		3 = VICEROY
+	}
+
+	ruler_female = {
+		1 = ERISTAVI_fem
+		2 = ERISMTAVARI
+		3 = VICEROY
+	}
+	
+	trigger = {
+		NOT = { tag = SME }
+		primary_culture = georgian
+		overlord = {
+			primary_culture = georgian
+		}
+	}
+}
+
+samtskhe_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = ATABEG
+		2 = MEPE
+		3 = AUTOKRATOR
+	}
+
+	ruler_female = {
+		1 = ATABEG_fem
+		2 = DEDOPALI
+		3 = AUTOKRATOR
+	}
+	
+	trigger = {
+		tag = SME
+	}
+}
+
+#mostly but not exclusively modeled after older nonhereditary Georgian titles.
+georgian_republic_early = {
+	rank = {
+		1 = SAERISTAVO
+		2 = SAERISMTAVRO
+		3 = GREAT_REPUBLIC
+    }
+	
+	ruler_male = {
+		1 = ERISTAVI
+		2 = ERISMTAVARI
+		3 = ERISMTAVARI
+	}
+
+	ruler_female = {
+		1 = ERISTAVI_fem
+		2 = ERISMTAVARI
+		3 = ERISMTAVARI
+	}
+	
+	trigger = {
+		government = republic
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_reform = presidential_despot_reform }
+		primary_culture = georgian
+	}
+}
+
+#mostly but not exclusively modeled after older nonhereditary Georgian titles & Democratic Republic of Georgia
+georgian_republic_parliamentary = {     
+	rank = {
+		1 = SAERISTAVO
+		2 = DEMOCRATIC_REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = ERISTAVI
+		2 = CHAIRMAN
+		3 = CHAIRMAN
+	}
+
+	ruler_female = {
+		1 = ERISTAVI_fem
+		2 = CHAIRMAN_fem
+		3 = CHAIRMAN_fem
+	}
+	
+	trigger = {
+		government = republic
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_reform = presidential_despot_reform }
+		has_reform = broaden_functions_of_karavi
+		primary_culture = georgian
+	}
+}
+
+#mostly but not exclusively modeled nonhereditary Georgian titles & Modern Georgia
+georgian_republic_presidential = {     
+	rank = {
+		1 = SAERISTAVO
+		2 = SAERISMTAVRO
+		3 = FEDERAL_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = ERISTAVI
+		2 = ERISMTAVARI
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = ERISTAVI_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_dem
+	}
+	
+	trigger = {
+		government = republic
+		NOT = { is_revolutionary_republic_trigger = yes }
+		OR = {
+		    has_reform = presidential_reform
+			has_reform = presidential_despot_reform
+		}
+		primary_culture = georgian
+	}
+}
+
+#mostly but not exclusively modeled after Soviet Union
+georgian_republic_revolutionary = {
+   
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = CHAIRMAN
+		2 = STATE_SECRETARY
+		3 = GENERAL_SECRETARY
+	}
+
+	ruler_female = {
+		1 = CHAIRMAN
+		2 = STATE_SECRETARY_fem
+		3 = GENERAL_SECRETARY_dem
+	}
+	
+	trigger = {
+		government = republic
+		is_revolutionary_republic_trigger = yes
+		primary_culture = georgian
+	}
+}
+
+#"Union Republic", or "Sakavshiro Respublika" in Georgian, denoted the 15 Republics that formed the USSR.
+georgian_republic_revolutionary_vassal = {
+   
+	rank = {
+		1 = UNION_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = CHAIRMAN
+	}
+
+	ruler_female = {
+		1 = CHAIRMAN
+	}
+	
+	trigger = {
+		government = republic
+		overlord = {
+			primary_culture = georgian
+            is_revolutionary_republic_trigger = yes
+		}
+	}
+}
+
+#Named after Chorbishopric of Kakheti and Orthodox Ecclesiastic Titles. Women cannot be members of the Orthodox Clergy, thus the female part is irrelevant.
+georgian_theocracy = {
+	rank = {
+		1 = GEORGIANMETROPOLITANATE
+		2 = CHORBISHOPRIC
+		3 = CATHOLICATE
+    }
+	
+	ruler_male = {
+		1 = CHORBISHOP
+		2 = CHORBISHOP
+		3 = CATHOLICOSPATRIARCH
+	}
+	
+	ruler_female = {
+		1 = CHORBISHOP
+		2 = CHORBISHOP
+		3 = CATHOLICOSPATRIARCH
+	}
+	
+	trigger = {
+		government = theocracy
+		primary_culture = georgian
+	}
+}

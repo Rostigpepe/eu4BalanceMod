@@ -1,0 +1,53 @@
+country_decisions = {
+	
+	geo_reinforce_slave_trade_ban = {
+		potential = {
+		    tag = GEO
+		    mission_completed = geo_conquer_egypt
+			GEO = {
+		    	any_subject_country = { NOT = { has_country_modifier = the_abolish_slavery_act } }
+			}
+		}
+		allow = {
+			NOT = { overextension_percentage = 0.02 }
+			any_subject_country = { NOT = { has_country_modifier = the_abolish_slavery_act } }
+		}
+		effect = {
+			add_prestige = 10
+	    	every_country = {
+	    	    limit = {
+				    AND = {
+	    		        is_subject_of = GEO
+			    		NOT = { has_country_modifier = the_abolish_slavery_act }
+					}
+		        }
+		        add_country_modifier = {
+	              	name = innovative_modifier
+		          	duration = 3650
+		        }
+	        	add_country_modifier = {
+         	    	name = "the_abolish_slavery_act"
+		          	duration = -1
+	        	}
+	         	custom_tooltip = abolished_slavery_act_tooltip
+	         	hidden_effect = {
+	         		every_owned_province = {
+		        		limit = {
+			        		trade_goods = slaves
+			     	    }
+			    	    change_trade_goods = unknown
+			     	    remove_building = tradecompany
+			     	    if = {
+			    		    limit = { has_province_modifier = slave_entrepot }
+				         	remove_province_modifier = slave_entrepot
+				        }
+			        }
+		    	}
+            }
+	   	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
