@@ -11,7 +11,7 @@ feudal_taxes_state_edict = {
 	
 	modifier = {
 		local_tax_modifier = 0.5
-		tax_income = 6
+		tax_income = 1
 	}
 	
 	color = { 255 255 128 }
