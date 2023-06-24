@@ -3,7 +3,6 @@ BRA_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		
 		OR = {
 			tag = BRA
 			AND = {
@@ -114,7 +113,6 @@ BRA_missions_1_franconia = {
 	ai = yes
 	potential = {
 		dynasty = "von Hohenzollern"
-		
 		OR = {
 			tag = BRA
 			AND = {
@@ -125,145 +123,127 @@ BRA_missions_1_franconia = {
 	}
 	has_country_shield = yes
 	
-	BRA_hohenzollerns_in_franconia = {
+	emp_brapru_ansbach_succession = {
 		icon = ansbach_succession
-		required_missions = { }
-		position = 5
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 71
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
-			treasury = 100
-			if = {
-				limit = {
-					FKN = {
-						dynasty = "von Hohenzollern"
-					}
-				}
-				OR = {
-					reverse_has_opinion = {
-						who = FKN
-						value = 100
-					}
-					marriage_with = FKN
-					alliance_with = FKN
-					senior_union_with = FKN
-				}
-			}
-			else_if = {
-				limit = {
-					ANS = {
-						dynasty = "von Hohenzollern"
-					}
-				}
-				OR = {
-					reverse_has_opinion = {
-						who = ANS
-						value = 100
-					}
-					marriage_with = ANS
-					alliance_with = ANS
-					senior_union_with = ANS
-				}
-			}
-			else_if = {
-				limit = {
-					BYT = {
-						dynasty = "von Hohenzollern"
-					}
-				}
-				OR = {
-					reverse_has_opinion = {
-						who = BYT
-						value = 100
-					}
-					marriage_with = BYT
-					alliance_with = BYT
-					senior_union_with = BYT
-				}
-			}
-			else = {
-				OR = {
-					franconia_area = {
-						owner = { 
-							dynasty = "von Hohenzollern"
-							OR = {
-								tag = ROOT
-								has_opinion = {
-									who = ROOT
-									value = 100
-								}
-							}
-						}
-					}
-					upper_franconia_area = {
-						owner = { 
-							dynasty = "von Hohenzollern"
-							OR = {
-								tag = ROOT
-								has_opinion = {
-									who = ROOT
-									value = 100
-								}
-							}
-						}
-					}
-				}
+			71 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			if = {
+			franconia_area = {
 				limit = {
-					any_country = {  #performance sry!
-						dynasty = "von Hohenzollern"
-						capital_scope = {
-							OR = {
-								area = franconia_area
-								area = upper_franconia_area
-							}
-						}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thuringia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = { 
+				limit = { has_dlc = "Domination"  NOT = { has_country_flag = declined_ANS_union_flag } }
+				custom_tooltip = pru_access_franconian_conquest_success_tt
+				tooltip = {
+					change_ruler_stat = {
+						stat = mil
+						amount = 1
+					}
+					add_power_projection = {
+						type = pru_lords_franconia_power_projection
+						amount = 25
 					}
 				}
-				country_event = { id = ME_Prussia_Events.8 } #Promoting Franconia
-			}
-			add_country_modifier = {
-				name = BRA_nurturing_kinsmen
-				duration = 7300
+				custom_tooltip = zim_amongst_the_great_powers_tt
+				custom_tooltip = pru_access_franconian_conquest_failure_tt
 			}
 		}
 	}
-	BRA_hohenzollern_domination = {
+	emp_brapru_franconian_conquest = {
 		icon = mission_eastern_european_city
-		required_missions = { BRA_hohenzollerns_in_franconia }
-		position = 6
+		required_missions = { emp_brapru_ansbach_succession }
 		provinces_to_highlight = {
 			OR = {
 				area = franconia_area
 				area = upper_franconia_area
+				area = hesse_area
+				area = thuringia_area 
+				area = palatinate_area 
 			}
-			NOT = {
-				owner = { dynasty = "von Hohenzollern" }
-			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			upper_franconia_area = {
-				type = all
-				owner = { dynasty = "von Hohenzollern" }
-			}
-			franconia_area = {
-				type = all
-				owner = { dynasty = "von Hohenzollern" }
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				OR = {
+					area = franconia_area
+					area = upper_franconia_area
+					area = hesse_area 
+					area = thuringia_area 
+					area = palatinate_area 
+				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = BRA_hohenzollern_hegemony
-				duration = 9125
-			}
-			every_country = {
-				limit = {
-					is_subject = no
-					has_country_flag = BRA_supported_the_hohenzollern_state
+			if = { 
+				limit = { 
+					has_country_flag = accepted_ANS_union_flag 
+					has_dlc = "Domination" 
 				}
-				country_event = { id = ME_Prussia_Events.9 }
+				clr_country_flag = accepted_ANS_union_flag
+				add_power_projection = {
+					type = pru_lords_franconia_power_projection
+					amount = 25
+				}
+				custom_tooltip = zim_amongst_the_great_powers_tt
+				change_ruler_stat = {
+					stat = mil
+					amount = 1
+				}
 			}
+			add_mil_power = 100
+			add_accepted_culture_or_dip_power = { culture = franconian }
+			custom_tooltip = pru_uniting_franconia_success_tt
+			ANS = {
+				country_event = { 
+					id = BM_FKM_conquest_event.1
+					days = 1
+					tooltip = BM_FKN_formable
+				}
+			}
+		}
+		ai_weight = {
+			factor = 75
 		}
 	}
 }
@@ -273,7 +253,6 @@ BRA_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		
 		OR = {
 			tag = BRA
 			AND = {
@@ -294,7 +273,7 @@ BRA_missions_2 = {
 		}
 		trigger = {
 			OR = {
-				grown_by_development = 15
+				grown_by_development = 10
 				neumark_area = { 
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -442,7 +421,7 @@ BRA_missions_2 = {
 			45 = {
 				add_trade_modifier = {
 					who = ROOT
-					duration = -1
+					duration = 9125
 					power = 20
 					key = BRA_successor_to_league
 				}
@@ -556,7 +535,6 @@ BRA_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		
 		OR = {
 			tag = BRA
 			AND = {
@@ -619,7 +597,7 @@ BRA_missions_3 = {
 					limit = {
 						has_country_flag = humiliated_rival
 					}
-					add_mil_power = 50
+					add_mil_power = 150
 				}
 			}
 			add_country_modifier = {
@@ -705,6 +683,18 @@ BRA_missions_3 = {
 			}
 		}
 		effect = {
+			every_owned_province = {
+				limit = {
+					area = west_prussia_area
+				}
+				add_base_manpower = 2
+			}
+			every_owned_province = {
+				limit = {
+					area = east_prussia_area
+				}
+				add_base_manpower = 2
+			}
 			if = {
 				limit = {
 					NOT = { tag = PRU }
@@ -735,7 +725,6 @@ BRA_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		
 		OR = {
 			tag = BRA
 			AND = {
@@ -1012,13 +1001,21 @@ BRA_missions_4 = {
 				owned_by = ROOT
 				OR = {
 					has_building = university
-					num_of_times_improved = 13
+					num_of_times_improved = 15
 				}
 			}
 		}
 		effect = {
 			2969 = {
-				add_or_upgrade_university_building = yes
+				add_building = university
+				if = {
+					limit = {
+						has_building = university
+					}
+					add_base_manpower = 1
+					add_base_production = 1
+					add_base_tax = 1
+				}
 				add_province_modifier = {
 					name = BRA_universita_viadrina_modifier
 					duration = -1
@@ -1033,7 +1030,6 @@ BRA_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		
 		OR = {
 			tag = BRA
 			AND = {
