@@ -10,6 +10,7 @@ BM_free_colonist = {
 
 BM_debt_tackled = {
 	build_cost = 0.33
+	advisor_cost = 0.25
 	land_maintenance_modifier = -0.5
 	interest = -1
 	inflation_action_cost = -0.25
