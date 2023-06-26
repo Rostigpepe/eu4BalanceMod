@@ -1873,6 +1873,7 @@ PRU_missions_4 = {
 			has_mil_advisor_3 = yes
 		}
 		effect = {
+			add_government_reform = generalkriegskommissariat_prussia
 			#set_country_flag = PRU_kanton LIM FIX PLEASE THE REPLACEMENT
 			#country_event = { id = flavor_brapru.36 }
 			set_country_flag = brapru_army_reforms_3
@@ -2370,9 +2371,10 @@ PRU_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		
-		NOT = { has_country_flag = PRU_ducal }
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 	}
 	has_country_shield = yes
 	
@@ -2385,7 +2387,7 @@ PRU_missions_5 = {
 			unrest = 0
 		}
 		trigger = {
-			has_absolutism_equivalent = { amount = 60 }
+			absolutism = 60
 			NOT = { average_unrest = 0 }
 			legitimacy_equivalent = 90
 		}
@@ -2538,6 +2540,33 @@ PRU_missions_5 = {
 		}
 		effect = {
 			41 = {
+				remove_province_modifier = bm_the_amber_trade
+				add_province_modifier = {
+					name = PRU_amber_center
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					41 = { has_building = mills }
+				}
+				hidden_effect = { add_years_of_income = 1 }
+			}
+			41 = {
+				remove_province_modifier = bm_the_amber_trade
+				add_province_modifier = {
+					name = PRU_amber_center
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					41 = { has_building = mills }
+				}
+				hidden_effect = { add_years_of_income = 1 }
+			}
+			41 = {
+				remove_province_modifier = bm_the_amber_trade
 				add_province_modifier = {
 					name = PRU_amber_center
 					duration = -1

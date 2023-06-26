@@ -169,7 +169,7 @@ PRU_potatoes = {
 }
 PRU_amber_center = {
 	trade_goods_size = 0.5
-	trade_value_modifier = 0.25
+	trade_value_modifier = 0.1
 }
 PRU_entering_the_world_stage = {
 	diplomatic_reputation = 2
@@ -191,7 +191,7 @@ PRU_zollverein_modifier = {
 }
 PRU_cornerstone_of_a_furnace = {
 	local_build_cost = -0.1
-	trade_goods_size = 0.4
+	trade_goods_size = 0.5
 }
 PRU_excellent_arms_industry = {
 	global_regiment_cost = -0.05

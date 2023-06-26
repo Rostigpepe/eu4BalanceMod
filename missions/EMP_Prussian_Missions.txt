@@ -1018,7 +1018,21 @@ BRA_missions_4 = {
 		}
 		effect = {
 			2969 = {
-				add_or_upgrade_university_building = yes
+				if = {
+					limit = { 
+						has_building = university
+					}
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+					else = {
+						add_building_construction = {
+							building = university
+							speed = 0.25
+    						cost = 0.25
+						}
+					}
+				}
 				add_province_modifier = {
 					name = BRA_universita_viadrina_modifier
 					duration = -1
@@ -1200,6 +1214,18 @@ BRA_missions_5 = {
 			}
 		}
 		effect = {
+			mittelmark_area = {
+				add_base_tax = 1
+				if = {
+					limit = { 
+						has_building = temple
+					}
+					add_base_tax = 1
+					else = {
+						add_building = temple
+					}
+				}
+			}
 			add_country_modifier = {
 				name = BRA_new_lords_of_brandenburg
 				duration = 9125
