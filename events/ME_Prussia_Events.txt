@@ -639,7 +639,7 @@ country_event = {
 		define_advisor = {
 			type = artist
 			name = "Friedrich Wilhelm Weidemann"
-			skill = 2
+			skill = 3
 			culture = saxon
 			religion = ROOT
 			cost_multiplier = 0.75
@@ -654,7 +654,7 @@ country_event = {
 			limit = {
 				has_dlc = "Rule Britannia"
 			}
-			change_innovativeness = 5
+			change_innovativeness = 10
 		}
 		else = {
 			add_adm_power = 50
@@ -727,47 +727,41 @@ country_event = {
 		
 		2966 = { #Glogow 9 dev
 			add_base_tax = 1
-			add_base_production = 1
 			add_province_modifier = {
 				name = PRU_colonization
-				duration = -1
+				duration = 14600
 			}
 			add_devastation = -25
 		}
 		4238 = { #Legnica 10 dev
 			add_base_tax = 1
-			add_base_production = 1
 			add_province_modifier = {
 				name = PRU_colonization
-				duration = -1
+				duration = 14600
 			}
 			add_devastation = -25
 		}
 		264 = { #Wroclaw 13 dev
-			add_base_manpower = 1
+			add_base_tax = 1
 			add_province_modifier = {
 				name = PRU_colonization
-				duration = -1
+				duration = 14600
 			}
 			add_devastation = -25
 		}
 		4723 = { #Opole 8 dev
 			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
 			add_province_modifier = {
 				name = PRU_colonization
-				duration = -1
+				duration = 14600
 			}
 			add_devastation = -25
 		}
 		263 = { #Racibórz 8 dev
 			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
 			add_province_modifier = {
 				name = PRU_colonization
-				duration = -1
+				duration = 14600
 			}
 			add_devastation = -25
 		}
@@ -781,6 +775,7 @@ country_event = {
 		2966 = { #Glogow 9 dev
 			add_base_tax = 1
 			add_base_production = 1
+			add_base_manpower = 1
 			change_religion = ROOT
 			change_culture = prussian
 			add_devastation = -25
@@ -788,11 +783,14 @@ country_event = {
 		4238 = { #Legnica 10 dev
 			add_base_tax = 1
 			add_base_production = 1
+			add_base_manpower = 1
 			change_religion = ROOT
 			change_culture = prussian
 			add_devastation = -25
 		}
 		264 = { #Wroclaw 13 dev
+			add_base_tax = 1
+			add_base_production = 1
 			add_base_manpower = 1
 			change_religion = ROOT
 			change_culture = prussian
@@ -1263,7 +1261,7 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		add_adm_power = 50
+		add_adm_power = 100
 		add_country_modifier = {
 			name = BRA_abolished_kreditwerk
 			duration = 18250
@@ -1274,7 +1272,7 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		change_government_reform_progress = 25
+		change_government_reform_progress = 50
 		add_country_modifier = {
 			name = BRA_reformed_kreditwerk
 			duration = 18250
@@ -1443,6 +1441,10 @@ country_event = {
 			religion = ROOT
 			cost_multiplier = 0.33
 		}
+		add_country_modifier = {
+			name = BM_PRU_wilhelm_humboldt_philosopher
+			duration = 3650
+		}
 	}
 	option = {
 		name = ME_Prussia_Events.33.b #Ok
@@ -1456,6 +1458,10 @@ country_event = {
 			culture = ROOT
 			religion = ROOT
 			cost_multiplier = 0.5
+		}
+		add_country_modifier = {
+			name = BM_PRU_alexander_humboldt_philosopher
+			duration = 3650
 		}
 	}
 }
@@ -1525,7 +1531,7 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		change_government_reform_progress = 30
+		change_government_reform_progress = 50
 		add_years_of_income = 1
 		add_mercantilism = 3
 	}
@@ -1534,8 +1540,8 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		add_years_of_income = 0.5
-		add_inflation = -2
+		add_years_of_income = 0.75
+		add_inflation = -5
 		add_country_modifier = {
 			name = PRU_investing
 			duration = 5475

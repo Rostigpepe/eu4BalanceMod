@@ -683,18 +683,6 @@ BRA_missions_3 = {
 			}
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					area = west_prussia_area
-				}
-				add_base_manpower = 2
-			}
-			every_owned_province = {
-				limit = {
-					area = east_prussia_area
-				}
-				add_base_manpower = 2
-			}
 			if = {
 				limit = {
 					NOT = { tag = PRU }
@@ -716,6 +704,15 @@ BRA_missions_3 = {
 			}
 			custom_tooltip = BRA_Prussian_modifier
 			complete_prussian_ascendance_missions = yes
+			custom_tooltip = pru_spread_dev_tt
+			hidden_effect = { 
+				west_prussia_area = {
+					add_base_manpower = 2
+				}
+				east_prussia_area = {
+					add_base_manpower = 2
+				}
+			}
 		}
 	}
 }
@@ -1007,7 +1004,6 @@ BRA_missions_4 = {
 		}
 		effect = {
 			2969 = {
-				add_building = university
 				if = {
 					limit = {
 						has_building = university
@@ -1015,6 +1011,9 @@ BRA_missions_4 = {
 					add_base_manpower = 1
 					add_base_production = 1
 					add_base_tax = 1
+					else = {
+						add_building = university
+					}
 				}
 				add_province_modifier = {
 					name = BRA_universita_viadrina_modifier
@@ -1129,7 +1128,7 @@ BRA_missions_5 = {
 		}
 	}
 	BRA_irontooth = {
-		icon = me_mission_brandenburg_irontooth
+		icon = mission_diplomatic_relation
 		required_missions = { }
 		position = 4
 		provinces_to_highlight = {
@@ -1202,6 +1201,21 @@ BRA_missions_5 = {
 			}
 			add_stability_or_adm_power = yes
 			country_event = { id = ME_Prussia_Events.18 } 
+			custom_tooltip = BM_BRA_conclude_the_transition_effects_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = mittelmark_area
+						if = {
+							has_building = church
+						}
+						add_base_tax = 2
+						else = {
+							add_building = church
+						}
+						}
+				}
+			}
 		}
 	}
 	BRA_kreditwerk = {

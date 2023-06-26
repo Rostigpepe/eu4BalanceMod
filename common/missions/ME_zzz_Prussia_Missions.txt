@@ -3,15 +3,20 @@ PRU_generic_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = {
+		AND = {
 			OR = {
-				was_tag = TEU
-				was_tag = BRA
-				was_tag = STE
-				was_tag = POM
-				was_tag = WOL
-				was_tag = RUG
+				tag = PRU
+				tag = NGF
+			}
+			NOT = {
+				OR = {
+					was_tag = TEU
+					was_tag = BRA
+					was_tag = STE
+					was_tag = POM
+					was_tag = WOL
+					was_tag = RUG
+				}
 			}
 		}
 	}
@@ -72,17 +77,32 @@ PRU_generic_missions_3 = {
 				duration = 5475
 			}
 			complete_prussian_ascendance_missions = yes
+			custom_tooltip = pru_spread_dev_tt
+			hidden_effect = { 
+				west_prussia_area = {
+					add_base_manpower = 2
+				}
+				east_prussia_area = {
+					add_base_manpower = 2
+				}
+			}
 		}
 	}
 }
+
 
 PRU_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
@@ -149,8 +169,13 @@ PRU_missions_1_vassal = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		has_country_modifier = PRU_vassal_play
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			has_country_modifier = PRU_vassal_play
+		}
 	}
 	has_country_shield = yes
 	
@@ -202,8 +227,13 @@ PRU_missions_1_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
@@ -336,7 +366,7 @@ PRU_missions_1_2 = {
 			NOT = { average_unrest = 1 }
 		}
 		effect = {
-			change_innovativeness = 3
+			change_innovativeness = 5
 			add_country_modifier = {
 				name = PRU_freeing_the_peasants
 				duration = 7300
@@ -350,8 +380,13 @@ PRU_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
@@ -407,8 +442,13 @@ PRU_missions_2_vassal = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		has_country_modifier = PRU_vassal_play
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			has_country_modifier = PRU_vassal_play
+		}
 	}
 	has_country_shield = yes
 	
@@ -470,8 +510,13 @@ PRU_missions_2_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
@@ -638,7 +683,7 @@ PRU_missions_2_2 = {
 			tooltip = {
 				add_province_modifier = {
 					name = PRU_the_prussian_main
-					duration = -1
+					duration = 18250
 				}
 			}
 			hidden_effect = {
@@ -653,7 +698,7 @@ PRU_missions_2_2 = {
 					}
 					add_province_modifier = {
 						name = PRU_the_prussian_main
-						duration = -1
+						duration = 18250
 					}
 				}
 			}
@@ -927,14 +972,26 @@ PRU_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
 	PRU_eagle_in_the_north = {
 		icon = ger_kaiserreich
-		required_missions = { POM_prussian_glory BRA_prussian_ascendance TEU_prussian_ascendance PRU_prussian_ascendance }
+		required_missions = { 
+			OR = {
+				POM_prussian_glory 
+				BRA_prussian_ascendance 
+				TEU_prussian_ascendance 
+				PRU_prussian_ascendance 
+			}
+		}
 		position = 7
 		provinces_to_highlight = {
 		}
@@ -1549,8 +1606,15 @@ PRU_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { 
+				has_country_flag = PRU_ducal 
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -1868,6 +1932,7 @@ PRU_missions_4 = {
 			#country_event = { id = flavor_brapru.36 }
 			set_country_flag = brapru_army_reforms_3
 			country_event = { id = flavor_brapru.29 }
+			add_government_reform = generalkriegskommissariat_prussia
 			create_general_with_pips = { 
 				tradition = 100
 				add_fire = 1
@@ -2361,8 +2426,13 @@ PRU_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
-		NOT = { has_country_flag = PRU_ducal }
+		AND = {
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			NOT = { has_country_flag = PRU_ducal }
+		}
 	}
 	has_country_shield = yes
 	
@@ -2521,13 +2591,29 @@ PRU_missions_5 = {
 				OR = {
 					province_id = 43
 					province_id = 41
+					province_id = 39
 				}
-				value = 65
+				value = 60
 			}
 			41 = { owned_by = ROOT }
 		}
 		effect = {
 			41 = {
+				remove_province_modifier = bm_the_amber_trade
+				add_province_modifier = {
+					name = PRU_amber_center
+					duration = -1
+				}
+			}
+			43 = {
+				remove_province_modifier = bm_the_amber_trade
+				add_province_modifier = {
+					name = PRU_amber_center
+					duration = -1
+				}
+			}
+			39 = {
+				remove_province_modifier = bm_the_amber_trade
 				add_province_modifier = {
 					name = PRU_amber_center
 					duration = -1

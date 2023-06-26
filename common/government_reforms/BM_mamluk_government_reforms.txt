@@ -1,5 +1,4 @@
 ###		Tier 2 NOBLE PRIVILIGES		###
-
 mamluk_privileges_mamluks = {
 	allow_normal_conversion = yes
 	icon = "muslim"
@@ -11,8 +10,8 @@ mamluk_privileges_mamluks = {
 	}
 	modifiers = {
 		global_unrest = -1
-		production_efficiency = 0.10
-		land_maintenance_modifier = -0.10
+		production_efficiency = 0.1
+		land_maintenance_modifier = -0.1
 	}
 	ai = {
 		factor = 2
@@ -41,7 +40,6 @@ enlist_arabian_tribesmen = {
 }
 
 ###		Tier 3 Bureaucracy		###
-
 revive_the_hisbah_mamluks = {
 	allow_normal_conversion = yes
 	icon = "noble_muslim"
@@ -63,7 +61,6 @@ revive_the_hisbah_mamluks = {
 
 
 ###		Tier 5 Administrative Cadre		###
-
 turkicized_elite_mamluks = {
 	allow_normal_conversion = yes
 	icon = "ottoman_government"

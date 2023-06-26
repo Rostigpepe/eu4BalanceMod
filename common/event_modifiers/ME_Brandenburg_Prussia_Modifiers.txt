@@ -128,14 +128,14 @@ PRU_financial_capital = {
 }
 PRU_germanization = {
 	local_missionary_strength = 0.02
-	local_culture_conversion_cost = -0.2
-	local_autonomy = -0.05
+	local_culture_conversion_cost = -0.15
+	local_culture_conversion_time = -0.15
 }
 PRU_fight_with_catholicism = {
 	global_heretic_missionary_strength = 0.03
 }
 PRU_kriegsakademie_modifier = {
-	local_manpower_modifier = 1
+	leader_cost = -0.1
 	army_tradition = 0.25
 }
 PRU_prussian_union_of_churches = {
@@ -168,7 +168,8 @@ PRU_potatoes = {
 	trade_value_modifier = 0.2
 }
 PRU_amber_center = {
-	trade_goods_size = 1
+	trade_goods_size = 0.5
+	trade_value_modifier = 0.25
 }
 PRU_entering_the_world_stage = {
 	diplomatic_reputation = 2
@@ -231,15 +232,15 @@ PRU_breech_loaded_art = {
 	artillery_power = 0.1
 }
 PRU_schlosskirche = {
-	legitimacy = 0.5
-	local_defensiveness = 0.25
+	legitimacy = 0.25
+	local_defensiveness = 0.1
 }
 PRU_prussian_manufacture = {
 	trade_value_modifier = 0.1
 }
 PRU_the_prussian_main = {
-	local_tax_modifier = 0.1
-	local_governing_cost = -0.1
+	local_tax_modifier = 0.25
+	local_governing_cost = -0.2
 	local_prosperity_growth = 0.25
 }
 PRU_glass_factory = {
@@ -275,10 +276,11 @@ PRU_bitter_resistance = {
 }
 PRU_promoting_art = {
 	prestige = 0.5
-	monthly_splendor = 2
+	monthly_splendor = 1
 }
 PRU_colonization = {
-	local_missionary_strength = 0.03
+	local_development_cost = -0.2
+	local_culture_conversion_time = -0.25
 	local_culture_conversion_cost = -0.25
 }
 PRU_governmental_help = {
@@ -338,4 +340,14 @@ PRU_SAX_unification = {
 PRU_adleorden = {
 	army_tradition = 0.5
 	nobles_loyalty_modifier = 0.05
+}
+
+BM_PRU_wilhelm_humboldt_philosopher = {
+	idea_cost = -0.1
+	global_institution_spread = 0.1
+}
+
+BM_PRU_alexander_humboldt_philosopher = {
+	technology_cost = -0.1
+	global_institution_spread = 0.1
 }

@@ -20874,8 +20874,13 @@ gme_rock_chasel = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	#what to do when it's built
@@ -20888,14 +20893,24 @@ gme_rock_chasel = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -21062,8 +21077,14 @@ gme_patrick_cathedral = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			province_is_or_accepts_culture = yes
+			religion_group = christian
+		}
 	}
 
 	#what to do when it's built
@@ -21076,16 +21097,26 @@ gme_patrick_cathedral = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
-		religion = catholic
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			religion_group = christian
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = british
-		province_is_or_accepts_culture = yes
-		religion = catholic
+		AND = {
+			OR = {
+				culture_group = british
+				primary_culture = irish
+			}
+			province_is_or_accepts_culture = yes
+			religion_group = christian
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?

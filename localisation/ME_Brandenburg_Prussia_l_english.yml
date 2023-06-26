@@ -37,6 +37,7 @@
  BRA_burghers_in_check_desc: "The merchant class of Brandenburg openly exploits the peasantry, evades taxes, and defies the Margrave's will. For a stronger and more stable nation, we must curtail the rights of the burghers. The nickname 'The Irontooth' shan't go unheeded."
  BRA_concluding_the_transition_title: "Conclude the Transition"
  BRA_concluding_the_transition_desc: "The transition to Hohenzollern rule has been fraught with turmoil and centralization. Discontent and instability may plague Brandenburg, but it shall all end soon. The transition shall conclude."
+ BM_BRA_conclude_the_transition_effects_tt: "Every owned province in the §YMittelmark Area§! will gain §G+2 Base Tax Development§! if it has a Church, else it will gain a Church."
  BRA_universita_viadrina_title: "Universita Viadrina"
  BRA_universita_viadrina_desc: "It is the Elector's duty to cultivate an environment of intelligence and culture within the nation, and there is no better method than the establishment of Brandenburg's first university. With the approval of the church, we shall erect a grand institute of learning in the town of Frankfurt an der Oder."
  BRA_kreditwerk_title: "Das Kreditwerk"
@@ -600,3 +601,8 @@
  
  # Events:
  
+
+ BM_PRU_wilhelm_humboldt_philosopher:0 "Wilhelm Humboldt's Philosophy"
+ desc_BM_PRU_wilhelm_humboldt_philosopher:0 "Wilhelm Humboldt is serving in our court as an important theorist and philosopher."
+ BM_PRU_alexander_humboldt_philosopher:0 "Alexander Humboldt's Science"
+ desc_BM_PRU_alexander_humboldt_philosopher:0 "Alexander Humboldt is serving in our court as an important scientist and state-craftsman."
