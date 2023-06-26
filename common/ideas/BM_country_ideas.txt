@@ -110,11 +110,11 @@ NGF_ideas = {
 		ae_impact = -0.15
 	}
 	army_professionalism = {
-		yearly_army_professionalism = 0.001
+		yearly_army_professionalism = 0.002
 		military_tactics = 0.075
 	}
 	ger_german_confederation = {
-		manpower_in_culture_group_provinces = 0.25
+		manpower_in_culture_group_provinces = 0.2
 	}
 	ger_german_universities = {
 		technology_cost = -0.05

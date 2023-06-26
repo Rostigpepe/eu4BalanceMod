@@ -645,7 +645,7 @@ PRU_missions_2_2 = {
 			tooltip = {
 				add_province_modifier = {
 					name = PRU_the_prussian_main
-					duration = -1
+					duration = 18250
 				}
 			}
 			hidden_effect = {

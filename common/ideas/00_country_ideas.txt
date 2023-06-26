@@ -94,7 +94,7 @@ HLR_ideas = {
 GER_ideas = {
 	start = {
 		land_morale = 0.15
-		governing_capacity_modifier = 0.4
+		governing_capacity_modifier = 0.2
 	}
 	
 	bonus = {
@@ -107,7 +107,7 @@ GER_ideas = {
 	free = yes
 	
 	ger_german_confederation = {
-		manpower_in_culture_group_provinces = 0.3
+		manpower_in_culture_group_provinces = 0.25
 	}
 	ger_german_universities = {
 		technology_cost = -0.1
@@ -1512,7 +1512,7 @@ PRU_ideas = {
 		army_tradition = 1
 	}
 	army_professionalism = {
-		yearly_army_professionalism = 0.002
+		yearly_army_professionalism = 0.001
 		military_tactics = 0.05
 	}	
 	noble_cadets = {
@@ -1523,7 +1523,7 @@ PRU_ideas = {
 		infantry_power = 0.2
 	}
 	regimental_cantons = {
-		manpower_in_culture_group_provinces = 0.2
+		manpower_in_culture_group_provinces = 0.15
 	}
 	religious_toleration = {
 		global_unrest = -1
@@ -12410,7 +12410,7 @@ TRS_ideas = {
 
 QOM_ideas = {
 	start = {
-		diplomats = 1
+		land_morale = 0.1
 		production_efficiency = 0.1
 	}
 	bonus = {
@@ -12435,14 +12435,14 @@ QOM_ideas = {
 		envoy_travel_time = -0.25
 	}
 	qom_tribes_of_iraq_e_ajam = {
-		fort_maintenance_modifier = -0.1
-		global_manpower_modifier = 0.1
+		fort_maintenance_modifier = -0.15
+		global_manpower_modifier = 0.15
 	}
 	reform_the_diwan = {
 		#Same as Timurids
 	}
 	qom_shahanshah = {
-		reduced_liberty_desire = 10
+		core_creation = -0.15
 	}
 }
 
