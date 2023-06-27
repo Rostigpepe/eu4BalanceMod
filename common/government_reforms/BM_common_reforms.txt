@@ -1,0 +1,73 @@
+# Tier 1
+
+
+# Tier 2
+
+
+# Tier 3
+
+
+# Tier 4
+
+
+# Tier 5
+imperial_circles_reform = {
+	icon = "imperial_army"
+	allow_normal_conversion = yes
+
+	potential = {
+		is_part_of_hre = yes
+		NOT = { culture_group = latin }
+		NOT = { primary_culture = swiss }
+		NOT = { tag = DTT }
+		NOT = { tag = SIL }
+	}
+	trigger = {
+		is_part_of_hre = yes
+		total_development = 100
+	}
+	modifiers = {
+		vassal_forcelimit_bonus = 0.5
+		land_maintenance_modifier = -0.05
+	}
+	custom_attributes = {
+		enables_unified_drills = yes #-2% Regiment cost and +4% Manpower Recovery Speed
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+# Tier 6
+
+
+# Tier 7
+
+
+# Tier 8
+
+
+# Tier 9
+revoke_reichsfreiheit_reform = {
+	icon = politician
+	allow_normal_conversion = yes
+	potential = {
+		is_part_of_hre = yes
+	}
+	trigger = {
+		is_part_of_hre = yes
+		total_development = 200
+	}
+	modifiers = {
+		diplomatic_annexation_cost = -0.15
+		ae_impact = -0.15
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+
+# Tier 10
+
+

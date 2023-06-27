@@ -1,0 +1,173 @@
+bohemian_elective_kingdom_reform = {
+	icon = "bohemian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = bohemian
+		}
+	}
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = bohemian
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 1
+		nobles_loyalty_modifier = 0.1
+		nobles_privilege_slots = 1
+		nobles_influence_modifier = 0.05
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			has_ruler_election = yes
+			has_improved_ruler_election = yes
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#Tier 3
+vladislavs_provincial_establishment_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+	}
+	modifiers = {
+		state_maintenance_modifier = -0.3
+		global_unrest = -1
+		legitimacy = -0.25
+		nobles_influence_modifier = 0.10
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#Tier 4
+hussite_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	
+	potential = {
+		OR = {
+			religion = hussite
+			has_reform = hussite_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = hussite
+			has_reform = hussite_reform
+		}
+	}
+	modifiers = {
+		missionaries = 1
+	}
+	custom_attributes = {
+		enables_four_articles = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#TIER 6
+restored_land_establishment_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = restored_land_establishment_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = restored_land_establishment_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		monarch_admin_power = 1
+		church_influence_modifier = -0.05
+		nobles_influence_modifier = -0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#Tier 7
+german_aristocracy_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = german_aristocracy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = german_aristocracy_reform
+		}
+	}
+	modifiers = {
+		free_mil_policy = 1
+		ae_impact = -0.10
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.10
+	}
+	ai = {
+		factor = 100
+	}
+}
+

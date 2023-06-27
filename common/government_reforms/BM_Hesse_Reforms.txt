@@ -73,7 +73,7 @@ hessian_military_complex_reform = {
 	}
 	modifiers = {
 		development_cost = -0.05
-		build_cost = -0.10
+		build_cost = -0.05
 	}
 	custom_attributes = {
 		enables_military_exports = yes #2% Goods Produced per 10% Army Professionalism
@@ -125,7 +125,7 @@ hessian_elite_jaegers_reform = {
 	modifiers = {
 		fire_damage = 0.1
 		leader_land_fire = 1
-		global_regiment_cost = 0.10
+		global_regiment_cost = 0.1
 	}
 	ai = {
 		factor = 100

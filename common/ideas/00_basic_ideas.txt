@@ -1759,8 +1759,8 @@ court_ideas = {
 	}
 	court_embassies = {
 		monarch_power_tribute = 1
-		vassal_manpower_bonus = 0.1
-		vassal_sailors_bonus = 0.1
+		vassal_manpower_bonus = 0.15
+		vassal_sailors_bonus = 0.15
 	}
 
 	ai_will_do = {

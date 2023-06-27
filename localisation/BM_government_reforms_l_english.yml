@@ -12,7 +12,6 @@
 
  frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
  frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
- enables_immigrant_settlements:0 "Enables §YImmigrant Settlers§! in provinces with either fish, livestock, grain, or naval supplies, granting: \n§G-10%§! Development Cost \n§G-10%§! Goods Produced"
  mechanic_enables_immigrant_settlements:0 "Enables §YImmigrant Settlers§! in provinces with either fish, livestock, grain, or naval supplies, granting: \n§G-10%§! Development Cost \n§G-10%§! Goods Produced"
 
  BM_Kreditwork:0 "Kreditwork"
@@ -73,3 +72,32 @@ hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
  Military_Industry_10:0 "Early Military-Industrial Complex"
  reforms_GE_hesse_modernization_title:1 "Modernize Hesse"
  reforms_GE_hesse_modernization_desc:1 "Friedrich of Cassel's Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
+
+
+ #BOHEMIA
+ vladislavs_provincial_establishment_reform:0 "Vladislav's Provincial Establishment"
+ vladislavs_provincial_establishment_reform_desc:0 "Written during the Bohemian wars, this code of laws was the first to codify the Bohemian state law, it determined that royal cities are direct subjects to the king. And placed the nobles above cities in legal matters. Most of the 554 articles of the code pertained to the privileges of the nobility, which severely limited the monarchs influence and jurisdiction."
+ german_aristocracy_reform:0 "German Aristocracy"
+ german_aristocracy_reform_desc:0 "Following centuries of Luxembourger and Habsburger reign, the German language and heritages were commonplace in the courts of the Bohemian kings. This policy greatly increased the loyalty over his German nobles, the Czech peasantry and nobility was very much displeased with these waves of foreign rulers and nobles."
+ restored_land_establishment_reform:0 "Restored Land Establishment"
+ restored_land_establishment_reform_desc:0 "Following the end of the civil war over the Czech rebels on White Mountain, the King of Bohemia and Margrave of Moravia Ferdinant the second issues the decree to restore law and order, as well as the supremacy of the crown over the lands of the Bohemian Crown. Furthermore the legal status of the nobility was depricated to it being secondary to the clergy in the state assembly."
+ hussite_reform:0 "Codify Hussite Doctrine"
+ hussite_reform_desc:0 "'The Four Articles of Prague' were the core tenents of the ultraquist beliefs, and were summarized the following way: \n 'Freedom to preach the word of god' Allowing non-clergy to debate theology without fear of being branded a heretic. \n 'Communion under both kinds', Communion with both bread and wine, so everyone is treated with the same spiritual doctrine as the clergy. \n 'Poverty of the Clergy', That the Clergy is not supposed to hold significant worldly possessions. \n 'Punishment for mortal sins regardless of statue', Your title and possessions will not protect you from earthly or divine justice."
+ mechanic_enables_four_articles_yes: "Four Articles of Prague: Unlocks the 'Four Articles of Prague' Privilege for the Clergy, which modifies tolerance and gives innovativeness."
+ estate_church_four_articles_of_prague: "Four Articles of Prague"
+ estate_church_four_articles_of_prague_desc: "Enforce the Four Articles of Prague on the people regardless of creed."
+
+
+
+ #COMMON REFORMS
+ imperial_circles_reform:0 "Lead the Imperial Circle"
+ imperial_circles_reform_desc:0 "We can trust in our imperial kinfolk to bolster our national armies. Strong integration with our Circle will allow us to field more troops for less coin by means of a common defensive structure."
+ GE_Shared_Drills_1:0 "Shared Drills"
+ GE_Shared_Drills_2:0 "Shared Drills"
+ GE_Shared_Drills_3:0 "Shared Drills"
+ GE_Shared_Drills_4:0 "Shared Drills"
+ GE_Shared_Drills_5:0 "Shared Drills"
+
+
+ revoke_reichsfreiheit_reform:0 "Revoke Reichsfreiheit"
+ revoke_reichsfreiheit_reform_desc:0 "For too long we have granted our lands to dukes, barons and knights in exchange for personal loyalties, only for their heirs to forget about the servitude they owe us. Let is reverse this practice and start re-integrating the lands we de jure own, but have de facto lost control over."

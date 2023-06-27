@@ -330,9 +330,9 @@ generalkriegskommissariat_prussia = {
 	modifiers = {
 		army_tradition = 1
 		mil_tech_cost_modifier = -0.1
-		monthly_militarized_society = 0.075
-		monthly_prussian_militarized_society_1 = 0.075
-		monthly_prussian_militarized_society_2 = 0.125
+		monthly_militarized_society = 0.08
+		monthly_prussian_militarized_society_1 = 0.08
+		monthly_prussian_militarized_society_2 = 0.12
 		monthly_prussian_militarized_society_3 = 0.15
 		nobles_loyalty_modifier = 0.05
 		nobles_influence_modifier = 0.05
@@ -401,7 +401,7 @@ frederick_wilhelm_reforms_prussia = {
 	}
 	modifiers = {
 		build_cost = -0.1
-		build_time = -0.15
+		build_time = -0.1
 	}
 	custom_attributes = {
 		enables_immigrant_settlements = yes
