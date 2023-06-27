@@ -1,0 +1,79 @@
+# European Diseases
+country_event = {
+	id = BM_kill_all_natives
+	title = BM_kill_all_natives.t
+	desc = BM_kill_all_natives.d
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = european_diseases_struck }
+		capital_scope = {
+			continent = north_america
+		}
+		any_known_country = {
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+			OR = {
+				any_owned_province = {
+					continent = north_america
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_capital = no
+						owner = { NOT = { num_of_cities = 2 } }
+					}
+				}
+				set_province_flag = NA_smallpox_here
+				every_neighbor_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					set_province_flag = NA_smallpox_here
+				}
+			}
+			set_country_flag = european_diseases_struck
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.25
+			any_known_country = {
+				capital_scope = {
+					continent = europe
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = BM_kill_all_natives.a #Have the gods forsaken us?
+		every_province = {
+			limit = { has_province_flag = NA_smallpox_here }
+			add_province_modifier = {
+				name = inc_smallpox_outbreak
+				duration = 1095
+			}
+			clr_province_flag = NA_smallpox_here
+		}
+	}
+}

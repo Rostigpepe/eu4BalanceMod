@@ -15,8 +15,8 @@ native_basic_reform = {
 	}
 	modifiers = {
 		reform_progress_growth = -1.0
-		monthly_reform_progress = 0.1
-		land_maintenance_modifier = -0.15
+		monthly_reform_progress = 0.05
+		land_maintenance_modifier = -0.1
 		diplomatic_upkeep = -2
 		global_institution_spread = -0.5
 		governing_capacity_modifier = -0.75
@@ -58,7 +58,7 @@ native_chiefdom_reform = {
 	nation_designer_cost = 20
 
 	modifiers = {
-		tribal_development_growth = 0.02
+		tribal_development_growth = 0.01
 		migration_cost = 1
 	}
 }
@@ -74,9 +74,9 @@ native_federation_reform = {
 		has_reform = native_federation_reform
 	}
 	modifiers = {
-		land_forcelimit_modifier = 0.25
-		global_manpower_modifier = 0.2
-		land_morale = 0.10
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
+		land_morale = 0.05
 		max_absolutism = -20
 		migration_cost = 6
 	}

@@ -16868,7 +16868,7 @@ visby_city = {
 			hostile_disembark_speed = 0.5
 		}
 		area_modifier = {
-			province_trade_power_value = 0.2
+			province_trade_power_value = 2
 		}
 		country_modifiers = {		
 			privateer_efficiency = 0.25	
@@ -16889,7 +16889,7 @@ visby_city = {
 			hostile_disembark_speed = 1
 		}
 		area_modifier = {
-			province_trade_power_value = 0.4
+			province_trade_power_value = 4
 		}
 		country_modifiers = {		
 			privateer_efficiency = 0.33
@@ -16911,7 +16911,7 @@ visby_city = {
 			hostile_disembark_speed = 2
 		}
 		area_modifier = {
-			province_trade_power_value = 0.6
+			province_trade_power_value = 6
 		}
 		country_modifiers = {		
 			privateer_efficiency = 0.5
