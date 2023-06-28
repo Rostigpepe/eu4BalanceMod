@@ -5317,8 +5317,8 @@ ita_experienced_alpini = {
 }
 
 ven_aldine_monopoly_modifier = {
-	technology_cost = -0.025
-	idea_cost = -0.025
+	technology_cost = -0.15
+	idea_cost = -0.15
 }
 
 ven_venetian_carnevale = {

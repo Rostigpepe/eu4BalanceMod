@@ -238,6 +238,7 @@ poland_region = {
 		kuyavia_area
 		podlasie_area
 		volhynia_area
+		lower_silesia_area
 	}
 }
 
@@ -294,6 +295,7 @@ carpathia_region = {
 		wallachia_area
 		slavonia_area
 		moldavia_area
+		central_hungary_area
 	}
 }
 

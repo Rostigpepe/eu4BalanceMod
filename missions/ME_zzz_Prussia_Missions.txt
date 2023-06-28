@@ -2537,8 +2537,10 @@ PRU_missions_5 = {
 				value = 65
 			}
 			41 = { owned_by = ROOT }
+			43 = { owned_by = ROOT }
 		}
 		effect = {
+			custom_tooltip = BM_amber_trade_mills
 			41 = {
 				remove_province_modifier = bm_the_amber_trade
 				add_province_modifier = {
@@ -2552,7 +2554,7 @@ PRU_missions_5 = {
 				}
 				hidden_effect = { add_years_of_income = 1 }
 			}
-			41 = {
+			43 = {
 				remove_province_modifier = bm_the_amber_trade
 				add_province_modifier = {
 					name = PRU_amber_center
@@ -2561,11 +2563,11 @@ PRU_missions_5 = {
 			}
 			if = {
 				limit = {
-					41 = { has_building = mills }
+					43 = { has_building = mills }
 				}
 				hidden_effect = { add_years_of_income = 1 }
 			}
-			41 = {
+			39 = {
 				remove_province_modifier = bm_the_amber_trade
 				add_province_modifier = {
 					name = PRU_amber_center
@@ -2574,9 +2576,24 @@ PRU_missions_5 = {
 			}
 			if = {
 				limit = {
-					41 = { has_building = mills }
+					39 = { has_building = mills }
 				}
 				hidden_effect = { add_years_of_income = 1 }
+			}
+			if = {
+				limit = { 
+					AND = {
+						41 = { has_building = mills }
+						39 = { has_building = mills }
+						43 = { has_building = mills }
+					}
+				}
+				change_price = {
+					trade_goods = gems
+					key = BM_the_amber_revival
+					value = 0.5
+					duration = 10950
+				}
 			}
 			custom_tooltip = PRU_extra_gold
 			tooltip = {

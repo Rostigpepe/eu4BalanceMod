@@ -439,13 +439,19 @@ emp_hun_economy_political_branch = {
 			}
 		}
 		effect = {
-			capital_scope = {
+			4240 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 				add_province_modifier = {
 					name = hun_great_city
 					duration = -1
 				}
 				center_of_trade = 2
+				rename_capital = "Buda"
+				change_trade_goods = paper
 			}
+			set_capital = 4240
 		}
 	}
 	

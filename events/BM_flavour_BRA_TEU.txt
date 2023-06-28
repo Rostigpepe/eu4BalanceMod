@@ -1,0 +1,128 @@
+#Teutons Pawn Neumark?
+country_event = {
+	id = flavor_brapru.15
+	title = "flavor_brapru.15.t"
+	desc = "flavor_brapru.15.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		OR = {
+			49 = {
+				owned_by = TEU
+				controlled_by = TEU
+			}
+			4747 = {
+				owned_by = TEU
+				controlled_by = TEU
+			}
+            5003 = {
+				owned_by = TEU
+				controlled_by = TEU
+			}
+		}
+		TEU = { #The Teutonic order hasn't connected their lands to Neumark
+			NOT = { owns = 48 } #Kolberg
+			NOT = { owns = 254 } #Poznan
+			NOT = { owns = 1858 } #Stettin
+			NOT = { owns = 2963 } #Notec
+			NOT = { owns = 2994 } #Greifswald
+			NOT = { owns = 2995 } #Stolp
+		}
+		NOT = { war_with = TEU }
+		NOT = { is_year = 1466 }
+	}
+	
+	mean_time_to_happen = {
+		months = 20 #Reduced due to trigger inflexibility
+	}
+	
+	option = {
+		name = "flavor_brapru.15.a" #Offer the Teutons to pawn back Neumark for 40 000 Guilders
+		ai_chance = {
+			factor = 75
+		}
+		custom_tooltip = flavor_brapru.15.a.tt
+		TEU = {
+			country_event = { id = flavor_brapru.16 }
+		}
+	}
+	option = { #We could not afford that.
+		name = "flavor_brapru.15.b"
+		ai_chance = {
+			factor = 25
+		}
+		custom_tooltip = flavor_brapru.15.b.tt
+		add_prestige = -5
+	}
+}
+
+#The fate of Neumark
+country_event = {
+	id = flavor_brapru.16
+	title = "flavor_brapru.16.t"
+	desc = "flavor_brapru.16.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_brapru.16.a" #We need the money.
+		ai_chance = { factor = 100 }
+		tooltip = {
+			49 = {
+				if = {
+					limit = {
+						owned_by = TEU
+						controlled_by = TEU
+					}
+					cede_province = BRA
+					add_core = BRA
+					remove_core = TEU
+				}
+			}
+			4747 = {
+				if = {
+					limit = {
+						owned_by = TEU
+						controlled_by = TEU
+					}
+					cede_province = BRA
+					add_core = BRA
+					remove_core = TEU
+				}
+			}
+            5003 = {
+				if = {
+					limit = {
+						owned_by = TEU
+						controlled_by = TEU
+					}
+					cede_province = BRA
+					add_core = BRA
+					remove_core = TEU
+				}
+			}
+		}
+		add_treasury = 100
+		FROM = {
+			country_event = { id = flavor_brapru.17 }
+			add_opinion = {
+				who = ROOT
+				modifier = pawning_of_neumark
+			}
+		}
+	}
+	option = {
+		name = "flavor_brapru.16.b" #Neumark shall remain ours!
+		ai_chance = { factor = 0 }
+		custom_tooltip = flavor_brapru.16.b.tt
+		FROM = {
+			country_event = { id = flavor_brapru.18 }
+		}
+	}
+}

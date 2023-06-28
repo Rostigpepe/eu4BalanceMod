@@ -594,14 +594,14 @@ emp_burgundy_3 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 			brabant_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_c = ROOT
+				add_permanent_claim = ROOT
 			}
 			holland_area = {
 				limit = {
@@ -610,7 +610,7 @@ emp_burgundy_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_brabant_area = {
+			wallonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
