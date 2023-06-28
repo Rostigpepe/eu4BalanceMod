@@ -165,7 +165,8 @@ PRU_balanced_fleet = {
 	naval_morale = 0.05
 }
 PRU_potatoes = {
-	trade_value_modifier = 0.2
+	local_manpower = 0.5
+	supply_limit_modifier = 0.5
 }
 PRU_amber_center = {
 	trade_goods_size = 0.5

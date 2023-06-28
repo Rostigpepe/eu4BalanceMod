@@ -366,6 +366,7 @@ PRU_missions_2 = {
 		position = 8
 		provinces_to_highlight = {
 			area = silesia_area
+			area = lower_silesia_area
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -373,6 +374,11 @@ PRU_missions_2 = {
 		}
 		trigger = {
 			silesia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			lower_silesia_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -1023,10 +1029,6 @@ PRU_missions_3 = {
 				type = mission_rewards_power_projection
 				amount = 15
 			}
-			custom_tooltip = PRU_CONGRESS_OF_PADERBORN_CAN_HAPPEN
-			hidden_effect = {
-				set_country_flag = ME_Eligible_for_Paderborn
-			}
 			restore_country_name = yes
 			
 			if = {
@@ -1047,7 +1049,6 @@ PRU_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = kuyavia_area
-				area = silesia_area
 				area = neumark_area
 				area = wielkopolska_area
 				area = east_prussia_area
@@ -1437,7 +1438,7 @@ PRU_missions_3 = {
 	}
 	
 	PRU_flotte = {
-		icon = me_mission_venice_ship_in_port
+		icon = Mission_heart_of_the_hansa
 		required_missions = { }
 		position = 19
 		provinces_to_highlight = {
@@ -2266,7 +2267,7 @@ PRU_missions_4 = {
 				tooltip = {
 					add_province_modifier = {
 						name = PRU_potatoes
-						duration = -1
+						duration = 14600
 					}
 				}
 				hidden_effect = {
@@ -2276,7 +2277,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = {
@@ -2285,7 +2286,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = { #3
@@ -2294,7 +2295,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = {
@@ -2303,7 +2304,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = { #5
@@ -2312,7 +2313,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = {
@@ -2321,7 +2322,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = { #7
@@ -2330,7 +2331,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = {
@@ -2339,7 +2340,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = { #9
@@ -2348,7 +2349,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 					random_owned_province = {
@@ -2357,7 +2358,7 @@ PRU_missions_4 = {
 						}
 						add_province_modifier = {
 							name = PRU_potatoes
-							duration = -1
+							duration = 14600
 						}
 					}
 				}
@@ -2499,7 +2500,7 @@ PRU_missions_5 = {
 		required_missions = { PRU_berlin_colln }
 		position = 14
 		provinces_to_highlight = {
-			province_id = 1759
+			province_id = 5010
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { development = 20 }
@@ -2507,7 +2508,7 @@ PRU_missions_5 = {
 			}
 		}
 		trigger = {
-			1759 = {
+			5010 = {
 				owned_by = ROOT
 				development = 20
 				has_manufactory_trigger = yes
@@ -2526,6 +2527,7 @@ PRU_missions_5 = {
 			OR = {
 				province_id = 43
 				province_id = 41
+				province_id = 39
 			}
 		}
 		trigger = {
@@ -2533,6 +2535,7 @@ PRU_missions_5 = {
 				OR = {
 					province_id = 43
 					province_id = 41
+					province_id = 39
 				}
 				value = 65
 			}
