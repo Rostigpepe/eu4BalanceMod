@@ -1,0 +1,19 @@
+#Sönderjylland-Slesvig, incl. Slesvig, and Flensborg
+
+add_core = SHL
+owner = SHL
+controller = SHL
+culture = danish
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = salt
+base_manpower = 3
+capital = "Slesvig by"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+fort_15th = yes

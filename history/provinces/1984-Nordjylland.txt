@@ -1,0 +1,19 @@
+#Nordjylland incl. Aalborg, Hjorring, Thisted, and
+
+owner = DAN
+controller = DAN
+add_core = DAN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Aalborg"
+is_city = yes
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

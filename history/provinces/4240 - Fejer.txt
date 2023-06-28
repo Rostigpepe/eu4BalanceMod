@@ -1,0 +1,23 @@
+#4240 - Fejér (Fejér + Veszprém + Györ + parts of Komárom)
+
+owner = HUN
+controller = HUN 
+culture = hungarian
+religion = catholic
+capital = "Fehérvár"
+trade_goods = livestock
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = HUN
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

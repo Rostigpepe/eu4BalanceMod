@@ -1,0 +1,16 @@
+#4957 Limbazi
+owner = LIV
+controller = LIV
+culture = latvian
+religion = catholic
+capital = "Limbazi"
+trade_goods = livestock
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = LIV
+add_core = LTG
+discovered_by = western
+discovered_by = eastern

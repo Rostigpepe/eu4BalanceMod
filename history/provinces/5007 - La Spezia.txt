@@ -1,0 +1,18 @@
+#5007 La Spezia
+
+owner = GEN
+controller = GEN
+add_core = GEN
+culture = ligurian
+religion = catholic
+hre = yes
+base_tax = 3 
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "La Spezia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

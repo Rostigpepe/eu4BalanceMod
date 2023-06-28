@@ -1,0 +1,24 @@
+#Lund
+
+add_core = DAN
+owner = DAN
+controller = DAN
+culture = scanian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 5
+#trade_goods = grain
+trade_goods = fish #The Great Herring Market of Skåne
+base_manpower = 2
+capital = "Lund"
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = skanemarket
+	duration = -1
+} 
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

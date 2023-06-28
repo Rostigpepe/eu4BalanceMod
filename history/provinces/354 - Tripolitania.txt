@@ -1,0 +1,21 @@
+#354 - Tripoli
+
+owner = TUN
+controller = TUN
+culture = tunisian
+religion = sunni
+capital = "Tripoli" #Tripoli in the West.
+trade_goods = cloth
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 2
+is_city = yes
+add_core = TUN
+add_core = TRP
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+extra_cost = 16
+center_of_trade = 2

@@ -1,0 +1,79 @@
+## Restored French vassals 1.30 ##
+## Turned the vassals into appanages 1.35 ##
+# France-Orleans
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = ORL
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Armagnac
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = AMG
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Auvergne
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = AUV
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Foix
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = FOI
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Bourbon
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = BOU
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Berry
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = BER
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+
+# Provence and Lorraine under René of Anjou
+union = {
+	first = PRO
+	second = LOR
+	start_date = 1431.1.25
+	end_date = 1453.2.28
+}
+
+alliance = {
+	first = FRA
+	second = PRO
+	start_date = 1431.1.25
+	end_date = 1453.7.18
+}
+
+# Auld Alliance
+guarantee = {
+	first = FRA
+	second = SCO
+	start_date = 1444.1.1
+	end_date = 1560.1.1
+}

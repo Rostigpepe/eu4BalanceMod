@@ -1,0 +1,19 @@
+#Ume, Åsele, Piteå Lappmarks
+
+add_core = SWE
+owner = SWE
+controller = SWE
+add_core = SMI
+add_core = SWE
+capital = "Arvidsjaur"
+culture = sapmi
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+add_local_autonomy = 70

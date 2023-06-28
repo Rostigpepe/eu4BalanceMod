@@ -1,0 +1,19 @@
+#333 - The Baleares
+
+owner = ARA		# Alfons V of Aragon
+controller = ARA
+add_core = ARA
+add_core = MJO
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = sugar
+base_manpower = 1 
+capital = "Palma" 
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
