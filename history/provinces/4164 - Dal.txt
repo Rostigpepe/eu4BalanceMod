@@ -1,4 +1,4 @@
-#Dal
+s#Dal
 
 add_core = SWE
 owner = SWE
