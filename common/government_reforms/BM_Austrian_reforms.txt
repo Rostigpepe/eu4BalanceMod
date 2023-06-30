@@ -6,7 +6,7 @@ albertine_line_reform = {
 	effect = {
 		add_corruption = -2
 		add_legitimacy = 10
-		add_yearly_manpower = 0.75
+		add_yearly_manpower = 3
 	}
 	potential = {
 		OR = {
@@ -25,9 +25,6 @@ albertine_line_reform = {
 		monthly_heir_claim_increase_modifier = 0.1
 		envoy_travel_time = -0.2
 		nobles_influence_modifier = 0.05
-	}
-	custom_attributes = {
-		enables_austrian_heirs = yes
 	}
 	ai = {
 		factor = 100

@@ -379,7 +379,7 @@ reformed_legal_system_prussia = {
 	}
 	modifiers = {
 		state_governing_cost = -0.1
-		global_autonomy = -0.025
+		global_autonomy = -0.05
 		possible_adm_policy = 1
 	}
 	ai = {
