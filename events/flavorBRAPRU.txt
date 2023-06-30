@@ -625,13 +625,16 @@ country_event = {
 	
 	trigger = {
 		tag = BRA
-		NOT = { num_of_loans = 4 }
 		OR = {
 			49 = {
 				owned_by = TEU
 				controlled_by = TEU
 			}
 			4747 = {
+				owned_by = TEU
+				controlled_by = TEU
+			}
+			5003 = {
 				owned_by = TEU
 				controlled_by = TEU
 			}
@@ -655,7 +658,7 @@ country_event = {
 	option = {
 		name = "flavor_brapru.15.a" #Offer the Teutons to pawn back Neumark for 40 000 Guilders
 		ai_chance = {
-			factor = 75
+			factor = 100
 		}
 		custom_tooltip = flavor_brapru.15.a.tt
 		TEU = {
@@ -665,7 +668,7 @@ country_event = {
 	option = { #We could not afford that.
 		name = "flavor_brapru.15.b"
 		ai_chance = {
-			factor = 25
+			factor = 0
 		}
 		custom_tooltip = flavor_brapru.15.b.tt
 		add_prestige = -5
@@ -699,6 +702,17 @@ country_event = {
 				}
 			}
 			4747 = {
+				if = {
+					limit = {
+						owned_by = TEU
+						controlled_by = TEU
+					}
+					cede_province = BRA
+					add_core = BRA
+					remove_core = TEU
+				}
+			}
+			5003 = {
 				if = {
 					limit = {
 						owned_by = TEU
@@ -755,6 +769,17 @@ country_event = {
 				}
 			}
 			4747 = {
+				if = {
+					limit = {
+						owned_by = TEU
+						controlled_by = TEU
+					}
+					cede_province = BRA
+					add_core = BRA
+					remove_core = TEU
+				}
+			}
+			5003 = {
 				if = {
 					limit = {
 						owned_by = TEU

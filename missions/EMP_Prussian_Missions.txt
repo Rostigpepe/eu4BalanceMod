@@ -314,6 +314,12 @@ BRA_missions_2 = {
 					duration = 7300
 				}
 			}
+			5003 = {
+				add_province_modifier = {
+					name = BRA_neumark_province
+					duration = 7300
+				}
+			}
 			hidden_effect = {
 				if = {
 					limit = {					
@@ -335,6 +341,21 @@ BRA_missions_2 = {
 						NOT = { country_or_non_sovereign_subject_holds = 49 }
 					}
 					49 = {
+						remove_province_modifier = BRA_neumark_province
+						if = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_core = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+				if = {
+					limit = {					
+						NOT = { country_or_non_sovereign_subject_holds = 5003 }
+					}
+					5003 = {
 						remove_province_modifier = BRA_neumark_province
 						if = {
 							limit = {
@@ -796,6 +817,13 @@ BRA_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 			silesia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_silesia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

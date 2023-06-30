@@ -1,8 +1,8 @@
 # 89 Amiens
 
-owner = FRA
-controller = FRA
-add_core = FRA
+owner = BUR
+controller = BUR
+add_core = BUR
 capital = "Abbeville"
 is_city = yes
 culture = wallonian

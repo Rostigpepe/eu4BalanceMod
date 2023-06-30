@@ -294,6 +294,7 @@ categories =  {
 			4950 #Telemark
 			2968
 			120 4734 #Italy
+			5004
 		}
 	}
 
