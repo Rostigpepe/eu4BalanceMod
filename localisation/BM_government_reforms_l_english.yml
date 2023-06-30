@@ -12,7 +12,7 @@
 
  frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
  frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
- mechanic_enables_immigrant_settlements:0 "Enables §YImmigrant Settlers§! in provinces with either fish, livestock, grain, or naval supplies, granting: \n§G-10%§! Development Cost \n§G-10%§! Goods Produced"
+ mechanic_enables_immigrant_settlements_yes:0 "Enables §YImmigrant Settlers§! in provinces with either fish, livestock, grain, or naval supplies, granting: \n§G-10%§! Development Cost \n§G-10%§! Goods Produced"
 
  BM_Kreditwork:0 "Kreditwork"
 
@@ -30,7 +30,7 @@
  enlist_arabian_tribesmen_desc:0 "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
  enables_arabian_horses:0 "Enables Arabian Horses Mechanic granting §G+3%§! Cavalry Combat Ability for every §YArabian subject§!"
 
- mechanic_enables_arabian_horses:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
+ mechanic_enables_arabian_horses_yes:0 "Gain 3% Cavalry Combat Ability for every Arabian Subject"
 
  Arabian_Horses_1:0 "Arabian Horses"
  Arabian_Horses_2:0 "Arabian Horses"

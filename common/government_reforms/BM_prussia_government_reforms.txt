@@ -400,6 +400,7 @@ frederick_wilhelm_reforms_prussia = {
 		}
 	}
 	modifiers = {
+		production_efficiency = 0.1
 		build_cost = -0.1
 		build_time = -0.1
 	}

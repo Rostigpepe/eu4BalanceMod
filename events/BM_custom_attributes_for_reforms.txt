@@ -52,9 +52,12 @@ country_event = {
 						trade_goods = grain
 					}
 				}
-				add_province_modifier = {
-					name = BM_immigrant_settlements
-					duration = -1
+				hidden_effect = {
+					add_province_modifier = {
+						name = BM_immigrant_settlements
+						duration = -1
+						hidden = yes
+					}
 				}
 			}
 		}
