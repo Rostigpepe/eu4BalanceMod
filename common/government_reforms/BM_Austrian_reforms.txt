@@ -1,7 +1,7 @@
 
 # TIER 3
 albertine_line_reform = {
-	icon = ladislaus_posthumous
+	icon = Gov_nobleman
 	allow_normal_conversion = yes
 	effect = {
 		add_corruption = -2
@@ -37,7 +37,7 @@ albertine_line_reform = {
 
 # TIER 4
 imperial_inquisition_reform = {
-	icon = imperial_inquisition
+	icon = Gov_clergyman
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
