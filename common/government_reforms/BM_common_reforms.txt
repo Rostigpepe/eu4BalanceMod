@@ -28,7 +28,7 @@ imperial_circles_reform = {
 	}
 	modifiers = {
 		vassal_forcelimit_bonus = 0.5
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.1
 	}
 	custom_attributes = {
 		enables_unified_drills = yes #-2% Regiment cost and +4% Manpower Recovery Speed
@@ -48,6 +48,9 @@ imperial_circles_reform = {
 
 
 # Tier 9
+
+
+# Tier 10
 revoke_reichsfreiheit_reform = {
 	icon = politician
 	allow_normal_conversion = yes
@@ -68,6 +71,6 @@ revoke_reichsfreiheit_reform = {
 }
 
 
-# Tier 10
+# Tier 11
 
 

@@ -1,0 +1,66 @@
+
+# TIER 3
+albertine_line_reform = {
+	icon = ladislaus_posthumous
+	allow_normal_conversion = yes
+	effect = {
+		add_corruption = -2
+		add_legitimacy = 10
+		add_yearly_manpower = 0.75
+	}
+	potential = {
+		OR = {
+			primary_culture = austrian
+			has_reform = albertine_line_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = albertine_line_reform
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		monthly_heir_claim_increase_modifier = 0.1
+		envoy_travel_time = -0.2
+		nobles_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_austrian_heirs = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 4
+imperial_inquisition_reform = {
+	icon = imperial_inquisition
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = imperial_inquisition_reform
+			primary_culture = austrian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = imperial_inquisition_reform
+			primary_culture = austrian
+		}
+	}
+	modifiers = {
+		papal_influence = 2
+		missionary_maintenance_cost = -0.15
+		prestige_per_development_from_conversion = 0.1
+		church_influence_modifier = 0.10
+	}
+	custom_attributes = {
+		enables_papal_delegation = yes #50 opinion with the pope
+	}
+	ai = {
+		factor = 100
+	}
+}

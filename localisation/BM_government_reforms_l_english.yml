@@ -88,6 +88,15 @@ hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
  estate_church_four_articles_of_prague_desc: "Enforce the Four Articles of Prague on the people regardless of creed."
 
 
+ #AUSTRIA
+ albertine_line_reform:0 "The Albertine Line"
+ albertine_line_reform_desc:0 "As our family holds most of the Austrian Heartlands, we shall never have to look far for potential heirs or willing soldiers. Just as when the Albertine line died in 1457, we took over our cousin's crown, and our cousins are more then willing to continue carrying our banner should our strenght run short."
+ imperial_inquisition_reform:0 "Imperial Inquisition"
+ imperial_inquisition_reform_desc:0 "To fight the Heretical spread across the Australian Netherlands and the spread of Luther's vile teachings among the northern princes, We shall institute the Imperial Inquisition to expell these lost souls."
+ mechanic_enables_papal_delegation_yes:0 "Papal Delegation: §G+50§! Opinion with the Papal States."
+ BM_opinion_papal_delegation:0 "Papal Delegation"
+
+
 
  #COMMON REFORMS
  imperial_circles_reform:0 "Lead the Imperial Circle"
@@ -97,7 +106,7 @@ hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
  GE_Shared_Drills_3:0 "Shared Drills"
  GE_Shared_Drills_4:0 "Shared Drills"
  GE_Shared_Drills_5:0 "Shared Drills"
-
+ mechanic_enables_unified_drills_yes:0 " §G-2%§! Regiment Cost and §G+4%§! Manpower Recovery Speed per HRE Subject, up to a maximum of §Y5§!"
 
  revoke_reichsfreiheit_reform:0 "Revoke Reichsfreiheit"
  revoke_reichsfreiheit_reform_desc:0 "For too long we have granted our lands to dukes, barons and knights in exchange for personal loyalties, only for their heirs to forget about the servitude they owe us. Let is reverse this practice and start re-integrating the lands we de jure own, but have de facto lost control over."

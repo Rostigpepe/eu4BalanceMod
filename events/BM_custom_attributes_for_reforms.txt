@@ -17,7 +17,6 @@ country_event = {
 						OR = {
 							trade_goods = fish
 							trade_goods = livestock
-							trade_goods = naval_supplies
 							trade_goods = grain
 						}
 					}
@@ -48,7 +47,6 @@ country_event = {
 					OR = {
 						trade_goods = fish
 						trade_goods = livestock
-						trade_goods = naval_supplies
 						trade_goods = grain
 					}
 				}
@@ -947,6 +945,43 @@ country_event = {
 
 	option = {
 		name = reform_me_events.207.a
+
+	}
+}
+
+
+
+
+country_event = {
+	id = reform_me_events.85
+	title = reform_me_events.85.t
+	desc = reform_me_events.85.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+
+	trigger = {
+		NOT = { has_government_attribute = enables_papal_delegation }
+		PAP = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = BM_opinion_papal_delegation
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		PAP = {
+			remove_opinion = { who = ROOT modifier = BM_opinion_papal_delegation }
+		}
+	}
+
+	option = {
+		name = reform_me_events.85.a
 
 	}
 }

@@ -10,3 +10,8 @@ geo_restored_koj = {
 	opinion = 75
 	yearly_decay = 2
 }
+
+
+BM_opinion_papal_delegation = {
+	opinion = 50
+}

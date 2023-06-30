@@ -58,7 +58,7 @@ vladislavs_provincial_establishment_reform = {
 		state_maintenance_modifier = -0.3
 		global_unrest = -1
 		legitimacy = -0.25
-		nobles_influence_modifier = 0.10
+		nobles_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 100
@@ -164,7 +164,7 @@ german_aristocracy_reform = {
 		free_mil_policy = 1
 		ae_impact = -0.10
 		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.10
+		nobles_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 100

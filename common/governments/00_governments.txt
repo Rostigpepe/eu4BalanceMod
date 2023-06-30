@@ -180,6 +180,8 @@ monarchy = {
 				consulate_of_the_sea
 				#BM MODDED
 				revive_the_hisbah_mamluks
+				vladislavs_provincial_establishment_reform
+				albertine_line_reform
 				#Georgian Mechanics			
 				saeristavo_reform_mon
 				sadrosho_reform_mon
@@ -221,6 +223,9 @@ monarchy = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
+				#BM MODDED
+				hussite_reform
+				imperial_inquisition_reform
 				#Georgia
 				decretals_of_the_georgian_orthodox_church_reform
 			}
@@ -285,6 +290,7 @@ monarchy = {
 				#MODDED BM
 				enlist_arabian_tribesmen
 				hessian_elite_jaegers_reform
+				imperial_circles_reform
 				#Revolutionary Georgia
 				geo_revolutionary_army_reform
 			}
@@ -316,6 +322,7 @@ monarchy = {
 				reformed_legal_system_prussia
 				turkicized_elite_mamluks
 				found_the_rothschilds_reform
+				restored_land_establishment_reform
 				#Georgian Parliament-Karavi				
 				karavi_reform
 			}
@@ -343,6 +350,7 @@ monarchy = {
 				#Modded BM:
 				kreditwerk_prussia
 				foreign_recruitment_mamluks
+				german_aristocracy_reform
 			}
 		}
 		economical_matters = {
@@ -390,6 +398,8 @@ monarchy = {
 				#1.35 Addition
 				mng_seal_of_the_emperor_reform
 				strengthen_bakuhan_system_reform
+				#BM MODDED
+				revoke_reichsfreiheit_reform
 			}
 		}
 		separation_of_power = {
