@@ -236,7 +236,7 @@ blockaded = {
 }
 
 no_adjacent_controlled = {
-	local_colonial_growth = -5
+	local_colonial_growth = -10
 }
 
 provincial_tax_income = {
@@ -257,7 +257,7 @@ knowledge_sharing = {
 }
 
 cardinals_spread_institution = {
-	institution_growth = 20
+	institution_growth = 12
 }
 
 manpower = {
@@ -1697,7 +1697,7 @@ native_policy_trade = {
 }
 
 native_policy_hostile = {
-	global_colonial_growth = 20
+	global_colonial_growth = 15
 }
 
 ########################################

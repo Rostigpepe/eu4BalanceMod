@@ -542,9 +542,10 @@ diplomatic_ideas = {
 	}
 	experienced_diplomats  = {
 		diplomatic_reputation = 2
+		monthly_favor_modifier = 0.15
 	}
 	flexible_negotiation = {
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.15
 	}
 	diplomatic_corps = {
 		dip_tech_cost_modifier = -0.1
@@ -781,33 +782,33 @@ trade_ideas = {
 	category = DIP
 
 	bonus = {
-		merchants = 1
+		caravan_power = 0.25
 		burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 	}
 
 	shrewd_commerce_practise = {
- 		global_trade_power = 0.2
+ 		global_trade_power = 0.15
   	}
   	free_trade = {
   		merchants = 1
   	}
 	merchant_adventures = {
-		trade_range_modifier = 0.25
+		transfer_trade_power_reasons = 10
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
-		mercantilism_cost = -0.25
 	}
 	overseas_merchants = {
-		placed_merchant_power = 15
+		placed_merchant_power = 5
 	}
 	trade_manipulation = {
 		trade_steering = 0.25
 	}
 	fast_negotiations = {
-		caravan_power = 0.25
+		movement_speed = 0.1
+		envoy_travel_time = -0.1
 	}
 
 	ai_will_do = {
@@ -1123,19 +1124,19 @@ maritime_ideas = {
 		allowed_marine_fraction = 0.25
 	}
 	sheltered_ports = {
-		global_ship_repair = 0.15
-		sailor_maintenance_modifer = -0.15
+		trade_range_modifier = 0.25
+		trade_steering = 0.25
 	}
 	grand_navy = {
 		naval_forcelimit_modifier = 0.5
 		ship_power_propagation = 0.25
 	}
 	ships_penny = {
-		global_ship_cost = -0.1
+		merchants = 1
+		treasure_fleet_income = 0.25
 	}
 	sea_hawks = {
-		global_naval_engagement_modifier = 0.1
-		admiral_cost = -0.25
+		global_ship_trade_power = 0.3
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
@@ -1378,7 +1379,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
- 		min_autonomy_in_territories = -0.1
+		colony_development_boost = 1
 	}
 
 	additional_colonists = {
@@ -1388,10 +1389,10 @@ expansion_ideas = {
 		merchants = 1
 	}
 	faster_colonists = {
-		global_colonial_growth = 15
+		global_colonial_growth = 10
 	}
 	vice_roys  = {
-		global_tariffs = 0.2
+		global_tariffs = 0.5
  		envoy_travel_time = -0.2
  	}
 	additional_diplomats = {
@@ -1399,7 +1400,6 @@ expansion_ideas = {
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonists = 1
 		colonist_placement_chance = 0.05
 	}
 	competetive_merchants  = {
@@ -1459,6 +1459,7 @@ administrative_ideas = {
 
 	bonus = {
 		governing_capacity_modifier = 0.25
+		administrative_efficiency = 0.05
 		eunuchs_loyalty_modifier = 0.1
 	}
 
@@ -1620,6 +1621,7 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
+		monthly_favor_modifier = 0.15
 	}
 	postal_service = {
 		envoy_travel_time = -0.25
