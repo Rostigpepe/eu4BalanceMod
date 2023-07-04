@@ -2,21 +2,6 @@
 
 # country
 on_startup = {
-	every_province = {
-		limit = {
-			region = france_region
-			NOT = { owned_by = BUR owned_by = BRI }
-		}
-		add_local_autonomy = 35
-	}
-	every_province = {
-		limit = {
-			area = red_ruthenia_area
-			area = podolia_volhynia_area
-			area = volhynia_area
-		}
-		add_local_autonomy = 20
-	}
 	if = {
 		limit = {
 			current_age = age_of_discovery

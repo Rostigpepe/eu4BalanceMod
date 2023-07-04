@@ -1422,7 +1422,7 @@ VEN_ideas = {
 	
 	venetian_arsenal = {
 		naval_forcelimit_modifier = 0.1
-		land_forcelimit_modifier = 0.1
+		global_ship_recruit_speed = -0.1
 	}
 	printing_industry = {
 		diplomats = 1
@@ -12410,7 +12410,7 @@ TRS_ideas = {
 
 QOM_ideas = {
 	start = {
-		land_morale = 0.1
+		shock_damage = 0.10
 		production_efficiency = 0.1
 	}
 	bonus = {

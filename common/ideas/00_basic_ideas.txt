@@ -692,14 +692,14 @@ defensive_ideas = {
 		regiment_manpower_usage = -0.05
 	}
 	defensive_mentality = {
-		defensiveness = 0.25
-		fort_maintenance_modifier = -0.1
+		defensiveness = 0.33
+		fort_maintenance_modifier = -0.25
 	}
 	supply_trains = {
 		reinforce_speed = 0.3
 	}
 	improved_foraging = {
-		garrison_size = 0.33
+		garrison_size = 0.5
 	}
 
 	#until_the_last_man = {
@@ -1465,11 +1465,11 @@ administrative_ideas = {
 	administrative_council = {
 		adm_advisor_cost = -0.25 
 	}
-	local_rule = {
-		advisor_pool = 1
-	}
 	adaptability = {
 		core_creation = -0.25
+	}
+	local_rule = {
+		advisor_pool = 1
 	}
 	cultural_regulations = {
 		promote_culture_cost = -0.3
@@ -1731,7 +1731,7 @@ court_ideas = {
 		devotion = 1
 		horde_unity = 1
 		meritocracy = 0.25 
-		imperial_mandate = 0.125
+		imperial_mandate = 0.1
 		imperial_authority = 0.075
 	}
 	
@@ -1748,7 +1748,7 @@ court_ideas = {
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
-		development_cost_modifier = -0.025
+		development_cost_modifier = -0.05
 	}
 	respected_authority = {
 		all_estate_possible_privileges = 1

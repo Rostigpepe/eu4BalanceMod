@@ -3,6 +3,8 @@ monarch_power = DIP
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	trade_efficiency = 0.2
+	global_prov_trade_power_modifier = 0.2
+	diplomatic_reputation = 1
 	monthly_russian_modernization = 0.05
 	yearly_corruption = -0.05
 }

@@ -5,7 +5,7 @@ envoy_travel_time_i = {
 	potential = {
 	NOT = { 
 		dip_tech = 10 
-		}	
+		}
 	dip_tech = 0
 	}
 
@@ -22,7 +22,7 @@ envoy_travel_time_ii = {
 	potential = {
 	NOT = { 
 		dip_tech = 13 
-		}	
+		}
 	dip_tech = 2
 	}
 
@@ -32,15 +32,14 @@ envoy_travel_time_ii = {
 	}
 
 	
-	envoy_travel_time = -0.10
-	global_ship_recruit_speed = -0.10
+	envoy_travel_time = -0.1
 }
 
 envoy_travel_time_iii = {
 	potential = {
 	NOT = { 
 		dip_tech = 17 
-		}	
+		}
 	dip_tech = 10
 	}
 
@@ -51,14 +50,13 @@ envoy_travel_time_iii = {
 
 	
 	envoy_travel_time = -0.15
-	transport_attrition = -0.5
 }
 
 envoy_travel_time_iv = {
 	potential = {
 	NOT = { 
 		dip_tech = 22 
-		}	
+		}
 	dip_tech = 13
 	}
 
@@ -69,14 +67,13 @@ envoy_travel_time_iv = {
 
 	
 	envoy_travel_time = -0.20
-	naval_attrition = -0.1
 }
 
 envoy_travel_time_v = {
 	potential = {
 	NOT = { 
 		dip_tech = 26 
-		}	
+		}
 	dip_tech = 17
 	}
 
@@ -87,11 +84,10 @@ envoy_travel_time_v = {
 
 	
 	envoy_travel_time = -0.25
-	trade_range_modifier = 0.15
 }
 
 envoy_travel_time_vi = {
-	potential = {	
+	potential = {
 	dip_tech = 22
 	}
 
@@ -101,9 +97,9 @@ envoy_travel_time_vi = {
 	}
 
 	
-	envoy_travel_time = -0.30
-	ship_power_propagation = 0.25
+	envoy_travel_time = -0.3
 }
+
 
 #Primitive #Native #Feudalism
 rapid_collapse_of_society = {
@@ -137,4 +133,48 @@ rapid_collapse_of_society = {
 	manpower_recovery_speed = -0.5
 	yearly_corruption = 0.25
 	inflation_reduction = -0.25
+}
+
+
+# PRUSSIAN - BRANDENBURG MODIFIERS
+BRA_diplo_slot = {
+	potential = {
+		has_country_flag = BRA_extra_dip_slot
+	}
+	trigger = {
+		OR = {
+			legitimacy = 80
+			has_dip_advisor = yes
+		}
+	}
+	
+	diplomatic_upkeep = 1
+}
+
+PRU_prussian_vassal = {
+	potential = {
+		is_subject_of_type = prussian_vassal
+		overlord = {
+			has_country_flag = PRU_vassal_goods
+		}
+	}
+	trigger = {
+		always = yes
+	}
+	
+	global_trade_goods_size_modifier = 0.33
+}
+
+PRU_prussian_vassal_2 = {
+	potential = {
+		is_subject_of_type = prussian_vassal
+		overlord = {
+			has_country_flag = PRU_vassal_tradition
+		}
+	}
+	trigger = {
+		always = yes
+	}
+	
+	army_tradition = 1
 }
