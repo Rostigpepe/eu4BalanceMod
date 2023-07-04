@@ -1,13 +1,12 @@
 #Helsingborg
 
 add_core = DAN
-add_core = SKL
 owner = DAN
 controller = DAN
 culture = scanian
 religion = catholic
 hre = no
-base_tax = 5
+base_tax = 3
 base_production = 4
 trade_goods = cloth
 base_manpower = 3

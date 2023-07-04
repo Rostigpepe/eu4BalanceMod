@@ -3,8 +3,7 @@
 owner = DAN
 controller = DAN
 add_core = DAN
-add_core = SKL
-culture = scanian
+culture = swedish
 religion = catholic
 hre = no
 base_tax = 3 

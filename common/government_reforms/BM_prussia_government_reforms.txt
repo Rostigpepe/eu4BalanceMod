@@ -292,7 +292,6 @@ prussian_theocratic_reform = {
 }
 
 ###		Tier 2 NOBLE PRIVILEGES PRUSSIA	###
-
 empowering_the_junker_class_prussia = {
 	allow_normal_conversion = yes
 	icon = "council"
@@ -304,7 +303,7 @@ empowering_the_junker_class_prussia = {
 		}
 	}
 	modifiers = {
-		manpower_in_own_culture_provinces = 0.15
+		global_manpower_modifier = 0.15
 		nobles_influence_modifier = 0.05
 		nobles_loyalty_modifier = 0.1
 	}

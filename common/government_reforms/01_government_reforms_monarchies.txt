@@ -5987,7 +5987,7 @@ two_treatises_reform = {
 	modifiers = {
 		expand_administration_cost = -1
 		can_revoke_parliament_seats = yes
-		num_accepted_cultures = 1
+		parliament_effect_duration = 5
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
@@ -6010,9 +6010,9 @@ the_leviathan_reform = {
 	#	}
 	#}
 	modifiers = {
-		harsh_treatment_cost = -0.33
+		harsh_treatment_cost = -0.5
 		global_rebel_suppression_efficiency = 0.5
-		reduced_liberty_desire = 10
+		legitimacy = 1
 	}
 	ai = {
 		factor = 1
@@ -6030,7 +6030,7 @@ the_social_contract_reform = {
 	#}
 	modifiers = {
 		no_religion_penalty = yes
-		global_unrest = -1
+		idea_cost = -0.1
 	}
 	custom_attributes = {
 		enforced_interfaith_dialogue_buff = yes
@@ -6142,6 +6142,7 @@ presidential_monarchy_reform = {
 	modifiers = {
 		national_focus_years = -5
 		no_stability_loss_on_monarch_death = yes
+		monarch_admin_power = 1
 		monarch_diplomatic_power = 1
 	}
 }
@@ -6319,7 +6320,7 @@ nizam_i_cedid_reform = {
 		drill_gain_modifier = 0.25
 		movement_speed = 0.05
 		reinforce_speed = 0.15
-		recover_army_morale_speed = 0.1
+		recover_army_morale_speed = 0.05
 	}
 	ai = {
 		factor = 10

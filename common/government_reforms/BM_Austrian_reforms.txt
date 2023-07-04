@@ -5,8 +5,7 @@ albertine_line_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		add_corruption = -2
-		add_legitimacy = 10
-		add_yearly_manpower = 3
+		add_legitimacy = 20
 	}
 	potential = {
 		OR = {
@@ -50,7 +49,7 @@ imperial_inquisition_reform = {
 	}
 	modifiers = {
 		papal_influence = 2
-		missionary_maintenance_cost = -0.15
+		global_heretic_missionary_strength = 0.02
 		prestige_per_development_from_conversion = 0.1
 		church_influence_modifier = 0.10
 	}

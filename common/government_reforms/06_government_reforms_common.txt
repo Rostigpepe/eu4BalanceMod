@@ -252,7 +252,7 @@ penal_colonies_reform = {
 	}
 	modifiers = {
 		expel_minorities_cost = -1
-		colony_development_boost = 1
+		colonist_placement_chance = 0.1
 	}
 	ai = {
 		factor = 0.1
@@ -3663,7 +3663,8 @@ new_world_exploitation_reform = {
 		}
 	}
 	modifiers = {
-		colonists = 1 
+		merchants = 1
+		global_tariffs = 0.5
 	}
 	custom_attributes = {
 		extra_trade_goods_for_colonial_subjects = yes
@@ -3790,7 +3791,8 @@ embrace_the_economic_theory_reform = {
 		}
 	}
 	modifiers = {
-		interest = -0.5
+		interest = -1
+		production_efficiency = 0.1
 		inflation_reduction = 0.2
 	}
 	ai = {
@@ -3807,9 +3809,9 @@ war_economy_reform = {
 	trigger = {
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -0.5
-		global_regiment_cost = -0.1
-		global_ship_cost = -0.1
+		war_taxes_cost_modifier = -1
+		global_regiment_cost = -0.15
+		global_ship_cost = -0.15
 	}
 	ai = {
 		factor = 1
@@ -3827,8 +3829,8 @@ thalassocracy_reform = {
 	trigger = {
 	}
 	modifiers = {
-		center_of_trade_upgrade_cost = -0.1
-		trade_company_investment_cost = -0.1
+		center_of_trade_upgrade_cost = -0.15
+		trade_company_investment_cost = -0.15
 		naval_forcelimit_modifier = 0.25
 		global_trade_power = 0.15
 	}

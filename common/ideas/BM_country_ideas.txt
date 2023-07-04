@@ -1,7 +1,7 @@
 AHE_ideas = {
 	start = {
-		land_morale = 0.15
-		advisor_cost = -0.15
+		land_morale = 0.1
+		advisor_cost = -0.1
 	}
 	
 	bonus = {
@@ -36,7 +36,7 @@ AHE_ideas = {
 	}
 	supremacy_of_the_monarchy_ahe = {
 		max_absolutism = 10
-		allow_free_estate_privilege_revocation = yes
+		loyalty_change_on_revoked = 0.05
 	}
 }
 
@@ -278,10 +278,10 @@ REN_ideas = {  #Rhineland
         advisor_cost = -0.10
     }
     defenders_of_the_rings_and_leagues = {
-        global_manpower_modifier = 0.20
+        global_manpower_modifier = 0.15
     }
     growth_through_the_once_free_cities = {
-        development_cost = -0.10
+        development_cost = -0.05
     }    
     empowered_position_along_the_rhine = {
         global_prov_trade_power_modifier = 0.2

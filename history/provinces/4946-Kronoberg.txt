@@ -3,7 +3,7 @@
 owner = SWE
 controller = SWE
 add_core = SWE
-culture = geatish
+culture = swedish
 religion = catholic
 hre = no
 base_tax = 2
