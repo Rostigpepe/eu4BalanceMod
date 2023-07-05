@@ -47,3 +47,17 @@ bm_the_sulfur_of_iceland = {
 	}
 	
 }
+
+eng_globe_theatre = {
+	potential = {
+		owner = { has_country_flag = eng_globe_theatre }
+	}
+	trigger = {
+		owner = {
+			artist = 2
+		}
+	}
+	monthly_splendor = 1
+	idea_cost = -0.05
+	local_tax_modifier = 0.2
+}

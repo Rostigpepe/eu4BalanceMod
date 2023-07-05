@@ -1,0 +1,1027 @@
+appanage_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = appanage
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		manpower_in_own_culture_provinces = 0.15
+		land_forcelimit = 3
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+absolutist_france_reform = {
+	icon = "absolutist_france_reform"
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination" 
+		OR = {
+			AND = { 
+				tag = FRA 
+				OR = {
+					has_reform = absolutist_france_reform
+					have_had_reform = absolutist_france_reform
+					has_unlocked_government_reform = { government_reform = absolutist_france_reform }
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = absolutist_france_reform
+			}
+			mission_completed = fra_movement_centralization
+		}
+	}
+	trigger = {
+		OR = {
+			AND = { 
+				tag = FRA 
+				OR = {
+					has_reform = absolutist_france_reform
+					have_had_reform = absolutist_france_reform
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = absolutist_france_reform
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = french
+		technology_group = western
+		capital_scope = { region = france_region }
+	}
+	lock_level_when_selected = yes
+
+	modifiers = {
+		all_estate_influence_modifier = -0.1
+		max_absolutism = 10
+		unjustified_demands = -0.1
+	}
+
+	custom_attributes = {
+		centralize_state_development = yes 
+	}
+}
+
+margraviate_reform = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		have_had_reform = margraviate_reform
+	}
+	trigger = {
+		is_part_of_hre = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		is_part_of_hre = yes
+	}
+	modifiers = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.2
+		land_maintenance_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+scottish_monarchy_reform = {
+	icon = "scottish_kingdom"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = scottish
+			primary_culture = highland_scottish
+		}
+	}
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = scottish
+			primary_culture = highland_scottish
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		nobles_influence_modifier = -0.1
+		diplomatic_reputation = 1 
+		defensiveness = 0.1
+		development_cost_in_primary_culture = -0.05
+	}
+	
+	conditional = {
+		allow = { 
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+stadthalter_monarchy_reform = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = stadthalter_monarchy_reform
+			}
+		}
+	}
+	trigger = {
+		is_lesser_in_union = no
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+		no_stability_loss_on_monarch_death = yes
+	}
+
+	removed_effect = {
+		country_event = { id = dutch_republic.33 }
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		states_general_mechanic = {
+			statists = {
+				development_cost = -0.1
+				global_trade_power = 0.25
+				legitimacy = -0.5
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				legitimacy = 0.5
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+al_andalusia_government = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ADU
+			has_reform = al_andalusia_government
+			have_had_reform = al_andalusia_government
+			AND = {
+				has_reform = al_andalusia_government
+				is_playing_custom_nation = yes
+			}
+		}
+	}
+	trigger = {
+		religion_group = muslim
+		primary_culture = andalucian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	nation_designer_trigger = {
+		religion_group = muslim
+		primary_culture = andalucian
+	}
+	modifiers = {
+		idea_cost = -0.1
+		tolerance_of_heathens_capacity = 2
+		tolerance_heathen = 2
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		custom_attributes = {
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
+		}
+	}
+}
+
+prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { has_reform = prussian_monarchy_base }
+		OR = {
+			AND = {
+				OR = {
+					tag = PRU
+					AND = {
+						tag = NGF
+						was_tag = PRU
+					}
+				}
+				OR = {
+					has_mission = emp_brapru_army_reforms_2
+					has_mission = emp_brapru_army_reforms_3
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			has_unlocked_government_reform = {
+				government_reform = prussian_monarchy
+			}
+			has_reform = prussian_monarchy
+			have_had_reform = prussian_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = anglican
+			has_unlocked_government_reform_tooltip = {
+				government_reform = prussian_monarchy
+			}
+		}
+	}
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_1
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+}
+
+misl_confederacy_reform = {
+	allow_normal_conversion = yes
+	icon = "misl_confederacy"
+	potential = {
+		has_dlc = "Dharma"
+		religion = sikhism
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Dharma"
+		religion = sikhism
+	}
+	legacy_equivalent = feudal_monarchy
+	modifiers = {
+		global_manpower_modifier = 0.1
+		land_maintenance_modifier = -0.15
+	}
+}
+
+rajput_kingdom = {
+	icon = "rajput_kingdom"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Dharma"
+		OR = {
+			culture_group = western_aryan
+			primary_culture = vindhyan
+		}
+		NOT = { primary_culture = marathi }
+		technology_group = indian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Dharma"
+		OR = {
+			culture_group = western_aryan
+			primary_culture = vindhyan
+		}
+		NOT = { primary_culture = marathi }
+		technology_group = indian
+	}
+	legacy_equivalent = feudal_monarchy
+	modifiers = {
+		army_tradition = 0.5
+		special_unit_forcelimit = 0.15
+	}
+}
+
+siamese_absolutism = {
+	icon = "indian_crown"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_country_flag = siam_royal_absolutism
+			has_reform = siamese_absolutism
+		}
+	}
+	valid_for_nation_designer = no
+	modifiers = {
+		max_absolutism = 10
+		monarch_admin_power = 1
+		culture_conversion_time = -0.1
+	}
+	free_concentrate_development = yes
+}
+
+korean_monarchy = {
+	icon = "korean_monarchy"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = korean
+			primary_culture = korean_new
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = korean
+			primary_culture = korean_new
+		}
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.05
+		same_culture_advisor_cost = -0.05
+		global_institution_spread = 0.05
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = no_perfectionism_focus
+					duration = -1
+					desc = has_no_perfectionism_focus
+				}
+			}
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = hangeul_alphabet
+		remove_country_modifier = hangeul_alphabet_revoked
+		remove_country_modifier = no_perfectionism_focus
+		remove_country_modifier = inward_focus_modifier
+		remove_country_modifier = outward_focus_modifier
+		remove_country_modifier = expansion_focus_modifier
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			has_hangeul_alphabet_decisions = yes
+			has_weaker_harem_events = yes
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			perfectionism_mechanic
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+negusa_nagast = {
+	icon = "negusa_nagast"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = negusa_nagast
+			tag = ETH
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = negusa_nagast
+			tag = ETH
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = negusa_nagast_legacy
+
+	modifiers = {
+		move_capital_cost_modifier = -0.75
+		global_unrest = -1
+		stability_cost_modifier = -0.15
+		heir_chance = 0.5
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_itinerant_capital = yes
+		}
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}
+
+musa_rule = {
+	icon = "musa_rule"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = musa_rule_legacy
+	potential = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		stability_cost_modifier = -0.15
+		legitimacy = 0.5
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+polish_autocratic_monarchy = {
+	icon = "king"
+	allow_normal_conversion = no 
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_reform = polish_autocratic_monarchy
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = polish_autocratic_monarchy
+			}
+		}
+	}
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 75
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	modifiers = {
+		administrative_efficiency = 0.025
+		max_absolutism = 10 
+		global_manpower_modifier = 0.2 
+		reform_progress_growth = 0.1
+	}
+}
+
+lithuanian_grand_kingdom = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = lithuanian_grand_kingdom
+			}
+			has_reform = lithuanian_grand_kingdom
+		}
+	}
+	legacy_equivalent = despotic_monarchy
+	fixed_rank = 2
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		no_religion_penalty = yes
+		global_autonomy = -0.05 
+		governing_capacity = 250 
+		reform_progress_growth = 0.15
+	}
+}
+
+lithuanian_grand_empire = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = lithuanian_grand_empire
+			}
+			has_reform = lithuanian_grand_empire
+			AND = {
+				mission_completed = sca_mission_lit_polish_union
+				total_development = 1000 
+			}
+		}
+	}
+	legacy_equivalent = despotic_monarchy
+	fixed_rank = 3
+	valid_for_nation_designer = yes
+	nation_designer_cost = 55
+	modifiers = {
+		no_religion_penalty = yes
+		monarch_admin_power = 2
+		governing_capacity = 300 
+		reform_progress_growth = 0.25
+	}
+}
+
+###Livonian Government Reforms - custom creations basically
+# If you put everything into military	(Tall)
+livonian_military_monarchy = {
+	icon = "livonian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_military_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = livonian_military_monarchy
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_military_monarchy
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = livonian_military_monarchy
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 100
+
+	modifiers = {
+		war_exhaustion = -0.05
+		development_cost = -0.05
+		monarch_military_power = 2
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.33
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+}
+
+# If you put everything into naval and colonialization	(Tall)
+livonian_naval_monarchy = {
+	icon = "livonian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_naval_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = livonian_naval_monarchy
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_naval_monarchy
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = livonian_naval_monarchy
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 60
+
+	modifiers = {
+		development_cost = -0.1
+		allowed_marine_fraction = 0.5
+		monarch_diplomatic_power = 2
+		burghers_loyalty_modifier = 0.1		
+	}
+	
+	removed_effect = {
+		country_event = { id = dutch_republic.33 }
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		states_general_mechanic = {
+			statists = {
+				global_colonial_growth = 10
+				global_trade_power = 0.1
+				trade_efficiency = 0.1
+				legitimacy = -1
+			}
+
+			monarchists = {
+				navy_tradition = 1
+				naval_morale = 0.1
+				legitimacy = 1
+				prestige_from_naval = 0.5
+			}
+		}
+	}
+}
+
+# If you put everything into trade and tall	(Tall)
+livonian_trade_monarchy = {
+	icon = "livonian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_trade_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = livonian_trade_monarchy
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_trade_monarchy
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = livonian_trade_monarchy
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 60
+
+	modifiers = {
+		merchants = 1
+		global_ship_trade_power = 0.5
+		global_trade_goods_size_modifier = 0.15
+		burghers_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	boost_income = yes
+	conditional = {
+		allow = {
+			has_dlc = "Leviathan"
+		}
+		allow_draft_transport_ships = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+}
+
+# If you want to focus on religion
+livonian_theocratic_monarchy = {
+	icon = "livonian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_theocratic_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = livonian_theocratic_monarchy
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_theocratic_monarchy
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = livonian_theocratic_monarchy
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 50
+
+	modifiers = {
+		tolerance_own = 2
+		papal_influence = 2
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
+		church_influence_modifier = 0.25
+		church_loyalty_modifier = 0.05
+		no_stability_loss_on_monarch_death = yes
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = no
+		enables_divine_idea_group = yes
+	}
+}
+
+# If you want to focus heavily on Diplomacy	(Wide)
+livonian_diplomatic_monarchy = {
+	icon = "livonian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_diplomatic_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = livonian_diplomatic_monarchy
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = livonian_diplomatic_monarchy
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = livonian_diplomatic_monarchy
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 40
+
+	modifiers = {
+		diplomatic_upkeep = 2
+		diplomatic_reputation = 2
+		vassal_forcelimit_bonus = 2
+		vassal_income = 0.5
+		global_manpower_modifier = -0.2
+		land_forcelimit_modifier = -0.2
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
+
+norwegian_parliamentary_monarchy = {
+	icon = "queen"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = norwegian_parliamentary_monarchy
+			have_had_reform = norwegian_parliamentary_monarchy
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	modifiers = {
+		legitimacy = 1
+		global_unrest = -1
+		max_absolutism = -20
+		nobles_influence_modifier = -0.1
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense" 
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
+
+two_treatises_reform = {
+	icon = "two_treaties"
+	allow_normal_conversion = yes
+	#potential = {
+	#	OR = {
+	#		is_revolutionary = no
+	#		NOT = { has_dlc = "Emperor" }
+	#	}
+	#}
+	modifiers = {
+		expand_administration_cost = -1
+		can_revoke_parliament_seats = yes
+		parliament_effect_duration = 5
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		custom_attributes = {
+			halved_parliament_bribes = yes
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+the_leviathan_reform = {
+	icon = "leviathan"
+	allow_normal_conversion = yes
+	#potential = {
+	#	OR = {
+	#		is_revolutionary = no
+	#		NOT = { has_dlc = "Emperor" }
+	#	}
+	#}
+	modifiers = {
+		harsh_treatment_cost = -0.5
+		global_rebel_suppression_efficiency = 0.5
+		legitimacy = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+the_social_contract_reform = {
+	icon = "the_social_contract"
+	allow_normal_conversion = yes
+	#potential = {
+	#	OR = {
+	#		is_revolutionary = no
+	#		NOT = { has_dlc = "Emperor" }
+	#	}
+	#}
+	modifiers = {
+		no_religion_penalty = yes
+		idea_cost = -0.1
+	}
+	custom_attributes = {
+		enforced_interfaith_dialogue_buff = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+presidential_monarchy_reform = {
+	icon = "queen"
+	allow_normal_conversion = yes
+	modifiers = {
+		national_focus_years = -5
+		no_stability_loss_on_monarch_death = yes
+		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
+	}
+}
+
+nizam_i_cedid_reform = {
+	icon = "nizam_i_cedid"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = TUR
+			tag = RUM
+			has_reform = nizam_i_cedid_reform
+		}
+	}
+	modifiers = {
+		drill_gain_modifier = 0.25
+		movement_speed = 0.05
+		reinforce_speed = 0.15
+		recover_army_morale_speed = 0.05
+	}
+	ai = {
+		factor = 10
+	}
+}

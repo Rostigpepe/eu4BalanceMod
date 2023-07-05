@@ -1,0 +1,14 @@
+BM_ven_arsenal_marines = {
+	recover_army_morale_speed = 0.10
+	shock_damage = 0.10
+	is_marine_modifier = yes
+}
+
+anglican_aspect_aspect_modifier = {
+	yearly_absolutism = 1 
+}
+
+hussite_conversions = {
+	missionary_maintenance_cost = -0.25
+	global_heretic_missionary_strength = 0.03
+}

@@ -74,3 +74,712 @@ revoke_reichsfreiheit_reform = {
 # Tier 11
 
 
+governmental_purbias_register_reform = {
+	icon = "rajput_kingdom"
+	potential = {
+		has_dlc = "Dharma"
+		has_estate = estate_rajput
+		technology_group = indian
+	}
+	modifiers = {
+		special_unit_forcelimit = 0.1
+		recover_army_morale_speed = 0.05
+		rajput_influence_modifier = 0.1
+		rajput_loyalty_modifier = 0.05
+		nobles_influence_modifier = -0.1
+		nobles_loyalty_modifier = -0.05
+	}
+	custom_attributes = {
+		better_purbias_interaction = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				has_country_modifier = look_up_purbias
+			}
+			remove_country_modifier = look_up_purbias
+			add_country_modifier = {
+				name = look_up_purbias_upgraded
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = {
+				has_country_modifier = look_up_purbias_upgraded
+			}
+			remove_country_modifier = look_up_purbias_upgraded
+			add_country_modifier = {
+				name = look_up_purbias
+				duration = -1
+			}
+		}
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.1
+			estate_influence = {
+				estate = estate_rajput
+				influence = 90
+			}			
+		}
+	}
+}
+
+council_of_the_indies_reform = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Golden Century"
+		culture_group = iberian
+		capital_scope = {
+			region = iberia_region
+		}
+	}
+	trigger = {
+		num_of_colonists = 1
+		culture_group = iberian
+		capital_scope = {
+			region = iberia_region
+		}
+	}
+	modifiers = {
+		reduced_liberty_desire_on_other_continent = 5
+		treasure_fleet_income = 0.25
+		global_trade_power = 0.05
+		colony_cost_modifier = -0.25
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+penal_colonies_reform = {
+	icon = "colonial_companies"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Golden Century"
+		capital_scope = {
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = new_world
+					continent = oceania
+				}
+			}
+		}
+	}
+	trigger = {
+		has_idea_group = exploration_ideas
+	}
+	modifiers = {
+		expel_minorities_cost = -1
+		colonist_placement_chance = 0.1
+	}
+	ai = {
+		factor = 0.1
+	}
+}
+
+# for Russia (and for Ruthenia)
+tysyatsky_reform = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			has_unlocked_government_reform = {
+				government_reform = tysyatsky_reform
+			}
+			AND = {
+				NOT = { tag = RUS }
+				OR = {
+					primary_culture = ruthenian
+					primary_culture = ruthenian_new
+				}
+			}
+			AND = {
+				OR = {
+					culture_group = east_slavic
+					culture_group = slavic
+				}
+				government = republic
+			}
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.5
+		leader_cost = -0.1
+		nobles_influence_modifier = 0.05
+		nobles_loyalty_modifier = 0.1
+	}
+	custom_attributes = {
+		recruiting_generals_increases_nobles_loyalty = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+namestnik_reform = {
+	icon = "provincial_government"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		has_unlocked_government_reform = {
+			government_reform = namestnik_reform
+		}
+	}
+	modifiers = {
+		global_autonomy = -0.05
+		autonomy_change_time = -0.25
+		min_autonomy_in_territories = -0.05
+		trade_company_investment_cost = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+i_am_the_church_reform = {
+	icon = "pope"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		religion = catholic
+		tag = PAP
+	}
+	modifiers = {
+		devotion = 0.5
+		max_absolutism = 10
+		appoint_cardinal_cost = -0.1
+		cb_on_religious_enemies = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_defender_of_faith = yes }
+				add_country_modifier = {
+					name = gov_improved_defender_of_faith_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		remove_country_modifier = gov_improved_defender_of_faith_mod
+	}
+	custom_attributes = {
+		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+secularization_of_the_state_reform = {
+	icon = "partial_secularisation_reform"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = yes
+		has_dlc = "Emperor"
+	}
+	trigger = {
+		if = {
+			limit = {
+				has_government_attribute = enables_estate_church
+			}
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_church
+			}
+		}
+	}
+	modifiers = {
+		rr_girondists_influence = 0.1
+		no_religion_penalty = yes
+		yearly_innovativeness = 0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+amphibious_specialization_reform = {
+	icon = "marine"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			NOT = { has_dlc = "Domination" }
+			AND = { 
+				NOT = { primary_culture = english }
+				NOT = { primary_culture = anglois }
+			}
+		}
+	}
+	trigger = {
+		num_of_ports = 1
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = amphibious_specialization_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		regiment_disembark_speed = 0.25
+		transport_attrition = -0.25
+		allowed_marine_fraction = 0.25
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = amphibious_specialization_reform_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = amphibious_specialization_reform_modifier
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Domination"
+				has_dlc = "Golden Century"
+				has_dlc = "Rule Britannia"
+				has_dlc = "Lions of the North"
+			}
+		}
+		custom_attributes = {
+			marine_buff = yes	#Marines -20% Manpower Usage
+		}
+	}
+	
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { max_sailors = 50000 }
+		}
+	}
+}
+
+#Chinese (not Manchu, Korean or Altaic)
+wei_suo_system_reform = {
+	icon = "chinese_soldier"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		culture_group = east_asian
+		NOT = { primary_culture = korean_new }
+		NOT = { primary_culture = altaic_new }
+		NOT = { primary_culture = manchu_new }
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = wei_suo_system_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		global_regiment_cost = -0.15
+		global_regiment_recruit_speed = -0.15
+	}
+	custom_attributes = {
+		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed 
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_building = barracks }
+					add_province_modifier = {
+						name = wei_suo_system_reform_barracks_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = training_fields }
+					add_province_modifier = {
+						name = wei_suo_system_reform_training_fields_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+					add_province_modifier = {
+						name = wei_suo_system_reform_regimental_camp_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+					add_province_modifier = {
+						name = wei_suo_system_reform_conscription_center_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+					add_province_modifier = {
+						name = wei_suo_system_reform_soldier_households_modifier
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = wei_suo_system_reform_barracks_modifier
+						has_province_modifier = wei_suo_system_reform_training_fields_modifier
+						has_province_modifier = wei_suo_system_reform_regimental_camp_modifier
+						has_province_modifier = wei_suo_system_reform_conscription_center_modifier
+						has_province_modifier = wei_suo_system_reform_soldier_households_modifier
+					}
+				}
+				remove_province_modifier = wei_suo_system_reform_barracks_modifier
+				remove_province_modifier = wei_suo_system_reform_training_fields_modifier
+				remove_province_modifier = wei_suo_system_reform_regimental_camp_modifier
+				remove_province_modifier = wei_suo_system_reform_conscription_center_modifier
+				remove_province_modifier = wei_suo_system_reform_soldier_households_modifier
+			}
+		}
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+#Korean
+the_righteous_army_reform = {
+	icon = "righteous_army"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			culture_group = korean_g
+			culture = korean_new
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = the_righteous_army_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		recover_army_morale_speed = 0.15
+		garrison_damage = 0.5
+	}
+	custom_attributes = {
+		has_righteous_army = yes	#Can enact the righteous army
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+#Rajputs
+rajput_military_leadership_reform = {
+	icon = "rajput_soldiers"
+	allow_normal_conversion = yes
+	potential = {
+		has_estate = estate_rajput
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = rajput_military_leadership_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		can_recruit_rajputs = yes
+		rajput_loyalty_modifier = 0.1
+		rajput_influence_modifier = 0.1
+		rajput_privilege_slots = 1
+		allowed_rajput_fraction = 0.15
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+subutais_strategies_reform = {
+	icon = "siege"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			culture_group = altaic
+			culture_group = tartar
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = subutais_strategies_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		leader_siege = 1
+		assault_fort_ability = 0.25
+		artillery_cost = -0.1
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+watergeuzen_reform = {
+	icon = "landing_marines"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = watergeuzen_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		capture_ship_chance = 0.2
+		allowed_marine_fraction = 0.15
+		sea_repair = yes
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+lessons_of_the_hussite_wars_reform = {
+	icon = "war_map"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			primary_culture = czech
+			primary_culture = sorbian
+			primary_culture = schlesian
+			primary_culture = czech_new
+			primary_culture = sorbian_new
+			primary_culture = schlesian_new
+			primary_culture = bohemian
+		}
+		NOT = { tag = PRU }
+		OR = {
+			NOT = { tag = PRU }
+			AND = {
+				NOT = { tag = NGF }
+				NOT = { was_tag = PRU }
+			}
+		}
+		NOT = { tag = POL }
+		NOT = { tag = PLC }
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = lessons_of_the_hussite_wars_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		fire_damage_received = -0.10
+		morale_damage_received = -0.05
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+new_world_exploitation_reform = {
+	icon = "compass"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		capital_scope = {
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { colonial_region = colonial_australia }
+		}
+	}
+	trigger = {
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		if = {
+			limit = {
+				is_revolutionary = yes
+				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
+			}
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
+		}
+	}
+	modifiers = {
+		merchants = 1
+		global_tariffs = 0.5
+	}
+	custom_attributes = {
+		extra_trade_goods_for_colonial_subjects = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+embrace_the_economic_theory_reform = {
+	icon = "dutch_flag"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+	}
+	trigger = {
+		if = {
+			limit = {
+				is_revolutionary = yes
+				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
+			}
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
+		}
+	}
+	modifiers = {
+		interest = -1
+		production_efficiency = 0.1
+		inflation_reduction = 0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+war_economy_reform = {
+	icon = "war_economy"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+	}
+	trigger = {
+	}
+	modifiers = {
+		war_taxes_cost_modifier = -1
+		global_regiment_cost = -0.15
+		global_ship_cost = -0.15
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+thalassocracy_reform = {
+	icon = "admiralty_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_unlocked_government_reform = {
+			government_reform = thalassocracy_reform
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		center_of_trade_upgrade_cost = -0.15
+		trade_company_investment_cost = -0.15
+		naval_forcelimit_modifier = 0.25
+		global_trade_power = 0.15
+	}
+	custom_attributes = {
+		can_establish_trade_protectorates = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+consulate_of_the_sea = {
+	icon = "consulate_of_the_sea"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination" 
+		OR = {
+			tag = ARA
+			was_tag = ARA 
+			has_reform = consulate_of_the_sea 
+		}
+	}
+	trigger = {
+		OR = {
+			mission_completed = gc_ara_consultate_of_the_sea2
+			has_reform = consulate_of_the_sea 
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.15
+		global_trade_power = 0.15
+		burghers_loyalty_modifier = 0.05
+		
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+	}
+	
+	ai = {
+		factor = 10
+	}
+}
