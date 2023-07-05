@@ -5,9 +5,11 @@ prussian_militarization_mechanic_1 = {
 		has_dlc = "Domination"
 		OR = {
 			tag = PRU
-			tag = GER 
 			has_reform = prussian_monarchy
-			has_country_flag = access_to_prussian_militarization_flag #For the modders
+			AND = {
+				tag = NGF
+				was_tag = PRU
+			}
 		}
 		NOT = { has_country_flag = enable_second_mil_level_flag }
 		NOT = { has_country_flag = enable_third_mil_level_flag }
@@ -52,22 +54,17 @@ prussian_militarization_mechanic_1 = {
 			}
 			cooldown_years = 0
 			ai_chance = {
-				factor = 10
+				factor = 0
 				modifier = {
-					factor = 0
-					has_government_power = {
-						mechanic_type = prussian_militarization_mechanic_1
-						power_type = prussian_militarized_society_1
-						value = 90
+					factor = 10
+					not = {
+						has_government_power = {
+							mechanic_type = prussian_militarization_mechanic_1
+							power_type = prussian_militarized_society_1
+							value = 90
+						}
 					}
-				}
-				modifier = {
-					factor = 0
-					not = { mil_power = 600 }
-				}
-				modifier = {
-					factor = 0
-					not = { mil = 4 }
+					mil_power = 500
 				}
 			}
 		}
@@ -81,9 +78,11 @@ prussian_militarization_mechanic_2 = {
 		has_dlc = "Domination"
 		OR = {
 			tag = PRU
-			tag = GER
 			has_reform = prussian_monarchy
-			has_country_flag = access_to_prussian_militarization_flag #For the modders
+			AND = {
+				tag = NGF
+				was_tag = PRU
+			}
 		}
 		has_country_flag = enable_second_mil_level_flag
 	}
@@ -129,22 +128,17 @@ prussian_militarization_mechanic_2 = {
 			}
 			cooldown_years = 0
 			ai_chance = {
-				factor = 10
+				factor = 0
 				modifier = {
-					factor = 0
-					has_government_power = {
-						mechanic_type = prussian_militarization_mechanic_2
-						power_type = prussian_militarized_society_2
-						value = 90
+					factor = 10
+					not = {
+						has_government_power = {
+							mechanic_type = prussian_militarization_mechanic_2
+							power_type = prussian_militarized_society_2
+							value = 90
+						}
 					}
-				}
-				modifier = {
-					factor = 0
-					not = { mil_power = 600 }
-				}
-				modifier = {
-					factor = 0
-					not = { mil = 4 }
+					mil_power = 500
 				}
 			}
 		}
@@ -158,9 +152,11 @@ prussian_militarization_mechanic_3 = {
 		has_dlc = "Domination"
 		OR = {
 			tag = PRU
-			tag = GER
 			has_reform = prussian_monarchy
-			has_country_flag = access_to_prussian_militarization_flag #For the modders
+			AND = {
+				tag = NGF
+				was_tag = PRU
+			}
 		}
 		has_country_flag = enable_third_mil_level_flag
 	}
@@ -207,18 +203,17 @@ prussian_militarization_mechanic_3 = {
 			}
 			cooldown_years = 5
 			ai_chance = {
-				factor = 10
+				factor = 0
 				modifier = {
-					factor = 0
-					has_government_power = {
-						mechanic_type = prussian_militarization_mechanic_3
-						power_type = prussian_militarized_society_3
-						value = 90
+					factor = 10
+					not = {
+						has_government_power = {
+							mechanic_type = prussian_militarization_mechanic_3
+							power_type = prussian_militarized_society_3
+							value = 90
+						}
 					}
-				}
-				modifier = {
-					factor = 0
-					not = { mil_power = 500 }
+					mil_power = 500
 				}
 			}
 		}
@@ -283,25 +278,20 @@ prussian_militarization_mechanic_3 = {
 				add_mil_power = -50
 			}
 			cooldown_years = 0
-			ai_chance = {
-				factor = 10
-				modifier = {
-					factor = 0
-					has_government_power = {
-						mechanic_type = prussian_militarization_mechanic_3
-						power_type = prussian_militarized_society_3
-						value = 90
-					}
-				}
-				modifier = {
-					factor = 0
-					not = { mil_power = 600 }
-				}
-				modifier = {
-					factor = 0
-					not = { mil = 4 }
-				}
-			}
+			# ai_chance = {
+				# factor = 0
+				# modifier = {
+					# factor = 10
+					# not = {
+						# has_government_power = {
+							# mechanic_type = militarization_mechanic
+							# power_type = militarized_society
+							# value = 90
+						# }
+					# }
+					# mil_power = 500
+				# }
+			# }
 		}
 	}
 }
