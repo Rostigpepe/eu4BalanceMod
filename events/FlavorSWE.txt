@@ -3091,6 +3091,17 @@ country_event = {
 			name = swe_debt_with_the_nobles
 			duration = -1
 		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		define_general = {
+			shock = 2
+			fire = 2
+			manuever = 1
+			siege = 3
+			trait = siege_specialist_personality
+		}
 		custom_tooltip = swe_in_debt_with_the_nobles_tt
 		ai_chance = {
 			factor = 0
@@ -3115,13 +3126,39 @@ country_event = {
 			add_unit_construction = {
 				type = galley
 				cost = 0
-				speed = 0.1
-				amount = 10
+				speed = 0.15
+				amount = 5
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = galley
+				cost = 0
+				speed = 0.25
+				amount = 5
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = heavy_ship
+				cost = 0
+				speed = 0.5
+				amount = 5
 			}
 		}
 		add_country_modifier = {
 			name = swe_debt_with_the_burghers
 			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
 		}
 		custom_tooltip = swe_in_debt_with_the_burghers_tt
 		ai_chance = {
@@ -3172,6 +3209,11 @@ country_event = {
 			name = swe_debt_with_the_clergy
 			duration = -1
 		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_treasury = 300
 		custom_tooltip = swe_in_debt_with_the_clergy_tt
 		ai_chance = {
 			factor = 0
@@ -3180,7 +3222,7 @@ country_event = {
 
 	option = {	#We need nobody but ourselves
 		name = flavor_swe.108.d
-		add_prestige = 20
+		add_prestige = 25
 		ai_chance = {
 			factor = 1
 		}
@@ -4285,6 +4327,48 @@ country_event = {
 		set_global_flag = evangelical_union_happened
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+
+
+# BM MODDED The Support of the Geatish
+country_event = {
+	id = flavor_sweBMSweden.136
+	title = flavor_swe.136.t
+	desc = flavor_swe.136.desc
+	picture = VIKINGS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_subject = no
+		is_at_war = yes
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {	#The Geatish Support our struggle
+		name = flavor_swe.136.a
+		gotaland_area = {
+			add_province_modifier = { 
+				name = BM_rallying_the_geatish
+				duration = 5475 
+				desc = BM_rallying_the_geatish_tooltip
+			}
+		}
+		vastra_gotaland_area = {
+			add_province_modifier = { 
+				name = BM_rallying_the_geatish
+				duration = 5475 
+				desc = BM_rallying_the_geatish_tooltip
+			}
+		}
+		add_country_modifier = { 
+			name = BM_rallying_the_geatish2
+			duration = 5475 
+			desc = BM_rallying_the_geatish2_TOOLTIP
 		}
 	}
 }

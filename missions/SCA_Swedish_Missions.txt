@@ -1335,56 +1335,6 @@ swe_kalmar_union_mission_slot = {
 	}
 	has_country_shield = yes
 
-	swe_rally_the_geatish = {
-		icon = mission_develop_the_scandes
-		position = 1
-		required_missions = {
-		}
-		provinces_to_highlight = {
-			area = gotaland_area
-			area = vastra_gotaland_area
-		}
-		trigger = {
-			OR = {
-				is_subject = no
-				AND = {
-					gotaland_area = {
-						has_state_edict = edict_promote_military_recruitment
-					}
-					vastra_gotaland_area = {
-						has_state_edict = edict_promote_military_recruitment
-					}
-				}
-			}
-		}
-		effect = {
-			every_owned_province = {
-				limit = {
-					gotaland_area = {
-						add_province_modifier = { 
-							name = BM_rallying_the_geatish
-							duration = 5475 
-						}
-					}
-				}
-			}
-			every_owned_province = {
-				limit = {
-					vastra_gotaland_area = {
-						add_province_modifier = { 
-							name = BM_rallying_the_geatish
-							duration = 5475 
-						}
-					}
-				}
-			}
-			add_country_modifier = {
-				name = BM_rallying_the_geatish2
-				duration = 5475
-			}
-		}
-	}
-
 	swe_declare_independence = {
 		icon = mission_swedish_independence
 		position = 2
@@ -1393,7 +1343,6 @@ swe_kalmar_union_mission_slot = {
 			swe_military_advisor
 			swe_swedish_allies
 			swe_gain_support_from_estates
-			swe_rally_the_geatish
 		}
 		provinces_to_highlight = {}
 		trigger = {
