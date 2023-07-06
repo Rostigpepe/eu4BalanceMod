@@ -69,6 +69,8 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
+			4317
+
 			108 1865
 			
 			 1874 113 172
@@ -460,6 +462,9 @@ categories =  {
 		nation_designer_cost_multiplier = 1
 		
 		terrain_override = {
+			2317
+			4318
+			5012
 			2666 # North America
 			213 218 #Spain
 			526 #India
@@ -700,6 +705,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
+			5013
 			1749 224
 			221 1750 220 214 
 			1748 2754
@@ -721,7 +727,7 @@ categories =  {
 			2356 2364
 			
 			699 713 2122 2124 2182 2184 2302
-			2317 2319 4318 4320 #Egypt
+			2319 4320 #Egypt
 			4209 #Greater China
 			334 338 341 342 345 1110 2453 2455 2461 2466 2469 2473 #Maghreb
 			1089 1091 #Australia

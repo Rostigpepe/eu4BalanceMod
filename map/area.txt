@@ -1382,7 +1382,7 @@ al_wahat_area = { #3
 }
 
 delta_area = {  #4
-	358 362 363 5013
+	358 362 363 5014
 }
 
 bahari_area = { #4 #Lower Egypt
