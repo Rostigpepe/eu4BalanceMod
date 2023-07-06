@@ -1381,8 +1381,8 @@ al_wahat_area = { #3
 	1233 2318 4323
 }
 
-delta_area = { #3
-	358 362 363
+delta_area = {  #4
+	358 362 363 5013
 }
 
 bahari_area = { #4 #Lower Egypt
@@ -1390,20 +1390,20 @@ bahari_area = { #4 #Lower Egypt
 	361 2316 4316 4317 
 }
 
-vostani_area = { #3 #Middle Egypt
-	359 2317 4318
+vostani_area = {   #4 #Middle Egypt
+	359 2317 4318 5012
 }
 
-said_area = { #5 #Upper Egypt
-	360 1231 2319 4319 4320
+said_area = {  #6 #Upper Egypt
+	360 1231 2319 4319 4320 5013
 }
 
 tripolitania_area = { #4
 	354 2451 2452 355
 }
 
-cyrenaica_area = { #5
-	356 357 2325 2326 
+cyrenaica_area = {   #6
+	356 357 2325 2326 5011 
 }
 
 fezzan_area = { #4
