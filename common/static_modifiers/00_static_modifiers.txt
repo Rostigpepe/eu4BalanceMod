@@ -410,7 +410,7 @@ same_culture_group = {
 non_accepted_culture = {
 	local_tax_modifier = -0.33
 	local_missionary_strength = -0.02
-	local_manpower_modifier = -0.33
+	local_manpower_modifier = -0.5
 	local_sailors_modifier = -0.2
 	local_unrest = 2					#1% revolt risk!
 }
@@ -421,8 +421,8 @@ accepted_culture_demoted = {
 
 # Special modifier to the above, for non-tribal republics
 non_accepted_culture_republic = {
-	local_tax_modifier = 0.1
-	local_manpower_modifier = 0.1
+	local_tax_modifier = 0.15
+	local_manpower_modifier = 0.15
 	local_sailors_modifier = 0.05
 	local_unrest = -0.5
 }
@@ -586,7 +586,7 @@ base_values = {
 	free_leader_pool = 1
 	republican_tradition = 1
 	monthly_fervor_increase = 1
-	vassal_income = 0.10
+	vassal_income = 0.2
 	horde_unity = -2
 	devotion = -0.5
 	meritocracy = -2
@@ -594,7 +594,7 @@ base_values = {
 	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
-	cav_to_inf_ratio = 0.3
+	cav_to_inf_ratio = 0.5
 	merc_maintenance_modifier = 0.1
 	monthly_heir_claim_increase = 0.208
 	tolerance_of_heretics_capacity = 3
@@ -1456,14 +1456,14 @@ union_subject = {
 
 all_nations = {
 	global_tax_income = 12
-	land_forcelimit	= 6
-	naval_forcelimit = 12
+	land_forcelimit	= 4
+	naval_forcelimit = 8
 }
 
 subject_nation = {
-	global_tax_income = 8
-	land_forcelimit	= 4
-	naval_forcelimit = 8
+	global_tax_income = -4
+	land_forcelimit	= -4
+	naval_forcelimit = -4
 }
 
 vassal_nation = {

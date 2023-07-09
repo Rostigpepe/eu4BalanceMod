@@ -8,8 +8,8 @@ add_core = SWE
 culture = swedish
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 3
+base_tax = 5
+base_production = 4
 trade_goods = wool
 base_manpower = 4
  # Visborg Castle

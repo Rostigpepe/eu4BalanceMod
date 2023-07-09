@@ -327,6 +327,7 @@ feudal_france_reform = {
 		nobles_influence_modifier = 0.1
 		vassal_income = 0.2
 		max_absolutism = -50
+		min_autonomy = 10
 	}
 
 	custom_attributes = {
@@ -350,7 +351,8 @@ appanage_reform = {
 	lock_level_when_selected = yes
 	modifiers = {
 		manpower_in_own_culture_provinces = 0.1
-		land_forcelimit = 3
+		land_forcelimit = -3
+		min_autonomy = 15
 		nobles_loyalty_modifier = 0.1
 		nobles_influence_modifier = 0.1
 	}
