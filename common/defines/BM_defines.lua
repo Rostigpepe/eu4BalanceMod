@@ -4,7 +4,6 @@
 
 -- N MILITARY STUFFS
 --Fortress upkeep
-NDefines.NMilitary.FORTRESS_COST = 0.7
 
 --Insufficient support to positive
 NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.3
@@ -19,13 +18,11 @@ NDefines.NAI.MAX_CAV_PERCENTAGE = 75
 NDefines.NAI.GOVERNING_CAPACITY_OVER_PERCENTAGE_TOLERATED = 10.0
 
 --N COUNTRY STUFFS
---Months per dev
 NDefines.NCountry.MONTHS_TO_CHANGE_CULTURE = 7
 NDefines.NCountry.ABDICATE_AGE_THRESHOLD = 50
 NDefines.NCountry.ABDICATE_PRESTIGE_HIT = -20
 NDefines.NCountry.OVERSEAS_CLIENT_STATES = 1
 NDefines.NCountry.MIN_TECH_FOR_CIRCUMNAVIGATE = 12
-NDefines.NCountry.NAT_FOCUS_YEARS = 20
 NDefines.NCountry.SETTLEMENT_GROWTH_CHECK_INTERVAL = 182
 NDefines.NCountry.SETTLMENT_GROWTH_CHANCE_MIN = 0.1
 
@@ -37,7 +34,6 @@ NDefines.NCountry.CULTURE_COST_DIFF_ADJACENT = -25
 NDefines.NCountry.CULTURE_COST_DIFF_PRIMARY = 0
 
 --Fixes for playing as emperor of china
-NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_COST = 50
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_STABILITY_COST = 1
 
 --Fixes for diplomacy BS
@@ -48,6 +44,7 @@ NDefines.NDiplomacy.EXCOMMUNICATE_ACTION_MONTHS = 24
 NDefines.NDiplomacy.SUPPORT_REBELS_EFFECT = 0.2
 NDefines.NDiplomacy.SUPPORT_REBELS_MONEY_FACTOR = 0.25
 NDefines.NDiplomacy.SUPPORT_REBELS_COST = 40
-NDefines.NDiplomacy.INTEGRATE_UNION_MIN_YEARS = 30
+NDefines.NDiplomacy.SUPPORT_REBELS_DURATION = 10
+NDefines.NDiplomacy.INTEGRATE_UNION_MIN_YEARS = 40
 
 NDefines.NEconomy.CARAVAN_POWER_MAX = 75

@@ -1580,7 +1580,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		global_tariffs = 0.20
+		global_tariffs = 0.3
 	}
 	
 	trigger = {
@@ -1638,7 +1638,7 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	peichota_wybraniecka = {
-		manpower_in_own_culture_provinces = 0.25
+		manpower_in_own_culture_provinces = 0.3
 		infantry_power = 0.1
 	}
 	winged_hussars = {
