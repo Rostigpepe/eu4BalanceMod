@@ -1,0 +1,177 @@
+imperial_ambitions_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = court_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = court_ideas
+	}
+	administrative_efficiency = 0.05
+}
+
+harsh_espionage_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = spy_ideas
+	}
+	yearly_corruption = -0.1
+	spy_offence = 0.33
+}
+
+ruthless_negotiating_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = diplomatic_ideas
+	}
+	core_creation = -0.1
+	ae_impact = -0.1
+}
+
+competitive_advantage_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = trade_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = trade_ideas
+	}
+	trade_efficiency = 0.15
+	mercantilism_cost = -0.1
+}
+
+trade_company_act = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = exploration_ideas
+	}
+	trade_company_investment_cost = -0.2
+	center_of_trade_upgrade_cost = -0.1
+}
+
+maritime_hegemony_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = maritime_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = maritime_ideas
+	}
+	ship_durability = 0.05
+	heavy_ship_power = 0.1
+}
+
+subject_development_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = influence_ideas
+	}
+	liberty_desire_from_subject_development = -0.2
+	diplomatic_upkeep = 1
+}
+
+noble_land_rights_act = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = aristocracy_ideas
+	}
+	development_cost = -0.05
+	global_tax_modifier = 0.1
+}
+
+thunder_warfare_act = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = offensive_ideas
+	}
+	movement_speed = 0.15
+}
+
+relentless_defensive_tactics_act = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = defensive_ideas
+	}
+	shock_damage_received = -0.15
+}
+
+modernized_army_corps_act = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = quality_ideas
+	}
+	infantry_power = 0.1
+}
+
+army_expanded_act = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = quantity_ideas
+	}
+	infantry_cost = -0.1
+	special_unit_forcelimit = 0.15
+}
+
+pride_of_the_fleet_act = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = absolutism_idea_group
+		has_idea_group = naval_ideas
+	}
+	allow = {
+		full_idea_group = absolutism_idea_group
+		full_idea_group = naval_ideas
+	}
+	flagship_durability = 0.5
+	number_of_cannons_flagship_modifier = 0.5
+}

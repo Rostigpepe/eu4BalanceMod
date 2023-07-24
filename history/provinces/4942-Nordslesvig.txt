@@ -1,5 +1,6 @@
 #Nord-Slesvig, incl. Haderslev and 
 
+add_core = DAN
 add_core = SHL
 owner = SHL
 controller = SHL

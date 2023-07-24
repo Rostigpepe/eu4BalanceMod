@@ -1,18 +1,17 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Alexandria 2
+#Al Bahnasa
 add_core = MAM
 owner = MAM
 controller = MAM
 culture = al_misr_arabic
 religion = coptic
 hre = no
-base_tax = 1
-base_production = 2
-trade_goods = glass
+base_tax = 2
+base_production = 3
+trade_goods = sugar
 base_manpower = 2
-capital = "Alexandria 2"
+capital = "Al Bahnasa"
 is_city = yes
-extra_cost = 0
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

@@ -1,16 +1,16 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Akhmin 2
+#Sohag
 add_core = MAM
 owner = MAM
 controller = MAM
 culture = al_misr_arabic
 religion = coptic
 hre = no
-base_tax = 3
+base_tax = 2
 base_production = 3
 trade_goods = cotton
-base_manpower = 3
-capital = "Akhmin 2"
+base_manpower = 2
+capital = "Sohag"
 is_city = yes
 discovered_by = eastern
 discovered_by = ottoman

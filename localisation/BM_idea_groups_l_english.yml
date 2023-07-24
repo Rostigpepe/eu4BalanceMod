@@ -1,0 +1,58 @@
+﻿l_english:
+ absolutism_idea_group:0 "Absolutism Ideas"
+ absolutism_idea_group_bonus:0 "Absolutism Ideas Bonus"
+ absolute_state:0 "Absolute State"
+ absolute_state_desc:0 "'L'etat c'est moi!'. The monarchical power must not be restrained by institutions such as the church, legislature or social elites. The divine right of kings is Absolute."
+ efficient_government:0 "Efficient Government" 
+ efficient_government_desc:0 "The smooth operation of such an expanded government demands only the most efficient beaurocrats for its ensured prosperity and function." 
+ regulate_factions_and_estates:0 "Regulate Factions and Estates" 
+ regulate_factions_and_estates_desc:0 "The era of nobles and court factions is over. Let us reign supreme over unruly elements in our government and concentrate power at the hands of the crown authority." 
+ state_police:0 "State Police" 
+ state_police_desc:0 "Despite our surface visage of being the government for the people, the need for a secret police is evident in order to crush potential dangers and rebellions against the head of state." 
+ enforced_centralization:0 "Enforced Centralization" 
+ enforced_centralization_desc:0 "Let us make sure we utilize the workforce under our boot to its maximum capability in order to further develop our nation!" 
+ carrot_and_stick_policy:0 "Carrot and Stick Policy" 
+ carrot_and_stick_policy_desc:0 "The absolutist ruling of vassals and subjects leaves no room for soft power. They should be made to understand the natural submission to our power." 
+ legitimate_rule:0 "Legitimate Rule" 
+ legitimate_rule_desc:0 "Legitimacy is directly tied to strong foundation and a healthy government. To strive towards being recognized as the legitimate ruler of our land, is a noble goal."
+
+ #Absolutism Policies
+ imperial_ambitions_act:0 "Imperial Ambition Act" 
+ desc_imperial_ambitions_act:0 "The ambitions of our ruler must stay unconstrained by any influence outside of the Court. By appointing loyal, yet competent, advisors we can make our government even more efficient."
+
+
+ harsh_espionage_act:0 "Harsh Espionage Decree" 
+ desc_harsh_espionage_act:0 ""
+
+ ruthless_negotiating_act:0 "Ruthless Diplomacy"
+ ruthless_negotiating_act:0 ""
+
+ competitive_advantage_act:0 "Competitive Advantage Act" 
+ competitive_advantage_act:0 ""
+
+ trade_company_act:0 "Trade Company Act" 
+ trade_company_act:0 ""
+
+ maritime_hegemony_act:0 "Maritime Hegemony Act" 
+ maritime_hegemony_act:0 ""
+
+ subject_development_act:0 "Subject Development Act" 
+ subject_development_act:0 ""
+
+ noble_land_rights_act:0 "Noble Land Rights Act" 
+ noble_land_rights_act:0 ""
+
+ thunder_warfare_act:0 "Thunder Warfare Act" 
+ thunder_warfare_act:0 ""
+
+ relentless_defensive_tactics_act:0 "Relentless Defense Act" 
+ relentless_defensive_tactics_act:0 ""
+
+ modernized_army_corps_act:0 "Modernized Army Corps Act" 
+ modernized_army_corps_act:0 ""
+
+ army_expanded_act:0 "Army Expanded" 
+ army_expanded_act:0 ""
+
+ pride_of_the_fleet_act:0 "Pride of the Fleet Act" 
+ pride_of_the_fleet_act:0 ""

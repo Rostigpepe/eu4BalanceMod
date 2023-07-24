@@ -1,17 +1,18 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Al Minya 2
+#Al Misr
 add_core = MAM
 owner = MAM
 controller = MAM
 culture = al_misr_arabic
 religion = coptic
 hre = no
-base_tax = 3
-base_production = 4
-trade_goods = sugar
-base_manpower = 2
-capital = "Al Minya 2"
+base_tax = 1
+base_production = 1
+trade_goods = glass
+base_manpower = 1
+capital = "Al Misr"
 is_city = yes
+extra_cost = 0
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

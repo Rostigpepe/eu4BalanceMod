@@ -1,5 +1,6 @@
 #Als
 
+add_core = DAN
 add_core = SHL
 owner = SHL
 controller = SHL
