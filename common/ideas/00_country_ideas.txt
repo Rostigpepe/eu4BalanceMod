@@ -855,11 +855,11 @@ NED_ideas = {
 FRA_ideas = {
 	start = {
 		diplomatic_reputation = 1
-		global_manpower_modifier = 0.2
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		leader_land_shock = 1
 	}	
 
 	trigger = {

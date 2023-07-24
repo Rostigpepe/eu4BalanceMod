@@ -548,6 +548,7 @@ diplomatic_ideas = {
 	}
 	diplomatic_corps = {
 		dip_tech_cost_modifier = -0.1
+		chance_to_inherit = 0.1
 	}
 
 	ai_will_do = {
@@ -1557,8 +1558,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		vassal_forcelimit_bonus = 1
-		vassal_naval_forcelimit_bonus = 1
+		chance_to_inherit = 0.1
 	}
 
 	tribute_system = {
@@ -1572,7 +1572,6 @@ influence_ideas = {
 	
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
-		chance_to_inherit = 0.1
 	}
 	buffer_states = {
 		diplomatic_upkeep = 2
@@ -1587,6 +1586,7 @@ influence_ideas = {
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
+		vassal_naval_forcelimit_bonus = 1
 	}
 
 	ai_will_do = {
