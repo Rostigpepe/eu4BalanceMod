@@ -1,0 +1,110 @@
+declarewar = {
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_TEUTONS_HRE
+		potential = {
+			ai = yes 
+			has_country_flag = teu_joined_the_hre
+			FROM = { is_part_of_hre = yes }
+		}
+		allow = { 
+			FROM = { is_part_of_hre = no }
+		}
+	}
+	condition = {
+		potential = {
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							region = niger_region
+							region = guinea_region
+							region = central_africa_region
+							region = sahel_region
+							region = horn_of_africa_region
+							region = east_africa_region
+							region = kongo_region
+							region = south_africa_region
+						}
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = niger_region
+								region = guinea_region
+								region = central_africa_region
+								region = sahel_region
+								region = horn_of_africa_region
+								region = east_africa_region
+								region = kongo_region
+								region = south_africa_region
+							}
+						}
+					}
+					any_owned_province = {
+						has_port = yes
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				tag = TEU
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+	}
+}

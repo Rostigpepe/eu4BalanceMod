@@ -1,0 +1,1042 @@
+
+namespace = atlantic_slave_trade_event
+
+#This event converts provinces to be African American
+country_event = {
+	id = atlantic_slave_trade_event.1
+	title = atlantic_slave_trade_event.1.t
+	desc = atlantic_slave_trade_event.1.d
+	picture = FARMING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = atlantic_slave_trade_event.1.a
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+					OR = {
+						AND = {
+							NOT = {
+								culture_group = african_diaspora
+								is_city = no
+							}
+							NOT = {
+								OR = {
+									continent = europe
+									continent = asia
+									continent = africa
+									continent = oceania
+								}
+							}
+							OR = {
+								trade_goods = sugar
+								trade_goods = cotton
+								trade_goods = tobacco
+								trade_goods = coffee
+								trade_goods = cocoa
+							}
+						}
+						AND = {
+							NOT = {
+								culture_group = african_diaspora
+								is_city = no
+							}
+							AND = {
+								continent = south_america
+								trade_goods = livestock
+							}
+						}
+					}
+			}
+			add_base_tax = 1					
+			add_base_production = 1
+			change_religion	= shamanism
+			add_local_autonomy = 25
+			add_province_modifier = { 
+				name = local_chattel_slavery
+				duration = -1
+			}
+			#Maroon Nations
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							area = dominica_area
+							area = hispaniola_area
+						}
+					}
+					add_core = HAT
+					add_permanent_claim = HAT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = cuba_area
+							area = east_cuba_area
+						}
+					}
+					add_core = COA
+					add_permanent_claim = COA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = upper_guyana_area
+							area = guyana_area
+						}
+					}
+					add_core = GYA
+					add_permanent_claim = GYA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = suriname_area
+							area = amapa_area
+						}
+					}
+					add_core = COU
+					add_permanent_claim = COU
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = pernambuco_area
+							area = ceara_area
+						}
+					}
+					add_core = PLM
+					add_permanent_claim = PLM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 492
+					}
+					add_core = BOR
+					add_permanent_claim = BOR
+					add_nationalism = 10
+				}
+				else_if = {
+					limit = {
+						province_id = 487
+					}
+					add_core = JAA
+					add_permanent_claim = JAA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 481
+					}
+					add_core = BRM
+					add_permanent_claim = BRM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 501
+					}
+					add_core = BAB
+					add_permanent_claim = BAB
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 482
+							province_id = 483
+						}
+					}
+					add_core = BHM
+					add_permanent_claim = BHM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 491
+					}
+					add_core = CUR
+					add_permanent_claim = CUR
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 500
+					}
+					add_core = SVT
+					add_permanent_claim = SVT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 502
+					}
+					add_core = TRN
+					add_permanent_claim = TRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 2819
+							province_id = 4596
+							province_id = 826
+						}
+					}
+					add_core = DEN
+					add_permanent_claim = DEN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 495
+					}
+					add_core = ANA
+					add_permanent_claim = ANA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 497
+					}
+					add_core = DOM
+					add_permanent_claim = DOM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 496
+					}
+					add_core = GUD
+					add_permanent_claim = GUD
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 498
+					}
+					add_core = MRN
+					add_permanent_claim = MRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 1881
+					}
+					add_core = OUA
+					add_permanent_claim = OUA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 494
+					}
+					add_core = SKI
+					add_permanent_claim = SKI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 499
+					}
+					add_core = STI
+					add_permanent_claim = STI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 493
+					}
+					add_core = VIR
+					add_permanent_claim = VIR
+					add_nationalism = 20
+				}
+				else = {
+					add_core = NAF
+					add_permanent_claim = NAF
+					add_nationalism = 20
+				}
+			}
+			#Changes Culture 
+			if = {
+				limit = {
+					AND = {
+						culture_group = iberian
+						NOT = {
+							OR = {
+								culture = brazilian
+								culture = portugese
+							}
+						}
+					}
+				}
+				change_culture = afro_iberian
+			}
+			else_if = {
+				limit = {
+					culture = portugese
+				}
+				change_culture = afro_portuguese
+			}
+			else_if = {
+				limit = {
+					culture = brazilian
+				}
+				change_culture = afro_brazilian
+			}
+			else_if = {
+				limit = {
+					OR = {
+						culture = english
+						culture = cornish
+						culture = welsh
+					}
+				}
+				change_culture = afro_english
+			}
+			else_if = {
+				limit = {
+					culture_group = french
+				}
+				change_culture = afro_french
+			}
+			else_if = {
+				limit = {
+					AND = {
+						culture_group = turko_semitic
+						NOT = {
+							OR = {
+								culture = Turkish
+								culture = al_misr_arabic
+							}
+						}
+					}
+				}
+				change_culture = afro_arab
+			}
+			else_if = {
+				limit = {
+					culture_group = baltic
+				}
+				change_culture = afro_baltic
+			}
+			else_if = {
+				limit = {
+					culture = berber
+				}
+				change_culture = afro_berber
+			}
+			else_if = {
+				limit = {
+					OR = {
+						culture = dutch
+						culture = flemish
+					}
+				}
+				change_culture = afro_dutch
+			}
+			else_if = {
+				limit = {
+					culture = al_misr_arabic
+				}
+				change_culture = afro_egyptian
+			}
+			else_if = {
+				limit = {
+					culture_group = germanic
+					NOT = {
+						OR = {
+							culture = dutch
+							culture = flemish
+						}
+					}
+				}
+				change_culture = afro_german
+			}
+			else_if = {
+				limit = {
+					culture_group = latin
+				}
+				change_culture = afro_italian
+			}
+			else_if = {
+				limit = {
+					culture = irish
+				}
+				change_culture = afro_irish
+			}
+			else_if = {
+				limit = {
+					AND = {
+						culture_group = maghrebi
+						NOT = {
+							OR = {
+								culture = berber
+							}
+						}
+					}
+				}
+				change_culture = afro_maghrebi
+			}
+			else_if = {
+				limit = {
+					culture_group = scandinavian
+				}
+				change_culture = afro_scandinavian
+			}
+			else_if = {
+				limit = {
+					culture_group = byzantine
+				}
+				change_culture = afro_greek
+			}
+			else_if = {
+				limit = {
+					culture = scottish
+				}
+				change_culture = afro_scottish
+			}
+			else_if = {
+				limit = {
+					culture = turkish
+				}
+				change_culture = afro_turkish
+			}
+			#Fall Back
+			else_if = {
+				limit = {
+					OR = {
+						region = carribeans_region
+						area = suriname_area
+						area = guyana_area
+						area = upper_guyana_area
+					}
+				}
+				change_culture = afro_caribbean
+			}
+			else_if = {
+					limit = {
+						OR = {
+							continent = south_america
+							region = mexico_region
+							region = central_america_region
+						}
+					}
+					change_culture = afro_latino
+			}
+			else = {
+				change_culture = afro_american
+			}
+		}
+	}
+}
+
+#This event triggers the African American cultural conversion event
+country_event = {
+	id = atlantic_slave_trade_event.2
+	title = atlantic_slave_trade_event.2.t
+	desc = atlantic_slave_trade_event.2.d
+	picture = FARMING_eventPicture
+	
+	trigger = {
+		has_country_modifier = atlantic_slave_trade_buyer
+	}
+
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				any_province = {
+					OR = {
+						AND = {
+							NOT = {
+								OR = {
+									continent = europe
+									continent = asia
+									continent = africa
+									continent = oceania
+								}
+							}
+							OR = {
+								trade_goods = sugar
+								trade_goods = cotton
+								trade_goods = tobacco
+								trade_goods = coffee
+								trade_goods = cocoa
+							}
+							NOT = {
+								culture_group = african_diaspora
+								is_city = no
+							}
+						}
+						AND = {
+							AND = {
+								continent = south_america
+								trade_goods = livestock
+							}
+							NOT = {
+								culture_group = african_diaspora
+								is_city = no
+							}
+						}
+					}
+				}
+			}
+			country_event = {
+				id = atlantic_slave_trade_event.1
+			}
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		#Slave trade boom between 1610 and 1790
+		modifier = {
+			factor = 0.8
+			AND = {
+				OR = {
+					tag = ENG
+					tag = FRA
+					tag = GBR
+					tag = HOL
+					tag = DAN
+					tag = NED
+					tag = POR
+					overlord = { tag = ENG }
+					overlord = { tag = FRA }
+					overlord = { tag = GBR }
+					overlord = { tag = HOL }
+					overlord = { tag = DAN }
+					overlord = { tag = NED }
+					overlord = { tag = POR }
+				}
+				OR = {
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+				}
+			}
+		}
+		modifier = { #Slave trade boomed during age of revolutions
+			factor = 0.8
+			current_age = age_of_revolutions
+		}
+		
+		modifier = { #Overlord banning slave trade makes importing slaves more difficult
+			factor = 1.5
+			has_country_modifier = atlantic_slave_trade_smuggler
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 10	
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 15	
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 25	
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 40	
+		}
+		modifier = {
+			factor = 0.66
+			capital_scope = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 50	
+		}
+		modifier = {
+			factor = 1.25
+			is_colonial_nation = no
+		}
+	}
+}
+
+#This event creates the Garifuna
+country_event = {
+	id = atlantic_slave_trade_event.3
+	title = atlantic_slave_trade_event.3.t
+	desc = atlantic_slave_trade_event.3.d
+	picture = EP_ISLAND_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		has_country_modifier = atlantic_slave_trade_buyer
+		NOT = { exists = GAR }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	# 
+	option = {
+		name = "atlantic_slave_trade_event.3.a"
+		if = {
+			limit = {
+				500 = { is_empty = yes }
+			}
+			500 = {
+				add_core = GAR
+				cede_province = GAR
+				change_culture = garifuna
+				add_claim = ROOT
+			}
+		}
+		GAR = {
+			add_government_reform = native_chiefdom_reform
+			add_government_reform = native_oral_tradition_reform
+			add_government_reform = native_settle_down_reform
+			add_adm_tech = 4
+			add_dip_tech = 4
+			add_mil_tech = 4
+		}
+		set_country_flag = created_garifuna
+		add_years_of_income = -0.3
+	}
+	option = {	#Tag switch to Garifuba
+		name = "atlantic_slave_trade_event.3.b"
+		trigger = {
+			ai = no
+			500 = { is_empty = yes }
+		}
+		if = {
+			limit = {
+				500 = { is_empty = yes }
+			}
+			500 = {
+				add_core = GAR
+				cede_province = GAR
+				change_culture = garifuna
+				add_claim = ROOT
+			}
+		}
+		GAR = {
+			add_government_reform = native_chiefdom_reform
+			add_government_reform = native_oral_tradition_reform
+			add_government_reform = native_settle_down_reform
+			add_adm_tech = 4
+			add_dip_tech = 4
+			add_mil_tech = 4
+		}
+		set_country_flag = created_garifuna
+		add_years_of_income = -0.3
+		switch_tag = GAR
+	}
+}
+
+#End of Atlantic Slave Trade
+country_event = {
+	id = atlantic_slave_trade_event.4
+	title = atlantic_slave_trade_event.4.t
+	desc = atlantic_slave_trade_event.4.d
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		all_country = {
+			NOT = {
+				has_country_modifier = atlantic_slave_trade_buyer
+			}
+		}
+		has_country_modifier = atlantic_slave_trade_seller
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = atlantic_slave_trade_event.4.a
+		remove_country_modifier = atlantic_slave_trade_seller
+	}
+}
+
+#Overlord Attempts Slave Trade Ban
+country_event = {
+	id = atlantic_slave_trade_event.5
+	title = atlantic_slave_trade_event.5.t
+	desc = atlantic_slave_trade_event.5.d
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atlantic_slave_trade_event.5.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					liberty_desire = 50
+					trading_part = {
+						trade_goods = slaves
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = sugar
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = cotton
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = tobacco
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = coffee
+						value = 0.05
+					}
+				}
+			}
+		}
+		remove_country_modifier = atlantic_slave_trade_buyer
+		set_country_flag = abolished_slave_trade_willingly
+	}
+	
+	option = {
+		name = atlantic_slave_trade_event.5.b
+		ai_chance = {
+			factor = 0.1
+			modifier = {
+				factor = 10
+				OR = {
+					liberty_desire = 50
+					trading_part = {
+						trade_goods = slaves
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = sugar
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = cotton
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = tobacco
+						value = 0.05
+					}
+					trading_part = {
+						trade_goods = coffee
+						value = 0.05
+					}
+				}
+			}
+		}
+		add_country_modifier = {
+			name = atlantic_slave_trade_smuggler
+			duration = -1
+		}
+		add_liberty_desire = 10
+		set_country_flag = resisting_slave_trade_abolition
+	}
+}
+
+#Slave Smuggler Declares Independence
+country_event = {
+	id = atlantic_slave_trade_event.6
+	title = atlantic_slave_trade_event.6.t
+	desc = atlantic_slave_trade_event.6.d
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		has_country_modifier = atlantic_slave_trade_smuggler
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = atlantic_slave_trade_event.6.a
+		remove_country_modifier = atlantic_slave_trade_smuggler
+		clr_country_flag = resisting_slave_trade_abolition
+	}
+}
+
+#Age of Revolutions Awakens Slave Revolts - Main Event
+country_event = {
+	id = atlantic_slave_trade_event.7
+	title = atlantic_slave_trade_event.7.t
+	desc = atlantic_slave_trade_event.7.d
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		current_age = age_of_revolutions
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = atlantic_slave_trade_event.7.a
+		every_country = { 
+			limit = {
+				any_province = {
+					has_province_modifier = local_chattel_slavery
+				}
+				NOT = { has_country_modifier = the_abolish_slavery_act }
+				NOT = { has_country_modifier = slave_revolt_successful }
+				NOT = { has_country_modifier = recent_slave_revolt }
+			}
+			country_event = { 
+				id = atlantic_slave_trade_event.8
+				days = 1
+			}
+		}
+	}
+	
+}
+
+#Age of Revolutions Awakens Slave Revolts - Receiving Event
+country_event = {
+	id = atlantic_slave_trade_event.8
+	title = atlantic_slave_trade_event.8.t
+	desc = atlantic_slave_trade_event.8.d
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = atlantic_slave_trade_event.8.a
+		add_absolutism	= -10
+		every_owned_province = {
+			limit = {
+				culture_group = african_diaspora
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							area = dominica_area
+							area = hispaniola_area
+						}
+					}
+					add_core = HAT
+					add_permanent_claim = HAT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = cuba_area
+							area = east_cuba_area
+						}
+					}
+					add_core = COA
+					add_permanent_claim = COA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = upper_guyana_area
+							area = guyana_area
+						}
+					}
+					add_core = GYA
+					add_permanent_claim = GYA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = suriname_area
+							area = amapa_area
+						}
+					}
+					add_core = COU
+					add_permanent_claim = COU
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = pernambuco_area
+							area = ceara_area
+						}
+					}
+					add_core = PLM
+					add_permanent_claim = PLM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 492
+					}
+					add_core = BOR
+					add_permanent_claim = BOR
+					add_nationalism = 10
+				}
+				else_if = {
+					limit = {
+						province_id = 487
+					}
+					add_core = JAA
+					add_permanent_claim = JAA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 481
+					}
+					add_core = BRM
+					add_permanent_claim = BRM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 501
+					}
+					add_core = BAB
+					add_permanent_claim = BAB
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 482
+							province_id = 483
+						}
+					}
+					add_core = BHM
+					add_permanent_claim = BHM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 491
+					}
+					add_core = CUR
+					add_permanent_claim = CUR
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 500
+					}
+					add_core = SVT
+					add_permanent_claim = SVT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 502
+					}
+					add_core = TRN
+					add_permanent_claim = TRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 2819
+							province_id = 4596
+							province_id = 826
+						}
+					}
+					add_core = DEN
+					add_permanent_claim = DEN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 495
+					}
+					add_core = ANA
+					add_permanent_claim = ANA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 497
+					}
+					add_core = DOM
+					add_permanent_claim = DOM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 496
+					}
+					add_core = GUD
+					add_permanent_claim = GUD
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 498
+					}
+					add_core = MRN
+					add_permanent_claim = MRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 1881
+					}
+					add_core = OUA
+					add_permanent_claim = OUA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 494
+					}
+					add_core = SKI
+					add_permanent_claim = SKI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 499
+					}
+					add_core = STI
+					add_permanent_claim = STI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 493
+					}
+					add_core = VIR
+					add_permanent_claim = VIR
+					add_nationalism = 20
+				}
+				else = {
+					add_core = NAF
+					add_permanent_claim = NAF
+					add_nationalism = 20
+				}
+			}
+		}
+	}
+	
+}

@@ -3207,7 +3207,7 @@ COR_ideas = {
 SPI_ideas = {
 	start = {
 		idea_cost = -0.1
-		improve_relation_modifier = 0.25
+		land_morale = 0.1
 	}
 	
 	bonus = {
@@ -3231,17 +3231,17 @@ SPI_ideas = {
 	}
 	spi_royal_sardinian_army = {
 		discipline = 0.05
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.2
 	}
 	spi_centralized_state = {
-		development_cost = -0.05
-		core_creation = -0.1
+		development_cost = -0.1
 	}
 	spi_piedmontese_manufacturing = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	spi_risorgimento = {
-		ae_impact = -0.1
+		ae_impact = -0.15
+		core_creation = -0.15
 	}
 }
 
@@ -3337,7 +3337,7 @@ MAR_ideas = {
 TAU_ideas = {
 	start = {
 		leader_land_manuever = 1
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.2
 	}
 	
 	bonus = {
@@ -3582,11 +3582,11 @@ ORI_ideas = {
 PUN_ideas = {
 	start = {
 		religious_unity = 0.25	#melting pot of religions
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 
 	bonus = {
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 	}
 	
 	trigger = {
@@ -3610,7 +3610,7 @@ PUN_ideas = {
 		stability_cost_modifier = -0.1
 	}
 	strength_of_the_misls = {
-		cavalry_cost = -0.10
+		cavalry_cost = -0.15
 	}
 	reforming_the_punjabi_army = {
 		discipline = 0.05

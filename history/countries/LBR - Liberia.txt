@@ -1,0 +1,6 @@
+government = republic
+add_government_reform = oligarchic_republic
+technology_group = western
+religion = catholic
+primary_culture = afro_american
+fixed_capital  = 2242	# Monrovia

@@ -1,0 +1,189 @@
+country_decisions = {
+	#Enables Slavery and Atlantic Slave Trade Buyers
+	introduce_slavery = {
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = ottoman
+				technology_group = muslim
+			}
+			has_global_flag = triangle_happened		
+			NOT = { has_country_flag = abolished_slave_trade_willingly }
+			NOT = { has_country_modifier = atlantic_slave_trade_buyer }
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			NOT = { culture_group = african_diaspora }
+		}
+		allow = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				NOT = {
+					OR = {
+						continent = europe
+						continent = asia
+						continent = africa
+						continent = oceania
+					}
+				}
+				is_city = yes
+			}
+		}
+		effect = {
+			set_country_flag = slavery_enabled
+			add_country_modifier = {
+				name = atlantic_slave_trade_buyer
+				duration = -1
+			}
+			add_country_modifier = {
+				name = chattel_slavery_allowed
+				duration = -1
+			}
+			custom_tooltip = triangletradetooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Ends Atlantic Slave Trade
+	revoke_slave_trade = {
+		potential = {
+			has_country_modifier = atlantic_slave_trade_buyer
+			is_year = 1700
+		}
+		allow = {
+
+		}
+		effect = {
+			remove_country_modifier = atlantic_slave_trade_buyer
+			set_country_flag = abolished_slave_trade_willingly
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	extend_slave_trade_ban_colonies = {
+		potential = {
+			has_country_flag = abolished_slave_trade_willingly 
+			NOT = { has_country_modifier = atlantic_slave_trade_buyer }
+			is_year = 1700
+			num_of_subjects = 1
+		}
+		allow = {
+			ROOT = { 
+				all_subject_country = { 
+					AND = {
+						has_country_modifier = atlantic_slave_trade_buyer
+						NOT = { has_country_modifier = atlantic_slave_trade_smuggler }
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = { 
+				every_subject_country = { 
+					if = {
+						limit = {
+							AND = {
+								is_subject_of = ROOT
+								has_country_modifier = atlantic_slave_trade_buyer
+								NOT = { has_country_modifier = atlantic_slave_trade_smuggler }
+							}
+						}
+					}
+					country_event = {
+						id = atlantic_slave_trade_event.5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.6
+		}
+	}
+	
+	#Enables Slave Sales for Atlantic Slave Trade
+	become_atlantic_slave_trade_seller = {
+		potential = {
+			OR = {
+				technology_group = east_african
+				technology_group = central_african
+				technology_group = sub_saharan
+			}
+			any_country = { has_country_modifier = atlantic_slave_trade_buyer }		
+			NOT = { has_country_modifier = atlantic_slave_trade_seller }
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			NOT = { culture_group = african_diaspora }
+		}
+		
+		allow = {
+			NOT = { 
+				primary_culture = mossi 
+			} 
+		}
+		
+		effect = {
+			set_country_flag = slavery_enabled
+			add_country_modifier = {
+				name = atlantic_slave_trade_seller
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0.8 #Make Mossi, Jola, Kru, and Baga not join in
+		}
+		
+	}
+	
+	ast_early_abolish_slavery = {
+		potential = {
+			current_age = age_of_discovery
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			NOT = { has_country_modifier = atlantic_slave_trade_buyer }
+			NOT = { has_country_modifier = atlantic_slave_trade_seller }
+		}
+		allow = {
+			dip = 3
+			NOT = { tag = USA }
+			NOT = { overextension_percentage = 0.02 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = innovative_modifier
+				duration = 3650
+			}
+			clr_country_flag = slavery_enabled
+			set_country_flag = abolished_slavery_willingly
+			remove_country_modifier = chattel_slavery_allowed
+			add_country_modifier = {
+				name = ast_the_abolish_slavery_act
+				duration = -1
+			}
+			custom_tooltip = abolished_slavery_act_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = slaves
+					}
+					add_province_modifier = { 
+						name = former_slave_trading_center
+						duration = -1
+					}
+					change_trade_goods = unknown
+					remove_building = tradecompany
+					if = {
+						limit = { has_province_modifier = slave_entrepot }
+						add_province_modifier = { 
+							name = former_slave_entrepot
+							duration = -1
+						}
+						remove_province_modifier = slave_entrepot
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

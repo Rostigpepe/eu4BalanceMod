@@ -1,0 +1,585 @@
+
+namespace = ast_new_world_slavery
+
+#Slave Revolt Event
+country_event = {
+	id = ast_new_world_slavery.1
+	title = ast_new_world_slavery.1.t
+	desc = ast_new_world_slavery.1.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+
+	trigger = {
+		any_province = {
+			AND = {
+				culture_group = african_diaspora
+				has_province_modifier = local_chattel_slavery
+			}
+		}
+		NOT = { has_country_modifier = the_abolish_slavery_act }
+		NOT = { has_country_modifier = slave_revolt_successful }
+		NOT = { has_country_modifier = recent_slave_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}	
+		modifier = {
+			factor = 1.5
+			current_age = age_of_reformation
+		}	
+		modifier = {
+			factor = 0.66
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 1.25
+			has_country_modifier = tried_improving_slave_lives_1
+		}
+		modifier = {
+			factor = 1.25
+			has_country_modifier = tried_improving_slave_lives_2
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				culture_group = african_diaspora
+			}
+			set_province_flag = slaverevoltflag@ROOT
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							area = dominica_area
+							area = hispaniola_area
+						}
+					}
+					add_core = HAT
+					add_permanent_claim = HAT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = cuba_area
+							area = east_cuba_area
+						}
+					}
+					add_core = COA
+					add_permanent_claim = COA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = upper_guyana_area
+							area = guyana_area
+						}
+					}
+					add_core = GYA
+					add_permanent_claim = GYA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = suriname_area
+							area = amapa_area
+						}
+					}
+					add_core = COU
+					add_permanent_claim = COU
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = pernambuco_area
+							area = ceara_area
+						}
+					}
+					add_core = PLM
+					add_permanent_claim = PLM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 492
+					}
+					add_core = BOR
+					add_permanent_claim = BOR
+					add_nationalism = 10
+				}
+				else_if = {
+					limit = {
+						province_id = 487
+					}
+					add_core = JAA
+					add_permanent_claim = JAA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 481
+					}
+					add_core = BRM
+					add_permanent_claim = BRM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 501
+					}
+					add_core = BAB
+					add_permanent_claim = BAB
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 482
+							province_id = 483
+						}
+					}
+					add_core = BHM
+					add_permanent_claim = BHM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 491
+					}
+					add_core = CUR
+					add_permanent_claim = CUR
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 500
+					}
+					add_core = SVT
+					add_permanent_claim = SVT
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 502
+					}
+					add_core = TRN
+					add_permanent_claim = TRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 2819
+							province_id = 4596
+							province_id = 826
+						}
+					}
+					add_core = DEN
+					add_permanent_claim = DEN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 495
+					}
+					add_core = ANA
+					add_permanent_claim = ANA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 497
+					}
+					add_core = DOM
+					add_permanent_claim = DOM
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 496
+					}
+					add_core = GUD
+					add_permanent_claim = GUD
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 498
+					}
+					add_core = MRN
+					add_permanent_claim = MRN
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 1881
+					}
+					add_core = OUA
+					add_permanent_claim = OUA
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 494
+					}
+					add_core = SKI
+					add_permanent_claim = SKI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 499
+					}
+					add_core = STI
+					add_permanent_claim = STI
+					add_nationalism = 20
+				}
+				else_if = {
+					limit = {
+						province_id = 493
+					}
+					add_core = VIR
+					add_permanent_claim = VIR
+					add_nationalism = 20
+				}
+				else = {
+					add_core = NAF
+					add_permanent_claim = NAF
+					add_nationalism = 20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ast_new_world_slavery.1.a
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				has_province_flag = slaverevoltflag@ROOT
+			}
+			clr_province_flag = slaverevoltflag@ROOT
+			spawn_rebels = {
+				type = slave_separatists
+				size = 2
+			}
+			ROOT = {
+				add_country_modifier = { 
+					name = recent_slave_revolt
+					duration = 5
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+
+#Removes accepted culture
+country_event = {
+	id = ast_new_world_slavery.2
+	title = ast_new_world_slavery.2.t
+	desc = ast_new_world_slavery.2.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		AND = {
+			AND = {
+				has_country_modifier = chattel_slavery_allowed
+				NOT = {
+					has_country_modifier = tried_improving_slave_lives_1
+				}
+			}
+			OR = {
+				accepted_culture = afro_arab
+				accepted_culture = afro_baltic
+				accepted_culture = afro_berber
+				accepted_culture = afro_dutch
+				accepted_culture = afro_english
+				accepted_culture = afro_egyptian
+				accepted_culture = afro_french
+				accepted_culture = afro_german
+				accepted_culture = afro_greek
+				accepted_culture = afro_italian
+				accepted_culture = afro_irish
+				accepted_culture = afro_iberian
+				accepted_culture = afro_maghrebi
+				accepted_culture = afro_portuguese
+				accepted_culture = afro_scandinavian
+				accepted_culture = afro_scottish
+				accepted_culture = afro_turkish
+				accepted_culture = afro_brazilian
+				accepted_culture = garifuna
+				accepted_culture = afro_american
+				accepted_culture = afro_caribbean
+				accepted_culture = afro_latino
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = ast_new_world_slavery.2.a
+		ai_chance = { factor = 1 }
+			
+		add_country_modifier = { 
+			name = tried_improving_slave_lives_1
+			duration = 10
+			hidden = yes
+		}
+		add_dip_power = 25
+		remove_accepted_culture = afro_arab
+		remove_accepted_culture = afro_baltic
+		remove_accepted_culture = afro_berber
+		remove_accepted_culture = afro_dutch
+		remove_accepted_culture = afro_english
+		remove_accepted_culture = afro_egyptian
+		remove_accepted_culture = afro_french
+		remove_accepted_culture = afro_german
+		remove_accepted_culture = afro_greek
+		remove_accepted_culture = afro_italian
+		remove_accepted_culture = afro_irish
+		remove_accepted_culture = afro_iberian
+		remove_accepted_culture = afro_maghrebi
+		remove_accepted_culture = afro_portuguese
+		remove_accepted_culture = afro_scandinavian
+		remove_accepted_culture = afro_scottish
+		remove_accepted_culture = afro_turkish
+		remove_accepted_culture = afro_brazilian
+		remove_accepted_culture = garifuna
+		remove_accepted_culture = afro_american
+		remove_accepted_culture = afro_caribbean
+		remove_accepted_culture = afro_latino
+	}
+}
+
+#Brings back slave trade good if slaver conquerers former slave provinces
+country_event = {
+	id = ast_new_world_slavery.3
+	title = ast_new_world_slavery.3.t
+	desc = ast_new_world_slavery.3.d
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		any_province = {
+			has_province_modifier = former_slave_trading_center
+		}
+		has_country_modifier = chattel_slavery_allowed
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = ast_new_world_slavery.3.a
+		ai_chance = { factor = 1 }
+	
+		add_years_of_income = 0.4
+	
+		every_owned_province = {
+			limit = {
+				has_province_modifier = former_slave_trading_center
+			}
+			change_trade_goods = slaves
+			remove_province_modifier = former_slave_trading_center
+			if = {
+				limit = { has_province_modifier = former_slave_entrepot }
+				add_province_modifier = { 
+					name = slave_entrepot
+					duration = -1
+				}
+				remove_province_modifier = former_slave_entrepot
+			}
+		}
+	}
+}
+
+#Removes accepted culture again
+country_event = {
+	id = ast_new_world_slavery.4
+	title = ast_new_world_slavery.4.t
+	desc = ast_new_world_slavery.4.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		AND = {
+			AND = {
+				has_country_modifier = chattel_slavery_allowed
+				has_country_modifier = tried_improving_slave_lives_1
+				NOT = {
+					has_country_modifier = tried_improving_slave_lives_2
+				}
+			}
+			OR = {
+				accepted_culture = afro_arab
+				accepted_culture = afro_baltic
+				accepted_culture = afro_berber
+				accepted_culture = afro_dutch
+				accepted_culture = afro_english
+				accepted_culture = afro_egyptian
+				accepted_culture = afro_french
+				accepted_culture = afro_german
+				accepted_culture = afro_greek
+				accepted_culture = afro_italian
+				accepted_culture = afro_irish
+				accepted_culture = afro_iberian
+				accepted_culture = afro_maghrebi
+				accepted_culture = afro_portuguese
+				accepted_culture = afro_scandinavian
+				accepted_culture = afro_scottish
+				accepted_culture = afro_turkish
+				accepted_culture = afro_brazilian
+				accepted_culture = garifuna
+				accepted_culture = afro_american
+				accepted_culture = afro_caribbean
+				accepted_culture = afro_latino
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = ast_new_world_slavery.4.a
+		ai_chance = { factor = 1 }
+			
+		add_country_modifier = { 
+			name = tried_improving_slave_lives_2
+			duration = 10
+			hidden = yes
+		}
+		add_dip_power = 25
+		remove_accepted_culture = afro_arab
+		remove_accepted_culture = afro_baltic
+		remove_accepted_culture = afro_berber
+		remove_accepted_culture = afro_dutch
+		remove_accepted_culture = afro_english
+		remove_accepted_culture = afro_egyptian
+		remove_accepted_culture = afro_french
+		remove_accepted_culture = afro_german
+		remove_accepted_culture = afro_greek
+		remove_accepted_culture = afro_italian
+		remove_accepted_culture = afro_irish
+		remove_accepted_culture = afro_iberian
+		remove_accepted_culture = afro_maghrebi
+		remove_accepted_culture = afro_portuguese
+		remove_accepted_culture = afro_scandinavian
+		remove_accepted_culture = afro_scottish
+		remove_accepted_culture = afro_turkish
+		remove_accepted_culture = afro_brazilian
+		remove_accepted_culture = garifuna
+		remove_accepted_culture = afro_american
+		remove_accepted_culture = afro_caribbean
+		remove_accepted_culture = afro_latino
+	}
+}
+
+#Brings back chattel slavery if slaver conquerers african-american land
+country_event = {
+	id = ast_new_world_slavery.5
+	title = ast_new_world_slavery.5.t
+	desc = ast_new_world_slavery.5.d
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			culture_group = african_diaspora
+			NOT = { has_province_modifier = local_chattel_slavery }
+		}
+		has_country_modifier = chattel_slavery_allowed
+	}
+	hidden = yes
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = ast_new_world_slavery.5.a
+		ROOT = {
+			every_owned_province = {
+				limit = { culture_group = african_diaspora }
+				add_province_modifier = { 
+					name = local_chattel_slavery
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#Ends chattel slavery if non-slaver conquerers african-american land
+country_event = {
+	id = ast_new_world_slavery.6
+	title = ast_new_world_slavery.6.t
+	desc = ast_new_world_slavery.6.d
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			culture_group = african_diaspora
+			has_province_modifier = local_chattel_slavery
+		}
+		NOT = { has_country_modifier = chattel_slavery_allowed }
+	}
+	
+	hidden = yes
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = ast_new_world_slavery.6.a
+		ROOT = {
+			every_owned_province = {
+				limit = { culture_group = african_diaspora }
+				remove_province_modifier = local_chattel_slavery
+				add_base_production = -1
+			}
+		}
+	}
+}
+
+#Ends chattel slavery if slaver province loses slave culture
+country_event = {
+	id = ast_new_world_slavery.7
+	title = ast_new_world_slavery.7.t
+	desc = ast_new_world_slavery.7.d
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			NOT = { culture_group = african_diaspora }
+			has_province_modifier = local_chattel_slavery
+		}
+		has_country_modifier = chattel_slavery_allowed
+	}
+	
+	hidden = yes
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = ast_new_world_slavery.7.a
+		ROOT = {
+			every_owned_province = {
+				limit = { NOT = { culture_group = african_diaspora } }
+				remove_province_modifier = local_chattel_slavery
+				add_base_production = -1
+			}
+		}
+	}
+}

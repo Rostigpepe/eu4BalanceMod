@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = africangfx
+
+random_nation_chance = 0
+
+color = { 49  158  67 }
+revolutionary_colors = { 12 8 12 }
+
+historical_idea_groups = {
+	defensive_ideas
+	spy_ideas
+	economic_ideas
+	quantity_ideas
+	diplomatic_ideas
+	offensive_ideas
+	humanist_ideas
+	trade_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+ship_names = {
+	"Abolition"
+	"Africa"
+	"Chain Breaker"
+	"Defiance"
+	"Devastation"
+	"Dignity"
+	"Disobedience"
+	"Duty"
+	"Emancipation"
+	"Equality"
+	"Freedmen"
+	"Justice"
+	"Knowledge"
+	"Liberator"
+	"Liberty"
+	"Memory"
+	"New Dawn"
+	"Remembrance"
+	"Resistance"
+	"Revenge"
+	"Revival"
+	"Savior"
+	"Soul"
+	"Spartacus"
+	"Unity"
+	"Victory"
+	"Vindictive"
+	"Warrior"
+}

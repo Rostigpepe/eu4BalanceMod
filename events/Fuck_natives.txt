@@ -177,3 +177,49 @@ hidden = yes
 	option = { #Remove
 	}
 }
+
+namespace = make_africa_kill
+country_event = { #You guessed it, makes africa kill
+	id = make_africa_kill_events.1
+	title = make_africa_kill_events.1.t
+	desc = make_africa_kill_events.1.d
+	picture = NATIVES_eventPicture
+	
+hidden = yes
+	trigger = {
+		NOT = { has_global_flag = natives_removed_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 5
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = natives_removed_flag
+
+		every_province = {
+			limit = {
+				region = niger_region
+				region = guinea_region
+				region = central_africa_region
+				region = sahel_region
+				region = horn_of_africa_region
+				region = east_africa_region
+				region = kongo_region
+				region = south_africa_region
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_province_modifier = {
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+	}
+
+	option = { #kill
+	}
+}

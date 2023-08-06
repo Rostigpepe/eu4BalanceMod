@@ -12,3 +12,98 @@ hussite_conversions = {
 	missionary_maintenance_cost = -0.25
 	global_heretic_missionary_strength = 0.03
 }
+
+kill_africa_province_modif = {
+	local_colony_cost_modifier = 1
+	local_colonial_growth = -50
+	local_colonist_placement_chance = -0.1
+	picture = "monthly_devastation"
+}
+
+rac_modifier = {
+	local_missionary_strength = -0.05
+	picture = "tolerance_heretic"
+}
+
+#National Slavery Modifiers
+
+atlantic_slave_trade_buyer = { 
+	global_tariffs = 0.25
+	development_cost = -0.05
+	trade_efficiency = 0.05
+	tolerance_heathen = -2
+}
+
+atlantic_slave_trade_seller = {
+	discipline = 0.05
+	vassal_income = 0.35
+	trade_efficiency = 0.1
+	tolerance_heathen = 3
+	global_unrest = 3
+}
+
+atlantic_slave_trade_smuggler = {
+	trade_efficiency = -0.05
+}
+
+chattel_slavery_allowed = {
+	production_efficiency = 0.05
+	build_cost = -0.05
+	global_unrest = 1
+}
+
+tried_improving_slave_lives_1 = {
+	global_unrest = -0.5
+	num_accepted_cultures = -1
+}
+
+tried_improving_slave_lives_2 = {
+	global_unrest = -0.5
+	num_accepted_cultures = -1
+}
+
+#Local Slavery Modifiers
+
+local_chattel_slavery = {
+	local_tax_modifier = 0.33
+	local_production_efficiency = 0.5
+	trade_goods_size = 0.8
+	local_development_cost = 0.1
+	local_hostile_attrition = -1
+	defensiveness = -0.20
+	local_manpower_modifier = -0.25
+	local_culture_conversion_time  = 0.5
+	local_culture_conversion_cost = 0.5
+	land_forcelimit = -0.5
+	local_unrest = 4
+}
+
+former_slave_trading_center = {
+	local_tax_modifier = -0.01
+}
+
+former_slave_entrepot = {
+	trade_goods_size = 0.01
+}
+
+free_slaves = {
+	local_tax_modifier = -0.1
+}
+
+#Slave Revolution Modifers
+slave_revolt_successful = {
+	trade_efficiency = -0.2
+	production_efficiency = -0.2
+	global_unrest = 2
+}
+
+recent_slave_revolt = {}
+
+lost_slave_revolution = {}
+
+ast_the_abolish_slavery_act = {
+	development_cost = -0.05
+	stability_cost_modifier = -0.05
+	global_unrest = -1
+	production_efficiency = -0.1
+}

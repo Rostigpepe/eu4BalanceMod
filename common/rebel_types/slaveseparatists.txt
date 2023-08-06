@@ -1,0 +1,128 @@
+slave_separatists = {
+
+	color = { 26 8 0 }
+
+	area = nation_rebel_tag
+	government = republic				# No special preference
+	defection = nation_rebel_tag			# If the country seeks independence, defection specifies what type of provinces it wants.
+	independence = nation_rebel_tag 		# Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
+	defect_delay = 60			# Can spontaneously declare independence after 60 months (earliest)
+	unit_transfer = yes				# Units switch allegiance after enforcing demands.
+	gfx_type = culture_province
+	will_relocate = no
+	
+	resilient = yes
+	reinforcing = yes
+	general = yes
+	smart = yes
+	
+	artillery = 0
+	infantry = 1
+	cavalry = 0
+	
+	morale = 1.2
+
+	# Possible handle actions
+	handle_action_negotiate = no
+	handle_action_stability = yes
+	handle_action_build_core = no
+	handle_action_send_missionary = no
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 0.1
+		modifier = {
+			factor = 1000000000
+			has_province_modifier = local_chattel_slavery
+		}
+	}
+ 
+ 	# This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_province_modifier = local_chattel_slavery
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+		always = yes
+ 	}
+	siege_won_effect = {
+		add_local_autonomy = 15
+		add_nationalism = 10 # Add 10 extra years of nationalism
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {	#whether the player is allowed to negotiate
+		always = no
+	}
+	
+	# Country scope
+	can_enforce_trigger = {         #any 'demands_enforced_effect' effect will not run unless the trigger evaluates to true
+		always = yes
+	}
+	
+	# Localisation for their demands
+	demands_description = "slave_revolt_demand"
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = just_lost_to_rebels
+				duration = 10
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				exists = REB
+			}
+			every_owned_province = {
+				limit = {
+					has_rebel_faction = REB
+					culture = REB
+				}
+				if = {
+					limit = { NOT = { is_core = REB } }
+					add_core = REB
+				}			
+				cede_province = REB
+			}			
+		}
+		if = {
+			limit = {
+				NOT = { exists = REB }
+			}
+			every_owned_province = {
+				limit = {
+					has_rebel_faction = REB
+					culture = REB
+					NOT = { is_core = REB }
+					culture = REB
+				}
+				add_core = REB
+			}
+			create_vassal = REB
+		}		
+		add_prestige = -50		
+		every_owned_province = {
+			limit = {
+				culture_group = african_diaspora
+			}
+			add_local_autonomy = 30
+		}
+		add_country_modifier = {
+			name = slave_revolt_successful
+			duration = 10
+			hidden = yes
+		}
+	}
+}

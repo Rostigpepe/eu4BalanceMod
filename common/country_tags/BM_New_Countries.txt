@@ -5,3 +5,39 @@ BGM = "countries/Belgium.txt" #BELGIUM
 ILY = "countries/Illyria.txt" #ILLYRIA
 LML = "countries/LombardLeague.txt" #ILLYRIA
 REN = "countries/Rhineland.txt" #RHINELAND
+
+#Maroons
+
+ANA = "countries/Antigua.txt" #ANTIGUA
+BAB = "countries/Barbados.txt" #BARBADOS
+BHM = "countries/Bahamas.txt"
+BOR = "countries/Boriken.txt" 
+BRM = "countries/Bermuda.txt"
+COA = "countries/Coabana.txt"
+COU = "countries/Counani.txt"
+CUR = "countries/Curacao.txt"
+DEN = "countries/Darien.txt"
+DOM = "countries/Dominica.txt" 
+GUD = "countries/Guadelupe.txt"
+GYA = "countries/Guyana.txt"
+JAA = "countries/Jamaica.txt"
+LBR = "countries/Liberia.txt"
+MRN = "countries/Martinique.txt"
+OUA = "countries/Oualichi.txt"
+PLM = "countries/Palmares.txt"
+SKI = "countries/St_Kitts.txt"
+STL = "countries/St_Lucia.txt"
+SVT = "countries/Saint Vincent.txt" 
+TRN = "countries/Trinidad.txt"
+VIR = "countries/Virgin_Islands.txt"
+
+#Free Colonies
+
+#Formables
+
+CAI = "countries/Caribbean.txt" #Not done yet
+NAF = "countries/New Africa.txt" # Not done yet
+
+#Special Countries
+
+GAR = "countries/Garinagu.txt"

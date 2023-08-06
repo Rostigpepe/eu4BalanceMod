@@ -1,0 +1,164 @@
+graphical_culture = africangfx
+
+color = { 239  0  141 }
+revolutionary_colors = { 0 0 13 }
+
+
+historical_idea_groups = {
+	defensive_ideas
+	spy_ideas
+	economic_ideas
+	quantity_ideas
+	diplomatic_ideas
+	offensive_ideas
+	humanist_ideas
+	trade_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Afonso #0" = 20
+	"Pedro #0" = 20
+	"Joγo #0" = 15
+	"Miguel #0" = 10
+	"Abνlio #0" = 0
+	"Antσnio #0" = 0
+	"Artur #0" = 0
+	"Augusto #0" = 0
+	"Aurιlio #0" = 0
+	"Bento #0" = 0
+	"Carlos #0" = 0
+	"Deodoro #0" = 0
+	"Emilio #0" = 0
+	"Ernesto #0" = 0
+	"Fernando #0" = 0
+	"Floriano #0" = 0
+	"Francisco #0" = 0
+	"Francisco Josι #0" = 0
+	"Gaspar #0" = 0
+	"Hermνnio #0" = 0
+	"Rodrigo #0" = 0
+	"Hermes #0" = 0
+	"Inαcio #0" = 0
+	"Isaνas #0" = 0
+	"Joaquim #0" = 0
+	"Joγo Baptista #0" = 0
+	"Josι #0" = 0
+	"Luνs #0" = 0
+	"Manuel #0" = 0
+	"Mαrcio #0" = 0
+	"Nereu #0" = 0
+	"Nilo #0" = 0
+	"Paschoal #0" = 0
+	"Paulino #0" = 0
+	"Prudente #0" = 0
+	"Venceslau #0" = 0
+	"Zeferino #0" = 0
+	
+	"Isabel #0" = -15
+	"Maria #0" = -10
+	"Silvia #0" = -1
+}
+
+leader_names = {
+	Αlvares "Ayres Gomes"
+	"Borges do Canto"
+	"da Costa" "da Silva" "de Amorim" "de Melo"
+	"de Mendonηa" "dos Reis" "dos Santos"
+	"Freire de Andrade"
+	Gonzaga
+	Lopes
+	Maciel Melo
+	Nascimento "Nunes Viana"
+	Peixoto
+	Rolim
+	"Santos Pedroso"
+	Tavares Torres
+	Veiga Vieira
+	Xavier
+	
+	"de Anchieta"
+	Medeiros
+	Rodrigues
+	"de Sα"
+	Coelho
+	Pereira
+	Barbosa
+	Maria
+	Raposo
+	"de Camargo"
+	Almeida
+	Bocaiϊva
+	Machado
+	"de Assis"
+	Pinheiro
+	Gonzaga
+	"de Azevedo"
+	Coutinho
+	Gato
+	Leite
+	Negreiros
+	Furtado
+	"de Deus"
+	Silvestre
+	
+}
+
+ship_names = {
+	Anunciada
+	Bιrrio "Boa Viagem" "Bom Jesus" "Bom Jesus do Carmo"
+	"Bom Jesus de Marzagγo" "Bom Jesus da Vidigueira" Bretγo
+	Cambaia Chagas "Correio d'Αsia"
+	El-Rei Enxobregas "Espνrito Santo" Estrela
+	"Flor do Mar"
+	Garηa
+	"Imaculada Conceiηγo"
+	Jσia
+	"Monte Carvalho"
+	"Nazarι" "Nossa Senhora" "N. Sra. da Aparecida"
+	"N. Sra. da Atalaia" "N. Sra. da Batalha" "N. Sra. da Boa Hora"
+	"N. Sra. da Boa Memσria" "N. Sra. da Boa Viagem" "N. Sra. da Candalaria"
+	"N. Sra. da Caridade" "N.Sra. da Conceiηγo" "N. Sra. da Consolaηγo"
+	"N. Sra. da Esperanηa" "N. Sra. da Glσria" "N. Sra. da Graηa" "N. Sra. da Guia"
+	"N. Sra. d'Ajuda Lusitana" "N. Sra. da Luz" "N. Sra. da Nazarι"
+	"N. Sra. da Oliveira" "N. Sra. da Palma" "N. Sra. da Penha de Franηa"
+	"N. Sra. da Quietaηγo" "N. Sra. da Salvaηγo" "N. Sra. da Saϊde"
+	"N. Sra. da Visitaηγo" "N. Sra. da Vitσria" "N. Sra. das Ondas"
+	"N. Sra. das Portas do Cιu" "N. Sra. das Relνquias" "N. Sra. de Belιm"
+	"N. Sra. de Guadalupe" "N. Sra. do Castelo" "N. Sra. do Livramento"
+	"N. Sra. do Loreto" "N. Sra do Paraνso" "N. Sra. do Pilar" "N. Sra. do Rosαrio"
+	"N. Sra. dos Prazeres" "N. Sra. dos Ramos"
+	"Princesa do Cιu"
+	Raνnha "Reis Magos"
+	"Sacramento" "Santa Ana" "Santa Catarina" "Santa Cruz" "Santa Fι"
+	"Santa Helena" "Santa Joana" "Santa Madre de Deus" "S. Maria de Sabσia"
+	"Santo Milagre" "Santiago Maior" "Santνssima Trindade" "Santνssimo Sacramento"
+	"Santo Alberto" "Santo Antσnio" "Santo Espνrito" "Santo Inαcio" "Sγo Bartolomeu"
+	"Sγo Bento" "Sγo Bernardo" "Sγo Carlos" "Sγo Cristovγo" "Sγo Domingos"
+	"Sγo Filipe" "Sγo Francisco" "Sγo Francisco de Borja" "Sγo Gabriel" "Sγo Gonηalo"
+	"Sγo Joγo" "Sγo Joγo de Deus" "Sγo Jorge" "S. Josι" "Sγo Juliγo" "Sγo Lourenηo"
+	"Sγo Lucas" "Sγo Luνs" "Sγo Mateus" "Sγo Paulo" "Sγo Pedro" "Sγo Rafael"
+	"Sγo Roque" "Sγo Salvador" "Sγo Tomι" "Sγo Valentim" "S. Antσnio de Lisboa"
+	"S. Catarina de Ribamar" "S. Francisco de Assis" "S. Francisco Xavier"
+	"S. Joγo Baptista" "S. Joγo Evangelista" "S. Pedro de Rates" "S. Pedro da Ribeira"
+	"S. Salvador do Mundo" "S. Teresa de Jesus" "S. Tomι da Cantuαria"
+	Taforeia Trindade
+	Visitaηγo
+}

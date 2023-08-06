@@ -1,0 +1,6 @@
+﻿l_english:
+ ### Muslim Stronghold in North Africa ###
+  rac_modifier: "Entrenched Religion"
+  desc_rac_modifier:0 "North Africa's terrain makes it so that any attempt at full control and conversion is very difficult."
+  kill_africa_province_modif: "The Dark Continent"
+  desc_kill_africa_province_modif: "The African coast is mostly accessible, able to be traversed by sea and by travelling alongside the coast. Attempts of setting up trading and colonial posts and any diplomacy and trade done by Europeans is through the various african kingdoms along the coast, very rarely further inland. Therefore, much of the land beyond the coast remains unknown and a mystery to European cartographers. Any attempts of traversing the harsh landscape that is inland africa is met with blazing deserts, jungles filled with deadly animals, diseases completely new or any other inhospitable challenges."

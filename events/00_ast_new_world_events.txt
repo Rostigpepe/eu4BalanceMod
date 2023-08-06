@@ -1,0 +1,33 @@
+
+namespace = ast_new_world_events
+
+country_event = {
+	id = ast_new_world_events.1
+	title = ast_new_world_events.1.t
+	desc = ast_new_world_events.1.d
+	picture = FARMING_WIFE_eventPicture
+	
+	trigger = {
+		OR = {
+			primary_culture = afro_caribbean
+			primary_culture = afro_american
+			primary_culture = afro_latino
+		}
+		capital_scope = {
+			has_owner_culture = no
+			culture_group = african_diaspora
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	hidden = yes
+	
+	option = {
+		name = ast_new_world_events.1.a
+		change_primary_culture = CAPITAL
+		set_ruler_culture = CAPITAL
+		set_heir_culture = CAPITAL
+	}
+}
