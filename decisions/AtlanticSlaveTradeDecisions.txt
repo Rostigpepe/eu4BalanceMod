@@ -143,9 +143,15 @@ country_decisions = {
 			NOT = { has_country_modifier = atlantic_slave_trade_seller }
 		}
 		allow = {
-			dip = 3
-			NOT = { tag = USA }
-			NOT = { overextension_percentage = 0.02 }
+			AND = {
+				NOT = { tag = USA }
+				NOT = { overextension_percentage = 0.02 }
+				OR = {
+					adm_tech = 22
+					has_reform = peasants_republic
+					has_reform = pirate_republic_reform
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = {
