@@ -21,7 +21,7 @@ kill_africa_province_modif = {
 }
 
 rac_modifier = {
-	local_missionary_strength = -0.05
+	local_missionary_strength = -0.03
 	picture = "tolerance_heretic"
 }
 

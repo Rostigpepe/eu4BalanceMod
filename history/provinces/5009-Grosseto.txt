@@ -1,8 +1,9 @@
 #5009 Grosseto
 
-owner = PIS
-controller = PIS
+owner = LAN
+controller = LAN
 add_core = PIS
+add_core = LAN
 culture = tuscan 
 religion = catholic 
 hre = yes 

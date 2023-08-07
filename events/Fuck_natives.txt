@@ -209,9 +209,7 @@ hidden = yes
 				region = east_africa_region
 				region = kongo_region
 				region = south_africa_region
-				NOT = {
-					has_port = yes
-				}
+				has_port = no
 			}
 			add_province_modifier = {
 				name = kill_africa_province_modif
