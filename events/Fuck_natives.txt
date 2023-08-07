@@ -172,22 +172,80 @@ hidden = yes
 				remove_building = fort_15th
 			}
 		}
+		africa = {
+			limit = {
+				owner = {
+					NOT = { 
+						OR = {
+							tag = MAL
+							tag = JOL
+							tag = JNN
+							tag = TMB
+							tag = SON
+							tag = BEN
+							tag = AIR
+							tag = KBO
+							tag = LOA
+							tag = KON
+							tag = NDO
+							tag = KUB
+							tag = LUB
+							tag = ZIM
+							tag = RZW
+							tag = SFA
+							tag = ZAN
+							tag = AJU
+							tag = MDI
+							tag = ADA
+							tag = ETH
+							tag = DAM
+							tag = JJI
+							tag = ENA
+							tag = KAF
+							tag = WLY
+							tag = HDY
+							tag = MED
+							tag = ALO
+							tag = BEJ
+							tag = ABB
+							tag = MAK
+							tag = MAM
+							tag = TUN
+							tag = FZA
+							tag = GHD
+							tag = TGT
+							tag = MZB
+							tag = TLC
+							tag = MOR
+							tag = MRK
+							tag = SOS
+							tag = TFL
+						}
+					}
+				}
+			}
+			cede_province = ---
+			every_owned_province = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+			}
+		}
 	}
 
 	option = { #Remove
 	}
 }
 
-namespace = make_africa_kill
-country_event = { #You guessed it, makes africa kill
-	id = make_africa_kill_events.1
-	title = make_africa_kill_events.1.t
-	desc = make_africa_kill_events.1.d
+namespace = remove_natives_events
+country_event = { #You guessed it, removes natives
+	id = remove_natives_events.2
+	title = remove_natives_events.2.t
+	desc = remove_natives_events.2.d
 	picture = NATIVES_eventPicture
 	
 hidden = yes
 	trigger = {
-		NOT = { has_global_flag = natives_removed_flag }
+		NOT = { has_global_flag = africa_removed_flag }
 	}
 	
 	mean_time_to_happen = { 
@@ -197,27 +255,123 @@ hidden = yes
 	fire_only_once = yes
 
 	immediate = {
-		set_global_flag = natives_removed_flag
+		set_global_flag = africa_removed_flag
 
-		every_province = {
-			limit = {
-				region = niger_region
-				region = guinea_region
-				region = central_africa_region
-				region = sahel_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = kongo_region
-				region = south_africa_region
-				has_port = no
+		sahel_region = {
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
 			}
-			add_province_modifier = {
+		}
+		niger_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		guinea_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		horn_of_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		east_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		central_africa_region = {
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		kongo_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		south_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
 				name = kill_africa_province_modif
 				duration = -1
 			}
 		}
 	}
 
-	option = { #kill
+	option = { #Remove
+	}
+}
+
+country_event = { #You guessed it, removes natives
+	id = remove_natives_events.3
+	title = remove_natives_events.3.t
+	desc = remove_natives_events.3.d
+	picture = NATIVES_eventPicture
+	
+hidden = yes
+	trigger = {
+		AND = {
+			has_global_flag = africa_removed_flag
+			is_year = 1650
+		}
+	}
+	
+	mean_time_to_happen = { 
+		days = 5
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = africa_removed_flag
+
+		every_province = {
+			limit = {
+				has_province_modifier = kill_africa_province_modif
+			}
+			remove_province_modifier = kill_africa_province_modif
+		}
+	}
+
+	option = { #Remove
 	}
 }
