@@ -562,7 +562,7 @@
  fra_colbert_economic_reform_tt:0 "\nIf we chose '§YBuild a Navy and modernize the Infrastructure§!' we will gain the following reward:"
  fra_colbert_trade_reforms_tt:0 "\nIf we chose '§YConcentrate on Economic Domination§!' we will gain the following reward:"
  fra_colbert_naval_reforms_tt:0 "\nIf we chose '§YConcentrate on Naval Supremacy§!' we will gain the following reward:"
- fra_every_coastal_with_dock_shipyard_gets_tt:0 "Mission reward if we have also completed §TNaval§!, §Trade§! or §TMaritime Ideas§!:"
+ fra_every_coastal_with_dock_shipyard_gets_tt:0 "Mission reward if we have also completed §TNaval§!, §TTrade§! or §TMaritime Ideas§!:"
  fra_catholic_tt:0 "If we complete the mission via the §TCatholic Path§!:"
  fra_protestant_tt:0 "\nElse, if we complete the mission via the §TReformation Path§!:"
  fra_moderate_tt:0 "\nIf we complete the mission either via the §TModerate Path§! or by §Tcircumventing the disaster successfully§!:"

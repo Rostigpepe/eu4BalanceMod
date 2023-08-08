@@ -3778,21 +3778,6 @@ french_missions_4_normal = {
 			hidden_effect = {
 				if = { 
 					limit = { 
-						LOR = { 
-							is_subject_of = ROOT 
-							trust = { who = ROOT value = 100 }
-							has_opinion = {
-								who = ROOT 
-								value = 190
-							}
-						}
-					}
-					FRA = { 
-						inherit = LOR
-					}
-				}
-				if = { 
-					limit = { 
 						PRO = { 
 							is_subject_of = ROOT 
 							trust = { who = ROOT value = 100 }
@@ -3804,6 +3789,7 @@ french_missions_4_normal = {
 					}
 					FRA= { 
 						inherit = PRO
+						inherit = LOR
 					}
 					add_country_modifier = {
 						name = fra_close_ties_modifier
