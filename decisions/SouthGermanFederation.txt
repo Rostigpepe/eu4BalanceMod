@@ -1,20 +1,21 @@
 country_decisions = {
 
-	form_NGF_decision = {
+
+	form_SGF_decision = {
 		major = yes
 
 		potential = {
-			NOT = { tag = CAE }
-			NOT = { tag = BRA }
-			NOT = { tag = TEU }			
+			NOT = { tag = HAB }
+			NOT = { tag = AHE }		
 			was_never_end_game_tag_trigger = yes			
-			NOT = { has_country_flag = formed_NGF_flag }
+			NOT = { has_country_flag = formed_SGF_flag }
 			NOT = { exists = GER }
-			NOT = { exists = NGF }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
-			NOT = { tag = SGF }
+			NOT = { tag = NGF }
+			NOT = { tag = PRU }
+			NOT = { tag = BRA }
 			culture_group = germanic
 			NOT = { primary_culture = dutch }
 			is_colonial_nation = no
@@ -29,29 +30,17 @@ country_decisions = {
 
 		allow = {
 			adm_tech = 16
-			OR = {
-				NOT = { exists = PRU }
-				AND = {
-					tag = PRU
-					OR = {
-						religion = protestant
-						religion = reformed
-						religion = hussite
-						religion = anglican
-					}
-				}
-			}
 			NOT = { exists = GER }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no	
 			is_at_war = no
-			owns_core_province = 50
-			owns_or_non_sovereign_subject_of = 61
-			owns_or_non_sovereign_subject_of = 44
-			owns_or_non_sovereign_subject_of = 57
-			owns_or_non_sovereign_subject_of = 45
+			owns_core_province = 65
+			owns_or_non_sovereign_subject_of = 134
+			owns_or_non_sovereign_subject_of = 75
+			owns_or_non_sovereign_subject_of = 70
+			owns_or_non_sovereign_subject_of = 1872
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = north_german_region
+				region = south_german_region
 				value = 25
 			}
 		}
@@ -59,27 +48,27 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					region = north_german_region
+					region = south_german_region 
 					root = {
 						NOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								region = north_german_region
+								region = south_german_region 
 								value = 25
 							}
 						}
 					}
 				}
-				province_id = 50
-				province_id = 61
-				province_id = 44
-				province_id = 57
-				province_id = 45
+				province_id = 65
+				province_id = 134
+				province_id = 75
+				province_id = 70
+				province_id = 1872
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		effect = {
-			change_tag = NGF
+			change_tag = SGF
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			if = {
@@ -104,7 +93,7 @@ country_decisions = {
 				custom_tooltip = " "
 			}
 			set_government_rank = 2
-			north_german_region = {
+			south_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -114,22 +103,22 @@ country_decisions = {
 			hidden_effect = {
 				every_subject_country = {
 					limit = {
-						capital_scope = { region = north_german_region }
+						capital_scope = { region = south_german_region }
 					}
 					every_owned_province = {
-						cede_province = NGF
-						add_core = NGF
+						cede_province = SGF
+						add_core = SGF
 					}
 				}
 			}	
-			custom_tooltip = NGF_annex_subects_effect_tt
+			custom_tooltip = SGF_annex_subects_effect_tt
 			custom_tooltip = " "
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			set_country_flag = formed_NGF_flag
+			set_country_flag = formed_SGF_flag
 			if = {
 				limit = {
 					has_custom_ideas = no
@@ -142,7 +131,5 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-
 	}
-	
 }

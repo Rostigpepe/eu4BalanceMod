@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = bavarian
+religion = catholic
+elector = yes
+capital = 65 # Munchen
+technology_group = western
+add_accepted_culture = austrian
+add_accepted_culture = swabian
+add_army_professionalism = 0.1

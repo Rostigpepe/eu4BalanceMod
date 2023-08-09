@@ -5,6 +5,7 @@ BGM = "countries/Belgium.txt" #BELGIUM
 ILY = "countries/Illyria.txt" #ILLYRIA
 LML = "countries/LombardLeague.txt" #ILLYRIA
 REN = "countries/Rhineland.txt" #RHINELAND
+SGF = "countries/SouthGermanConfederation.txt" #SOUTH GERMAN CONFEDERATION
 
 #Maroons
 

@@ -220,6 +220,14 @@ hidden = yes
 							tag = MRK
 							tag = SOS
 							tag = TFL
+							tag = DAH
+							tag = BON
+							tag = TYO
+							tag = LND
+							tag = MIR
+							tag = YAT
+							tag = WGD
+							tag = GUR
 						}
 					}
 				}
@@ -369,6 +377,35 @@ hidden = yes
 				has_province_modifier = kill_africa_province_modif
 			}
 			remove_province_modifier = kill_africa_province_modif
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+country_event = { #You guessed it, removes natives
+	id = remove_natives_events.4
+	title = remove_natives_events.4.t
+	desc = remove_natives_events.4.d
+	picture = NATIVES_eventPicture
+	
+	hidden = yes
+	trigger = {
+		NOT = { has_global_flag = mossi_kingdom_fixed_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 5
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = mossi_kingdom_fixed_flag
+		YAT = {
+			inherit = WGD
+			inherit = GUR
 		}
 	}
 
