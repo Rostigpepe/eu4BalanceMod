@@ -217,7 +217,7 @@ country_event = {
 			}
 		}
 		else = {
-			add_years_of_income = 0.083
+			add_years_of_income = 0.5
 			custom_tooltip = BM_Muscovy_Events.4.ttb
 			hidden_effect = {
 				every_owned_province = {
