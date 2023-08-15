@@ -213,7 +213,7 @@ LML_ideas: "Lombard League Ideas"
  SGF_ADJ:0 "South German Federation"
  NGF_annex_subects_effect_tt:0 "Annex all subject nations with their capital in the §YNorth Germany§! region."
  form_SGF_decision_title:0 "Unite the South Germans"
- form_SGF_decision_desc:0 "The South German Federation is the earliest attempt of Federalising the South Germans into a singular state. Unlike the Northern Germans, the Southern Germans have historically been at odds with each other than their counterpart. But the Federalisation of the Swabians, Austrians, Bavarians and other South Germans is the first stepping stone to a united Germany."
+ form_SGF_decision_desc:0 "The South German Federation is the earliest attempt of Federalising the South Germans into a singular state. Unlike the Northern Germans, the Southern Germans have historically been at odds with each other compared to their counterpart. But the Federalisation of the Swabians, Austrians, Bavarians and other South Germans is the first stepping stone to a united Germany."
 
  SGF_ideas:0 "South German ideas"
  SGF_ideas_start:0 "South German traditions"

@@ -422,7 +422,7 @@ stonehenge = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost_modifier = -0.025
+			local_development_cost_modifier = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -458,7 +458,7 @@ stonehenge = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_development_cost_modifier = -0.025
+			local_development_cost_modifier = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -486,12 +486,11 @@ stonehenge = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost_modifier = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_development_cost_modifier = -0.5
+			local_development_cost_modifier = -0.1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier

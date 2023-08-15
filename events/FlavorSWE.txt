@@ -4349,7 +4349,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			is_subject = no
 			is_at_war = yes
 			tag = SWE
 		}

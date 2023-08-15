@@ -793,7 +793,6 @@ country_event = {
 	picture = DIPLOMACY_SIGNING_eventPicture
 	
 	is_triggered_only = yes
-	major = yes
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -825,7 +824,6 @@ country_event = {
 	picture = DIPLOMACY_SIGNING_eventPicture
 	
 	is_triggered_only = yes
-	major = yes
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -1339,7 +1337,6 @@ country_event = {
 	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
-	major = yes
 	
 	fire_only_once = yes
 	
@@ -1391,7 +1388,6 @@ country_event = { #Fall of Constantinople/Warning about potential destabilizatio
 	
 	fire_only_once = yes
 	
-	major = yes
 	
 	trigger = {
 	    tag = GEO
@@ -1419,7 +1415,6 @@ country_event = { #Kvarkvare Jaqeli Becomes Ruler of Samtskhe-Liberty Desire inc
 	desc = "flavor_geo.EVTDESC7"
 	picture = ACCUSATION_eventPicture
 	
-	major = yes
 	
 	fire_only_once = yes
 	
@@ -1449,7 +1444,6 @@ country_event = { #East-West resolution?
 	desc = "flavor_geo.EVTDESC12"
 	picture = SEJM_eventPicture
 	
-	major = yes
 	
 	fire_only_once = yes
 	
@@ -1508,7 +1502,6 @@ country_event = { #East-West resolution after the Death of Demetrius
 	desc = "flavor_geo.EVTDESC12ALT"
 	picture = SEJM_eventPicture
 	
-	major = yes
 	
 	fire_only_once = yes
 	

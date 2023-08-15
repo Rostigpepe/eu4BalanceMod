@@ -313,7 +313,6 @@ country_event = {
 	}
 	picture = CIVIL_WAR_eventPicture # Cessation of hostilities
 
-	major = yes
 	
 	is_triggered_only = yes
 	
