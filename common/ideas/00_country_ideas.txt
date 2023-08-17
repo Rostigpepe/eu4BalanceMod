@@ -107,7 +107,7 @@ GER_ideas = {
 	free = yes
 	
 	ger_german_confederation = {
-		manpower_in_culture_group_provinces = 0.25
+		global_manpower_modifier = 0.25
 	}
 	ger_german_universities = {
 		technology_cost = -0.1

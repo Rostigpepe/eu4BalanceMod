@@ -19,7 +19,7 @@ BRA_kirchenordnung = {
 	stability_cost_modifier = -0.1
 }
 BRA_roman_law = {
-	reform_progress_growth = 0.1
+	reform_progress_growth = 0.15
 }
 BRA_hohenzollern_hegemony = {
 	diplomatic_reputation = 2
@@ -49,6 +49,7 @@ BRA_absolute_upper_saxon_leader = {
 
 BRA_universita_viadrina_modifier = {
 	local_institution_spread = 0.25
+	local_production_efficiency = 0.25
 }
 BRA_firm_control = {
 	global_tax_modifier = 0.15
@@ -88,6 +89,7 @@ BRA_prussian_unity = {
 }
 BRA_reformed_kreditwerk = {
 	interest = -0.5
+	state_maintenance_modifier = -0.25
 }
 BRA_abolished_kreditwerk = {
 	production_efficiency = 0.1
@@ -152,6 +154,7 @@ PRU_prussian_waterways = {
 }
 PRU_general_staff_modifier = {
 	mil_advisor_cost = -0.1
+	drill_decay_modifier = -0.1
 }
 PRU_handlerflotte = {
 	trade_efficiency = 0.1
@@ -159,6 +162,7 @@ PRU_handlerflotte = {
 }
 PRU_kriegsflotte = {
 	naval_morale = 0.1
+	hull_size_modifier = 0.1
 }
 PRU_balanced_fleet = {
 	trade_efficiency = 0.1
