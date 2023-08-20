@@ -952,7 +952,7 @@ FRA_ideas_2 = {
 TUR_ideas = {
 	start = {
 		tolerance_heathen = 3
-		discipline = 0.05
+		core_creation = -0.25
 	}
 	
 	bonus = {
@@ -965,14 +965,14 @@ TUR_ideas = {
 	free = yes		#will be added at load.
 	
 	millets = {
-		core_creation = -0.25
+		relation_with_accepted_culture = 10
 		num_accepted_cultures = 1
-	}	
-	ghazi = {
-		manpower_recovery_speed = 0.2
-	}		
+	}
 	timariot_system = {
 		cavalry_power = 0.15
+	}
+	ghazi = {
+		manpower_recovery_speed = 0.2
 	}
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.1
