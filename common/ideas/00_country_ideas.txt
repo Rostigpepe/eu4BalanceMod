@@ -1575,7 +1575,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
+		naval_forcelimit_modifier = 0.2
 		infantry_power = 0.1
 	}
 	
@@ -1597,6 +1597,7 @@ POR_ideas = {
 	}
 	case_de_india = {
 		global_trade_power = 0.1
+		ship_trade_power_modifier = 0.1
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
@@ -15111,11 +15112,11 @@ MOR_ideas = {
 		galley_power = 0.2
 	}
 	mor_pirate_republics = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.25
 	}
 	mor_slave_soldiers = {
-		land_maintenance_modifier = -0.05
-		cavalry_power = 0.1
+		land_maintenance_modifier = -0.1
+		cavalry_power = 0.15
 	}
 	mor_curb_power_of_the_tribes = {
 		possible_adm_policy = 1
