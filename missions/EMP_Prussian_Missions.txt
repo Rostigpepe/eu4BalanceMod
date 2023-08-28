@@ -302,22 +302,14 @@ BRA_missions_2 = {
 			}
 		}
 		effect = {
-			4747 = {
-				add_province_modifier = {
-					name = BRA_neumark_province
-					duration = 7300
-				}
-			}
-			49 = {
-				add_province_modifier = {
-					name = BRA_neumark_province
-					duration = 7300
-				}
-			}
-			5003 = {
-				add_province_modifier = {
-					name = BRA_neumark_province
-					duration = 7300
+			every_owned_province = {
+				area = {
+					neumark_area = {
+						add_province_modifier = {
+							name = BRA_neumark_province
+							duration = 7300
+						}
+					}
 				}
 			}
 			hidden_effect = {
