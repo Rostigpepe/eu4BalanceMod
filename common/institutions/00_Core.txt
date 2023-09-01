@@ -411,7 +411,7 @@ renaissance = {
 			
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.05
 			scale = yes
 			potential = {
 				continent = europe
@@ -423,7 +423,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.04
+			factor = 0.075
 			scale = yes
 			potential = {
 				continent = europe
