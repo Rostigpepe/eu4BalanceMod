@@ -820,7 +820,6 @@ french_missions_1_Continuation_a = {
 		}
 		effect = { 
 			add_dip_power = 50 
-			add_mercantilism = 10 
 			if = {
 				limit = { 
 					any_subject_country = {
@@ -4552,6 +4551,10 @@ french_missions_4_normal_contiuation = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
+			east_anglia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
 		}
 		effect = {
 			british_isles_region = {
@@ -5733,6 +5736,13 @@ fra_missions_5_continuation = {
 				}
 			}
 			home_counties_area = {
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			east_anglia_area = {
 				limit = { 
 					NOT = { is_core = ROOT } 
 					NOT = { owned_by = ROOT } 
