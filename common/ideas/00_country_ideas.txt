@@ -15087,7 +15087,7 @@ SYN_ideas = {
 
 MOR_ideas = {
 	start = {
-		naval_attrition = -0.25
+		naval_morale_damage = 0.15
 		shock_damage = 0.1
 	}
 	bonus = {
@@ -15126,7 +15126,7 @@ MOR_ideas = {
 
 TUN_ideas = {
 	start = {
-		naval_attrition = -0.25
+		disengagement_chance = 0.1
 		galley_power = 0.2		
 	}
 	bonus = {

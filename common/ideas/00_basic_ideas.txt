@@ -1845,6 +1845,7 @@ absolutism_idea_group = {
 	
 	bonus = {
 		max_absolutism_effect = 0.1
+		allow_free_estate_privilege_revocation = yes
 	}
 	
 	trigger = {
@@ -1863,7 +1864,7 @@ absolutism_idea_group = {
 		global_rebel_suppression_efficiency = 0.25
 	}
 	enforced_centralization = {
-		development_cost = -0.05
+		development_cost_modifier = -0.1
 		centralize_state_cost = -0.25
 	}
 	efficient_government = {
