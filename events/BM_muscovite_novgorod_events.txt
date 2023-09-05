@@ -207,6 +207,22 @@ country_event = {
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
 			add_yearly_manpower = 0.1
+			change_estate_land_share = {
+				estate = estate_church
+				share = -2
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 5
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -2
+			}
+			change_estate_land_share = {
+				estate = estate_cossacks
+				share = -2
+			}
 			custom_tooltip = BM_Muscovy_Events.4.tta
 			hidden_effect = {
 				every_owned_province = {
@@ -224,6 +240,22 @@ country_event = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
 					set_local_autonomy = 35
+				}
+				change_estate_land_share = {
+					estate = estate_church
+					share = -2
+				}
+				change_estate_land_share = {
+					estate = estate_nobles
+					share = -2
+				}
+				change_estate_land_share = {
+					estate = estate_burghers
+					share = -2
+				}
+				change_estate_land_share = {
+					estate = estate_cossacks
+					share = -2
 				}
 			}
 		}
@@ -257,7 +289,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = -25
+		add_prestige = -10
 		add_accepted_culture_or_dip_power = { culture = novgorodian }
 	}
 

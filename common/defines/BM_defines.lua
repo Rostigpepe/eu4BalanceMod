@@ -3,6 +3,7 @@
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
 
 -- N MILITARY STUFFS
+NDefines.NGame.WARSCORE_MAX_FROM_BATTLES = 50
 --Fortress upkeep
 
 --Insufficient support to positive
@@ -42,7 +43,7 @@ NDefines.NCountry.CULTURE_COST_DIFF_PRIMARY = 0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_STABILITY_COST = 1
 
 --Fixes for diplomacy BS
-NDefines.NDiplomacy.SHAREMAP_PRESTIGE_TRANSFER_LOSE = -5
+NDefines.NDiplomacy.SHAREMAP_PRESTIGE_TRANSFER_LOSE = 0
 NDefines.NDiplomacy.VASSALIZE_BASE_DEVELOPMENT_CAP = 150
 NDefines.NDiplomacy.MARCH_BASE_DEVELOPMENT_CAP = 250
 NDefines.NDiplomacy.EXCOMMUNICATE_ACTION_MONTHS = 24
@@ -52,5 +53,4 @@ NDefines.NDiplomacy.SUPPORT_REBELS_COST = 40
 NDefines.NDiplomacy.SUPPORT_REBELS_DURATION = 10
 NDefines.NDiplomacy.INTEGRATE_UNION_MIN_YEARS = 40
 
-NDefines.NEconomy.CARAVAN_POWER_MAX = 75
-
+NDefines.NEconomy.CARAVAN_POWER_MAX = 30
