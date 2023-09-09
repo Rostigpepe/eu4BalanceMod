@@ -121,6 +121,14 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 15
 		}
+		change_estate_land_share = {
+			estate = estate_church
+			share = -5
+		}
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = -5
+		}
 	}
 
 	option = {
@@ -206,7 +214,7 @@ country_event = {
 
 		if = {
 			limit = { has_country_flag = muscovy_noble_lands }
-			add_yearly_manpower = 0.1
+			add_yearly_manpower = 2
 			change_estate_land_share = {
 				estate = estate_church
 				share = -2
@@ -233,7 +241,7 @@ country_event = {
 			}
 		}
 		else = {
-			add_years_of_income = 0.5
+			add_years_of_income = 2
 			custom_tooltip = BM_Muscovy_Events.4.ttb
 			hidden_effect = {
 				every_owned_province = {
