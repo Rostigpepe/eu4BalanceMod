@@ -1,0 +1,72 @@
+country_decisions = {
+
+	Taiping_nation = {
+		major = yes	
+		potential = {
+			culture_group = east_asian
+			capital_scope = { superregion = china_superregion }
+			normal_or_historical_nations = yes
+			NOT = { exists = TPG }
+		}
+		allow = {
+			OR = {
+			religion = protestant
+			religion = catholic
+			religion = reformed
+			religion = hussite
+			religion = coptic
+			religion = anglican
+			religion = orthodox
+			}
+			is_free_or_tributary_trigger = yes
+		}
+		effect = {
+			change_tag = TPG
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			change_government = theocracy
+			set_legacy_government = bm_taiping_heavenly_kingdom_reform
+			change_technology_group = chinese
+			change_unit_type = chinese
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				change_government = theocracy
+				#set_legacy_government = despotic_monarchy
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Embrace_the_new_christianity = {
+		potential = {	
+			tag = TPG
+		}
+		allow = {
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = taiping_heavenly_kingdom_modifier
+				duration = -1
+			}
+			add_stability = -1
+		}
+	}
+}

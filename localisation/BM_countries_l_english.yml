@@ -233,3 +233,36 @@ LML_ideas: "Lombard League Ideas"
  SGF6_desc:0 "."
  SGF7:0 "."
  SGF7_desc:0 "."
+
+
+
+ TPG: "Taiping Heavenly Kingdom"
+ TPG_ADJ: "Taiping"
+ 
+ 
+ 
+ #Desicions and Events 
+ 
+ Taiping_nation_title: "Form The Taiping Heavenly Kingdom"
+ Taiping_nation_desc: "It is time to unite China under one banner, a Christian banner."
+ Embrace_the_new_christianity_title: "Embrace The New Christianity"
+ Embrace_the_new_christianity_desc: "It is time to embrace the new Christianity, that being Christianity with Chinese Characteristics."
+ 
+ TPG_ideas:0 "Taiping ideas"
+ TPG_ideas_start:0 "Taiping traditions"
+ TPG_ideas_bonus:0 "Taiping ambition"
+
+ TPG1:0 ""
+ TPG1_desc:0 ""
+ TPG2:0 "."
+ TPG2_desc:0 "."
+ TPG3:0 "."
+ TPG3_desc:0 "."
+ TPG4:0 "."
+ TPG4_desc:0 "."
+ TPG5:0 "."
+ TPG5_desc:0 ""
+ TPG6:0 "."
+ TPG6_desc:0 "."
+ TPG7:0 "."
+ TPG7_desc:0 "."

@@ -21,9 +21,6 @@ desc_den_haag_dike:0 "Through a combination of windmills, dikes and any means at
  bm_the_amber_trade_desc:0 "Amber has always been an important item of exchange of the people living in the Baltic Sea coast. As early as in the antiquity, Amber was valuable and sought after beyond the Baltic Sea, especially in the Roman Empire, where it was used for decorating amphitheaters and jewellery. Ever since the Teutonic and Livonian orders gained control of the Eastern Baltic, the Orders have become rich through Amber Monopoly. Now, however, as gold, silver and other various gems become more refined, made into precious jewels and church decorations, the value of the Amber has been steadily declining for 200 years. After more than 5 millennia, the fossilised tree resin that has been appreciated for its colour and natural beauty has faded into insignificance."
  desc_BM_the_amber_revival:0 "The Amber Revival"
 
- bm_the_ghetto_modifier:0 "The Ghetto"
- bm_the_ghetto_modifier_desc:0 "The Venice Ghetto was established by the Venetian Republic, forcing the local Jews to live in the Cannaregio district of Venice. Though Jews had previously been segregated before, the Jews of Venice enjoyed their relative seclusion from the Italians, setting up shops, markets and banker's houses in the Ghetto."
-
  bm_toledo_steel:0 "Toledo Steel"
  bm_toledo_steel_desc:0 "Toledo has since ancient Hispania been famous for its forging, production and uniqueness of swords. Around the 15th and 16th century, Toledo became the centre of high-quality smithmaking and swordsmanship in Europe, the Greater Middle East, and after the re-conquista, the greatest in the world. And while Toledo steel set the standard for excellence in quality of European swords, there were also very few locales that surpassed Toledo in terms of production volume. As armies began to replace swords with firearms, the blacksmithing tradition at large began its decline. In an attempt to preserve the techniques, methods and quality of the Toledo Steel production, the Spanish King Carlo III ordered the creation of the Royal Sword Factory in Toledo, further continuing the value of Toledo Steel."
 
@@ -33,26 +30,11 @@ desc_den_haag_dike:0 "Through a combination of windmills, dikes and any means at
  bm_granary_of_the_mediterranean:0 "Granary of the Mediterranean"
  bm_granary_of_the_mediterranean_desc:0 ""
 
- bm_the_ghetto:0 "The Ghetto"
- bm_the_ghetto_desc:0 ""
-
  bm_city_of_gold:0 "The City of Gold"
  bm_city_of_gold_desc:0 "The Andes Mountains host large deposits of salt, silver, gold, and other ores. Cuzco, the cultural and administrative centre of the Incas, has become fabled to be built out of the gold extracted from the mountain. This fable, whilst not technically true, still holds some value to it as Cuzco is home to one of the larger gold deposits of the Andes Mountains."
 
  bm_bronze_of_benin:0 "The Bronze-Making of Benin"
  bm_bronze_of_benin_desc:0 "The Kingdom of Benin is rich in materials, such as iron, copper, and tin, and has cultivated a large bronze-making tradition of creating sculptures out of the materials. Many of these sculptures are used to decorate the royal palaces, bringin awe to our neighbours. The technique of our bronze-making is in fact so advanced that none of our neighbours are able to replicate it. Even if a foreign power more advanced than us, were to conquer us, burning down our city and stripping our royal palace of our bronze sculptures, they will be perplexed hundreds of years later over our masterful skills in bronze-making."
-
- bm_amazon_estuary_modifier:0 "Amazon Estuary"
- bm_amazon_estuary_modifier_desc:0 "Controlling the important opening to the Amazonian rivers strengthens our hold of the trade in the region."
-
- bm_niagara_falls_modifier:0 "Niagara Falls"
- bm_niagara_falls_modifier_desc:0 "Niagara Falls is the collective name for three waterfalls that form the southern end of the Niagara Gorge. Located on the Niagara River, which drains Lake Erie into Lake Ontario. The Niagara River is often used for fur trading by the local tribes. Nagivating the Niagara River is treacherous, but possible, by using the Native Canoes or other smaller forms of water vessels."
-
- bm_artillery_yard_of_smolensk:0 "Artillery Yard's of Smolensk"
- bm_artillery_yard_of_smolensk_desc:0 "With the development of military warfare, the use and need of artillery has risen. Smolensk, situated between the border of Lithuania and Russia, has been growing its artillery-workshops in the city. The city walls has several mounted cannons for its defence and the workshops have begun exporting the excess produced artillery. Now that we are in control of the city we can reap the benefits of the 'City of Cannons' and use it against our enemies."
-
- bm_african_precious_minerals:0 "African Precious Minerals"
- bm_african_precious_minerals_desc:0 "Africa is rich in many resources, from tropical wood, ivory, exotic animals, and livestock, to raw ores such as copper, iron, gems, and gold. The minerals especially offer unique opportunities - they have intrinsic value, they carry no credit risk and cannot themselves be inflated. Due to Africas lacking development compared to its contemporary powers in Europe and the Middle East, as well as its limited infrastructure, many of these resources and their unique potential have gone untapped. This has made Africa an attractive target for foreigners who seek to unearth these minerals, and exploit the people local to the areas around them."
 
  bm_djerban_jewish_community:0 "Djerban Jewish Community"
  bm_djerban_jewish_community_desc:0 "The island of Jerba, or Jarbah depending on pronounciation, is the largest island in North Africa, located off the coast of Tunis. Despite North Africa being a Muslim dominated region, the island of Djerba has housed for at least a millenium a large Jewish population. Historical conflicts between the Djerban Jews and Muslims have been largely absent due to the fact that all Djerbans were at some point Jewish and either converted to Islam or stayed Jewish, therefore many share a similar tradition, culture and practice in life. This community of Jews increased in size during the re-conquista and the subsequent expelling of Jews in Iberia and from Sicily."
@@ -63,5 +45,14 @@ desc_den_haag_dike:0 "Through a combination of windmills, dikes and any means at
  bm_the_sulfur_of_iceland:0 "The Sulfur of Iceland"
  bm_the_sulfur_of_iceland_desc:0 "Iceland has always been rich in sulfur from its lakes and volcanoes. Though the smell is horrid, with the technological development of machines and more advanced weaponry, the demand of sulfur has increased. Already, mines are being set up to excavate the sulfur from Iceland."
 
- bm_restored_silk_centre:0 "Restored Silk Centre"
- bm_restored_silk_centre_desc:0 "Throughout history, Eurasia was criss-crossed with routes and paths of trade, which gradually linked up to form what is known as the Silk Roads. Though with the conquests of the Mongols, and later the Timurids, the Silk Road has become too dangerous to use. By once again linking up these trade networks and establishing our merchants along the Silk Road, we can once again restore it."
+ bm_walls_of_constantinople:0 "The Walls of Constantinople"
+ bm_walls_of_constantinople_desc:0 "The Walls of Constantinople are a series of defensive stone walls that have surrounded and protected the city of Constantinople since its founding as the new capital of the Roman Empire. Initially built by Constantine the Great, the walls surrounded the new city on all sides, protecting it against attack from both sea and land. As the city grew, the famous double line of the Theodosian Walls was built in the 5th century, they have been, when well-manned, almost impregnable for any besieging force so far. Further more, several 'Seaward Walls' surround the City on both land and built on artifical land on the water. These Seaward Walls house massive Chains that block any unwanted passage by enemy vessels."
+
+ bm_galapagos_natural_selection:0 "Natural Selection"
+ bm_galapagos_natural_selection_desc:0 "The Galápagos Islands are an archipelago of volcanic islands distributed on either side of the Equator in the Pacific Ocean surrounding the centre of the Western Hemisphere. The islands are known for their vast number of endemic species and were studied by Charles Darwin, as his observations and collections contributed to the inception of Darwin's theory of evolution by means of natural selection."
+
+ bm_lake_baikal:0 "Lake Baikal"
+ bm_lake_baikal_desc:0 "Lake Baikal is the largest freshwater lake by volume in the world, containing more water than the North American Great Lakes combined. Being one of the few sources of freshwater apart from rivers, Baikal offers an excellent opportunity for any nation willing to exploit it."
+
+ bm_niagara_falls:0 "Niagara Falls"
+ bm_niagara_falls_desc:0 "Niagara Falls os the collective name for the three waterfalls that form the southern end of the Niagara Gorge. It has been a hotbed for trade and exchange between the various north american tribes. Canoe is an often used transport when it comes to traversing the dangerous waters."

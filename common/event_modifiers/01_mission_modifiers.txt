@@ -8331,7 +8331,7 @@ tur_economical_reforms = {	#Permanent
 
 tur_early_cannons_modifier = {
 	artillery_cost = -0.5
-	artillery_barrage_cost = -0.25
+	artillery_barrage_cost = -0.5
 }
 
 tur_resettlement_of_constantinople = {

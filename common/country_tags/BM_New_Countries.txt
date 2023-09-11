@@ -6,6 +6,7 @@ ILY = "countries/Illyria.txt" #ILLYRIA
 LML = "countries/LombardLeague.txt" #ILLYRIA
 REN = "countries/Rhineland.txt" #RHINELAND
 SGF = "countries/SouthGermanConfederation.txt" #SOUTH GERMAN CONFEDERATION
+TPG = "countries/Taiping.txt" #TAIPING HEAVENLY KINGDOM
 
 #Maroons
 

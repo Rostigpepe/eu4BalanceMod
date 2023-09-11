@@ -107,3 +107,9 @@ ast_the_abolish_slavery_act = {
 	global_unrest = -1
 	production_efficiency = -0.1
 }
+
+taiping_heavenly_kingdom_modifier = {
+	core_creation = -0.25
+	ae_impact = 0.1
+	global_missionary_strength = 0.01
+}

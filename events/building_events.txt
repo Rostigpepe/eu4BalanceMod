@@ -1,7 +1,7 @@
 # General building deletion
-
+namespace = BM_building
 country_event = {
-	id = building.1
+	id = BM_building.1
     title = building.1.t
     desc = building.1.d
 	is_triggered_only = yes
@@ -167,7 +167,7 @@ country_event = {
 # Manufactory removal
 
 country_event = {
-	id = building.1.1
+	id = BM_building.1.1
     title = building.1.1.t
     desc = building.1.1.d
 	is_triggered_only = yes
@@ -243,7 +243,7 @@ country_event = {
 		name = building.1.general_buildings
         ROOT = {
             country_event = { 
-                id = building.1
+                id = BM_building.1
                 days = 1
             } 
         }

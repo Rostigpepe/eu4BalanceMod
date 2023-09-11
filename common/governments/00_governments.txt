@@ -1143,6 +1143,7 @@ theocracy = {
 		theocratic_government
 		monastic_order_government
 		holy_state_legacy
+		bm_taiping_heavenly_kingdom_reform
 	}
 	reform_levels = {
 		theocratic_leadership = {
@@ -1177,6 +1178,7 @@ theocracy = {
 				georgian_theocracy_reform
 				#Gothic
 				metropolitanate_of_gothia_reform
+				bm_taiping_heavenly_kingdom_reform
 			}
 		}
 		internal_vs_external_mission = {

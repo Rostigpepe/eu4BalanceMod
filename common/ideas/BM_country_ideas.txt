@@ -604,3 +604,44 @@ SGF_ideas = {
 		discipline = 0.05
 	}
 }
+
+TPG_ideas = {
+	start = {
+		years_of_nationalism = -5
+		overextension_impact_modifier = -0.25
+	}
+	
+	bonus = {
+		regiment_manpower_usage = -0.1
+	}
+	
+	trigger = {
+		tag = TPG
+	}
+	free = yes
+	
+	TPG1 = {
+		leader_land_fire = 1
+		infantry_power = 0.1
+	}
+	TPG2 = {
+		adm_tech_cost_modifier = -0.1
+	}
+	TPG3 = {
+		spy_offence = 0.25
+		missionaries = 1
+	}
+	TPG4 = {
+		shock_damage = 0.1
+	}
+	TPG5 = {
+		land_forcelimit_modifier = 0.33
+	}
+	TPG6 = {
+		cb_on_religious_enemies = yes
+		province_warscore_cost = -0.15
+	}
+	TPG7 = {
+		manpower_in_true_faith_provinces= 0.5
+	}
+}

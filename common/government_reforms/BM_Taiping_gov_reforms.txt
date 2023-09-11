@@ -1,0 +1,26 @@
+bm_taiping_heavenly_kingdom_reform = {
+	icon = "rioting_burning_2"
+	allow_normal_conversion = yes
+	potential = {
+		tag = TPG
+		has_dlc = "Domination"
+		NOT = { tag = PAP }
+		religion_group = christian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		enforce_religion_cost = -0.1
+		morale_damage = 0.1
+		devotion = -1
+		governing_capacity = 500
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			gain_monarch_power_from_force_converting = yes
+		}
+	}
+}

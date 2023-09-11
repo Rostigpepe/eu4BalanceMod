@@ -37,3 +37,20 @@
  gecko_debt_tackled_2:0 "Slowed Military Build-up"
 
  rapid_collapse_of_society:0 "Rapid Collapse of Society"
+
+
+ #FRENCH CHATEAUS
+ establish_chateau_de_chambord:0 "Establish Chateau de Chambord"
+ establish_chateau_de_chambord_desc:0 "In the woods of Blois stands Chateau de Chambord. The castle was built in the 16th century by King Francis I of France as a hunting lodge and a retreat. Featuring more than 400 rooms, a double helix staircase, and a number of towers. It is also known for its beautiful gardens and parks which covers more than 5.000 acres."
+
+ establish_chateau_de_chenonceau:0 "Establish Chateau de Chenonceau"
+ establish_chateau_de_chenonceau_desc:0 "Close to a lake in the Touraine countryside, the Chateau de Chenonceau lies. The castle was built in the 16th century and has a long and fascinating history featuring many well known french dynasties. It was originally owned by Katherine Briconnet, and later passed to Diane de Poitiers, who had the castle enlarged and decorated. It was later inherited by Catherine de Medici, Queen of France, who had the castle further expanded and turned into a lavish estate."
+
+ establish_chateau_des_ducs_de_bretagne:0 "Establish Chateau des Ducs de Bretagne"
+ establish_chateau_des_ducs_de_bretagne_desc:0 "The castle of Ducs de Bretagne was built in the 15th century and served as the residence of the Dukes of Britanny. It was an immensely important political and cultural center in the region. It has been used in many roles from royal palace, prison, museum, frontier castle, among other things. The castle houses a collection of art and historical artifacts related to the history of Brittany and the castle itself."
+
+ establish_chateau_de_tanlay:0 "Establish Chateau de Tanlay"
+ establish_chateau_de_tanlay_desc:0 "Built by the Burgundian Dukes in the 16th century, it served as a castle and residential estate for the Burgundian and French Nobles. It was also left in a ruinous condition due to the Huguenot resistance during the French Wars of Religion. It was later repaired during the 17th century and became a gallery for several artifacts and paintings."
+
+ establish_chateau_de_val:0 "Establish Chateau de Val"
+ establish_chateau_de_val_desc:0 "Val Castle lies next to the village of Lanobre and the Correze Cantal lake. It was built during the 13th century. It served as the political center for the Bourbonnais dukes and was later inherited by the Guillot dynasty who served as chamberlain to Charles VII of France. The castle had much influence over the region and became an important defence for the French during the Wars of Religion. After the wars the Guillots owed a lot of money to the Valois dynasty which led to the Val Castle being sold to the Royaly Court in Versailles."
