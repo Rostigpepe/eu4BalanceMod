@@ -667,6 +667,60 @@ tech_nomad_group = {
 	embracement_cost = 1.2
 }
 
+tech_north_american_group = {
+
+    potential = {
+			technology_group = north_american
+			Not = {
+			is_year = 1600
+			}
+	}
+
+	trigger = {
+		technology_group = north_american
+		is_year = 1500
+		NOT = {
+			is_year = 1600
+		}
+	}
+	
+	global_institution_spread = -0.25
+	embracement_cost = 0.3
+}
+
+tech_north_american_group = {
+
+    potential = {
+			technology_group = north_american
+	}
+
+	trigger = {
+		technology_group = nomad_group
+		is_year = 1600
+		NOT = {
+			is_year = 1700
+		}
+	}
+	
+	global_institution_spread = -0.5
+	embracement_cost = 0.6
+}
+
+tech_nomad_group = {
+
+    potential = {
+			technology_group = nomad_group
+	}
+
+	trigger = {
+		technology_group = nomad_group
+		is_year = 1700
+	}
+	
+	global_institution_spread = -1
+	embracement_cost = 1.2
+}
+
 social_conservatism_title = {
 	potential = {
 		current_age = age_of_revolutions

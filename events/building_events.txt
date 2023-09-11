@@ -11,7 +11,7 @@ country_event = {
 		name = building.1.manufactories
         ROOT = {
             country_event = { 
-                id = building.1.1
+                id = BM_building.2
                 days = 1
             } 
         }
@@ -167,9 +167,9 @@ country_event = {
 # Manufactory removal
 
 country_event = {
-	id = BM_building.1.1
-    title = building.1.1.t
-    desc = building.1.1.d
+	id = BM_building.2
+    title = building.2.t
+    desc = building.2.d
 	is_triggered_only = yes
 	picture = CITY_DEVELOPMENT_eventPicture
     

@@ -4,18 +4,21 @@ namespace = npmevent
 #     Initialization Events     #
 ###############################################
 
-on_startup = {
 country_event = {
 	id = npmevent.1
 	title = "npmevent.t.1"
 	desc = "npmevent.d.1"
 	picture = BUDDHA_eventPicture
 	
-	fire_only_once = yes
+	hidden = yes
 	trigger = {
-		NOT = { ai = yes }
-		NOT = { has_country_flag = npmevent_started }
+		NOT = { has_global_flag = npmevent_started }
 	}
+
+	mean_time_to_happen = { 
+		days = 5
+	}	
+	fire_only_once = yes
 
 	immediate = {
 		hidden_effect = {
@@ -109,9 +112,9 @@ country_event = {
 				}
 			}
 			1057  = {
-				add_permanent_province_modifier = {
-					name = bm_lake_baikal
-					duration = -1
+			add_permanent_province_modifier = {
+				name = bm_lake_baikal
+				duration = -1
 				}
 			}
 			2732  = {
@@ -123,9 +126,9 @@ country_event = {
 			1981  = {
 				add_permanent_province_modifier = {
 					name = bm_epstein_island
-					duration = -1
+						duration = -1
+					}
 				}
-			}
 			987  = {
 				add_permanent_province_modifier = {
 					name = bm_niagara_falls
@@ -146,7 +149,6 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { name = "npmevent.a.1" }
-}
 } # end event
