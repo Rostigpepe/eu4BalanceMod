@@ -37,5 +37,5 @@ BM_Muscovy_Events.4.d: "Some Nobles from the former republic have come to us wit
 BM_Muscovy_Events.4.a: "Crack down on the separatists."
 BM_Muscovy_Events.4.b: "Grant some concessions."
 BM_Muscovy_Events.4.c: "The situation works for now."
-BM_Muscovy_Events.4.tta: "Every Owned Province with §YNoble Lands§! loses '§YNoble Lands§!' and set §YLocal Autonomy§! to §Y25.00§!\n"
-BM_Muscovy_Events.4.ttb: "Every Owned Province with §YCrown Lands§! loses '§YCrown Lands§!' and set §YLocal Autonomy§! to §Y35.00§!\n"
+BM_Muscovy_Events.4.tta: "Every Owned Province with §YNoble Lands§! loses '§YNoble Lands§!' and set §YLocal Autonomy§! to §Y10.00§!\n"
+BM_Muscovy_Events.4.ttb: "Every Owned Province with §YCrown Lands§! loses '§YCrown Lands§!' and set §YLocal Autonomy§! to §Y10.00§!\n"

@@ -178,7 +178,6 @@ country_event = {
 			estate = all
 			share = -10
 		}
-
 	}
 }
 
@@ -236,7 +235,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_noble_lands }
 					remove_province_modifier = muscovy_noble_lands
-					set_local_autonomy = 25
+					set_local_autonomy = 10
 				}
 			}
 		}
@@ -247,7 +246,7 @@ country_event = {
 				every_owned_province = {
 					limit = { has_province_modifier = muscovy_crown_lands }
 					remove_province_modifier = muscovy_crown_lands
-					set_local_autonomy = 35
+					set_local_autonomy = 10
 				}
 				change_estate_land_share = {
 					estate = estate_church
