@@ -1,0 +1,678 @@
+
+
+namespace = BM_on_startup
+country_event = {
+	id = BM_on_startup_real_african_colonization.1
+	title = RAC_EVT1TITLE
+	desc = RAC_EVT1DESC
+	picture = ANGRY_MOB_eventPicture
+	hidden = yes
+	
+	fire_only_once = yes
+	trigger = {
+		NOT = { ai = yes }
+		NOT = { has_country_flag = rac_event_started }
+	}
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = rac_event_started
+			
+		maghreb_region = {
+			add_permanent_province_modifier = {
+   				name = rac_modifier
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		add_prestige = 1
+	}
+}
+
+country_event = { #To stop a bunch of Hordes from allying and becoming a major problem for anyone wanting to expand into Central Asia etc
+	id = BM_on_startup_fuckhordes.1
+	title = fuckhordes.1.t
+	desc = fuckhordes.1.d
+	picture = NATIVES_eventPicture
+	
+	hidden = yes
+	trigger = {
+		NOT = { has_global_flag = hordes_hates_each_other_modifier_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = hordes_hates_each_other_modifier_flag
+		GOL = {
+			add_historical_rival = CRI
+			add_historical_rival = KAZ
+			add_historical_rival = NOG
+			add_historical_rival = SHY
+			add_historical_rival = CHG
+			add_historical_rival = OIR
+		}
+		CRI = {
+			add_historical_rival = GOL
+			add_historical_rival = KAZ
+			add_historical_rival = NOG
+			add_historical_rival = SHY
+			add_historical_rival = CHG
+			add_historical_rival = OIR
+		}
+		KAZ = {
+			add_historical_rival = CRI
+			add_historical_rival = GOL
+			add_historical_rival = NOG
+			add_historical_rival = SHY
+			add_historical_rival = CHG
+			add_historical_rival = OIR
+		}
+		NOG = {
+			add_historical_rival = CRI
+			add_historical_rival = KAZ
+			add_historical_rival = GOL
+			add_historical_rival = SHY
+			add_historical_rival = CHG
+			add_historical_rival = OIR
+		}
+		SHY = {
+			add_historical_rival = CRI
+			add_historical_rival = KAZ
+			add_historical_rival = NOG
+			add_historical_rival = GOL
+			add_historical_rival = CHG
+			add_historical_rival = OIR
+		}
+		CHG = {
+			add_historical_rival = CRI
+			add_historical_rival = KAZ
+			add_historical_rival = NOG
+			add_historical_rival = SHY
+			add_historical_rival = GOL
+			add_historical_rival = OIR
+		}
+		OIR = {
+			add_historical_rival = CRI
+			add_historical_rival = KAZ
+			add_historical_rival = NOG
+			add_historical_rival = SHY
+			add_historical_rival = CHG
+			add_historical_rival = GOL
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+# European Diseases
+country_event = {
+	id = BM_on_startup_killallnativesevent.1
+	title = BM_kill_all_natives.t
+	desc = BM_kill_all_natives.d
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = european_diseases_struck }
+		capital_scope = {
+			continent = north_america
+		}
+		any_known_country = {
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+			OR = {
+				any_owned_province = {
+					continent = north_america
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_capital = no
+						owner = { NOT = { num_of_cities = 2 } }
+					}
+				}
+				set_province_flag = NA_smallpox_here
+				every_neighbor_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					set_province_flag = NA_smallpox_here
+				}
+			}
+			set_country_flag = european_diseases_struck
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.25
+			any_known_country = {
+				capital_scope = {
+					continent = europe
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = BM_kill_all_natives.a #Have the gods forsaken us?
+		every_province = {
+			limit = { has_province_flag = NA_smallpox_here }
+			add_province_modifier = {
+				name = inc_smallpox_outbreak
+				duration = 1095
+			}
+			clr_province_flag = NA_smallpox_here
+		}
+	}
+}
+
+# KILLS ALL NATIVES EVENT
+country_event = { #You guessed it, removes natives
+	id = BM_on_startup_remove_natives_events.1
+	title = remove_natives_events.1.t
+	desc = remove_natives_events.1.d
+	picture = NATIVES_eventPicture
+	
+hidden = yes
+	trigger = {
+		NOT = { has_global_flag = natives_removed_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = natives_removed_flag
+		south_america = {
+			limit = {
+				owner = {
+					technology_group = south_american
+					NOT = { 
+						OR = {
+							tag = MPC
+							tag = GUA
+							tag = TPA
+							tag = ARW
+							tag = CAB
+						}
+					}
+				}
+			}
+			cede_province = ---
+			every_owned_province = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+			}
+		}
+		north_america = {
+			limit = {
+				owner = {
+					technology_group = north_american
+					NOT = { 
+						OR = {
+							tag = WCR
+							tag = FOX
+							tag = STA
+							tag = OTT
+							tag = SIO
+							tag = BLA
+							tag = COM
+							tag = SHO
+							tag = CAO
+							tag = MMI
+							tag = ONO
+							tag = ABE
+							tag = KIO
+							tag = APA
+							tag = HDA
+						}
+					}
+				}
+			}
+			cede_province = ---
+			every_owned_province = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+			}
+		}
+		oceania = {
+			limit = {
+				owner = {
+					NOT = { 
+						OR = {
+							tag = HAW
+							tag = TOG
+							tag = PLW
+						}
+					}
+					OR = { technology_group = aboriginal_tech technology_group = polynesian_tech }
+				}
+			}
+			cede_province = ---
+			every_owned_province = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+			}
+		}
+		africa = {
+			limit = {
+				owner = {
+					NOT = { 
+						OR = {
+							tag = MAL
+							tag = JOL
+							tag = JNN
+							tag = TMB
+							tag = SON
+							tag = BEN
+							tag = AIR
+							tag = KBO
+							tag = LOA
+							tag = KON
+							tag = NDO
+							tag = KUB
+							tag = LUB
+							tag = ZIM
+							tag = RZW
+							tag = SFA
+							tag = ZAN
+							tag = AJU
+							tag = MDI
+							tag = ADA
+							tag = ETH
+							tag = DAM
+							tag = JJI
+							tag = ENA
+							tag = KAF
+							tag = WLY
+							tag = HDY
+							tag = MED
+							tag = ALO
+							tag = BEJ
+							tag = ABB
+							tag = MAK
+							tag = MAM
+							tag = TUN
+							tag = FZA
+							tag = GHD
+							tag = TGT
+							tag = MZB
+							tag = TLC
+							tag = MOR
+							tag = MRK
+							tag = SOS
+							tag = TFL
+							tag = DAH
+							tag = BON
+							tag = TYO
+							tag = LND
+							tag = MIR
+							tag = YAT
+							tag = WGD
+							tag = GUR
+						}
+					}
+				}
+			}
+			cede_province = ---
+			every_owned_province = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+			}
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+country_event = { #You guessed it, removes natives
+	id = BM_on_startup_remove_natives_events.2
+	title = remove_natives_events.2.t
+	desc = remove_natives_events.2.d
+	picture = NATIVES_eventPicture
+	
+hidden = yes
+	trigger = {
+		NOT = { has_global_flag = africa_removed_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = africa_removed_flag
+
+		sahel_region = {
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		niger_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		guinea_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		horn_of_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		east_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		central_africa_region = {
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		kongo_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+		south_africa_region = {
+			limit = {
+				NOT = {
+					has_port = yes
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kill_africa_province_modif
+				duration = -1
+			}
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+country_event = { #You guessed it, removes natives
+	id = BM_on_startup_remove_natives_events.3
+	title = remove_natives_events.3.t
+	desc = remove_natives_events.3.d
+	picture = NATIVES_eventPicture
+	
+hidden = yes
+	trigger = {
+		AND = {
+			has_global_flag = africa_removed_flag
+			is_year = 1650
+		}
+	}
+	
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = africa_removed_flag
+
+		every_province = {
+			limit = {
+				has_province_modifier = kill_africa_province_modif
+			}
+			remove_province_modifier = kill_africa_province_modif
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+country_event = { #You guessed it, removes natives
+	id = BM_on_startup_remove_natives_events.4
+	title = remove_natives_events.4.t
+	desc = remove_natives_events.4.d
+	picture = NATIVES_eventPicture
+	
+	hidden = yes
+	trigger = {
+		NOT = { has_global_flag = mossi_kingdom_fixed_flag }
+	}
+	
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = mossi_kingdom_fixed_flag
+		YAT = {
+			inherit = WGD
+			inherit = GUR
+		}
+	}
+
+	option = { #Remove
+	}
+}
+
+
+country_event = {
+	id = BM_on_startup_npmevent.1
+	title = "npmevent.t.1"
+	desc = "npmevent.d.1"
+	picture = BUDDHA_eventPicture
+	
+	hidden = yes
+	trigger = {
+		NOT = { has_global_flag = npmevent_started }
+	}
+
+	mean_time_to_happen = { 
+		days = 1
+	}	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = npmevent_started
+			
+			219  = {
+				add_permanent_province_modifier = {
+					name = bm_toledo_steel
+					duration = -1
+				}
+			}
+			43  = {
+				add_permanent_province_modifier = {
+					name = bm_the_amber_trade
+					duration = -1
+				}
+			}
+			41  = {
+				add_permanent_province_modifier = {
+					name = bm_the_amber_trade
+					duration = -1
+				}
+			}
+			39  = {
+				add_permanent_province_modifier = {
+					name = bm_the_amber_trade
+					duration = -1
+				}
+			}
+			371  = {
+				add_province_triggered_modifier = bm_the_sulfur_of_iceland
+			}
+			2935  = {
+				add_permanent_province_modifier = {
+					name = bm_amazon_estuary_modifier
+					duration = -1
+				}
+			}
+			1147  = {
+				add_permanent_province_modifier = {
+					name = bm_bronze_of_benin
+					duration = -1
+				}
+			}
+			808  = {
+				add_permanent_province_modifier = {
+					name = bm_city_of_gold
+					duration = -1
+				}
+			}
+			343  = {
+				add_permanent_province_modifier = {
+					name = bm_moroccan_rug
+					duration = -1
+				}
+			}
+			2954  = {
+				add_permanent_province_modifier = {
+					name = bm_djerban_jewish_community
+					duration = -1
+				}
+			}
+			151  = {
+				add_province_ = {
+					name = bm_walls_of_constantinople
+					duration = -1
+				}
+			}
+			2002  = {
+				add_permanent_province_modifier = {
+					name = bm_galapagos_natural_selection
+					duration = -1
+				}
+			}
+			1060  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1055  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1056  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1057  = {
+			add_permanent_province_modifier = {
+				name = bm_lake_baikal
+				duration = -1
+				}
+			}
+			2732  = {
+				add_permanent_province_modifier = {
+					name = bm_great_barrier_reef
+					duration = -1
+				}
+			}
+			1981  = {
+				add_permanent_province_modifier = {
+					name = bm_epstein_island
+						duration = -1
+					}
+				}
+			987  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			958  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			4872  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = { name = "npmevent.a.1" }
+} # end event

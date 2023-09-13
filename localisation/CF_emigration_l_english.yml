@@ -1,0 +1,40 @@
+﻿l_english:
+ # Events
+ SD.1.t: "People flee [Root.GetName]"
+ SD.1.desc: "The people of [Root.GetName] have been suffering from the devastation in their province, their fields are barren and houses are burned. The situation has gotten so bad that many are fleeing the area in search of a new home elsewhere. If we act fast we can put a stop to the emigration wave or at least direct it somewhere useful to us. Settling the refugees outside of their homeland might be benificial to us but will cost us a significant amount of money. In the end letting the people go where they wish might be our only option."
+ SD.1.a: "Grant them aid to rebuild"
+ SD.1.b: "Let them go to their brethren in [potential_same_culture_migration_target.GetName]"
+ SD.1.c: "Direct them to [potential_different_culture_migration_target.GetName]"
+ SD.1.d: "Let them leave for [potential_settler_state_migration_target.GetName]"
+ SD.1.e: "Send them to [potential_colony_migration_target.GetName]"
+ SD.1.f: "Let them go where they please"
+ 
+ SD.2.t: "Refugees from [devastated_province_emigration.GetName]"
+ SD.2.desc: "[devastated_province_emigration.Culture.GetName] refugees from [devastated_province_emigration.GetContinentName] have arrived in the port of [potential_port_immigration.GetCapitalName]. They hail from the [devastated_province_emigration.Owner.GetAdjective] province of [devastated_province_emigration.GetName] which has been ravished by recent wars. A decision must be made on where to settle these people, several valid options have been put forward. The first option is to settle the refugees in the city of [potential_city_immigration.GetCapitalName] in the province of [potential_city_immigration.GetName]. The second option is to grant the refugees plots of land in [potential_rural_immigration.GetName]. We could also let them settle right where they arrived in the port of [potential_port_immigration.GetCapitalName]."
+ SD.2.a: "Direct them to the city of [potential_city_immigration.GetName]"
+ SD.2.b: "Grand them fields to work in [potential_rural_immigration.GetName]"
+ SD.2.c: "Let them stay in [potential_port_immigration.GetCapitalName]"
+ SD.2.d: "Spread them over our country to avoid a housing crisis"
+ 
+ # Modifiers
+ devastation_relief: "Devastation Relief"
+ devastation_relief_desc: "The people in this province have received monetary aid to help them endure the current hardships and help them rebuild."
+ refugees_slightly_depopulated: "Slight Depopulation"
+ refugees_slightly_depopulated_desc: "There are some empty houses and unworked fields in this province as a result of people leaving the area."
+ refugees_quite_depopulated: "Depopulation"
+ refugees_quite_depopulated_desc: "There are empty houses and unworked fields in this province as a result of people leaving the area."
+ refugees_very_depopulated: "Severe Depopulation"
+ refugees_very_depopulated_desc: "There are many empty houses and unworked fields in this province as a result of people leaving the area."
+ refugees_from_same_culture: "Slums"
+ refugees_from_same_culture_desc: "Refugees have set up temporary housing in this province after fleeing their homeland."
+ refugees_from_different_culture: "Foreign Slums"
+ refugees_from_different_culture_desc: "Refugees from foreign lands have set up temporary housing in this province after fleeing their homeland. Many of them are having trouble integrating into society because they do not fit in with the local population leading to a rise in crime."
+ dispersed_refugees: "Wandering Refugees"
+ dispersed_refugees_desc: "Refugees that left their homeland after it was devastated are wandering across the country looking for a new home."
+ 
+ # Tooltips
+ refugees_leave_for_settler_state: "The refugees leave for a new life in [potential_settler_state_migration_target.GetName]."
+ refugees_leave_for_colonies: "The refugees are sent to our colony of [potential_colony_migration_target.GetName]."
+ emigrated_dev_tooltip: "Has lost:\n   §R[Root.admDevLost.GetValue]§! Base Tax\n   §R[Root.dipDevLost.GetValue]§! Base Production\n   §R[Root.milDevLost.GetValue]§! Base Manpower"
+ moved_dev_tooltip: "Gain:\n   §G[Root.admDevLost.GetValue]§! Base Tax\n   §G[Root.dipDevLost.GetValue]§! Base Production\n   §G[Root.milDevLost.GetValue]§! Base Manpower"
+ immigrated_dev_tooltip: "Gain:\n   §G[Root.admDevIncoming.GetValue]§! Base Tax\n   §G[Root.dipDevIncoming.GetValue]§! Base Production\n   §G[Root.milDevIncoming.GetValue]§! Base Manpower"

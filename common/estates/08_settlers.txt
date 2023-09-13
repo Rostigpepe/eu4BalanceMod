@@ -1,0 +1,174 @@
+estate_settlers = {
+	icon = 12
+	
+	# Used for when declaring independence
+	independence_government = republic
+	starting_reform = peasant_republic
+	independence_tech_group = western_group
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_terrain = steppe
+				has_terrain = savannah
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+	# If true, country will get estate
+	
+	trigger = {	
+		is_nomad = no
+		NOT = { has_estate = estate_cossacks }
+		has_idea  = general_colonization_law # (allows foreign settlers according to description)
+		capital_scope = { # In the new world
+			OR = {
+				continent = africa
+				continent = south_america
+				continent = north_america
+				continent = oceania
+				AND = {
+					is_random_new_world = yes
+					continent = new_world
+				}
+			}
+		}
+		
+		# Logical requirements for receiving immigration
+		num_of_ports = 1 # New world nation has sea access
+		any_known_country = { # Old world nation
+			has_institution = new_world_i # Nation knows of colonialism	
+			knows_country = PREV # Old world nation knows new world nation exists			
+			technology_group = PREV # Old world nation has same technology group			
+		} 
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		culture_conversion_cost = -0.2
+		colonist_placement_chance = 0.1
+	}
+	country_modifier_neutral = {
+		culture_conversion_cost = -0.1
+		colonist_placement_chance = 0.05
+	}	
+	country_modifier_angry = {
+		colonist_placement_chance = -0.1
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		settlers_loyalty_modifier = 0.2
+	}
+
+	# Influence modifiers
+	base_influence = 25
+	influence_modifier = {
+		desc = settlers_settlement_needed
+		trigger = {
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							has_terrain = steppe
+							has_terrain = savannah
+						}				
+						NOT = { development = 15 }
+					}
+					amount = 5
+				}
+				any_owned_province = {
+					is_colony = yes
+				}
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+
+	influence_from_dev_modifier = 2.0
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	
+	loyalty_modifier = {
+		desc = settlers_in_republic
+		trigger = {
+			government = republic
+		}
+		loyalty = 10
+	}
+	
+	loyalty_modifier = {
+		desc = settlers_in_parliament
+		trigger = {
+			has_parliament = yes
+		}
+		loyalty = 10
+	}	
+	
+	#Custom Names
+	custom_name = {
+		desc = estate_trekboers
+		trigger = {
+			culture_group = dutch
+			capital_scope = { region = south_africa_region }
+		}
+	}
+	
+	color = { 200 150 150 }
+
+	privileges = {
+		estate_settlers_land_rights
+		estate_settlers_plains_settlement
+		estate_settlers_expand_borders	
+		estate_settlers_prospecting
+	}
+
+	agendas = {
+		estate_settlers_hire_advisor
+		estate_settlers_develop_x
+		estate_settlers_wrong_culture_develop_x
+		estate_settlers_expand_into_x
+		estate_settlers_colonise_X
+		estate_settlers_complete_conquest_of_x
+	}
+}

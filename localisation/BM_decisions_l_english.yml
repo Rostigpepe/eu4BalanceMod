@@ -54,3 +54,60 @@
 
  establish_chateau_de_val:0 "Establish Chateau de Val"
  establish_chateau_de_val_desc:0 "Val Castle lies next to the village of Lanobre and the Correze Cantal lake. It was built during the 13th century. It served as the political center for the Bourbonnais dukes and was later inherited by the Guillot dynasty who served as chamberlain to Charles VII of France. The castle had much influence over the region and became an important defence for the French during the Wars of Religion. After the wars the Guillots owed a lot of money to the Valois dynasty which led to the Val Castle being sold to the Royaly Court in Versailles."
+
+ #MORE CURIA DECISIONS
+ MCO_delegate_nunzio_apostolico_title:0 "§YDelegate Nunzio Apostolico§!"
+ MCO_delegate_nunzio_apostolico_desc:0 "Delegate Nunzio Apostolico in our country."
+
+ MCO_support_fighting_heresy_title:0 "§YSupport Fighting Heresy§!"
+ MCO_support_fighting_heresy_desc:0 "Support fighting the heretics in catholic countries."
+
+ MCO_intensified_new_world_missions_title:0 "§YIntensified New World Missions§!"
+ MCO_intensified_new_world_missions_desc:0 "Focus more on spreading catholicism in colonies."
+
+ MCO_exactionem_in_overlord_fides_title:0 "§YExactionem in Senior Fides§!"
+ MCO_exactionem_in_overlord_fides_desc:0 "Receive Papal support as a legal overlord of our subjects."
+
+ MCO_fund_a_new_basilica_title:0 "§YFund a new Basilica§!"
+ MCO_fund_a_new_basilica_desc:0 "Fund a new Basilica in $CAPITAL_CITY$"
+
+ MCO_get_acces_to_the_vatican_library_title:0 "§YGet access to Vatican Library§!"
+ MCO_get_acces_to_the_vatican_library_desc:0 "Buy access to knowledge hidden in Vatican Library."
+
+ BM_MCD_ruler_studies_administration:0 "Vatican Administrative Studies"
+ desc_BM_MCD_ruler_studies_administration:0 "Our ruler has studied ancient empires and learnt much from their adminstration."
+ BM_MCD_ruler_studies_diplomacy:0 "Vatican Diplomatic Studies"
+ desc_BM_MCD_ruler_studies_diplomacy:0 "Our ruler has studied the intricacies of diplomacy and treaties."
+ BM_MCD_ruler_studies_art_of_war:0 "Vatican Art of War Studies"
+ desc_BM_MCD_ruler_studies_art_of_war:0 "Our ruler has studied texts regarding military advancements, ancient battles, and tactics, gaining much knowledge in the Art of War."
+
+ MCO_show_curia_decisions_title:0 "§YShow Curia Decisions§!"
+ MCO_show_curia_decisions_desc:0 "Show avalible curia decisions."
+
+ MCO_hide_curia_decisions_title:0 "§YHide Curia Decisions§!"
+ MCO_hide_curia_decisions_desc:0 "Hide all curia decisions."
+
+ MCO_root_inquisition_title:0 "§Y$COUNTRY_ADJ$ Inquisition§!"
+ MCO_root_inquisition_desc:0 "Carry out the $COUNTRY_ADJ$ Holy Inquisition."
+
+ MCO_use_curias_treasury_to_fund_new_building_title:0 "§YUse Curia's Treasury to develop your country§!"
+ MCO_use_curias_treasury_to_fund_new_building_desc:0 "Support building new structures in your country with help of curia's gold."
+
+ #MODIFIERS
+ MCO_delegate_nunzio_apostolico_modifier:0 "Nunzio Apostolico"
+ desc_MCO_delegate_nunzio_apostolico_modifier:0 "An ecclesiastical diplomat is serving us as an envoy."
+
+ MCO_support_fighting_heresy_modifier:0 "Papal support in Fighting Heresy"
+ desc_MCO_support_fighting_heresy_modifier:0 "We have Papal support in fighting heretics in our country."
+
+ MCO_intensified_new_world_missions_modifier:0 "Intensified New World Missions"
+ desc_MCO_intensified_new_world_missions_modifier:0 "We are focusing on keeping catholic traditions in our colonies."
+
+ MCO_exactionem_in_overlord_fides_modifier:0 "Exactionem in Overlord Fides"
+ desc_MCO_exactionem_in_overlord_fides_modifier:0 "As the Pope said, we are the legal overlord and our subjects shall stay loyal"
+
+ MCO_root_inquisition_modifier:0 "Holy Inquisition"
+ desc_MCO_root_inquisition_modifier:0 "Holy Inquisition is taking place in this country."
+
+ MCO_use_curias_treasury_to_fund_new_building_modifier:0 "Using Curia's Treasury for Self Benefit"
+ desc_MCO_use_curias_treasury_to_fund_new_building_modifier:0 "We are using some Curia's gold for funding our own development."

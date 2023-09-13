@@ -1,0 +1,397 @@
+country_decisions = {
+	ned_flee_to_saf_monarchy = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			NOT = { has_country_flag = fled_to_saf }
+			normal_or_historical_nations = yes
+			tag = NED
+			government = monarchy
+			OR = {
+				any_subject_country = {
+					is_colonial_nation = yes
+					ai = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				any_owned_province = {
+					region = south_africa_region
+					is_colony = no
+					has_owner_culture = yes
+					has_owner_religion = yes
+				}
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					continent = europe
+					value = 5
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = saf_provinces_tooltip
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							region = south_africa_region
+						}
+						num_of_cities = 4
+					}
+				}
+				
+				num_of_owned_provinces_with = {
+					region = south_africa_region
+					value = 4
+				}
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				FROM = { inherit = PREV }
+			}
+			
+			change_tag = ZAR
+			
+			custom_tooltip = saf_move_capital_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						1177 = {
+							owned_by = ROOT
+						}
+					}
+					1177 = {
+						move_capital_effect = yes
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							region = south_africa_region
+						}
+						move_capital_effect = yes
+					}
+				}					
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					religion_group = christian					
+				}
+				custom_tooltip = saf_netherlands_tooltip
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							continent = europe
+						}
+						add_core = NED
+					}
+					release = NED
+					NED = {
+						change_government = monarchy
+						add_government_reform = feudalism_reform
+						swap_non_generic_missions = yes
+					}
+					create_union = NED
+				}
+				hidden_effect = {
+					every_province = {
+						limit = {
+							continent = europe
+							is_core = ROOT
+						}
+						add_core = NED
+						remove_core = ZAR
+					}
+					
+					every_province = {
+						limit = {
+							continent = europe
+							is_claim = ROOT
+						}
+						add_claim = NED
+						remove_claim = ZAR
+					}
+					
+					every_province = {
+						limit = {
+							continent = europe
+							is_permanent_claim = ROOT
+						}
+						#add_permanent_claim = NED
+						#remove_permanent_claim = ZAR
+					}
+				}
+			}
+			add_stability = -2
+			add_prestige = -25
+			set_government_rank = 1	
+			if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+			set_country_flag = changed_from_colonial_nation
+			set_country_flag = fled_to_saf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ned_flee_to_saf_republic = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			NOT = { has_country_flag = fled_to_saf }
+			normal_or_historical_nations = yes
+			tag = NED
+			government = republic
+			OR = {
+				any_subject_country = {
+					is_colonial_nation = yes
+					ai = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				any_owned_province = {
+					region = south_africa_region
+					is_colony = no
+					has_owner_culture = yes
+					has_owner_religion = yes
+				}
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					continent = europe
+					value = 5
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = saf_provinces_tooltip
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							region = south_africa_region
+						}
+						num_of_cities = 4
+					}
+				}
+				
+				num_of_owned_provinces_with = {
+					region = south_africa_region
+					value = 4
+				}
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				FROM = { inherit = PREV }
+			}
+			
+			change_tag = ZAR
+			
+			custom_tooltip = saf_move_capital_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						1177 = {
+							owned_by = ROOT
+						}
+					}
+					1177 = {
+						move_capital_effect = yes
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							region = south_africa_region
+						}
+						move_capital_effect = yes
+					}
+				}					
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					religion_group = christian					
+				}
+				custom_tooltip = saf_netherlands_tooltip
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							continent = europe
+						}
+						add_core = NED
+					}
+					release = NED
+					NED = {
+						change_government = republic
+						add_government_reform = dutch_republic_reform
+						swap_non_generic_missions = yes
+					}
+					create_vassal = NED
+				}
+				hidden_effect = {
+					every_province = {
+						limit = {
+							continent = europe
+							is_core = ROOT
+						}
+						add_core = NED
+						remove_core = ZAR
+					}
+					
+					every_province = {
+						limit = {
+							continent = europe
+							is_claim = ROOT
+						}
+						add_claim = NED
+						remove_claim = ZAR
+					}
+					
+					every_province = {
+						limit = {
+							continent = europe
+							is_permanent_claim = ROOT
+						}
+						#add_permanent_claim = NED
+						#remove_permanent_claim = ZAR
+					}
+				}
+			}
+			add_stability = -2
+			add_prestige = -25
+			set_government_rank = 1	
+			if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+			set_country_flag = changed_from_colonial_nation
+			set_country_flag = fled_to_saf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ned_form_saf = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = NED
+			
+			NOT = {
+				any_owned_province = { 
+					continent = europe
+				}
+			}			
+			
+			OR = {
+				any_subject_country = {
+					is_colonial_nation = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				any_owned_province = {
+					region = south_africa_region
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+				
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = saf_provinces_tooltip
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							region = south_africa_region
+						}
+						num_of_cities = 4
+					}
+				}
+				
+				num_of_owned_provinces_with = {
+					region = south_africa_region
+					value = 4
+				}
+			}	
+		}
+		effect = {
+			change_tag = ZAR
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				FROM = { inherit = PREV }
+			}
+			custom_tooltip = saf_move_capital_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						1177 = {
+							owned_by = ROOT
+						}
+					}
+					1177 = {
+						move_capital_effect = yes
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							region = south_africa_region
+						}
+						move_capital_effect = yes
+					}
+				}					
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			
+			add_prestige = -25
+			set_government_rank = 1	
+			if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+			set_country_flag = fled_to_saf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

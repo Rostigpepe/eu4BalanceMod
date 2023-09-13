@@ -1,0 +1,172 @@
+prospector_gold_possible = {		
+	has_owner_culture = yes
+	OR = {
+		# Gold Regions and areas
+		region = cascadia_region 
+		region = australia_region 
+		region = california_region 
+		region = south_africa_region 
+		region = central_africa_region 
+		region = peru_region 
+		region = upper_peru_region 
+		region = mexico_region 
+		region = rio_grande_region 
+		region = central_america_region 
+		area = goias_area 
+		area = pontal_area 
+		area = mato_grosso_area 
+		area = ofaie_area 
+		area = minas_gerais_area 
+		area = diamantina_area 
+		area = guapore_area 
+		area = grao_para_area 
+		area = amapa_area 
+		area = ucayali_area 
+		area = amazon_area 
+		AND = {
+			is_random_new_world = yes
+			continent = new_world
+		}
+	}	
+	OR = {
+		harsh_terrain = yes		
+		prospector_gold_likely = yes
+	}		
+	NOT = { trade_goods = gold } 		
+	
+	owner = {
+		NOT = {
+			gold = 4 # Not unlimited gold
+		}
+	}
+}
+
+prospector_gold_likely = {
+	OR = {
+		# Provinces specified to have high gold chance
+		province_id = 852		# Mexico
+		province_id = 853		# Huastec
+		province_id = 854		# Sayultecas
+		province_id = 2617		# Huichol
+		province_id = 856		# Zacatecas
+		province_id = 857		# Guichichil
+		province_id = 858		# Tamaulipas
+		province_id = 2615		# Guamares
+		province_id = 4781		# Transvaal (Johannesburg mines)
+	}			
+	NOT = { trade_goods = gold } 
+}
+
+prospector_gems_possible = {
+	has_owner_culture = yes
+	OR = {
+		region = australia_region 
+		region = south_africa_region 
+		region = central_africa_region 
+		region = central_america_region 
+		region = peru_region 
+		region = upper_peru_region 
+		region = colombia_region 
+		continent = oceania 
+		area = minas_gerais_area
+		area = diamantina_area 
+		area = amazon_area 
+		area = bogota_area 
+		area = popayan_area 
+		area = venezuela_area 
+		area = guyana_area 
+		area = upper_guyana_area 
+		area = guapore_area 
+		area = amapa_area
+		area = grao_para_area 
+		area = goias_area 
+		area = mato_grosso_area 
+		area = pontal_area 
+		area = guapore_area 
+		AND = {
+			is_random_new_world = yes
+			continent = new_world
+		}
+	}
+	harsh_terrain = yes
+	prospectable_good = no	
+}
+
+prospector_copper_possible = {
+	has_owner_culture = yes
+	OR = {
+		province_id = 990
+		area = minas_gerais_area 
+		area = diamantina_area 
+		area = mato_grosso_area 
+		area = great_valley_area 
+		area = susquehanna_area 
+		area = hudson_valley_area 
+		area = lake_superior_area 
+		area = south_iroquoisia_area 
+		area = upper_ontario_area 
+		area = laurentian_area 
+		area = inner_ontario_area 
+		area = maryland_area 
+		area = ofaie_area 
+		region = west_siberia_region 
+		region = east_siberia_region 
+		region = central_africa_region 
+		AND = {
+			is_random_new_world = yes
+			continent = new_world
+		}
+	}
+	harsh_terrain = yes
+	NOT = {
+		has_terrain = jungle
+		has_terrain = desert
+	}
+	prospectable_good = no	
+}
+
+prospector_iron_possible = {
+	has_owner_culture = yes
+	OR = {
+		region = central_africa_region
+		region = south_africa_region # Based on iron ore mines in modern South Africa
+		province_id = 990
+		area = great_valley_area
+		area = susquehanna_area
+		area = hudson_valley_area
+		area = lake_superior_area
+		area = south_iroquoisia_area
+		area = upper_ontario_area
+		area = laurentian_area
+		area = inner_ontario_area
+		area = maryland_area
+		area = ofaie_area
+		province_id = 18
+		AND = {
+			is_random_new_world = yes
+			continent = new_world
+		}
+	}
+	harsh_terrain = yes
+	prospectable_good = no	
+}
+
+harsh_terrain = {
+	OR = {
+		# Harsh terrain
+		has_terrain = mountain
+		has_terrain = hills
+		has_terrain = highlands
+		has_terrain = desert 
+		has_terrain = jungle
+	}		
+}
+
+prospectable_good = {	
+	OR = {
+		trade_goods = gold 
+		trade_goods = gems
+		trade_goods = copper
+		trade_goods = iron
+	}	
+}

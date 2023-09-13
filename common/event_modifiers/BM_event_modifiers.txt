@@ -113,3 +113,120 @@ taiping_heavenly_kingdom_modifier = {
 	ae_impact = 0.1
 	global_missionary_strength = 0.01
 }
+
+
+# MORE CURIA DECISIONS MODIFIERS
+MCO_delegate_nunzio_apostolico_modifier = {
+	diplomats = 1
+	improve_relation_modifier = 0.1
+}
+
+MCO_support_fighting_heresy_modifier = {
+	global_heretic_missionary_strength = 0.02
+}
+
+MCO_intensified_new_world_missions_modifier = {
+	native_assimilation = 0.25
+	global_missionary_strength = 0.01
+}
+
+MCO_exactionem_in_overlord_fides_modifier = {
+	diplomatic_annexation_cost = -0.15
+	reduced_liberty_desire = 10
+}
+
+MCO_root_inquisition_modifier = {
+	missionaries = 1
+	tolerance_own = 1
+	tolerance_heretic = -2
+	tolerance_heathen = -2
+}
+
+MCO_use_curias_treasury_to_fund_new_building_modifier = {
+	development_cost = -0.05
+	build_cost = -0.1
+}
+
+MCO_support_holy_orders = {
+	establish_order_cost = -0.25
+	relation_with_same_religion = 10
+}
+
+BM_MCD_ruler_studies_administration = {
+	overextension_impact_modifier = -0.1
+	national_focus_years = -5
+	monthly_reform_progress = 0.2
+}
+
+BM_MCD_ruler_studies_diplomacy = {
+	all_estate_loyalty_equilibrium = 0.05
+	province_warscore_cost = -0.05
+	diplomatic_reputation = 2
+}
+
+BM_MCD_ruler_studies_art_of_war = {
+	warscore_from_battles_modifier = 0.1
+	reinforce_speed = 0.15
+	army_tradition = 1
+}
+
+
+# SETTLERS AND COLONISATION MODIFIERS
+# Province
+estate_settlers_plains_settlement_mod = {
+	local_development_cost = -0.10
+}
+estate_settlers_gold_rush_mod = {
+	local_development_cost = -0.10
+	local_unrest = 2
+}
+estate_settlers_production_changed_mod = {
+	trade_goods_size_modifier = -0.25
+}
+
+devastation_relief = {
+	local_development_cost = -0.05
+	local_monthly_devastation = -0.1
+}
+
+refugees_slightly_depopulated = {
+	local_development_cost = -0.05
+	local_autonomy = 0.05
+}
+
+refugees_quite_depopulated= {
+	local_development_cost = -0.10
+	local_autonomy = 0.075
+}
+
+refugees_very_depopulated= {
+	local_development_cost = -0.20
+	local_autonomy = 0.10
+}
+
+refugees_from_same_culture = {
+	local_development_cost = 0.10
+}
+
+refugees_from_different_culture = {
+	local_development_cost = 0.10
+	local_unrest = 2
+}
+
+# Country
+settler_desertion = {
+	development_cost = 0.2
+	global_tax_modifier = -0.1
+	culture_conversion_cost = 0.2
+	global_colonial_growth = -20
+	colonist_placement_chance = -0.05
+}
+
+the_abolish_slavery_early_act = {
+	global_tax_modifier = -0.05
+	stability_cost_modifier = -0.05
+}
+
+dispersed_refugees = {
+	development_cost = -0.05
+}

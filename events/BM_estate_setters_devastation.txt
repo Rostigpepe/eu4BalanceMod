@@ -1,0 +1,635 @@
+namespace = SD
+province_event = { # Causes slight depopulation
+	id = SD.1
+	title = SD.1.t
+	desc = SD.1.desc
+	picture = {
+		trigger = { has_dlc = "Art Of War" }
+		picture = REFUGEES_ESCAPING_eventPicture
+	}
+	picture = {
+		trigger = { NOT = { has_dlc = "Art Of War" } }
+		picture = VILLAGE_BURNING_eventPicture
+	}
+
+	trigger = {
+		NOT = { has_province_modifier = devastation_relief }
+		is_city = yes
+		development = 4
+		OR = {
+			AND = {
+				devastation = 20
+				NOT = { has_province_modifier = refugees_slightly_depopulated }
+			}
+			AND = {
+				devastation = 40
+				NOT = { has_province_modifier = refugees_quite_depopulated }
+			}
+			AND = {
+				devastation = 60
+				NOT = { has_province_modifier = refugees_very_depopulated }
+			}
+		}
+		owner = { primitives = no }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = devastated_province_emigration
+
+			determine_emigration = yes
+			
+			if = { # Same culture migration target province
+				limit = {
+					owner = {
+						any_owned_province = {
+							NOT = { devastation = 5 } 
+							culture = ROOT
+							is_city = yes
+						}
+					}
+				}
+				owner = {
+					random_owned_province = {
+						limit = { 
+							NOT = { devastation = 5 } 
+							culture = ROOT
+							is_city = yes
+						}
+						save_event_target_as = potential_same_culture_migration_target
+					}
+				}
+			}
+			
+			if = { # Primary culture migration target province
+				limit = {
+					NOT = { has_owner_culture = yes }
+					owner = {
+						any_owned_province = {
+							NOT = { devastation = 5 } 
+							has_owner_culture = yes
+							is_city = yes
+						}
+					}
+				}
+				owner = {
+					random_owned_province = {
+						limit = { 
+							NOT = { devastation = 5 } 
+							has_owner_culture = yes
+							is_city = yes
+						}
+						save_event_target_as = potential_different_culture_migration_target
+					}
+				}
+			}
+			
+			if = { # Own colony migration target country
+				limit = {
+					owner = {
+						has_institution = new_world_i # Nation knows of colonialism	
+						any_subject_country  = {							
+							has_estate = estate_settlers
+						}
+					}
+				}
+				owner = {
+					random_subject_country = {
+						limit = {				
+							has_estate = estate_settlers
+						}						
+						save_event_target_as = potential_colony_migration_target
+					}
+				}
+			}
+			
+			if = { # Settler nation migration target country
+				limit = {
+					owner = {
+						has_institution = new_world_i # Nation knows of colonialism	
+						any_known_country = {
+							knows_country = PREV # Old world nation knows new world nation exists					
+							technology_group = PREV # Old world nation has same technology group				
+							has_estate = estate_settlers
+							is_subject = no 
+							reverse_has_opinion = {
+								who = PREV
+								value = 0
+							}
+						}
+					}
+				}
+				owner = {
+					random_known_country = {
+						limit = {
+							knows_country = PREV # Old world nation knows new world nation exists					
+							technology_group = PREV # Old world nation has same technology group				
+							has_estate = estate_settlers
+							is_subject = no 
+							reverse_has_opinion = {
+								who = PREV
+								value = 0
+							}
+						}
+						save_event_target_as = potential_settler_state_migration_target
+					}
+				}
+			}
+			emigrate_development = yes
+		}				
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				war_exhaustion = 10
+			}
+		}
+		modifier = {
+			factor = 2			
+			NOT = { development = 10 }			
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				NOT = { 						
+					any_known_country = {
+						has_estate = estate_settlers
+						is_subject = no
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # Provide relief
+		name = SD.1.a
+		ai_chance = { 
+			factor = 30
+			modifier = {
+				factor = 0.33
+				has_saved_event_target = potential_settler_state_migration_target
+			}
+			modifier = {
+				factor = 0
+				NOT = { 
+					owner = { years_of_income = 0.3 } 
+					num_of_loans = 1
+				}
+				
+			}
+		}
+							
+		hidden_effect = {			
+			save_incoming_dev = {
+				scope = event_target:devastated_province_emigration
+				admDev = admDevLost
+				dipDev = dipDevLost
+				milDev = milDevLost
+			}
+		}		
+		
+		owner = { add_years_of_income = -0.3 }
+		
+		event_target:devastated_province_emigration = {
+			custom_tooltip = emigrated_dev_tooltip
+		}
+			
+		event_target:devastated_province_emigration = {		
+			custom_tooltip = moved_dev_tooltip						
+			add_province_modifier = { 
+				name = devastation_relief
+				duration = 1825
+			}		
+			hidden_effect = {
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}
+			}	
+			remove_province_modifier = refugees_slightly_depopulated
+		}
+	}
+	
+	option = { # Send them to a province with same culture
+		name = SD.1.b
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 0
+				NOT = { 
+					owner = { years_of_income = 0.25 } 
+					num_of_loans = 1
+				}
+			}
+		}
+		
+		trigger = {
+			has_saved_event_target = potential_same_culture_migration_target
+		}
+		
+		hidden_effect = {			
+			save_incoming_dev = {
+				scope = event_target:potential_same_culture_migration_target
+				admDev = admDevLost
+				dipDev = dipDevLost
+				milDev = milDevLost
+			}
+		}
+		
+		owner = { add_years_of_income = -0.25 }	
+		
+		event_target:devastated_province_emigration = {
+			custom_tooltip = emigrated_dev_tooltip
+		}
+
+		event_target:potential_same_culture_migration_target = {	
+			custom_tooltip = moved_dev_tooltip
+			add_province_modifier = { 
+				name = refugees_from_same_culture
+				duration = 1825
+			}
+			
+			hidden_effect = {
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}
+			}				
+		}					
+	}
+	
+	option = { # Send them to a province with different culture
+		name = SD.1.c
+		ai_chance = { 
+			factor = 15
+			modifier = {
+				factor = 0
+				NOT = { 
+					owner = { years_of_income = 0.3 } 
+					num_of_loans = 1
+				}
+			}
+		}
+		
+		trigger = {
+			has_saved_event_target = potential_different_culture_migration_target
+		}
+				
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_different_culture_migration_target
+				admDev = admDevLost
+				dipDev = dipDevLost
+				milDev = milDevLost
+			}
+		}
+		
+		owner = { add_years_of_income = -0.3 }	
+		
+		event_target:devastated_province_emigration = {
+			custom_tooltip = emigrated_dev_tooltip
+		}
+					
+		event_target:potential_different_culture_migration_target = {		
+			custom_tooltip = moved_dev_tooltip
+			if = {
+				limit = { culture_group = event_target:devastated_province_emigration }
+				add_province_modifier = { 
+					name = refugees_from_same_culture
+					duration = 1825
+				}
+			}
+			else = {
+				add_province_modifier = { 
+					name = refugees_from_different_culture
+					duration = 1825
+				}
+			}
+			
+			hidden_effect = {
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}
+			}
+		}		
+	}
+	
+	option = { # Send them to a settler state
+		name = SD.1.d
+		ai_chance = { factor = 35 }
+		
+		trigger = {
+			has_saved_event_target = potential_settler_state_migration_target
+		}
+		
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_settler_state_migration_target
+				admDev = admDevLost
+				dipDev = dipDevLost
+				milDev = milDevLost
+			}
+		}
+		
+		event_target:devastated_province_emigration = {
+			custom_tooltip = emigrated_dev_tooltip
+		}
+		
+		event_target:potential_settler_state_migration_target = {				
+			country_event = { 
+				id = SD.2
+				tooltip = refugees_leave_for_settler_state
+			}
+		}		
+	}
+	
+	option = { # Send them to the colonies
+		name = SD.1.e 
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 0
+				NOT = { 
+					owner = { years_of_income = 0.15 } 
+					num_of_loans = 1
+				}
+			}
+		}
+		
+		trigger = {
+			has_saved_event_target = potential_colony_migration_target
+		}
+				
+		
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_colony_migration_target
+				admDev = admDevLost
+				dipDev = dipDevLost
+				milDev = milDevLost
+			}
+		}
+		
+		owner = { add_years_of_income = -0.15 }		
+		
+		event_target:devastated_province_emigration = {
+			custom_tooltip = emigrated_dev_tooltip
+		}
+						
+		event_target:potential_colony_migration_target = {					
+			country_event = { 
+				id = SD.2
+				tooltip = refugees_leave_for_colonies
+			}
+		}					
+	}
+	
+	option = { # Let them go wherever they please
+		name = SD.1.f
+		ai_chance = { factor = 20 }
+		
+		trigger = {
+			NOT = { has_saved_event_target = potential_settler_state_migration_target }					
+		}
+		
+		owner = {
+			add_country_modifier = { 
+				name = dispersed_refugees
+				duration = 1825
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SD.2
+	title = SD.2.t
+	desc = SD.2.desc
+	
+	picture = EUROPEAN_REFUGEES_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = { # City migration target province
+				limit = {				
+					any_owned_province = {
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+						OR = {
+							is_capital = yes
+							development = 15
+						}
+					}					
+				}
+				
+				random_owned_province = {
+					limit = { 
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+						OR = {
+							is_capital = yes
+							development = 15
+						}
+					}
+					save_event_target_as = potential_city_immigration
+				}				
+			}
+			
+			if = { # Rural migration target province
+				limit = {				
+					any_owned_province = {
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+					}					
+				}
+				
+				random_owned_province = {
+					limit = { 
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+					}
+					save_event_target_as = potential_rural_immigration
+				}				
+			}
+			
+			if = { # Port migration target province
+				limit = {				
+					any_owned_province = {
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+						has_port = yes
+					}					
+				}
+				
+				random_owned_province = {
+					limit = { 
+						NOT = { devastation = 5 } 
+						culture = ROOT
+						is_city = yes
+						has_port = yes
+					}
+					save_event_target_as = potential_port_immigration
+				}				
+			}
+		}
+	}
+	
+	option = { # Settle them in a city
+		name = SD.2.a
+				
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_city_immigration
+				admDev = admDevIncoming
+				dipDev = dipDevIncoming
+				milDev = milDevIncoming
+			}
+		}
+		
+		event_target:potential_city_immigration = {		
+			custom_tooltip = immigrated_dev_tooltip
+			hidden_effect = {
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}		
+			}
+			
+			if = {
+				limit = {
+					event_target:devastated_province_emigration = {
+						culture_group = event_target:potential_city_immigration
+					}
+				}
+				add_province_modifier = { 
+					name = refugees_from_same_culture
+					duration = 1825
+				}
+			}
+			else = {
+				add_province_modifier = { 
+					name = refugees_from_different_culture
+					duration = 1825
+				}
+			}
+		}		
+	}
+	
+	option = { # Settle them in the countryside
+		name = SD.2.b
+				
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_rural_immigration
+				admDev = admDevIncoming
+				dipDev = dipDevIncoming
+				milDev = milDevIncoming
+			}
+		}
+		
+		event_target:potential_rural_immigration = {	
+			custom_tooltip = immigrated_dev_tooltip
+			hidden_effect = {		
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}		
+			}
+			
+			if = {
+				limit = {
+					event_target:devastated_province_emigration = {
+						culture_group = event_target:potential_rural_immigration 
+					}
+				}
+				add_province_modifier = { 
+					name = refugees_from_same_culture
+					duration = 1825
+				}
+			}
+			else = {
+				add_province_modifier = { 
+					name = refugees_from_different_culture
+					duration = 1825
+				}
+			}
+		}		
+	}
+	
+	option = { # Settle them in a port
+		name = SD.2.c
+				
+		
+		hidden_effect = {
+			save_incoming_dev = {
+				scope = event_target:potential_port_immigration
+				admDev = admDevIncoming
+				dipDev = dipDevIncoming
+				milDev = milDevIncoming
+			}
+		}
+		
+		event_target:potential_port_immigration = {		
+			custom_tooltip = immigrated_dev_tooltip
+			hidden_effect = {
+				immigrate_development = {
+					admDev = admDevIncoming
+					dipDev = dipDevIncoming
+					milDev = milDevIncoming
+				}		
+			}
+			
+			if = {
+				limit = {
+					event_target:devastated_province_emigration = {
+						culture_group = event_target:potential_port_immigration
+					}
+				}
+				add_province_modifier = { 
+					name = refugees_from_same_culture
+					duration = 1825
+				}
+			}
+			else = {
+				add_province_modifier = { 
+					name = refugees_from_different_culture
+					duration = 1825
+				}
+			}
+		}		
+	}
+	
+	option = { # Let them go wherever they please
+		name = SD.2.d
+		
+		owner = {
+			add_country_modifier = { 
+				name = dispersed_refugees
+				duration = 1825
+			}
+		}
+	}
+}

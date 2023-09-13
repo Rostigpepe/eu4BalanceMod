@@ -1,0 +1,565 @@
+namespace = AF
+country_event = {
+	id = AF.1
+	title = AF.1.t
+	desc = AF.1.d
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 1182
+		owns = 1177
+		has_estate = estate_settlers
+		1177 = {
+			is_colony = no
+			same_continent = CAPITAL
+			has_owner_culture = yes
+			has_owner_religion = yes
+		}
+		1182 = {
+			is_colony = no
+			same_continent = CAPITAL
+			has_owner_culture = yes
+			has_owner_religion = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = AF.1.a
+		1177 = {
+			add_province_modifier = {
+				name = important_natural_harbor
+				duration = -1
+			}
+		}
+		1182 = {
+			add_province_modifier = {
+				name = important_natural_harbor
+				duration = -1
+			}
+			center_of_trade = 1
+		}		
+	}
+}
+
+country_event = {
+	id = AF.2
+	title = "EVTNAME9520"
+	desc = "EVTDESC9520"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		has_country_modifier = ast_the_abolish_slavery_act
+		any_owned_province = { trade_goods = slaves }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA9520"
+		every_owned_province = {
+			limit = { trade_goods = slaves }
+			change_trade_goods = random
+			remove_building = tradecompany
+			if = {
+				limit = { has_province_modifier = slave_entrepot }
+				remove_province_modifier = slave_entrepot
+			}
+		}
+	}
+}
+
+country_event = { # Dutch South Africa spawn
+	id = AF.3
+	title = AF.3.t
+	desc = AF.3.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		culture = dutch
+		NOT = { exists = ZAR }
+		any_owned_province = {
+			region = south_africa_region
+			is_colony = no
+			has_owner_culture = yes
+			has_owner_religion = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = { # Keep direct control
+		name = AF.3.a
+		custom_tooltip = south_africa_direct_control
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { # Release republic
+		name = AF.3.ba
+		ai_chance = { factor = 0 }
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV	
+			add_core = ZAR
+		}
+		
+		release = ZAR
+		
+		create_subject = {
+			subject_type = colony
+			subject = ZAR
+		}
+		
+		hidden_effect = {
+			ZAR = {
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_government_rank = 1	
+				adopt_reform_progress = PREV
+			}
+		}
+	}
+	
+	option = { # Release republic play as
+		name = AF.3.bb
+		ai_chance = { factor = 0 }
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV				
+			add_core = ZAR
+		}			
+		
+		release = ZAR
+		
+		create_subject = {
+			subject_type = colony
+			subject = ZAR
+		}
+		
+		hidden_effect = {
+			ZAR = {
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_government_rank = 1	
+				adopt_reform_progress = PREV
+			}
+		}
+		
+		switch_tag = ZAR
+	}
+	
+	option = { # Release Monarchy
+		name = AF.3.ca
+		ai_chance = { factor = 0 }
+		trigger = {
+			government = monarchy
+		}
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV
+			add_core = ZAR
+		}
+		
+		release = ZAR
+		
+		create_subject = {
+			subject_type = colony
+			subject = ZAR
+		}
+				
+		hidden_effect = {
+			ZAR = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform		
+				change_primary_culture = PREV	
+				change_religion = PREV
+				add_prestige = 100
+				set_dynasty = PREV
+				set_government_rank = 1				
+				adopt_reform_progress = PREV				
+			}
+		}
+	}
+	
+	option = { # Release Monarchy play as
+		name = AF.3.cb
+		ai_chance = { factor = 0 }
+		trigger = {
+			government = monarchy
+		}
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV
+			add_core = ZAR
+		}
+		
+		release = ZAR
+		
+		create_subject = {
+			subject_type = colony
+			subject = ZAR
+		}					
+		
+		hidden_effect = {
+			ZAR = {				
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_dynasty = PREV
+				set_government_rank = 1					
+				adopt_reform_progress = PREV
+			}
+		}
+		
+		switch_tag = ZAR
+	}
+}
+
+country_event = { # Generic South Africa spawn
+	id = AF.7
+	title = AF.7.t
+	desc = AF.7.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		NOT = { exists = SAF }
+		NOT = { culture = dutch }
+		capital_scope = {
+			NOT = { continent = africa }
+		}
+		any_owned_province = {
+			region = south_africa_region
+			is_colony = no
+			has_owner_culture = yes
+			has_owner_religion = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = { # Keep direct control
+		name = AF.7.a
+		custom_tooltip = south_africa_direct_control
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { # Release republic
+		name = AF.7.ba
+		ai_chance = { factor = 0 }
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV	
+			add_core = SAF
+		}
+		
+		release = SAF
+		
+		create_subject = {
+			subject_type = colony
+			subject = SAF
+		}
+		
+		hidden_effect = {
+			SAF = {
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_government_rank = 1	
+				adopt_reform_progress = PREV
+			}
+		}
+	}
+	
+	option = { # Release republic play as
+		name = AF.7.bb
+		ai_chance = { factor = 0 }
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV				
+			add_core = SAF
+		}			
+		
+		release = SAF
+		
+		create_subject = {
+			subject_type = colony
+			subject = SAF
+		}
+		
+		hidden_effect = {
+			SAF = {
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_government_rank = 1	
+				adopt_reform_progress = PREV
+			}
+		}
+		
+		switch_tag = SAF
+	}
+	
+	option = { # Release Monarchy
+		name = AF.7.ca
+		ai_chance = { factor = 0 }
+		trigger = {
+			government = monarchy
+		}
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV
+			add_core = SAF
+		}
+		
+		release = SAF
+		
+		create_subject = {
+			subject_type = colony
+			subject = SAF
+		}
+				
+		hidden_effect = {
+			SAF = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform		
+				change_primary_culture = PREV	
+				change_religion = PREV
+				add_prestige = 100
+				set_dynasty = PREV
+				set_government_rank = 1				
+				adopt_reform_progress = PREV				
+			}
+		}
+	}
+	
+	option = { # Release Monarchy play as
+		name = AF.7.cb
+		ai_chance = { factor = 0 }
+		trigger = {
+			government = monarchy
+		}
+		every_owned_province = {
+			limit = { region = south_africa_region }
+			remove_core = PREV
+			add_core = SAF
+		}
+		
+		release = SAF
+		
+		create_subject = {
+			subject_type = colony
+			subject = SAF
+		}					
+		
+		hidden_effect = {
+			SAF = {				
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_primary_culture = PREV
+				change_religion = PREV
+				add_prestige = 100
+				set_dynasty = PREV
+				set_government_rank = 1					
+				adopt_reform_progress = PREV
+			}
+		}
+		
+		switch_tag = SAF
+	}
+}
+
+country_event = { # Switch name to republic
+	id = AF.4
+	title = AF.4.t
+	desc = AF.4.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		tag = ZAR
+		government = republic
+		OR = {
+			has_country_flag = saf_duchy
+			has_country_flag = saf_kingdom
+			
+			NOT = { 
+				has_country_flag = saf_republic
+				has_country_flag = saf_duchy 
+				has_country_flag = saf_kingdom
+			}			
+		}
+	}
+	
+	option = {
+		name = AF.4.a
+		override_country_name = ZAR
+		set_country_flag = saf_republic
+		
+		clr_country_flag = saf_duchy
+		clr_country_flag = saf_kingdom
+	}
+}
+
+country_event = { # Switch name to duchy
+	id = AF.5
+	title = AF.5.t
+	desc = AF.5.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		tag = ZAR
+		government = monarchy
+		government_rank = 1
+		NOT = { government_rank = 2 }
+		
+		OR = {
+			has_country_flag = saf_republic
+			has_country_flag = saf_kingdom
+			
+			NOT = { 
+				has_country_flag = saf_republic
+				has_country_flag = saf_duchy 
+				has_country_flag = saf_kingdom
+			}
+		}
+	}
+	
+	option = {
+		name = AF.5.a
+		override_country_name = ZAR_DUCHY
+		set_country_flag = saf_duchy
+		
+		clr_country_flag = saf_republic
+		clr_country_flag = saf_kingdom
+	}
+}
+
+country_event = { # Switch name to kingdom
+	id = AF.6
+	title = AF.6.t
+	desc = AF.6.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		tag = ZAR
+		government = monarchy
+		government_rank = 2
+		OR = {
+			has_country_flag = saf_republic
+			has_country_flag = saf_duchy
+			
+			NOT = { 
+				has_country_flag = saf_republic
+				has_country_flag = saf_duchy 
+				has_country_flag = saf_kingdom
+			}
+		}
+	}
+	
+	option = {
+		name = AF.6.a
+		override_country_name = ZAR_KINGDOM
+		set_country_flag = saf_kingdom
+		
+		clr_country_flag = saf_republic
+		clr_country_flag = saf_duchy
+	}
+}
+
+country_event = {
+	id = AF.8
+	title = AF.8.t
+	desc = AF.8.d
+	
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		capital_scope = {			
+			continent = africa			
+		}
+		NOT = { has_country_flag = rejected_new_colonial_culture }		
+		# Eligible for Boer culture
+		AND = {
+			culture_group = germanic
+			any_owned_province = {
+				continent = africa				
+				culture_group = germanic				
+			}
+		}			
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					continent = africa					
+					culture_group = germanic					
+				}
+				save_event_target_as = boer_province
+			}			
+		}
+	}
+	option = { # Become Boer
+		name = AF.8.a
+		if = {
+			limit = {
+				NOT = {
+					primary_culture = boer
+				}
+			}
+			change_primary_culture = boer
+		}
+		event_target:boer_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+					culture_group = germanic
+				}
+				change_culture = boer
+			}
+		}
+		set_country_flag = embraced_new_colonial_culture
+	}
+	option = { # Resist Change
+		trigger = {
+			ai = no
+			NOT = { has_country_flag = embraced_new_colonial_culture }
+		}
+		name = AF.8.b
+		event_target:boer_province = {
+			change_culture = boer
+		}
+		set_country_flag = rejected_new_colonial_culture
+	}
+}
