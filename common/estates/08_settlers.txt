@@ -149,7 +149,7 @@ estate_settlers = {
 	custom_name = {
 		desc = estate_trekboers
 		trigger = {
-			culture_group = dutch
+			culture_group = Netherlandsk
 			capital_scope = { region = south_africa_region }
 		}
 	}
