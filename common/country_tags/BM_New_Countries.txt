@@ -8,9 +8,6 @@ REN = "countries/Rhineland.txt" #RHINELAND
 SGF = "countries/SouthGermanConfederation.txt" #SOUTH GERMAN CONFEDERATION
 TPG = "countries/Taiping.txt" #TAIPING HEAVENLY KINGDOM
 
-ZAR = "countries/CapeRepublic.txt" #CAPE REPUBLIC / BOER STATE / BATAVIA
-SAF = "countries/SouthAfricanRepublic.txt" #SOUTH AFRICAN REPUBLIC
-
 #Maroons
 
 ANA = "countries/Antigua.txt" #ANTIGUA

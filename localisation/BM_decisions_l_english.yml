@@ -73,6 +73,7 @@
 
  MCO_get_acces_to_the_vatican_library_title:0 "§YGet access to Vatican Library§!"
  MCO_get_acces_to_the_vatican_library_desc:0 "Buy access to knowledge hidden in Vatican Library."
+ BM_MCD_access_to_vatican_library_tooltip:0 "[Root.Monarch.GetName] will, with some financial encouragement, bribe themself into accessing the Vatican Library. From there our [Root.Monarch.GetTitle] will study in a useful field, becoming more knowledgable and profficient in a useful £adm£§TAdministrative§!, £dip£§TDiplomatic§!, or £mil£§TMilitary§! skill."
 
  BM_MCD_ruler_studies_administration:0 "Vatican Administrative Studies"
  desc_BM_MCD_ruler_studies_administration:0 "Our ruler has studied ancient empires and learnt much from their adminstration."
