@@ -3996,6 +3996,7 @@ consulate_of_the_sea = {
 		trade_efficiency = 0.1
 		global_trade_power = 0.1
 		burghers_loyalty_modifier = 0.05
+		has_galleass = yes
 		
 	}
 	

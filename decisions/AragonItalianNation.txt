@@ -1,0 +1,173 @@
+country_decisions = {
+	aragon_italian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			tag = ARA
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 220
+				province_id = 213
+				province_id = 2986
+				province_id = 1247
+				province_id = 125
+				province_id = 121
+				province_id = 118
+				province_id = 115
+				province_id = 101
+				province_id = 116
+				province_id = 112
+				province_id = 104
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			is_nomad = no
+			tag = ARA
+			adm_tech = 10
+			CAS = { NOT = { is_subject_of = ROOT } }
+			variable_arithmetic_trigger = {
+				custom_tooltip = OWNS_LESS_PROVINCES_IN_IBERIA_REGION_THAN_CAS
+				export_to_variable = {
+					which = our_provinces
+					value = 0
+				}
+				export_to_variable = {
+					which = their_provinces
+					value = 0
+				}
+				iberia_region = {
+					type = all
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						ROOT = {
+							variable_arithmetic_trigger = {
+								change_variable = { which = our_provinces value = 1 }
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							owned_by = CAS
+						}
+						ROOT = {
+							variable_arithmetic_trigger = {
+								change_variable = { which = their_provinces value = 1 }
+							}
+						}
+					}
+				}
+				check_variable = { which = their_provinces which = our_provinces }
+				NOT = { is_variable_equal = { which = our_provinces which = their_provinces } }
+			}
+			calc_true_if = {
+				1247 = { #Corsica
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				115 = { #Pisa
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				101 = { #Genova
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				116 = { #Florence
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				112 = { #Venezia
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				104 = { #Milano
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				125 = { #Palerno
+				country_or_non_sovereign_subject_holds = ROOT
+				}
+				amount = 4
+			}
+			OR = {
+				NAP = { NOT = { is_subject_of = ROOT } }
+				NAP = { NOT = { num_of_cities = 20 } }
+			}
+			118 = { #Rome
+				owned_by = ROOT
+			}
+			121 = {  #Napoli
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2986 = { #Cagliari
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			213 = { #Barcelona
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			220 = { #Valencia
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = italy_region
+			}
+		}
+		
+		effect = {
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NAP = { ai = yes }
+					NAP = { is_subject_of = ROOT }
+				}
+				inherit = NAP
+			}
+			change_tag = ARI
+			#swap_non_generic_missions = yes
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = SPANISH_CLAIMS_ABANDONED_TOOLTIP
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ARI }
+						region = iberia_region
+						is_permanent_claim = ARI
+					}
+					remove_claim = ARI
+				}
+				every_province = {
+					limit = {
+						NOT = { owned_by = ARI }
+						region = iberia_region
+						is_core = ARI
+					}
+					remove_core = ARI
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+}

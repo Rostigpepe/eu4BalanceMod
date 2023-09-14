@@ -7,9 +7,9 @@ LML = "countries/LombardLeague.txt" #ILLYRIA
 REN = "countries/Rhineland.txt" #RHINELAND
 SGF = "countries/SouthGermanConfederation.txt" #SOUTH GERMAN CONFEDERATION
 TPG = "countries/Taiping.txt" #TAIPING HEAVENLY KINGDOM
+ARI = "countries/Aragon-Italy.txt" #Aragon-Italy
 
 #Maroons
-
 ANA = "countries/Antigua.txt" #ANTIGUA
 BAB = "countries/Barbados.txt" #BARBADOS
 BHM = "countries/Bahamas.txt"

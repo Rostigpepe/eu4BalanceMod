@@ -1,0 +1,103 @@
+#Country name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 213  132  76 }
+
+historical_idea_groups = {
+	trade_ideas
+	quantity_ideas
+	quality_ideas
+	humanist_ideas
+	diplomatic_ideas
+	offensive_ideas
+	economic_ideas
+	defensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ferran #0" = 40
+	"Alfons #4" = 20
+	"Joan #1" = 20
+	"Carles #0" = 10
+	"Pere #4" = 5
+	"San・#1" = 5
+	"Enric #0" = 5
+	"Jaume #2" = 5
+	"Mart・#0" = 20
+	"Andreu #0" = 0
+	"Antoni #0" = 0
+	"Arnau #0" = 0
+	"Ausi灣 #0" = 0
+	"Bartomeu #0" = 0
+	"Bernat #0" = 0
+	"C鑚ar #0" = 0
+	"Dom鈩ec #0" = 0
+	"Felip #0" = 0
+	"Francesc #0" = 0
+	"Frederic #0" = 0
+	"Gaspar #0" = 0
+	"Gil #0" = 0
+	"Gon軋l #0" = 0
+	"Guillem #0" = 0
+	"Hug #0" = 0
+	"Ignasi #0" = 0
+	"Ildefons #0" = 0
+	"Jeroni #0" = 0
+	"Jordi #0" = 0
+	"Josep #0" = 0
+	"Lloren・#0" = 0
+	"Llu﨎 #0" = 0
+	"Pere Llu﨎 #0" = 0
+	"Pon・#0" = 0
+	"Ramon #0" = 0
+	"Roderic #0" = 0
+	"Sime・#0" = 0
+	"Tom灣 #0" = 0
+	"D冝ac #0" = 0
+	"Garc僘 #0" = 0
+	
+	"Alejandra #0" = -5
+	"Candela #0" = -5
+	"Estrella #0" = -5
+}
+
+leader_names = {
+	"de Alag" Amic d'Arag・Arbu駸 d'ﾀustria "de Ayerbe"
+	Balaguer Barcel・"de Belchite" Bergued・Bielsa "de Borja" "de Cabrera" Cajal Colom
+	Dom鈩ec d'Emp侔ies "Fern疣dez de Hijar" Ferrer "Folc de Cardona" Franco
+	Galindo "Gil de Biedma" Gisbert "de Guimer・ "de Gotor" "de Gurrea" d'Ixer Loaisa "de Luna"
+	Martorell "de Montcada" Monteagudo Muntaner Oliva Ordov疽 d'Ors Pe "P駻ez de Coloma" Piquer
+	"de Requesens" "de la Riba" Ripoll "de Ripperd・ 
+	Sastre d'Urgell Vall鑚 Veldr疣 Vilamar・Villarroya "de Zaporta" 
+}
+
+ship_names = {
+	"Blanca Aurora" "Sant Jacob" Flama Lleona Falc・"La Bonaventura" "Sant Antoni" 
+	"Sant Miquel" "Sant Bernat" "Sant Francesc" "Santa ﾁgata" "Santa Eul瀝ia" 
+	"Sant Gabriel" "Sant Climent" "Sant Jordi" "La Reial" Trinitat "Santa Creu" 
+	"Santa Maria" "Santa Caterina" "Sant Joan Evangelista" "Santa B灑bara" 
+	"Sant Pere de Roma" "La Gasela" "Santa Magdalena" "Sant V兤tor" Magnana 
+	"Santa Ventura" "Santa Coloma" "Sant Ambr" "La Garsa"  
+}
+
+army_names = {
+	"Ter・de $PROVINCE$"
+}

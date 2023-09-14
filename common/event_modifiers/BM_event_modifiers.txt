@@ -169,3 +169,16 @@ BM_MCD_ruler_studies_art_of_war = {
 	reinforce_speed = 0.15
 	army_tradition = 1
 }
+
+
+BM_modern_english_castles = {
+	local_fort_maintenance_modifier = -0.5
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.15
+}
+
+BM_readying_the_longbows = {
+	infantry_fire = 0.2
+	drill_gain_modifier = 0.33
+	drill_decay_modifier = -0.33
+}

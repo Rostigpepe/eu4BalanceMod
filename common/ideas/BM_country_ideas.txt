@@ -289,82 +289,6 @@ REN_ideas = {  #Rhineland
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 CSC_ideas = {
 	start = {	
 		land_morale = 0.15 
@@ -643,5 +567,48 @@ TPG_ideas = {
 	}
 	TPG7 = {
 		manpower_in_true_faith_provinces= 0.5
+	}
+}
+
+
+ARI_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.25
+		trade_efficiency = 0.15
+	}
+
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = ARI
+	}
+	free = yes		#will be added at load.
+	
+	ari_success_of_naples = {
+		reduced_liberty_desire = 10
+		infantry_power = 0.15
+	}
+	ari_eager_sailors = {
+		galley_power = 0.2
+		sailors_recovery_speed = 0.2
+	}
+	ari_tolerant_society = {
+		technology_cost = -0.1
+	}
+	ari_enemies_on_all_fronts = {	
+		shock_damage_received = -0.15
+	}
+	ari_the_mediterranean_fleet = {
+		allowed_galleass_fraction = 0.1
+		global_ship_trade_power = 0.25
+	}
+	ari_professional_armies = { 
+		drill_gain_modifier = 0.2
+		drill_decay_modifier = -0.2
+	}
+	ari_dominating_mediterranean_trade = {
+		global_own_trade_power = 0.15
 	}
 }
