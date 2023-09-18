@@ -8811,7 +8811,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 250
-			province_trade_power_value = 0.2
+			province_trade_power_value = 2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -8842,7 +8842,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 500
-			province_trade_power_value = 0.4
+			province_trade_power_value = 4
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -8874,7 +8874,7 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors = 1000
-			province_trade_power_value = 0.6
+			province_trade_power_value = 6
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier

@@ -182,3 +182,9 @@ BM_readying_the_longbows = {
 	drill_gain_modifier = 0.33
 	drill_decay_modifier = -0.33
 }
+
+BM_la_sorbonne_universities = {
+	institution_growth = 0.25
+	local_production_efficiency = 0.15
+	local_development_cost_modifier = -0.05
+}

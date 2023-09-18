@@ -2448,7 +2448,7 @@ rajput_military_leadership_reform = {
 		rajput_loyalty_modifier = 0.1
 		rajput_influence_modifier = 0.1
 		rajput_privilege_slots = 1
-		allowed_rajput_fraction = 0.2
+		special_unit_forcelimit = 0.2
 	}
 	
 	ai = {
