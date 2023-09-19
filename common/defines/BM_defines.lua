@@ -4,6 +4,7 @@
 
 -- N MILITARY STUFFS
 NDefines.NGame.WARSCORE_MAX_FROM_BATTLES = 50
+NDefines.NGame.DAYS_PER_SIEGE_PHASE = 20
 --Fortress upkeep
 
 --Insufficient support to positive
