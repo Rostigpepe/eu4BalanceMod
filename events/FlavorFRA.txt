@@ -3088,9 +3088,9 @@ country_event = { #The Rade of the Toulon Arsenal
 			4696 = {
 				if = {
 					limit = { has_building = dock }
-					remove_building = dock 
 					add_building = drydock
-				}
+				}	remove_building = dock 
+				
 				if = {
 					limit = { has_building = shipyard }
 					remove_building = shipyard

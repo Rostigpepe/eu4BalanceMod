@@ -4678,7 +4678,10 @@ ven_recover_from_plague = {
 }
 
 ven_arsenal_marines = {
-	allowed_marine_fraction = 0.25
+	infantry_shock = 0.2
+	land_morale = 0.05
+	reinforce_cost_modifier = 0.25
+	is_marine_modifier = yes
 }
 
 venice_ghetto = {

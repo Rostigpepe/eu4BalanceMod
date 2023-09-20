@@ -188,3 +188,1290 @@ BM_la_sorbonne_universities = {
 	local_production_efficiency = 0.15
 	local_development_cost_modifier = -0.05
 }
+
+#Reforms of Worms
+fee_hab_reforms_diet_worms = {
+	stability_cost_modifier = -0.05
+	global_unrest = -0.5
+}
+#Austrian Baroque
+fee_hab_austrian_baroque = {
+	prestige = 0.5
+	build_cost = -0.05
+	great_project_upgrade_cost = -0.05
+}
+#Building timer
+fee_hab_baroque_building_timer = { }
+
+#Brandenburg Wine Customs
+fee_bran_wine_customs = {
+	global_tax_modifier = 0.15
+	burghers_loyalty_modifier = -0.05
+}
+
+#Brandenburg Beer Excise
+fee_bran_beer_excise = {
+	global_tax_modifier = 0.15
+	global_unrest = 1
+	global_trade_goods_size_modifier = -0.05
+}
+
+#Ruppin Infertility
+fee_bran_ruppin_infertility = {
+	heir_chance = -0.90
+}
+
+#Grunewald Hunting Lodge
+fee_bran_lover_of_the_hunt = {
+	state_maintenance_modifier = 0.25
+	all_estate_loyalty_equilibrium = -0.05
+}
+fee_discouraged_ruler = {
+	state_maintenance_modifier = 0.25
+}
+
+grunewald_hunting_lodge = {
+	prestige = 0.1
+}
+
+fee_bran_beautiful_foundress = {
+	legitimacy = -0.5
+	republican_tradition = -0.3
+	devotion = -0.5
+}
+fee_bran_jewish_tax = {
+	global_tax_modifier = 0.15
+}
+
+#Introduction of the Reformation
+fee_bran_religious_pragmatism = {
+	tolerance_heretic = 1
+}
+
+#Lippold Ben Chluchim (or how i trolled the Brandenburger Economy)
+fee_bran_lippold_ben_chluchim = {
+	interest = -1
+}
+fee_bran_economic_downturn = {
+	trade_efficiency = -0.05
+}
+fee_bran_economic_collapse = {
+	trade_efficiency = -0.2
+	global_tax_modifier = -0.2
+	global_unrest = 2
+}
+fee_bran_jewish_assets_seized = {
+	interest = 2
+}
+fee_bran_restored_jewish_privileges = {
+	global_unrest = 1
+	global_tax_modifier = 0.15
+}
+
+#Order of John
+fee_bran_elector_order_john = {
+	prestige = 0.5
+}
+fee_bran_knights_order_john = {
+	global_manpower_modifier = 0.05
+	cavalry_cost = -0.05
+}
+fee_bran_secularization_john = {
+	global_tax_modifier = 0.10
+}
+
+fee_bran_berliner_singing_boys = {
+	papal_influence = 0.5
+}
+fee_bran_dutch_agriculture_architecture = {
+	production_efficiency = 0.10
+	adm_tech_cost_modifier = -0.1
+}
+
+#English & Great Britain Events
+fee_eng_gbr_scientific_method = {
+	yearly_innovativeness = 0.01
+}
+
+#English Bible
+fee_eng_gbr_king_james_bible = {
+	tolerance_own = 1
+}
+fee_eng_gbr_authorized_version = {
+	prestige = 0.5
+}
+fee_eng_gbr_god_now_speaks_english = {
+	stability_cost_modifier = -0.10
+}
+
+#Statute of Icolmkill
+fee_eng_gbr_centralization_monarchy = {
+	global_unrest = 1
+	max_absolutism = 5
+}
+fee_eng_gbr_statute = {
+	min_local_autonomy = 10
+	local_unrest = -2
+	local_production_efficiency = 0.1
+}
+
+# The Puritans
+fee_eng_gbr_puritan_dissent_tolerated = {
+	global_unrest = 1
+	tolerance_heretic = 2
+	production_efficiency = 0.05
+	max_absolutism = -15
+}
+fee_eng_gbr_puritans_crushed = {
+	global_unrest = -1
+	tolerance_own = 2
+	production_efficiency = -0.05
+	max_absolutism = 10
+}
+fee_eng_gbr_puritans_persecuted = {
+	local_unrest = 10
+	local_autonomy = 0.10
+}
+fee_eng_gbr_puritans_flee_to_the_new_world = {
+	global_colonial_growth = 15
+}
+fee_eng_gbr_puritans_utopia = {
+	local_missionary_strength = -1
+}
+
+#South Sea Company
+fee_eng_gbr_miraculous_recovery = {
+	global_prosperity_growth = 0.25
+	global_tax_modifier = 0.5
+}
+
+#Jenkins Ear
+fee_eng_gbr_preparation_defend_honor = {
+	naval_morale_damage = 0.15
+	naval_tradition_from_battle = 0.25
+}
+
+fee_eng_gbr_abuses_tolerated = {
+	prestige = -1
+	diplomatic_reputation = -1
+}
+
+#El Draque
+fee_eng_gbr_legacy_drake = {
+	range = 0.2
+	global_tariffs = 0.2
+}
+
+fee_eng_gbr_great_plague = {
+	local_tax_modifier = -0.9
+	local_production_efficiency = -0.9
+	trade_goods_size_modifier = -0.9
+	province_trade_power_modifier = -0.9
+	local_manpower_modifier = -0.9
+	yearly_corruption = 0.25
+}
+
+fee_eng_gbr_destruction_of_the_capital = {
+	local_tax_modifier = -0.3
+	local_production_efficiency = -0.3
+	trade_goods_size_modifier = -0.3
+	province_trade_power_modifier = -0.3
+	local_manpower_modifier = -0.3
+	local_development_cost = -0.15
+	supply_limit_modifier = -0.75
+}
+
+fee_eng_gbr_wrens_london = {
+	global_unrest = -0.5
+	adm_tech_cost_modifier = -0.05
+}
+fee_eng_gbr_everlyns_london = {
+	diplomatic_reputation = 0.5
+	dip_tech_cost_modifier = -0.05
+}
+fee_eng_gbr_hookes_london = {
+	war_exhaustion_cost = -0.1
+	mil_tech_cost_modifier = -0.05
+}
+
+#Sake Dean Mahomed
+fee_eng_gbr_travels_of_mahomed = {
+	diplomatic_reputation = 1
+}
+
+
+#The Enlightenment modifiers
+fee_enlightenment_coffee_house = {
+	global_institution_spread = 0.1
+}
+
+fee_enlightenment_not_enlightened_ruler = {
+	stability_cost_modifier = -0.1
+	idea_cost = 0.05
+}
+fee_enlightenment_enlightened_ruler = {
+	stability_cost_modifier = 0.1
+	idea_cost = -0.05
+}
+
+fee_enlightenment_grand_work_adm = {
+	adm_tech_cost_modifier = -0.05
+	production_efficiency = 0.1
+}
+fee_enlightenment_grand_work_dip = {
+	dip_tech_cost_modifier = -0.05
+	trade_efficiency = 0.05
+}
+fee_enlightenment_grand_work_mil = {
+	mil_tech_cost_modifier = -0.05
+	army_tradition_decay = -0.01
+	navy_tradition_decay = -0.01
+}
+
+fee_enlightenment_suffering_military_thought = {
+	army_tradition_decay = 0.005
+	mil_tech_cost_modifier = 0.05
+}
+
+fee_enlightenment_rationalist_trade_practices = {
+	trade_efficiency = 0.1
+}
+
+fee_enlightenment_dubious_mercantilist_practices = {
+	global_foreign_trade_power = -0.10
+	trade_efficiency = -0.10
+}
+
+fee_enlightenment_war_criticism_circulating_province = {
+	local_unrest = 5
+	local_years_of_nationalism = 10
+	local_manpower_modifier = -0.33
+}
+fee_enlightenment_war_criticism_circulating = {
+	war_exhaustion_cost = 0.05
+}
+fee_enlightenment_thinker_repressed = {
+	global_unrest = -1
+	stability_cost_modifier = 0.25
+	legitimacy = -0.5
+}
+
+fee_enlightenment_anti_government = {
+	global_unrest = 1
+	years_of_nationalism = 5
+}
+
+fee_enlightenment_anti_religious_work_catholic = {
+	papal_influence = -1
+	unrest_catholic_provinces = 2
+}
+fee_enlightenment_anti_religious_work_protestant = {
+	church_power_modifier = -0.25
+	reverse_relation_with_same_religion = -25
+}
+fee_enlightenment_anti_religious_work_reformed = {
+	monthly_fervor_increase = -0.25
+	reverse_relation_with_same_religion = -25
+}
+fee_enlightenment_anti_religious_work_hussite = {
+	church_power_modifier = -0.25
+	tolerance_own = -1
+}
+
+fee_enlightenment_anti_religious_work = {
+	prestige = -1
+}
+
+fee_enlightenment_literary_work_presented = {
+	global_unrest = -1
+	prestige_decay = -0.01
+}
+
+fee_enlightenment_academia_adm = {
+	adm_tech_cost_modifier = -0.1
+}
+fee_enlightenment_academia_dip = {
+	dip_tech_cost_modifier = -0.1
+}
+fee_enlightenment_academia_mil = {
+	mil_tech_cost_modifier = -0.1
+}
+
+#Scientific Revolution
+fee_enlightenment_technological_developments = {
+	technology_cost = -0.05
+}
+fee_enlightenment_development_empiricism = {
+	idea_cost = -0.05
+}
+fee_enlightenment_falling_behind = {
+	institution_spread_from_true_faith = -0.33
+}
+
+#Free Trade
+fee_enlightenment_free_trade_1 = {
+	global_foreign_trade_power = 0.1
+	embargo_efficiency = -0.25
+}
+fee_enlightenment_free_trade_2 = {
+	global_foreign_trade_power = 0.2
+	development_cost_modifier = -0.025
+	embargo_efficiency = -0.5
+}
+fee_enlightenment_free_trade_3 = {
+	global_foreign_trade_power = 0.33
+	development_cost_modifier = -0.05
+	embargo_efficiency = -0.75
+	merchants = 1
+}
+
+# French 100 Years War and Feudalism
+fee_france_administrative_unificaiton = {
+	diplomatic_annexation_cost = -0.1
+	global_tax_modifier = 0.1
+	annexation_relations_impact = -0.25
+}
+fee_france_feudal_militaries = {
+	vassal_forcelimit_bonus = 0.2
+	army_tradition = 0.5
+}
+fee_france_decentralization = {
+	vassal_income = 0.3
+	diplomatic_annexation_cost = 0.2
+	liberty_desire = -10
+}
+fee_france_blood_tax = {
+	global_manpower = 2
+}
+fee_france_blood_tax2 = {
+	global_manpower = 4
+}
+fee_france_blood_tax3 = {
+	global_manpower = 6
+}
+fee_france_blood_tax4 = {
+	global_manpower = 8
+}
+fee_france_blood_tax5 = {
+	global_manpower = 10
+}
+fee_france_legal_reform = {
+	global_autonomy = -0.05
+}
+fee_france_lower_base_autonomy = {
+	min_autonomy = -5
+}
+
+fee_france_friendly_legal_class = {
+	global_autonomy = -0.05
+	liberty_desire = -5
+}
+fee_france_cultural_unification_effort = {
+	culture_conversion_cost = -0.1
+	global_autonomy = -0.05
+}
+fee_france_provincialism = {
+	global_autonomy = 0.05
+	global_unrest = -1
+	num_accepted_cultures = 1
+}
+fee_france_independence_asserted = {
+	diplomatic_reputation = 1
+}
+fee_france_state_control_over_church = {
+	curia_treasury_contribution = -1
+	prestige = 0.05
+	global_tax_modifier = 0.05
+}
+fee_france_church_state = {
+	global_autonomy = -0.05
+	tolerance_own = 1
+}
+
+fee_france_third_estate_placated = {
+	trade_efficiency = 0.1
+	global_autonomy = 0.05
+}
+fee_bourgeoisie_support = {
+	land_morale = 0.05
+	manpower_recovery_speed = 0.10
+}
+
+fee_france_reinforced_feudal_militaries_1 = {
+	global_manpower_modifier = 0.05
+	reduced_liberty_desire = -10
+}
+fee_france_reinforced_feudal_militaries_2 = {
+	global_manpower_modifier = 0.10
+	reduced_liberty_desire = -10
+}
+fee_france_reinforced_feudal_militaries_3 = {
+	global_manpower_modifier = 0.15
+	reduced_liberty_desire = -10
+}
+fee_france_reinforced_feudal_militaries_4 = {
+	global_manpower_modifier = 0.20
+	reduced_liberty_desire = -10
+}
+fee_france_reinforced_feudal_militaries_5 = {
+	global_manpower_modifier = 0.25
+	reduced_liberty_desire = -10
+}
+fee_france_reinforced_feudal_militaries_6 = {
+	global_manpower_modifier = 0.30
+	reduced_liberty_desire = -10
+}
+fee_france_crown_levies = {
+	global_manpower_modifier = 0.1
+}
+fee_france_mercenary_core = {
+	general_cost = 0.2
+	merc_maintenance_modifier = -0.10
+}
+
+fee_treaty_honored = {
+	diplomatic_upkeep = -1
+	improve_relation_modifier = 0.20
+	diplomatic_reputation = 1
+}
+fee_independence_from_france = {
+	defensiveness = 0.15
+	prestige = 0.5
+}
+
+fee_france_scots_mercenaries = {
+	mercenary_discipline = 0.05
+}
+
+#French Internal Tolls
+fee_france_bad_tolls_timer = {
+}
+fee_france_revamped_tolls = {
+	global_tax_modifier = -0.05
+	caravan_power = 0.05
+}
+
+# Iberian Event Modifiers
+iberia_irmandinos_justified = {
+	infantry_power = 0.1
+}
+iberia_spanish_cortes = {
+	global_unrest = -2
+	max_absolutism = -30
+}
+iberia_autonomous_regions = {
+	local_autonomy = 0.2
+	local_unrest = -2
+}
+iberia_restricted_autonomy = {
+	local_autonomy = 0.1
+	local_manpower_modifier = 0.2
+	local_unrest = -1
+}
+iberia_abolished_local_privileges = {
+	local_autonomy = -0.1
+	local_manpower_modifier = 0.2
+	local_tax_modifier = 0.2
+	local_unrest = 3
+}
+iberia_autonomy_curalied = {
+	legitimacy = 1
+	global_tax_modifier = 0.1
+	harsh_treatment_cost = -0.33
+}
+iberia_fueros_enforced = {
+	min_local_autonomy = 30
+	local_manpower_modifier = 0.4
+	local_sailors_modifier = 0.4
+}
+iberia_fueros_ignored = {
+	local_culture_conversion_cost = -0.3
+	local_culture_conversion_time = -0.3
+	local_unrest = 2
+}
+iberia_centralised_rule = {
+	autonomy_change_time = -0.1
+	stability_cost_modifier = -0.1
+}
+iberia_institutions_respected = {
+	province_trade_power_modifier = 0.3
+	min_local_autonomy = 25
+	local_unrest = -2
+}
+iberia_institutions_modified = {
+	province_trade_power_modifier = 0.15
+	min_local_autonomy = 15
+}
+iberia_institutions_abolished = {
+	local_tax_modifier = 0.25
+	local_manpower_modifier = 0.25
+	local_unrest = 2
+}
+iberia_catalonian_constitution = {
+	local_unrest = -4
+	min_local_autonomy = 40
+}
+iberia_constitution_concessions = {
+	stability_cost_modifier = 0.25
+	max_absolutism = -30
+}
+iberia_segadores = {
+	land_morale = 0.15
+	land_forcelimit_modifier = 0.25
+}
+iberia_ministerial_power = {
+	stability_cost_modifier = 0.20
+	prestige = -1
+}
+iberia_oppressive_government = {
+	local_unrest = 10
+	local_tax_modifier = -0.50
+	local_production_efficiency = -0.25
+	local_manpower_modifier = -0.25
+	province_trade_power_value = -0.80
+}
+iberia_order_restored = {
+	harsh_treatment_cost = -0.15
+	global_unrest = -1
+}
+iberia_seismological_studies_innovativeness = {
+	dip_tech_cost_modifier = -0.05
+	adm_tech_cost_modifier = -0.05
+	war_exhaustion_cost = -0.20
+	movement_speed = 0.05
+}
+iberia_seismological_studies_no_innovativeness = {
+	dip_tech_cost_modifier = -0.05
+	adm_tech_cost_modifier = -0.05
+	war_exhaustion_cost = -0.20
+	movement_speed = 0.05
+	idea_cost = -0.03
+}
+#Spanish Catholic Events
+iberia_lay_piety = {
+	tolerance_own = 1
+}
+iberia_reforms_rejected = {
+	tolerance_own = -1
+	religion = yes
+}
+iberia_school_alcala = {
+	global_missionary_strength = 0.01
+}
+iberia_university_alcala = {
+	tolerance_own = 1
+	prestige = 0.5
+}
+iberia_papal_fraud_uncovered = {
+	prestige = 1
+	legitimacy = 1
+	papal_influence = -2
+}
+iberia_reconcilation_pope = {
+	papal_influence = 2
+	tolerance_own = 1
+}
+iberia_submission_pope = {
+	global_missionary_strength = 0.02
+	tolerance_own = 1
+	diplomatic_reputation = -1
+}
+iberia_recogimiento = {
+	tolerance_own = 1
+	religion = yes
+}
+iberia_juan_avila = {
+	local_unrest = -1
+	local_tax_modifier = 0.15
+}
+iberia_suppressed_reform = {
+	local_unrest = 2
+}
+iberia_benedictine_reforms = {
+	establish_order_cost = -0.25
+	religion = yes
+}
+iberia_strict_franciscans = {
+	global_unrest = -1
+	war_exhaustion = -0.03
+	religion = yes
+}
+iberia_gradual_franciscans_reform = {
+	tolerance_own = 1
+	religion = yes
+}
+iberia_orthodoxy_enforced = {
+	harsh_treatment_cost = -0.33
+}
+iberia_jesuit_education = {
+	global_missionary_strength = 0.01
+	technology_cost = -0.05
+	spy_offence = 0.20
+	religion = yes
+}
+iberia_molinism = {
+	tolerance_own = 1
+	global_unrest = -1
+	stability_cost_modifier = 0.10
+	religion = yes
+}
+iberia_poor_laws = {
+	global_tax_modifier = -0.15
+	global_unrest = -2
+	production_efficiency = 0.10
+}
+iberia_traditional_charity = {
+	tolerance_own = 1
+}
+iberia_poor_laws_church_support = {
+	global_tax_modifier = -0.10
+	global_unrest = -1
+}
+
+# Albrecht Durer
+FEE_HRE_Minor_Durer = {
+	prestige = 1
+}
+
+# Tolerance of the Jews
+FEE_HRE_Minor_Tolerance_of_Jews = {
+	tolerance_own = -1
+	global_tax_modifier = 0.1
+	inflation_reduction = 0.02
+}
+
+FEE_HRE_Minor_Expulsion_of_Jews = {
+	tolerance_own = 1
+}
+
+FEE_HRE_Minor_Jewish_Refuge = {
+	development_cost = -0.05
+	trade_efficiency = 0.05
+	tolerance_own = -1
+	tolerance_heathen = 2
+}
+
+#16th Century Economic Depression
+FEE_HRE_Minors_German_Economic_Depression = {
+	trade_efficiency = -0.1
+	inflation_reduction = -0.03
+}
+
+# Martin Luther in Hiding
+FEE_HRE_Minors_Martin_Luther_in_Hiding = {
+	prestige = 1
+	global_institution_spread = 0.33
+}
+
+FEE_HRE_Minors_Independent_Navy = {
+	navy_tradition = 0.5
+}
+
+FEE_HRE_Minor_Economic_Ambition = {
+	development_cost = -0.1
+}
+
+FEE_HRE_Minor_Technological_Leadership = {
+	technology_cost = -0.1
+}
+
+FEE_HRE_Minor_Military_Reforms = {
+	leader_cost = -0.25
+	global_regiment_cost = -0.1
+}
+
+FEE_HRE_Minors_Imperial_Patronage = {
+}
+
+
+fee_hun_papal_subsidies = {
+	global_tax_income = 24
+}
+fee_hun_young_janos = {
+	nobles_loyalty_modifier = -0.05
+	burghers_loyalty_modifier = -0.05
+	church_loyalty_modifier = -0.05
+}
+fee_hun_elected_king_bohemia = {
+	legitimacy = 0.5
+	republican_tradition = 0.3
+	devotion = 0.5
+	meritocracy = 0.5
+	horde_unity = 0.5
+}
+fee_hun_royal_prerogative = {
+	war_taxes_cost_modifier = -0.5
+	global_tax_modifier = 0.1
+}
+fee_hun_taxes_without_diet = {
+	global_tax_modifier = 0.1
+	global_unrest = 2
+}
+fee_hun_union_trium_nationum = {
+	local_autonomy = 0.1
+	local_unrest = -2
+	local_defensiveness = 0.2
+}
+# Bibliotheca Corvinia
+fee_hun_hungarian_renaissance = {
+	adm_tech_cost_modifier = -0.1
+	prestige = 1
+}
+fee_hun_corviana_bibliotheca_maxed = {
+	technology_cost = -0.05
+	prestige = 1
+}
+
+fee_boh_infertility = {
+	heir_chance = -0.90
+}
+fee_boh_noble_concesions = {
+	liberty_desire = 15
+	nobles_influence_modifier = 0.25
+	nobles_loyalty_modifier = 0.05
+}
+
+fee_boh_hussite_ingenuity = {
+	mil_tech_cost_modifier = -0.1
+	yearly_innovativeness = 0.01
+}
+boh_coinage_pioneer = {
+	development_cost = 0.05
+}
+fee_boh_thaler = {
+	trade_efficiency = 0.05
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+}
+fee_boh_greedy_rulership = {
+	development_cost_in_primary_culture = -0.1
+	interest = -1
+}
+fee_boh_religion_enforced = {
+	global_heretic_missionary_strength = 0.03
+}
+
+
+fee_italian_wars_infantry = {
+	infantry_fire = 0.15
+	mil_tech_cost_modifier = -0.05
+}
+fee_italian_wars_cavalry = {
+	cavalry_flanking = 1
+	cavalry_shock = 0.1
+	mil_tech_cost_modifier = -0.05
+}
+fee_italian_wars_artillery = {
+	artillery_levels_available_vs_fort = 1
+	backrow_artillery_damage = 0.1
+	mil_tech_cost_modifier = -0.05
+}
+fee_italian_wars_forts = {
+	defensiveness = 0.15
+	fort_maintenance_modifier = -0.15
+	mil_tech_cost_modifier = -0.05
+}
+fee_italian_wars_peaceful = {
+	all_power_cost = -0.025
+	improve_relation_modifier = 0.2
+	stability_cost_to_declare_war = 1
+}
+
+#Lowlands Modifiers
+fee_lw_grain_import_center = {
+	province_trade_power_value = 5
+	trade_goods_size = 0.2
+}
+
+fee_lw_spanish_fury = {
+	loot_amount = 0.3
+	merc_maintenance_modifier = -0.15
+	mercenary_cost = -0.1
+	mercenary_discipline = -0.05
+}
+
+fee_lw_discipline_restored = {
+	movement_speed = 0.1
+	merc_maintenance_modifier = 0.15
+	mercenary_cost = 0.1
+	mercenary_discipline = 0.05
+}
+
+fee_lw_destroyed_infrastructure = {
+	local_development_cost = 0.3
+}
+fee_lw_decline_antwerp_cloth_market = {
+	province_trade_power_modifier = -0.3
+	trade_goods_size_modifier = -0.1
+}
+
+fee_lw_black_legend = {
+	tolerance_own = 1
+	tolerance_heathen = -1
+}
+fee_lw_refugees_antwerp = {
+	local_development_cost = -0.1
+}
+fee_lw_legacy_antwerp = {
+	province_trade_power_modifier = 0.1
+	trade_goods_size_modifier = 0.05
+	local_defensiveness = 0.33
+}
+
+
+# Dutch Generality Lands
+fee_ned_generality_lands = {
+	local_tax_modifier = -0.4
+	local_autonomy = -0.01
+	local_development_cost = 0.2
+	local_build_cost = 0.15
+	local_unrest = -1
+}
+fee_ned_dutch_warehouses = {
+	province_trade_power_modifier = 0.2
+	local_development_cost = -0.05
+}
+fee_ned_structured_city = {
+	local_development_cost = -0.1
+}
+fee_ned_judicial_center = {
+	local_unrest = -1
+	local_governing_cost = -0.25
+}
+fee_ned_corneliszoon_sawmill = {
+	ship_recruit_speed = -0.2
+	local_ship_cost = -0.2
+}
+
+fee_ned_dutch_defense = {
+	defensiveness = 0.33
+	global_garrison_growth = 0.33
+}
+
+fee_ned_admiral_ruyter = {
+	naval_morale = 0.05
+}
+fee_ned_ruyter = {
+	navy_tradition = 1
+}
+
+fee_ned_raid_medway = {
+	naval_morale = -0.10
+}
+
+fee_ned_boer_migration = {
+	local_colonial_growth = 30
+	local_colonist_placement_chance = 0.05
+}
+
+fee_ned_leader_grand_alliance = {
+	diplomatic_upkeep = 1
+	manpower_recovery_speed = 0.1
+}
+fee_ned_stand_against_france = {
+	prestige = 1
+	land_morale = 0.1
+}
+
+fee_ned_huguenot_influx = {
+	production_efficiency = 0.10
+}
+fee_ned_secured_borders = {
+	tolerance_own = 2
+	global_trade_power = 0.05
+}
+
+fee_ned_dikes_pierced = {
+	local_hostile_movement_speed = -0.50
+	local_monthly_devastation = 0.08
+	local_hostile_attrition = 3
+	max_attrition = 3
+}
+fee_ned_fight_homeland = {
+	land_morale = 0.05
+}
+fee_ned_investment_industry = {
+	build_cost = -0.10
+	development_cost = -0.05
+}
+fee_ned_financial_hub = {
+	province_trade_power_value = 10
+}
+fee_ned_banking_focus = {
+	interest = -0.5
+}
+fee_ned_trade_compacency = {
+	build_cost = 0.10
+	development_cost = 0.05
+	trade_efficiency = 0.1
+}
+
+
+fee_pol_uniate_church = {
+	tolerance_heretic = 2
+	stability_cost_modifier = -0.1
+	global_heretic_missionary_strength = -0.03
+	papal_influence = -1
+	religion = yes
+}
+fee_pol_true_believers = {
+	local_missionary_strength = -0.05
+	local_unrest = -2
+}
+fee_pol_catholicism_entrenched = {
+	tolerance_heretic = -1
+	papal_influence = 2
+	religion = yes
+}
+
+#Polish Flavor Events
+fee_pol_statuty_nieszawskie = {
+	stability_cost_modifier = -0.3
+	legitimacy = -0.25
+}
+
+fee_pol_statut_piotrkowski = {
+	global_unrest = 2
+}
+
+fee_pol_przywilej_mielnicki = {
+	stability_cost_modifier = -0.1
+	local_autonomy = 0.1
+	legitimacy = -0.5
+}
+
+fee_pol_przywilej_torunski = {
+	global_unrest = 2
+}
+
+fee_pol_statut_karnkowskiego = {
+	local_ship_repair = 0.25
+	ship_recruit_speed = -0.2
+	local_ship_cost = -0.1
+}
+
+
+#Sebastianism in Portugal
+fee_por_sebastianism = {
+	global_unrest = 3
+}
+
+fee_por_spice_sail = {
+	range = 0.1
+}
+
+fee_por_henrique_naval_reforms = {
+	heavy_ship_power = 0.1
+	dip_tech_cost_modifier = -0.05
+	global_ship_cost = -0.1
+}
+
+fee_por_francisco_de_almeida = {
+	land_morale = 0.05
+}
+
+fee_por_portuguese_weaponry = {
+	mil_tech_cost_modifier = -0.10
+}
+
+fee_por_avenge_betrayal = {
+	ae_impact = -0.20
+	province_warscore_cost = -0.15
+}
+
+fee_por_vendettas_sanctioned = {
+	may_perform_slave_raid_on_same_religion = yes
+	privateer_efficiency = 0.25
+}
+fee_por_pursuing_enemies = {
+	naval_morale = 0.10
+}
+
+fee_por_jewish_liberties_granted = {
+	tolerance_heathen = 2
+	trade_efficiency = 0.05
+	papal_influence = -2
+	tolerance_own = -1
+	advisor_pool = 1
+}
+fee_por_prospering_jewish_communities = {
+	production_efficiency = 0.10
+	trade_efficiency = 0.10
+}
+fee_por_jewish_weaponsmiths = {
+	global_regiment_cost = -0.10
+}
+
+fee_por_jewish_expulsion = {
+	tolerance_heathen = -1
+	trade_efficiency = -0.10
+}
+fee_por_jewish_conversion_attempts = {
+	global_missionary_strength = 0.01
+	global_unrest = 1
+}
+
+fee_por_malacca_restored = {
+	province_trade_power_value = 15
+}
+
+fee_por_portuguese_weaponry_japan = {
+	mil_tech_cost_modifier = -0.1
+	infantry_fire = 0.2
+}
+
+fee_por_magellan_expedition = {
+	naval_attrition = -0.2
+}
+
+fee_por_asian_inquisition = {
+	global_missionary_strength = 0.02
+	trade_efficiency = -0.05
+}
+fee_por_portuguese_jesuits = {
+	global_missionary_strength = 0.01
+}
+fee_por_rejected_jesuits = {
+	trade_efficiency = 0.05
+	tolerance_heathen = 1
+	tolerance_own = -1
+}
+
+fee_por_sugar_rush = {
+	global_unrest = -1
+}
+
+
+#Renaissance building in province
+fee_renaissance_architecture = {
+	local_build_cost = -0.2
+}
+
+# Renaissance writer
+fee_renaissance_writer = {
+	stability_cost_modifier = -0.1
+	prestige = 0.5
+}
+
+#Polymath modifiers
+fee_polymath_adm = {
+	adm_tech_cost_modifier = -0.1
+}
+fee_polymath_dip = {
+	dip_tech_cost_modifier = -0.1
+}
+fee_polymath_mil = {
+	mil_tech_cost_modifier = -0.1
+}
+fee_polymath_ideas = {
+	idea_cost = -0.1
+}
+
+#Ignore the fact that your claims are illegitimate
+fee_renaissance_ignore_falsification = {
+	ae_impact = 0.05
+}
+
+# Russian Stuff
+fee_rus_kronstadt_fortress = {
+	local_defensiveness = 0.15
+	local_garrison_size = 0.2
+	province_trade_power_modifier = 0.1
+}
+fee_rus_renovated_kremlin = {
+	local_defensiveness = 0.15
+	local_garrison_size = 0.2
+	local_manpower = 1
+}
+
+fee_rus_rebellion_in_finland = {
+	local_unrest = 5
+}
+fee_rus_rights_guaranteed = {
+	min_local_autonomy = 25
+	local_unrest = -3
+}
+fee_rus_sisu = {
+	liberty_desire = 20
+}
+
+
+fee_ven_mercantile_fleet = {
+	light_ship_cost = -0.15
+	naval_tradition_from_trade = 0.15
+}
+fee_ven_galley_fleet = {
+	galley_cost = -0.15
+	naval_tradition_from_battle = 0.1
+}
+
+fee_ven_magistrato_milizia_mar = {
+	allowed_marine_fraction = 0.25
+	global_sailors_modifier = 0.1
+}
+
+fee_ven_naval_reforms = {
+	dip_tech_cost_modifier = -0.1
+}
+
+fee_ven_commander_convicts = {
+	sailor_maintenance_modifer = -0.15
+	sailors_recovery_speed = 0.1
+}
+
+fee_ven_porta_magna = {
+	monthly_splendor = 1
+	local_development_cost = -0.05
+}
+
+fee_ven_arsenal_expansion = {
+	local_build_cost = -0.10
+	local_great_project_upgrade_cost = -0.15
+}
+fee_ven_arsenal_expansion_1535 = {
+	local_build_cost = -0.2
+	local_great_project_upgrade_cost = -0.25
+	artillery_cost = -0.10
+}
+fee_ven_arsenal_expansion_final = {
+	local_great_project_upgrade_cost = -0.5
+	artillery_cost = -0.1
+	siege_blockade_progress = 1
+}
+
+fee_ven_fanti_mar = {
+	local_manpower_modifier = 0.075
+	local_regiment_cost = -0.10
+	regiment_recruit_speed = -0.10
+	local_sailors_modifier = 0.075
+}
+
+fee_ven_jew_ghetto = {
+	trade_goods_size = 0.2
+	local_build_time = -0.1
+}
+fee_ven_jew_ghetto_novo = {
+	trade_goods_size = 0.3
+	local_build_time = -0.15
+}
+
+fee_ven_doge_foscari = {
+	all_estate_loyalty_equilibrium = 0.075
+	advisor_cost = -0.05
+}
+
+fee_ven_prosperity_po_valley = {
+	local_development_cost = -0.1
+	local_manpower_modifier = 0.1
+	province_trade_power_modifier = 0.15
+}
+
+fee_ven_malipiero_avogadore_comun = {
+	nobles_influence_modifier = -0.05
+	nobles_loyalty_modifier = 0.05
+}
+
+fee_ven_soranzo_default = {
+	global_tax_modifier = -0.20
+	state_maintenance_modifier = 0.20
+}
+fee_ven_soranzo_default_minimal = {
+	global_tax_modifier = -0.10
+	state_maintenance_modifier = 0.10
+}
+
+fee_ven_moro_provveditore_pubbliche_entrate = {
+	local_development_cost = -0.1
+	local_tax_modifier = 0.1
+	local_build_cost = -0.1
+	local_build_time = -0.1
+}
+
+fee_ven_craine = {
+	local_manpower_modifier = 0.10
+	local_regiment_cost = -0.15
+	regiment_recruit_speed = -0.15
+	local_development_cost = -0.10
+}
+
+fee_ven_treaty_constantinople = {
+	global_tax_income = -10
+	global_own_trade_power = -0.10
+	trade_steering = -0.10
+}
+fee_ven_treaty_constantinople_province = {
+	province_trade_power_modifier = -0.15
+	trade_value_modifier = -0.15
+	local_development_cost = 0.15
+}
+
+fee_ven_aegean_superiority = {
+	global_own_trade_power = 0.10
+	trade_steering = 0.10
+	republican_tradition = 1
+	prestige = 1
+	monthly_splendor = 4
+}
+fee_ven_aegean_superiority_province = {
+	province_trade_power_modifier = 0.15
+	trade_value_modifier = 0.15
+	local_development_cost = -0.15
+}
+
+fee_ven_latin_trebizond_ties = {
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.15
+	trade_value_modifier = 0.15
+	institution_growth = 4
+}
+
+fee_ven_arabo_venetian_coffee = {
+	local_prosperity_growth = 1.5
+	local_production_efficiency = 0.15
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.15
+	province_trade_power_value = 0.15
+}
+
+fee_ven_cardinal_domenico_grimani = {
+	local_institution_spread = 0.25
+	local_missionary_strength = 0.03
+	local_missionary_maintenance_cost = -0.25
+	local_tax_modifier = 0.25
+	local_unrest = -2
+	papal_influence = 0.5
+}
+
+fee_ven_andrea_gritti = {
+	province_trade_power_modifier = 0.15
+	province_trade_power_value = 0.15
+	local_development_cost = -0.15
+}
+
+fee_ven_doge_marcantonio_trevisan = {
+	global_unrest = 1
+	papal_influence = 1
+	church_power_modifier = 0.05
+	monthly_fervor_increase = 0.5
+}
+
+fee_ven_francesco_venier_merchant = {
+	province_trade_power_modifier = 0.15
+	province_trade_power_value = 0.15
+	local_development_cost = -0.15
+}
+
+fee_ven_standing_army = {
+	global_manpower_modifier = 0.10
+	land_forcelimit_modifier = 0.10
+	mercenary_manpower = -0.25
+	mercenary_cost = 0.25
+	mercenary_discipline = -0.10
+}
+fee_ven_mercenary_army = {
+	global_manpower_modifier = -0.15
+	land_forcelimit_modifier = -0.15
+	mercenary_manpower = 0.25
+	mercenary_cost = -0.25
+	mercenary_discipline = 0.05
+}

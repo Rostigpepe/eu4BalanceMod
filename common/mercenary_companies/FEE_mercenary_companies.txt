@@ -1,0 +1,23 @@
+# French-Scottish Mercenaries
+Garde_Ecossaise = {
+    regiments_per_development = 0.03
+
+    home_province = 252
+	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
+		OR = {
+			capital_scope = { 
+				OR = {
+					region = british_isles_region
+					region = france_region
+				}
+			}
+			has_country_flag = fee_garde_ecossaise
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.1
+		reinforce_speed = 0.3
+	}
+}

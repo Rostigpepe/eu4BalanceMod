@@ -20,3 +20,234 @@ MCO_using_curias_treasury_for_self_benefit = {
 	opinion = -30
 	yearly_decay = 1
 }
+
+#Diet of Worms
+fee_hab_protected_imperial_status_quo = {
+	opinion = 30
+	yearly_decay = 1
+}
+#Defender of Christendom
+fee_hab_bulwark_christendom = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+#Purchase of Dolni Luzice
+fee_bran_conceeded_territory = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+fee_bran_held_dolni_luze_territories = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+# El Draque GBR
+fee_eng_gbr_el_draque = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+# Field of Cloth of Gold
+fee_eng_gbr_field_of_the_cloth_of_gold = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+fee_eng_gbr_rejected_alliance = {
+	opinion = -30
+	yearly_decay = 2
+}
+
+#Enlightenment Popular Literary Work
+fee_enlightenment_popular_literary_work = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+# France and their subjects
+fee_france_interfered = {
+	opinion = -20
+	yearly_decay = 1
+}
+fee_france_successful = {
+	opinion = 10
+	yearly_decay = 1
+}
+fee_france_local = {
+	opinion = -20
+	yearly_decay = 1
+}
+fee_france_provincialism_opinion = {
+	opinion = 20
+	yearly_decay = 1
+}
+fee_redid_joan_trial = {
+	opinion = -50
+	yearly_decay = 1
+}
+fee_france_sent_protest = {
+	opinion = -25
+	yearly_decay = 1
+}
+fee_france_abided_to_rule = {
+	opinion = 30
+	yearly_decay = 1
+}
+fee_benevolt_ruling = {
+	opinion = 20
+	yearly_decay = 1
+}
+fee_cruel_ruling = {
+	opinion = -40
+	yearly_decay = 1
+}
+fee_france_independence_asserted_opinion = {
+	opinion = 25
+	yearly_decay = 1
+}
+fee_france_subjucated_overlord = {
+	opinion = 20
+	yearly_decay = 1
+}
+fee_france_subjucated = {
+	opinion = -25
+	yearly_decay = 1
+}
+fee_noble_leader_arrested = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+fee_france_claims_pressed = {
+	opinion = -75
+	yearly_decay = 1
+}
+fee_france_claims_waived = {
+	opinion = 75
+	yearly_decay = 1
+}
+fee_tribute_received = {
+	opinion = 60
+	yearly_decay = 1
+}
+fee_tribute_denied = {
+	opinion = -60
+	yearly_decay = 1
+}
+
+iberia_papal_fraud_uncovered = {
+	opinion = -30
+	yearly_decay = 2
+}
+
+FEE_HRE_Minor_Imperial_Navy_Opinion_Modifier = {
+	opinion = 100
+	yearly_decay = 1
+}
+FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier = {
+	opinion = -75
+	yearly_decay = 2
+}
+
+fee_boh_linked_thrones = {
+	opinion = 200
+	yearly_decay = 10
+}
+fee_boh_claiming_thrones = {
+	opinion = -200
+	yearly_decay = 10
+}
+
+fee_boh_charter_universal_peace_union_rivals = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+fee_boh_charter_universal_peace_union = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+fee_boh_charter_universal_peace_union_france = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+fee_boh_defenestration_prague = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+
+fee_ned_stole_our_province = {
+	opinion = -100
+	yearly_decay = 2
+}
+fee_ned_didnt_steal_our_province = {
+	opinion = 100
+	yearly_decay = 2
+}
+fee_ned_stand_against_france_opinion = {
+	opinion = 50
+	yearly_decay = 1
+}
+fee_ned_leader_grand_alliance_opinion = {
+	opinion = 75
+	yearly_decay = 1
+}
+fee_ned_huguenot_influx_opinion = {
+	opinion = -75
+	yearly_decay = 2
+}
+fee_ned_secured_borders_opinion = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+
+fee_por_portuguese_weaponry = {
+	opinion = 100
+	yearly_decay = 2
+}
+fee_por_failed_diplomacy = {
+	opinion = -100
+	yearly_decay = 2
+}
+fee_por_diplomacy = {
+	opinion = 100
+	yearly_decay = 1
+}
+fee_por_persuasion = {
+	opinion = -100
+	yearly_decay = 1
+}
+fee_por_alliance = {
+	opinion = 100
+	yearly_decay = 1
+}
+fee_por_bows_local_rulers = {
+	opinion = 100
+	yearly_decay = 2
+}
+fee_por_jewish_welcome = {
+	opinion = -50
+	yearly_decay = 1
+}
+fee_por_jewish_rejected = {
+	opinion = 50
+	yearly_decay = 1
+}
+fee_por_japan_weapons_trafficking = {
+	opinion = 100
+	yearly_decay = 2
+}
+fee_por_magellan_portuguese = {
+	opinion = -50
+	yearly_decay = 1
+}
+fee_por_magellan_spanish = {
+	opinion = 50
+	yearly_decay = 1
+}
