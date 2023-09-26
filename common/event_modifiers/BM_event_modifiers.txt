@@ -541,18 +541,6 @@ fee_france_decentralization = {
 	liberty_desire = -10
 }
 fee_france_blood_tax = {
-	global_manpower = 2
-}
-fee_france_blood_tax2 = {
-	global_manpower = 4
-}
-fee_france_blood_tax3 = {
-	global_manpower = 6
-}
-fee_france_blood_tax4 = {
-	global_manpower = 8
-}
-fee_france_blood_tax5 = {
 	global_manpower = 10
 }
 fee_france_legal_reform = {
@@ -579,7 +567,7 @@ fee_france_independence_asserted = {
 	diplomatic_reputation = 1
 }
 fee_france_state_control_over_church = {
-	curia_treasury_contribution = -1
+	curia_treasury_contribution = -0.5
 	prestige = 0.05
 	global_tax_modifier = 0.05
 }

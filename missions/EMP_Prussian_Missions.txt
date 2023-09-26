@@ -303,15 +303,15 @@ BRA_missions_2 = {
 		}
 		effect = {
 			every_owned_province = {
-				area = {
-					neumark_area = {
-						add_province_modifier = {
-							name = BRA_neumark_province
-							duration = 7300
-						}
-					}
+				limit = {
+					area = neumark_area
+				}
+				add_province_modifier = {
+					name = BRA_neumark_province
+					duration = 7300
 				}
 			}
+			
 			hidden_effect = {
 				if = {
 					limit = {					
@@ -635,7 +635,7 @@ BRA_missions_3 = {
 					limit = {
 						has_country_flag = humiliated_rival
 					}
-					add_mil_power = 50
+					add_mil_power = 150
 				}
 			}
 			add_country_modifier = {

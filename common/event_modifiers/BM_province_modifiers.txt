@@ -94,16 +94,6 @@ bm_epstein_island = {
 	picture = "ab_allow_religion_enforced"
 }
 
-
-#Walls of Theodosius
-bm_walls_of_constantinople = {
-	local_manpower = 1
-	hostile_fleet_attrition = 1
-	local_garrison_size = 0.33
-	local_assault_fort_ability = -0.5
-	picture = "Artillery_level_modifier"
-}
-
 #Galapagos Natural Selection
 bm_galapagos_natural_selection = {
 	embracement_cost = -0.1
@@ -142,4 +132,13 @@ bm_french_chateau = {
 	prestige = 0.1
 	max_absolutism = 1
 	picture = "Maximum_absolutism"
+}
+
+#Walls of Theodosius
+bm_walls_of_constantinople = {
+	local_manpower = 1
+	fort_level = 1
+	hostile_fleet_attrition = 1
+	trade_value_modifier = 0.1
+	picture = "Artillery_level_modifier"
 }

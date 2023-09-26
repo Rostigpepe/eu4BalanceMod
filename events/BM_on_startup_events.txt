@@ -605,12 +605,6 @@ country_event = {
 					duration = -1
 				}
 			}
-			151  = {
-				add_province_ = {
-					name = bm_walls_of_constantinople
-					duration = -1
-				}
-			}
 			2002  = {
 				add_permanent_province_modifier = {
 					name = bm_galapagos_natural_selection
@@ -668,6 +662,12 @@ country_event = {
 			4872  = {
 				add_permanent_province_modifier = {
 					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			151  = {
+				add_province_modifier = {
+					name = bm_walls_of_constantinople
 					duration = -1
 				}
 			}
