@@ -1155,13 +1155,28 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.25.OPT1
 
-		define_advisor = {
-			name = "Cristoforo Moro"
-			type = treasurer
-			culture = venetian
-			religion = ROOT
-			skill = 2
-			discount = yes
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			define_advisor = {
+				name = "Cristoforo Moro"
+				type = ate_advisor_state_administrator
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Cristoforo Moro"
+				type = treasurer
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
 		}
 		4729 = {
 			if = {
@@ -1716,7 +1731,7 @@ country_event = {
 			infantry = ROOT
 			ROOT = {
 				create_general = {
-					tradition = 75
+					tradition = 50
 					culture = albanian
 				}
 			}

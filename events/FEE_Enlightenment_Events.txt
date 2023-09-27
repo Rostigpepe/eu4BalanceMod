@@ -69,6 +69,13 @@ country_event = {
 			name = fee_enlightenment_coffee_house
 			duration = 3650
 		}
+		random_owned_province = {
+			limit = {
+				development = 20
+				has_building = university
+			}
+			add_random_development = 1
+		}
 	}
 
 	option = {
@@ -124,7 +131,7 @@ country_event = {
 		}
 
 		add_ruler_modifier = {
-			name = fee_enlightenment_enlightened_ruler
+			name = fee_enlightenment_not_enlightened_ruler
 			duration = -1
 		}
 	}
@@ -136,7 +143,7 @@ country_event = {
 		}
 
 		add_ruler_modifier = {
-			name = fee_enlightenment_not_enlightened_ruler
+			name = fee_enlightenment_enlightened_ruler
 			duration = -1
 		}
 	}
@@ -266,7 +273,7 @@ country_event = {
 			factor = 30
 		}
 
-		add_stability = -2
+		add_stability = -1
 	}
 }
 
@@ -502,14 +509,6 @@ country_event = {
 			has_reform = merchant_republic
 		}
 		modifier = {
-			factor = 0.4
-			government = monarchy
-		}
-		modifier = {
-			factor = 0.4
-			government = theocracy
-		}
-		modifier = {
 			factor = 0.8
 			is_at_war = yes
 		}
@@ -683,7 +682,7 @@ country_event = {
 
 	trigger = {
 		has_country_flag = fee_enlightenment_flag
-		mercantilism = 10
+		mercantilism = 3
 	}
 
 	mean_time_to_happen = {
@@ -704,13 +703,12 @@ country_event = {
 			factor = 50
 		}
 
-		add_mercantilism = -5
+		add_mercantilism = -10
+
 		add_country_modifier = {
-			name = fee_enlightenment_free_trade_1
+			name = fee_enlightenment_early_free_trade
 			duration = -1
 		}
-		custom_tooltip = fee_free_trade_tt
-		set_country_flag = fee_free_trade_flag
 	}
 
 	option = {
@@ -731,8 +729,12 @@ country_event = {
 			factor = 0
 		}
 
-		add_dip_power = -200
 		add_mercantilism = 10
+
+		add_country_modifier = {
+			name = fee_enlightenment_doubledown_on_mercantilism
+			duration = -1
+		}
 	}
 }
 
@@ -924,14 +926,6 @@ country_event = {
 			has_reform = oligarchic_republic
 		}
 		modifier = {
-			factor = 0.4
-			government = monarchy
-		}
-		modifier = {
-			factor = 0.4
-			government = theocracy
-		}
-		modifier = {
 			factor = 0.8
 			NOT = {
 				stability = 0
@@ -1028,18 +1022,6 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Enlightenment_Events.18.OPT3.5
-		trigger = {
-			religion = hussite
-		}
-
-		add_country_modifier = {
-			name = fee_enlightenment_anti_religious_work_hussite
-			duration = 1825
-		}
-	}
-
-	option = {
 		name = FEE_Enlightenment_Events.18.OPT4
 		trigger = {
 			NOT = { religion = catholic }
@@ -1095,7 +1077,6 @@ country_event = {
 		remove_country_modifier = fee_enlightenment_anti_religious_work_catholic
 		remove_country_modifier = fee_enlightenment_anti_religious_work_reformed
 		remove_country_modifier = fee_enlightenment_anti_religious_work_protestant
-		remove_country_modifier = fee_enlightenment_anti_religious_work_hussite
 	}
 }
 

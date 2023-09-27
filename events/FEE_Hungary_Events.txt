@@ -1390,11 +1390,9 @@ country_event = {
 	option = {
 		name = FEE_Hungary_Events.20.OPT1
 
-		153 = {
-			add_great_project_tier = {
-				type = buda_castle
-				tier = 1
-			}
+		add_country_modifier = {
+			name = fee_hun_hungarian_renaissance
+			duration = 9125
 		}
 	}
 
@@ -1403,9 +1401,5 @@ country_event = {
 
 		add_adm_power = 100
 		add_prestige_or_monarch_power = { amount = 10 }
-		add_country_modifier = {
-			name = fee_hun_hungarian_renaissance
-			duration = 9125
-		}
 	}
 }

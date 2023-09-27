@@ -171,36 +171,7 @@ country_event = {
 
 	option = {
 		name = FEE_Portugal_Events.4.OPT1
-		add_years_of_income = -1
-		if = {
-			limit = { 
-				230 = { 
-					has_great_project = {
-						type = gme_sagres_school_navigation
-						tier = 3
-					}
-				}
-			}
-			230 = {
-				add_base_production = 2
-			}
-		}
-
-		else_if = {
-			limit = { 
-				230 = { 
-					has_great_project = {
-						type = gme_sagres_school_navigation
-					}
-				}
-			}
-			230 = {
-				add_great_project_tier = {
-					type = gme_sagres_school_navigation
-					tier = 1
-				}
-			}
-		}
+		add_years_of_income = -0.5
 
 		custom_tooltip = fee_por_henrique_duration_tt
 		add_country_modifier = {
@@ -1201,14 +1172,6 @@ country_event = {
 			limit = { region = iberia_region }
 			change_religion = jewish
 		}
-		random_owned_province = {
-			limit = { region = iberia_region }
-			change_religion = jewish
-		}
-		random_owned_province = {
-			limit = { region = iberia_region }
-			change_religion = jewish
-		}
 		CAS = {
 			add_opinion = {
 				who = ROOT
@@ -1352,14 +1315,6 @@ country_event = {
 			spawn_rebels = {
 				size = 2
 				type = catholic_rebels
-			}
-		}
-		custom_tooltip = fee_portugal_events_custom_TT
-		hidden_effect = {
-			set_country_flag = FEE_portugal_conversion_to_jewish
-			country_event = {
-				id = FEE_Portugal_Events.102
-				days = 1825
 			}
 		}
 	}
@@ -1753,79 +1708,5 @@ country_event = {
 
 	option = {
 		name = FEE_Portugal_Events.101.OPT1
-	}
-}
-
-#Jewish Conversion of Portugal
-country_event = {
-	id = FEE_Portugal_Events.102
-	title = FEE_Portugal_Events.101.T
-	desc = FEE_Portugal_Events.101.D
-	picture = UNIVERSITY_eventPicture
-
-	is_triggered_only = yes
-
-	trigger = {
-		tag = POR
-		has_country_modifier = fee_por_jewish_liberties_granted
-		has_country_flag = FEE_portugal_conversion_to_jewish
-	}
-
-	immediate = {
-		hidden_effect = {
-			remove_country_modifier = fee_por_avenge_betrayal
-			clr_country_flag = FEE_portugal_conversion_to_jewish
-		}
-	}
-
-	option = {
-		name = FEE_Portugal_Events.102.OPT1 #Let's embrace the Jewish Religion
-		change_religion = jewish
-		add_stability = -2
-		random_owned_province = {
-			limit = {
-				region = iberia_region
-				religion = catholic
-			}
-			spawn_rebels = {
-				size = 2
-				type = catholic_rebels
-			}
-		}
-		random_owned_province = {
-			limit = {
-				region = iberia_region
-				religion = catholic
-			}
-			spawn_rebels = {
-				size = 2
-				type = catholic_rebels
-			}
-		}
-		random_owned_province = {
-			limit = {
-				region = iberia_region
-				religion = catholic
-			}
-			spawn_rebels = {
-				size = 2
-				type = catholic_rebels
-			}
-		}
-	}
-
-	option = {
-		name = FEE_Portugal_Events.102.OPT2 #Maybe Tolerance has gone a bit too far
-		every_owned_province = {
-			limit = {
-				religion = jewish
-			}
-			change_religion = ROOT
-			spawn_rebels = {
-				size = 2
-				type = jewish_rebels
-			}
-		}
-		add_stability = -2
 	}
 }

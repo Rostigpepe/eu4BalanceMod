@@ -251,3 +251,60 @@ fee_por_magellan_spanish = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+
+# Bavaria chooses to reconcile with the Habsburgs or oppose them
+fee_bav_reconcile_habsburgs = {
+	opinion = 30
+	yearly_decay = 1
+}
+fee_bav_against_habsburgs = {
+	opinion = -10
+	yearly_decay = 1
+}
+
+#Burgundy King of Loth
+fee_bur_king_of_loth = {
+	opinion = -50
+	yearly_decay = 1
+}
+#Burgundy King of Loth
+fee_bur_king_of_loth_hab = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+#Stockholm Bloodbath
+fee_dan_stockholm_bloodbath = {
+	opinion = -100
+	yearly_decay = 1
+}
+fee_dan_stayed_out_german_affairs = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+irish_supported_york = {
+	opinion = 100
+	yearly_decay = 2	# optional
+}
+
+irish_angered_england = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+irish_dutch_support = {
+	opinion = 100
+	yearly_decay = 2
+}
+irish_iberian_support = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+#Marathas Raiding Western Stores
+fee_mar_maratha_raided_stores = {
+	opinion = -25
+	yearly_decay = 1
+}

@@ -132,7 +132,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nobles
-				loyalty = -15
+				loyalty = -10
 			}
 		}
 		galicia_area = {
@@ -587,7 +587,7 @@ country_event = {
 		add_years_of_income = 0.50
 		add_country_modifier = {
 			name = iberia_centralised_rule
-			duration = -1
+			duration = 7300
 		}
 	}
 }
@@ -628,7 +628,7 @@ country_event = {
 		catalonia_area = {
 			add_permanent_province_modifier = {
 				name = iberia_institutions_respected
-				duration = -1
+				duration = 7300
 			}
 		}
 		if = {
@@ -660,7 +660,7 @@ country_event = {
 		catalonia_area = {
 			add_permanent_province_modifier = {
 				name = iberia_institutions_modified
-				duration = -1
+				duration = 7300
 			}
 		}
 	}
@@ -675,7 +675,7 @@ country_event = {
 		catalonia_area = {
 			add_permanent_province_modifier = {
 				name = iberia_institutions_abolished
-				duration = -1
+				duration = 7300
 			}
 		}
 		if = {
@@ -794,7 +794,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = iberia_constitution_concessions
-			duration = -1
+			duration = 18250
 		}
 	}
 	option = {
@@ -1161,7 +1161,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		add_reform_desire = -0.01
+		add_reform_desire = -0.02
 		add_stability_or_adm_power = yes
 		add_corruption = -1
 		if = {
@@ -1181,7 +1181,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		add_reform_desire = 0.02
+		add_reform_desire = 0.05
 		add_stability_or_adm_power = yes
 		add_corruption = 1
 		add_country_modifier = {
@@ -1215,7 +1215,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = iberia_school_alcala
-			duration = -1
+			duration = 5475
 		}
 		217 = {
 			owner = {
@@ -1225,7 +1225,7 @@ country_event = {
 					}
 					add_country_modifier = {
 						name = iberia_university_alcala
-						duration = -1
+						duration = 5475
 					}
 				}
 			}
@@ -1441,7 +1441,7 @@ country_event = {
 		add_reform_desire = -0.01
 		add_country_modifier = {
 			name = iberia_recogimiento
-			duration = -1
+			duration = 7300
 		}
 		if = {
 			limit = {
@@ -1494,7 +1494,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = iberia_recogimiento
-			duration = -1
+			duration = 7300
 		}
 		if = {
 			limit = {
@@ -1538,7 +1538,7 @@ country_event = {
 		add_reform_desire = 0.01
 		add_country_modifier = {
 			name = iberia_recogimiento
-			duration = -1
+			duration = 7300
 		}
 		if = {
 			limit = {
@@ -1712,7 +1712,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_years_of_income = -0.25
+		add_years_of_income = -1.5
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_country_modifier = {
 			name = iberia_jesuit_education
@@ -1767,7 +1767,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = iberia_molinism
-			duration = -1
+			duration = 10950
 		}
 	}
 

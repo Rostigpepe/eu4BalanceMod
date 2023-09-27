@@ -10,5 +10,6 @@ guelders_wars = {
 		war_with = GEL
 	}
 
-	war_exhaustion = 0.02
+	war_exhaustion = 0.05
+	available_province_loot = 1
 }

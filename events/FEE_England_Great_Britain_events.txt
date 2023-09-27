@@ -75,7 +75,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = fee_eng_gbr_king_james_bible
-			duration = -1
+			duration = 36500
 		}
 		define_advisor = {
 			type = theologian
@@ -93,7 +93,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = fee_eng_gbr_authorized_version
-			duration = -1
+			duration = 36500
 		}
 		define_advisor = {
 			type = philosopher
@@ -111,7 +111,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = fee_eng_gbr_god_now_speaks_english
-			duration = -1
+			duration = 36500
 		}
 		define_advisor = {
 			type = artist
@@ -178,6 +178,128 @@ country_event = {
 	}
 }
 
+# The Acts of Union
+country_event = {
+	id = FEE_England_Great_Britain_Events.4
+	title = FEE_England_Great_Britain_Events.4.T
+	desc = FEE_England_Great_Britain_Events.4.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = GBR
+		owns_or_subject_of = 4121
+		owns_or_subject_of = 4380
+		owns_or_subject_of = 372
+		owns_or_subject_of = 373
+		owns_or_subject_of = 4119
+		owns_or_subject_of = 376
+		owns_or_subject_of = 4379
+		owns_or_subject_of = 375
+		owns_or_subject_of = 4377
+		owns_or_subject_of = 374
+		owns_or_subject_of = 4118
+		owns_or_subject_of = 4378
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.4.OPT1
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				accepted_culture = scottish
+				accepted_culture = highland_scottish
+				accepted_culture = irish
+			}
+			add_dip_power = 100
+		}
+		else = {
+			add_accepted_culture = scottish
+			add_accepted_culture = highland_scottish
+			add_accepted_culture = irish
+		}
+		add_country_modifier = {
+			name = fee_eng_gbr_united_kingdom
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.4.OPT2
+		ai_chance = {
+			factor = 100
+		}
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				accepted_culture = scottish
+				accepted_culture = highland_scottish
+			}
+			add_dip_power = 50
+		}
+		else = {
+			add_accepted_culture = scottish
+			add_accepted_culture = highland_scottish
+		}
+
+		add_country_modifier = {
+			name = fee_eng_gbr_union_of_britain
+			duration = -1
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = irish
+				}
+			}
+			custom_tooltip = fee_eng_gbr_irish_tt
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						culture = irish
+					}
+					add_province_modifier = {
+						name = fee_eng_gbr_unequal_status
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = irish
+					}
+					add_province_modifier = {
+						name = fee_eng_gbr_unequal_status
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.4.OPT3
+
+		add_stability = -1
+		add_mil_power = 100
+		add_mercantilism = 1
+		add_country_modifier = {
+			name = fee_eng_gbr_english_empire
+			duration = -1
+		}
+	}
+}
+
 # The Statutes of Icolmkill
 country_event = {
 	id = FEE_England_Great_Britain_Events.5
@@ -204,21 +326,6 @@ country_event = {
 
 		custom_tooltip = fee_eng_gbr_statute_tt
 		set_country_flag = fee_eng_gbr_statute_flag
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					region = british_isles_region
-					NOT = {
-						culture = english
-					}
-				}
-				add_province_modifier = {
-					name = fee_eng_gbr_statute 
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
 	}
 
 	option = {
@@ -501,7 +608,8 @@ country_event = {
 		}
 		is_year = 1600
 		exploration_ideas = 1
-		num_of_loans = 10
+		war_exhaustion = 3
+		num_of_loans = 2
 	}
 
 	mean_time_to_happen = {
@@ -512,7 +620,7 @@ country_event = {
 		name = FEE_England_Great_Britain_Events.8.OPT1
 
 		add_inflation = -2
-		add_years_of_income = 0.25
+		add_years_of_income = 0.1
 		add_war_exhaustion = -2
 
 		hidden_effect = {
@@ -529,15 +637,6 @@ country_event = {
 				}
 			}
 		}
-	}
-
-	option = {
-		name = FEE_England_Great_Britain_Events.8.OPT2
-
-		add_inflation = 5
-		add_years_of_income = -0.25
-		add_war_exhaustion = 2
-		custom_tooltip = ee_eng_gbr_deteriorating_economy_tt
 	}
 }
 
@@ -576,12 +675,8 @@ country_event = {
 		name = FEE_England_Great_Britain_Events.10.OPT1
 
 		add_stability_or_adm_power = yes
-		add_years_of_income = 2
+		add_years_of_income = 1
 		add_inflation = -5
-		add_country_modifier = {
-			name = fee_eng_gbr_miraculous_recovery
-			duration = 3650
-		}
 	}
 }
 
@@ -686,6 +781,82 @@ country_event = {
 	}
 }
 
+# hidden event adding the statute of icolmkill
+province_event = {
+	id = FEE_England_Great_Britain_Events.13
+	title = FEE_England_Great_Britain_Events.13.T
+	desc = FEE_England_Great_Britain_Events.13.D
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = fee_eng_gbr_statute_flag
+		}
+		NOT = { has_province_modifier = fee_eng_gbr_statute }
+		has_owner_culture = no
+		is_state = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_province_modifier = {
+				name = fee_eng_gbr_statute
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.13.OPT1
+	}
+}
+
+province_event = {
+	id = FEE_England_Great_Britain_Events.14
+	title = FEE_England_Great_Britain_Events.14.T
+	desc = FEE_England_Great_Britain_Events.14.D
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		has_province_modifier = fee_eng_gbr_statute
+		OR = {
+			NOT = {
+				has_owner_culture = no
+			}
+			NOT = {
+				is_state = yes
+			}
+			NOT = {
+				owner = {
+					has_country_flag = fee_eng_gbr_statute_flag
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_province_modifier = fee_eng_gbr_statute
+		}
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.14.OPT1
+	}
+}
+
 # Sir Francis Drake
 country_event = {
 	id = FEE_England_Great_Britain_Events.15
@@ -722,8 +893,8 @@ country_event = {
 		name = FEE_England_Great_Britain_Events.15.OPT1
 
 		define_admiral = {
-			shock = 3
-			fire = 3
+			shock = 4
+			fire = 4
 			manuever = 6
 			siege = 2
 			name = "Francis Drake"
@@ -763,6 +934,7 @@ country_event = {
 			manuever = 6
 			siege = 1
 			name = "Francis Drake"
+			trait = Sea_Dog_modifier
 		}
 		add_country_modifier = {
 			name = fee_eng_gbr_legacy_drake
@@ -843,7 +1015,7 @@ country_event = {
 		name = FEE_England_Great_Britain_Events.17.OPT1
 
 		236 = {
-			add_devastation = 50
+			add_devastation = 70
 			add_base_tax = -3
 			add_base_production = -3
 			add_base_manpower = -3
@@ -874,15 +1046,13 @@ country_event = {
 
 		236 = {
 			remove_province_modifier = fee_eng_gbr_destruction_of_the_capital
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
 			add_province_modifier = {
 				name = fee_eng_gbr_wrens_london
 				duration = -1
 			}
-			add_devestation = -25
-			add_prosperity = 50
 		}
 	}
 
@@ -891,15 +1061,13 @@ country_event = {
 
 		236 = {
 			remove_province_modifier = fee_eng_gbr_destruction_of_the_capital
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
 			add_province_modifier = {
 				name = fee_eng_gbr_everlyns_london
 				duration = -1
 			}
-			add_devestation = -25
-			add_prosperity = 50
 		}
 	}
 
@@ -908,15 +1076,13 @@ country_event = {
 
 		236 = {
 			remove_province_modifier = fee_eng_gbr_destruction_of_the_capital
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
 			add_province_modifier = {
 				name = fee_eng_gbr_hookes_london
 				duration = -1
 			}
-			add_devestation = -25
-			add_prosperity = 50
 		}
 	}
 }
@@ -1005,6 +1171,55 @@ country_event = {
 			}
 		}
 		add_prestige = -10
+	}
+}
+
+# The Rough Wooing
+country_event = {
+	id = FEE_England_Great_Britain_Events.20
+	title = FEE_England_Great_Britain_Events.20.T
+	desc = FEE_England_Great_Britain_Events.20.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		is_free_or_tributary_trigger = yes
+		exists = SCO
+		SCO = {
+			is_free_or_tributary_trigger = yes
+			OR = {
+				is_female = yes
+				has_heir = no
+				AND = {
+					has_regency = yes
+					has_female_heir = yes
+				}
+			}
+		}
+		is_year = 1500
+		NOT = { is_year = 1600 }
+		NOT = { exists = GBR }
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			truce_with = SCO
+		}
+	}
+
+	option = {
+		name = FEE_England_Great_Britain_Events.20.OPT1
+
+		add_casus_belli = {
+			type = cb_fabricated_claims
+			target = SCO
+			months = 120
+		}
 	}
 }
 

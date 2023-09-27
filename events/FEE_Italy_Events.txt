@@ -30,7 +30,7 @@ country_event = {
 	option = {
 		name = FEE_Italy_Events.1.OPT1
 		ai_chance = {
-			factor = 20
+			factor = 25
 		}
 
 		country_event = {
@@ -42,7 +42,7 @@ country_event = {
 	option = {
 		name = FEE_Italy_Events.1.OPT2
 		ai_chance = {
-			factor = 20
+			factor = 25
 		}
 
 		country_event = {
@@ -54,7 +54,7 @@ country_event = {
 	option = {
 		name = FEE_Italy_Events.1.OPT3
 		ai_chance = {
-			factor = 20
+			factor = 25
 		}
 
 		country_event = {
@@ -66,23 +66,11 @@ country_event = {
 	option = {
 		name = FEE_Italy_Events.1.OPT4
 		ai_chance = {
-			factor = 20
+			factor = 25
 		}
 
 		country_event = {
 			id = FEE_Italy_Events.5
-			days = 30
-		}
-	}
-
-	option = {
-		name = FEE_Italy_Events.1.OPT5
-		ai_chance = {
-			factor = 20
-		}
-
-		country_event = {
-			id = FEE_Italy_Events.6
 			days = 30
 		}
 	}
@@ -176,24 +164,36 @@ country_event = {
 	}
 }
 
-#Peace
-country_event = {
-	id = FEE_Italy_Events.6
-	title = FEE_Italy_Events.6.T
-	desc = FEE_Italy_Events.6.D
-	picture = BATTLE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = FEE_Italy_Events.6.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_country_modifier = {
-			name = fee_italian_wars_peaceful
-			duration = 3650
-		}
-	}
-}
+#
+#country_event = {
+#	id = FEE_Italy_Events.
+#	title = FEE_Italy_Events..T
+#	desc = FEE_Italy_Events..D
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#	trigger = {
+#
+#	}
+#
+#
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#
+#	option = {
+#		name = FEE_Italy_Events..OPT1
+#		ai_chance = {
+#			factor = 50
+#		}
+#
+#	}
+#
+#	option = {
+#		name = FEE_Italy_Events..OPT2
+#		ai_chance = {
+#			factor = 50
+#		}
+#
+#	}
+#}

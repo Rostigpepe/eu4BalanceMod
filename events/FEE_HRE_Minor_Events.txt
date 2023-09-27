@@ -177,13 +177,7 @@ country_event = {
 		NOT = {
 			is_year = 1560
 		}
-		OR = {
-			innovativeness_ideas = 3
-			innovativeness = 20
-			ruler_has_personality = scholar_personality
-			ruler_has_personality = patron_of_arts_personality
-		}
-
+		innovativeness_ideas = 3
 	}
 	mean_time_to_happen = {
 		months = 1

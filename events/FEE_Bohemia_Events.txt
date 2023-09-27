@@ -184,9 +184,9 @@ country_event = {
 		define_ruler = {
 			name = "Victor z"
 			dynasty = "z Podebrad"
-			adm = 3
+			adm = 2
 			dip = 4
-			mil = 3
+			mil = 2
 		}
 		kill_heir = {}
 		capital_scope = {
@@ -337,9 +337,9 @@ country_event = {
 		define_ruler = {
 			name = "Janos"
 			dynasty = "Hunyadi"
-			adm = 3
-			dip = 4
-			mil = 6
+			adm = 2
+			dip = 3
+			mil = 5
 			age = 17
 		}
 		kill_heir = {}
@@ -647,67 +647,6 @@ country_event = {
 			name = boh_coinage_pioneer
 			duration = 7300
 		}
-		if = {
-			limit = { 
-				2967 = {
-					has_great_project = {
-						type = gme_royal_mint_jachymov
-						tier = 3
-					}
-				}
-			}
-			add_years_of_owned_provinces_production_income = {
-				years = 5
-				trigger = {
-					OR = {
-						trade_goods = gold
-					}
-				}
-				custom_tooltip = MONOPOLY_INCOME_CLOTH_DESC
-			}
-		}
-		else_if = {
-			limit = { 
-				2967 = {
-					has_great_project = {
-						type = gme_royal_mint_jachymov
-						tier = 2
-					}
-				}
-			}
-			add_great_project_tier = {
-				type = gme_royal_mint_jachymov
-				tier = 1
-			}
-		}
-		else_if = {
-			limit = { 
-				2967 = {
-					has_great_project = {
-						type = gme_royal_mint_jachymov
-						tier = 1
-					}
-				}
-			}
-			add_great_project_tier = {
-				type = gme_royal_mint_jachymov
-				tier = 1
-			}
-		}
-		else_if = {
-			limit = { 
-				2967 = {
-					has_great_project = {
-						type = gme_royal_mint_jachymov
-						tier = 0
-					}
-				}
-			}
-			add_great_project_tier = {
-				type = gme_royal_mint_jachymov
-				tier = 1
-			}
-		}
 		custom_tooltip = fee_boh_thaler_princes_tt
 		hidden_effect = {
 			every_country = {
@@ -725,7 +664,7 @@ country_event = {
 	option = {
 		name = FEE_Bohemia_Events.11.OPT2 #Yes yes, very nice, but what's in it for me?
 
-		add_years_of_income = 3
+		add_years_of_income = 1
 		add_prestige = -10
 		add_country_modifier = {
 			name = fee_boh_greedy_rulership

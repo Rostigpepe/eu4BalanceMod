@@ -118,7 +118,6 @@ country_event = {
 				name = fee_rus_renovated_kremlin
 				duration = -1
 			}
-			add_base_manpower = 2
 		}
 	}
 }
@@ -209,6 +208,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		4151 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
 		4124 = {
 			add_province_modifier = {
 				name = fee_rus_rights_guaranteed
@@ -216,6 +221,12 @@ country_event = {
 			}
 		}
 		32 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		30 = {
 			add_province_modifier = {
 				name = fee_rus_rights_guaranteed
 				duration = -1
@@ -254,10 +265,16 @@ country_event = {
 		bothnia_area = {
 			cede_province = FIN
 		}
+		4151 = {
+			cede_province = FIN
+		}
 		4124 = {
 			cede_province = FIN
 		}
 		32 = {
+			cede_province = FIN
+		}
+		30 = {
 			cede_province = FIN
 		}
 	}

@@ -190,7 +190,7 @@ country_event = {
 		name = FEE_Poland_Events.10.OPT1 # Enact
 
 		add_stability = 1
-		add_mercantilism = 2
+		add_mercantilism = 0.025
 		add_country_modifier = {
 			name = fee_pol_statut_piotrkowski
 			duration = -1

@@ -290,8 +290,8 @@ country_event = {
 				name = fee_ned_structured_city
 				duration = -1
 			}
-			add_base_tax = 1
-			add_base_production = 1
+			add_base_tax = 2
+			add_base_production = 2
 			add_base_manpower = 3
 		}
 	}
@@ -520,7 +520,7 @@ country_event = {
 			factor = 50
 		}
 
-		random_owned_province = {
+		every_owned_province = {
 			limit = { 
 				region = low_countries_region 
 				has_port = yes
@@ -605,7 +605,6 @@ country_event = {
 			OR = {
 				has_idea_group = maritime_ideas
 				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
 			}
 		}
 		modifier = {
@@ -740,15 +739,11 @@ country_event = {
 			name = fee_ned_raid_medway
 			duration = 3650
 		}
-		every_owned_province = {
-			limit = {
-				region = british_isles_region
-				has_port = yes
-			}
+		283 = {
 			kill_units = {
 				who = owner
 				type = heavy_ship
-				amount = 5
+				amount = 12
 			}
 		}
 	}

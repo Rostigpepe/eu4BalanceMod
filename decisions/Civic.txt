@@ -65,11 +65,12 @@ country_decisions = {
 		allow = {
 			AND = {
 				NOT = { tag = USA }
-				NOT = { overextension_percentage = 0.02 }
+				dip_tech = 13
 				OR = {
 					adm_tech = 22
 					has_reform = peasants_republic
 					has_reform = pirate_republic_reform
+					full_idea_group = humanist_ideas
 				}
 			}
 		}
