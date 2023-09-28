@@ -180,6 +180,7 @@ technology = { #Early Modern Administration
 		new_world_i = 0.5
 	}
 	
+	state_maintenance_modifier = 0.02
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
 	governing_capacity = 100
@@ -257,7 +258,7 @@ technology = { #University
 	
 	university = yes	
 	governing_capacity = 250
-	
+	state_maintenance_modifier = 0.02
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
 }
@@ -273,6 +274,8 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
+	ae_impact = 0.1
+	unjustified_demands = 0.1
 	allowed_idea_groups	= 5
 }
 
@@ -334,7 +337,7 @@ technology = { #The Constitution
 		global_trade = 0.5
 		manufactories = 0.3
 	}
-	
+	state_maintenance_modifier = 0.02
 	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
@@ -370,7 +373,8 @@ technology = { #Bonds and Tontines
 		manufactories = 0.5
 		enlightenment = 0.15
 	}
-	
+	interest = 1
+	inflation_action_cost = 0.1
 	counting_house = yes  
 	governing_capacity = 250
 }
@@ -404,7 +408,8 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	
+	ae_impact = 0.1
+	unjustified_demands = 0.1
 	allowed_idea_groups 	= 	7
 }
 
@@ -420,7 +425,7 @@ technology = { #Modern Bureaucracy
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-
+	state_maintenance_modifier = 0.02
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1	
 	governing_capacity = 250
@@ -461,6 +466,7 @@ technology = { #Rights of Man
 	allowed_idea_groups = 8
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
+	years_of_nationalism = 5
 }
 
 technology = { #Advanced Production
@@ -498,6 +504,7 @@ technology = { #Revolutionary Ideals
 	revolutionary_republic = yes
 	revolutionary_empire = yes
 	governing_capacity = 500
+	years_of_nationalism = 5
 }
 
 technology = { #Four Field Rotation

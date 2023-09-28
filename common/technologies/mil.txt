@@ -257,6 +257,7 @@ technology = {
 	enable = ha_xiuhtecuhtli_soldier
 	military_tactics 	= 	0.25
 	combat_width = 1	
+	land_maintenance_modifier = 0.04
 }
 
 technology = {
@@ -313,7 +314,7 @@ technology = {
 
 	
 	weapons = yes
-	
+	reinforce_cost_modifier = 0.04
 	combat_width = 2
 }
 	
@@ -456,7 +457,7 @@ technology = {
 	training_fields = yes
 	
 	combat_width = 1
-	
+	land_maintenance_modifier = 0.04
 	enable = chambered_demi_cannon
 	enable = demi_culverin
 }
@@ -474,7 +475,7 @@ technology = {
 	
 	cavalry_shock		=	1.0
 	supply_limit		= 	0.5	
-	
+	reinforce_cost_modifier = 0.04
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
 	enable = african_swarm
@@ -493,6 +494,7 @@ technology = {
 	
 	#Carbine
 	maneuver_value 		= 	0.25
+	land_maintenance_modifier = 0.04
 
 		
 	enable = swedish_gallop	
@@ -587,6 +589,7 @@ technology = {
 	military_tactics 	= 	0.25
 	
 	infantry_shock 		=	0.5
+	land_maintenance_modifier = 0.04
 }
 
 technology = {
@@ -607,7 +610,7 @@ technology = {
 	artillery_fire		=	2.0
 	
 	combat_width = 2
-	
+	reinforce_cost_modifier = 0.04
 	conscription_center = yes
 
 	
@@ -755,6 +758,8 @@ technology = {
 	enable = pacific_guerrillas
 	
 	combat_width = 2
+	land_maintenance_modifier = 0.04
+	reinforce_cost_modifier = 0.04
 }
 
 technology = {
@@ -852,7 +857,7 @@ technology = {
 	military_tactics	=	0.25
 	land_morale			=	1.0
 	maneuver_value = 0.25
-	
+	reinforce_cost_modifier = 0.04
 	enable = russian_mass
 	enable = mixed_order_infantry	
 	enable = prussian_drill		
@@ -887,6 +892,7 @@ technology = {
 	cavalry_shock		=	1.0
 	infantry_fire		=	1.0
 	supply_limit		=	0.5
+	land_maintenance_modifier = 0.1
 }
 
 technology = {

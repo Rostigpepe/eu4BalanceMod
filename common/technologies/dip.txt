@@ -219,7 +219,7 @@ technology = { #Chartered Companies
 		new_world_i = 0.5
 		printing_press = 0.15
 	}
-	
+	interest = 0.25
 	trade_efficiency 		= 	0.02
 	enable = brig
 
@@ -271,7 +271,7 @@ technology = { #Development of Maritime Law
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	
+	interest = 0.25
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 
@@ -349,7 +349,7 @@ technology = { #Naval Professionalization
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-
+	interest = 0.5
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	num_accepted_cultures = 1
@@ -472,7 +472,7 @@ technology = { #The Eastindiaman
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	
+	interest = 0.25
 	range					=	200
 	global_colonial_growth  = 	20
 	num_accepted_cultures = 1
@@ -513,7 +513,7 @@ technology = { #Joint Stock Companies
 		enlightenment = 0.5
 		industrialization = 0.25
 	}
-	
+	interest = 0.25
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 }
@@ -549,7 +549,7 @@ technology = { #Insurance Companies
 		enlightenment = 0.5
 		industrialization = 1
 	}
-	
+	interest = 0.5
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	may_infiltrate_administration = yes
@@ -587,7 +587,8 @@ technology = { #The Gold Standard
 		enlightenment = 1
 		industrialization = 1
 	}
-	
+	monthly_gold_inflation_modifier = 0.25
+	interest = 0.5
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	25
