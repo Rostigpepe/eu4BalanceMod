@@ -1671,7 +1671,7 @@ tripitaka_koreana = {
 	harmonization_speed = 0.1
 	yearly_karma_decay = 0.01
 	monthly_splendor = 1
-	institution_growth = 3
+	local_institution_spread = 0.25
 }
 
 tripitaka_koreana_defenses = {
@@ -1685,7 +1685,7 @@ hangeul_alphabet_revoked = {
 }
 
 the_righteous_army = {
-	global_tax_modifier = -0.1
+	global_tax_modifier = -0.25
 	land_morale = 0.1
 	hostile_attrition = 3
 	max_hostile_attrition = 3
