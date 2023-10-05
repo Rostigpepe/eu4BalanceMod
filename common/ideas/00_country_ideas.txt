@@ -127,7 +127,7 @@ GER_ideas = {
 	}
 	ger_eisen_und_kohle = {
 		global_trade_goods_size_modifier = 0.2
-		global_prosperity_growth = 0.025
+		global_prosperity_growth = 0.2
 	}
 }
 

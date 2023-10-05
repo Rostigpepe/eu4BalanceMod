@@ -3262,6 +3262,10 @@ FEE_Italy_Events.6.D: "Though the Italian wars raged and most states were caught
  FEE_Portugal_Events.21.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
  FEE_Portugal_Events.21.OPT1: "Sweet!"
 
+ FEE_Portugal_Events.22.T: "The Jewish Insurgence"
+ FEE_Portugal_Events.22.D: ""
+ FEE_Portugal_Events.22.OPT1: "Sweet!"
+
  FEE_Portugal_Events.100.T: "End of Henrique's Naval Reforms"
  FEE_Portugal_Events.100.D: "You shouldn't be able to see this hidden event."
  FEE_Portugal_Events.100.OPT1: "Please report it to the team if you see it."
@@ -3336,6 +3340,8 @@ FEE_Italy_Events.6.D: "Though the Italian wars raged and most states were caught
  fee_por_killed_2: "He may have his revenge, and then must be replaced.\n"
  fee_por_killed_3: "We shall assist our loyal servant.\n"
  fee_por_king: "Henceforth he and anyone who follow him are outlaws!\n"
+
+ FEE_portugal_events.16.TT: "There might be §Munforeseen consequences§! ..."
 
  securing_african_interest_TT: "We will build the §Ycurrent level fort§! in every province in the §MIvocry Coast§! trade node"
  fee_portugal_events_custom_TT: "By accepting the uncontrolled immigration of Jews, unforeseen consequenses may occur..."

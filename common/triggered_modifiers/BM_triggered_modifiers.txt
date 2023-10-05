@@ -708,7 +708,7 @@ social_conservatism_title = {
 		has_first_revolution_started = yes
 	}
 	global_institution_spread = -0.33
-	global_unrest = 5
+	global_unrest = 3
 }
 
 ######################################

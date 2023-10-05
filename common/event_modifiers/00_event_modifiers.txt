@@ -2372,7 +2372,8 @@ new_model_army = {
 
 swe_vasa_leads_the_rebellion = {
 	liberty_desire = 25
-	global_unrest = -2
+	land_morale = 0.1
+	manpower_recovery_speed = 0.25
 }
 
 swe_any_vasa_leads_the_rebellion = {
@@ -4989,8 +4990,8 @@ bra_kreditwerk = {
 
 #Norway
 nor_bohus_fortress = {
-	local_manpower_modifier = 0.1
-
+	local_garrison_size = 0.25
+	local_fort_maintenance_modifier = -0.75
 }
 
 nor_prospecting_the_skands = {
@@ -4998,13 +4999,13 @@ nor_prospecting_the_skands = {
 }
 
 nor_kongsberg_mine = {
-	tax_income = 5
+	tax_income = 24
 }
 
 nor_rebuilding_oslo = {
 	local_tax_modifier = -0.4
-	local_development_cost = -0.1
-	local_defensiveness = 0.1
+	local_development_cost = -0.15
+	local_defensiveness = 0.25
 }
 
 nor_hollendertiden = {

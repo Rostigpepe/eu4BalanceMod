@@ -1299,7 +1299,14 @@ country_event = {
 		random_owned_province = {
 			limit = { region = iberia_region }
 			spawn_rebels = {
-				size = 2
+				size = 1
+				type = catholic_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 1
 				type = catholic_rebels
 			}
 		}
@@ -1310,12 +1317,14 @@ country_event = {
 				type = catholic_rebels
 			}
 		}
-		random_owned_province = {
-			limit = { region = iberia_region }
-			spawn_rebels = {
-				size = 2
-				type = catholic_rebels
+		custom_tooltip = FEE_portugal_events.16.TT
+
+		hidden_effect = {
+			country_event = {
+				id = FEE_Portugal_Events.22
+				days = 120
 			}
+			set_country_flag = fee_por_jewish_accepted
 		}
 	}
 }
@@ -1652,6 +1661,143 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = FEE_Portugal_Events.22
+	title = FEE_Portugal_Events.22.T
+	desc = FEE_Portugal_Events.22.D
+	picture = RELIGIOUS_MIGRANTS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		has_country_modifier = fee_por_jewish_liberties_granted
+		has_country_flag = fee_por_jewish_accepted
+	}
+
+	immediate = {
+		clr_country_flag = fee_por_jewish_accepted
+	}
+
+	option = {
+		name = FEE_Portugal_Events.22.OPT1 #OK, this has gone too far!
+		ai_chance = {
+			factor = 60
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = FEE_POR_death_to_the_jews
+			duration = -1
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 1
+				type = jewish_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = jewish_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = jewish_rebels
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Portugal_Events.22.OPT2 #Maybe we can compromise?
+		ai_chance = {
+			factor = 30
+		}
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+				religion = jewish
+			}
+			add_province_modifier = {
+				name = FEE_POR_compromise_with_the_jews
+				duration = -1
+			}
+			add_random_development = 2
+		}
+
+	}
+
+	option = {
+		name = FEE_Portugal_Events.22.OPT3 #Fuck it, we ball
+		ai_chance = {
+			factor = 10
+		}
+		add_stability = -1
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 1
+				type = catholic_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = catholic_rebels
+			}
+		}
+		add_country_modifier = {
+			name = FEE_POR_bastion_of_european_jews
+			duration = -1
+		}
+		change_religion = jewish
+		add_reform_desire = 0.075
+		capital_scope = {
+			add_reform_center = jewish
+		}
+		hidden_effect = {
+			capital_scope = {
+				province_event = {
+					id = FEE_Portugal_Events.23
+					days = 3650
+				}
+				add_province_modifier = {
+					name = FEE_POR_hidden_jewish_timer
+					duration = 3650
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+
+#Remove Center of Jewish Reformation
+province_event = {
+	id = FEE_Portugal_Events.23
+	title = FEE_Portugal_Events.23.T
+	desc = FEE_Portugal_Events.23.D
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	immediate = {
+		remove_reform_center = jewish
+	}
+
+	option = {
+		add_base_tax = 1
+	}
+}
+
 
 #Remove Naval Reforms
 country_event = {

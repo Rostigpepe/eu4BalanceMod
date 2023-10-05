@@ -110,3 +110,18 @@ hessian_militarized_monarchy_reform:0 "Hessian Militarized Monarchy"
 
  revoke_reichsfreiheit_reform:0 "Revoke Reichsfreiheit"
  revoke_reichsfreiheit_reform_desc:0 "For too long we have granted our lands to dukes, barons and knights in exchange for personal loyalties, only for their heirs to forget about the servitude they owe us. Let is reverse this practice and start re-integrating the lands we de jure own, but have de facto lost control over."
+
+
+ #Polish Reforms
+ mechanic_enables_BM_polish_vassal_swarming_custom_attribute_yes: "§G+5%§!£icon_vassal_income£ Vassal Income and §G-1%§!£icon_development_cost_modifier£ Development Cost Modifier per §YPolish Subject§!, up to a maximum of §Y5§!\n All §YPolish Vassals§! will gain §G+6§! £icon_tax_income£Global Tax Income and §G-2%§!£icon_development_cost£ Development Cost, up to a maximum of §Y5§!"
+ Polish_vassal_swarm_1: "Meagre Polish-Vassalage"
+ Polish_vassal_swarm_2: "Small Polish-Vassalage"
+ Polish_vassal_swarm_3: "Medium Polish-Vassalage"
+ Polish_vassal_swarm_4: "Expanded Polish-Vassalage"
+ Polish_vassal_swarm_5: "Large Polish-Vassalage"
+
+ Polish_vassal_1: "Meagre Polish Vassal Interaction"
+ Polish_vassal_2: "Small Polish Vassal Interaction"
+ Polish_vassal_3: "Polish Vassal Cooperation"
+ Polish_vassal_4: "Expanded Polish Vassal Cooperation"
+ Polish_vassal_5: "Inter-Connected Polish Vassal Integration"

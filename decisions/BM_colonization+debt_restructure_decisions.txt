@@ -5,6 +5,8 @@ country_decisions = {
 				ai = no
 				has_institution = new_world_i
 				NOT = { has_country_modifier = BM_hired_explorer }
+				NOT = { has_idea_group = exploration_ideas }
+				NOT = { has_idea_group = expansion_ideas }
 			}
 			allow = {
 				has_institution = new_world_i
@@ -26,6 +28,8 @@ country_decisions = {
 				ai = no
 				has_institution = new_world_i
 				NOT = { has_country_modifier = BM_hired_conquistador }
+				NOT = { has_idea_group = exploration_ideas }
+				NOT = { has_idea_group = expansion_ideas }
 			}
 			allow = {
 				has_institution = new_world_i
@@ -55,6 +59,8 @@ country_decisions = {
 				ai = no
 				has_institution = new_world_i
 				#######
+				NOT = { has_idea_group = exploration_ideas }
+				NOT = { has_idea_group = expansion_ideas }
 			}
 		allow = {
 			dip_tech = 8

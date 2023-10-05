@@ -4,7 +4,7 @@ BM_hired_explorer = {
 }
 BM_free_colonist = {
 	colonists = 1
-	range = 0.5
+	range = 0.25
 	global_colonial_growth = 20
 }
 

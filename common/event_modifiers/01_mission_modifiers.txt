@@ -1091,7 +1091,8 @@ nor_norwegian_nobility_established = {
 
 nor_fight_for_liberty = {
 	land_morale = 0.1
-	shock_damage_received = -0.1
+	shock_damage_received = -0.15
+	land_forcelimit = 10
 }
 
 nor_trade_posts_of_the_north = { #Permanent
@@ -1188,8 +1189,8 @@ nor_scandes_fortresses = {
 nor_norwegian_independence_war_mod = {
 	land_morale = 0.1
 	naval_morale = 0.1
-	manpower_recovery_speed = 0.2
-	global_regiment_cost = -0.1
+	manpower_recovery_speed = 0.25
+	global_regiment_cost = -0.25
 }
 
 # Scandinavian missions
@@ -5145,6 +5146,7 @@ bur_channel_trading = {
 
 bur_english_diplomacy = {
 	improve_relation_modifier = 0.25
+	ae_impact = -0.25
 }
 
 bur_king_of_franks = {

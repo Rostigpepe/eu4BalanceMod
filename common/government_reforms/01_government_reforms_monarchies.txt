@@ -1588,10 +1588,10 @@ burgundian_state_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		rival_change_cost = -1
-		rival_border_fort_maintenance = -1
+		years_to_integrate_personal_union = -10
+		army_tradition_decay = -0.01
 		diplomatic_upkeep = 2
-		years_to_integrate_personal_union = -5
+		diplomats = 1
 	}
 	ai = {
 		factor = 1
@@ -1619,7 +1619,7 @@ bohemian_elective_kingdom_reform = {
 		diplomatic_reputation = 1
 		nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1
-		nobles_influence_modifier = 0.05
+		nobles_influence_modifier = 0.1
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -3391,7 +3391,7 @@ polish_great_sejm = {
 		max_absolutism = -20
 		global_unrest = -1 
 		reform_progress_growth = -0.2
-		
+		governing_capacity = -100
 	}
 
 	conditional = {
@@ -3427,8 +3427,10 @@ polish_elective_monarchy = {
 	modifiers = {
 		global_unrest = -1
 		max_absolutism = -30
-		nobles_influence_modifier = 0.05
+		nobles_influence_modifier = 0.1
 		reform_progress_growth = -0.2
+		governing_capacity = -100
+		governing_capacity_modifier = -0.25
 	}
 
 	conditional = {
@@ -3454,6 +3456,9 @@ polish_elective_monarchy = {
 			}
 		}
 		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_BM_polish_vassal_swarming_custom_attribute = yes
 	}
 }
 

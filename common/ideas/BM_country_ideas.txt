@@ -84,7 +84,7 @@ CAE_ideas = {
 NGF_ideas = {
 	start = {
 		land_morale = 0.2
-		infantry_power = 0.15
+		discipline = 0.05
 	}
 	
 	bonus = {
@@ -104,12 +104,12 @@ NGF_ideas = {
 		army_tradition_decay = -0.005
 	}
 	ger_reichsheer = {
-		discipline = 0.05
+		infantry_power = 0.15
 	}
 	NGF_idea_4 = {
 		ae_impact = -0.15
 	}
-	army_professionalism = {
+	army_professionalism2 = {
 		yearly_army_professionalism = 0.002
 		military_tactics = 0.075
 	}

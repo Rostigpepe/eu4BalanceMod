@@ -603,7 +603,7 @@ fee_enlightenment_suffering_military_thought = {
 }
 
 fee_enlightenment_rationalist_trade_practices = {
-	trade_efficiency = 0.01
+	trade_efficiency = 0.05
 }
 
 fee_enlightenment_early_free_trade = {
@@ -613,8 +613,9 @@ fee_enlightenment_early_free_trade = {
 }
 
 fee_enlightenment_doubledown_on_mercantilism = {
-	embargo_efficiency = 0.75
+	embargo_efficiency = 0.5
 	global_own_trade_power = 0.1
+	global_foreign_trade_power = -0.25
 	global_tariffs = 0.5
 }
 
@@ -1518,8 +1519,8 @@ fee_por_jewish_liberties_granted = {
 	advisor_pool = 1
 }
 fee_por_prospering_jewish_communities = {
-	production_efficiency = 0.10
-	trade_efficiency = 0.10
+	production_efficiency = 0.1
+	trade_efficiency = 0.1
 }
 fee_por_jewish_weaponsmiths = {
 	global_regiment_cost = -0.10
@@ -1533,6 +1534,28 @@ fee_por_jewish_conversion_attempts = {
 	global_missionary_strength = 0.01
 	global_unrest = 1
 }
+FEE_POR_death_to_the_jews = {
+	extra_manpower_at_religious_war = yes
+	tolerance_own = 1
+	tolerance_heathen = -2
+	religion = yes
+}
+FEE_POR_compromise_with_the_jews = {
+	local_development_cost = -0.15
+	local_tolerance_of_heathens = 2
+	trade_goods_size = 0.5
+	local_religious_unity_contribution = -0.5
+	religion = yes
+}
+FEE_POR_bastion_of_european_jews = {
+	tolerance_own = 1
+	church_power_modifier = 0.25
+	manpower_in_true_faith_provinces = 0.25
+	religion = yes
+}
+FEE_POR_hidden_jewish_timer = {
+}
+
 
 fee_por_malacca_restored = {
 	province_trade_power_value = 15

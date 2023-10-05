@@ -168,3 +168,9 @@ BM_MCD_ruler_studies_art_of_war = {
 	army_tradition = 1
 }
 
+BM_Lithuanian_Cossack_Cooperation = {
+	land_morale = 0.05
+	movement_speed = 0.15
+	available_province_loot = 0.25
+	is_cossack_modifier = yes
+}
