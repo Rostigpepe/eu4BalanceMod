@@ -28,7 +28,7 @@ emp_ven_slot_1 = {
 				}
 
 				trade_goods_produced_amount = {
-					trade_goods = grain
+					trade_goods = paper
 					amount = 6
 				}
 			}

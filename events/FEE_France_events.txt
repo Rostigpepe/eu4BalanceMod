@@ -35,9 +35,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		NOT = { is_year = 1454 }
 		tag = FRA
-		is_at_war = no
 		calc_true_if = {
 			amount = 2
 			all_subject_country = {
@@ -91,47 +89,39 @@ country_event = {
 		}
 		if = {
 			limit = {
-				is_expanded_mod_active = { mod = governments }
+				num_of_subjects = 1
 			}
-			set_estate_privilege = estate_nobles_blood_tax
+			add_country_modifier = {
+				name = fee_france_blood_tax
+				duration = 18250
+			}
 		}
-		else = {
-			if = {
-				limit = {
-					num_of_subjects = 1
-				}
-				add_country_modifier = {
-					name = fee_france_blood_tax
-					duration = 18250
-				}
+		else_if = {
+			limit = { num_of_subjects = 2 }
+			add_country_modifier = {
+				name = fee_france_blood_tax2
+				duration = 18250
 			}
-			else_if = {
-				limit = { num_of_subjects = 2 }
-				add_country_modifier = {
-					name = fee_france_blood_tax2
-					duration = 18250
-				}
+		}
+		else_if = {
+			limit = { num_of_subjects = 3 }
+			add_country_modifier = {
+				name = fee_france_blood_tax3
+				duration = 18250
 			}
-			else_if = {
-				limit = { num_of_subjects = 3 }
-				add_country_modifier = {
-					name = fee_france_blood_tax3
-					duration = 18250
-				}
+		}
+		else_if = {
+			limit = { num_of_subjects = 4 }
+			add_country_modifier = {
+				name = fee_france_blood_tax4
+				duration = 18250
 			}
-			else_if = {
-				limit = { num_of_subjects = 4 }
-				add_country_modifier = {
-					name = fee_france_blood_tax4
-					duration = 18250
-				}
-			}
-			else_if = {
-				limit = { num_of_subjects = 5 }
-				add_country_modifier = {
-					name = fee_france_blood_tax5
-					duration = 18250
-				}
+		}
+		else_if = {
+			limit = { num_of_subjects = 5 }
+			add_country_modifier = {
+				name = fee_france_blood_tax5
+				duration = 18250
 			}
 		}
 		every_subject_country = {
@@ -153,7 +143,8 @@ country_event = {
 			name = fee_france_decentralization
 			duration = 18250
 		}
-		add_manpower = 3
+		add_manpower = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -183,10 +174,6 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						is_core = ROOT
-					}
-					spawn_rebels = {
-						size = 1
-						type = particularist_rebels
 					}
 					spawn_rebels = {
 						size = 1
@@ -236,7 +223,7 @@ country_event = {
 				}
 			}
 			40 = {
-				add_prestige = -20
+				add_prestige_or_monarch_power = { amount = 10 }
 			}
 			20 = {
 				add_stability_or_adm_power = yes

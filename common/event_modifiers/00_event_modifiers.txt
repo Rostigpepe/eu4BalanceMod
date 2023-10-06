@@ -3059,7 +3059,7 @@ tur_reign_of_the_valide_sultan_modifier = {
 	all_power_cost = -0.1
 	yearly_corruption = 0.2
 	legitimacy = -1
-	all_estate_loyalty_equilibrium = -0.05
+	all_estate_loyalty_equilibrium = -0.1
 }
 
 tur_opposed_valide_sultan_modifier = { 
@@ -3103,18 +3103,20 @@ tur_abu_hanifa_mosque_modifier = {
 }
 
 tur_inefficient_tax_collection = {
+	global_trade_goods_size_modifier = -0.15
 	vassal_forcelimit_bonus = -0.25
 	vassal_income = -0.5
 }
 
 tur_pasha_backed_down = {
-	local_unrest = -15
-	local_autonomy = -0.5
+	local_unrest = -5
+	local_autonomy = -0.05
 }
 
 tur_pasha_revolt = {
-	local_unrest = 5
+	local_unrest = 15
 	local_autonomy = 0.2
+	local_defensiveness = -0.33
 }
 
 tur_weakened_the_harem = {
@@ -3131,17 +3133,19 @@ tur_shattered_the_janissaries = {
 	republican_tradition = 0.5
 	max_absolutism = 15
 	janissaries_influence_modifier = -0.5
+	janissaries_loyalty_modifier = -0.25
 }
 
 tur_reformation_of_the_ottoman_estates = {
-	all_estate_loyalty_equilibrium = 0.2
+	all_estate_loyalty_equilibrium = 0.1
 	all_estate_influence_modifier = 0.1
 	all_estate_possible_privileges = 1
 }
 
 tur_loyal_pashas = {
-	years_of_nationalism = -5
-	global_unrest = -2
+	years_of_nationalism = -10
+	global_unrest = -5
+	global_autonomy = -0.15
 }
 
 tur_city_of_faiths = {
@@ -13770,11 +13774,13 @@ eased_war_contributions = {
 removed_estates_from_power = {
 	all_estate_influence_modifier = -0.15
 	all_estate_loyalty_equilibrium = -0.3
+	yearly_corruption = 0.1
+	global_autonomy = 0.05
 }
 
 overhauling_the_court = {
-	advisor_cost = 0.33
-	stability_cost_modifier = 0.15
+	advisor_cost = 0.5
+	stability_cost_modifier = 0.25
 	prestige_decay = -0.01
 }
 

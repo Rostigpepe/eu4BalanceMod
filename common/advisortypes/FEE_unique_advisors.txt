@@ -18,7 +18,23 @@ court_jew = {
 	# Bonus
 	interest = -1.5
 
-	skill_scaled_modifier = { meritocracy = 0.25 }
+	allow_only_male = yes
+
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+siege_engineer = {
+	monarch_power = MIL
+
+	# Bonus
+	artillery_level_modifier = 1
 
 	allow_only_male = yes
 
@@ -30,3 +46,4 @@ court_jew = {
 		factor = 1
 	}
 }
+

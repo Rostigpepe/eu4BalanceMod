@@ -44,6 +44,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 16
 			NOT = { exists = LBR }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes

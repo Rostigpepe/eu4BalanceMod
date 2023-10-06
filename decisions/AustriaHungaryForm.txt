@@ -48,6 +48,7 @@ country_decisions = {
 			owns_core_province = 153	# Pest
 			owns_core_province = 73 	# Tirol
 			owns_core_province = 1826	# Lika
+			adm_tech = 12
 		}
 		effect = {
 		#	if = {
@@ -124,7 +125,7 @@ country_decisions = {
 			legitimacy = 80
 			custom_trigger_tooltip = {
 				tooltip = forming_ah_diplomatically_tooltip
-			adm_tech = 10
+			adm_tech = 16
 				AND = {
 					tag = HAB
 					HUN = {	is_subject_of = HAB	}

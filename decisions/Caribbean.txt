@@ -41,7 +41,15 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			if = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				adm_tech = 16
+			}
+			else = {
+				adm_tech = 12
+			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {

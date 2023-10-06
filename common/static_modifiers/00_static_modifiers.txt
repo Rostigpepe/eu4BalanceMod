@@ -1063,9 +1063,11 @@ root_out_corruption = {
 }
 
 recovery_motivation = {
-	global_tax_modifier = 0.5
-	defensiveness = 0.25
-	manpower_recovery_speed = 0.5
+	global_tax_modifier = 1
+	inflation_action_cost = -0.5
+	global_monthly_devastation = -0.75
+	defensiveness = 0.5
+	manpower_recovery_speed = 1
 	army_tradition = 1
 	navy_tradition = 1
 	global_unrest = -5
@@ -1077,7 +1079,6 @@ luck = {
 	#core
 	global_missionary_strength = 0.01
 	stability_cost_modifier = -0.10
-	monthly_splendor = 1
 
 	#economy
 	mercenary_cost = -0.2
@@ -1086,7 +1087,7 @@ luck = {
 	missionary_maintenance_cost = -0.1
 
 	#military
-	manpower_recovery_speed = 0.25
+	manpower_recovery_speed = 0.15
 	defensiveness = 0.1
 	siege_ability = 0.05
 
@@ -1098,7 +1099,7 @@ luck = {
 	global_unrest = -1
 	republican_tradition = 0.5
 	legitimacy = 1
-	ae_impact = -0.25
+	ae_impact = -0.15
 	governing_capacity_modifier = 0.25
 }
 

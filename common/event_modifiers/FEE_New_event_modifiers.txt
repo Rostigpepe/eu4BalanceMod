@@ -202,7 +202,7 @@ fee_bran_secularization_john = {
 	global_tax_modifier = 0.10
 }
 fee_bran_margrave_dues = {
-	local_tax_modifier = 0.10
+	local_tax_modifier = 0.25
 }
 fee_bran_favors_called_in = {
 	papal_influence = -0.5
@@ -701,21 +701,27 @@ fee_france_decentralization = {
 }
 fee_france_blood_tax = {
 	global_manpower = 2
+	vassal_income = -0.02
 }
 fee_france_blood_tax2 = {
 	global_manpower = 4
+	vassal_income = -0.04
 }
 fee_france_blood_tax3 = {
 	global_manpower = 6
+	vassal_income = -0.06
 }
 fee_france_blood_tax4 = {
 	global_manpower = 8
+	vassal_income = -0.8
 }
 fee_france_blood_tax5 = {
 	global_manpower = 10
+	vassal_income = -0.1
 }
 fee_france_legal_reform = {
 	global_autonomy = -0.05
+	min_autonomy = -2
 }
 fee_france_friendly_legal_class = {
 	global_autonomy = -0.05
@@ -726,7 +732,7 @@ fee_france_cultural_unification_effort = {
 	culture_conversion_time = -0.15
 }
 fee_france_provincialism = {
-	global_autonomy = 0.05
+	global_autonomy = 0.025
 	global_unrest = -1
 	num_accepted_cultures = 1
 }
@@ -734,7 +740,7 @@ fee_france_independence_asserted = {
 	diplomatic_reputation = 1
 }
 fee_france_state_control_over_church = {
-	curia_treasury_contribution = -0.5
+	curia_treasury_contribution = -0.25
 	prestige = 0.5
 	global_tax_modifier = 0.05
 }
@@ -782,7 +788,7 @@ fee_france_crown_levies = {
 }
 fee_france_mercenary_core = {
 	mercenary_manpower = 0.15
-	merc_maintenance_modifier = -0.10
+	merc_maintenance_modifier = -0.1
 }
 
 fee_treaty_honored = {

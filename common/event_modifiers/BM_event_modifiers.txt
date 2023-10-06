@@ -174,3 +174,93 @@ BM_Lithuanian_Cossack_Cooperation = {
 	available_province_loot = 0.25
 	is_cossack_modifier = yes
 }
+
+
+BM_OTTOMANS_scrambling_bureaucracy = {
+	land_maintenance_modifier = 0.2
+	global_autonomy = 0.1
+}
+
+BM_OTTOMANS_religious_tolerance_causing_chaos = {
+	dhimmi_loyalty_modifier = 0.1
+	global_unrest = 1
+	tolerance_own = -1
+}
+
+BM_OTTOMANS_international_mockery = {
+	improve_relation_modifier = -0.5
+	diplomatic_reputation = -3
+	liberty_desire_from_subject_development = 0.15
+}
+
+BM_OTTOMANS_illegitimate_rule = {
+	legitimacy = -1
+	monthly_heir_claim_increase_modifier = -0.25
+	heir_chance = -0.5
+}
+
+BM_OTTOMANS_stagnation_ottoman_economy = {
+	interest = 1
+	inflation_action_cost = 0.2
+	build_time = 0.2
+	build_cost = 0.2
+}
+
+BM_OTTOMAN_JANISSARY_DEFECTIONS = {
+	local_defensiveness = -0.5
+	local_manpower_modifier = -0.5
+	local_autonomy = 0.2
+}
+
+BM_OTTOMANS_widespread_janissary_revolts = {
+	defensiveness = -0.33
+	land_attrition = 0.33
+	war_exhaustion = 0.33
+}
+
+BM_OTTOMANS_eyalet_liberty_desire = {
+	manpower_recovery_speed = 0.25
+	land_forcelimit_modifier = 0.25
+	global_regiment_cost = -0.25
+}
+
+BM_OTTOMANS_egyptian_liberty_granted = {
+	global_trade_goods_size_modifier = 0.1
+	development_cost = -0.05
+}
+
+BM_OTTOMANS_egyptian_liberty_not_granted = {
+	land_morale = 0.1
+	reinforce_speed = 0.1
+	liberty_desire = 10
+}
+
+BM_OTTOMANS_disloyal_pashas = {
+	tolerance_heathen = -3
+	yearly_corruption = 0.1
+	advisor_cost = 0.3
+}
+
+BM_OTTOMANS_disloyal_pashas_province = {
+	local_tolerance_of_heathens = -5
+	local_unrest = 3
+	local_production_efficiency = -0.33
+}
+
+BM_OTTOMANS_greek_rebellion = {
+	local_unrest = 10
+	local_friendly_movement_speed = -0.25
+	local_hostile_movement_speed = -0.25
+}
+
+BM_OTTOMANS_serbian_rebellion = {
+	local_unrest = 10
+	attrition = 3
+	local_state_maintenance_modifier = 0.5
+}
+
+BM_OTTOMANS_bulgarian_rebellion = {
+	local_unrest = 10
+	local_manpower_modifier = -0.75
+	supply_limit_modifier = -0.5
+}

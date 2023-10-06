@@ -21,7 +21,7 @@ bohemian_elective_kingdom_reform = {
 		diplomatic_reputation = 1
 		nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1
-		nobles_influence_modifier = 0.05
+		nobles_influence_modifier = 0.1
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }

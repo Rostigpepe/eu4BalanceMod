@@ -2860,6 +2860,49 @@ FEE_Italy_Events.6.D: "Though the Italian wars raged and most states were caught
  desc_fee_tur_jannisariescalmed: "Murad II has returned to the throne, calming worried about the influences the young Mehmet's teachers have on him."
  fee_tur_jannisariesagainst_ruler: "Refused Recalling Murad II"
  desc_fee_tur_jannisariesagainst_ruler: "Going against powerful figures at court, the young Mehmet has decided not to recall his father to the throne."
+ siege_engineer: "Siege Engineer"
+ siege_engineer_desc: "Working as a iron founder from Transylvania, the Hungarian engineer has offered us his services in overseeing the development and construction of large cannons capable of destroying any fort, walls or castle in our way."
+
+
+ #FURTHER BM OTTOMAN EVENTS OR ADDITIONS
+ BM_OTTOMANS_scrambling_bureaucracy: "Scrambling Bureaucracy"
+ BM_OTTOMANS_scrambling_bureaucracy_desc: "With the recent addition of new territories, our bureaucrats, already stretching thin, are having grave issues with the administration of our lands."
+
+ BM_OTTOMANS_religious_tolerance_causing_chaos: "Religious Indifference"
+ BM_OTTOMANS_religious_tolerance_causing_chaos_desc: "As religious tensions and conflicts are brewing within our Empire's borders, the government is standing idly by."
+
+ BM_OTTOMANS_international_mockery: "International Mockery"
+ BM_OTTOMANS_international_mockery: "With the recent loss of face and suffering a clear lack of respect in the international stage, we are finding it ever harder to engage in any kind of diplomatic recognition."
+
+ BM_OTTOMANS_illegitimate_rule: "Illegitimate Rule"
+ BM_OTTOMANS_illegitimate_rule: "With the latest lines of unstable and incompetent rulers, we are finding it ever harder to find any kind of popular or courtly support in favor of our dynastic rule."
+
+ BM_OTTOMANS_stagnation_ottoman_economy: "Stagnating Economy"
+ BM_OTTOMANS_stagnation_ottoman_economy: "With the lavish, and often ineffective, spending of our government, much of the economy has started to stagnate."
+
+ BM_OTTOMAN_JANISSARY_DEFECTIONS: "Janissary Defections"
+ BM_OTTOMAN_JANISSARY_DEFECTIONS: ""
+
+ BM_OTTOMANS_widespread_janissary_revolts: "Widespread Janissary Revolts"
+ BM_OTTOMANS_widespread_janissary_revolts_desc: "Donnez-moi une armée de Turcs et je prendrai le monde en otage."
+
+ BM_OTTOMANS_eyalet_liberty_desire: "Eyalet Liberty"
+ BM_OTTOMANS_eyalet_liberty_desire_desc: ""
+
+ BM_OTTOMANS_egyptian_liberty_granted: "Egpytian Autonomy Granted"
+ BM_OTTOMANS_egyptian_liberty_granted_desc: ""
+
+ BM_OTTOMANS_egyptian_liberty_not_granted: "Egyptian Independence Struggle"
+ BM_OTTOMANS_egyptian_liberty_not_granted_desc: ""
+
+ BM_OTTOMANS_disloyal_pashas: "Disloyal Pashas"
+ BM_OTTOMANS_disloyal_pashas: "Facing a perceived lack of authority and legitimacy of our current government, much of the Courts containing our statesmen, bureaucrats and Pashas are actively sabotaging the efforts of our administation."
+ BM_OTTOMANS_disloyal_pashas_province: "Disloyal Pasha"
+ BM_OTTOMANS_disloyal_pashas_province: "The Pasha administrating this province has been granted more autonomy and is pursuing his duties much less effectively and with little care."
+
+ BM_OTTOMANS_greek_rebellion: "Greek Rebellion"
+ BM_OTTOMANS_greek_rebellion: "The Greeks are in rebellion."
+
 
 
  ##### Persia Events #####  ##### Persia Events #####  ##### Persia Events #####
