@@ -308,3 +308,34 @@ fee_mar_maratha_raided_stores = {
 	opinion = -25
 	yearly_decay = 1
 }
+
+
+
+aut_trade_company_opinion = {
+	opinion = 50
+}
+opinion_india_act_good = {
+	opinion = 40
+	yearly_decay = 2
+}
+opinion_india_act_bad = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+opinion_helped_eic_with_debt = {
+	opinion = 25
+	yearly_decay = 1
+}
+opinion_didnt_helped_eic_with_debt = {
+	opinion = -30
+	yearly_decay = 1
+}
+princely_state_opinion = {
+	opinion = 25
+}
+
+opinion_eic_bribe = {
+	opinion = 25
+	yearly_decay = 3
+}

@@ -1,0 +1,236 @@
+country_decisions = {	
+	dissolve_eic_decision = {
+		potential = {
+			EIC = { is_subject_of = ROOT }
+		}
+		provinces_to_highlight = {
+			owned_by = EIC
+		}
+		major = yes
+		allow = {
+			EIC = { is_subject_of = ROOT }
+			stability = 2
+			is_in_deficit = no
+			EIC = { NOT = { liberty_desire = 50 } }
+			OR = {
+				EIC = { has_country_flag = started_indian_rebellion_flag }
+				absolutism = 80
+				NOT = { mercantilism = 2 }
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_mercantilism = -5
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -40
+			}
+			EIC = {
+				ROOT = { inherit = PREV }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	form_eic_decision = {
+		potential = {
+			NOT = { exists = EIC }	
+			OR = {	
+				tag = ENG
+				tag = GBR
+				primary_culture = english
+			}
+			india_superregion = {
+				has_discovered = ROOT
+			}
+		}
+		major = yes
+		provinces_to_highlight = {
+			superregion = india_superregion
+			has_discovered = ROOT
+		}
+		allow = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				superregion = india_superregion
+			}
+		}
+		effect = {
+			country_event = { id = eic.42 }	#EIC formation
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	abolish_sati = {
+		potential = {
+			OR = {	
+				tag = ENG
+				tag = GBR
+				primary_culture = english
+				tag = EIC
+			}
+			india_superregion = {
+				owned_by = ROOT
+			}
+			NOT = { has_country_modifier = eic_abolished_sati }
+		}
+		allow = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				superregion = india_superregion
+			}
+			any_owned_province = {
+				religion = hinduism
+			}
+			stability = 1
+		}
+		effect = {
+			add_medium_resentment = yes
+			add_stability = -1
+			add_country_modifier = {
+				name = "eic_abolished_sati"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_princely_state_colours = {
+		color = { 186 186 0 }
+		potential = {
+			tag = EIC
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				amount = 1
+			}
+			NOT = { has_country_flag = changed_princely_state_colours_flag }
+		}
+		allow = {
+			NOT = { has_country_flag = changed_princely_state_colours_flag }
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				amount = 1
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				change_country_color = { 
+					color = { 212 87 78 }
+				}
+				set_country_flag = has_overriden_color_flag
+			}
+			set_country_flag = changed_princely_state_colours_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	restore_princely_state_colours = {
+		color = { 186 186 0 }
+		potential = {
+			tag = EIC
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				amount = 1
+			}
+			has_country_flag = changed_princely_state_colours_flag
+		}
+		allow = {
+			has_country_flag = changed_princely_state_colours_flag
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				amount = 1
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = princely_state
+					is_subject_of = EIC
+				}
+				restore_country_color = yes
+				clr_country_flag = has_overriden_color_flag
+			}
+			clr_country_flag = changed_princely_state_colours_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_indian_imperial_police = {
+		potential = {
+			tag = EIC
+			NOT = { has_country_modifier = eic_indian_imperial_police }
+		}
+		allow = {
+			NOT = { has_country_modifier = eic_indian_imperial_police }
+			adm_power = 50
+			OR = {
+				has_idea_group = plutocracy_ideas
+				has_idea_group = mercenary_ideas
+				has_idea_group = administrative_ideas
+				has_idea_group = court_ideas
+				adm_tech = 14
+			}
+		}
+		effect = {
+			add_adm_power = -50
+			subtract_small_resentment = yes
+			add_country_modifier = {
+				name = "eic_indian_imperial_police"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10	# want resentment down i guess
+		}
+	}
+	institute_redcoat_infantry = {
+		potential = {
+			tag = EIC
+			NOT = { has_country_modifier = eic_recruit_redcoats }
+		}
+		allow = {
+			NOT = { has_country_modifier = eic_recruit_redcoats }
+			mil_power = 200
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = maritime_ideas
+				mil_tech = 16
+			}
+		}
+		effect = {
+			add_mil_power = -200
+			subtract_small_resentment = yes
+			add_country_modifier = {
+				name = "eic_recruit_redcoats"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10	# want resentment down i guess
+		}
+	}
+}

@@ -1,0 +1,396 @@
+namespace = ire
+
+country_event = {	# The Meerut Mutiny
+	id = ire.1
+	title = ire.1.t
+	desc = ire.1.d
+	picture = indiangfx_BATTLE_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = ire.1.a
+		custom_tooltip = ire_1_tt
+		add_stability = -3
+		set_country_flag = started_indian_rebellion_flag
+		2060 = {	# Meerut (Upper Doab in game)
+			spawn_rebels = {
+    				size = 8
+    				type = mutineer_rebels
+				win = yes
+			}
+			spawn_rebels = {
+    				size = 3
+    				type = mutineer_rebels
+			}
+			spawn_rebels = {
+    				size = 3
+    				type = mutineer_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+    				size = 2
+    				type = mutineer_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+    				size = 2
+    				type = mutineer_rebels
+			}
+		}
+	}
+}
+country_event = {	# The Fall of Delhi
+	id = ire.2
+	title = ire.2.t
+	desc = ire.2.d
+	picture = indiangfx_SIEGE_eventPicture
+
+	trigger = {
+		522 = {
+			country_or_non_sovereign_subject_holds = ROOT
+			controlled_by = REB
+		}
+		EIC = {
+			has_country_flag = started_indian_rebellion_flag
+			NOT = { has_country_flag = had_indian_rebellion }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	major = yes
+
+	fire_only_once = yes
+
+	goto = 522
+	
+	option = {
+		name = ire.2.a
+		add_prestige = -10
+		set_country_flag = eic_revolt_became_national
+		hidden_effect = {
+			country_event = { id = ire.7 days = 90 }
+		}
+		custom_tooltip = ire_2_tt
+		522 = {
+			spawn_rebels = {
+    				size = 5
+    				type = nationalist_rebels
+				win = yes
+			}
+		}
+	}
+}
+country_event = {	# Chiefdom Declares for the Rebels
+	id = ire.3
+	title = ire.3.t
+	desc = ire.3.d
+	picture = indiangfx_BATTLE_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {	
+					religion = hinduism
+					religion = sunni
+				}
+				NOT = { culture = panjabi }
+			}	
+			save_event_target_as = chief_prov
+		}
+	}
+
+	goto = chief_prov
+	
+	option = {
+		name = ire.3.a
+		event_target:chief_prov = {
+			spawn_rebels = {
+    				size = 3
+    				type = nationalist_rebels
+				win = yes
+			}
+		}
+	}
+}
+country_event = {	# Gunpowder Quelled
+	id = ire.4
+	title = ire.4.t
+	desc = ire.4.d
+	picture = indiangfx_COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+
+	goto = gunpowder_prov
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				has_fort_building_trigger = yes
+			}
+			save_event_target_as = gunpowder_prov
+		}
+	}		
+	
+	option = {
+		name = ire.4.a
+		event_target:gunpowder_prov = {
+			add_devastation = 40
+			add_base_manpower = -1
+		}
+	}
+}
+country_event = {	# Prince of [Root.GetName] Supports Us
+	id = ire.5
+	title = ire.5.t
+	desc = ire.5.d
+	picture = indiangfx_DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_subject_country = {
+			is_subject_of_type = princely_state
+			is_subject_of = EIC
+			NOT = { has_country_flag = prince_choose_loyalty }
+			NOT = { has_country_flag = prince_choose_rebels }
+		}
+	}
+
+	immediate = {
+		random_subject_country = {
+			limit = {
+				is_subject_of_type = princely_state
+				is_subject_of = EIC
+				NOT = { has_country_flag = prince_choose_loyalty }
+				NOT = { has_country_flag = prince_choose_rebels }
+			}
+			save_event_target_as = prince_nat
+		}
+	}
+	
+	option = {
+		name = ire.5.a
+		add_prestige = 3
+		event_target:prince_nat = {
+			add_liberty_desire = -5
+			set_country_flag = prince_choose_loyalty
+		}
+	}
+}
+country_event = {	# Prince of [Root.GetName] Rebels
+	id = ire.6
+	title = ire.6.t
+	desc = ire.6.d
+	picture = indiangfx_BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_subject_country = {
+			is_subject_of_type = princely_state
+			is_subject_of = EIC
+			NOT = { has_country_flag = prince_choose_loyalty }
+			NOT = { has_country_flag = prince_choose_rebels }
+		}
+	}
+
+	immediate = {
+		random_subject_country = {
+			limit = {
+				is_subject_of_type = princely_state
+				is_subject_of = EIC
+				NOT = { has_country_flag = prince_choose_loyalty }
+				NOT = { has_country_flag = prince_choose_rebels }
+			}
+			save_event_target_as = prince_nat
+		}
+	}
+	
+	option = {
+		name = ire.6.a
+		event_target:prince_nat = {
+			add_liberty_desire = 15
+			set_country_flag = prince_choose_rebels
+		}
+	}
+}
+country_event = {	# Emperor of Hindustan
+	id = ire.7
+	title = ire.7.t
+	desc = ire.7.d
+	picture = indiangfx_LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = ire.7.a
+		custom_tooltip = ire_hindustan_gets_cores_tt
+		hidden_effect = {
+			india_superregion = {
+				add_core = HIN	# Hindustan
+			}
+		}
+	}
+}
+country_event = {	# The Massacre of [massacre_prov.GetName]
+	id = ire.8
+	title = ire.8.t
+	desc = ire.8.d
+	picture = indiangfx_PLAGUE_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+				base_tax = 2
+			}
+			save_event_target_as = massacre_prov
+		}
+	}
+	
+	goto = massacre_prov
+
+	option = {
+		name = ire.8.a
+		add_prestige = -5
+		event_target:massacre_prov = {
+			add_devastation = 80
+			add_base_tax = -1
+		}
+	}
+}
+country_event = {	# Justice
+	id = ire.9
+	title = ire.9.t
+	desc = ire.9.d
+	picture = indiangfx_ACCUSATION_eventPicture
+	
+	trigger = {
+		522 = {
+			country_or_non_sovereign_subject_holds = ROOT
+			controlled_by = ROOT
+		}
+		has_country_flag = started_indian_rebellion_flag
+		has_country_flag = eic_revolt_became_national
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {		# Show leniency
+		name = ire.9.a
+		add_prestige = -25
+		add_country_modifier = {
+			name = "eic_showed_clemency"
+			duration = 3650
+		}
+	}
+	option = {		# No prisoners policy
+		name = ire.9.b
+		add_mil_power = -75
+		add_stability = -1
+		add_country_modifier = {	
+			name = "eic_army_of_retribution"
+			duration = 3650
+		}
+	}
+}
+country_event = {	# Locals joining the revolt
+	id = ire.10
+	title = ire.10.t
+	desc = ire.10.d
+	picture = indiangfx_PLAGUE_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+				base_production = 2
+			}
+			save_event_target_as = local_prov
+		}
+	}
+
+	goto = local_prov
+
+	option = {		# Damn them!
+		name = ire.10.a
+		event_target:local_prov = {
+			add_base_production = -1
+			add_unrest = 4
+			add_devastation = 25
+		}
+	}
+}
+country_event = {	# [mutiny_prov.GetName] Mutiny
+	id = ire.11
+	title = ire.11.t
+	desc = ire.11.d
+	picture = indiangfx_LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+			}
+			save_event_target_as = mutiny_prov
+		}
+	}
+
+	goto = mutiny_prov
+
+	option = {		# Curses!
+		name = ire.11.a
+		event_target:mutiny_prov = {
+			spawn_rebels = {
+    				size = 3
+    				type = mutineer_rebels
+			}
+		}
+	}
+}
+country_event = {	# End of the Rebellion
+	id = ire.100
+	title = ire.100.t
+	desc = ire.100.d
+	picture = indiangfx_WOUNDED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	immediate = {
+		set_country_flag = had_indian_rebellion
+	}
+	
+	option = {
+		name = ire.100.a
+		custom_tooltip = ire_100_tt
+		add_prestige = 15
+		add_country_modifier = {
+			name = "eic_legacy_of_the_rebellion"
+			duration = 3650
+		}
+	}
+}

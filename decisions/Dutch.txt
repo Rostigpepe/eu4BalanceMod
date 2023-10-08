@@ -68,7 +68,34 @@ country_decisions = {
 			add_country_modifier = {
 				name = "dutch_india_trade_co"
 				duration = -1
-			}		}
+			}
+			if = {
+				limit = {
+					97 = {
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+				97 = {
+					add_base_production = 2
+				}
+			}
+			else_if = {
+				limit = {
+					97 = {
+						province_has_center_of_trade_of_level = 2
+					}
+				}
+				97 = {
+					add_center_of_trade_level = 1
+				}
+			}
+			else = {
+				97 = {
+					add_center_of_trade_level = 1
+				}
+			}		
+		}
+
 		ai_will_do = {
 			factor = 1
 		}

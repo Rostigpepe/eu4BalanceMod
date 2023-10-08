@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_eic_reform"
+		texturefile = "gfx//interface//government_reform_icons//eic_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eic_board_reform"
+		texturefile = "gfx//interface//government_reform_icons//eic_board_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eic_indian_board_reform"
+		texturefile = "gfx//interface//government_reform_icons//eic_indian_board_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eic_sepoys_reform"
+		texturefile = "gfx//interface//government_reform_icons//eic_sepoys_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_cornwallis_reform"
+		texturefile = "gfx//interface//government_reform_icons//cornwallis_reform.dds"
+	}
+}

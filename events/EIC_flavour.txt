@@ -1,0 +1,1614 @@
+namespace = eic
+
+country_event = {	# The Indian Rebellion
+	id = eic.1
+	title = eic.1.t
+	desc = eic.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = eic.1.a
+		add_stability = -3
+		set_country_flag = started_indian_rebellion_flag
+		random_owned_province = {
+			limit = { fort_level = 1 }
+			spawn_rebels = {
+    				size = 3
+    				type = nationalist_rebels
+				win = yes
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+    				size = 2
+    				type = nationalist_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+    				size = 2
+    				type = nationalist_rebels
+			}
+		}
+	}
+}
+
+country_event = {	# Province Revolts!
+	id = eic.2
+	title = eic.2.t
+	desc = eic.2.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				religion = sunni
+				religion = hinduism
+			}
+		}
+	}
+	
+	option = {
+		name = eic.2.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					religion = sunni
+					religion = hinduism
+				}
+			}
+			spawn_rebels = {
+    				size = 2
+    				type = nationalist_rebels
+			}
+		}
+	}
+}
+
+country_event = {	# Gunpowder Quelled
+	id = eic.3
+	title = eic.3.t
+	desc = eic.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				religion = sunni
+				religion = hinduism
+			}
+		}
+	}
+	
+	option = {
+		name = eic.3.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					religion = sunni
+					religion = hinduism
+				}
+			}
+			add_devastation = 25
+			add_unrest = 2
+		}
+	}
+}
+
+country_event = {	# Sepoys Revolt
+	id = eic.4
+	title = eic.4.t
+	desc = eic.4.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				religion = sunni
+				religion = hinduism
+			}
+		}
+	}
+	
+	option = {
+		name = eic.4.a
+		add_yearly_manpower = -1
+		random_owned_province = {
+			limit = {
+				OR = {
+					religion = sunni
+					religion = hinduism
+				}
+			}
+			spawn_rebels = {
+    				size = 1
+    				type = nationalist_rebels
+			}
+		}
+	}
+}
+
+country_event = {	# Native troops against natives?
+	id = eic.5
+	title = eic.5.t
+	desc = eic.5.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_modifier = eic_morale }
+	}
+	
+	option = {
+		name = eic.5.a
+		add_country_modifier = {
+			name = "eic_morale"
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = eic.5.b
+		add_mil_power = -50
+	}
+}
+
+country_event = {	# Professional fighters
+	id = eic.6
+	title = eic.6.t
+	desc = eic.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_modifier = eic_crush_revolt }
+	}
+	
+	option = {
+		name = eic.6.a
+		add_country_modifier = {
+			name = "eic_crush_revolt"
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = eic.6.b
+		add_years_of_income = -0.15
+		add_yearly_manpower = 0.5
+	}
+}
+
+country_event = {	# End of the Rebellion
+	id = eic.7
+	title = eic.7.t
+	desc = eic.7.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = eic.7.a
+		add_prestige = 5
+		set_country_flag = had_indian_rebellion
+	}
+}
+
+country_event = {	# Local Leader Rises
+	id = eic.8
+	title = eic.8.t
+	desc = eic.8.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = EIC
+		any_owned_province = {
+			OR = {
+				religion = hinduism
+				religion = sunni
+			}
+		}
+		NOT = { stability = 3 }
+		NOT = { has_country_modifier = eic_angry_local_leader }
+	}
+
+	mean_time_to_happen = {
+		months = 3000
+	}
+	
+	option = {
+		name = eic.8.a
+		add_medium_resentment = yes
+		add_country_modifier = {
+			name = "eic_angry_local_leader"
+			duration = 9125
+		}
+	}
+
+	option = {	
+		name = eic.8.b
+		add_stability = -1
+		add_prestige = -20
+	}
+}
+
+country_event = {	# Weapon Cartridges
+	id = eic.9
+	title = eic.9.t
+	desc = eic.9.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = EIC
+		any_owned_province = {
+			OR = {
+				religion = hinduism
+				religion = sunni
+			}
+		}
+		NOT = { stability = 3 }
+		NOT = { has_country_modifier = eic_annoyed_indians }
+		mil_tech = 8
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = eic.9.a
+		add_large_resentment = yes
+		add_country_modifier = {
+			name = "eic_annoyed_indians"
+			duration = 9125
+		}
+	}
+
+	option = {	
+		name = eic.9.b
+		add_mil_tech = -1
+	}
+}
+
+country_event = {	# EIC in Debt
+	id = eic.10
+	title = eic.10.t
+	desc = eic.10.d
+	picture = ECONOMY_eventPicture
+	
+	trigger = {
+		tag = EIC
+		num_of_loans = 3
+		OR = {
+			exists = ENG
+			exists = GBR
+		}
+		OR = {
+			is_subject_of = ENG
+			is_subject_of = GBR
+		}
+		NOT = { has_country_modifier = eic_less_interest }
+	}
+
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+	option = {
+		name = eic.10.a
+		overlord = {
+			country_event = { id = eic.11 }
+		}
+	}
+
+	option = {	
+		name = eic.10.b
+		add_prestige = 5
+	}
+}
+
+country_event = {	# EIC in Debt (GBR)
+	id = eic.11
+	title = eic.11.t
+	desc = eic.11.d
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.11.a
+		add_adm_power = -25
+		add_prestige = -10
+		EIC = {
+			country_event = { id = eic.12 }
+			tooltip = {
+				add_country_modifier = { name = eic_less_interest duration = 3650 }
+				add_opinion = { who = ROOT modifier = opinion_helped_eic_with_debt }
+			}
+		}
+	}
+
+	option = {	
+		name = eic.11.b
+		add_treasury = -1000
+		EIC = {
+			country_event = { id = eic.13 }
+			tooltip = {
+				add_treasury = 1000
+				add_opinion = { who = ROOT modifier = opinion_helped_eic_with_debt }
+			}
+		}
+	}
+
+	option = {	
+		name = eic.11.c
+		add_prestige = 10
+		EIC = {
+			country_event = { id = eic.14 }
+			tooltip = { add_opinion = { who = ROOT modifier = opinion_didnt_helped_eic_with_debt } }
+		}
+	}
+}
+
+country_event = {	# EIC in Debt (less interest)
+	id = eic.12
+	title = eic.12.t
+	desc = eic.12.d
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.12.a
+		add_country_modifier = {
+			name = eic_less_interest
+			duration = 3650
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_helped_eic_with_debt
+		}
+	}
+}
+
+country_event = {	# EIC in Debt (lump sum)
+	id = eic.13
+	title = eic.13.t
+	desc = eic.13.d
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.13.a
+		add_treasury = 1000
+		add_opinion = {
+			who = FROM
+			modifier = opinion_helped_eic_with_debt
+		}
+	}
+}
+
+country_event = {	# EIC in Debt (no help)
+	id = eic.14
+	title = eic.14.t
+	desc = eic.14.d
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.14.a
+		add_opinion = {
+			who = ROOT
+			modifier = opinion_didnt_helped_eic_with_debt
+		}
+	}
+}
+
+country_event = {	# Corrupt Practices in the Administration
+	id = eic.15
+	title = eic.15.t
+	desc = eic.15.d
+	picture = ECONOMY_eventPicture
+	
+	trigger = {
+		tag = EIC
+		NOT = { adm = 5 }
+		NOT = { republican_tradition = 90 }
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	option = {
+		name = eic.15.c
+		add_corruption = 2
+		add_republican_tradition = 10
+	}
+	
+	option = {
+		name = eic.15.a
+		add_corruption = 1
+		add_years_of_income = 0.2
+	}
+
+	option = {
+		name = eic.15.b
+		add_adm_power = -100
+		add_corruption = -2
+	}
+}
+
+country_event = {	# The Black Hole of Calcutta
+	id = eic.16
+	title = eic.16.t
+	desc = eic.16.d
+	picture = FAMINE_eventPicture
+	
+	trigger = {
+		tag = EIC
+		owns = 4477
+		4477 = {
+			NOT = { controlled_by = ROOT }
+			controller = { technology_group = indian }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = eic.16.a
+		add_prestige = -25
+		add_mil_power = 50
+	}
+}
+
+country_event = {	# Robert Clive
+	id = eic.17
+	title = eic.17.t
+	desc = eic.17.d
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eic.17.a
+		define_general = {
+			fire = 6
+			shock = 5
+			manuever = 5
+			siege = 4
+			name = "Robert Clive"
+		}
+	}
+
+	option = {
+		name = eic.17.b
+		define_advisor = {
+			type = army_reformer
+			skill = 3
+			discount = yes
+			name = "Robert Clive"
+		}
+	}
+}
+
+country_event = {	# Fort William
+	id = eic.18
+	title = eic.18.t
+	desc = eic.18.d
+	picture = FORT_eventPicture
+	
+	trigger = {
+		tag = EIC
+		owns = 4477
+		4477 = { NOT = { fort_level = 8 } }
+		is_year = 1730
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = eic.18.a
+		add_treasury = -100
+		4477 = {
+			add_building = fort_18th
+		}
+	}
+
+	option = {
+		name = eic.18.b
+		add_treasury = -100
+		4477 = {
+			add_base_manpower = 2
+		}
+	}
+}
+
+country_event = {	# The Merchant State
+	id = eic.19
+	title = eic.19.t
+	desc = eic.19.d
+	picture = PEASANTS_BARTERING_eventPicture
+	
+	trigger = {
+		tag = EIC
+		total_development = 200
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = eic.19.a
+		add_country_modifier = {
+			name = "eic_focus_merchants"
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = eic.19.b
+		add_country_modifier = {
+			name = "eic_focus_admin"
+			duration = 9125
+		}
+	}
+}
+
+country_event = {	# Bankruptcy
+	id = eic.20
+	title = eic.20.t
+	desc = eic.20.d
+	picture = BANKRUPTCY_eventPicture
+	
+	trigger = {
+		tag = EIC
+		is_bankrupt = yes
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = eic.20.a
+		add_country_modifier = {
+			name = "eic_lack_of_trust"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {	# The Diwani
+	id = eic.21
+	title = eic.21.t
+	desc = eic.21.d
+	picture = muslimgfx_STREET_SPEECH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eic.21.a
+		add_small_resentment = yes
+		add_country_modifier = {
+			name = "eic_the_diwani"
+			duration = -1
+		}
+		if = {
+			limit = { exists = BNG }
+			BNG = {
+				add_country_modifier = {
+					name = "bng_the_diwani"
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = { exists = MUG }
+			MUG = {
+				add_country_modifier = {
+					name = "bng_the_diwani"
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { mission_completed = eic_diwani }
+			}
+			bengal_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_territorial_core = ROOT
+			}
+		}
+	}
+}
+
+country_event = {	# The Bengal Famine of $YEAR$
+	id = eic.22
+	title = eic.22.t
+	desc = eic.22.d
+	picture = FAMINE_eventPicture
+
+	trigger = {
+		tag = EIC
+		has_country_modifier = eic_the_diwani
+		num_of_owned_provinces_with = {
+			region = bengal_region
+			value = 10
+		}
+		NOT = { has_country_modifier = eic_food_redistribution }
+	}
+
+	mean_time_to_happen = {
+		months = 800
+	}
+
+	fire_only_once = yes
+
+	major = yes
+
+	option = {
+		name = eic.22.a
+		add_large_resentment = yes
+		add_stability = -1
+		every_owned_province = {
+			limit = { region = bengal_region }
+			add_devastation = 50
+		}
+	}
+}
+
+country_event = {	# The Regulating Act of $YEAR$
+	id = eic.23
+	title = eic.23.t
+	desc = eic.23.d
+	picture = muslimgfx_BANKRUPTCY_eventPicture
+
+	trigger = {
+		EIC = { is_subject_of = ROOT }
+		EIC = {
+			OR = {
+				liberty_desire = 30
+				corruption = 2
+				is_in_deficit = yes
+				mercantilism = 60
+			}
+			NOT = { has_country_modifier = eic_regulating_act }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = eic.23.a
+		add_dip_power = -25
+		add_prestige = 5
+		EIC = { country_event = { id = eic.24 } }
+	}
+
+	option = {
+		name = eic.23.b
+		add_prestige = -10
+	}
+}
+
+country_event = {	# The Regulating Act of $YEAR$
+	id = eic.24
+	title = eic.24.t
+	desc = eic.24.d
+	picture = muslimgfx_BANKRUPTCY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eic.24.a
+		add_mercantilism = -5
+		add_republican_tradition = -10
+		add_country_modifier = {
+			name = "eic_regulating_act"
+			duration = -1
+		}
+	}
+}
+
+country_event = {	# Rise in Value of Stocks
+	id = eic.25
+	title = eic.25.t
+	desc = eic.25.d
+	picture = ECONOMY_eventPicture
+
+	trigger = {
+		tag = EIC
+		NOT = { corruption = 1 }
+		is_in_deficit = no
+	}
+
+	mean_time_to_happen = {
+		months = 850
+	}
+
+	option = {
+		name = eic.25.a
+		add_years_of_income = 0.1
+	}
+
+	option = {
+		name = eic.25.b
+		add_mercantilism = 1
+		add_dip_power = 10
+	}
+}
+
+country_event = {	# The Capture of Delhi
+	id = eic.26
+	title = eic.26.t
+	desc = eic.26.d
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		OR = {
+			tag = AFG
+			tag = MUG
+			culture = afghani
+		}
+		522 = { controlled_by = ROOT NOT = { owned_by = ROOT } }
+		is_year = 1450
+		is_at_war = yes
+		exists = DLH
+		DLH = { num_of_cities = 2 owns_core_province = 522 }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	fire_only_once = yes
+
+	major = yes
+
+	option = {
+		name = eic.26.a
+		trigger = { DLH = { ai = yes } }
+		add_adm_power = -150
+		add_manpower = -10
+		inherit = DLH
+	}
+
+	option = {
+		name = eic.26.b
+		trigger = { DLH = { ai = no } }
+	}
+}
+
+country_event = {	# Sepoys Demand Extra Pay
+	id = eic.27
+	title = eic.27.t
+	desc = eic.27.d
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		tag = EIC
+		manpower = 2.5	
+		years_of_income = 0.1
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = eic.27.a
+		add_years_of_income = -0.1
+	}
+
+	option = {
+		name = eic.27.b
+		add_yearly_manpower = -2
+		add_army_tradition = -10
+	}
+}
+
+country_event = {	# Maratha Raids
+	id = eic.28
+	title = eic.28.t
+	desc = eic.28.d
+	picture = FAMINE_eventPicture
+
+	trigger = {
+		tag = EIC
+		is_neighbor_of = MAR
+		NOT = { truce_with = MAR }	
+		MAR = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 250
+	}
+
+	option = {
+		name = eic.28.a
+		random_owned_province = {
+			add_devastation = 25
+		}
+	}
+
+	option = {
+		name = eic.28.b
+		add_mil_power = -30
+		add_army_tradition = 5
+	}
+}
+
+country_event = {	# Shake Up of Company Admin
+	id = eic.29
+	title = eic.29.t
+	desc = eic.29.d
+	picture = FAMINE_eventPicture
+
+	trigger = {
+		tag = EIC
+		NOT = { adm = 3 }
+		stability = -2
+	}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = eic.29.a
+		add_stability = -1
+	}
+}
+
+country_event = {	# Growing Company Port
+	id = eic.30
+	title = eic.30.t
+	desc = eic.30.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		tag = EIC
+		any_owned_province = {
+			has_port = yes
+		}
+		mercantilism = 10
+		OR = {
+			dip = 4
+			has_idea_group = trade_ideas
+			has_idea_group = economic_ideas
+			#has_idea_group = industry_ideas
+		}
+	}
+
+	goto = good_port
+
+	immediate = {
+		random_owned_province = {
+			limit = { has_port = yes }
+			save_event_target_as = good_port
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = eic.30.a
+		event_target:good_port = {
+			upgrade_center_of_trade = yes
+		}
+	}
+}
+
+country_event = {	# Debate over Mercantilism
+	id = eic.31
+	title = eic.31.t
+	desc = eic.31.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		tag = EIC
+		mercantilism = 10
+		NOT = { mercantilism = 99 }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = eic.31.a
+		add_mercantilism = 1
+		add_dip_power = 30
+	}
+	option = {
+		name = eic.31.b
+		add_years_of_income = 0.05
+	}
+	option = {
+		name = eic.31.c
+		trigger = { OR = { mil = 4 is_at_war = yes } }
+		highlight = yes
+		add_manpower = 1
+		add_mil_power = 10
+	}
+}
+
+country_event = {	# Judicial Bias in [judge_province.GetName]
+	id = eic.32
+	title = eic.32.t
+	desc = eic.32.d
+	picture = USA_CONSTITUTION_eventPicture
+
+	trigger = {
+		tag = EIC
+		any_owned_province = {
+			religion = hinduism
+		}
+		has_reform = cornwallis_code_reform
+	}
+
+	goto = judge_province
+
+	immediate = {
+		random_owned_province = {	
+			limit = { religion = hinduism }
+			save_event_target_as = judge_province
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 700
+	}
+
+	option = {
+		name = eic.32.a
+		add_republican_tradition = -5
+		event_target:judge_province = {
+			add_unrest = -2
+		}
+	}
+	option = {
+		name = eic.32.b
+		event_target:judge_province = {
+			add_unrest = 5
+		}
+	}
+	option = {
+		name = eic.32.c
+		add_adm_power = 10
+		event_target:judge_province = {
+			add_unrest = 15
+		}
+		random_list = {
+			3 = { }
+			1 = { add_small_resentment = yes }
+		}
+	}
+}
+
+country_event = {	# A Company with a State
+	id = eic.33
+	title = eic.33.t
+	desc = eic.33.d
+	picture = indiangfx_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eic.33.a
+		add_stability_or_adm_power = yes
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 50
+		}
+	}
+}
+
+country_event = {	# A Factory in [factory_province.GetName]
+	id = eic.34
+	title = eic.34.t
+	desc = eic.34.d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	trigger = {
+		tag = EIC
+		any_owned_province = {
+			NOT = { has_building = workshop }
+			NOT = { has_building = counting_house }
+		}
+	}
+
+	goto = factory_province
+
+	immediate = {
+		random_owned_province = {	
+			limit = {
+				NOT = { has_building = workshop }
+				NOT = { has_building = counting_house }
+			}
+			save_event_target_as = factory_province
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2560
+	}
+
+	option = {
+		name = eic.34.a
+		add_treasury = -50
+		event_target:factory_province = {
+			if = { 
+				limit = { is_year = 1600 }
+				add_building = counting_house
+			}
+			else = {
+				add_building = workshop
+			}
+		}
+	}
+
+	option = {
+		name = eic.34.b
+		add_dip_power = -40
+		event_target:factory_province = {
+			add_base_production = 1
+		}
+	}
+}
+
+# opium events removed
+
+country_event = {	# The Company Raj
+	id = eic.41
+	title = eic.41.t
+	desc = eic.41.d
+	picture = indiangfx_BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eic.41.a
+		# nothing
+		add_country_modifier = {
+			name = "eic_company_is_now_state"
+			duration = -1
+		}
+	}
+	option = {
+		name = eic.41.b
+		override_country_name = THE_COMPANY
+		add_country_modifier = {
+			name = "eic_company_is_now_state"
+			duration = -1
+		}
+	}
+	option = {
+		name = eic.41.c
+		override_country_name = COMPANY_RAJ
+		add_country_modifier = {
+			name = "eic_company_is_now_state"
+			duration = -1
+		}
+	}
+}
+
+country_event = {	# EIC creation event
+	id = eic.42
+	title = eic.42.t
+	desc = eic.42.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.42.a
+		ai_chance = {
+			factor = 100
+		}
+		add_years_of_income = 0.1
+		every_owned_province = {
+			limit = {
+				OR = {
+					superregion = india_superregion
+					region = burma_region
+				}
+			}
+			add_core = EIC
+			remove_core = ROOT
+			cede_province = EIC
+		}
+		EIC = {
+			hidden_effect = {
+				change_religion = ROOT
+				add_prestige = 100
+				add_republican_tradition = 50
+				change_primary_culture = ROOT
+			}
+			change_government = republic
+			add_government_reform = trade_company_reform
+			define_ruler = {
+				name = "Thomas Smythe"
+				age = 42
+				adm = 4
+				dip = 4
+				mil = 2
+				fixed = yes
+				male = yes
+			}
+			add_ruler_personality = entrepreneur_personality
+			set_government_rank = 1
+			change_technology_group = western
+			change_unit_type = western
+		}
+		create_subject = {
+    			subject_type = autonomous_trade_company
+    			subject = EIC
+		}
+		custom_tooltip = eic_benefits_tooltip
+	}
+
+	option = {
+		name = eic.42.b
+		ai_chance = {
+			factor = 0
+		}
+		add_years_of_income = 0.1
+		every_owned_province = {
+			limit = {
+				OR = {
+					superregion = india_superregion
+					region = burma_region
+				}
+			}
+			add_core = EIC
+			remove_core = ROOT
+			cede_province = EIC
+		}
+		EIC = {
+			hidden_effect = {
+				change_religion = ROOT
+				add_prestige = 100	
+				add_republican_tradition = 50
+				change_primary_culture = ROOT
+			}
+			change_government = republic
+			add_government_reform = trade_company_reform
+			define_ruler = {
+				name = "Thomas Smythe"
+				age = 42
+				adm = 4
+				dip = 4
+				mil = 2
+				fixed = yes
+				male = yes
+			}
+			add_ruler_personality = entrepreneur_personality
+			set_government_rank = 1
+			change_technology_group = western
+			change_unit_type = western
+		}
+		create_subject = {
+    			subject_type = autonomous_trade_company
+    			subject = EIC
+		}
+		custom_tooltip = eic_benefits_tooltip
+		switch_tag = EIC
+	}
+
+	option = {
+		name = eic.42.c
+		ai_chance = {
+			factor = 0
+		}
+		custom_tooltip = never_eic_again_tooltip
+	}
+}
+
+country_event = {	# A Ghastly Spectacle
+	id = eic.43
+	title = eic.43.t
+	desc = eic.43.d
+	picture = indiangfx_DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		india_superregion = {
+			religion = hinduism	
+			owned_by = ROOT
+		}
+		NOT = { has_country_modifier = eic_abolished_sati }
+	}
+
+	mean_time_to_happen = {
+		months = 800
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+				religion = hinduism
+			}
+			save_event_target_as = sati_province
+		}
+	}
+
+	goto = sati_province
+	
+	option = {
+		name = eic.43.a
+		add_prestige = 5
+		add_adm_power = -20
+		event_target:sati_province = {
+			add_unrest = 5
+		}
+	}
+	option = {
+		name = eic.43.b
+		add_prestige = -5
+		event_target:sati_province = {
+			add_unrest = -2
+		}
+	}
+}
+
+# New mission events
+
+country_event = {		# Strangers in a Strange Land
+	id = eic.44
+	title = eic.44.t
+	desc = eic.44.d
+	picture = indiangfx_MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.44.a
+		add_manpower = 5
+		add_adm_power = 50
+		add_government_reform = new_eic_reform
+		overlord = {
+			create_subject = {
+    				subject_type = autonomous_trade_company
+    				subject = EIC
+			}
+		}
+		custom_tooltip = eic_grants_access_to_princely_states_tt
+	}
+}
+country_event = {		# Fort William
+	id = eic.45
+	title = eic.45.t
+	desc = eic.45.d
+	picture = indiangfx_FORT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.45.a
+		4477 = {
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = "eic_fort_william_1"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {		# Piracy
+	id = eic.46
+	title = eic.46.t
+	desc = eic.46.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.46.a
+		add_years_of_income = -0.50
+		add_adm_power = -50
+		add_country_modifier = {
+			name = "eic_anti_piracy_crusade"
+			duration = 18250
+		}
+	}
+	option = {
+		name = eic.46.b
+		add_years_of_income = -0.50
+		add_prestige = -15
+		add_country_modifier = {
+			name = "eic_pardons_and_privateers"
+			duration = 18250
+		}
+	}
+}
+country_event = {		# Indian Treasure arrives
+	id = eic.47
+	title = eic.47.t
+	desc = eic.47.d
+	picture = indiangfx_MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.47.a
+		if = {
+			limit = {
+				NOT = { monthly_income = 100 }
+			}
+			add_years_of_income = 0.25
+		}
+		else = {
+			add_years_of_income = 0.10
+		}
+	}
+}
+country_event = {		# Lobbying Parliament
+	id = eic.48
+	title = eic.48.t
+	desc = eic.48.d
+	picture = CORRUPTION_eventPicture
+	
+	trigger = {
+		tag = EIC
+		NOT = { corruption = 10 }
+		has_reform = new_eic_reform
+	}
+
+	mean_time_to_happen = {
+		months = 260
+	}
+	
+	option = {
+		name = eic.48.a
+		add_corruption = 0.5
+		add_government_power = {
+			mechanic_type = eic_lobbying_mechanic
+			power_type = lobbying_power
+			value = 30
+		}
+	}
+	option = {
+		name = eic.48.b
+		add_prestige = 10
+	}
+}
+country_event = {		# The First Anglo-Burmese War
+	id = eic.49
+	title = eic.49.t
+	desc = eic.49.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eic.49.a
+		add_years_of_income = 2.5
+		add_mercantilism = -3
+		add_government_power = {
+			mechanic_type = eic_lobbying_mechanic
+			power_type = lobbying_power
+			value = -50
+		}
+	}
+	option = {
+		name = eic.49.b
+		add_years_of_income = 0.5
+	}
+}
+country_event = {		# Nabob Seeks Seat in Parliament
+	id = eic.50
+	title = eic.50.t
+	desc = eic.50.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		EIC = { is_subject_of = ROOT }
+		has_parliament = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1150
+	}
+	
+	option = {
+		name = eic.50.a
+		add_corruption = 0.50
+		add_years_of_income = 0.35
+		EIC = {	
+			add_government_power = {
+				mechanic_type = eic_lobbying_mechanic
+				power_type = lobbying_power
+				value = 10
+			}
+		}
+	}
+	option = {
+		name = eic.50.b
+		add_prestige = 5
+		EIC = {
+			add_government_power = {
+				mechanic_type = eic_lobbying_mechanic
+				power_type = lobbying_power
+				value = -5
+			}
+		}
+	}
+}
+country_event = {		# Vellore Mutiny
+	id = eic.51
+	title = eic.51.t
+	desc = eic.51.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = EIC
+		2027 = { country_or_non_sovereign_subject_holds = ROOT }
+		# Arcot, approximately where Vellore is
+		check_variable = {
+			which = Resentment
+			value = 30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	fire_only_once = yes
+
+	major = yes
+	
+	option = {
+		name = eic.51.a
+		add_large_resentment = yes
+		2027 = {
+			add_devastation = 30
+			spawn_rebels = {
+    				size = 10
+    				type = mutineer_rebels
+			}
+		}
+		every_province = {
+			limit = {
+				is_core = MYS
+			}
+			add_unrest = 10
+		}
+	}
+}
+country_event = {		# Santal rebellion
+	id = eic.52
+	title = eic.52.t
+	desc = eic.52.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = EIC
+		jharkhand_area = {	# Santals are natives to Jharkhand
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		has_reform = cornwallis_code_reform
+	}
+
+	mean_time_to_happen = {
+		months = 650
+	}
+
+	fire_only_once = yes
+
+	major = yes
+	
+	option = {
+		name = eic.52.a
+		add_medium_resentment = yes
+		jharkhand_area = {
+			limit = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			add_devastation = 50
+			remove_core = EIC
+			spawn_rebels = {
+    				size = 3
+    				type = nationalist_rebels
+			}
+		}
+	}
+}
+country_event = {		# Favourable Company Policy
+	id = eic.53
+	title = eic.53.t
+	desc = eic.53.d
+	picture = indiangfx_GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		tag = EIC
+		prestige = 1
+		stability = 1
+	}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+	
+	option = {
+		name = eic.53.a
+		subtract_small_resentment = yes
+		add_prestige = 5
+	}
+}
+country_event = {		# You can always get what you want...
+	id = eic.54
+	title = eic.54.t
+	desc = eic.54.d
+	picture = indiangfx_CORRUPTION_eventPicture
+	
+	trigger = {
+		tag = EIC
+		has_reform = new_eic_reform
+		NOT = { corruption = 5 }
+		is_in_deficit = no
+	}
+
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = eic.54.a
+		add_government_power = {
+			mechanic_type = eic_lobbying_mechanic
+			power_type = lobbying_power
+			value = 30
+		}
+	}
+}
+

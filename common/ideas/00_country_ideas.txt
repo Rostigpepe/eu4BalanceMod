@@ -266,7 +266,7 @@ AVE_ideas = {
 
 EIC_ideas = {
 	start = {
-		global_prov_trade_power_modifier = 0.2
+		allowed_marine_fraction = 0.5
 		no_religion_penalty = yes
 	}
 
@@ -280,7 +280,7 @@ EIC_ideas = {
 	free = yes		#will be added at load.
 
 	eic_governors_general = {
-		global_unrest = -1
+		core_creation = -0.2
 		governing_capacity_modifier = 0.1
 	}
 	eic_indian_trade = {
@@ -291,19 +291,18 @@ EIC_ideas = {
 		placed_merchant_power = 10
 	}
 	eic_presidency_armies = {
-		global_manpower_modifier = 0.1
-		global_sailors_modifier = 0.2
+		infantry_power = 0.15
 	}
 	eic_intercontinental_trade = {
 		trade_steering = 0.25
-		trade_range_modifier = 0.1
+		global_sailors_modifier = 0.25
 	}
 	eic_colonial_monopoly = {
 		trade_efficiency = 0.1
 	}
 	eic_colonial_exploitation = {
-		trade_company_investment_cost = -0.1
-		build_cost = -0.1
+		development_cost = -0.05
+		build_cost = -0.15
 	}
 }
 
@@ -834,20 +833,21 @@ NED_ideas = {
 		trade_steering = 0.15 # Dutch Seafaring Spirit
 	}
 	polders = {
-		build_cost = -0.20 
+		build_cost = -0.1
+		development_cost = -0.1 
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
 		allowed_marine_fraction = 0.25
 	}
 	embrace_humanism = {
-		tolerance_heretic = 3
+		idea_cost = -0.05
+		native_assimilation = 0.25
 	}
 	army_sappers = {
-		siege_ability = 0.1
+		siege_ability = 0.2
 	}
 	platoon_fire = {
-		max_general_fire = 1
 		fire_damage = 0.1
 	}
 }
@@ -952,11 +952,11 @@ FRA_ideas_2 = {
 TUR_ideas = {
 	start = {
 		tolerance_heathen = 3
-		relation_with_accepted_culture = 10
+		discipline = 0.05
 	}
 	
 	bonus = {
-		discipline = 0.05
+		advisor_pool = 1
 	}
 
 	trigger = {
@@ -966,7 +966,7 @@ TUR_ideas = {
 	
 	millets = {
 		num_accepted_cultures = 1
-		core_creation = -0.15
+		core_creation = -0.2
 	}
 	timariot_system = {
 		cavalry_power = 0.15
@@ -980,6 +980,7 @@ TUR_ideas = {
 	}
 	autonmous_pashas = {
 		global_unrest = -1
+		vassal_income = 0.25
 	}		
 	tulip_period = {
 		trade_efficiency = 0.1

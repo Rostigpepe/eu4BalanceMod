@@ -1,0 +1,140 @@
+﻿l_english:
+ 
+##############################
+# Modifiers
+##############################
+
+# some may be found in the events file, I'm not sure
+
+eic_rupee: "Unified Company Currency"
+eic_triumphant_company: "The Company, Triumphant"
+eic_the_land_of_rice: "The Land of Rice"
+eic_fertile_land: "Developing Fertile Lands"
+eic_policy_of_tolerance: "Policy of Religious Toleration"
+eic_presidency_armies: "The Presidency Armies"
+eic_adopt_mysore_rockets: "Adopting Mysorean Rocket Technology"
+eic_hunting_tigers_in_india: "Hunting Tigers Out in India"
+eic_maratha_horsemen: "Maratha Horsemen"
+eic_following_the_ganges: "Following the Ganges"
+eic_loyal_sikh_troops: "Loyal Sikh Guard"
+eic_fortified_the_khyber: "Fortifications of the Khyber Pass"
+eic_we_have_united_india: "The Jewel in the Company's Crown"
+eic_secured_tibet: "Secured Tibet"
+eic_trucial_state: "Company-backed Trucial State"
+eic_loyal_princely_states: "Loyal Princely States"
+eic_reformed_sepoy_armies: "Reformed Sepoy Armies"
+eic_company_is_now_state: "Supremacy of the Company"
+
+##############################
+# Opinions
+##############################
+
+opinion_helped_eic_with_debt: "Helped us with our debt"
+opinion_didnt_helped_eic_with_debt: "Refused to help with out debt"
+opinion_eic_bribe: "EIC Lobbying"
+
+##############################
+# Tooltips
+##############################
+
+eic_benefits_tooltip: "The §YHonorable East India Company§! has its own unique §Yideas§!, §Ymissions§!, and abilities that may aid §Y[Root.GetName]§! in conquering India much faster than usual."
+never_eic_again_tooltip: "Go back.\n§YThe Company can be created at a later date through the decision.§!"
+eic_hindusthan_and_bengal_farmlands_province_gets_dev_cost_tooltip: "Every owned farmlands province in the §YHindusthan§! and §YBengal§! regions gets §G-15.0%§! local development cost and §G-10.0%§! local construction cost until the end of the game."
+eic_every_burma_province_gets_production_tooltip: "Every owned province in the §YBurma§! region gains §G+1§! base production."
+eic_has_defeated_indian_rebellion_or_no_separatism_tooltip: "Either:\n - Has defeated the §YIndian Rebellion§!.\n - Own 200 provinces in the §YIndia§! superregion with no separatism."
+eic_may_open_factories_in_foreign_provinces_tooltip: "Enables the opening of §YFactories§! in other nations' provinces, increasing your own trade power in their nodes and their income."
+eic_has_overthrown_us: "Current ruler was installed militarily by §Y[Root.GetName]§!."
+eic_10_reasons_for_doctrine_of_lapse_tooltip: "Gain §G+10§! reasons to accept §YDoctrine of Lapse§!."
+eic_allows_recruitment_of_5_disc_sepoys_tooltip: "Allows the recruitment of more professional Sepoy Regiments."
+eic_can_upgrade_chinese_port_tt: "If we own a port in the §YSouth China§! region, it will gain §G+2§! of every development type."
+eic_exploiting_may_lead_to_disaster_tt: "Exploiting the land may one day come back to bite us..."
+eic_used_monopoly_ability_5_times_tt: "Used §YRequest Extension of Monopolies§! ability at least §Y5§! times."
+eic_100_yr_timer_tt: "It has been less than §Y100 years§! since we completed the mission §YA Base in Bengal§!."
+eic_defeated_indian_rebellion_tt: "Defeated the §YIndian Rebellion§!."
+eic_doctrine_of_lapse_reasons_tt: "Every §YPrincely State§! gains a permanent §G+10§! reasons to accept §YDoctrine of Lapse§!."
+eic_sikh_less_likely_to_revolt_tt: "§YPunjabi§! provinces are less likely to revolt against us in the event of widespread mutiny and disorder."
+
+##############################
+# Text
+##############################
+
+eic_invest_in_bengal_title: "Harness the Delta"
+eic_invest_in_bengal_desc: "The Bengal Delta is one of the richest areas in the whole world. If we were able to tame its waters and people and harness them to produce products for our Company, our profits would surely vastly exceed expectations."
+eic_east_asian_trade_title: "Asian Trades"
+eic_east_asian_trade_desc: "We must extend our economic reach across Asia and harness trades from across the region, so that we may extend our monopoly on exotic goods to even further flung heights."
+eic_unequal_treaty_title: "An Unequal Treaty"
+eic_unequal_treaty_desc: "The government of China has long tried to keep us out. They resent our sale of opium to their people, decrying it as corrupting their population and even going so far as to ban its consumption. This will not stand. If they choose to hault free trade, then we will have to forcibly open up their markets."
+eic_straits_settlements_title: "The Straits Settlements"
+eic_straits_settlements_desc: "The straits of Malacca are a strategic position guarding the rich trade routes between China and India. Acquiring bases along this coastline with which to guide this trade and protect against hostile piracy would great increase the Company's dominance in the region."
+eic_the_deccan_title: "Secure the Deccan"
+eic_the_deccan_desc: "The Deccan is a rugged land of hills and deserts, controlled by powerful chieftains who hesitate to accept the authority of the Company. This 'Maratha Confederation' must be crushed and brought to heel before they unite the rest of India against us!"
+eic_control_central_india_title: "Control Central India"
+eic_control_central_india_desc: "The very heart of the geographic land mass of India is an important route for both armies and traders. By controlling this region, we can secure our routes to all corners of the sub-continent, and thereby more effectively defend attacks against any of our bases there."
+eic_conquer_the_punjab_title: "Delhi and the Punjab"
+eic_conquer_the_punjab_desc: "Delhi is truly the heart of India, the seat of power for all legitimate empires here. By taking this important city and the lands surrounding it, including the fertile Punjab, we can safely secure our hegemony over the rest of India."
+eic_conquer_afghanistan_title: "Claim Afghanistan"
+eic_conquer_afghanistan_desc: "A great game is arising between Britain and her many enemies, all vying for control of Central Asia. We must strike first, and secure the loyalty and service of the Shah of Afghanistan, and hence also fortify the vital Khyber Pass into India."
+
+eic_sail_east_indiamen_title: "The East Indiaman"
+eic_sail_east_indiamen_desc: "Due to the nature of our business in the East, a new type of ship has had to be constructed. The East Indiaman is perfect for our needs - it excells as a merchant vessel, but also provides adequate protection to its sailors from piracy and other enemies that stalk the seas. Building up our navy, including a sizable amount of these new ships, would certainly improve the trading efficiency of our Company."
+eic_scourge_of_the_seas_title: "Scourge of the Seas"
+eic_scourge_of_the_seas_desc: "Piracy is rampant everywhere we turn, from the shores of Bengal to the straits of Malacca. In the past these barbaric thieves have terrorised our shipping lanes, stealing countless tonnes of precious goods and taking thousands of innocent lives. With our newly empowered navy however, we may now be able to effectively counter these scoundrels."
+eic_protect_bengal_title: "Protect Bengal"
+eic_protect_bengal_desc: "The mountains and jungles to the east of the Bengal Presidency are a potential weak spot in our defences. Any enemy from Burma could lead an army through these passes and strike at our most vulnerable parts with relative ease. We must take effective control over these lands, and fortify them to prevent such an invasion."
+eic_conquer_burma_title: "Defeat Burma"
+eic_conquer_burma_desc: "The Burmese Kingdom has threatened us for too long. They continue to harass our borders, occupy our rightful territory and most importantly refuse us unconditional acccess to the fruits of their lands. They must be defeated on the field of battle."
+eic_gangeatic_plain_title: "Follow the Ganges"
+eic_gangeatic_plain_desc: "The Ganges is the mightiest river in all of India. It is the vein of life passing through the northern plains, bringing wealth and prosperity to every town it touches. With out control over its mouth in Bengal cemented, we are now in a stronger position to start the conquest of the Gangeatic Plain itself."
+eic_bombay_title: "Acquire Bombay"
+eic_bombay_desc: "The port city of Bombay would be an important base for the Company in the Arabian Sea if we could acquire it, granting our ships safety against the many pirates that operate in the region and allowing our influence to seep into Gujarat and the west."
+eic_gujarat_sindh_and_rajputana_title: "Lands of the Rajputs"
+eic_gujarat_sindh_and_rajputana_desc: "The lands of the west of India are barren, but marked with a distinctive martial culture. By conquering and pacifying these lands, we could include the skilled Rajputs in our own ranks, and benefit from their extraordinary commanding abilities."
+eic_unite_india_title: "The Jewel in the Crown"
+eic_unite_india_desc: "At long last, the many princes and chieftains of India have been defeated or willingly submitted. The flag of the Company flies over every government house, and not a rumour of rebellion can be heard amongst the sepoys. India is ours!"
+eic_conquer_tibet_title: "Control Tibet"
+eic_conquer_tibet_desc: "Tibet is a land on the frontiers between superpowers - our own Company, the Russian Empire, and the powerful China. It is only a matter of time before one of these potential rivals seizes the border region for themselves, and therefore we must strike first to claim this vital no man's land."
+
+eic_charter_the_company_title: "Charter the Company"
+eic_charter_the_company_desc: "Our Company has grown from a collection of disparate factories into something resembling a country in itself. Let us formalise our position in India but setting up permanent trade apparatus, and commence forth on realising our dreams in this strange land."
+eic_base_in_bengal_title: "A Base in Bengal"
+eic_base_in_bengal_desc: "Bengal is a rich and diverse land, saturated by the mighty Ganges but fiercely fought over. With the eyes of many Indians and European entrepreneurs on these wealthy shores, we must stake our claim here before they can. In case of any of our threats decide to strike at our heart, we must also fortify our capital in Calcutta."
+eic_diwani_title: "The Diwani"
+eic_diwani_desc: "The right to claim taxes and run justice, the diwani, is effective sovereignty of Bengal in our hands. We must, through diplomacy or force, effectively seize these rights from the local lords."
+eic_the_carnatic_title: "Conquer the Carnatic"
+eic_the_carnatic_desc: "The Carnatic is a rich strip of land on the eastern coast of India, home to a great many merchants and a fabulous wealth of exotic goods. Seizing this territory would not only secure our position in Madras, but also grant us control over the southern trans-Indian trade routes."
+eic_slay_the_tiger_title: "Slay the Tiger"
+eic_slay_the_tiger_desc: "The south of the Deccan is a hostile place to British forces - under the leadership of the ambitious Tipu Sultan, local Indian forces are rallying against us, hoping to drive us out from their shores once and for all. We must not sit idly while this threat grows - raise the armies and crush the Tiger of Mysore!"
+eic_trucial_states_title: "The Trucial States"
+eic_trucial_states_desc: "The Persian Gulf is a strategic position, guarding the overland trade routes from Europe and the Ottoman Empire towards our markets in India. Let us expand the Persian Gulf Residency by concluding agreements with the locals, forbidding their vile practices of slavery and piracy and incorporating them as valued protectorates to guard the Straits of Hormuz for us."
+eic_a_company_with_an_empire_title: "A Company with an Empire"
+eic_a_company_with_an_empire_desc: "Once, we were just merchants. Now we are the masters of a mighty empire."
+
+eic_calcutta_title: "Found Calcutta"
+eic_calcutta_desc: "Located in the Ganges delta, the small town of Calcutta will become the strategic heart of our company. With a heavy investment we can turn this port settlement into a thriving metropolis to call our own."
+eic_cornwallis_code_title: "Cornwallis Code"
+eic_cornwallis_code_desc: "Our Company is rapidly growing, controlling sprawling lands across the sub-continent and beyond. In order to keep control of the strain on our administration, the Cornwallis Code was introduced - including many measures designed to restrain the free tyranny of the Company in India. While it may harm the ambitions of some of our officials, it is best for everyone if we agree to these laws."
+eic_achievement_divide_and_conquer_title: "§lDivide and Conquer§!"
+eic_achievement_divide_and_conquer_desc: "This is a special achievement mission. While it is not required to complete the main mission tree, it is an extra challenge for ambitious players."
+eic_madras_title: "Acquire Madras"
+eic_madras_desc: "Madras is a strategically positioned city on the east Indian coast, the perfect place for a Company base in the region. By war or diplomacy, we should acquire this desirable port and refit it to suit our needs."
+eic_presidency_armies_title: "Presidency Armies"
+eic_presidency_armies_desc: "The three core Presidencies of the East India Company, Calcutta, Madras, and Bombay, all have their own divisions of the army, known as Presidency armies. Each harnessing different skills and expertise from the native sepoys of theirs regions, put together the diversity and size of our forces are truly a sight to behold."
+eic_mysore_rockets_title: "Mysorean Rockets"
+eic_mysore_rockets_desc: "The Anglo-Mysore wars have taught us a great many lessons in warfare. The numerous defeats we suffered were humiliating, but through those experiences we learned how to triumph. From among the wreckage of Mysore, thousands of Mysorean rockets have been discovered, the weapon that caused so much damage to our morale and supplies. If we can reverse engineer these rockets and perfect them for our own use, we can come out of the Mysore campaign stronger than our enemies can imagine."
+eic_the_princes_title: "Tame the Princes"
+eic_the_princes_desc: "As our control expands across the sub-continent, we have absorbed a great many minor princes as subjects to our Company. While they for the most part rely on our support and hence serve loyally, we will need to take extra measures to ensure their future support."
+
+eic_strengthen_ties_with_london_title: "Ties with London"
+eic_strengthen_ties_with_london_desc: "The Boardroom of the East India Company, its very headquarters, is not in India, but in a stuffy room in London. In order to secure the future of our activities abroad, we must ensure the consent and support of both the Board and the Parliament and Crown which we are subject to."
+eic_currency_reform_title: "Unified Coinage"
+eic_currency_reform_desc: "Throughout our territories, coins are minted in the name of local Indian lords, particularly the Mughal rulers of Delhi. Each Presidency has its own methods and style of currency. We can no longer tolerate this confusion - instead we must unite the mints and forge a new unified Company-wide coin, in the name of our sovereign in England."
+eic_maintain_east_indian_monopoly_title: "Maintain the Monopoly"
+eic_maintain_east_indian_monopoly_desc: "The monopolies granted to us on our creation were ambitious and greatly expansive, and many considered that we would not be able to fulfill them. Now we have achieved them, and better - our control over the Asian trades only grows. In the face of this growing monopolisation, some proponents of 'free trade' and anti-EIC lobbyists in England are petitioning to have our monopolies revoked, forcing us to compete like any other company. We will not stand for this!"
+eic_cash_crops_title: "Reap the Soils"
+eic_cash_crops_desc: "Bengal is an extremely rich land, one that is ripe for reaping by our Company. Encouraging the growth of cash crops will certainly secure us a profit, but will also damage local agriculture and food stocks. Such is the price of business."
+eic_company_tolerance_title: "Company Tolerance"
+eic_company_tolerance_desc: "We are merchants, not true statesmen - and as a result, we do not seek to propogate our culture and religion across these lands. Instead, we must pursue a path of tolerance. By making peace with Indian religious traditions and their spiritual leaders, we can further secure our rule in the eyes of their followers."
+eic_crush_indian_rebellion_title: "The Indian Rebellion"
+eic_crush_indian_rebellion_desc: "Discontent in India has been boiling ever since we acquired our first territories here. When it reaches a breaking point, we must be ready to crush rebellious sepoys and princes and firmly reassert our authority over India, else we face total destruction."
+eic_reform_the_sepoys_title: "Reform the Sepoys"
+eic_reform_the_sepoys_desc: "The old system of organising our armies might have worked well for conquest, but now that we need to secure our position in India, it has proved itself ineffective. To stamp out the threat of future mutiny and imprint discipline and heart into our native troops, a wide-reaching reform of the army is needed."

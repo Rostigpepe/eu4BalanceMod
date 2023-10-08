@@ -1,0 +1,384 @@
+namespace = anarchy
+
+country_event = {	# The Anarchy
+	id = anarchy.1
+	title = anarchy.1.t
+	desc = anarchy.1.d
+	picture = REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = anarchy.1.a
+		set_country_flag = had_the_anarchy
+		add_stability = -2
+		add_legitimacy = -50
+	}
+}
+
+country_event = {	# Order Restored
+	id = anarchy.2
+	title = anarchy.2.t
+	desc = anarchy.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	immediate = { set_country_flag = won_the_anarchy }
+	
+	option = {
+		name = anarchy.2.a
+		add_legitimacy = 10
+		add_prestige = 10
+	}
+}
+
+country_event = {	# [Root.Monarch.GetTitle] Assassinated
+	id = anarchy.3
+	title = anarchy.3.t
+	desc = anarchy.3.d
+	picture = ASSASSINATION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_regency = no
+	}
+	
+	option = {
+		name = anarchy.3.a
+		kill_ruler = yes
+	}
+}
+
+country_event = {	# Unrest in [unrest_province.GetName]
+	id = anarchy.4
+	title = anarchy.4.t
+	desc = anarchy.4.d
+	picture = REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+
+	goto = unrest_province
+
+	immediate = {
+		random_owned_province = {
+			limit = { superregion = india_superregion }
+			save_event_target_as = unrest_province
+		}
+	}
+	
+	option = {
+		name = anarchy.4.a
+		event_target:unrest_province = {
+			add_unrest = 10
+		}
+	}
+}
+
+country_event = {	# Lack of Faith in MONARCH
+	id = anarchy.5
+	title = anarchy.5.t
+	desc = anarchy.5.d
+	picture = REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		government = monarchy
+	}
+	
+	option = {
+		name = anarchy.5.a
+		add_legitimacy = -15
+	}
+}
+
+country_event = {	# European Incursions
+	id = anarchy.6
+	title = anarchy.6.t
+	desc = anarchy.6.d
+	picture = REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		any_province = {
+			superregion = india_superregion
+			owner = { technology_group = western }
+		}
+		NOT = { is_at_war = yes }
+	}
+	
+	option = {
+		name = anarchy.6.a
+		add_prestige = -10
+	}
+}
+
+country_event = {	# Revolt of the Marathas
+	id = anarchy.7
+	title = anarchy.7.t
+	desc = anarchy.7.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		any_owned_province = {
+			culture = marathi
+		}
+		NOT = { exists = MAR }
+	}
+	
+	option = {
+		name = anarchy.7.a
+		every_province = {
+			limit = { culture = marathi }
+			add_core = MAR
+			cede_province = MAR
+		}
+		MAR = {
+			change_technology_group = indian
+			change_government = monarchy
+			change_religion = hinduism
+			hidden_effect = { add_prestige = 100 }		# Offset conversion
+			add_government_reform = autocracy_reform
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.4
+					artillery = 0.1
+				}
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+			}
+			if = {
+				limit = {
+					MAR = {
+						any_owned_province = {
+							has_port = yes
+						}
+					}
+				}
+				MAR = {
+					random_owned_province = {
+						limit = {
+							has_port = yes
+						}
+						build_to_forcelimit = {
+							heavy_ship = 0.2
+							transport = 0.4
+							light_ship = 0.4
+						}
+					}
+				}
+			}
+			add_manpower = 50
+			add_treasury = 250
+			define_ruler = {
+				name = "Shivaji"
+				dynasty = "Bhonsale"
+				adm = 4
+				dip = 4
+				mil = 6
+				religion = hinduism
+				culture = marathi
+				fixed = yes
+			}
+			add_ruler_personality = inspiring_leader_personality
+		}
+		declare_war_with_cb = {
+    			who = MAR
+    			casus_belli = cb_civil_war
+		}
+	}
+
+	option = {
+		name = anarchy.7.b			# Play as
+		trigger = {
+			ai = no
+		}
+		every_province = {
+			limit = { culture = marathi }
+			add_core = MAR
+			cede_province = MAR
+		}
+		MAR = {
+			change_technology_group = indian
+			change_government = monarchy
+			change_religion = hinduism
+			hidden_effect = { add_prestige = 100 }		# Offset conversion
+			add_government_reform = autocracy_reform
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.4
+					artillery = 0.1
+				}
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				infantry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+				cavalry = MAR
+			}
+			if = {
+				limit = {
+					MAR = {
+						any_owned_province = {
+							has_port = yes
+						}
+					}
+				}
+				MAR = {
+					random_owned_province = {
+						limit = {
+							has_port = yes
+						}
+						build_to_forcelimit = {
+							heavy_ship = 0.2
+							transport = 0.4
+							light_ship = 0.4
+						}
+					}
+				}
+			}
+			add_manpower = 50
+			add_treasury = 250
+			define_ruler = {
+				name = "Shivaji"
+				dynasty = "Bhonsale"
+				adm = 4
+				dip = 4
+				mil = 6
+				religion = hinduism
+				culture = marathi
+				fixed = yes
+			}
+			add_ruler_personality = inspiring_leader_personality
+		}
+		declare_war_with_cb = {
+    			who = MAR
+    			casus_belli = cb_civil_war
+		}
+		switch_tag = MAR
+	}
+}
+
+country_event = {	# The Nawab of Bengal
+	id = anarchy.8
+	title = anarchy.8.t
+	desc = anarchy.8.d
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { exists = BNG }
+		any_owned_province = {
+			region = bengal_region
+		}
+	}
+	
+	option = {
+		name = anarchy.8.a
+		ai_chance = {
+			factor = 100
+		}
+		every_owned_province = {
+			limit = { region = bengal_region }
+			add_core = BNG
+			cede_province = BNG
+		}
+		BNG = {
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.2
+					artillery = 0.3
+				}
+			}
+			if = {
+				limit = {
+					BNG = {
+						any_owned_province = {
+							has_port = yes
+						}
+					}
+				}
+				BNG = {
+					random_owned_province = {
+						limit = {
+							has_port = yes
+						}
+						build_to_forcelimit = {
+							heavy_ship = 0.2
+							transport = 0.4
+							light_ship = 0.4
+						}
+					}
+				}
+			}
+			add_manpower = 20
+			add_treasury = 200
+		}
+		vassalize = BNG
+		BNG = { add_liberty_desire = 30 }
+	}
+
+	option = {	
+		name = anarchy.8.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -5
+	}
+}

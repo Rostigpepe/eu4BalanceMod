@@ -1,0 +1,19 @@
+﻿l_english:
+ 
+##############################
+# Text
+##############################
+
+eic_lobbying_mechanic: "Corporate Lobbying"
+ability_eic_lobbying_mechanic: "Corporate Lobbying"
+lobbying_power: "Lobbying Power"
+
+eic_extend_monopolies: "Request Extension of Monopolies"
+eic_extend_monopolies_desc: "At our founding, the Crown granted us a monopoly on all the trades of the East. As our power grows however, we have found this increasingly limiting. With enough backing, we can ensure further monopolies over new goods and expand our market dominance."
+eic_parliament_support: "Rally Parliamentary Support"
+eic_parliament_support_desc: "Support for the Governor is vital to the success of the Company. Using our connections in Parliament, we can ensure that no bill or charge is levied against us."
+eic_send_home_treasure: "Share the Spoils"
+eic_send_home_treasure_desc: "Vast amounts of wealth have been acquired by many ambitious nabobs under Company service. Let us send a few back home, so that they might show off the might and riches of the Company."
+
+monthly_lobbying_power: "Montly Lobbying Power"
+lobbying_power_gain_modifier: "Lobbying Power Gain"

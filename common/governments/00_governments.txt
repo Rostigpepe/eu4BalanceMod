@@ -627,6 +627,7 @@ republic = {
 				georgian_republic_reform
 				#Gothic
 				gothic_republic_reform
+				new_eic_reform
 			}
 		}
 		republican_virtues = {
@@ -649,6 +650,8 @@ republic = {
 				oprichnina_reform
 				consulate_of_the_sea
 				#BM GOVERNMENTS REFORM 
+				power_of_the_board_reform
+				indian_board_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -769,6 +772,7 @@ republic = {
 				tercios_reform
 				#Revolutionary Georgia
 				geo_revolutionary_army_reform
+				sepoy_troops_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -802,6 +806,7 @@ republic = {
 				#Georgian Administration				
 				saeristavo_reform_rep
 				sadrosho_reform_rep
+				cornwallis_code_reform
 			}
 		}
 		economical_matters_republic = {

@@ -1,0 +1,48 @@
+﻿l_english:
+
+ ##############################
+ # Modifiers
+ ##############################
+
+ eic_abolished_sati: "Abolished Sati"
+ desc_abolished_sati: "We have abolished the vile Hindu practice of widow burning in our provinces, angering religious traditionalists but improving our public image back in Europe."
+ disarming_sepoys: "Disarming Sepoys"
+ eic_indian_imperial_police: "Indian Imperial Police Service"
+ institute_redcoat_infantry: "Recruit Redcoats"
+ ##############################
+ # Opinions
+ ##############################
+
+
+ ##############################
+ # Tooltips
+ ##############################
+
+ ############################### 
+ # Text
+ ##############################
+
+ dissolve_eic_decision_title: "Abolish the East India Company"
+ dissolve_eic_decision_desc: "The establishment and success of the EIC was a remarkable feat and a true show of the strength of modern capitalism and imperialism, but its rise was not without failure. Brutal famines, oppression, constant deficit, mass corruption and finally widespread rebellion proved to be the death nail of the Company's rule in India."
+ form_eic_decision_title: "Charter the Honorable East India Company"
+ form_eic_decision_desc: "The acquisition of suitable territories in India has allowed us to establish an autonomous company of merchants there for the sole purpose of friendly trade relations with our Indian partners. Nothing more. Promise."
+ form_carnatic_title: "Carnatic Sultanate"
+ form_carnatic_desc: "Since the fall of Delhi and the Mughals the Carnatic has lived under Hindu hegemony. The time has come to establish a Sultanate here."
+ abolish_sati_title: "Abolish Sati"
+ abolish_sati_desc: "The practice of widow burning, known locally as 'sati', is fairly common amongst the Hindus of our domain. Many in Britain consider it abhorrent and absolutely unacceptable, but thusfar the Company administration has been reluctant to act, considering it a protected tradition under their policy of religious toleration."
+
+ disarm_sepoys_title: "Order the Disarmament of the Sepoys"
+ disarm_sepoys_desc: "Mutiny is spreading across the land. If we can safely disarm disaffected sepoys however, we may be able to stop violent revolt from erupting in more regiments. During the time this is in operation however, we will have to rely on the much small European regiments to put down the revolt."
+ rearm_sepoys_title: "Rearm the Sepoys"
+ rearm_sepoys_desc: "Now that the immediate threat has passed, it is safe to give the sepoys back their weapons and once again make full use of a larger military force."
+
+ change_princely_state_colours_title: "Change Princely State Colours"
+ change_princely_state_colours_desc: "Changes the colours of our princely states to better match our own map colour."
+ restore_princely_state_colours_title: "Restore Princely State Colours"
+ restore_princely_state_colours_desc: "Restores the original colours of all our princely states."
+
+ institute_indian_imperial_police_title: "Institute the Indian Imperial Police Service"
+ institute_indian_imperial_police_desc: "Crime and minor rebellions are a major problem to our rule in India. It is simply not feasible to expect the army to respond to every call for help, and thus the time has come to create a new division of government with the expressed aim of keeping peace on the streets. The Indian Imperial Police service will ensure crime rates go down, protestors are put in their place, and Company rule is secure."
+
+ institute_redcoat_infantry_title: "Institute Redcoat Infantry"
+ institute_redcoat_infantry_desc: "With a large amount of our forces coming from a naval heritage, it is only natural that we adopt the Marine regiments of the Redcoats like our overlord."

@@ -1,0 +1,46 @@
+country_decisions = {	
+	disarm_sepoys = {
+		color = { 200 0 0 }
+		potential = {
+			has_country_flag = started_indian_rebellion_flag
+			tag = EIC
+			NOT = { has_country_modifier = disarming_sepoys }
+			NOT = { has_country_flag = had_indian_rebellion }
+		}
+		major = yes
+		allow = {
+			mil_power = 50
+			NOT = { has_country_modifier = disarming_sepoys }
+		}
+		effect = {
+			add_mil_power = -50
+			add_country_modifier = {
+				name = "disarming_sepoys"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	rearm_sepoys = {
+		color = { 200 0 0 }
+		potential = {
+			has_country_flag = started_indian_rebellion_flag
+			tag = EIC
+			has_country_modifier = disarming_sepoys
+		}
+		major = yes
+		allow = {
+			mil_power = 50
+			has_country_modifier = disarming_sepoys
+		}
+		effect = {
+			add_mil_power = -50
+			remove_country_modifier = disarming_sepoys
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

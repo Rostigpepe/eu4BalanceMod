@@ -1,0 +1,65 @@
+#############################
+# Center of trade effect
+#############################
+
+upgrade_center_of_trade = {
+	if = {
+		limit = { 
+			province_has_center_of_trade_of_level = 3
+		}
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+	}
+	else_if = {
+		limit = { 
+			province_has_center_of_trade_of_level = 1
+		}
+		add_center_of_trade_level = 1
+	}
+	else = {
+		center_of_trade = 1
+	}
+}
+
+#############################
+# Resentment effects
+#############################
+
+add_small_resentment = {
+	custom_tooltip = eic_add_small_resentment_tt
+	hidden_effect = {	
+		change_variable = {
+			which = Resentment
+			value = 5
+		}
+	}
+}
+add_medium_resentment = {
+	custom_tooltip = eic_add_medium_resentment_tt
+	hidden_effect = {	
+		change_variable = {
+			which = Resentment
+			value = 10
+		}
+	}
+}
+add_large_resentment = {
+	custom_tooltip = eic_add_large_resentment_tt
+	hidden_effect = {	
+		change_variable = {
+			which = Resentment
+			value = 20
+		}
+	}
+}
+
+subtract_small_resentment = {
+	custom_tooltip = eic_subtract_small_resentment_tt
+	hidden_effect = {	
+		subtract_variable = {
+			which = Resentment
+			value = 5
+		}
+	}
+}

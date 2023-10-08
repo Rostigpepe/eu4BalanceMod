@@ -1,0 +1,388 @@
+﻿l_english:
+ 
+##############################
+# Modifiers
+##############################
+
+eic_morale: "Lack of Morale"
+eic_crush_revolt: "Concentrated Efforts"
+eic_angry_local_leader: "Angered Local Leader"
+eic_annoyed_indians: "Unrest in India"
+eic_less_interest: "Delaying Loan Repayments"
+eic_focus_merchants: "Trading Priority"
+eic_focus_admin: "A Country of Merchants"
+eic_lack_of_trust: "Distrusting Investors"
+eic_the_diwani: "The Diwani"
+bng_the_diwani: "Granted Diwani to EIC"
+eic_regulating_act: "The Regulating Act"
+eic_illegal_opium: "Uncontrolled Opium Imports"
+eic_the_straits: "Straits Settlements"
+eic_the_company_state: "The Company-State"
+eic_cash_crops_modifier: "Encouraging Cash Crops"
+eic_opium_wars_modifier: "The Opium Wars"
+eic_bombay_presidency_modifier: "Bombay Presidency"
+eic_conquest_of_punjab: "Conquest of the Punjab"
+eic_rush_of_new_sepoys: "Rush of New Sepoys"
+eic_retain_industry: "Indian Industry"
+eic_conquest_of_gujarat: "Conquest of Gujarat"
+eic_company_armies: "Corporate Armies"
+eic_conquest_of_tibet: "Conquest of Tibet"
+eic_bengal_presidency_modifier: "Bengal Presidency"
+eic_following_the_ganges: "Sweep the Gangeatic Plain"
+eic_master_of_india: "Master of India"
+eic_defeated_marathas: "Defeated the Marathas"
+eic_merchants_modifier: "Powerful Merchants"
+eic_conquest_of_coromandel: "Conquest of the Coromandel"
+eic_homeland_ties: "Homeland Ties"
+eic_monopoly_modifier: "East Indian Monopoly Secured"
+eic_madras_presidency_modifier: "Madras Presidency"
+eic_controlling_coastal_trade: "Controlling Coastal Trade"
+eic_integration_max: "Integrating Local Authorities"
+eic_jewel_of_the_company: "The Jewel in the Company's Crown"
+eic_the_company_state: "The Company-State"
+eic_control_india: "Established Control Over India"
+eic_port_of_calcutta: "Port of Calcutta"
+desc_eic_port_of_calcutta: "Under the control of the EIC the port of Calcutta has become one of the major centers of trade in India."
+eic_fort_william_1: "Fort William"
+eic_exploitation_of_bengal: "Exploitation of Bengal"
+eic_encroach_in_china: "Unequal Treaties in China"
+eic_indiamen: "The East Indiamen"
+eic_anti_piracy_crusade: "Crusade Against Piracy"
+eic_pardons_and_privateers: "Sponsoring Privateers"
+eic_mutineers_in_prov: "Rebel Anarchy"
+eic_mutineers_won: "Ineffective Military"
+eic_legacy_of_the_rebellion: "Legacy of the Rebellion"
+eic_showed_clemency: "Policy of Clemency"
+eic_army_of_retribution: "Army of Retribution"
+
+##############################
+# Opinions
+##############################
+
+opinion_helped_eic_with_debt: "Helped us with our debt"
+opinion_didnt_helped_eic_with_debt: "Refused to help with out debt"
+opinion_eic_bribe: "EIC Lobbying"
+
+##############################
+# Tooltips
+##############################
+
+ire_1_tt: "Panic spreads throughout Company lands..."
+ire_2_tt: "The rebellion takes on a more nationalist nature, sweeping up more and more disaffected sepoys and princes in its tide..."
+ire_100_tt: "The remaining rebels scatter into remote areas, taking their dissent and unruliness with them..."
+ire_hindustan_gets_cores_tt: "@HIN §YHindustan§! gains cores on all of §YIndia§!."
+eic_ind_reb_has_100_resentment_tt: "We have at least §O100§! §YResentment§! (currently: §Y[Root.Resentment.GetValue]§!)."
+eic_add_small_resentment_tt: "Increase §YResentment§! by a §Ysmall§! amount."
+eic_add_medium_resentment_tt: "Increase §YResentment§! by a §Omedium§! amount."
+eic_add_large_resentment_tt: "Increase §YResentment§! by a §Rlarge§! amount."
+eic_subtract_small_resentment_tt: "Decrease §YResentment§! by a §Gsmall§! amount."
+eic_grants_access_to_princely_states_tt: "Grants access to §YPrincely States§!, §YDoctrine of Lapse§!, and §YLobbying Power§!."
+
+##############################
+# Text
+##############################
+
+eic.1.t: "The Indian Rebellion"
+eic.1.d: "In response to our oppressive policies and general disatisfaction with the Company's government, many groups in India have rebelled and even some of our own Sepoy regiments have mutinied."
+eic.1.a: "Mutiny!"
+
+eic.2.t: "Province Revolts!"
+eic.2.d: "Unrest has boiled to a high point in one of our provinces, prompting the locals to rise up in rebellion, seeking to push out the Company from their lands."
+eic.2.a: "Slaughter them all!"
+
+eic.3.t: "A Last Stand"
+eic.3.d: "In one of our provinces, a group of rebels began to come together and siege the largest town there, hoping to break into the weapon stores we have left there and seize the tools for themselves. In a last ditch attempt at stopping this tide, one of the brave loyalist soldiers there set the gunpowder alight and blew the storehouse to pieces."
+eic.3.a: "Brave."
+
+eic.4.t: "Sepoys Revolt"
+eic.4.d: "The Company recruits the vast majority of its soldiers from the local Hindu and Muslim populace. As a result of recent unrest, many have mutinied and now fight against their former comrades and the Company as a whole."
+eic.4.a: "They will pay in blood and fire and tears!"
+
+eic.5.t: "Sepoys Refuse to Fight"
+eic.5.d: "Many of our Sepoys now refuse to fight their revolting comrades, even if they do not support the rebellion themselves."
+eic.5.a: "Force them out onto the field!"
+eic.5.b: "Make concessions."
+
+eic.6.t: "Help From Militia"
+eic.6.d: "Many local militia forces have seized the opportunity and now offer their services in helping put down the Indian Rebellion to us."
+eic.6.a: "Rely on the professional soldiers."
+eic.6.b: "Militia could be useful."
+
+eic.7.t: "End of the Indian Rebellion"
+eic.7.d: "At last, major resistance to Company rule in India has faded. Many of the mutineers and other revolters have been executed and their strongholds captured. Such a victory has made the other Indian princedoms fearful of our power, and they may now seek closer diplomacy and be willing to make greater compromises. It seems that at least for now, our rule in India is secure."
+eic.7.a: "But what was the price?"
+
+eic.8.t: "Local Leader Rises"
+eic.8.d: "A local man in one of our provinces has risen to fame recently, through his preachings of resistance against our forces and of the supposed evils of the [Root.GetAdjective] people. What should we do with this traitor?"
+eic.8.a: "Let him preach."
+eic.8.b: "Have him murdered!"
+
+eic.9.t: "Trouble with Weapon Cartridges"
+eic.9.d: "Many of the new brands of gun are terribly useful for us, serving as an effective supremacy over the weapons the Indian Princes are using. However, many of the Muslim and Hindu Sepoys have expressed deep anger at the decision to grease the cartridges of these weapons with various animal fats, claiming it goes against their faith."
+eic.9.a: "Put up or shut up."
+eic.9.b: "Make concessions."
+
+eic.10.t: "Mounting Company Debts"
+eic.10.d: "In recent years, our finances have struggled immensely and our administrators have continually failed at their job of keeping our books balanced. As a result, we have had to withdraw a hefty sum of money from foreign banks, most commonly the Bank of England. Our close relationship to Britain may yet afford us certain privileges in our loanage."
+eic.10.a: "Petition Parliament for aid."
+eic.10.b: "We can solve this ourselves."
+
+eic.11.t: "Debts of the East India Company"
+eic.11.d: "The company of English merchants trading in the East Indies has run into financial trouble in recent years. Citing their close ties with the mother country and the fate of the shares that many MPs have in the Company, they request that we offer them some concessions on their debt to the Bank of England."
+eic.11.a: "Allow them to delay the repayment of their loans."
+eic.11.b: "Send them direct monetary aid."
+eic.11.c: "We owe nothing to this rowdy group of merchants!"
+
+eic.12.t: "Parliament Offers Delayed Repayments"
+eic.12.d: "In response to our plea, Parliament have allowed an extension to the date of repayment of many of our loans to the Bank of England."
+eic.12.a: "Rule Britannia!"
+
+eic.13.t: "Parliament Offers Financial Aid"
+eic.13.d: "In response to our plea, Parliament have offered a lump sum of financial aid straight from the British treasury to ours. It appears their livelihoods are too tied to the Company to let it go under."
+eic.13.a: "God Save the [Root.Monarch.GetTitle]!"
+
+eic.14.t: "No Aid from Parliament"
+eic.14.d: "Our request for leniancy and perhaps forgiveness from Parliament has been denied in the bluntest of terms."
+eic.14.a: "Do they not remember how they made their fortunes?"
+
+eic.15.t: "Corrupt Practices in the Company Administration"
+eic.15.d: "Many have made accusations of deep-rooted corruption in the Company administration."
+eic.15.a: "If it produces results, let it be."
+eic.15.b: "Every effort must be spent to combat this menace."
+eic.15.c: "Name your price to not reveal this information to the press."
+
+eic.16.t: "The Black Hole of Calcutta"
+eic.16.d: "In 1756, the threat of war with France was growing all across the British Empire. As a result, the EIC was ordered to fortify its holdings in anticipation of a French attack in India. While the French conceded to Bengali demands to dismantle their fortifications, the British did not. The Nawab of Bengal, fearing the fortification of Calcutta would undermine his rule, layed siege to their prize city in an attempt to evict the English from the subcontinent. Fort William, the defenses of the city, fell quickly with surprisingly little resistance, as this attack was a surprise to Company officials too caught in their own successes. The fall of Calcutta resulted in a number of the former defenders of the city being caught and imprisoned. 64 prisoners were locked in a British cell designed for just six people overnight. Despite the best efforts of the desparate prisoners and some sympathetic guards, by sunrise 43 people had died of suffocation and heat exhaustion. The survivors were given little respite, with the Nawab as cold and unapologetic as ever. Nicknamed the 'Black Hole of Calcutta', the events that happened in this cell ignited the ire of the Company and British public, who demanded revenge for this war crime. Subsequently, the Company sent back the hero of Madras, Robert Clive, to Bengal, this time with the goal of waging total war on the Nawab. After a long campaign Clive won a decisive victory at the Battle of Plassey with the help of Indian defectors, and the Nawab was executed and replaced with a grateful co-conspirator, placing Bengal under the control of a Company puppet."
+eic.16.a: "Revenge will be won for these poor men!"
+
+eic.17.t: "Clive of India"
+eic.17.d: "Originally from a clerk for the British East India Company, Robert Clive was born relatively well-off in England in 1725. He distinguished himself in military leadership on behalf of the Company in India when he was still young, allowing him to forge a powerful legacy, instrumental in the history of India. When the War of the Austrian Succession resulted in renewed tensions with France, Clive fled the besieged Fort St. David and led the Company's Madras army into a brave stand in the Siege of Pondicherry. He also led a force that forcibly recaptured Tanjore as part of the same First Carnatic War theatre. Serving again in the Second Carnatic War, he led the successful defence at the Siege of Arcot in 1751. His retirement back to England allowed him to use his riches to purchase a rotten borough in Cornwall, making him an MP and a member of the House of Lords. Recounting his legacy, the Company once again called him into action in India after an attack by the Nawab of Bengal on Calcutta, during which Clive retook the city and led a campaign resulting in the victory at Plassey and the deposition of the Nawab entirely. Later, he negotiated the Treaty of Allahabad, which granted the Company effective direct control over Bengal to levy and collect taxes. A Mughal Firman confirmed later granted Clive himself Bengal, starting British sovereign rule in India. When Clive finally departed from India he had around three-hundred thousand pounds and was hence able to provide for himself and his family generously. A Parliamentary inquiry into his and the EIC's actions presented an opportunity for his enemies to launch their attacks on him, but his rousing defence and perceived good deeds resulted in the case against him being dropped. Despite this, the East India Company faced scrutiny for its handling of the ongoing Bengal Famine, and was subject to a limiting Act in 1773 as a result.\nHis legacy is unrivalled in the period, and clearly seen even to this day. Clive's victories prevented the loss of India to the French, the eviction of the English from the subcontinent, and also allowed for centralised Company rule over the richest province of India, Bengal. Many also accuse him of setting up the institutions and promoting the greed that led to the 1770-1 Bengal Famine, in which harsh Company taxation and crop demands resulted in the deaths of perhaps a million Bengalis."
+eic.17.a: "Make this man a Commander!"
+eic.17.b: "He will serve as Governor and Chief Military Advisor!"
+
+eic.18.t: "Fort William"
+eic.18.d: "The prize of the East India Company, the thriving city of Calcutta, is constantly under threat from those jealous of the riches held within. Be they the French, our other colonial rivals, or the native Indians themselves, it is clear that efforts must be made to protect the settlement."
+eic.18.a: "Set aside funds for a new fortification there."
+eic.18.b: "Arming the populace would be enough, we will not attract any unwanted ire."
+
+eic.19.t: "The Merchant State"
+eic.19.d: "The growth of the [Root.GetName] has resulted in a sharp shift in the governing bodies of our organisation away from trading and towards administration. How should we address this change?"
+eic.19.a: "We are chiefly merchants."
+eic.19.b: "We are a Country now."
+
+eic.20.t: "East India Company goes Bankrupt"
+eic.20.d: "The recent bankruptcy of the British East India Company has resulted in a severe lack of trust from investors, only adding to sharply declining company finances."
+eic.20.a: "I am so sorry about your investment. It lines my pockets nicely."
+
+eic.21.t: "The Diwani"
+eic.21.d: "At the request and negotiation of the rulers of Bengal Subah, the power of Diwani has been transferred from native authorities to that of the East India Company, allowing us to levy and collect the taxes of our choice on the richest province in all of India. With these new powers, we have effective sovereignty over Bengal, Bihar, and Orissa, and many local Indian rulers now depend on our Company for their survival."
+eic.21.a: "This will be a great boost to our income."
+
+eic.22.t: "The Bengal Famine of $YEAR$"
+eic.22.d: "A succession of poor harvests and bad weather, combined with harsh and meticulously enforced Company taxation, has resulted in perhaps the worst famine ever experienced in Bengal. People are dying on the streets, the hungry crawl up to our officials' residences begging, and corpses fill the rivers, forcing our people to eat only mutton instead of fish. Many blame the EIC for its part in this famine, including the majority of the public and Parliament back in Britain. The scale of devastation and death is so vast it is feared that the Bengali economy may never recover."
+eic.22.a: "My God."
+
+eic.23.t: "The Regulating Act of $YEAR$"
+eic.23.d: "In recent years concerns have been raised over the government of the East India Company, with some claiming it is straying too far from its roots and is a liability to British society. To address these issues, allowing with the crippling finances they are currently experiencing, a Regulating Act has been proposed in Parliament."
+eic.23.a: "Pass the act."
+eic.23.b: "The Company is doing fine on its own."
+
+eic.24.t: "The Regulating Act of $YEAR$"
+eic.24.d: "Concerned about Company indulgence and a supposed lack of administrative efficiency, our homeland has issued a Regulating Act restricting the activities of our Company and requiring constant oversight of our actions."
+eic.24.a: "Curse those stuck-up bastards that passed this blatant attack on our freedom!"
+
+eic.25.t: "Rise in Stock Value"
+eic.25.d: "Recently the value of EIC stocks, usually stable, has sharply risen, granting great profits to our investors."
+eic.25.a: "Invest this money back into the Company."
+eic.25.b: "This is testament to our trading power."
+
+eic.26.t: "The Capture of Delhi"
+eic.26.d: "With the capture of the prestigious nominal capital of India, the old Delhi Sultanate has nowhere to hide from our forces. It is now clear that we have assumed direct control over the Sultanate."
+eic.26.a: "India will soon be ours..."
+
+eic.27.t: "Sepoys Demand Extra Pay"
+eic.27.d: "Natives Indians make up the bulk of our armies, known as the sepoys. Recently, sparked by the relevation that their British counterparts are paid significantly more than them for in some cases less service, unrest has spread throughout army camps. A group of sepoys has come together and demands better pay, else they say they will refuse to serve."
+eic.27.a: "Heed their demands."
+eic.27.b: "This is ridiculous. Have them court martialled!"
+
+eic.28.t: "Maratha Raids"
+eic.28.d: "Recently the vicious mounted warriors of the Maratha Confederacy have launched a devastating raid into our territory."
+eic.28.a: "There's nothing we can do."
+eic.28.b: "Pursue these vile demons!"
+
+eic.29.t: "Shake-Up of Company Administration"
+eic.29.d: "Perhaps as a result of poor government by the [Root.Monarch.GetTitle], the administration of the Company has fallen into disrepair and is becoming increasingly disfunctional."
+eic.29.a: "Time for a shake up!"
+
+eic.30.t: "Growing Company Port"
+eic.30.d: "The massive amount of trade drawn in by the Company has created new demand and new places of import in areas never before developed to such an extent. As a result of this policy, the port of [good_port.GetName] has seen a rapid growth in importance as a major trade center."
+eic.30.a: "Merchants will come from far and wide..."
+
+eic.31.t: "Debate over Mercantilism"
+eic.31.d: "The monopoly the Company holds over the trade of the East Indies and its routes back to the British Isles have come under increasing fire, perceived as unfair to independent merchants and encouraging exploitation and permanent damage to the territories of the hegemonic corporation. While this is clearly rubbish, allowing a little more competition just may help us increase profits in the long run."
+eic.31.a: "We must maintain the Monopoly."
+eic.31.b: "Perhaps a slight loosening of policy is the answer..."
+eic.31.c: "Why are we wasting time on this, we should be preparing for war!"
+
+eic.32.t: "Claim of Judicial Bias in [judge_province.GetName]"
+eic.32.d: "Ever since the introduction of the Cornwallis Code, a judicial body has been separate from Company affairs, meant to represent Englishmen and Indians alike. However, a local Indian man convicted of a minor crime in [judge_province.GetName] claims that the system is biased against the natives yet still, and demands reform and compensation."
+eic.32.a: "Concede to his demands."
+eic.32.b: "Ignore him."
+eic.32.c: "See to it his sentence is lengthened!"
+
+eic.33.t: "A Company with an Empire"
+eic.33.d: "Of the many corporations in history, none have reached the heights we now enjoy. From a small gathering of ambitious merchants, we have grown to become a sprawling country in our own right, absorbing countless territories and constructing an army greater than that even of our mother country. Many believed it impossible that our Company would survive - in the face of European competition and the overwhelming strength of the Indian nations, it would have once have been a sensible bet to say so. But now, we have proven them all wrong. Two-hundred million people sit beneath the boot of the Company. We were once just merchants. We were once a petty state. But now we have acquired for ourselves an Empire."
+eic.33.a: "With God's grace, this Empire in the East shall last forever more!"
+
+eic.34.t: "A Factory in [factory_province.GetName]"
+eic.34.d: "Several Company employees have come to us seeking funding for a proper factory to be built in [factory_province.GetName]. While this area is under our jurisdiction, they believe its profitability has not been harnessed to its fullest potential."
+eic.34.a: "Set aside funds for a factory here."
+eic.34.b: "Invest in local infrastructure instead."
+
+eic.41.t: "The Company Raj"
+eic.41.d: "With the unification of all of India, the East India Company has certainly outgrown its origins. Perhaps it is time for us to choose a new name for our corporation-state."
+eic.41.a: "We are at our core a company of Honourable merchants."
+eic.41.b: "The corporation consumes all."
+eic.41.c: "This is a new Raj."
+
+anarchy.1.t: "The Great Anarchy"
+anarchy.1.d: "A time of great trouble and disturbance has come to the Mughal Empire. In the past, our empire was an unrivalled hegemon, but with the coming of new years the fates have not been kind to us. Bitter succession disputes, corruption in the highest ranks and lack of unity between Hindus and Muslims has resulted in a tense domestic political situation our enemies on all sides have taken advantage of. To the south, the conquered Hindu Marathi are preparing for a great rising to throw off our oppression, to the west, the reunited Persian and Afghani forces both seem keen to claim a slice of India, and to the east the ambitious band of pesky European merchants has become to make its own claims of authority. If we fail to recentralise control and prove the empire is not fragmenting, we may crumble just like all Indian Empires before us."
+anarchy.1.a: "This day was always coming..."
+
+anarchy.2.t: "Order Restored"
+anarchy.2.d: "The crumbling Mughal Empire has at least been brought peace. Foreign forces once again retreat from our recognised borders, and the political situation at home has at last calmed. This was but a passing storm, it seems, but a destructive one nonetheless."
+anarchy.2.a: "Allah have mercy upon my soul!"
+
+anarchy.3.t: "[Root.Monarch.GetTitle] Assassinated"
+anarchy.3.d: "A far-reaching plot against the life of [Root.Monarch.GetTitle] [Root.Monarch.GetName] has come to its conclusion with [Root.Monarch.GetHerHis] assassination."
+anarchy.3.a: "This is a sad day."
+
+anarchy.4.t: "Unrest in [unrest_province.GetName]"
+anarchy.4.d: "Tensions between Mughal authorities and local practicers has resulted in a movement towards rebellion in [unrest_province.GetName]."
+anarchy.4.a: "Kill them. Kill them all."
+
+anarchy.5.t: "Lack of Faith in the [Root.Monarch.GetTitle]"
+anarchy.5.d: "The constant rebellion and sorry state of the empire has raised questions over the legitimacy of [Root.Monarch.GetName]."
+anarchy.5.a: "Traitors!"
+
+anarchy.6.t: "European Incursions"
+anarchy.6.d: "The arrival of Europeans on our shores has brought forth both opportunities for great riches and a profound danger to our way of life. While they came first as mere merchants, they now fancy themselves king-makers and use of lands as a battleground for their homelands' petty disputes. The failure of our administration to keep these merchants in check by restricting them from land ownership has led to doubts being raised about the ability of the [Root.Monarch.GetTitle] to keep the people safe."
+anarchy.6.a: "Something has to be done!"
+
+anarchy.7.t: "Revolt of the Marathas"
+anarchy.7.d: "Tired of heavy taxation and political subservience under Mughal rule, the Marathi peoples have risen up and declared an independent state. The famed horsemen of the Deccan rally behind their banner, as it has become clear that this betrayal means war."
+anarchy.7.a: "The Marathas will be slain where they stand!"
+anarchy.7.b: "I support their cause."
+
+anarchy.8.t: "The Nawab of Bengal"
+anarchy.8.d: "In this time of crisis, Mughal authority appears to be slipping back up the sub-continent to Delhi. Bengal, the riches subah of the Empire, has partially fallen to foreign incursion and stands at risk of separating from us forever if changes are not made. The appoitment of a new Nawab of Bengal will surely reduce tensions and further solidify Mughal control of the province."
+anarchy.8.a: "Appoint a Nawab."
+anarchy.8.b: "Bengal is ours!"
+
+eic.42.t: "The Honorable East India Company"
+eic.42.d: "With [Root.GetName]'s influence in the Indian subcontinent growing, a group of entrepreneuring merchants have approached [Root.Monarch.GetTitle] [Root.Monarch.GetName], asking for a Royal Sanction of monopoly over [Root.GetAdjective] activities in the East Indies."
+eic.42.a: "Grant the Sanction."
+eic.42.b: "Play as the EIC!"
+eic.42.c: "Go back."
+
+eic.43.t: "A Ghastly Spectacle"
+eic.43.d: "The crowd gathered with a repulsive air of joy, surrounding the huge pile of wood positioned in the town square. Our local governor looks on in horror as a young women is led up to the pyre, climbs about half way up, and has the corpse of her dead husband laid on her lap. Seconds later, the tower is ablaze, with flames licking the poor woman's feet. The governor begins to shuffle as his morals assault his mind. Surely this is wrong, he thinks. But yet it is a traditional Hindu practice, and thus should be respected under our policy."
+eic.43.a: "Intervene to stop this disgusting act of murder!"
+eic.43.b: "If the locals like it, let it be."
+
+eic.44.t: "Strangers in a Strange Land"
+eic.44.d: "Ever since our ancestors first landed on these hallowed shores, they knew there was money to be made. Through the ingeniuty of our governors and the confidence of our investors, we have created from what was but a collection of factories a thriving settlement. While our plans have been thwarted in the East Indies, the virgin soils of India promise us something even greater. The rich goods of this land are highly prized in European markets - and hence any monopoly our Company is able to achieve over them would be unimaginably profitable. By channelling these funds into bribes and the newly invented art of corporate lobbying, we can ensure the safety of our Company both at home and abroad. The imperial dream is alive - but for now we are but strangers in a strange land."
+eic.44.a: "Then we shall stride forth to meet our destiny!"
+
+eic.45.t: "Fort William"
+eic.45.d: "Calcutta is a shining diamond in the necklace of Company possessions in India. As our the site of Company administration and the de facto capital of our country, it is vitally important that we protect it sufficiently. Threats surround us on all sides - and despite the beliefs of the Indian lords we leased this land from, a fortification is necessary for our survival. Let start a new construction - Fort William, after the noble William III, king of the English when Aurangzeb allowed our settlement here."
+eic.45.a: "Behind these walls we will be safe."
+
+eic.46.t: "The Problem of Piracy"
+eic.46.d: "Pirates are a great plague on the freedom of the seas. While they claim to life lives of honour and liberty, many in the Company consider them little more than petty thieves. Other nations have succeeded in crushing local pirate activity by taking strong military measures - many advise that we do the same here. Many in our navy are feverent haters of pirates, and are practically begging that the Board grants them permission to destroy them indiscriminately. On the other hand, many consider that these pirates may be useful to us, if we can employ them to target our enemies instead. Which path shall we take?"
+eic.46.a: "Pirates are scum. Hunt down every last one."
+eic.46.b: "Perhaps we can come to an agreement with these misguided men and women."
+
+eic.47.t: "Indian Treasure Arrives"
+eic.47.d: "The East India Company has ensured a stead flow of valuable goods into Europe for some time now, and in its glut it appears to be getting ever more daring. Recent conquests and raids have gone well for the Company's armies however, and as a result a great many men have returned home to merry England with plentiful glistening treasure and remarkable artifacts. So much of this booty is pouring into our ports from the East that many have taken up the Indian word for it: 'loot'."
+eic.47.a: "God save the East Indian Company!"
+
+eic.48.t: "Greasing the Wheels"
+eic.48.d: "We live under the constant threat of parliamentary intervention. At any moment, a bill could be passed to strip us of our monopolies, our freedom, and maybe even our very existence. In order to ensure the Company is protected and its interests furthered in London, money from India is sent over to willing Ministers, who them uphold their own ends of the deal."
+eic.48.a: "A little bribe will do us well."
+eic.48.b: "This is dishonourable!"
+
+eic.49.t: "The First Anglo-Burmese War"
+eic.49.d: "Provoked initially over a minor border conflict along the frontiers of the Bengal Presidency, the First Anglo-Burmese War was the most costly war the Company fought in its conquest of the Indian sub-continent. While it came out successful, acquiring bountiful territory and sizable reparations, it was effectively bankrupt. In response, the British government helped the Company recover from the losses, but at the cost of its monopoly on China and other long-held privileges."
+eic.49.a: "A suitable price for saving the Company."
+eic.49.b: "The war loot should be enough to sustain us."
+
+ire.1.t: "Mutiny in Meerut"
+ire.1.d: "Fears of Company overreach finally reached a boiling point in Meerut, a town garrisoned by both sepoys and European troops. After several sepoys were arrested and court martialed for refusing to fire the new Enfield rifles as required, rebellion broke out, the prisoners were freed, and many of the sepoys declared open revolt. Chaos insued, fast spreading to nearby garrisons and regiments. The death grip of anarchy fell over much of the Gangeatic Plain.\n\nAs they march, the mutineers seem to have taken a new purpose - they have adopted a new slogan, 'Dilli Chalo', taking it upon themselves to march to Delhi and elevate the aged [Root.GetIndianEmpireAdj] Emperor residing there. Such ambitions are a grave threat to Company power - these upstart traitors must be shown their place!"
+ire.1.a: "Mutiny!"
+
+ire.2.t: "The Fall of Delhi"
+ire.2.d: "The mutineers made their way to Delhi, a city now a shadow of its former glory, but also one severely under garrisoned. With practically no resistance, the sepoys seized the city and the Red Fort, and petitioned the [Root.GetIndianEmpireAdj] Emperor residing there to lead them. After much deliberation, he agreed and accepted new titles as 'Emperor of Hindustan'.\n\nThis mutiny is getting out of control. It now poses as a nationalistic force, a banner for all discontent sepoys and nabobs alike to fall behind in opposition to Company rule. We must crush these rebels before it is too late."
+ire.2.a: "God help us."
+
+ire.3.t: "Chieftain Declares for the Rebels"
+ire.3.d: "The leading chieftain of [chief_prov.GetName] has today declared his support for the rebellious sepoys and princes. His revolt opens a new stage in our conflict, further straining our supply lines and weakening our grasp on the other chieftains."
+ire.3.a: "Death to traitors!"
+
+eic.50.t: "Nabob Seeks Seat in Parliament"
+eic.50.d: "A wealthy man returning from service in the East India Company has arrived back in England today, and announced his intention of purchasing a seat in Parliament with his new found riches. Corruption among the peers and rotten boroughs are already such a problem, but when considering the amount of wealth he is willing to give away for the position the government is forced to seriously consider his proposal."
+eic.50.a: "Welcome to the House, old chap."
+eic.50.b: "One cannot simply buy an election!"
+
+ire.4.t: "A Last Stand"
+ire.4.d: "In the province of [gunpowder_prov.GetName], a group of rebels began to come together and siege the largest town there, hoping to break into the weapon stores we have left there and seize them for themselves. In a last ditch attempt at stopping this tide, one of the brave loyalist soldiers there set the gunpowder alight and blew the whole storehouse to pieces."
+ire.4.a: "Brave."
+
+ire.100.t: "End of the Indian Rebellion"
+ire.100.d: "At last, major resistance to Company rule in India has been crushed. Many of the mutineers and other revolters have been executed and their strongholds captured. Such a victory has made the other Indian princedoms fearful of our power, and they may now seek closer diplomacy and be willing to make greater compromises. It seems that for now at least, our rule in India is secure."
+ire.100.a: "But what was the price?"
+
+ire.5.t: "The Prince of [prince_nat.GetName] Supports Us"
+ire.5.d: "We live in times of trouble and danger. In such times, every ally we can secure is a beacon of light in the darkness. One of our Princes, the prince of [prince_nat.GetName], has today declared their support for the Company in the ongoing crisis."
+ire.5.a: "We are grateful for their support."
+
+ire.6.t: "The Rebellious Prince"
+ire.6.d: "The prince of [prince_nat.GetName] has today declared their support for the rebels fighting against our honourable Company. While they hesitate at open rebellion, the moral support they give to our enemies is dangerous enough."
+ire.6.a: "They will have to be taught a lesson."
+
+ire.7.t: "The Emperor of Hindustan"
+ire.7.d: "The [Root.GetIndianEmpireAdj] Emperor, recently elevated by the mutinous sepoys and now the nominal head of their movement, has today in a public address formally adopted claims to the Empire of Hindustan. He claims all of India is rightfully his, and vows to drive out Company control from the whole region. While this is for now little more than a pipe dream, as more and more sepoys and princes join the rebellion this proclaimation is becoming an increasingly worring threat..."
+ire.7.a: "This is not good."
+
+ire.8.t: "The Massacre of [massacre_prov.GetName]"
+ire.8.d: "The British folk of [massacre_prov.GetName] were hauled up in the local fort, taking shelter from the anarchy that has gripped India in recent times. In a matter of hours, their defences fell and the rebellious sepoys made their way into the building, killing anyone who stood in their way. While they initially spared the women and children, reports are filtering in that they even violated this most basic rule of warfare - for as precious and protected those souls ought to be, they now lie cut apart at the bottom of a well. The press in England has picked up on this story, as have the millions of people eagerly following the progress of the rebellion around the world. They demand revenge, nothing less. No punishment seems enough for the angry masses. When the dust has settled, we will be expected to dish out harsh consequences."
+ire.8.a: "We will avenge these poor souls!"
+
+eic.51.t: "The Vellore Mutiny"
+eic.51.d: "Tensions had been rising within the ranks of the Madras Army for some time, its sepoys becoming increasingly disaffected with every new policy the Company introduced. One of the major factors that drove them towards mutiny was the introduction of a new uniform, which closely resembled that of the Christians and Europeans. Both Hindus and Muslims are offended by this motion, and when unrest grew in the home of the exiled family of Tipu Sultan, the spark of rebellion was lit. While initially a revolt against the tyranny of the Company's military policy, it morphed to become a nationalist revolution for Mysorean independence. Despite the best efforts of the mutineers however, the sons of Tipu Sultan proved themselves uninterested in proper leadership and as a result the mutiny was quickly crushed by the Madras Cavalry."
+eic.51.a: "Crush these rebels!"
+
+eic.52.t: "The Santal Rebellion"
+eic.52.d: "The Santal people are native to the remote forests of Jharkhand, and have for a long time lived in isolation away from both Company and Indian civilisation. When we took over this territory however, we came to an agreement with their tribes and allowed them autonomous rule over it, so long as they accept the systems of taxation we impose there. Exploitation and debt trapping became common practice, leading many people into indentured servitude, resulting in the Santal growing increasingly disaffected.\n\nDeciding enough was enough, the brothers Sidhu and Kanhu Murmu led a great revolt against Company rule, throwing off the legal system imposed on them and mobilising 60,000 people to take up arms. Taken by surprise, the Company was slow to respond at first, but soon the Presidency armies were on their way to crush the rebellion."
+eic.52.a: "Maybe this time we won't be so generous..."
+
+eic.53.t: "Favourable Company Policy"
+eic.53.d: "Tolerance is the key to ruling a diverse empire. Allowing certain traditions and laws to flourish even though we may consider them abhorrent is the only way to keep on the good side of the local Hindu and Muslim populations, and thus it is the path we must stick to. Lately several minor Company policies have proved popular within religious communities, appeasing many potentially dangerous factions."
+eic.53.a: "Excellent!"
+
+ire.9.t: "Justice?"
+ire.9.d: "With the recapture of Delhi, Company forces seem to finally be gaining the upper hand. Every day, new towns are reconquered and countless rebellious sepoys are detained. The question of what to do with these men now presses the Company directors. The British public back home are outraged at exaggerated reports of murders and rapes commited by the sepoys, and demand the brutal sword of Justice be brought down upon them. Some rogue generals have already put into action a no-prisoners policy, whereby they take no captives and execute suspected rebels on the spot. On the other hand, some politicians urge forgiveness, fearing that retributive justice would only spark further unrest in the remainder of India that has as of yet stayed loyal to the Company. What should we do with these sordid criminals?"
+ire.9.a: "We must show leniency."
+ire.9.b: "Adopt a no-prisoners policy."
+
+ire.10.t: "Locals Joining the Revolt"
+ire.10.d: "Several groups of men in [local_prov.GetName] have taken up arms and joined the rebellious sepoys in their fight against the Company, depriving their province of adequate food and resources. As a result, Company control in the province is slipping even further and many more people are plunging into famine."
+ire.10.a: "Damn them!"
+
+ire.11.t: "The [mutiny_prov.GetName] Mutiny"
+ire.11.d: "Disaffected by their local commanders, the sepoys stationed in [mutiny_prov.GetName] have revolted, declaring their allegiance to the mass rising around Delhi and the [Root.GetIndianEmpireAdj] Emperor."
+ire.11.a: "Curses!"
+
+eic.54.t: "You can always get what you want..."
+eic.54.d: "...if you have enough money.\nAs our Company grows and our profits soar, we find ourselves with more and more spare money to lobby with. Every one has a price - whatever we want, there is a member of Parliament willing to do it for us."
+eic.54.a: "Brilliant!"

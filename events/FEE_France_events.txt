@@ -89,24 +89,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				num_of_subjects = 1
+				num_of_subjects = 5
 			}
 			add_country_modifier = {
-				name = fee_france_blood_tax
-				duration = 18250
-			}
-		}
-		else_if = {
-			limit = { num_of_subjects = 2 }
-			add_country_modifier = {
-				name = fee_france_blood_tax2
-				duration = 18250
-			}
-		}
-		else_if = {
-			limit = { num_of_subjects = 3 }
-			add_country_modifier = {
-				name = fee_france_blood_tax3
+				name = fee_france_blood_tax5
 				duration = 18250
 			}
 		}
@@ -118,9 +104,23 @@ country_event = {
 			}
 		}
 		else_if = {
-			limit = { num_of_subjects = 5 }
+			limit = { num_of_subjects = 3 }
 			add_country_modifier = {
-				name = fee_france_blood_tax5
+				name = fee_france_blood_tax3
+				duration = 18250
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 2 }
+			add_country_modifier = {
+				name = fee_france_blood_tax2
+				duration = 18250
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 1 }
+			add_country_modifier = {
+				name = fee_france_blood_tax
 				duration = 18250
 			}
 		}
@@ -299,6 +299,10 @@ country_event = {
 		add_country_modifier = {
 			name = fee_france_cultural_unification_effort
 			duration = 18250
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -5
 		}
 		every_subject_country = {
 			add_liberty_desire = 5

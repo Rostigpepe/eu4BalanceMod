@@ -126,6 +126,7 @@ fee_boh_noble_concesions = {
 
 fee_boh_hussite_ingenuity = {
 	mil_tech_cost_modifier = -0.1
+	innovativeness_gain = 0.25
 }
 boh_coinage_pioneer = {
 	global_tax_modifier = 0.1

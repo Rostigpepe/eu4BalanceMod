@@ -1,0 +1,268 @@
+﻿l_english:
+
+#################
+# Countries
+#################
+
+EIC:0 "East India Company"
+EIC_ADJ:0 "Company"
+COMPANY_RAJ: "Company Raj"
+COMPANY_RAJ_ADJ: "Company"
+THE_COMPANY: "The Company"
+THE_COMPANY_ADJ: "Company"
+
+#################
+# Mercenary Companies
+#################
+
+merc_sepoy_regiment: "Sepoy Regiment"	# For Europeans
+merc_eic_sepoy_regiment: "EIC-Trained Sepoy Regiment"	# For EIC mission
+merc_sepoy_for_hire: "Sepoys for Hire"	# For Indians
+
+#################
+# Governments
+#################
+
+new_eic_reform: "East India Company"
+new_eic_reform_desc: ""
+TRADING_COMPANY: "Trading Company"
+IMPERIAL_TRADING_COMPANY: "Megacorporation"
+CONGOLMERATE: "Conglomerate Company"
+GOVERNOR: "Governor"
+GOVERNOR_GENERAL: "Governor-General"
+
+cornwallis_code_reform: "Cornwallis Code"
+cornwallis_code_reform_desc: "Under Governor-General Cornwallis a radical reformation of Company affairs was undertaken, splitting the administration of India into three sections - revenue, commercial and judicial. The Permanent Settlement provision within it ensured the stability of the native land-owning class to prevent an English elite from taking over and making moves towards independence as it had done in the Thirteen Colonies. As a result of these reforms, the Company's Indian territories were better run, and the grip of the English on non-commercial affairs was reduced."
+
+power_of_the_board_reform: "Power of the Board"
+power_of_the_board_reform_desc: "The Board of the Company is based in London, which though close the activities of the British government is far from the ground in India. Despite this, we must trust the Board to make the right decisions in appointing our governors and managing our finances."
+indian_board_reform: "Localised Company Authorities"
+indian_board_reform_desc: "The Board in London is too far away to effectively respond to problems as they arise on the ground. Instead, we must set up a separate council to act in emergency situations here in India, so that our needs are better met."
+
+sepoy_troops_reform: "Sepoy Regiments"
+sepoy_troops_reform_desc: "There are simply not enough Europeans in India for us to muster a large enough army of them. Instead, we must trust our safety to local troops, many recruited from the Princely States of our empire."
+
+#################
+# Ideas
+#################
+
+EIC_ideas: "EIC Ideas"
+EIC_ideas_start: "EIC Traditions"
+EIC_ideas_bonus: "EIC Ambition"
+
+eic_monopoly_on_the_indies: "Monopoly on the East Indies"
+eic_monopoly_on_the_indies_desc: "In 1599 Queen Elizabeth I granted a Royal Charter to a group of adventurous merchants, seeking to tap into the rich East Indian trade network and achieve a monopoly over it for England. Thus, the Governor and Company of Merchants of London trading into the East Indies, later the English East India Company, was born."
+eic_company_administration: "Company Administration\n\nReasons to Accept Doctrine of Lapse: §G+5.00§!"
+eic_company_administration_desc: "Throughout its existence, the Company crafted and ran a smooth administration from its London headquarters, far separated from the troubles of India. The transition between Company and State was first started with the concession of Diwani rights by the Nawab of Bengal, effectively granting the EIC rights to control the province. Building from this, many other treaties were made, with the Indian princes slowly giving up their privileges and falling under Company protection."
+eic_sepoys: "Sepoy Regiments"
+eic_sepoys_desc: "There were simply not enough Brits in India to make up an effective and large army, leading to the Company recruiting hundreds of thousands of the Hindu and Muslim Indians, known as sepoys, to do its fighting for it. These sepoys were trained in Western arms and tactics, and proved in formidable force in the subjugation of the independent princes of India."
+eic_factories: "Factory System"
+eic_factories_desc: "The first Factory of the Company was set up in Bantam on Java in 1601, continuing a practice adopted by the Portuguese, Spanish and Dutch colonial empires before. After failing to properly grip the spice trade in Indonesia, the Company opened new factories in mainland India, which proved to be much more successful."
+eic_opium: "Opium Trade"
+eic_opium_desc: "Opium grown on the fields of Bengal has proven to be a lucrative business for us, as we can sell it across Asia and particularly in China, were it is under high demand despite the best efforts of the Celestial Emperor. Illegally shipping opium into China may be dangerous, but we must provide to our loyal customers as well."
+eic_independent_wars: "Autonomous Warfare"
+eic_independent_wars_desc: "The Company fought many wars on its own without the assistance of the British government, including against the Dutch East India Company and against the many Indian principalities. In these campaigns we have learnt valuable lessons about warfare and the conduction of armies, and now operate practically as a state of our own."
+eic_conquest_of_india: "The Conquest of India"
+eic_conquest_of_india_desc: "Over the nearly 250 years of the Company's existence, it managed to assert supremacy over the entire Indian subcontinent and beyond, becoming a great marvel in the history of trade and nations. The administration created to deal with these conquests was inherited by the new Raj when the Company was dissolved, and proving effective even centuries after it was put together."
+
+CNT_ideas: "Carnatic Ideas"
+CNT_ideas_start: "Carnatic Traditions"
+CNT_ideas_bonus: "Carnatic Ambition"
+
+cnt_maratha_forts: "Maratha Forts"
+cnt_maratha_forts_desc: "The lands of the Carnatic contain many former Maratha fortifications, which we can use for our own defence should a foreign power invade our core territories."
+cnt_coromandel_trade: "Harness the Coromandel Trades"
+cnt_coromandel_trade_desc: "The Coromandel is a rich coastal region of India famous for its lucrative trades from all across the known world. Let us use our position on this coast to levy tariffs on goods and secure part of this wealth for ourselves."
+cnt_resist_succession: "Securing the Succession"
+cnt_resist_succession_desc: "Disputes over succession are always troubling, but they are especially so when neighbouring powers are eying your land and will use even the slightest unrest in your country to annex it. We must remain vigilent and ensure we never lack an heir."
+cnt_defend_against_europe: "Resist European Hegemony"
+cnt_defend_against_europe_desc: "Both the British and the French would like a piece, if not all, of our Sultanate. Invasion is inevitable, so we must prepare our troops to fight for their families and homeland."
+cnt_princely_state: "A Princely State"
+cnt_princely_state_desc: "Eventually the Sultanate of the Carnatic would end up as a Princely State under the British East India Company. We can use this position to secure extra privileges from our worried masters, constantly threatened by a pan-Indian revolt."
+cnt_merchant_trades: "The Merchant Trades"
+cnt_merchant_trades_desc: "Many merchants from across the world visit our shores to make commerce and profit. An investment in a proper merchant navy would serve to protect these visitors from the pirates who plague the Bay of Bengal."
+cnt_diverse_rule: "Diverse Rule"
+cnt_diverse_rule_desc: "Southern India, like elsewhere on the subcontinent, is very diverse and difficult for a culturally isolationist state to rule. We must be open to all of our subjects if we wish to stay masters of this region."
+
+################
+# Diplomatic actions
+################
+
+doctrine_of_lapse_action: "Apply Doctrine of Lapse"
+doctrine_of_lapse_action_title: "Apply Doctrine of Lapse"
+doctrine_of_lapse_action_desc: "Using the pretext of bad rule or lack of a clear succession, the Company would seize the lands of their subjects and hence annex princely states this way.\n\nDoing so will cost us §R-1§! stability and increase §YResentment§! by a §Omedium§! amount."
+doctrine_of_lapse_action_tooltip: "Call the Doctrine of Lapse to annex a Princely State subject."
+doctrine_of_lapse_action_dialog: "§Y[Root.GetName]§! has applied the Doctrine of Lapse to attempt to annex us.\n\nDo we accept this deal?"
+doctrine_of_lapse_alert_tooltip: "Application of Doctrine of Lapse"
+DOL_OPINION: "Their opinion of us"
+DOL_DIPLO_REP: "Our diplomatic reputation"
+DOL_BASE: "Would be annexed"
+DOL_THEIR_DEV: "Size of Princely State"
+DOL_THEIR_ARMY: "Their mobilisation"
+DOL_IN_INDIAN_REBELLION: "Indian Rebellion"
+DOL_THEIR_ADM: "Their Administrative skill"
+DOL_THEIR_DIP: "Their Diplomatic skill"
+DOL_THEIR_MIL: "Their Military skill"
+DOL_NO_HEIR: "Unclear succession"
+DOL_REPUBLICAN_TRADITION: "Republican Tradition"
+DOL_GOOD_ADM: "Company Administration"
+DOL_THEIR_STABILITY: "Their stability"
+DOL_EIC_MISSION_BONUS: "Completed Mission - Tame the Princes"
+
+establish_factory_action: "Establish Factory"
+establish_factory_action_title: "Establish Factory"
+establish_factory_action_desc: "Send out envoys to attempt to garner permission to establish a factory in their country. If they accept, their capital gains production and trade bonuses and their overall trade efficiency increases, and we get §G+25§! trade power in their home node."
+establish_factory_action_tooltip: "Send out envoys to attempt to garner permission to establish a factory in their country."
+establish_factory_action_dialog: "§Y[Root.GetName]§! wishes to establish a Factory in our capital city.\nIf we accept, §Y[From.Capital.GetName] gets §G+25.0%§! local goods produced modifier, §G+25.0%§! local production efficiency, §G+2§! provincial trade power and §R+2.00§! local unrest, and §Y[Root.GetName]§! receives §G+5.0%§! trade efficiency until the Factory is closed. In return, they get §Y+25§! trade power in our home trade node.\n\nDo we accept this deal?"
+establish_factory_alert_tooltip: "Request to Establish Factory"
+eic_foreign_factory: "EIC Factory"
+desc_eic_foreign_factory: "The Honorable East India Company runs a factory here, the for the betterment of both local industry and trade, as well as their own interests in the region."
+HAS_FOREIGN_FACTORY: "Operating EIC Factories"
+FAC_OPINION: "Their opinion of us"
+FAC_DIPLO_REP: "Diplomatic reputation"
+FAC_TRADE_PERCENTAGE: "Trading power"
+FAC_DIFFERENT_RELIGION: "Different religion"
+FAC_DIFFERENT_RELIGION_GROUP: "Different religion group"
+FAC_NUM_OF_MERCHANTS: "Our number of merchants"
+FAC_ALREADY_FACTORY_IN_TRADE_NODE: "We already have a factory in their home trade node"
+FAC_OUR_TRADING_BONUSES: "Number of monopolies"
+FAC_WOULD_LOSE_OUT: "Their reliance on trade"
+
+make_princely_state_action: "Designate Princely State"
+make_princely_state_action_title: "Designate Princely State"
+make_princely_state_action_desc: "Offer [From.GetName] protection as a Princely State."
+make_princely_state_action_tooltip: "Offer [From.GetName] protection as a Princely State."
+make_princely_state_action_dialog: "§Y[Root.GetName]§! wishes for us to submit to them and become their §YPrincely State§!.\nIf we accept, we will become their subject.\n\nDo we accept this deal?"
+make_princely_state_alert_tooltip: "Offer to become a Princely State"
+MPS_OPINION: "Their opinion of us"
+MPS_DIPLO_REP: "Diplomatic reputation"
+MPS_THEIR_DEV: "Their development"
+MPS_THREATENED_ATTITUDE: "Threatened attitude"
+MPS_NOT_BORDER_EIC: "Does not border us"
+MPS_BEATEN_IN_WAR: "Recently beaten in war"
+MPS_INSTALLED_RULER: "We installed their ruler"
+
+##################
+# Subject types
+##################
+
+autonomous_trade_company: "Autonomous Trade Company"
+autonomous_trade_company_long_desc: "An autonomous trade company is a subject that operates militarily and economically separate from the overlord in the East Indies, but will support its overlord with trade power and military aid."
+autonomous_trade_company_is_our: "$NAME|Y$ is our Autonomous Trade Company"
+autonomous_trade_company_title: "Autonomous Trade Company"
+autonomous_trade_company_title_plural: "Autonomous Trade Companies"
+is_autonomous_trade_company: "Is Autonomous Trade Company"
+
+autonomous_trade_company_overlord: "Autonomous Trade Company"
+autonomous_trade_company_subject: "Autonomous Trade Company"
+aut_trade_company_opinion: "Autonomous Trade Company"
+
+princely_state: "Princely State"
+princely_state_long_desc: "A princely state is an autonomous subject of a parent, allowed to rule its native lands with slight interference from the mother authorities."
+princely_state_is_our: "$NAME|Y$ is our Princely State"
+princely_state_title: "Princely State"
+princely_state_title_plural: "Princely States"
+is_princely_state: "Is Princely State"
+
+princely_state_overlord: "Controlled Princely States"
+princely_state_subject: "Princely State"
+princely_state_opinion: "Princely State"
+
+###################
+# Old Missions (archive)
+###################
+
+#eic_diwani_title: "Claim the Diwani"
+#eic_diwani_desc: "The right to claim taxes and run justice, the diwani, is effective sovereignty of Bengal in our hands. We must, through diplomacy or force, effectively guarantee our rights from whoever control them."
+eic_prosperity_in_bengal_title: "Prosperity in Bengal"
+eic_prosperity_in_bengal_desc: "Worrying signs of famine have been sighted in Bengal. Some accuse us of bad management and insist the blood is on our hands. These claims are obviously ridiculous, but it would not hurt to at least attempt to improve the prosperity of Bengal."
+eic_hindusthan_title: "Conquer Hindusthan"
+eic_hindusthan_desc: "Following the Ganges north, we find some of most fertile lands on Earth, home to millions more people who would simply love to pay our taxes and trade at ridiculous prices with us. A simple expedition north to capture these lands would do us the world of good."
+eic_delhi_title: "Capture Delhi"
+eic_delhi_desc: "The crown of India sits in Delhi, where the authority has been based since the rise of the Delhi Empire back in the 13th century. Whosoever controls this city controls all of India."
+eic_conquer_bengal_title: "Secure Bengal"
+eic_conquer_bengal_desc: "Our home base in Bengal is constantly under threat from the local Nawabs. At any moment, they may turn against us and brutally cut off our trade networks. We simply cannot share this land with any natives."
+eic_coromandel_title: "Coromandel Coasts"
+eic_coromandel_desc: "For centuries the Coromandel has been the center of Hindu trade networks in India. The smell of money tempts us too much - from our base in Madras we must strike out and seize the throne of the Carnatic."
+eic_west_india_title: "Conquer West India"
+eic_west_india_desc: "The ports of Gujarat are the artery on which the Muslim population of India goes on hajj, and hence there is a lot of money to be made by monopolising these coasts. The Deccan, the great plain at the center of the subcontinent, is also ripe with potential, so long as we can remove the pesky inhabitants who would rather see us thrown out altogether."
+eic_master_of_india_title: "Master of India"
+eic_master_of_india_desc: "Some would say that India is the jewel in the crown of the British Empire, but truly it is the jewel in the crown of the Company. At last, the Company has secured a land and trade monopoly on India. Truly, this is a great achievement."
+eic_establish_company_title: "Establish the Company"
+eic_establish_company_desc: "We are chiefly a company after all, so investment in marketting and trade infrastructure will only improve our profits in the long run. Effective privileges must be seized from the locals, and an English merchant class will begin its rule of India!"
+eic_calcutta_title: "Growth of Calcutta"
+eic_calcutta_desc: "As our foremost port, it is important that Calcutta is suitably developed and fortified to better serve our aims of both commerce and warfare."
+eic_opium_trade_title: "Opium Trade"
+eic_opium_trade_desc: "Grown in the fields of Bengal, opium is a product highly sought after in foreign markets but also highly controlled, due to its addictive nature and prevelance. Nevertheless, it is an excellent source of profit and thus we shall endeavour to improve its production."
+eic_control_indian_trade_title: "Trade on the Ganges"
+eic_control_indian_trade_desc: "Truly the river Ganges is the stem from which all of northern India grows. If we were able to control all the trade flowing down its pristine rivers, we would be rich indeed."
+eic_hong_kong_title: "Seize Hong Kong"
+eic_hong_kong_desc: "The Chinese Emperor thinks himself all-powerful, such that he can with but a wave of a hand crush our opium trade in his country. His arrogance must be punished. We must make sure China's borders are never closed to our honest merchants, for there are profits to be made and people who still aren't addicted!"
+eic_megacorp_title: "Empower the Company"
+eic_megacorp_desc: "While we may be enjoying great profits, there is always more room for improvement. A particular focus on maintaining our monopoly on the East Indian trade as well as ensuring our imperial prestige is unmatched would solidify our position as the world's greatest corporation."
+eic_burma_title: "Charter Burma"
+eic_burma_desc: "The lands known to us as Burma to the east of India are potentially very valuable, showing signs of a promising agricultural industry prospering there should the Company take full control of local economies."
+eic_straits_settlements_title: "The Straits Settlements"
+eic_straits_settlements_desc: "The riches of the Malaya are known far and wide. With a power base established in greater India, perhaps it is time to reach out and attempt to drain a profit from these virgin shores?"
+eic_industrialise_title: "Manage Dividends"
+eic_industrialise_desc: "At our heart, we are a company. This means economics and finances are at the heart of everything we do, and as such policy and foreign relations in that manner need to be more carefully conducted than other states usually would."
+eic_invest_in_india_title: "Invest in India"
+eic_invest_in_india_desc: "Investment in our provinces is the key to future profits. We may reap from these lands now, but our sons and their sons will not enjoy such prosperity unless we lay down the foundations here on which such prosperity could grow."
+eic_indian_rebellion_title: "Indian Rebellion"
+eic_indian_rebellion_desc: "Ever since we arrived in India, the locals have been trying to through us out. While it is only a small minority of the Indian peoples and Princes that seek to evict us, it is a significant enough amount that we should show some concern either by decreasing nationalistic sentiment amongst the populace or decisively crushing and hence discouraging resistance."
+
+
+
+#######################
+# Peace deals and CBs
+#######################
+
+overthrow_po: "Overthrow Monarch"
+ overthrow_po_desc: "The ruler of @[From.GetTag] §Y[From.GetName]§! is overthrown."
+ CB_ALLOWED_overthrow_po: "Overthrow Monarch"
+ PEACE_overthrow_po: "Overthrow Monarch"
+princely_state_po: "Designate Princely State"
+ princely_state_po_desc: "@[From.GetTag] §Y[From.GetName]§! becomes our Princely State (increases §YResentment§! by a §Ysmall§! amount)."
+ CB_ALLOWED_princely_state_po: "Designate Princely State"
+ PEACE_princely_state_po: "Designate Princely State"
+full_annex_po: "End Civil War"
+full_annex_po_desc: "@[Root.GetTag] §Y[Root.GetName]§! wins the civil war, full annexing @[From.GetTag] §Y[From.GetName]§!."
+CB_ALLOWED_full_annex_po: "End Civil War"
+PEACE_full_annex_po: "End Civil War"
+
+cb_civil_war: "Civil War"
+cb_civil_war_desc: "A deep split within the nation has resulted in long-standing tensions erupting, bringing war to our glorious state."
+civil_war_superiority: "Show Superiority"
+civil_war_superiority_desc: "Demonstrating our military superiority over our enemies will ensure we can enforce our will at the negotiation table."
+CIVIL_WAR_NAME: "$ORDER$$FIRST$ Civil War"
+
+#####################
+# Disasters
+#####################
+
+the_anarchy_disaster: "The Great Anarchy"
+desc_the_anarchy_disaster: "At last, the golden age of Mughal rule in India has come to an end. The authority of the emperor outside of the gates of Delhi is rapidly waning, seeing the rise of new powers in the vacuum left beind."
+had_disaster_for_ten_years: "Had disaster for at least 10 years."
+
+indian_rebellion_disaster: "Indian Rebellion"
+desc_indian_rebellion_disaster: "Tensions between the native Indians and Company authorities have reached boiling point. Beginning as just a minor Seopy mutiny in the north of the country, this rebellion will soon spread and become a serious threat to British rule in the subcontinent."
+
+######################
+# Rebels
+######################
+
+mutineer_rebels_name: "Mutineer Rebels"
+mutineer_rebels_title: "Mutineer"
+mutineer_rebels_army: "Sepoy Mutineer Regiment"
+mutineer_rebels_demand: "Demilitarisation"
+mutineer_rebels_demand_desc: "Mutineer Rebels seek freedom from the trappings of Company military life, revenge against their oppressors and the restoration of traditional Indian power structures."
+mutineer_rebels_desc: "Mutineer Rebels seek freedom from the trappings of Company military life, revenge against their oppressors and the restoration of traditional Indian power structures."
+
+####################
+# Customizable Localisation
+####################
+
+string_eic_mughal_empire: "Mughal Empire"
+string_eic_delhi_sultanate: "Delhi Sultanate"
+string_eic_mughal_adj: "Mughal"
+string_eic_delhi_adj: "Delhi"

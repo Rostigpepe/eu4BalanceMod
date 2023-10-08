@@ -1002,8 +1002,8 @@ india_trade_co = {
 
 dutch_india_trade_co = {
 	merchants = 1
-	global_trade_power = 0.05
-	range = 0.25
+	global_trade_power = 0.1
+	range = 0.33
 }
 
 

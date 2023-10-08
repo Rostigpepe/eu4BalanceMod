@@ -1,0 +1,118 @@
+the_anarchy_disaster = {
+	potential = {
+		normal_or_historical_nations = yes
+		tag = MUG
+		NOT = { has_country_flag = won_the_anarchy }
+	}
+
+	can_start = {
+		has_any_disaster = no
+		NOT = { current_age = age_of_discovery }
+		NOT = { stability = 0 }
+		num_of_owned_provinces_with = {
+			superregion = india_superregion
+			value = 50
+		}
+		any_owned_province = {
+			NOT = { accepted_culture = ROOT }
+		}
+	}
+	
+	can_stop = {
+		has_any_disaster = yes
+	}
+
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 1
+			num_of_loans = 25
+		}
+		modifier = {
+			factor = 1
+			num_of_loans = 50
+		}
+		modifier = {
+			factor = 1
+			any_province = {
+				superregion = india_superregion
+				owner = { technology_group = western }
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1
+			average_unrest = 1
+		}
+		modifier = {
+			factor = -1
+			is_great_power = no
+		}
+		modifier = {
+			factor = 1
+			num_of_rebel_armies = 1
+		}
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { adm = 4 }
+		}
+	}
+
+
+
+
+	
+	can_end = {
+		OR = {
+			NOT = { total_development = 200 }
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = had_disaster_for_ten_years
+					had_country_flag = { flag = had_the_anarchy days = 3650 }
+				}
+				stability = 2
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = { num_of_rebel_armies = 1 }
+				is_at_war = no
+			}
+		}
+	}
+
+	modifier = {
+		years_of_nationalism = 10
+		global_unrest = 20
+		religious_unity = -0.33
+		discipline = -0.05
+	}
+
+	on_start = anarchy.1
+	on_end = anarchy.2
+	
+	on_monthly = {
+		events = {
+		}
+		
+		random_events = { 
+			1500 = 0
+			10 = anarchy.3		# Ruler Assassinated
+			200 = anarchy.4		# Unrest in PROVINCE
+			40 = anarchy.5		# Lack of Faith in MONARCH
+			50 = anarchy.6		# European Incursions
+			100 = anarchy.7		# Maratha revolt
+			100 = anarchy.8 	# Nawab of Bengal
+		}
+	}
+}
+

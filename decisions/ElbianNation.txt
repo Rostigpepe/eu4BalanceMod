@@ -23,7 +23,7 @@ country_decisions = {
 					ROOT = { NOT = { tag = BRA } }
 					BRA = {
 						OR = {
-							num_of_cities = 10
+							num_of_cities = 20
 							NOT = { is_subject_of = ROOT }
 						}
 					}
@@ -33,7 +33,7 @@ country_decisions = {
 					ROOT = { NOT = { tag = SAX } }
 					SAX = {
 						OR = {
-							num_of_cities = 10
+							num_of_cities = 15
 							NOT = { is_subject_of = ROOT }
 						}
 					}
@@ -43,7 +43,7 @@ country_decisions = {
 					ROOT = { NOT = { tag = BOH } }
 					BOH = {
 						OR = {
-							num_of_cities = 10
+							num_of_cities = 25
 							NOT = { is_subject_of = ROOT }
 						}
 					}

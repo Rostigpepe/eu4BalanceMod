@@ -1,0 +1,77 @@
+autonomous_trade_company = {
+	copy_from = colony
+
+	uses_tariffs = yes
+	has_power_projection = yes
+	eats_overlords_colonies = no
+	dynamically_created_during_history = no
+
+	forcelimit_bonus = 0.0
+	forcelimit_to_overlord = 0.5
+	manpower_bonus = 0.0
+	manpower_to_overlord = 0.5
+	naval_forcelimit_bonus = 0.0
+	naval_forcelimit_to_overlord = 1
+	sailors_bonus = 0.0
+	sailors_to_overlord = 1
+
+	can_have_subjects_of_other_types = yes
+
+	max_government_rank = 3
+
+	military_focus = 1.5
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	scutage = yes
+
+	liberty_desire_development_ratio = 0.01
+	base_liberty_desire = -50.0
+	liberty_desire_revolution = 0
+
+	# Subject Interactions:
+	replace_governor = yes
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	embargo_rivals = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	send_officers = yes
+	enforce_religion = yes
+	takeondebt = yes
+	
+	# Modifiers:	
+	modifier_overlord = {
+		modifier = autonomous_trade_company_overlord
+	}
+	
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = autonomous_trade_company_subject
+	}
+	modifier_subject = {
+		modifier = gbr_emperor_of_india_subject_bonus
+		trigger = {
+			overlord = {
+				has_country_modifier = gbr_emperor_of_india
+			}
+		}
+	}
+
+	overlord_opinion_modifier = aut_trade_company_opinion
+	subject_opinion_modifier = aut_trade_company_opinion
+}

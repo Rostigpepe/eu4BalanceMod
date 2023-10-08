@@ -1,0 +1,24 @@
+trade_company_reform = {
+	rank = {
+		1 = TRADING_COMPANY
+		2 = TRADING_COMPANY
+		3 = IMPERIAL_TRADING_COMPANY
+	}
+
+	ruler_male = {
+		1 = GOVERNOR
+		2 = GOVERNOR_GENERAL
+		3 = GOVERNOR_GENERAL
+	}
+
+	ruler_female = {
+		1 = GOVERNOR
+		2 = GOVERNOR_GENERAL
+		3 = GOVERNOR_GENERAL
+	}
+
+	trigger = {
+		tag = EIC
+		government = republic
+	}
+}

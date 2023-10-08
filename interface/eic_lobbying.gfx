@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_eic_monopolies_button"
+		texturefile = "gfx/interface/government_mechanics/eic_lobbying/eic_monopolies_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_eic_support_button"
+		texturefile = "gfx/interface/government_mechanics/eic_lobbying/eic_support_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_eic_treasure_button"
+		texturefile = "gfx/interface/government_mechanics/eic_lobbying/eic_treasure_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

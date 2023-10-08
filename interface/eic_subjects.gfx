@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {		# Princely State
+		name = "GFX_icon_princely_state"
+		texturefile = "gfx//interface//icon_princely_state.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leader_princely_state"
+		texturefile = "gfx//interface//icon_leader_princely_state.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_am_princely_state"
+		texturefile = "gfx//interface//icon_am_princely_state.dds"
+	}
+}

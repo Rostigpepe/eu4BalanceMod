@@ -264,3 +264,349 @@ BM_OTTOMANS_bulgarian_rebellion = {
 	local_manpower_modifier = -0.75
 	supply_limit_modifier = -0.5
 }
+
+
+
+autonomous_trade_company_overlord = {
+	trade_efficiency = 0.05
+	merchants = 1
+}
+autonomous_trade_company_subject = {
+	global_tax_modifier = -0.1
+	trade_efficiency = 0.05
+}
+princely_state_overlord = {
+	tolerance_heathen = 0.1
+	monthly_lobbying_power = 0.01
+}
+princely_state_subject = {
+	tolerance_heathen = 1
+}
+
+eic_morale = {
+	land_morale = -0.05
+}
+eic_crush_revolt = {
+	discipline = 0.025
+	global_manpower_modifier = -0.2
+}
+eic_angry_local_leader = {
+	global_unrest = 4
+	tolerance_heathen = -1
+}
+eic_annoyed_indians = {
+	global_unrest = 3
+}
+
+eic_less_interest = {
+	interest = -0.5
+}
+
+eic_focus_merchants = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+}
+eic_focus_admin = {
+	state_maintenance_modifier = -0.2
+	global_autonomy = -0.05
+}
+eic_lack_of_trust = {
+	trade_efficiency = -0.25
+}
+eic_the_diwani = {
+	global_tax_modifier = 0.15
+}
+bng_the_diwani = {
+	global_tax_modifier = -0.15
+}
+eic_regulating_act = {
+	global_autonomy = -0.05
+	mercantilism_cost = 0.1
+	max_absolutism = 5
+}
+
+eic_illegal_opium = {
+	stability_cost_modifier = 0.2
+	land_morale = -0.2
+}
+eic_the_straits = {
+	trade_efficiency = 0.2
+}
+
+eic_foreign_factory = {
+	local_production_efficiency = 0.25
+	local_unrest = 2
+	trade_goods_size_modifier = 0.25
+	trade_efficiency = 0.05
+	province_trade_power_value = 2
+	picture = "eic_factory_icon"
+}
+
+banned_opium_imports = {
+	mercantilism_cost = -0.05
+	trade_efficiency = -0.1
+	global_unrest = 1
+}
+
+eic_cash_crops_modifier = {
+	production_efficiency = 0.15
+	global_tax_modifier = 0.05
+}
+eic_opium_wars_modifier = {
+	land_morale = 0.1
+	naval_morale = 0.1
+}
+eic_bombay_presidency_modifier = {
+	state_maintenance_modifier = -0.1
+}
+eic_conquest_of_punjab = {
+	can_recruit_rajputs = yes
+	allowed_rajput_fraction = 0.25
+	manpower_recovery_speed = 0.1d
+}
+eic_rush_of_new_sepoys = {
+	manpower_recovery_speed = 0.2
+}
+eic_retain_industry = {
+	global_trade_goods_size_modifier = 0.05
+	build_time = -0.15
+}
+eic_conquest_of_gujarat = {
+	trade_efficiency = 0.1
+	inflation_reduction = 0.05
+}
+eic_company_armies = {
+	infantry_power = 0.1
+	global_regiment_cost = -0.1
+}
+eic_conquest_of_tibet = {
+	tolerance_heathen = 2
+	idea_cost = -0.05
+}
+eic_bengal_presidency_modifier = {
+	trade_steering = 0.1
+}
+eic_following_the_ganges = {
+	development_cost = -0.1
+	movement_speed = 0.1
+}
+eic_master_of_india = {
+	prestige = 1
+	prestige_decay = -0.01
+}
+eic_defeated_marathas = {
+	shock_damage_received = -0.1
+	army_tradition = 0.5
+}
+
+eic_jewel_of_the_company = {
+	prestige = 0.5
+	monthly_splendor = 1
+}
+eic_the_company_state = {
+	administrative_efficiency = 0.05
+	reform_progress_growth = 0.1
+}
+
+eic_merchants_modifier = {
+	placed_merchant_power = 10
+}
+eic_conquest_of_coromandel = {	
+	global_ship_trade_power = 0.2
+	global_own_trade_power = 0.15
+}
+eic_control_india = {
+	global_autonomy = -0.02
+	stability_cost_modifier = -0.1
+}
+eic_homeland_ties = {
+	state_maintenance_modifier = -0.05
+	core_creation = -0.05
+	stability_cost_modifier = -0.05
+	global_autonomy = -0.05
+}
+eic_monopoly_modifier = {
+	mercantilism_cost = -0.2
+	trade_efficiency = 0.1
+}
+eic_madras_presidency_modifier = {
+	mercantilism_cost = -0.1
+}
+eic_controlling_coastal_trade = {
+	global_own_trade_power = 0.3
+}
+eic_integration_max = {
+	global_autonomy = -0.15
+}
+
+eic_port_of_calcutta = {
+	province_trade_power_value = 10
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.25
+}
+
+eic_abolished_sati = {
+	global_unrest = 0.5
+	global_autonomy = -0.05
+	monthly_lobbying_power = 0.05
+}
+
+eic_fort_william_1 = {
+	local_defensiveness = 0.15
+	local_monthly_devastation = -0.10
+	province_trade_power_modifier = 0.05
+}
+eic_exploitation_of_bengal = {
+	global_trade_goods_size_modifier = 0.15
+	global_monthly_devastation = 0.10
+}
+eic_encroach_in_china = {
+	global_trade_power = 0.15
+	province_warscore_cost = -0.15
+}
+eic_indiamen = {
+	global_ship_trade_power = 0.15
+	movement_speed_in_fleet_modifier = 0.5
+}
+eic_anti_piracy_crusade = {
+	heavy_ship_number_of_cannons_modifier = 0.10
+	light_ship_number_of_cannons_modifier = 0.15
+	blockade_efficiency = 0.25
+}
+eic_pardons_and_privateers = {
+	navy_tradition = -0.25
+	naval_forcelimit_modifier = 0.20
+	privateer_efficiency = 0.25
+}
+eic_rupee = {
+	interest = -0.25
+	great_project_upgrade_time = -0.20
+	great_project_upgrade_cost = -0.10
+}
+
+eic_100_yr_timer = {
+}
+eic_triumphant_company = {
+	overextension_impact_modifier = -0.10
+	province_warscore_cost = -0.15
+}
+
+eic_the_land_of_rice = {
+	global_trade_goods_size_modifier = 0.10
+	production_efficiency = 0.10
+}
+eic_fertile_land = {
+	development_cost_modifier = -0.10
+	global_prosperity_growth = 0.25
+}
+
+eic_mutineers_in_prov = {
+	local_manpower_modifier = -0.85
+	local_hostile_movement_speed = -0.33
+}
+eic_mutineers_won = {
+	global_attacker_dice_roll_bonus = -1
+	global_defender_dice_roll_bonus = -1
+	manpower_in_accepted_culture_provinces = -0.60
+	land_maintenance_modifier = 0.15
+}
+
+eic_policy_of_tolerance = {
+	tolerance_heathen = 1
+}
+eic_presidency_armies = {
+	global_manpower_modifier = 0.15
+	reinforce_cost_modifier = -0.10
+}
+eic_adopt_mysore_rockets = {
+	fire_damage = 0.10
+}
+eic_hunting_tigers_in_india = {
+	land_morale = 0.10
+	army_tradition = 0.50
+}
+eic_maratha_horsemen = {
+	cavalry_power = 0.10
+}
+eic_following_the_ganges = {
+	movement_speed = 0.15
+	land_attrition = -0.10
+}
+
+eic_loyal_sikh_troops = {
+	discipline = 0.05
+	leader_land_fire = 1
+}
+eic_fortified_the_khyber = {
+	local_hostile_attrition = 2
+	local_defensiveness = 0.33
+	local_garrison_size = 0.50
+	local_defender_dice_roll_bonus = 1
+}
+eic_we_have_united_india = {
+	prestige = 1
+	republican_tradition = 0.5
+	legitimacy = 1
+	devotion = 1
+}
+eic_secured_tibet = {
+	tolerance_heathen = 2
+	global_spy_defence = 0.33
+}
+eic_trucial_state = {
+	local_development_cost = -0.25
+	province_trade_power_modifier = 0.50
+	trade_goods_size_modifier = 0.33
+	local_tax_modifier = 0.20
+	local_unrest = -3
+}
+eic_loyal_princely_states = {
+	vassal_income = 0.33
+}
+eic_reformed_sepoy_armies = {
+	global_manpower_modifier = 0.10
+	land_forcelimit_modifier = 0.10
+	discipline = 0.025
+	land_maintenance_modifier = -0.05
+}
+
+disarming_sepoys = {
+	global_rebel_suppression_efficiency = 0.33
+	discipline = 0.05
+	manpower_in_accepted_culture_provinces = -0.50
+	land_forcelimit_modifier = -0.15
+	global_unrest = -1
+}
+
+eic_legacy_of_the_rebellion = {
+	global_manpower_modifier = -0.10	
+	army_tradition = -0.50
+}
+
+eic_company_is_now_state = {
+	administrative_efficiency = 0.05
+}
+
+eic_indian_imperial_police = {
+	global_rebel_suppression_efficiency = 0.20
+	harsh_treatment_cost = -0.15
+	stability_cost_modifier = 0.10
+}
+
+eic_army_of_retribution = {
+	prestige_from_land = 2
+	land_morale = 0.15
+	fire_damage = 0.25
+	global_unrest = 2
+}
+eic_showed_clemency = {
+	global_unrest = -1
+	siege_ability = 0.10
+	stability_cost_modifier = 0.50
+}
+
+eic_recruit_redcoats = {
+	discipline = 0.05
+	fire_damage = 0.1
+	is_marine_modifier = yes
+}

@@ -1,0 +1,49 @@
+princely_state = {
+	copy_from = vassal
+
+	sprite = GFX_icon_princely_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leader_princely_state
+	diplomacy_subject_sprite = GFX_diplomacy_am_princely_state
+
+	max_government_rank = 1
+
+	military_focus = 1
+
+	forcelimit_bonus = 0.1
+	forcelimit_to_overlord = 0.1
+	manpower_bonus = 0.1
+	manpower_to_overlord = 0.1
+	naval_forcelimit_bonus = 0.1
+	naval_forcelimit_to_overlord = 0.1
+	sailors_bonus = 0.1
+	sailors_to_overlord = 0.1
+
+	scutage = yes
+
+	base_liberty_desire = -10.0
+	liberty_desire_development_ratio = 0.05
+
+	relative_power_class = 2
+	takes_diplo_slot = no
+	gets_help_with_rebels = yes
+
+	liberty_desire_revolution = 10
+
+	# Subject Interactions:
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	enforce_religion = no
+	takeondebt = yes
+	
+	# Modifiers:	
+	modifier_overlord = {
+		modifier = princely_state_overlord
+	}
+	
+	modifier_subject = {
+		modifier = princely_state_subject
+	}
+
+	overlord_opinion_modifier = princely_state_opinion
+	subject_opinion_modifier = princely_state_opinion
+}

@@ -1,0 +1,81 @@
+merc_sepoy_regiment = {
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0.5                 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.0                   # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+    	OR = {
+		technology_group = western
+		technology_group = eastern
+		tag = MUG
+	}
+	any_owned_province = {
+		superregion = india_superregion
+	}
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+    }
+}
+
+merc_eic_sepoy_regiment = {
+    regiments_per_development = 0.03      # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0.5                 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.0                   # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+    	has_country_flag = may_recruit_eic_sepoys
+	any_owned_province = {
+		superregion = india_superregion
+	}
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		discipline = 0.05
+    }
+}
+
+merc_sepoy_for_hire = {
+    regiments_per_development = 0.03       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.0                 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.0                   # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+    	capital_scope = {
+		superregion = india_superregion
+	}
+	any_province = {
+		superregion = india_superregion
+		owner = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+		}
+	}
+	technology_group = indian
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		infantry_power = 0.05
+		artillery_power = 0.05
+    }
+}

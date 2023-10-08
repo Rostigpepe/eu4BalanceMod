@@ -653,3 +653,47 @@ maroon_generic_ideas = {
 		advisor_pool = 1
 	}
 }
+
+
+
+CNT_ideas = {			# Carnatic Sultanate
+	start = {
+		merchants = 1
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		tolerance_own = 2
+	}
+	
+	trigger = {
+		tag = KRK
+	}
+	free = yes
+	
+	cnt_maratha_forts = {
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.1
+	}
+	cnt_coromandel_trade = {
+		trade_efficiency = 0.1
+	}
+	cnt_resist_succession = {
+		heir_chance = 0.5
+		diplomatic_upkeep = 1
+	}
+	cnt_defend_against_europe = {
+		discipline = 0.05
+	}
+	cnt_princely_state = {
+		improve_relation_modifier = 0.2
+	}
+	cnt_merchant_trades = {
+		global_ship_trade_power = 0.15
+		light_ship_cost = -0.20
+	}
+	cnt_diverse_rule = {
+		num_accepted_cultures = 1
+		global_unrest = -1
+	}
+}

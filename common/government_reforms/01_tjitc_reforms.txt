@@ -1,0 +1,82 @@
+new_eic_reform = {
+	icon = "eic_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = EIC
+			has_reform = new_eic_reform
+		}
+	}
+	lock_level_when_selected = yes
+	duration = 4
+	trigger = {
+		OR = {
+			tag = EIC
+			has_reform = new_eic_reform
+		}
+	}
+	modifiers = {
+		center_of_trade_upgrade_cost = -0.10
+		tolerance_of_heathens_capacity = 1
+		state_governing_cost = -0.10
+		trade_efficiency = 0.05
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	government_abilities = {
+		eic_lobbying_mechanic
+	}
+	ai = {
+		factor = 20
+	}
+}
+
+cornwallis_code_reform = {
+	icon = "cornwallis_reform"
+	allow_normal_conversion = yes
+	potential = { 
+		tag = EIC
+	}
+	modifiers = {
+		liberty_desire = -10
+		administrative_efficiency = 0.025
+		governing_capacity = 150
+	}
+}
+power_of_the_board_reform = {
+	icon = "eic_board_reform"
+	allow_normal_conversion = yes
+	potential = { 
+		tag = EIC
+	}
+	modifiers = {
+		max_absolutism = 10
+		monthly_lobbying_power = 0.05
+	}
+}
+indian_board_reform = {
+	icon = "eic_indian_board_reform"
+	allow_normal_conversion = yes
+	potential = { 
+		tag = EIC
+	}
+	modifiers = {
+		global_unrest = -1
+		republican_tradition = 0.2
+	}
+}
+
+sepoy_troops_reform = {
+	icon = "eic_sepoys_reform"
+	allow_normal_conversion = yes
+	potential = { 
+		tag = EIC
+	}
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.2
+		global_regiment_cost = -0.05
+		free_land_leader_pool = 1
+	}
+}

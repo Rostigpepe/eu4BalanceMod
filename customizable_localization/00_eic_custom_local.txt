@@ -1,0 +1,36 @@
+defined_text = {
+    name = GetIndianEmpire
+
+    text = {
+        localisation_key = string_eic_mughal_empire
+        trigger = {
+		any_owned_province = {
+			is_core = MUG	# Mughals
+		}
+        }
+    }
+    text = {
+        localisation_key = string_eic_delhi_sultanate
+        trigger = {
+		always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetIndianEmpireAdj
+
+    text = {
+        localisation_key = string_eic_mughal_adj
+        trigger = {
+		any_owned_province = {
+			is_core = MUG	# Mughals
+		}
+        }
+    }
+    text = {
+        localisation_key = string_eic_delhi_adj
+        trigger = {
+		always = yes
+        }
+    }
+}

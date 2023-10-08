@@ -1,0 +1,93 @@
+government = republic
+add_government_reform = trade_company_reform
+government_rank = 1
+technology_group = western
+primary_culture = english
+mercantilism = 25
+capital = 4477		# Calcutta
+
+# Governors of the EIC from London
+
+1600.1.1 = {
+	monarch = {
+		name = "Thomas"
+		dynasty = "Smythe"
+		birth_date = 1558.1.1
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = entrepreneur_personality
+}
+
+# Governor-Generals of Bengal and later India
+
+1773.10.20 = {
+	monarch = {
+		name = "Warren"
+		dynasty = "Hastings"
+		birth_date = 1732.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1786.9.12 = {			# The Earl Cornwallis
+	monarch = {
+		name = "Charles"
+		dynasty = "Cornwallis"
+		birth_date = 1738.1.1
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}
+
+1793.10.28 = {
+	monarch = {
+		name = "John"
+		dynasty = "Shore"
+		birth_date = 1751.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1798.5.18 = {			# The Marquess Wellesley
+	monarch = {
+		name = "Richard Colley"
+		dynasty = "Wellesley"
+		birth_date = 1798.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+# Second term for Charles Cornwallis
+
+1807.7.31 = {			# The Lord Minto
+	monarch = {
+		name = "Gilbert"
+		dynasty = "Elliot-Murray-Kynynmound"
+		birth_date = 1807.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1813.10.4 = {			# The Marquess of Hastings
+	monarch = {
+		name = "Francis Edward"
+		dynasty = "Rawdon-Hastings"
+		birth_date = 1813.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+

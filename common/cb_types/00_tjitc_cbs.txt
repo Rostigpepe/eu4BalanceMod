@@ -1,0 +1,8 @@
+cb_civil_war = {
+	valid_for_subject = yes
+
+	is_triggered_only = yes
+	months = 60
+
+	war_goal = civil_war_superiority
+}

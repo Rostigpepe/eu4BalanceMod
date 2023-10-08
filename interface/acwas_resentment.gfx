@@ -1,0 +1,21 @@
+spriteTypes = {
+	#### All of these is related to "game/common/government_mechanics"
+
+	### 00 RESENTMENT ###
+	spriteType = {
+		name = "GFX_resentment_frame"
+		texturefile = "gfx/interface/government_mechanics/resentment/resentment_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = "GFX_single_government_power_bar_resentment"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/resentment/resentment_active.dds"
+		textureFile2 = "gfx/interface/government_mechanics/resentment/resentment_pasive.dds"
+		size = { x = 274 y = 110 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+}

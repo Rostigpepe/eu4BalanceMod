@@ -1,0 +1,99 @@
+indian_rebellion_disaster = {
+	potential = {
+		tag = EIC
+		NOT = { has_country_flag = had_indian_rebellion }
+	}
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = eic_ind_reb_has_100_resentment_tt
+			check_variable = {
+				which = Resentment
+				value = 100
+			}
+		}
+		NOT = { stability = 3 }
+	}
+	can_stop = {
+		NOT = {
+			any_owned_province = {
+				OR = {
+					religion = hinduism
+					religion = sunni
+				}
+			}
+		}
+		NOT = {
+			india_superregion = {
+				owned_by = ROOT
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			average_unrest = 8
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 2
+			num_of_rebel_armies = 1
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = "eic_angry_local_leader"
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = "eic_annoyed_indians"
+		}
+		modifier = {
+			factor = 0.5
+			num_of_trading_bonuses = 2
+		}
+		modifier = {
+			factor = 0.5
+			num_of_trading_bonuses = 4
+		}
+		modifier = {
+			factor = 0.5
+			num_of_trading_bonuses = 6
+		}
+	}
+	can_end = {
+		stability = 2
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { revolt_percentage = 0.01 }
+	}
+	modifier = {
+		global_unrest = 6
+		global_manpower_modifier = -0.33
+		stability_cost_modifier = 0.50
+		reduced_liberty_desire = -10
+	}
+	
+	on_start = ire.1	# Meerut Mutiny
+	on_end = ire.100	# End of the rebellion
+	
+	on_monthly = {
+		events = {
+			ire.2	# Fall of Delhi
+		}
+		random_events = {
+			1000 = 0
+			50 = ire.3	# Chiefdom declares for the rebels
+			30 = ire.4	# Gunpowder quelled
+			40 = ire.5	# Prince supports us
+			30 = ire.6	# Prince rebels against us
+			30 = ire.8	# Massacre of province
+			35 = ire.10	# Locals join the revolt
+			45 = ire.11	# Province Mutiny
+		}
+	}
+}

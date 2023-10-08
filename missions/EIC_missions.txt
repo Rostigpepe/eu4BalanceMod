@@ -1,0 +1,1580 @@
+New_EIC_column_one = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = EIC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	eic_invest_in_bengal = {
+		icon = mission_clear_the_delta
+		required_missions = { }
+		position = 1
+
+		provinces_to_highlight = {
+			region = bengal_region
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				development = 12
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = bengal_region
+				development = 12
+				value = 10
+			}
+		}
+		
+		effect = {
+			subtract_small_resentment = yes
+			add_country_modifier = {
+				name = "eic_fertile_land"
+				duration = 9125
+			}
+		}
+	}
+	
+	eic_east_asian_trade = {
+		icon = mng_jing_hang_grand_canal
+		required_missions = { eic_invest_in_bengal eic_sail_east_indiamen }
+		position = 3
+		
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				NOT = { tag = ROOT }
+				home_trade_node = {
+					trade_share = {
+						country = ROOT
+						share = 30
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_trade_node = {
+					trade_share = {
+						country = ROOT
+						share = 30
+					}
+				}
+				amount = 3
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1
+			south_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					has_port = yes
+				}
+				add_claim = ROOT
+			}	
+		}
+	}
+	eic_unequal_treaty = {
+		icon = mission_defy_the_dragon
+		required_missions = { eic_east_asian_trade }
+		position = 4
+		
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = south_china_region
+			has_port = yes
+		}
+		
+		trigger = {
+			south_china_region = {
+				has_port = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					any_owned_province = { region = south_china_region has_port = yes }
+				}
+				random_owned_province = {
+					limit = {
+						region = south_china_region
+						has_port = yes
+					}
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+			}
+			else = {
+				custom_tooltip = eic_can_upgrade_chinese_port_tt
+			}
+			add_country_modifier = {
+				name = "eic_encroach_in_china"
+				duration = 9125
+			}	
+		}
+	}
+	eic_straits_settlements = {
+		icon = mission_conquer_malwa_guj
+		required_missions = { eic_protect_bengal }
+		position = 5
+		
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				province_id = 596
+				province_id = 4815
+				province_id = 4813
+				province_id = 595
+			}	
+		}
+		
+		trigger = {
+			owns = 596	# Malacca
+			owns = 4815	# Singapore
+			OR = {
+				owns = 4813	# Penang
+				owns = 595	# Perak/Dinding
+			}
+		}
+		
+		effect = {
+			add_mercantilism = 5
+			4815 = {
+				upgrade_center_of_trade = yes
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 1
+				change_province_name = "Singapore"
+				rename_capital = "Singapore"
+			}
+			north_malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malacca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			johor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_the_deccan = {
+		icon = mission_conquer_malwa_bah
+		required_missions = { eic_diwani }
+		position = 6
+		
+		provinces_to_highlight = {
+			region = deccan_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 30
+				region = deccan_region
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_maratha_horsemen"
+				duration = 7300
+			}
+		}
+	}
+	eic_control_central_india = {
+		icon = mission_secure_khandesh
+		required_missions = { eic_the_deccan eic_gangeatic_plain }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = baghelkhand_area
+				area = bundelkhand_area
+				area = gird_area
+				area = malwa_area
+				area = gondwana_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				OR = {
+					area = baghelkhand_area
+					area = bundelkhand_area
+					area = gird_area
+					area = malwa_area
+					area = gondwana_area
+				}
+			}
+		}
+		
+		effect = {
+			add_mil_power = 100
+			hindusthan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_india_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_conquer_the_punjab = {
+		icon = mission_subdue_the_afghans
+		required_missions = { eic_control_central_india }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sirhind_area
+				area = lahore_area
+				area = multan_area
+				area = sind_sagar_area
+				area = upper_doab_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				OR = {
+					area = sirhind_area
+					area = lahore_area
+					area = multan_area
+					area = sind_sagar_area
+					area = upper_doab_area
+				}
+			}
+			owns_core_province = 522	# Delhi
+		}
+		
+		effect = {
+			522 = {	
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_devastation = -25
+			}
+			add_army_tradition = 20
+			add_country_modifier = {
+				name = "eic_loyal_sikh_troops"
+				duration = 9125
+			}
+			custom_tooltip = eic_sikh_less_likely_to_revolt_tt
+		}
+	}
+	eic_conquer_afghanistan = {
+		icon = mission_conquer_maharashtra
+		required_missions = { eic_unite_india }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = kalat_area
+				area = kabulistan_area
+				area = balkh_area
+				area = ghor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					area = kalat_area
+					area = kabulistan_area
+					area = balkh_area
+					area = ghor_area
+				}
+			}
+			owns_core_province = 578	# Roh (Khyber Pass)
+			578 = {
+				has_fort_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			578 = {
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eic_fortified_the_khyber"
+					duration = -1
+				}
+			}
+			makran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+New_EIC_column_two = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = EIC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	eic_sail_east_indiamen = {
+		icon = mission_norwegian_ship
+		required_missions = { }
+		position = 2
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			num_of_light_ship = 30
+			navy_size_percentage = 0.85
+			has_leader_with = {
+				admiral = yes
+				total_pips = 8
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_indiamen"
+				duration = 7300
+			}
+		}
+	}
+	eic_scourge_of_the_seas = {
+		icon = mission_pirate_flag
+		required_missions = { eic_sail_east_indiamen }
+		position = 3
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			num_of_heavy_ship = 5
+			mercantilism = 30
+			years_of_income = 0.5
+		}
+		
+		effect = {
+			country_event = { id = eic.46 }
+		}
+	}
+	eic_protect_bengal = {
+		icon = mission_end_arakan_piracy
+		required_missions = { eic_base_in_bengal }
+		position = 4
+		
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = assam_area
+				area = naga_hills_area
+				area = arakan_area
+				area = tripura_area
+			}	
+		}
+		
+		trigger = {
+			assam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naga_hills_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			arakan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = { id = eic.49 } 	# First Anglo-Burmese War
+			burma_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_conquer_burma = {
+		icon = mission_a_great_mandala
+		required_missions = { eic_protect_bengal }
+		position = 5
+		
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = burma_region	
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 22
+				region = burma_region
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_the_land_of_rice"
+				duration = 9125
+			}
+			north_tenasserim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tenasserim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_gangeatic_plain = {
+		icon = mission_a_million_rice_fields
+		required_missions = { eic_diwani }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = purvanchal_area
+				area = mithila_area
+				area = oudh_area
+				area = baisi_rajya_area
+				area = katehar_area
+				area = lower_doab_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 18
+				OR = {
+					area = purvanchal_area
+					area = mithila_area
+					area = oudh_area
+					area = baisi_rajya_area
+					area = katehar_area
+					area = lower_doab_area	
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_following_the_ganges"
+				duration = 9125
+			}
+			nepal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baghelkhand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bundelkhand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gird_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malwa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gondwana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_bombay = {
+		icon = mission_conquer_andhra_bah
+		required_missions = { }
+		position = 7
+		
+		provinces_to_highlight = {
+			province_id = 529
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				529 = { country_or_non_sovereign_subject_holds = ROOT }
+				AND = { 
+					529 = {
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
+					}
+					treasury = 400
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					529 = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				529 = {
+					add_base_tax = 2
+					add_base_production = 2
+					change_province_name = "Bombay"
+					rename_capital = "Bombay"
+				}
+			}
+			else = {
+				add_treasury = -400
+				529 = {
+					cede_province = ROOT
+					add_core = ROOT
+					add_base_tax = 2
+					add_base_production = 2
+					change_province_name = "Bombay"
+					rename_capital = "Bombay"
+				}
+			}
+		}
+	}
+	eic_gujarat_sindh_and_rajputana = {
+		icon = mission_reduce_champaner
+		required_missions = { eic_control_central_india eic_bombay }
+		position = 8
+		
+		provinces_to_highlight = {
+			region = west_india_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = west_india_region
+			}
+		}
+		
+		effect = {
+			create_general = {
+				tradition = 100
+			}
+			define_advisor = {
+				type = army_reformer
+				skill = 3
+				cost_multiplier = 0.25
+				culture = rajput
+				religion = hinduism
+			}
+		}
+	}
+	eic_unite_india = {
+		icon = mission_eic_map
+		required_missions = { eic_conquer_the_punjab eic_gujarat_sindh_and_rajputana eic_slay_the_tiger }
+		position = 9
+		
+		provinces_to_highlight = {
+			superregion = india_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			india_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_we_have_united_india"
+				duration = -1
+			}
+			country_event = { id = eic.41 } 	# The Company Raj
+			kalat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabulistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ghor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tibet_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pirate_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_conquer_tibet = {
+		icon = mission_dharma_mission_religious_harmony
+		required_missions = { eic_unite_india }
+		position = 10
+		
+		provinces_to_highlight = {
+			region = tibet_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = tibet_region
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "eic_secured_tibet"
+				duration = 9125
+			}
+		}
+	}
+}
+
+New_EIC_column_three = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = EIC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	eic_charter_the_company = {
+		icon = mission_embassy_to_the_west
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			capital_scope = {
+				has_trade_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = eic.44 }
+		}
+	}
+	
+	eic_base_in_bengal = {
+		icon = mission_robert_clive
+		required_missions = { eic_charter_the_company eic_calcutta }
+		position = 3
+		
+		provinces_to_highlight = {
+			region = bengal_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				region = bengal_region
+			}
+			owns_core_province = 4477
+			4477 = {
+				has_fort_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = eic.45 } 	# Fort William
+			country_event = { id = eic.17 }	# Clive of India
+			bengal_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bihar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {	
+				add_country_modifier = {
+					name = "eic_100_yr_timer"
+					duration = 36500
+					hidden = yes
+				}
+			}
+		}
+	}
+	eic_diwani = {
+		icon = mission_diwani
+		required_missions = { eic_base_in_bengal }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = orissa_area
+				area = bihar_area
+				area = west_bengal_area
+				area = east_bengal_area
+				area = gaur_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			orissa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bihar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gaur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = { id = eic.21 } 	# Diwani
+			coromandel_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			deccan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			purvanchal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mithila_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oudh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baisi_rajya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			katehar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_doab_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_the_carnatic = {
+		icon = mission_conquer_andhra_vij
+		required_missions = { eic_madras eic_diwani }
+		position = 7
+		
+		provinces_to_highlight = {
+			region = coromandel_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 18
+				region = coromandel_region
+			}
+		}
+		
+		effect = {
+			add_mercantilism = 3
+			malabar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mysore_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kanara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rayalaseema_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			raichur_doab_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_slay_the_tiger = {
+		icon = mission_the_tiger_triumphant
+		required_missions = { eic_the_carnatic }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = malabar_area
+				area = mysore_area
+				area = kanara_area
+				area = rayalaseema_area
+				area = raichur_doab_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 16
+				OR = {
+					area = malabar_area
+					area = mysore_area
+					area = kanara_area
+					area = rayalaseema_area
+					area = raichur_doab_area
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_hunting_tigers_in_india"
+				duration = 9125
+			}
+		}
+	}
+	eic_trucial_states = {
+		icon = mission_demand_garjat_fealty
+		required_missions = { eic_unite_india }
+		position = 10
+		
+		provinces_to_highlight = {
+			area = pirate_coast_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			pirate_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			pirate_coast_area = {
+				add_permanent_province_modifier = {
+					name = "eic_trucial_state"
+					duration  = -1
+				}
+			}
+			mascat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oman_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahrain_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dhofar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			persian_gulf_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mogostan_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			388 = {		# apparently they got aden in 1839?
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eic_a_company_with_an_empire = {
+		icon = mission_seize_the_dragon_throne
+		required_missions = { eic_conquer_afghanistan eic_conquer_tibet eic_trucial_states eic_the_princes eic_reform_the_sepoys }
+		position = 11
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			government_rank = 3
+		}
+		
+		effect = {
+			country_event = { id = eic.33 }		# A Company with a State
+		}
+	}
+}
+
+New_EIC_column_four = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = EIC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	
+	eic_calcutta = {
+		icon = mission_expand_inland
+		required_missions = { eic_charter_the_company }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 4477
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { development = 25 }
+				NOT = { has_trade_building_trigger = yes }
+				NOT = { has_production_building_trigger = yes }
+				NOT = { has_tax_building_trigger = yes }
+			}
+		}
+		
+		trigger = {
+			owns_core_province = 4477
+			4477 = {
+				development = 20
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			4477 = {
+				change_province_name = "Calcutta"
+				rename_capital = "Calcutta"
+				add_province_modifier = {
+					name = "eic_port_of_calcutta"
+					duration = -1
+				}
+				upgrade_center_of_trade = yes
+				move_capital_effect = yes
+			}
+		}
+	}
+
+	eic_cornwallis_code = {
+		icon = mission_vedic_education
+		required_missions = { eic_strengthen_ties_with_london }
+		position = 3
+		
+		trigger = {
+			has_reform = cornwallis_code_reform
+			grown_by_development = 400
+		}
+		
+		effect = {
+			add_adm_power = 100
+			define_advisor = {
+				type = statesman
+				skill = 3
+				culture = english
+				cost_multiplier = 0.25
+			}
+		}
+	}
+	eic_achievement_divide_and_conquer = {
+		icon = mission_abu_saids_dream
+		required_missions = { eic_base_in_bengal }
+		position = 4
+
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = india_superregion
+		}
+		
+		trigger = {
+			india_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			custom_trigger_tooltip = {
+				tooltip = eic_100_yr_timer_tt
+				has_country_modifier = eic_100_yr_timer	
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "eic_triumphant_company"
+				duration = -1
+			}
+		}
+	}
+	eic_madras = {
+		icon = mission_bengal_entrepot
+		required_missions = { }
+		position = 6
+		
+		provinces_to_highlight = {
+			province_id = 539
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				539 = { country_or_non_sovereign_subject_holds = ROOT }
+				AND = { 
+					539 = {
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
+					}
+					treasury = 400
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					539 = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				539 = {
+					add_base_tax = 2
+					add_base_production = 2
+					change_province_name = "Madras"
+					rename_capital = "Madras"
+				}
+			}
+			else = {
+				add_treasury = -400
+				539 = {
+					cede_province = ROOT
+					add_core = ROOT
+					add_base_tax = 2
+					add_base_production = 2
+					change_province_name = "Madras"
+					rename_capital = "Madras"
+				}
+			}
+		}
+	}
+
+	eic_presidency_armies = {
+		icon = mission_prepare_an_invasion_force
+		required_missions = { }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_forcelimit_building_trigger = yes }
+			}
+			OR = {
+				province_id = 529
+				province_id = 539
+				province_id = 4477
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manpower_building_trigger = yes
+				value = 15
+			}
+			army_size_percentage = 0.85
+			529 = {		# Bombay
+				owned_by = ROOT
+				has_forcelimit_building_trigger = yes
+			}
+			539 = {		# Madras
+				owned_by = ROOT
+				has_forcelimit_building_trigger = yes
+			}
+			4477 = {		# Calcutta
+				owned_by = ROOT
+				has_forcelimit_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 15
+			add_country_modifier = {
+				name = "eic_presidency_armies"
+				duration = -1
+			}
+		}
+	}
+	eic_mysore_rockets = {
+		icon = mission_guns_of_urban
+		required_missions = { eic_slay_the_tiger eic_presidency_armies }
+		position = 9
+
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			artillery_fraction = 0.25
+			army_professionalism = 0.30
+			OR = {
+				mil_tech = 16
+				has_leader_with = {
+					fire = 5
+					general = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_adopt_mysore_rockets"
+				duration = -1
+			}
+		}
+	}
+	eic_the_princes = {
+		icon = mission_early_janissaries
+		required_missions = { }
+		position = 10
+
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = princely_state
+					is_subject_of = ROOT
+					NOT = { liberty_desire = 20 }
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			subtract_small_resentment = yes
+			add_country_modifier = {
+				name = "eic_loyal_princely_states"
+				duration = 9125
+			}
+			set_country_flag = eic_princely_states_mission_flag
+			custom_tooltip = eic_doctrine_of_lapse_reasons_tt
+		}
+	}
+}
+
+New_EIC_column_five = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = EIC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	eic_strengthen_ties_with_london = {
+		icon = mission_rb_angevin_kingdom
+		required_missions = { }
+		position = 2
+		
+		trigger = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+			}
+			else = {
+				any_country = {
+					capital_scope = { continent = europe }
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_government_power = {
+				mechanic_type = eic_lobbying_mechanic
+				power_type = lobbying_power
+				value = 25
+			}
+		}
+	}
+
+	eic_currency_reform = {
+		icon = mission_establish_mint_towns
+		required_missions = { eic_strengthen_ties_with_london }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 568
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				full_idea_group = economic_ideas
+				treasurer = 3
+			}
+			num_of_owned_provinces_with = {
+				has_courthouse_building_trigger = yes
+				value = 8
+			}
+			monthly_adm = 10
+			owns_core_province = 568	# Chittagong
+			adm_power = 150
+		}
+		
+		effect = {
+			add_adm_power = -150
+			add_country_modifier = {
+				name = "eic_rupee"
+				duration = -1
+			}
+			568 = {
+				change_trade_goods = gold
+			}
+		}
+	}
+	
+	eic_maintain_east_indian_monopoly = {
+		icon = mission_open_up_china
+		required_missions = { eic_currency_reform }
+		position = 4
+		
+		trigger = {
+			mercantilism = 50
+			custom_trigger_tooltip = {
+				tooltip = eic_used_monopoly_ability_5_times_tt
+				check_variable = {
+					which = EIC_Monopoly_Boosts
+					value = 5
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eic_monopoly_modifier"
+				duration = -1
+			}
+		}
+	}
+	eic_cash_crops = {
+		icon = mission_peasantry
+		required_missions = { eic_maintain_east_indian_monopoly }
+		position = 5
+
+		provinces_to_highlight = {
+			region = bengal_region
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				AND = {
+					OR = {
+						has_building = plantations
+						has_building = tradecompany
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = bengal_region
+				OR = {
+					has_building = plantations
+					has_building = tradecompany
+				}
+				value = 8
+			}
+		}
+		
+		effect = {
+			custom_tooltip = eic_exploiting_may_lead_to_disaster_tt
+			add_small_resentment = yes
+			add_country_modifier = {
+				name = "eic_exploitation_of_bengal"
+				duration = -1
+			}
+		}
+	}
+	eic_company_tolerance = {
+		icon = mission_the_chola_campaigns
+		required_missions = { }
+		position = 6
+
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			religious_unity = 1
+			stability = 2
+			num_accepted_cultures = 3
+			OR = {
+				theologian = 2
+				full_idea_group = humanist_ideas
+			}
+		}
+		
+		effect = {
+			subtract_small_resentment = yes
+			add_prestige = 10
+			add_country_modifier = {
+				name = "eic_policy_of_tolerance"
+				duration = -1
+			}
+		}
+	}
+	eic_crush_indian_rebellion = {
+		icon = mission_abolish_mestnichestvo
+		required_missions = { eic_presidency_armies eic_company_tolerance }
+		position = 8
+
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = eic_defeated_indian_rebellion_tt
+				has_country_flag = had_indian_rebellion
+			}
+		}
+		
+		effect = {
+			add_stability_or_adm_power = yes
+		}
+	}
+	eic_reform_the_sepoys = {
+		icon = mission_sepoys
+		required_missions = { eic_mysore_rockets eic_crush_indian_rebellion }
+		position = 10
+
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			army_professionalism = 0.50
+			OR = {
+				army_reformer = 3
+				recruitmaster = 3
+			}
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.15
+			}
+			mil_power = 200
+		}
+		
+		effect = {
+			add_mil_power = -200
+			remove_country_modifier = eic_presidency_armies
+			add_country_modifier = {
+				name = "eic_reformed_sepoy_armies"
+				duration = -1
+			}
+		}
+	}
+}
