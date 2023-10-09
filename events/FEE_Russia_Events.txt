@@ -157,37 +157,37 @@ country_event = {
 		finland_area = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 		bothnia_area = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 		4151 = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 		4124 = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 		32 = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 		30 = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
-				duration = 36524
+				duration = 3650
 			}
 		}
 	}

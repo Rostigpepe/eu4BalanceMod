@@ -1639,22 +1639,25 @@ fee_renaissance_ignore_falsification = {
 fee_rus_kronstadt_fortress = {
 	local_defensiveness = 0.15
 	local_garrison_size = 0.20
-	local_development_cost = 0.10
+	local_development_cost = -0.1
 }
 fee_rus_renovated_kremlin = {
 	local_defensiveness = 0.10
 	local_garrison_size = 0.15
-	local_development_cost = 0.05
+	local_development_cost = -0.05
 }
 
 fee_rus_rebellion_in_finland = {
-	local_unrest = 15
+	local_unrest = 5
 }
 fee_rus_rights_guaranteed = {
-	min_local_autonomy = 75
+	min_local_autonomy = 15
+	local_governing_cost = -0.25
 }
 fee_rus_sisu = {
-	liberty_desire = 40
+	liberty_desire = 20
+	global_tax_income = 24
+	manpower_in_own_culture_provinces = 0.33
 }
 
 #Treaty of Leipzig

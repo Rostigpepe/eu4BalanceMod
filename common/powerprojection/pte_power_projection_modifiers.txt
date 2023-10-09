@@ -1,0 +1,5 @@
+pte_destabilize_nation_power_projection = {
+	max = 30
+	power = 1
+	yearly_decay = 0.5
+}
