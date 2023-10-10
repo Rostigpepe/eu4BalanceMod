@@ -278,6 +278,21 @@ BM_devshirme_farming_upgraded = {
 	min_local_autonomy = 5
 	local_tax_modifier = 0.3
 }
+BM_pasha_janissary_excemptions = {
+	local_manpower_modifier = -0.25
+	local_missionary_strength = -0.05
+	local_build_cost = 0.25
+}
+BM_pasha_janissary_excemptions_upgraded = {
+	local_manpower_modifier = -0.3
+	local_tax_modifier = 0.3
+	local_missionary_strength = -0.05
+	local_build_cost = 0.3
+}
+
+
+
+
 
 BM_Ottoman_corrupt_Enderun_Schools = {
 	all_estate_influence_modifier = 0.05
@@ -302,7 +317,9 @@ BM_Ottoman_puppet_sultan = {
 	monarch_lifespan = 0.75
 }
 BM_Ottoman_reformed_enderun_pyramid = {
-	yearly_corruption = -0.05
+	yearly_corruption = -0.2
+	monthly_reform_progress = 0.2
+	global_unrest = -1
 }
 
 
@@ -325,6 +342,8 @@ BM_Ottoman_corrupt_devshirme4 = {
 	global_autonomy = 0.05
 	global_tax_modifier = 0.05
 	production_efficiency = -0.05
+}
+BM_Ottoman_corrupt_devshirme_timer = {
 }
 
 

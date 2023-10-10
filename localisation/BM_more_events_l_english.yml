@@ -2950,11 +2950,28 @@ FEE_Italy_Events.6.D: "Though the Italian wars raged and most states were caught
  FEE_Ottoman_Events.11.OPT1: "Wait! Stop! I'm the Sultan! You can't do this to m-"
  BM_Ottoman_puppet_sultan: "The Puppet Sultan"
 
+ FEE_Ottoman_Events.12.T: "The Grand Vizier Conspiracy"
+ FEE_Ottoman_Events.12.D: "The Sultans efforts to untangle the web of corruptive elements in the Enderun and Palace schools has led to the uncovering of a great conspiracy against the Sultan, orchestrated by the current Great Vizier no less. With the evidence standing clear, the Sultan has ordered his loyal Janissary Palace Guards to arrest the Great Vizier and for a new Great Vizier take his place. \n \nThough the corrupt families will object to these accusations, the rule of the Sultan have been cemented and the Enderun Pyramid purged of mismanagement."
+ FEE_Ottoman_Events.12.OPT1: "Arrest the Viziers, replace them and reform the Enderun!"
+ BM_Ottoman_reformed_enderun_pyramid: "Reformed Enderun Pyramid"
 
 
 
-
-
+ #OTTOMAN ECONOMIC DOWNTURN EVENTS 
+ FEE_Ottoman_Events.13.T: "Ottoman Economic Stagnation"
+ FEE_Ottoman_Events.13.D : "Following the conquest of the Byzantine Empires, the Anatolian Beyliks and the eventual banning of European access to the Spice Trade led to a period of Ottoman economic stability and prosperity. But in the late 16th century, when the Dutch, British and Iberian traders closed the old international trade routes through the Middle East following the ban, the prosperity and relevance of Ottoman trade has been steadily declining. Plagued by mismanagement, inflation, and Ottoman precious metal export, and the fall of wool prices in favor of cloth, much of the economic activity with the Europeans has led to an increasing trade imbalance. \n \nThe future of the economy, and even of the Empire as a whole lies in its ability to gain its relevance in the international market and decrease the trade imbalance with the Europeans."
+ FEE_Ottoman_Events.13.OPT1: "There's not much we can do about this..."
+ FEE_Ottoman_Events.13.OPT2: "Mint more coins to try and lessen the impact!"
+ FEE_Ottoman_Events.13.OPT3: "But trade is our main source of revenue..."
+ FEE_Ottoman_Events.13.OPT4: "Trade is our main source of revenue, there must be a way to salvage this!"
+ BM_fall_of_ottoman_trade_prices: "\nWe will lose §Y1.5§! Years of Income from §YIron§!, §YCopper§!, and §YWool§! provinces."
+ BM_Ottoman_stagnating_trade_modifier: "Stagnating Trade"
+ BM_fall_of_ottoman_trade_prices_lessened: "\nWe will only lose §Y1§! Years of Income from §YIron§!, §YCopper§!, and §YWool§! provinces."
+ BM_Ottoman_stagnating_trade_lessened_modifier: "Controlled Stagnating Trade"
+ BM_fall_of_ottoman_trade_prices_disastrous: "\nWe will disastrously lose §Y3§! Years of Income from §YIron§!, §YCopper§!, and §YWool§! provinces."
+ BM_Ottoman_stagnating_trade_plummet_modifier: "Trade Plummet"
+ BM_fall_of_ottoman_trade_prices_disastfix: "\nWe will only lose §Y2.5§! Years of Income from §YIron§!, §YCopper§!, and §YWool§! provinces."
+ BM_Ottoman_stagnating_trade_disastfix_modifier: "Controlled Trade Plummet"
 
  ##### Persia Events #####  ##### Persia Events #####  ##### Persia Events #####
  ##### Persia Events #####  ##### Persia Events #####  ##### Persia Events #####

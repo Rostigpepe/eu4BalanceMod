@@ -590,6 +590,31 @@ country_event = {
 			name = tur_shattered_the_janissaries
 			duration = -1
 		}
+		if = {
+			limit = {
+				has_country_modifier = BM_Ottoman_corrupt_devshirme1
+			}
+			remove_country_modifier = BM_Ottoman_corrupt_devshirme1
+		}
+		else_if = {
+			limit = { 
+				has_country_modifier = BM_Ottoman_corrupt_devshirme2
+			}
+			remove_country_modifier = BM_Ottoman_corrupt_devshirme2
+		}
+		else_if = {
+			limit = { 
+				has_country_modifier = BM_Ottoman_corrupt_devshirme3
+			}
+			remove_country_modifier = BM_Ottoman_corrupt_devshirme3
+		}
+		else_if = {
+			limit = { 
+				has_country_modifier = BM_Ottoman_corrupt_devshirme4
+			}
+			remove_country_modifier = BM_Ottoman_corrupt_devshirme4
+		}
+		clr_country_flag = BM_Ottoman_corrupt_devshirme_flag
 		add_mil_power = 200
 		add_stability_or_adm_power = yes
 	}

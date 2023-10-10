@@ -199,7 +199,7 @@ country_event = {
 
 	trigger = {
 		tag = TUR
-		is_year = 1480
+		is_year = 1470
 		is_at_war = no
 	}
 
@@ -501,6 +501,328 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = FEE_Ottoman_Events.14 # Powerful Pasha makes deal with Janissary, grants more autonomy to non-turkish ethnicities
+	title = FEE_Ottoman_Events.14.T #
+	desc = FEE_Ottoman_Events.14.D 
+	picture = muslimgfx_COURT_eventPicture
+
+	trigger = {
+		has_country_flag = BM_Ottoman_corrupt_devshirme_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			is_at_war = no
+			factor = 0.9
+		}
+
+		modifier = {
+			calc_true_if = {
+				any_owned_province = {
+					has_pasha = yes
+				}
+				amount = 30
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			average_home_autonomy = 10
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				has_owner_accepted_culture = no
+				NOT = { culture = root }
+				is_overseas = no
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				has_owner_religion = no
+				NOT = { culture = root }
+				is_overseas = no
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			any_owned_province = {
+				nationalism = 10
+			}
+			factor = 0.9
+		}
+
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT1 # So? He's doing a good job for the locals
+
+		random_owned_area = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = no
+					has_owner_religion = no
+					nationalism = 10
+					unrest = 5
+					has_pasha = yes
+				}
+			}
+			add_nationalism = -5
+			add_unrest = -5
+			add_local_autonomy = 20
+			add_province_modifier = {
+				name = BM_pasha_janissary_excemptions
+				duration = 3650
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT2 # Replace the Pasha and retract those excemptions!
+
+
+		trigger = {
+			OR = {
+				ruler_has_personality = strict_personality
+				ruler_has_personality = cruel_personality
+				ruler_has_personality = malevolent_personality
+				has_idea_group = quantity_ideas
+			}
+		}
+
+		random_owned_area = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = no
+					has_owner_religion = no
+					nationalism = 10
+					unrest = 5
+					has_pasha = yes
+				}
+			}
+			add_nationalism = 5
+			add_unrest = 5
+			add_local_autonomy = -10
+		}
+		add_yearly_manpower = 0.05
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT3 # Not if we do it first
+
+		random_owned_area = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = no
+					has_owner_religion = no
+					nationalism = 10
+					unrest = 5
+					has_pasha = yes
+				}
+			}
+			add_nationalism = -10
+			add_unrest = -10
+			add_local_autonomy = 10
+			add_province_modifier = {
+				name = BM_pasha_janissary_excemptions_upgraded
+				duration = 7300
+			}
+		}
+		
+
+		random_owned_area = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = no
+					has_owner_religion = no
+					nationalism = 10
+					unrest = 5
+					has_pasha = yes
+				}
+			}
+			add_nationalism = -10
+			add_unrest = -10
+			add_local_autonomy = 10
+			add_province_modifier = {
+				name = BM_pasha_janissary_excemptions_upgraded
+				duration = 7300
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT4 # Is there a way to compromise on this?
+
+		trigger = {
+			OR = {
+				ruler_has_personality = charismatic_negotiator_personality
+				ruler_has_personality = fierce_negotiator_personality
+				ruler_has_personality = silver_tongue_personality
+				has_idea_group = diplomatic_ideas
+			}
+		}
+
+		random_owned_area = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = no
+					has_owner_religion = no
+					nationalism = 10
+					unrest = 5
+					has_pasha = yes
+				}
+			}
+			add_nationalism = -7
+			add_unrest = -7
+			add_local_autonomy = 15
+			add_province_modifier = {
+				name = BM_pasha_janissary_excemptions
+				duration = 5475
+			}
+		}
+		add_yearly_manpower = 0.07
+
+	}
+}
+
+country_event = {
+	id = FEE_Ottoman_Events.15 # Janissary army wants to disband
+	title = FEE_Ottoman_Events.15.T #
+	desc = FEE_Ottoman_Events.15.D 
+	picture = muslimgfx_MILITARY_CAMP_eventPicture
+
+	trigger = {
+		has_country_flag = BM_Ottoman_corrupt_devshirme_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			num_of_estate_privileges = {
+				estate = estate_janissaries
+				value = 5
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			estate_influence = {
+				estate = estate_janissaries
+				influence = 60
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_janissaries
+					loyalty = 50
+				}
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			estate_territory = {
+				estate = estate_janissaries
+				territory = 20
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_janissaries = 60
+			factor = 0.9
+		}
+
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT1 # This is a deal we can't refuse ...
+
+		random_owned_province = {
+			limit = {
+				infantry_in_province = 20
+				infantry_in_province = TUR
+			}
+			kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 15
+			}
+
+		}
+
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 5
+		}
+
+		add_yearly_manpower = -0.15
+		add_prestige = -20
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT2 # Refuse the deal!
+
+		random_owned_province = {
+			limit = {
+				infantry_in_province = 20
+				infantry_in_province = TUR
+			}
+			kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 10
+			}
+			spawn_rebels = {
+				type = janissary_rebels
+				size = 2
+			}
+
+		}
+
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = -10
+		}
+
+		add_yearly_manpower = -0.1
+		add_prestige = -15
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.14.OPT3 # Increase their pay
+
+		add_years_of_income = -0.15
+		add_prestige = -10
+
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 5
+		}
+	}
+}
 
 country_event = {
 	id = FEE_Ottoman_Events.9 # Malaise in the Enderun Schools
@@ -829,7 +1151,7 @@ country_event = {
 	id = FEE_Ottoman_Events.12 # The-Almost-Coup
 	title = FEE_Ottoman_Events.12.T # You managed to stop the coup! Horrayyy!!
 	desc = FEE_Ottoman_Events.12.D # Good job :)
-	picture = JANISSARY_ESTATE_UPSET_eventPicture
+	picture = muslimgfx_GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -850,11 +1172,11 @@ country_event = {
 
 
 	option = {
-		name = FEE_Ottoman_Events.12.OPT1 
+		name = FEE_Ottoman_Events.12.OPT1 # Arrest the Viziers, replace them and reform the Enderun
 
 		add_country_modifier = {
 			name = BM_Ottoman_reformed_enderun_pyramid
-			duration = -1
+			duration = 18250
 		}
 
 		random_owned_province = {
@@ -876,5 +1198,302 @@ country_event = {
 			}
 		}
 
+	}
+}
+
+
+
+# Economic problems 1 
+country_event = {
+	id = FEE_Ottoman_Events.13 #Bad economy
+	title = FEE_Ottoman_Events.13.T # International Trade Waning
+	desc = FEE_Ottoman_Events.13.D 
+	picture = muslimgfx_OVEREXTENSION_eventPicture
+
+	trigger = {
+		is_year = 1500
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			inflation = 5
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_loans = 5
+			factor = 0.9
+		}
+
+		modifier = {
+			inflation = 8
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_loans = 8
+			factor = 0.9
+		}
+
+		modifier = {
+			inflation = 10
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_loans = 10
+			factor = 0.9
+		}
+
+		modifier = {
+			inflation = 15
+			factor = 0.9
+		}
+
+		modifier = {
+			num_of_loans = 15
+			factor = 0.9
+		}
+
+		modifier = {
+			is_bankrupt = yes
+			factor = 0.7
+		}
+
+		modifier = {
+			OR = {
+				any_rival_country = {
+					trade_embargoing = TUR
+				}
+				any_enemy_country = {
+					trade_embargoing = TUR
+				}
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			NOT = {
+				home_trade_node = { 
+					highest_value_trade_node = yes
+				}
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			root = {
+				in_golden_age = yes
+			}
+			factor = 1.1
+		}
+
+		modifier = {
+			root = {
+				has_institution = global_trade
+			}
+			factor = 1.1
+		}
+
+		modifier = {
+			root = {
+				innovativeness = 50
+			}
+			factor = 1.1
+		}
+
+		modifier = {
+			root = {
+				is_in_deficit = yes
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+
+			factor = 0.9
+		}
+
+	}
+
+	immediate = {
+		set_country_flag = BM_Ottoman_stagnating_economy
+		every_owned_province = {
+			limit = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = wool
+				}
+			}
+			add_devastation = 5
+			if = {
+				limit = { 
+					base_production = 2
+				}
+				add_base_production = -1
+			}
+			else_if = {
+				limit = { 
+					base_manpower = 2
+				}
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = { 
+					base_tax = 2
+				}
+				add_base_tax = -1
+			}
+			else = {
+				add_local_autonomy = 20
+			}
+		}
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.13.OPT1 # there's not much we can do
+
+		trigger = {
+			NOT = {
+				trade_income_percentage = 0.4
+			}
+			NOT = {
+				OR = {
+					has_idea_group = trade_ideas
+					has_idea_group = economic_ideas
+				}
+			}
+		}
+
+		add_years_of_owned_provinces_production_income = {
+			years = -1.5
+			trigger = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = wool
+				}
+			}
+			custom_tooltip = BM_fall_of_ottoman_trade_prices
+		}
+		home_trade_node_effect_scope = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 36500
+				power = -30
+				key = BM_Ottoman_stagnating_trade_modifier
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.13.OPT2 # Lessen the impact by minting more coins!
+
+		trigger = {
+			NOT = {
+				trade_income_percentage = 0.4
+			}
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
+
+		add_years_of_owned_provinces_production_income = {
+			years = -1
+			trigger = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = wool
+				}
+			}
+			custom_tooltip = BM_fall_of_ottoman_trade_prices_lessened
+		}
+		add_inflation_scaled_to_trade = {
+			inflation = 5
+		}
+		home_trade_node_effect_scope = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 36500
+				power = -25
+				key = BM_Ottoman_stagnating_trade_lessened_modifier
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.13.OPT3 # Disastrous plummet
+
+		trigger = {
+			trade_income_percentage = 0.4
+			NOT = {
+				OR = {
+					has_idea_group = trade_ideas
+					has_idea_group = economic_ideas
+				}
+			}
+		}
+
+		add_years_of_owned_provinces_production_income = {
+			years = -3
+			trigger = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = wool
+				}
+			}
+			custom_tooltip = BM_fall_of_ottoman_trade_prices_disastrous
+		}
+		home_trade_node_effect_scope = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 36500
+				power = -50
+				key = BM_Ottoman_stagnating_trade_plummet_modifier
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.13.OPT4 # Disastrous plummet + Lessen
+
+		trigger = {
+			trade_income_percentage = 0.4
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
+
+		add_years_of_owned_provinces_production_income = {
+			years = -2.5
+			trigger = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = wool
+				}
+			}
+			custom_tooltip = BM_fall_of_ottoman_trade_prices_disastfix
+		}
+		add_inflation_scaled_to_trade = {
+			inflation = 8
+		}
+		home_trade_node_effect_scope = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 36500
+				power = -40
+				key = BM_Ottoman_stagnating_trade_disastfix_modifier
+			}
+		}
 	}
 }
