@@ -952,11 +952,11 @@ FRA_ideas_2 = {
 TUR_ideas = {
 	start = {
 		tolerance_heathen = 3
-		discipline = 0.05
+		prestige_from_land = 0.25
 	}
 	
 	bonus = {
-		advisor_pool = 1
+		discipline = 0.05
 	}
 
 	trigger = {
@@ -965,8 +965,7 @@ TUR_ideas = {
 	free = yes		#will be added at load.
 	
 	millets = {
-		num_accepted_cultures = 1
-		core_creation = -0.2
+		core_creation = -0.15
 	}
 	timariot_system = {
 		cavalry_power = 0.15
@@ -979,7 +978,51 @@ TUR_ideas = {
 		reform_progress_growth = 0.1
 	}
 	autonmous_pashas = {
-		global_unrest = -1
+		global_unrest = -0.5
+		vassal_income = 0.25
+	}
+	tulip_period = {
+		trade_efficiency = 0.1
+	}
+	imperial_school_of_naval_engineering = {
+		navy_tradition = 0.5
+		global_ship_cost = -0.1
+	}
+}
+
+
+TUR_ideas1 = {
+	start = {
+		tolerance_heathen = 3
+		prestige_from_land = 0.25
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = TUR
+		has_country_flag = BM_Ottoman_nerf_timar_idea
+	}
+	free = yes		#will be added at load.
+	
+	millets = {
+		core_creation = -0.15
+	}
+	devshirme_system = {
+		janissaries_privilege_slots = 1
+		janissary_cost_modifier = -0.33
+	}
+	ghazi = {
+		manpower_recovery_speed = 0.15
+	}
+	lawcode_of_suleiman_01 = {
+		global_tax_modifier = 0.1
+		reform_progress_growth = 0.1
+	}
+	autonmous_pashas = {
+		global_unrest = -0.5
 		vassal_income = 0.25
 	}		
 	tulip_period = {

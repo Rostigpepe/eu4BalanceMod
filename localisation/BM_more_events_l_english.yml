@@ -2903,6 +2903,57 @@ FEE_Italy_Events.6.D: "Though the Italian wars raged and most states were caught
  BM_OTTOMANS_greek_rebellion: "Greek Rebellion"
  BM_OTTOMANS_greek_rebellion: "The Greeks are in rebellion."
 
+ FEE_Ottoman_Events.6.T: "The Rise of the Devshirme"
+ FEE_Ottoman_Events.6.D: "THe rivaling factions within the Devshirme and the Timariot system are at odds and vying for support in our realm. The Devshirme being represented by the Janissary and working as an elite army corps and civil servants are demanding that the Timariot system should be replaced in its entirety. The Timariots, represented by the Sipahi soldiers that used to make up the bulk of the Ottoman army in the pre-14th century, are clinging on to their position as a heavy cavalry focused army. It is now high time to decide which one will ultimately serve us better."
+ FEE_Ottoman_Events.6.OPT1: "The Timariot system was getting outdated anyway..."
+ FEE_Ottoman_Events.6.OPT2: "No! Invest further into the Timars."
+ BM_Ottoman_nerf_timar_idea_TT: "\nOur national idea '§YTimar System§!' will be changed to favor the Devshirme"
+
+ FEE_Ottoman_Events.7.T: "Corruption of the Devshirme"
+ FEE_Ottoman_Events.7.D: "Since the adoption of the Devshirme it has served us very well, granting us access to able-bodied and loyal soldiers as well as governmental administrators, eunuchs and other civil servants. The diversity of the Devshirme has also served as a unifying factor for our Empire. The various ethnicities of our Empire see that our Sultan is Turkish but his Viziers are Greek, Albanian, Bulgarian. This has prevented a hereditary aristocracy from forming outside of the ruling dynasty. \n \nBut as these various ethnicities gain more and more sway in the dictations in the administration of the Empire as well as the recruitment systems in place, a aristocracy of the Viziers are forming. We must tread carefully in the future to make sure the Devshirme doesn't gain further influence than the Sultan himself."
+ FEE_Ottoman_Events.7.OPT1: "Maybe granting them so much autonomy was a bad idea..."
+ BM_Ottoman_corrupt_devshirme1: "Extremely Corrupt Devshirme"
+ BM_Ottoman_corrupt_devshirme2: "Very Corrupt Devshirme"
+ BM_Ottoman_corrupt_devshirme3: "Corrupt Devshirme"
+ BM_Ottoman_corrupt_devshirme4: "Slightly Corrupt Devshirme"
+
+
+ FEE_Ottoman_Events.8.T: "Janissaries Settling Down"
+ FEE_Ottoman_Events.8.D: "As the Timariot System was replaced by the Devshirme, much of the old Timariot estates owned by the Sipahi noblemen were seized and appropriated by the Devshirme. As years have gone by these estates have been granted to loyal Janissaries as rewards for their servitude- becoming, for all practical purposes, private property- depriving the state of their military services as well as the revenue these estates could've produced would they have been appropriated by the Sultan directly. \n \nNow these estates are often turning into large plantation houses or farming estates, attracting many of our Janissary soldiers to simply lay down their arms in favor of working the fields."
+ FEE_Ottoman_Events.8.OPT1: "They have served us dutifully and deserve to settle down..."
+ BM_devshirme_farming: "Janissary Farm-Estate"
+ FEE_Ottoman_Events.8.OPT2: "Stop them!"
+ FEE_Ottoman_Events.8.OPT3: "Remind them of their duties!"
+ FEE_Ottoman_Events.8.OPT4: "Of course they can farm, we'd just prefer it if they farmed over there"
+ BM_devshirme_farming_upgraded: "State-Guided Janissary Farm-Estate"
+
+ FEE_Ottoman_Events.9.T: "Nepotism in the Enderun Schools"
+ FEE_Ottoman_Events.9.D: "The implementation of the Devshirme System has granted much autonomy to the Viziers to organise the Endurun and Palace Schools. But now that many of the old Janissaires who graduated from the Endurun or Palace schools now themselves are Viziers they are becoming more and more lenient to give into bribes, favoring certain families and ethnicities over others, and some families have resorted to selling their sons into slavery instead of sending them off to become Janissary soldiers. \n \nWe must deal with this corruption and nepotism very carefully or the §RStability§! of the could be ruptured."
+ FEE_Ottoman_Events.9.OPT1: "So? Objecting might ruin my reputation with the families!"
+ BM_Ottoman_corrupt_Enderun_Schools: "Corrupt Enderun Schools"
+ FEE_Ottoman_Events.9.OPT2: "Increase our funds to the Palace Schools to stop this corruption at once!"
+ FEE_Ottoman_Events.9.OPT3: "Corruption in the Enderun Schools? We should investigate this..."
+
+ FEE_Ottoman_Events.10.T: "Corruption in the Palace Schools"
+ FEE_Ottoman_Events.10.D: "Despite our efforts to combat the corruption that is brewing in the Endurun schools, we have to the shock of our Sultan discovered that many of these families who practice nepotism and corruption have been in contact or related to the eunuchs at the Palace schools for a long time. Our inaction to deal with this growing problem is posing a serious issue for the Sultans court and we must act decisively and quickly if we are to deal with it §Rin time§!..."
+ FEE_Ottoman_Events.10.OPT1: "Ok, and? The Palace Schools are run by the Eunuchs and they are integral to keeping the system working!"
+ BM_Ottoman_corrupt_Palace_Schools: "Corrupt Palace Schools"
+ FEE_Ottoman_Events.10.OPT2: "The Palace Schools are corrupt too? Order the Viziers to deal with this at once!"
+ FEE_Ottoman_Events.10.OPT3: "Corruption here too? There must be more to this..."
+
+ FEE_Ottoman_Events.11.T: "Corruption of the Viziers"
+ FEE_Ottoman_Events.11.D: "As the Ottoman Empires stability has wained, much of the power has been transfered over to the Viziers and Grand Viziers to help with the administration. However, this has come to the direct detriment of the Sultans power and authority. Our current Grand Vizier it seems have been creating a network of families and powerful figures in the Sultans court rivalin that of the Sultan himself. While the Sultan may be the head of state in the Ottoman Empire, but the Grand Vizier now overshadows much of the decision-making and authority of the Sultan."
+ BM_Ottoman_corrupt_viziers: "Corrupt Viziers"
+
+ FEE_Ottoman_Events.11.T: "The Puppet-Sultan"
+ FEE_Ottoman_Events.11.D: "As the Sultan signs yet another order to send further resources to the offices of the Viziers, he reflects on where all this corruption and nepotism is coming from. The investigative reports from the inquiries, as well as the expensive fees for spies sent, into the Endurun Schools have proved fruitless and seemed to only fuel the rot inside the schools. Same story for the Palace Schools just across the street of the Royal Palace where many of the eunuchs, civil servants and future Viziers are being schooled. 'Where could it all be coming from?' \n \n The Sultan does not need to ask himself for long before the doors to his office quarters are opened. Suddenly, a band of Janissary soldiers followed by the Grand Vizier enters. 'Great Sultan, with the recent discovery of corruptive and disloyal elements in the Endurun and Palace schools, we are deeming the risks of an insurrection high and will be placing you in safety in the Palace towers.' \n \nThe Sultan is bewildered, how could it come to this? Who was this man to dictate the decisions of such matters? 'For your own safety Sultan, come with us now or we will be forced to take drastic measures.'"
+ FEE_Ottoman_Events.11.OPT1: "Wait! Stop! I'm the Sultan! You can't do this to m-"
+ BM_Ottoman_puppet_sultan: "The Puppet Sultan"
+
+
+
+
+
 
 
  ##### Persia Events #####  ##### Persia Events #####  ##### Persia Events #####

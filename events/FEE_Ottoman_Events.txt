@@ -183,3 +183,698 @@ country_event = {
 		add_mil_power = 25
 	}
 }
+
+
+
+#Fall of the Ottoman Empire, further nerfing events
+
+# End of the Timar System, Devshirme instead
+country_event = {
+	id = FEE_Ottoman_Events.6
+	title = FEE_Ottoman_Events.6.T
+	desc = FEE_Ottoman_Events.6.D
+	picture = muslimgfx_HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		is_year = 1480
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.3
+			estate_influence = {
+				estate = estate_janissaries
+				influence = 60
+			}
+		}
+
+		modifier = {
+			factor = 0.3
+			estate_loyalty = {
+				estate = estate_janissaries
+				loyalty = 60
+			}
+		}
+
+		modifier = {
+			factor = 0.3
+			num_of_estate_privileges = {
+				estate = estate_janissaries
+				value = 5
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = BM_decline_of_ottoman_empire
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.6.OPT1 # The Timar System was getting outdated anyways ...
+		
+		change_estate_land_share = {
+			estate = estate_janissaries
+			share = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -30
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+
+		custom_tooltip = BM_Ottoman_nerf_timar_idea_TT
+		hidden_effect = {
+			set_country_flag = BM_Ottoman_nerf_timar_idea  
+			swap_free_idea_group = yes 
+		}
+	}
+
+
+	option = { 
+		name = FEE_Ottoman_Events.6.OPT2 # No! Invest further into the Timars
+
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = -30
+		}
+		add_years_of_income = -0.5
+		random_owned_province = {
+			spawn_rebels = {
+				type = janissary_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = janissary_rebels
+				size = 1
+			}
+		}
+
+		add_country_modifier = {
+			name = BM_Ottoman_last_ride_timars
+			duration = 36500
+		}
+	}
+}
+
+# End of the Timar System, Devshirme instead 2
+country_event = {
+	id = FEE_Ottoman_Events.7
+	title = FEE_Ottoman_Events.7.T
+	desc = FEE_Ottoman_Events.7.D
+	picture = DEVSHIRME_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_nerf_timar_idea
+		tag = TUR
+		is_year = 1520
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.8
+			estate_influence = {
+				estate = estate_janissaries
+				influence = 60
+			}
+		}
+
+		modifier = {
+			factor = 0.8
+			estate_loyalty = {
+				estate = estate_janissaries
+				loyalty = 60
+			}
+		}
+
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+
+		modifier = {
+			factor = 0.8
+			num_of_estate_privileges = {
+				estate = estate_janissaries
+				value = 5
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = BM_Ottoman_corrupt_devshirme_flag
+		clr_country_flag = BM_Ottoman_nerf_timar_idea
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.7.OPT1 # Maybe granting them so much autonomy was a bad idea ...
+		add_government_power = { 
+			mechanic_type = ottoman_decadence_mechanic
+			power_type = ottoman_decadence
+			value = 5
+		}
+
+		add_stability = -1
+		add_country_modifier = {
+			name = BM_Ottoman_corrupt_devshirme1
+			duration = -1
+		}
+	}
+}
+
+# Devshirme Corruption Events: 
+country_event = {
+	id = FEE_Ottoman_Events.8 # Janissaries prefer farming than soldiering
+	title = FEE_Ottoman_Events.8.T # Janissaries Settling Down
+	desc = FEE_Ottoman_Events.8.D # Janissaries appropriating Timar estates for farming + private property
+	picture = muslimgfx_FARMING_eventPicture
+
+	trigger = {
+		has_country_flag = BM_Ottoman_corrupt_devshirme_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			is_at_war = no
+			factor = 0.9
+		}
+
+		modifier = {
+			manpower_percentage = 0.75
+			factor = 0.8
+		}
+
+		modifier = {
+			num_of_janissaries = 40
+			factor = 0.7
+		}
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.8.OPT1 # We can't do much about it ...
+
+		random_owned_province = {
+			add_base_tax = 2
+			add_local_autonomy = 10
+			add_province_modifier = {
+				name = BM_devshirme_farming
+				duration = 7300
+			}
+		}
+		add_yearly_manpower = -0.3
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.8.OPT2 # Stop them!
+
+		trigger = {
+			OR = {
+				ruler_has_personality = strict_personality
+				ruler_has_personality = cruel_personality
+				ruler_has_personality = inspiring_leader_personality
+				has_idea_group = court_ideas
+			}
+		}
+
+		add_yearly_manpower = 0.1
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = -5
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+					has_building = soldier_households
+				}
+			}
+			add_base_manpower = 2
+		}
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.8.OPT3 # Remind them of their duties!
+
+		trigger = {
+			OR = {
+				ruler_has_personality = charismatic_negotiator_personality
+				ruler_has_personality = martial_educator_personality
+				ruler_has_personality = silver_tongue_personality
+				has_idea_group = diplomatic_ideas
+			}
+		}
+		add_yearly_manpower = 0.1
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+					has_building = soldier_households
+				}
+			}
+			add_base_manpower = 1
+			add_base_production = 1
+		}
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.8.OPT4 # Of course they can farm, we'd just prefer it over there...
+
+		trigger = {
+			OR = {
+				ruler_has_personality = entrepreneur_personality
+				ruler_has_personality = industrious_personality
+				ruler_has_personality = architectural_visionary_personality
+				has_idea_group = economic_ideas
+			}
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_terrain = farmlands
+					has_terrain = grasslands
+					has_terrain = drylands
+				}
+				OR = {
+					trade_goods = livestock
+					trade_goods = fish
+					trade_goods = wine
+					trade_goods = cotton
+					trade_goods = cloth
+				}
+			}
+			add_base_tax = 2
+			add_local_autonomy = 10
+			add_province_modifier = {
+				name = BM_devshirme_farming_upgraded
+				duration = 7300
+			}
+		}
+		add_yearly_manpower = -0.3
+
+	}
+}
+
+
+country_event = {
+	id = FEE_Ottoman_Events.9 # Malaise in the Enderun Schools
+	title = FEE_Ottoman_Events.9.T # Nepotism in the Enderun Schools
+	desc = FEE_Ottoman_Events.9.D # Corruption, Nepotism, rich parents buying off their own sons or outright selling them to slavers instead
+	picture = muslimgfx_CORRUPTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_corrupt_devshirme_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			estate_influence = {
+				estate = estate_janissaries
+				influence = 70
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			estate_influence = {
+				estate = estate_dhimmi
+				influence = 70
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			estate_influence = {
+				estate = estate_nobles
+				influence = 70
+			}
+			factor = 0.9
+		}
+
+		modifier = {
+			yearly_corruption_increase = 0.1
+			factor = 0.5
+		}
+
+		modifier = {
+			corruption = 1
+			factor = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = BM_Ottoman_corrupt_Enderun_Schools_flag
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.9.OPT1 # So? Objecting might ruin my reputation with the families! (Leads to corruption in the Palace Schools)
+
+		add_country_modifier = {
+			name = BM_Ottoman_corrupt_Enderun_Schools
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		set_country_flag = BM_Ottoman_very_corrupt_palace_schools_flag
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.9.OPT2 # Increase our funds to stop this corruption at once! (Leads to further corruption in the Palace Schools)
+
+		add_corruption = -1
+		add_years_of_income = -0.25
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.9.OPT3 # Corruption in the Enderun Schools? We should investigate this... (Leads to stopping corruption in the Palace Schools)
+		trigger = {
+			OR = {
+				has_idea_group = spy_ideas
+				has_idea_group = court_ideas
+				ruler_has_personality = intricate_web_weaver_personality
+				ruler_has_personality = incorruptible_personality
+				ruler_has_personality = secretive_personality
+			}
+		}
+		set_country_flag = BM_Ottoman_incorrupt_palace_schools_flag
+		add_years_of_income = -0.15
+	}
+}
+
+
+
+
+
+country_event = {
+	id = FEE_Ottoman_Events.10 # Malaise of the Palace Schools
+	title = FEE_Ottoman_Events.10.T # Corruption in the Palace Schools
+	desc = FEE_Ottoman_Events.10.D # Corruption, Nepotism, and total degeneracy in the Palace Schools
+	picture = muslimgfx_BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_corrupt_Enderun_Schools_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+
+
+	immediate = {
+		clr_country_flag = BM_Ottoman_corrupt_Enderun_Schools_flag
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.10.OPT1 # Ok, and? The Palace Schools are run by the Eunuchs and we can't be bothering them! (Leads to Devastating Corruption of Viziers)
+		trigger = {
+			has_country_flag = BM_Ottoman_very_corrupt_palace_schools_flag
+		}
+		remove_country_modifier = BM_Ottoman_corrupt_Enderun_Schools
+		add_country_modifier = {
+			name = BM_Ottoman_corrupt_Palace_Schools
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		set_country_flag = BM_Ottoman_very_corrupt_viziers_flag
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.10.OPT2 # The Palace Schools are corrupt too? Send more resources to the Viziers! (Will lead to Puppet-Sultan)
+		trigger = {
+			has_country_flag = BM_Ottoman_very_corrupt_palace_schools_flag
+		}
+		add_corruption = -2
+		add_years_of_income = -0.35
+		remove_country_modifier = BM_Ottoman_corrupt_Enderun_Schools
+		set_country_flag = BM_Ottoman_the_puppet_sultan
+
+	}
+
+	option = {
+		name = FEE_Ottoman_Events.10.OPT3 # Corruption here too? There must be more to this... (Leads to stopping the coup)
+
+		set_country_flag = BM_Ottoman_stopping_coup
+
+		trigger = {
+			has_country_flag = BM_Ottoman_incorrupt_palace_schools_flag
+		}
+		clr_country_flag = BM_Ottoman_incorrupt_palace_schools_flag
+		set_country_flag = BM_Ottoman_stopping_and_reforming_enderun_pyramid
+		add_years_of_income = -0.25
+	}
+}
+
+
+
+country_event = {
+	id = FEE_Ottoman_Events.11 # Malaise of the Viziers
+	title = FEE_Ottoman_Events.11.T # Corruption of the Viziers
+	desc = FEE_Ottoman_Events.11.D # Corruption, Nepotism, and total degeneracy of the Viziers
+	picture = JANISSARY_ESTATE_UPSET_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_very_corrupt_viziers_flag
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+
+	immediate = {
+		clr_country_flag = BM_Ottoman_very_corrupt_viziers_flag
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.11.OPT1 # My own court? I am powerless
+
+		remove_country_modifier = BM_Ottoman_corrupt_Palace_Schools
+		add_ruler_modifier = {
+			name = BM_Ottoman_corrupt_viziers
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+
+	}
+}
+
+
+country_event = {
+	id = FEE_Ottoman_Events.11 # The Puppet Sultan
+	title = FEE_Ottoman_Events.11.T # Coup of the Sultan
+	desc = FEE_Ottoman_Events.11.D # Get fucked lol xd
+	picture = JANISSARY_ESTATE_UPSET_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_the_puppet_sultan
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+
+	immediate = {
+		clr_country_flag = BM_Ottoman_the_puppet_sultan
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.11.OPT1 # Wait! Stop! I'm the Sultan! You can't do this to m-
+
+		hidden_effect = {
+			add_stability = -3
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					win = yes
+				}
+			}	
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					win = yes
+				}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+					win = yes
+				}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+					win = yes
+				}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+					win = yes
+				}
+			}
+			kill_ruler = yes
+			TUR = {
+				kill_heir = { allow_new_heir = no }
+			}
+			define_ruler = {
+				name = "Grand Vizier Ibrahim Pasha"
+				adm = 1
+    			dip = 1
+   		 		mil = 1
+    			age = 30
+    			claim = 20
+				culture = ROOT
+				religion = ROOT
+			}
+			add_ruler_modifier = {
+				name = BM_Ottoman_puppet_sultan
+				duration = -1
+			}
+
+		}
+	}
+}
+
+
+
+country_event = {
+	id = FEE_Ottoman_Events.12 # The-Almost-Coup
+	title = FEE_Ottoman_Events.12.T # You managed to stop the coup! Horrayyy!!
+	desc = FEE_Ottoman_Events.12.D # Good job :)
+	picture = JANISSARY_ESTATE_UPSET_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = BM_Ottoman_stopping_and_reforming_enderun_pyramid
+		tag = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+
+	immediate = {
+		clr_country_flag = BM_Ottoman_stopping_and_reforming_enderun_pyramid
+	}
+
+
+	option = {
+		name = FEE_Ottoman_Events.12.OPT1 
+
+		add_country_modifier = {
+			name = BM_Ottoman_reformed_enderun_pyramid
+			duration = -1
+		}
+
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+
+	}
+}
