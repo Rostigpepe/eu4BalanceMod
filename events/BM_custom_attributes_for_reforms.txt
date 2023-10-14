@@ -1007,6 +1007,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 1
@@ -1023,6 +1024,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 2
@@ -1039,6 +1041,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 3
@@ -1055,6 +1058,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 4
@@ -1071,6 +1075,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 5
@@ -1096,6 +1101,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 1
@@ -1110,6 +1116,7 @@ country_event = {
 								culture_group = baltic
 								primary_culture = estonian
 								primary_culture = prussian
+								culture_group = carpathian
 						}
 						}
 						amount = 2
@@ -1136,6 +1143,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 2
@@ -1150,6 +1158,7 @@ country_event = {
 								culture_group = baltic
 								primary_culture = estonian
 								primary_culture = prussian
+								culture_group = carpathian
 							}
 						}
 						amount = 3
@@ -1176,6 +1185,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 3
@@ -1190,6 +1200,7 @@ country_event = {
 								culture_group = baltic
 								primary_culture = estonian
 								primary_culture = prussian
+								culture_group = carpathian
 							}
 						}
 						amount = 4
@@ -1210,13 +1221,13 @@ country_event = {
 				calc_true_if = {
 					all_subject_country = {
 						OR = {
-							primary_culture = bedouin_arabic
-							primary_culture = mahri_culture
-							primary_culture = hejazi_culture
-							primary_culture = omani_culture
-							primary_culture = yemeni_culture
-							primary_culture = gulf_arabic
-							primary_culture = al_iraqiya_arabic
+							culture_group = west_slavic
+							culture_group = carpathian
+							culture_group = east_slavic
+							culture_group = baltic
+							primary_culture = estonian
+							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 4
@@ -1231,6 +1242,7 @@ country_event = {
 								culture_group = baltic
 								primary_culture = estonian
 								primary_culture = prussian
+								culture_group = carpathian
 							}
 						}
 						amount = 5
@@ -1257,6 +1269,7 @@ country_event = {
 							culture_group = baltic
 							primary_culture = estonian
 							primary_culture = prussian
+							culture_group = carpathian
 						}
 					}
 					amount = 5

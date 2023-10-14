@@ -692,3 +692,14 @@ eic_recruit_redcoats = {
 	is_marine_modifier = yes
 }
 
+QOM_bid_for_the_timurid_throne = {
+	province_warscore_cost = -0.1
+	land_attrition = -0.25
+	land_morale = 0.05
+}
+
+QOM_bid_for_the_persian_throne = {
+	province_warscore_cost = -0.1
+	land_attrition = -0.25
+	land_morale = 0.05
+}

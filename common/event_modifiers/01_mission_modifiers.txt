@@ -9948,7 +9948,7 @@ pru_rewrite_military_manual_modifier = {
 #Iberia
 
 spa_reformed_tercio_modifier = {	
-	drill_gain_modifier = 0.33
+	shock_damage = 0.1
 	reinforce_speed = 0.25
 	is_tercio_modifier = yes 
 }
@@ -10149,10 +10149,9 @@ por_reform_navy_1_modifier = {
 }
 
 spa_universal_empire_modifier = {
-	imperial_authority_value = 0.1
-	all_power_cost = -0.05
-	years_to_integrate_personal_union = -10
-	diplomatic_reputation = 1
+	imperial_authority_value = 0.15
+	years_to_integrate_personal_union = -15
+	diplomatic_reputation = 3
 }
 fra_unification_movement_modifier = {	
 	local_warscore_cost_modifier = -0.33

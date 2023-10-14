@@ -80,7 +80,6 @@ monarch_names = {
 }
 
 leader_names = {
-	"de Alag" Amic d'Arag・Arbu駸 d'ﾀustria "de Ayerbe"
 	Balaguer Barcel・"de Belchite" Bergued・Bielsa "de Borja" "de Cabrera" Cajal Colom
 	Dom鈩ec d'Emp侔ies "Fern疣dez de Hijar" Ferrer "Folc de Cardona" Franco
 	Galindo "Gil de Biedma" Gisbert "de Guimer・ "de Gotor" "de Gurrea" d'Ixer Loaisa "de Luna"

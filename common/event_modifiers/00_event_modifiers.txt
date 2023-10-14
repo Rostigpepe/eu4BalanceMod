@@ -5114,9 +5114,9 @@ dan_dream_of_freedom = {
 }
 
 #Timurids
-
 shahrukhs_empire = {
 	reduced_liberty_desire = 50
+	monarch_lifespan = 0.5
 }
 
 # Argonese Decisions

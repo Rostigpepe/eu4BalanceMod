@@ -1008,7 +1008,7 @@ ottoman_government = {
 		unjustified_demands = -0.1
 		legitimacy = 0.5
 		max_absolutism = 5
-		governing_capacity = 150
+		governing_capacity = 50
 	}
 
 	removed_effect = {
@@ -5940,7 +5940,7 @@ strengthened_parliament_reform = {
 	}
 	modifiers = {
 		max_absolutism = -20
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 		parliament_backing_chance = 0.05
 	}
 	ai = {

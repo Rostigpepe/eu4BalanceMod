@@ -34,7 +34,7 @@ siege_engineer = {
 	monarch_power = MIL
 
 	# Bonus
-	artillery_level_modifier = 1
+	siege_ability = 0.33
 
 	allow_only_male = yes
 

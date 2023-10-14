@@ -2807,7 +2807,7 @@ country_event = {
 			name = "Urban"
 			culture = hungarian
 			religion = catholic
-			type = army_reformer
+			type = siege_engineer
 			skill = 2
 			cost_multiplier = 0.25
 		}

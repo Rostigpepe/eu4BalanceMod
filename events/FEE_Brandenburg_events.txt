@@ -36,7 +36,7 @@ country_event = {
 			factor = 1
 		}
 
-		#create_marriage = GLG
+		create_marriage = SIL
 		custom_tooltip = fee_brandenburg_barbara_von_hohenzollern_marriage_tt
 		set_country_flag = fee_brandenburg_barbara_von_hohenzollern_marriage
 	}
@@ -68,10 +68,10 @@ country_event = {
 			has_country_flag = fee_brandenburg_barbara_von_hohenzollern_marriage
 		}
 		2966 = {
-			owned_by = GLG
+			owned_by = SIL
 		}
 		4238 = {
-			owned_by = GLG
+			owned_by = SIL
 		}
 		NOT = {
 			OR = {
@@ -92,15 +92,15 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				4238 = {
+				2966 = {
 					owner = {
-						tag = GLG
+						tag = SIL
 					}
 				}
 			}
-			4238 = {
-				cede_province = SIL
-				add_core = SIL
+			2966 = {
+				cede_province = GLG
+				add_core = GLG
 			}
 			GLG = {
 				define_ruler = {
@@ -109,15 +109,9 @@ country_event = {
 					culture = saxon
 					female = yes
 				}
-				SIL = {
-					define_ruler = {
-						name = "Jan II 'The Mad'"
-						dynasty = PREV
-					}
-				}
 			}
 			BOH = {
-				vassalize = SIL
+				vassalize = GLG
 			}
 		}
 	}
@@ -468,14 +462,6 @@ country_event = {
 		}
 
 		create_marriage = BRA
-		add_opinion = {
-			who = BRA
-			modifier = fee_bra_barbara_marriage
-		}
-		reverse_add_opinion = {
-			who = BRA
-			modifier = fee_bra_barbara_marriage
-		}
 	}
 
 	option = {
@@ -491,14 +477,6 @@ country_event = {
 		}
 
 		create_marriage = BRA
-		add_opinion = {
-			who = BRA
-			modifier = fee_bra_barbara_marriage
-		}
-		reverse_add_opinion = {
-			who = BRA
-			modifier = fee_bra_barbara_marriage
-		}
 		custom_tooltip = fee_brandenburg_abandon_barbara_tt
 		set_country_flag = CE_tricked_barbara
 		country_event = {
@@ -705,12 +683,6 @@ country_event = {
 		add_years_of_income = -2.0
 		MAG = {
 			change_government_to_theocracy = yes
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = governments }
-				}
-				add_government_reform = dynastic_theocracy_reform
-			}
 			kill_heir = {}
 			define_ruler = {
 				name = "Albert"
@@ -2647,6 +2619,23 @@ country_event = {
 		else = {
 			add_adm_power = 25
 		}
+		if = {
+			limit = { 
+				2969 = { 
+					has_province_modifier = BRA_universita_viadrina_modifier
+				}
+			}
+			2969 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		else = {
+			2969 = {
+				add_base_tax = 1
+			}
+		}
 		change_religious_influence_equivalent_fee = { add = 5 }
 	}
 }
@@ -2683,14 +2672,21 @@ country_event = {
 		custom_tooltip = fee_brandenburg_bra_kus_release_tt
 		set_global_flag = fee_bran_kus_split_flag
 		hidden_effect = {
-			neumark_area = {
+			5003 = {
 				limit = {
 					owned_by = ROOT
 				}
 				cede_province = RUP
 				add_core = RUP
 			}
-			lusatia_area = {
+			49 = {
+				limit = {
+					owned_by = ROOT
+				}
+				cede_province = RUP
+				add_core = RUP
+			}
+			4747 = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -3130,7 +3126,7 @@ country_event = {
 		}
 		2969 = {
 			add_base_tax = 2
-			add_base_production= 1
+			add_base_production= 2
 		}
 	}
 	option = {
@@ -3424,7 +3420,7 @@ country_event = {
 	}
 }
 
-#Brandenburg #Pogrom of 1571, 1571
+#Brandenburg #Pogrom of 1571
 country_event = {
 	id = FEE_Brandenburg_Events.53
 	title = FEE_Brandenburg_Events.53.T
@@ -3732,7 +3728,7 @@ country_event = {
 			duration = 3650
 		}
 		capital_scope = {
-			add_base_manpower = 1
+			add_base_manpower = 2
 		}
 	}
 }
