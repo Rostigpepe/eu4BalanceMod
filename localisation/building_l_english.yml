@@ -1,5 +1,5 @@
 ﻿l_english:
-# events
+ # events
  building.1.t: "Building Removal"
  building.1.d: "Choose a building to remove from your every province. The buildings are grouped by their type. The event will call itself again unless you choose the Exit option."
  
@@ -11,6 +11,6 @@
  building.2.d: "Choose a manufactory to remove from your every province. The event will call the general version of itself again unless you choose the Exit option. A tip for State House enjoyers: alongside other trade goods, Trade Station uses Gems, Glass, Ceramics and Marble; Textile Manufactory uses Paper and Carpet."
  building.2.every_manufactory: "§REvery Manufactory§!"
 
-# decisions
+ # decisions
  delete_buildings_title: "Show Building Removal Menu"
  delete_buildings_desc: "An event will pop up that allows you to delete every building of a kind you choose in the option"

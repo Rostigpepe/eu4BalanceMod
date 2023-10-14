@@ -1,5 +1,4 @@
 ﻿l_english:
-
  pte_fleet_disarmament_desc: "@[From.GetTag] §Y[From.GetName]§! gains §R3§! war exhaustion and gets '§YNaval Disarmament Treaty§!' for §Y10 years§!, which has the following effects: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+20.0%§!"
  CB_ALLOWED_pte_fleet_disarmament: "Fleet Disarmament"
  PEACE_pte_fleet_disarmament: "Fleet Disarmament"

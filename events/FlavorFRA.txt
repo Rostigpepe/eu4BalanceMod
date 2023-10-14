@@ -1788,6 +1788,12 @@ country_event = {
 		177 = {
 			change_controller = FRA
 		}
+		4967 = {
+			change_controller = FRA
+		}
+		1879 = {
+			change_controller = FRA
+		}
 	}
 	option = {
 		name = "flavor_fra.7.b" #Unpopular but preserves the peace?
@@ -1841,6 +1847,14 @@ country_event = {
 		}
 		add_truce_with = FROM
 		177 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -50 }
+		}
+		4967 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -50 }
+		}
+		1879 = {
 			cede_province = FRA
 			hidden_effect = { add_local_autonomy = -50 }
 		}
