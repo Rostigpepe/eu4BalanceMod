@@ -1,11 +1,11 @@
 
-# TIER 3
+# TIER 2
 albertine_line_reform = {
-	icon = Gov_nobleman
+	icon = nobleman
 	allow_normal_conversion = yes
 	effect = {
-		add_corruption = -2
 		add_legitimacy = 20
+		add_imperial_influence = 10
 	}
 	potential = {
 		OR = {
@@ -20,9 +20,8 @@ albertine_line_reform = {
 		}
 	}
 	modifiers = {
-		legitimacy = 0.5
-		monthly_heir_claim_increase_modifier = 0.1
-		envoy_travel_time = -0.2
+		global_manpower_modifier = 0.1
+		imperial_authority_value = 0.05
 		nobles_influence_modifier = 0.05
 	}
 	ai = {
@@ -33,7 +32,7 @@ albertine_line_reform = {
 
 # TIER 4
 imperial_inquisition_reform = {
-	icon = Gov_clergyman
+	icon = clergyman
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -55,6 +54,59 @@ imperial_inquisition_reform = {
 	}
 	custom_attributes = {
 		enables_papal_delegation = yes #50 opinion with the pope
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+# TIER 6
+diverse_estates_of_austria = {
+	icon = imperial_nobility_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = diverse_estates_of_austria
+			primary_culture = austrian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = diverse_estates_of_austria
+			primary_culture = austrian
+		}
+	}
+	modifiers = {
+		diplomats = 1
+		all_estate_loyalty_equilibrium = 0.1
+		same_religion_advisor_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 7
+declaratio_ferdinandei = {
+	icon = paper_with_seal
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = declaratio_ferdinandei
+			primary_culture = austrian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = declaratio_ferdinandei
+			primary_culture = austrian
+		}
+	}
+	modifiers = {
+		imperial_authority = 0.1
+		religious_unity = 0.2
+		relation_with_heretics = 25
 	}
 	ai = {
 		factor = 100

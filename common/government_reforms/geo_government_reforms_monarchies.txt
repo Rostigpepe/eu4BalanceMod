@@ -292,7 +292,7 @@ gothic_principality_reform = {
 		cossacks_mechanic
 	}
 	modifiers = {
-		infantry_power = 0.2
-		land_maintenance_modifier = -0.25
+		infantry_power = 0.1
+		land_maintenance_modifier = -0.1
 	}
 }

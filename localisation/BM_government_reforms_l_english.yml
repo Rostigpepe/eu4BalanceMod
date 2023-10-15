@@ -91,11 +91,16 @@
  #AUSTRIA
  albertine_line_reform:0 "The Albertine Line"
  albertine_line_reform_desc:0 "As our family holds most of the Austrian Heartlands, we shall never have to look far for potential heirs or willing soldiers. Just as when the Albertine line died in 1457, we took over our cousin's crown, and our cousins are more then willing to continue carrying our banner should our strenght run short."
+
  imperial_inquisition_reform:0 "Imperial Inquisition"
  imperial_inquisition_reform_desc:0 "To fight the Heretical spread across the Australian Netherlands and the spread of Luther's vile teachings among the northern princes, We shall institute the Imperial Inquisition to expell these lost souls."
  mechanic_enables_papal_delegation_yes:0 "Papal Delegation: §G+50§! Opinion with the Papal States."
  BM_opinion_papal_delegation:0 "Papal Delegation"
 
+ diverse_estates_of_austria:0 "Diverse Estates of Austria"
+ diverse_estates_of_austria_desc:0 "Having to keep the Hungarian, German and Bohemian estates all loyal to the Austrian cause is a challenge. Our experience in juggling both the diplomatic battlefield that is foreign policy in the Holy Roman Empire as well as the internal politics of the Austrian family has left us with a rather experienced diplomatic corps."
+ declaratio_ferdinandei:0 "Declaratio Ferdinandei"
+ declaratio_ferdinandei_desc:0 "The principle known as Declaratio Ferdinandei (Ferdinand's Declaration), excempted knighs and some esteemed individuals from the cities that had converted to Protestantism in the 1520's from the requirement of religious uniformity. This allowed for a few mixed cities and towns where Catholics and Lutherans lived together in relative harmony. It also protected the authority of the princely families, the Imperial Knights and government officials to determine what religious uniformity meant in their territories allowing for various degrees of religious tolerance across the Austrian realm. Ferdinand inserted this as his last decree on his own authority."
 
 
  #COMMON REFORMS
@@ -125,3 +130,114 @@
  Polish_vassal_3: "Polish Vassal Cooperation"
  Polish_vassal_4: "Expanded Polish Vassal Cooperation"
  Polish_vassal_5: "Inter-Connected Polish Vassal Integration"
+
+ gothic_principality_reform:0 "Gothic Principality"
+ gothic_principality_reform_desc:0 "The princedom of Theodoria is the base of operations of the last Gothic bastion."
+
+
+ #Swedish Reforms
+ office_of_lord_regent: "Office of Lord Regent"
+ office_of_lord_regent_desc: "The Lord Regent was a position held to the head governor of the highly autonomous Kingdom of Sweden. Danish kings often tried to weaken or entirely abolish this position, only to be met with fierce resistance from Swedish nobles and revolts."
+
+ swedish_house_of_knights: "Swedish House of Knights"
+ swedish_house_of_knights_desc: "The Swedish Hereditary Nobility was established following Eric XIV formalization of the nobility. By 1626 the House of Knighrs represented the nobility in many matters and maintained their records and geneology. Following the practice of granting the title of nobility to army officers instead of paying them, many houses of lesser nobility can trace their lineage back through the systematic records in the House of Knights."
+
+ swedish_parliamentary_order: "The Parliamentary Order"
+ swedish_parliamentary_order_desc: "During the 16th century and with Gustav Vasa as its founder, the position of the Swedish Parliament emerged as an important political body. During this period, it became practice for the royal exercise of power to be legitimized through a resolution of the Riksdag. The Swedish Parliament was also internationally unique in that peasants - those who were tax or crown farmers - were also represented as a separate estate. Thusly, in the Swedish Riksdag, four estates were represented: Nobility, Clergy, Burghers and Peasants."
+
+ #Peasants#
+ mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."
+ estate_peasants: "Peasants"
+ estate_peasants_desc: "The Peasant Estate represents the peasants."
+ peasants_loyalty_modifier: "Peasants Loyalty"
+ peasants_influence_modifier: "Peasants Influence"
+ peasants_privileges_modifier: "Peasants Max Privileges"
+ estate_peasants_ownership: "Peasants Land Ownership"
+
+ #Privileges
+ estate_peasants_land_rights: "Peasants Land Rights"
+ estate_peasants_land_rights_desc: "The Peasantry, backbone of the country, deserves some self-governance."
+ estate_peasants_guild_assembly: "Peasant Guilds Representation"
+ estate_peasants_guild_assembly_desc: "The Peasant-Guild deserves the right to organize in formal guilds with full recognition of the state."
+ estate_peasants_manpower_drive: "Peasant Manpower Drive"
+ estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is."
+
+ #Peasant Events
+ peasants_estate_events.1.t: "Representation Pays Off"
+ peasants_estate_events.1.d: "The representation of the peasants as a well represented estate has caused their spirits to rise and in return they are willing to back whatever we want."
+ peasants_estate_events.1.a: "Excellent."
+ 
+ peasants_estate_events.2.t: "Peasants Rally"
+ peasants_estate_events.2.d: "The war has taken a heavy toll on our nation, but the fact that the peasants have their concerns heard and treated means that they will fight to retain their rights."
+ peasants_estate_events.2.a: "For freedom!"
+ 
+ peasants_estate_events.3.t: "Peasant Petition"
+ peasants_estate_events.3.d: "The peasants have petitioned us to grant them some more liberty to locally solve issues and determine their own building and production regulations."
+ peasants_estate_events.3.a: "Send in the Guard." 
+ peasants_estate_events.3.b: "Of course, let people govern themselves."
+ 
+ peasants_estate_events.4.t: "Modern Farming Techniques"
+ peasants_estate_events.4.d: "A peasant has invented some new production tools to increase productivity. The local inventor has significantly improved our royal domain and it has led to much higher production. He appears highly ambitious and wishes for money to spread his tools and techniques all around the nation."
+ peasants_estate_events.4.a: "Appoint him to the royal domain." 
+ peasants_estate_events.4.b: "Give him the funds to spread it to the villages!"
+ 
+ peasants_estate_events.5.t: "Peasants Expand into Crown Lands"
+ peasants_estate_events.5.d: "A group of peasants set up shop in a piece of land that is technically part of the crownlands, we could sell them the land or send in the army to kick them out."
+ peasants_estate_events.5.a: "Get the hell off my lawn."
+ peasants_estate_events.5.b: "We didn't use it anyway."
+ 
+ peasants_estate_events.6.t: "Lease comes up"
+ peasants_estate_events.6.d: "The Lease of a piece of land we granted generations ago came up this year, and the land fell back into state hands, but now the locals have started a petition to reclaim the land."
+ peasants_estate_events.6.a: "I suppose we could extend the lease."
+ peasants_estate_events.6.b: "The lease is up."
+
+ #Peasant Agendas
+ estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]."
+ estate_peasants_develop_grain_desc: "The Peasantry asks us to clear some land for extra farming lands on the outskirts of [agenda_province.GetName]."
+ estate_peasants_harvest_time: "Desire for peace"
+ estate_peasants_harvest_time_desc: "The people have lost fathers, sons and brothers and are tired of war, allow the common people some respite."
+ estate_peasants_harvest_time_tooltip: "Be at Peace for 5 years."
+ estate_peasants_increase_privileges: "Increase Peasant Lands"
+ estate_peasants_increase_privileges_desc: "The Peasants wish for additional lands to be granted to them, so they can settle in other lands and reduce the population pressure."
+ estate_peasants_herd_cattle: "Attract Herders"
+ estate_peasants_herd_cattle_desc: "The Peasantry of [agenda_province.GetName] would like to increase their prosperity, and claim that if we improve their infrastructure, many farmers and herders from the surrounding lands will be more likely to settle in [agenda_province.GetName]."
+ estate_peasants_expand_lebensraum: "Liberate Peasantry"
+ estate_peasants_expand_lebensraum_desc: "The Peasantry of [agenda_province.GetName] cries out for liberation and to be welcomed into our nation where they have proper rights and representation."
+ estate_peasants_build_wood_workshop: "Build Workshop"
+ estate_peasants_build_wood_workshop_desc: "The Peasantry of [agenda_province.GetName] would like to build a workshop in their city, they already cleared out some land and are willing to reward you handsomely!."
+ estate_peasants_inspire_peasants: "Stabilize the Republic"
+ estate_peasants_inspire_peasants_desc: "Let us work to stabilize the republic and increase the political engagement of the peasantry."
+
+ #####Estate Agendas Modifiers
+ GE_Peasant_Estate_Growth: "Increased Farming Output"
+ GE_Peasant_Estate_Peace: "Recovering from War"
+ GE_Peasant_Estate_Fervor: "Peasant Settlers"
+ GE_Peasant_Estate_Cattle: "Attracted Herders"
+ GE_Peasant_Estate_Lebensraum: "Open Arms"
+ GE_Peasant_Estate_Construct_Workshop: "Supportive Townspeople"
+ GE_Peasant_Estate_Stabilization: "Stabilization"
+ GE_Peasant_Estate_Stabilized: "Stabilized"
+
+ the_judicature_ordinance: "The Judicature Ordinance"
+ the_judicature_ordinance_desc: "The Judicature Ordinance established the Supreme Court, relaxing the process of appeal somewhat by restoring the king's authority and giving him the exclusive right to administer death sentences. The continuance of local juries who could appeal to a Supreme Court helped cultivate a custom of respecting the law, resulting in better protected civil liberties."
+
+
+
+
+
+ #### ITALIAN REFORMS #### #### ITALIAN REFORMS #### #### ITALIAN REFORMS ####
+ #### ITALIAN REFORMS #### #### ITALIAN REFORMS #### #### ITALIAN REFORMS ####
+ #### ITALIAN REFORMS #### #### ITALIAN REFORMS #### #### ITALIAN REFORMS ####
+
+ #SICILY + NAPLES
+ kingdom_of_sicily_reform: "Kingdom of Sicily"
+ kingdom_of_sicily_reform_desc: "Sicily, being in the center of the Mediterranean, has always been a fusion of the traditions and laws of its conquerors. With the rule of the Muslims came universities and a period of cultural revolution with arts and poets. With the Normans came the foundations for a true monarchy and Krepost forts, further formalized under the German Hohenstaufen dynasty into a highly centralized and absolute monarchy. With the French Kings of Anjou came a well established nobility and the development of a Knighthood."
+
+ parliament_of_sicily_reform: "Parramentu Sicilianu"
+ parliament_of_sicily_reform_desc: "The sovereignty of the Kingdom of Sicily (12th to 19th century) was assured by the long-lived Parliament based in Palermo. The Sicilian parliament is considered one of the oldest in the world (together with that of the Isle of Man, the Icelandic and the Faroese Ting, all of which had no deliberative powers unlike the Sicilian): being founded in 1097."
+
+ customs_house_of_apena_sheep_reform: "Customs Houses of Sheep"
+ customs_house_of_apena_sheep_reform_desc: "Originally a Aragonese Custom, the Customs House was a way of organizing the pastorialist of the region and their herds. This policy, which forced the shepherds to winter in specifically designated neapolitan grazing grounds, ensured that they remained withing close grasp and control of the kingdom. This ensured that additional meat and wool would be transferred into the cities and sold by merchants, increasing the kingdoms revenues as well as helping to define the exact borders of the kingdom."
+
+ constitution_of_melfi_reform: "Constitution of Melfi"
+ constitution_of_melfi_reform_desc: "The ancient Constitution of Melfi has kept our kingdom prosperous and our monarchs powerful throughout the ages. Originally based on the customs and laws of the Norman kings and later formalized by german emperors before being the bedrock of Spanish rule. These documents have stood the test of time and will continue to form the foundation of our future!"

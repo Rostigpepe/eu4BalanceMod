@@ -112,6 +112,8 @@ monarchy = {
 				#BM MODDED GOVERNMENTS
 				hessian_militarized_monarchy_reform
 				hessian_modern_militarized_monarchy_reform
+				office_of_lord_regent
+				kingdom_of_sicily_reform
 				#Georgian modded Governments
 				georgian_principality_reform
 				georgian_monarchy_reform
@@ -153,6 +155,7 @@ monarchy = {
 				#Modded BM:
 				empowering_the_junker_class_prussia
 				mamluk_privileges_mamluks
+				albertine_line_reform
 			}
 		}
 		bureaucracy = {
@@ -181,7 +184,7 @@ monarchy = {
 				#BM MODDED
 				revive_the_hisbah_mamluks
 				vladislavs_provincial_establishment_reform
-				albertine_line_reform
+				swedish_house_of_knights
 				#Georgian Mechanics			
 				saeristavo_reform_mon
 				sadrosho_reform_mon
@@ -323,6 +326,9 @@ monarchy = {
 				turkicized_elite_mamluks
 				found_the_rothschilds_reform
 				restored_land_establishment_reform
+				diverse_estates_of_austria
+				swedish_parliamentary_order
+				parliament_of_sicily_reform
 				#Georgian Parliament-Karavi				
 				karavi_reform
 			}
@@ -351,6 +357,7 @@ monarchy = {
 				kreditwerk_prussia
 				foreign_recruitment_mamluks
 				german_aristocracy_reform
+				declaratio_ferdinandei
 			}
 		}
 		economical_matters = {
@@ -375,6 +382,7 @@ monarchy = {
 				#Modded BM:
 				frederick_wilhelm_reforms_prussia
 				hessian_military_complex_reform
+				customs_house_of_apena_sheep_reform
 			}
 		}
 		legitimation_of_power = {
@@ -400,6 +408,7 @@ monarchy = {
 				strengthen_bakuhan_system_reform
 				#BM MODDED
 				revoke_reichsfreiheit_reform
+				constitution_of_melfi_reform
 			}
 		}
 		separation_of_power = {

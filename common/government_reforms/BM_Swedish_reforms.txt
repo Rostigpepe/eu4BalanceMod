@@ -1,0 +1,109 @@
+#Tier 1
+office_of_lord_regent = {
+	icon = house_of_lords
+	potential = {
+		OR = {
+			primary_culture = swedish
+			has_reform = office_of_lord_regent
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = office_of_lord_regent
+		}
+	}
+	modifiers = {
+		legitimacy = 1
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+# Tier 3
+swedish_house_of_knights = {
+	icon = signoria_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = swedish_house_of_knights
+			primary_culture = swedish
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = swedish_house_of_knights
+			primary_culture = swedish
+		}
+	}
+	modifiers = {
+		prestige_from_land = 0.25
+		nobles_loyalty_modifier = 0.1
+		nobles_privilege_slots = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# Tier 6
+swedish_parliamentary_order = {
+	icon = three_classes_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = swedish_parliamentary_order
+			primary_culture = swedish
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = swedish_parliamentary_order
+			primary_culture = swedish
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.1
+		all_estate_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_peasant_estate = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# Tier 6
+the_judicature_ordinance = {
+	icon = gustavus_adolphus
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = swedish_parliamentary_order
+			primary_culture = swedish
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = swedish_parliamentary_order
+			primary_culture = swedish
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		reform_progress_growth = 0.1
+		global_unrest = -1
+	}
+	custom_attributes = {
+		enables_peasant_estate = yes
+	}
+	ai = {
+		factor = 100
+	}
+}

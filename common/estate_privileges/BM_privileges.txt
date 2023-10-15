@@ -80,3 +80,75 @@ estate_pacification_of_the_north_privilege = {
 		}
 	}
 }
+
+
+ # PEASANTS PRIVILIGES
+ estate_peasants_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.10
+	can_select = {
+
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 50
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_guild_assembly = {
+	icon = privilege_empty_throne
+	land_share = 0
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.15
+	can_select = {
+
+	}
+	modifier_by_land_ownership = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_manpower_drive = {
+	icon = privilege_demand_more_troops
+	land_share = 0
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+
+	}
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 0.33
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.1
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
