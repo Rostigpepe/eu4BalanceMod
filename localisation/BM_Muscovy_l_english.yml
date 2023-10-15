@@ -1,14 +1,14 @@
 ﻿l_english:
 
  #MISCELLANEOUS
- muscovy_muscovite_supremacy:0 "Muscovite Supremacy"
- desc_muscovy_muscovite_supremacy:0 "We shall dictate our own peace in Novgorod!"
- muscovy_muscovite_supremacy_tt:0 "-10% War Score Cost"
- muscovy_crown_lands:0 "Muscovite Crownlands"
- muscovite_boyar_lands:0 "Muscovite Boyar Lands"
- BM_CONQUEST_OF_NOVGOROD_TOOLTIP:0 "We will send our demands to Novgorod"
- conquest_of_novgorod_decision_title:0 "Demand Novgorods Surrender"
- conquest_of_novgorod_decision_desc:0 "We will send our demands to Novgorod"
+ muscovy_muscovite_supremacy: "Muscovite Supremacy"
+ desc_muscovy_muscovite_supremacy: "We shall dictate our own peace in Novgorod!"
+ muscovy_muscovite_supremacy_tt: "-10% War Score Cost"
+ muscovy_crown_lands: "Muscovite Crownlands"
+ muscovite_boyar_lands: "Muscovite Boyar Lands"
+ BM_CONQUEST_OF_NOVGOROD_TOOLTIP: "We will send our demands to Novgorod"
+ conquest_of_novgorod_decision_title: "Demand Novgorods Surrender"
+ conquest_of_novgorod_decision_desc: "We will send our demands to Novgorod"
 
  #Muscovite Subjugates Novgorod
  BM_Muscovy_Events.1.t: "The Subjugation of Novgorod"
