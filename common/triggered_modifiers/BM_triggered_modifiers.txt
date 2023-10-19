@@ -112,7 +112,7 @@ rapid_collapse_of_society = {
 				continent = new_world
 			}
 		}
-		
+		is_native_tribe = yes
 	}
 	trigger = {
 		custom_trigger_tooltip = {

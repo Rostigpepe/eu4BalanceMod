@@ -1160,7 +1160,12 @@ tur_african_conquest = {
 		}
 		completed_by = 1455.1.1
 		trigger = {
-			has_mil_advisor_2 = yes
+			OR = {
+				employed_advisor = {
+					type = siege_engineer
+				}
+				has_mil_advisor_2 = yes
+			}
 		}
 		effect = {
 			if = {
@@ -1185,11 +1190,7 @@ tur_african_conquest = {
 				limit = {
 					NOT = { mil_tech = 6 }
 					employed_advisor = {
-						name = "Urban"
-						type = army_reformer
-						religion = catholic
-						culture = hungarian
-						category = mil
+						type = siege_engineer
 					}
 				}
 				custom_tooltip = tur_guns_of_urban_at

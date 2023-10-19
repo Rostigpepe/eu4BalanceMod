@@ -8,7 +8,10 @@ BRA_missions_1 = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -119,7 +122,10 @@ BRA_missions_1_franconia = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -278,7 +284,10 @@ BRA_missions_2 = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -577,7 +586,10 @@ BRA_missions_3 = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -706,6 +718,7 @@ BRA_missions_3 = {
 		trigger = {
 			OR = {
 				tag = PRU
+				tag = NGF
 				AND = {
 					east_prussia_area = {
 						type = all
@@ -756,7 +769,10 @@ BRA_missions_4 = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -1075,7 +1091,10 @@ BRA_missions_5 = {
 			tag = BRA
 			AND = {
 				was_tag = BRA
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}

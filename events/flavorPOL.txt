@@ -2454,7 +2454,7 @@ country_event = { #Expanding the Quarter Army
 		trigger = {
 			OR = { 
 				num_of_hussars = 8
-				num_of_cavalry = 65 
+				num_of_cavalry = 30 
 			}
 		}
 		if = { 
@@ -2486,11 +2486,11 @@ country_event = { #Expanding the Quarter Army
 			OR = { 
 				has_global_modifier_value = {
 					which = infantry_power 
-					value = 0.30 
+					value = 0.25 
 				}
 				has_global_modifier_value = {
 					which = discipline  
-					value = 0.25
+					value = 0.2
 				}
 			}
 		}

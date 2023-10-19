@@ -3430,7 +3430,6 @@ polish_elective_monarchy = {
 		nobles_influence_modifier = 0.1
 		reform_progress_growth = -0.2
 		governing_capacity = -100
-		governing_capacity_modifier = -0.25
 	}
 
 	conditional = {

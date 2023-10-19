@@ -33,7 +33,6 @@ generalkriegskommissariat_prussia = {
 			tag = NGF
 			tag = GER
 		}
-		has_unlocked_government_reform = generalkriegskommissariat_prussia
 		mission_completed = PRU_an_army_with_a_state
 	}
 	modifiers = {
@@ -45,8 +44,8 @@ generalkriegskommissariat_prussia = {
 		monthly_prussian_militarized_society_3 = 0.15
 		nobles_loyalty_modifier = 0.05
 		nobles_influence_modifier = 0.05
-	
 	}
+	
 	ai = {
 		factor = 2
 	}

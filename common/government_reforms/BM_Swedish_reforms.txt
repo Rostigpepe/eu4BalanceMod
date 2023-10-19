@@ -79,9 +79,9 @@ swedish_parliamentary_order = {
 }
 
 
-# Tier 6
+# Tier 7
 the_judicature_ordinance = {
-	icon = gustavus_adolphus
+	icon = government_for_people_reform
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -97,11 +97,9 @@ the_judicature_ordinance = {
 	}
 	modifiers = {
 		max_absolutism = 5
+		monarch_military_power = 1
 		reform_progress_growth = 0.1
 		global_unrest = -1
-	}
-	custom_attributes = {
-		enables_peasant_estate = yes
 	}
 	ai = {
 		factor = 100

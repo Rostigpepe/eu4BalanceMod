@@ -193,7 +193,7 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.2
 	}
 	city_upon_a_hill = {
-		global_colonial_growth = 20
+		global_colonial_growth = 15
 		vassal_forcelimit_bonus = 0.5
 	}
 	the_british_parliament = {
@@ -739,8 +739,7 @@ SPA_ideas = {
 
 	devout_catholisism = {
 		papal_influence = 2
-		church_power_modifier = 0.25
-		monthly_fervor_increase = 0.5
+		establish_order_cost = -0.2
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -770,7 +769,7 @@ SPA_ideas = {
 
 CAS_ideas = {
 	start = {
-		land_morale = 0.1
+		land_morale = 0.15
 		global_missionary_strength = 0.02
 	}
 	bonus = {
@@ -782,6 +781,7 @@ CAS_ideas = {
 	free = yes		#will be added at load.
 	the_reconquista = {
 		army_tradition_decay = -0.01
+		papal_influence = 1
 	}
 	spanish_inquisition = {
 		establish_order_cost = -0.1
@@ -855,7 +855,7 @@ NED_ideas = {
 FRA_ideas = {
 	start = {
 		diplomatic_reputation = 1
-		cavalry_power = 0.15
+		global_manpower_modifier = 0.2
 	}
 	
 	bonus = {
@@ -873,8 +873,7 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	fra_taille = {
-		global_tax_modifier = 0.15
-		war_taxes_cost_modifier = -0.5
+		global_tax_modifier = 0.2
 	}
 	lessons_hundred_years_war = {
 		army_tradition = 0.5
@@ -890,7 +889,7 @@ FRA_ideas = {
 	}
 	divine_right_to_rule = {
 		core_creation = -0.1
-		max_absolutism = 5
+		max_absolutism = 10
 	}
 	europes_first_standing_army = {
 		discipline = 0.05
@@ -904,7 +903,7 @@ FRA_ideas = {
 FRA_ideas_2 = {
 	start = {
 		max_revolutionary_zeal = 5 
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
@@ -941,7 +940,7 @@ FRA_ideas_2 = {
 	}
 	napoleonic_tactics = {
 		leader_siege = 1
-		assault_fort_ability = 0.5
+		siege_ability = 0.25
 	}
 	european_ambitions = {
 		core_creation = -0.2
@@ -1621,12 +1620,12 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		naval_forcelimit_modifier = 0.2
+		navy_tradition_decay = -0.01
 		infantry_power = 0.1
 	}
 	
 	bonus = {
-		global_tariffs = 0.3
+		colonists = 1
 	}
 	
 	trigger = {
@@ -1642,8 +1641,7 @@ POR_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	case_de_india = {
-		global_trade_power = 0.1
-		ship_trade_power_modifier = 0.1
+		global_trade_power = 0.2
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
@@ -1656,7 +1654,7 @@ POR_ideas = {
 		yearly_absolutism = 0.5
 	}
 	por_royal_military_academy = {
-		defensiveness = 0.1
+		fire_damage = 0.05
 		artillery_fire = 1
 	}
 }
@@ -1665,7 +1663,7 @@ POR_ideas = {
 POL_ideas = {
 	start = {
 		religious_unity = 0.2
-		num_accepted_cultures = 1
+		cavalry_cost = -0.15
 	}
 	
 	bonus = {
@@ -1699,7 +1697,7 @@ POL_ideas = {
 		discipline = 0.05
 	}
 	focus_on_field_defences = {
-		land_morale = 0.05
+		land_morale = 0.1
 		defensiveness = 0.15
 	}
 }
@@ -1797,7 +1795,7 @@ PLC_ideas = {
 	}
 	
 	bonus = {
-		tolerance_heretic = 3
+		global_manpower_modifier = 0.2
 	}
 	
 	trigger = {
@@ -1807,7 +1805,7 @@ PLC_ideas = {
 	free = yes
 	
 	plc_prosperous_folwarks = { #Same for all of them
-		global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.15
 	}
 	pol_jagiellonian_university = {
 		idea_cost = -0.10
@@ -1821,7 +1819,8 @@ PLC_ideas = {
 		can_recruit_hussars = yes
 	}
 	plc_refine_our_golden_liberty = { #Same for all of them
-		country_admin_power = 1 
+		all_estate_influence_modifier = -0.1
+		country_admin_power = 1
 	}
 	pol_royal_guards = {
 		infantry_power = 0.15

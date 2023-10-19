@@ -97,7 +97,7 @@ prussian_militarization_mechanic_2 = {
 					discipline = 0.1
 					manpower_recovery_speed = 0.2
 					land_maintenance_modifier = -0.2
-					monthly_prussian_militarized_society_2 = -0.5
+					monthly_prussian_militarized_society_2 = -0.2
 				}
 			}
 		}
@@ -173,6 +173,7 @@ prussian_militarization_mechanic_3 = {
 					discipline = 0.1
 					manpower_recovery_speed = 0.2
 					land_maintenance_modifier = -0.2
+					yearly_army_professionalism = 0.01
 					monthly_prussian_militarized_society_3 = -0.5
 				}
 			}
@@ -275,6 +276,7 @@ prussian_militarization_mechanic_3 = {
 					power_type = prussian_militarized_society_3
 					value = 10
 				}
+				add_army_professionalism = 5
 				add_mil_power = -50
 			}
 			cooldown_years = 0

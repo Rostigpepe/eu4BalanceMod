@@ -720,7 +720,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_local_autonomy = 50
+				add_local_autonomy = 25
 			}
 		}
 		211 = {
@@ -728,7 +728,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_local_autonomy = 50
+				add_local_autonomy = 25
 			}
 		}
 		2990 = {
@@ -736,7 +736,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_local_autonomy = 50
+				add_local_autonomy = 25
 			}
 		}
 	}

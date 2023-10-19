@@ -1893,6 +1893,11 @@
  FEE_Iberia_Events.2.OPT2:0 "He must lead our armies!"
  FEE_Iberia_Events.2.OPT3:0 "We are in need of leaders for our fleet."
 
+ BM_pedro_madruga_court: "Pedro Madruga's Reforms"
+ BM_pedro_madruga_army: "Pedro Madruga Leads the Army"
+ BM_pedro_madruga_naval: "Pedro Madruga Leads the Navy"
+
+
  FEE_Iberia_Events.3.T:0 "The Autonomous Regions"
  FEE_Iberia_Events.3.D:0 "The question of the various constituent kingdoms of our realm has always been a nagging one for the Catholic monarchs of Iberia. The very fact that many of them were recognized by Popes past as kingdoms in their own right has been a source of contention, as nobility and peasant alike have felt unrepresented in our court, causing widespread resentment. \nWith the Reconquista complete, now is the time to reorganize these outlying regions. [Root.Consort.GetName] has recently come up with the idea of a national Cortes where each region has their own representation. [Root.Monarch.GetName], however, desiring increased power in these regions, would prefer a viceroyalty. This would allow some local rule while still maintaining a dependence on the crown. However, this likely would not satisfy the regions. Most radical of all would be either withdrawing royal authority or attempting to assert total control."
  FEE_Iberia_Events.3.OPT1:0 "Establish a National Cortes!"

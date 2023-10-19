@@ -907,7 +907,7 @@ bohemia_area = { #5
 }
 
 erzgebirge_area = { #3
-	266 267 1771 2967
+	266 267 1771 2967 60
 }
 
 lower_silesia_area = { #3
@@ -915,7 +915,7 @@ lower_silesia_area = { #3
 }
 
 lusatia_area= { #3
-	1763 4778 60
+	1763 4778
 }
 
 

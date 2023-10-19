@@ -156,6 +156,7 @@ monarchy = {
 				empowering_the_junker_class_prussia
 				mamluk_privileges_mamluks
 				albertine_line_reform
+				portuguese_cortes_reform
 			}
 		}
 		bureaucracy = {
@@ -294,6 +295,7 @@ monarchy = {
 				enlist_arabian_tribesmen
 				hessian_elite_jaegers_reform
 				imperial_circles_reform
+				portugese_marines_reform
 				#Revolutionary Georgia
 				geo_revolutionary_army_reform
 			}
@@ -358,6 +360,7 @@ monarchy = {
 				foreign_recruitment_mamluks
 				german_aristocracy_reform
 				declaratio_ferdinandei
+				the_judicature_ordinance
 			}
 		}
 		economical_matters = {
@@ -383,6 +386,7 @@ monarchy = {
 				frederick_wilhelm_reforms_prussia
 				hessian_military_complex_reform
 				customs_house_of_apena_sheep_reform
+				casa_de_india_reform
 			}
 		}
 		legitimation_of_power = {

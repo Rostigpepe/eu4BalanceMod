@@ -103,8 +103,7 @@ country_decisions = {
 			name = BM_debt_tackled
 			duration = -1
 		}
-		add_years_of_income = 5
-		add_mercantilism = -10
+		add_years_of_income = 8
 		}
 	}
 
@@ -132,7 +131,7 @@ country_decisions = {
 			
 			add_country_modifier = {
 				name = BM_debt_tackled_2
-				duration = 1825
+				duration = 1095
 			}
 		}
 	}

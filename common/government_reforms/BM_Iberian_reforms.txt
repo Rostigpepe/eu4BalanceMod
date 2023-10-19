@@ -1,0 +1,215 @@
+
+# PORTUGAL
+# TIER 2
+portuguese_cortes_reform = {
+	icon = assembly_hall
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = POR
+			primary_culture = portugese
+			has_reform = portuguese_cortes_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = POR
+			primary_culture = portugese
+			has_reform = portuguese_cortes_reform
+		}
+	}
+	modifiers = {
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.05
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = yes
+		heir = yes
+		states_general_mechanic = {
+			statists = {
+				development_cost_in_primary_culture = -0.1
+				placed_merchant_power = 5
+				legitimacy = -0.5
+			}
+
+			monarchists = {
+				land_forcelimit_modifier = 0.2
+				global_colonial_growth = 15
+				legitimacy = 0.5
+			}
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 5
+portugese_marines_reform = {
+	icon = "soldiers_5"
+	allow_normal_conversion = yes
+	effect = {
+		add_country_modifier = {
+			name = BM_portugese_marines
+			duration = -1
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = amphibious_specialization_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = BM_portugese_marines
+		hidden_effect = {
+			remove_country_modifier = amphibious_specialization_reform_modifier
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = portugese
+			has_reform = portugese_marines_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = portugese
+			has_reform = portugese_marines_reform
+		}
+	}
+	modifiers = {
+		sailors_recovery_speed = 0.33
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 8
+casa_de_india_reform = {
+	icon = mountain_fort
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = casa_de_india_reform
+			primary_culture = portugese
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = casa_de_india_reform
+			primary_culture = portugese
+		}
+	}
+	modifiers = {
+		trade_company_investment_cost = -0.1
+		trade_company_governing_cost = -0.1
+		merchants = 1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+	}
+	custom_attributes = {
+		enable_plantation_feitorias = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+
+# CASTILLE / SPAIN
+# TIER 1 
+kingdom_of_castille_and_leon = {
+	icon = religious_permanent_revolution_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = CAS
+			tag = LON
+			has_reform = kingdom_of_castille_and_leon
+		}
+	}
+	trigger = {
+		has_reform = kingdom_of_castille_and_leon
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		cavalry_power = 0.15
+		global_trade_goods_size_modifier = -0.05
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+crown_of_castille = {
+	icon = crown_colony_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = CAS
+			tag = SPA
+			has_reform = crown_of_castille
+		}
+	}
+	trigger = {
+		has_reform = crown_of_castille
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 1
+		manpower_in_culture_group_provinces = 0.1
+	}
+	custom_attributes = {
+		enables_iberian_crowns = yes # +15 Growth if Portugese PU/Vassal. +1 Merchant if Aragonese PU/Vassal. -5% Tech Cost if Naples PU/Vassal.
+	}
+	ai = {
+		factor = 101
+	}
+}
+
+iberian_enlightened_despotism_reform = {
+	icon = british_monarchy
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SPA
+			has_reform = iberian_enlightened_despotism_reform
+			have_had_reform = iberian_enlightened_despotism_reform
+		}
+	}
+	trigger = {
+		absolutism = 50
+		has_reform = iberian_enlightened_despotism_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 70
+	modifiers = {
+		max_absolutism = 15
+		build_cost = -0.1
+		prestige = 1
+		governing_capacity = 150
+	}
+	custom_attributes = {
+		hispanic_colonial_empire = yes #All colonies gets -20% Regiment Cost and -10% Development Cost. Spain gets +5% Tariffs and +3% Force Limit Modifier per Colonial Subject
+	}
+	ai = {
+		factor = 103
+	}
+}

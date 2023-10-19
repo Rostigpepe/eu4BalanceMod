@@ -2,7 +2,7 @@
 # NAPLES + SICILY REFORMS
 # Tier 1
 kingdom_of_sicily_reform = {
-	icon = sicily_kingdom_of_sicily
+	icon = catalan_cortes
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
@@ -31,7 +31,7 @@ kingdom_of_sicily_reform = {
 
 # Tier 6
 parliament_of_sicily_reform = {
-	icon = sicily_parliament_of_sicily
+	icon = consulate_of_the_sea
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -66,7 +66,7 @@ parliament_of_sicily_reform = {
 
 # Tier 8 
 customs_house_of_apena_sheep_reform = {
-	icon = custom_house_apena_sheep
+	icon = landscape
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -94,7 +94,7 @@ customs_house_of_apena_sheep_reform = {
 
 # Tier 10
 constitution_of_melfi_reform = {
-	icon = sicily_melfi
+	icon = justicia_de_aragon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {

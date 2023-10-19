@@ -3,7 +3,10 @@ PRU_generic_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = {
 			OR = {
@@ -58,6 +61,7 @@ PRU_generic_missions_3 = {
 		trigger = {
 			OR = {
 				tag = PRU
+				tag = NGF
 				50 = {
 					owned_by = ROOT
 					is_core = ROOT
@@ -82,7 +86,10 @@ PRU_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -146,66 +153,15 @@ PRU_missions_1 = {
 	}
 }
 
-PRU_missions_1_vassal = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag = PRU
-		has_country_modifier = PRU_vassal_play
-		
-	}
-	has_country_shield = yes
-	
-	PRU_zollverein = {
-		icon = dominant_economy
-		required_missions = { }
-		position = 10
-		trigger = {
-			calc_true_if = {
-				all_subject_country = {
-					has_divert_trade = yes
-				}
-				amount = 2
-			}
-			OR = {
-				trader = 1
-				has_dip_advisor_3 = yes
-			}
-		}
-		effect = {
-			custom_tooltip = PRU_every_subject
-			set_country_flag = PRU_vassal_goods
-		}
-	}
-	
-	PRU_constitution = {
-		icon = standardize_relazioni
-		required_missions = { PRU_zollverein PRU_august }
-		position = 11
-		trigger = {
-			calc_true_if = {
-				all_subject_country = {
-					NOT = { liberty_desire = 5 }
-					is_subject_of_type = prussian_vassal
-				}
-				amount = 3
-			}
-			has_adm_advisor_3 = yes
-		}
-		effect = {
-			set_country_flag = PRU_vassal_more
-			custom_tooltip = PRU_amount_of_prussian_vassal
-		}
-	}
-}
-
 PRU_missions_1_2 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -354,7 +310,10 @@ PRU_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -413,76 +372,16 @@ PRU_missions_2 = {
 	}
 }
 
-PRU_missions_2_vassal = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = PRU
-		has_country_modifier = PRU_vassal_play
-		
-	}
-	has_country_shield = yes
-	
-	PRU_august = {
-		icon = catholic_confraternity
-		required_missions = { }
-		position = 10
-		trigger = {
-			calc_true_if = {
-				all_ally = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				all_subject_country = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				amount = 3
-			}
-		}
-		effect = {
-			custom_tooltip = PRU_every_germanic_ally_subject
-			hidden_effect = {
-				every_ally = {
-					limit = {
-						culture_group = germanic
-					}
-					add_trust = {
-						who = ROOT
-						value = 25
-						mutual = yes
-					}
-				}
-				every_subject_country = {
-					limit = {
-						culture_group = germanic
-					}
-					add_trust = {
-						who = ROOT
-						value = 25
-						mutual = yes
-					}
-				}
-			}
-			add_country_modifier = {
-				name = PRU_treaties_of_august
-				duration = 9125
-			}
-		}
-	}
-}
 
 PRU_missions_2_2 = {
 	slot = 2
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -940,7 +839,10 @@ PRU_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -1558,7 +1460,10 @@ PRU_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			tag = NGF
+		}
 		
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -1835,20 +1740,12 @@ PRU_missions_4 = {
 				name = PRU_general_staff_modifier
 				duration = -1
 			}
-			if = {
-				limit = {
-					NOT = { has_country_modifier = PRU_vassal_play }
-				}
-				add_army_tradition_or_mil_power = { amount = 20 }
-			}
-			else = {
-				add_army_tradition_or_mil_power = { amount = 10 }
-				custom_tooltip = PRU_for_every_vassal
-				hidden_effect = {
-					every_subject_country = {
-						ROOT = {
-							add_army_tradition_or_mil_power = { amount = 5 }
-						}
+			add_army_tradition = 10
+			custom_tooltip = PRU_for_every_vassal
+			hidden_effect = {
+				every_subject_country = {
+					ROOT = {
+						add_army_tradition = 5
 					}
 				}
 			}
@@ -1879,12 +1776,11 @@ PRU_missions_4 = {
 			#country_event = { id = flavor_brapru.36 }
 			set_country_flag = brapru_army_reforms_3
 			country_event = { id = flavor_brapru.29 }
-			create_general_with_pips = { 
-				tradition = 100
-				add_fire = 1
-				add_shock = 1
-				add_manuever = 1
-				add_siege = 1
+			define_general = { 
+				fire = 5
+				shock = 5
+				manuever = 4
+				siege = 3
 			}
 			custom_tooltip = " "
 			if = {

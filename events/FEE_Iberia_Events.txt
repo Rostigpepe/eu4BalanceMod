@@ -59,19 +59,19 @@ country_event = {
 		4555 = { #Pontevedra
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				size = 3
+				size = 2
 			}
 		}
 		4554 = { #Lugo
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				size = 3
+				size = 2
 			}
 		}
 		4558 = { #Orense
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				size = 3
+				size = 1
 			}
 		}
 		206 = {
@@ -167,6 +167,10 @@ country_event = {
 				influence = -10
 				duration = 3650
 			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -5
+			}
 		}
 		add_country_modifier = {
 			name = iberia_irmandinos_justified
@@ -199,6 +203,10 @@ country_event = {
 			religion = catholic
 			cost_multiplier = 0.25
 		}
+		add_country_modifier = {
+			name = BM_pedro_madruga_court
+			duration = 9125
+		}
 	}
 
 	option = {
@@ -216,6 +224,10 @@ country_event = {
 			siege = 0
 			trait = ruthless_personality
 		}
+		add_country_modifier = {
+			name = BM_pedro_madruga_army
+			duration = 9125
+		}
 	}
 
 	option = {
@@ -232,6 +244,10 @@ country_event = {
 			manuever = 4
 			siege = 0
 			trait = level_headed_personality
+		}
+		add_country_modifier = {
+			name = BM_pedro_madruga_naval
+			duration = 9125
 		}
 	}
 }

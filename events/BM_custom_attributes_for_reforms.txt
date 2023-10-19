@@ -54,7 +54,6 @@ country_event = {
 					add_province_modifier = {
 						name = BM_immigrant_settlements
 						duration = -1
-						hidden = yes
 					}
 				}
 			}
@@ -1005,6 +1004,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1022,6 +1022,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1039,6 +1040,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1056,6 +1058,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1099,6 +1102,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1114,6 +1118,7 @@ country_event = {
 								culture_group = carpathian
 								culture_group = east_slavic
 								culture_group = baltic
+								primary_culture = baltic_german
 								primary_culture = estonian
 								primary_culture = prussian
 								culture_group = carpathian
@@ -1141,6 +1146,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1156,6 +1162,7 @@ country_event = {
 								culture_group = carpathian
 								culture_group = east_slavic
 								culture_group = baltic
+								primary_culture = baltic_german
 								primary_culture = estonian
 								primary_culture = prussian
 								culture_group = carpathian
@@ -1183,6 +1190,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1198,6 +1206,7 @@ country_event = {
 								culture_group = carpathian
 								culture_group = east_slavic
 								culture_group = baltic
+								primary_culture = baltic_german
 								primary_culture = estonian
 								primary_culture = prussian
 								culture_group = carpathian
@@ -1225,6 +1234,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1240,6 +1250,7 @@ country_event = {
 								culture_group = carpathian
 								culture_group = east_slavic
 								culture_group = baltic
+								primary_culture = baltic_german
 								primary_culture = estonian
 								primary_culture = prussian
 								culture_group = carpathian
@@ -1267,6 +1278,7 @@ country_event = {
 							culture_group = carpathian
 							culture_group = east_slavic
 							culture_group = baltic
+							primary_culture = baltic_german
 							primary_culture = estonian
 							primary_culture = prussian
 							culture_group = carpathian
@@ -1416,5 +1428,116 @@ country_event = {
 	option = {
 		name = reform_me_events.301Option1
 		add_prestige = 1
+	}
+}
+
+
+
+#Custom Attribute for Portugese Feitorias
+country_event = {
+	id = reform_me_events.244
+	title = reform_me_events.244.t
+	desc = reform_me_events.244.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = enable_plantation_feitorias
+				any_owned_province = {
+					AND = {
+						NOT = { has_province_modifier = BM_feitorias }
+						OR = {
+							trade_goods = tea
+							trade_goods = cocoa
+							trade_goods = coffee
+							trade_goods = cotton
+							trade_goods = tobacco
+						}
+						has_building = manufactory
+					}
+				}
+			}
+			AND = {
+				OR = {
+					NOT = {
+						has_government_attribute = enable_plantation_feitorias
+					}
+					overlord = {
+						NOT = {
+							has_government_attribute = enable_plantation_feitorias
+						}
+					}
+				}
+				any_owned_province = {
+					has_province_modifier = BM_feitorias
+				}
+			}
+			AND = {
+				overlord = {
+					has_government_attribute = enable_plantation_feitorias
+				}
+				any_owned_province = {
+					AND = {
+						NOT = { has_province_modifier = BM_feitorias }
+						OR = {
+							trade_goods = tea
+							trade_goods = cocoa
+							trade_goods = coffee
+							trade_goods = cotton
+							trade_goods = tobacco
+						}
+						has_building = manufactory
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_government_attribute = enable_plantation_feitorias
+					overlord = {
+						has_government_attribute = enable_plantation_feitorias
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = tea
+						trade_goods = cocoa
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = tobacco
+					}
+					has_building = manufactory
+				}
+				hidden_effect = {
+					add_province_modifier = {
+						name = BM_feitorias
+						duration = -1
+					}
+				}
+			}
+		}
+		else = {
+			every_owned_province = {
+				remove_province_modifier = BM_feitorias
+			}
+		}
+	}
+
+	option = {
+		name = reform_me_events.243.a
+
 	}
 }
