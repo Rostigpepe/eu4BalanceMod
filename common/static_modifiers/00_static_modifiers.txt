@@ -240,15 +240,14 @@ no_adjacent_controlled = {
 }
 
 provincial_tax_income = {
-	regiment_recruit_speed = -0.02
-	local_great_project_upgrade_time = -0.01
-	local_build_time = -0.01
+	local_great_project_upgrade_time = -0.02
+	local_build_time = -0.02
 	local_institution_spread = 0.02
 }
 
 provincial_production_size = {
 	trade_goods_size = 0.2
-	ship_recruit_speed = -0.01
+	ship_recruit_speed = -0.02
 }
 
 knowledge_sharing = {
@@ -262,6 +261,8 @@ cardinals_spread_institution = {
 
 manpower = {
 	garrison_growth = 0.02				#1% increase from manpower.
+	regiment_recruit_speed = -0.02
+	local_garrison_size = 0.01
 }
 
 province_razed = {
@@ -309,9 +310,9 @@ patriarch_authority_global = {
 }
 
 pasha_state = {
-	local_governing_cost = -0.2
-	min_local_autonomy = 20
-	local_state_maintenance_modifier = -0.33
+	local_governing_cost = -0.15
+	min_local_autonomy = 15
+	local_state_maintenance_modifier = -0.25
 	local_autonomy = -0.1
 	local_tolerance_of_heathens = 10
 }
@@ -322,7 +323,7 @@ colony_level = {
 }
 
 native_assimilation = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.15
 }
 
 native_aggressiveness = {
@@ -484,7 +485,7 @@ intolerance = {
 unrest = {
 	regiment_recruit_speed = 0.1			#10% longer time to build troops for each rr
 	ship_recruit_speed = 0.1
-	local_tax_modifier = -0.02
+	local_tax_modifier = -0.05
 }
 
 nationalism = {
@@ -530,8 +531,7 @@ friendly_regiments = {
 }
 
 active_missionary = {
-	local_unrest = 6					# 6% revolt risk!
-	local_institution_spread = -0.10
+	local_unrest = 8					# 6% revolt risk!
 }
 
 # Core province of the owner's culture group, while fighting a defensive war
@@ -596,7 +596,7 @@ base_values = {
 	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
-	cav_to_inf_ratio = 0.5
+	cav_to_inf_ratio = 0.2
 	merc_maintenance_modifier = 0.1
 	monthly_heir_claim_increase = 0.208
 	tolerance_of_heretics_capacity = 3
@@ -617,7 +617,7 @@ ai_nation = {
 war_taxes = {
 	land_maintenance_modifier = -0.15
 	naval_maintenance_modifier = -0.15
-	merc_maintenance_modifier = -0.05
+	merc_maintenance_modifier = -0.15
 }
 
 stability = {
@@ -829,7 +829,7 @@ army_tradition = {
 	recover_army_morale_speed = 0.1
 	land_morale = 0.25
 	manpower_recovery_speed = 0.1
-	siege_ability = 0.05
+	siege_ability = 0.15
 	temples_influence = 0.1
 	mr_aristocrats_influence = 0.1
 	rr_girondists_influence = 0.1
@@ -859,8 +859,8 @@ navy_tradition = {
 
 positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
-	global_manpower_modifier = 0.20
-	global_tax_modifier = 0.20
+	global_manpower_modifier = 0.15
+	global_tax_modifier = 0.25
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
@@ -868,7 +868,7 @@ positive_piety = { #As of 1.23 Legalism
 
 #For convenience, its multiplied by negative piety in code.
 negative_piety = { #As of 1.23 Mysticism
-	land_morale = 0.10
+	land_morale = 0.15
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
 	brahmins_muslim_loyalty_modifier = 0.1
@@ -905,8 +905,8 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.6					#each state increases forcelimit by 0.6
-	global_manpower = 0.6					#each gives 0.6 MP to the emperor.
+	land_forcelimit	= 0.5					#each state increases forcelimit by 0.6
+	global_manpower = 0.5					#each gives 0.6 MP to the emperor.
 	global_tax_income = 1				
 }
 
@@ -1185,7 +1185,7 @@ curia_controller = {
 }
 
 bought_indulgence = {
-	papal_influence = 3
+	papal_influence = 4
 }
 
 religious_unity = {
@@ -1286,7 +1286,7 @@ liberty_desire = {
 is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
-	max_absolutism = 5
+	max_absolutism = 10
 }
 
 in_golden_era = {
@@ -1294,13 +1294,13 @@ in_golden_era = {
 	global_trade_goods_size_modifier = 0.1
 	land_morale = 0.1
 	naval_morale = 0.1
-	max_absolutism = 5
+	max_absolutism = 10
 	max_revolutionary_zeal = 10
 }
 
 absolutism = {
 	administrative_efficiency = 0.3
-	discipline = 0.05
+	discipline = 0.075
 	unjustified_demands = -0.5
 	core_decay_on_your_own = -0.5
 	estate_interaction_cooldown_modifier = -0.25
@@ -1417,7 +1417,6 @@ private_enterprise_overlord = {
 self_governing_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
-	global_tariffs = -0.10
 }
 
 crown_colony_subject = {
@@ -1470,13 +1469,12 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = -4
-	land_forcelimit	= -3
-	naval_forcelimit = -6
+	land_forcelimit	= -1
+	naval_forcelimit = -3
 }
 
 vassal_nation = {
-	development_cost = 0.2
+	development_cost = 0.15
 }
 
 primitive_nation = {
@@ -1582,6 +1580,7 @@ recruitment_sabotaged = {
 
 merchants_slandered = {
 	global_trade_power = -0.2
+	trade_steering = -0.2
 }
 
 discontent_sowed = {
@@ -2151,7 +2150,8 @@ expanded_infrastructure = {
 	regiment_recruit_speed = -0.15
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
-	garrison_growth = 0.05
+	garrison_growth = 0.15
+	local_garrison_size = 0.1
 	local_development_cost = -0.15
 	local_production_efficiency = 0.05
 	local_tax_modifier = 0.1

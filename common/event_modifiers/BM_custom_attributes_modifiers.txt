@@ -103,23 +103,23 @@ Polish_vassal_swarm_5 = {
 }
 
 Polish_vassal_1 = {
-	global_tax_income = 6
+	global_tax_income = 2
 	development_cost = -0.02
 }
 Polish_vassal_2 = {
-	global_tax_income = 12
+	global_tax_income = 4
 	development_cost = -0.04
 }
 Polish_vassal_3 = {
-	global_tax_income = 18
+	global_tax_income = 6
 	development_cost = -0.06
 }
 Polish_vassal_4 = {
-	global_tax_income = 24
+	global_tax_income = 8
 	development_cost = -0.08
 }
 Polish_vassal_5 = {
-	land_forcelimit = 10
-	global_tax_income = 24
+	land_forcelimit = 4
+	global_tax_income = 12
 	development_cost = -0.1
 }

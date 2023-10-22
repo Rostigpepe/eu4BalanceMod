@@ -17,7 +17,7 @@ kill_africa_province_modif = {
 	local_colony_cost_modifier = 1
 	local_colonial_growth = -25
 	local_colonist_placement_chance = -0.1
-	development_cost = 0.5
+	local_development_cost = 0.25
 	picture = "monthly_devastation"
 }
 

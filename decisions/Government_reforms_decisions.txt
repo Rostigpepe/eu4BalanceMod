@@ -6,13 +6,12 @@ country_decisions = {
 		}
 		allow = {
 			AND = {
-				absolutism = 50
 				army_tradition = 75
 				stability = 3
 				mil_power = 300
 				OR = {
 					mil = 6
-					army_professionalism = 0.50
+					army_professionalism = 0.75
 				}
 			}
 		}

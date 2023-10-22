@@ -1,0 +1,39 @@
+# Maroon Ideas
+
+maroon_generic_ideas = {
+	start = {
+		tolerance_heathen = 1
+		reform_progress_growth = 0.33
+	}
+	bonus = {
+		land_forcelimit_modifier  = 0.25
+	}
+	trigger = {
+		culture_group = african_diaspora
+	}
+	free = yes   
+	maroon_no_where_else_to_go = {
+		land_attrition = -0.25
+	}
+	maroon_slaves_abroad = {
+		spy_offence = 0.33
+	}
+	maroon_never_enslaved_again = {
+		land_morale = 0.2
+	}
+	maroon_melting_pot = {
+		global_unrest = -1
+		years_of_nationalism = -5
+	}
+	maroon_friends_protect_us = {
+		diplomatic_upkeep = 1
+	}
+	maroon_free_slaves_everywhere = {
+		unjustified_demands = -0.25
+		province_warscore_cost = -0.05
+	}
+	maroon_intelluctural_opportunities = {
+		technology_cost = -0.05
+		advisor_pool = 1
+	}
+}

@@ -11,6 +11,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = HLR }
+			NOT = { tag = SGF }
 			NOT = { religion_group = muslim }
 			OR = {
 				HUN = { ai = yes }

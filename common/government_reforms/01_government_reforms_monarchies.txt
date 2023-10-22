@@ -326,7 +326,6 @@ feudal_france_reform = {
 	modifiers = {
 		nobles_influence_modifier = 0.1
 		vassal_income = 0.2
-		vassal_manpower_bonus = 0.2
 		max_absolutism = -50
 		min_autonomy = 10
 	}

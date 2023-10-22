@@ -1,0 +1,192 @@
+#####################################################
+##### Various benefits from high cavalry ratio. #####
+#####################################################
+country_event = {
+	id = BM_schizo_cav_event.1
+	title = BM_schizo_cav_event.1.t
+	desc = BM_schizo_cav_event.1.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				adm_tech = 12
+				NOT = { 
+					adm_tech = 17
+				}
+				NOT = { has_country_modifier = BM_admin_tech_12_16 }
+			}
+			AND = {
+				adm_tech = 17
+				NOT = { 
+					adm_tech = 18
+				}
+				NOT = { has_country_modifier = BM_admin_tech_17_18 }
+			}
+			AND = {
+				adm_tech = 18
+				NOT = { 
+					adm_tech = 22
+				}
+				NOT = { has_country_modifier = BM_admin_tech_18_22 }
+			}
+			AND = {
+				adm_tech = 22
+				NOT = { 
+					adm_tech = 24
+				}
+				NOT = { has_country_modifier = BM_admin_tech_22_24 }
+			}
+			AND = {
+				adm_tech = 24
+				NOT = { 
+					adm_tech = 26
+				}
+				NOT = { has_country_modifier = BM_admin_tech_24_26 }
+			}
+			AND = {
+				adm_tech = 26
+				NOT = { 
+					adm_tech = 27
+				}
+				NOT = { has_country_modifier = BM_admin_tech_26_27 }
+			}
+			AND = {
+				adm_tech = 27
+				NOT = { 
+					adm_tech = 29
+				}
+				NOT = { has_country_modifier = BM_admin_tech_27_29 }
+			}
+			AND = {
+				adm_tech = 29
+				NOT = { 
+					adm_tech = 31
+				}
+				NOT = { has_country_modifier = BM_admin_tech_29_31 }
+			}
+			AND = {
+				adm_tech = 31
+				NOT = { has_country_modifier = BM_admin_tech_31 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				adm_tech = 12
+				NOT = { 
+					adm_tech = 17
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_12_16
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 17
+				NOT = { 
+					adm_tech = 18
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_17_18
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 18
+				NOT = { 
+					adm_tech = 22
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_18_22
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 22
+				NOT = { 
+					adm_tech = 24
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_22_24
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 24
+				NOT = { 
+					adm_tech = 26
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_24_26
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 26
+				NOT = { 
+					adm_tech = 27
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_26_27
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 27
+				NOT = { 
+					adm_tech = 29
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_27_29
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 29
+				NOT = { 
+					adm_tech = 31
+				}
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_29_31
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 31
+			}
+			add_country_modifier = {
+				name = BM_admin_tech_31
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = BM_schizo_cav_event.1.a
+
+	}
+}
