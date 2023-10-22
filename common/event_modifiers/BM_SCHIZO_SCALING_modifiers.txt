@@ -1,0 +1,193 @@
+BM_cav_ratio_51_60 = {
+	#positives
+	loot_amount = 0.25
+	available_province_loot = 0.1
+	cavalry_flanking = 0.25
+	cavalry_cost = -0.05
+	cavalry_power = 0.05
+	
+	#negatives
+	infantry_cost = 0.05
+	artillery_cost = 0.05
+	fire_damage = -0.05
+}
+BM_cav_ratio_60_71 = {
+	#positives
+	loot_amount = 0.5
+	available_province_loot = 0.2
+	cavalry_flanking = 0.5
+	cavalry_cost = -0.075
+	cavalry_power = 0.075
+	
+	#negatives
+	infantry_cost = 0.075
+	artillery_cost = 0.075
+	fire_damage = -0.075
+}
+BM_cav_ratio_71_80 = {
+	#positives
+	loot_amount = 0.75
+	available_province_loot = 0.3
+	cavalry_flanking = 0.75
+	cavalry_cost = -0.1
+	cavalry_power = 0.1
+	
+	#negatives
+	infantry_cost = 0.1
+	artillery_cost = 0.1
+	fire_damage = -0.1
+}
+BM_cav_ratio_81_90 = {
+	#positives
+	loot_amount = 1
+	available_province_loot = 0.4
+	cavalry_flanking = 1
+	cavalry_cost = -0.125
+	cavalry_power = 0.125
+
+	#negatives
+	infantry_cost = 0.125
+	artillery_cost = 0.125
+	fire_damage = -0.125
+}
+BM_cav_ratio_91_99 = {
+	#positives
+	loot_amount = 1.25
+	available_province_loot = 0.5
+	cavalry_flanking = 1
+	cavalry_cost = -0.15
+	cavalry_power = 0.15
+
+	#negatives
+	infantry_cost = 0.15
+	artillery_cost = 0.15
+	fire_damage = -0.15
+}
+BM_cav_ratio_100 = {
+	#positives
+	loot_amount = 1.5
+	available_province_loot = 0.75
+	cavalry_flanking = 1
+	cavalry_cost = -0.2
+	cavalry_power = 0.2
+
+	#negatives
+	infantry_cost = 0.25
+	artillery_cost = 0.25
+	fire_damage = -0.2
+}
+
+
+
+BM_admin_tech_12_16 = { #Early Modern Administration
+	state_maintenance_modifier = 0.02
+}
+BM_admin_tech_17_18 = { #University
+	state_maintenance_modifier = 0.04
+}
+BM_admin_tech_18_22 = { #National Sovereignty
+	state_maintenance_modifier = 0.04
+	ae_impact = 0.1
+	unjustified_demands = 0.1
+}
+BM_admin_tech_22_24 = { #The Constitution
+	state_maintenance_modifier = 0.06
+	ae_impact = 0.1
+	unjustified_demands = 0.1
+}
+BM_admin_tech_24_26 = { #Bonds and Tontines
+	state_maintenance_modifier = 0.06
+	ae_impact = 0.1
+	unjustified_demands = 0.1
+	interest = -0.5
+	inflation_action_cost = 0.1
+}
+BM_admin_tech_26_27 = { #Separation of Powers
+	state_maintenance_modifier = 0.06
+	ae_impact = 0.2
+	unjustified_demands = 0.2
+	interest = -0.5
+	inflation_action_cost = 0.1
+}
+BM_admin_tech_27_29 = { #Modern Bureaucracy
+	state_maintenance_modifier = 0.08
+	ae_impact = 0.2
+	unjustified_demands = 0.2
+	interest = -0.5
+	inflation_action_cost = 0.1
+}
+BM_admin_tech_29_31 = { #Rights of Man
+	state_maintenance_modifier = 0.1
+	ae_impact = 0.2
+	unjustified_demands = 0.2
+	interest = -0.5
+	inflation_action_cost = 0.1
+	years_of_nationalism = 5
+}
+BM_admin_tech_31 = { #Revolutionary Ideals
+	state_maintenance_modifier = 0.1
+	ae_impact = 0.2
+	unjustified_demands = 0.2
+	interest = -0.5
+	inflation_action_cost = 0.1
+	years_of_nationalism = 10
+}
+
+BM_diplo_tech_13_16 = { #Chartered Companies
+	interest = 0.25
+}
+BM_diplo_tech_16_20 = { #Development of Maritime Law
+	interest = 0.5
+}
+BM_diplo_tech_20_26 = { #Naval Professionalization
+	interest = 1
+}
+BM_diplo_tech_26_28 = { #The Eastindiaman
+	interest = 1.25
+	merchants = 1
+}
+BM_diplo_tech_28_30 = { #Joint Stock Companies
+	interest = 1.5
+	merchants = 1
+}
+BM_diplo_tech_30_32 = { #Insurance Companies
+	interest = 2
+	merchants = 1
+}
+BM_diplo_tech_32 = { #The Gold Standard
+	interest = 2.5
+	monthly_gold_inflation_modifier = 0.25
+	merchants = 2
+}
+
+
+BM_mil_tech_9_16 = { #Professional Officers
+	land_maintenance_modifier = 0.02
+}
+BM_mil_tech_16_18 = { #Standardization of Calibre
+	land_maintenance_modifier = 0.02
+	reinforce_cost_modifier = 0.02
+}
+BM_mil_tech_18_22 = { #Carbine
+	land_maintenance_modifier = 0.04
+	reinforce_cost_modifier = 0.02
+}
+BM_mil_tech_22_26 = { #Cartridge
+	land_maintenance_modifier = 0.04
+	reinforce_cost_modifier = 0.04
+}
+BM_mil_tech_26_30 = { #Light Infantry Companies
+	land_maintenance_modifier = 0.06
+	reinforce_cost_modifier = 0.06
+	regiment_recruit_speed = -0.1
+}
+BM_mil_tech_30_31 = { #Impulsive Warfare
+	land_maintenance_modifier = 0.08
+	reinforce_cost_modifier = 0.08
+	regiment_recruit_speed = -0.15
+}
+BM_mil_tech_31 = { #Rifle
+	land_maintenance_modifier = 0.1
+	reinforce_cost_modifier = 0.1
+	regiment_recruit_speed = -0.2
+}

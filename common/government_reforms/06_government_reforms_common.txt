@@ -1678,17 +1678,19 @@ defensive_stance_reform = {
 				has_not_modifier_locking_military_tier = yes
 			}
 		}
-		NOT = { is_subject_of_type = march }
-		NOT = { is_subject_of_type = client_march }
 	}
 	modifiers = {
 		defensiveness = 0.15
-		garrison_size = 0.2
+		garrison_size = 0.25
 		max_hostile_attrition = 1
 	}
 	
 	ai = {
 		factor = 1
+		modifier = {
+			is_march = yes
+			factor = 1
+		}
 	}
 }
 
@@ -1899,7 +1901,7 @@ maritime_military_reform = {
 	modifiers = {
 		navy_tradition_decay = -0.01
 		naval_morale = 0.1
-		global_ship_cost = -0.05
+		global_ship_cost = -0.1
 	}
 	
 	ai = {
@@ -2121,7 +2123,7 @@ wei_suo_system_reform = {
 	}
 	modifiers = {
 		global_regiment_cost = -0.15
-		global_regiment_recruit_speed = -0.15
+		global_regiment_recruit_speed = -0.3
 	}
 	custom_attributes = {
 		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed 
@@ -2215,7 +2217,7 @@ eight_banners_reform = {
 	}
 	modifiers = {
 		amount_of_banners = 0.25
-		army_tradition_decay = -0.005
+		cav_to_inf_ratio = 0.1
 		movement_speed = 0.1
 	}
 	custom_attributes = {
@@ -2475,7 +2477,9 @@ the_maratha_army_reform = {
 	modifiers = {
 		maratha_loyalty_modifier = 0.1
 		maratha_privilege_slots = 1
-		reinforce_speed = 0.2
+		cav_to_inf_ratio = 0.1
+		cavalry_power = 0.1
+		cavalry_flanking = 0.5
 	}
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_maratha = yes
@@ -2509,6 +2513,7 @@ subutais_strategies_reform = {
 	}
 	modifiers = {
 		leader_siege = 1
+		siege_ability = 0.2
 		artillery_cost = -0.1
 	}
 	
@@ -2595,8 +2600,7 @@ ghazi_reform = {
 	modifiers = {
 		cavalry_cost = -0.1
 		land_attrition = -0.1
-		loot_amount = 0.5
-		available_province_loot = 0.5
+		cav_to_inf_ratio = 0.2
 	}
 	
 	ai = {
@@ -3042,7 +3046,7 @@ expanded_black_army_reform = {
 	}
 	modifiers = {
 		mercenary_manpower = 1
-		war_taxes_cost_modifier = -0.5
+		war_taxes_cost_modifier = -1
 		army_tradition_from_battle = 1
 		allow_mercenary_drill = yes
 	}
@@ -3175,8 +3179,7 @@ manrent_reform = {
 	modifiers = {
 		nobles_loyalty_modifier = 0.05
 		nobles_influence_modifier = 0.1
-		global_manpower_modifier = 0.1
-		vassal_forcelimit_bonus = 0.33
+		global_manpower_modifier = 0.3
 	}
 	
 	ai = {
@@ -3206,7 +3209,7 @@ staatse_leger_reform = {
 	}
 	modifiers = {
 		movement_speed = 0.1
-		drill_gain_modifier = 0.5
+		mercenary_cost = -0.25
 		reinforce_speed = 0.25
 	}
 	custom_attributes = {
@@ -3240,7 +3243,7 @@ watergeuzen_reform = {
 	}
 	modifiers = {
 		capture_ship_chance = 0.2
-		allowed_marine_fraction = 0.15
+		disengagement_chance = 0.2
 		sea_repair = yes
 	}
 	
@@ -3282,7 +3285,7 @@ allotment_system = {
 	}
 	modifiers = {
 		#has_carolean = yes
-		manpower_in_own_culture_provinces = 0.15
+		manpower_in_own_culture_provinces = 0.2
 		manpower_in_accepted_culture_provinces = 0.1
 		#amount_of_carolean = 0.25
 	}
@@ -3310,8 +3313,8 @@ sygnakhs_system_reform = {
 		}
 	}
 	modifiers = {
-		defensiveness = 0.15
-		garrison_size = 0.2
+		defensiveness = 0.3
+		garrison_size = 0.3
 		max_hostile_attrition = 1
 		fort_maintenance_modifier = -0.25
 		hostile_attrition = 1 
@@ -3344,7 +3347,7 @@ cossacks_registry_reform = {
 		}
 	}
 	modifiers = {
-		special_unit_forcelimit = 0.1
+		cav_to_inf_ratio = 0.1
 		cossacks_loyalty_modifier = 0.1
 		cossacks_influence_modifier = 0.1
 		cossacks_privilege_slots = 1
@@ -3391,8 +3394,8 @@ lessons_of_the_hussite_wars_reform = {
 		}
 	}
 	modifiers = {
-		fire_damage_received = -0.10
-		morale_damage_received = -0.05
+		morale_damage_received = -0.1
+		reinforce_speed = 0.2
 	}
 	
 	ai = {
@@ -3463,7 +3466,7 @@ streltsy_reform = {
 		}
 	}
 	modifiers = {
-		infantry_cost = -0.05
+		infantry_cost = -0.1
 		has_streltsy = yes
 		allowed_streltsy_fraction = 0.2
 	}

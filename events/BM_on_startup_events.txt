@@ -19,7 +19,7 @@ country_event = { #To stop a bunch of Hordes from allying and becoming a major p
 	fire_only_once = yes
 
 	immediate = {
-		set_country_flag = hordes_hates_each_other_modifier_flag
+		set_global_flag = hordes_hates_each_other_modifier_flag
 		GOL = {
 			add_historical_rival = CRI
 			add_historical_rival = KAZ

@@ -37,12 +37,11 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		loot_amount = 0.50
 		global_institution_spread = -0.5
-		cav_to_inf_ratio = -0.25
-		movement_speed = 0.2
-		global_manpower_modifier = 0.2
-		land_forcelimit_modifier = 0.2
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.15
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.15
 		years_of_nationalism = -5
 		reinforce_cost_modifier = -0.5
 		development_cost_modifier = 0.25
@@ -78,7 +77,7 @@ great_mongol_state_reform = {
 		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50
 		reinforce_cost_modifier = -0.5
-		cav_to_inf_ratio = -0.25
+		cav_to_inf_ratio = 0.25
 		movement_speed = 0.2
 		years_of_nationalism = -5
 	}
@@ -110,6 +109,7 @@ tribal_federation = {
 
 	modifiers = {
 		years_of_nationalism = -5
+		cav_to_inf_ratio = 0.2
 	}
 
 	conditional = {
@@ -130,6 +130,7 @@ tribal_despotism = {
 	nation_designer_cost = 0
 	modifiers = {
 		core_creation = -0.1
+		cav_to_inf_ratio = 0.2
 	}
 	legacy_equivalent = tribal_despotism_legacy
 	ai = {
@@ -144,6 +145,7 @@ tribal_kingdom = {
 	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
 		vassal_income = 0.2
+		cav_to_inf_ratio = 0.1
 	}
 	ai = {
 		factor = 1
@@ -221,7 +223,7 @@ stateless_society = {
 	nation_designer_cost = 0
 	modifiers = {
 		governing_capacity_modifier = -0.99
-		defensiveness = 0.75
+		defensiveness = 0.25
 		land_morale = 0.15
 	}
 	ai = {
@@ -337,6 +339,7 @@ tribal_confederacy = {
 		nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20
+		cav_to_inf_ratio = 0.1
 	}
 
 	conditional = {
@@ -394,8 +397,8 @@ great_man = {
 		}
 	}
 	modifiers = {
-		leader_cost = -0.1
-		production_efficiency = 0.1
+		cav_to_inf_ratio = 0.1
+		production_efficiency = 0.2
 	}
 
 	ai = {
@@ -422,10 +425,10 @@ shaka_regime = {
 		}
 	}
 	modifiers = {
-		monarch_military_power = 2
+		monarch_military_power = 3
 		global_unrest = -2
-		war_exhaustion = -0.02
-		governing_capacity_modifier = -0.5
+		war_exhaustion = -0.1
+		governing_capacity_modifier = -0.3
 	}
 
 	conditional = {
@@ -454,6 +457,7 @@ feudal_tribe = {
 	trigger = {
 	}
 	modifiers = {
+		cav_to_inf_ratio = 0.1
 		vassal_income = 0.1
 		global_tax_modifier = 0.1
 	}
@@ -495,7 +499,7 @@ civil_society_reform = {
 	allow_normal_conversion = yes
 	icon = "tribal_civil_society"
 	modifiers = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.15
 		yearly_corruption = -0.05
 	}
 	ai = {
@@ -547,8 +551,8 @@ retain_tribal_hierarchy_reform = {
 	icon = "retain_tribal_hierarchy"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 150
-		max_absolutism = 10
+		governing_capacity = 100
+		cav_to_inf_ratio = 0.1
 	}
 	ai = {
 		factor = 1
@@ -567,8 +571,8 @@ centralize_tribal_power_reform = {
 	icon = "tribal_centralize_power"
 	allow_normal_conversion = yes
 	modifiers = {
-		core_creation = -0.05
-		stability_cost_modifier = -0.05
+		core_creation = -0.1
+		stability_cost_modifier = -0.1
 	}
 }
 
@@ -586,7 +590,7 @@ horde_barbaric_despoilers_reform = {
 	}
 	modifiers = {
 		raze_power_gain = 0.33
-		
+		cav_to_inf_ratio = 0.1
 	}
 	ai = {
 		factor = 2
@@ -605,6 +609,7 @@ horde_tribal_unity_reform = {
 	}
 	modifiers = {
 		horde_unity = 2
+		cav_to_inf_ratio = 0.1
 	}
 	ai = {
 		factor = 2
@@ -991,7 +996,8 @@ tribe_remain_tribal_reform = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		war_exhaustion = -0.02
+		war_exhaustion = -0.05
+		cav_to_inf_ratio = 0.2
 	}
 }
 
@@ -1008,6 +1014,7 @@ tribe_tribal_unity = {
 		nobles_loyalty_modifier = 0.05
 		dhimmi_loyalty_modifier = 0.05
 		burghers_loyalty_modifier = 0.05
+		cav_to_inf_ratio = 0.2
 	}
 	ai = {
 		factor = 2

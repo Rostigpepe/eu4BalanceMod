@@ -374,16 +374,20 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		add_years_of_income = 1.5
+		add_years_of_income = 3
 		if = {
 			limit = {
 				stability = 2
 			}
 			add_stability = 1
-			add_adm_power = 25
+			add_adm_power = 100
 		}
 		else = {
 			add_stability = 2
+		}
+		add_country_modifier = {
+			name = BM_the_iberian_crown
+			duration = -1
 		}
 		if = {
 			limit = {
@@ -408,6 +412,11 @@ country_event = {
 			CAT = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
+				change_religion = catholic
+				add_country_modifier = {
+					name = BM_iberian_crown_subject
+					duration = -1
+				}
 			}
 			if = {
 				limit = {
@@ -425,6 +434,11 @@ country_event = {
 			GAL = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
+				change_religion = catholic
+				add_country_modifier = {
+					name = BM_iberian_crown_subject
+					duration = -1
+				}
 			}
 			if = {
 				limit = {
@@ -441,7 +455,12 @@ country_event = {
 			release = NAV
 			NAV = {
 				change_government = monarchy
-				add_government_reform = feudalism_reform
+				add_government_reform = courts_of_navarra
+				change_religion = catholic
+				add_country_modifier = {
+					name = BM_iberian_crown_subject
+					duration = -1
+				}
 			}
 			if = {
 				limit = {
@@ -584,7 +603,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		add_yearly_manpower = 0.25
+		add_yearly_manpower = 0.5
 	}
 	option = {
 		name = FEE_Iberia_Events.4.OPT2

@@ -13,67 +13,67 @@ country_event = {
 			AND = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0
+					value = 0.51
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.24
+						value = 0.60
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_0_24 }
+				NOT = { has_country_modifier = BM_cav_ratio_51_60 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.25
+					value = 0.61
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.39
+						value = 0.70
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_25_39 }
+				NOT = { has_country_modifier = BM_cav_ratio_60_71 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.4
+					value = 0.71
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.59
+						value = 0.80
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_40_59 }
+				NOT = { has_country_modifier = BM_cav_ratio_71_80 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.6
+					value = 0.81
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.79
+						value = 0.90
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_60_79 }
+				NOT = { has_country_modifier = BM_cav_ratio_81_90 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.8
+					value = 0.91
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.99
+						value = 99
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_80_99 }
+				NOT = { has_country_modifier = BM_cav_ratio_91_99 }
 			}
 			AND = {
 				has_global_modifier_value = {

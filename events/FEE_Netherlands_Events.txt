@@ -445,8 +445,6 @@ country_event = {
 		}
 		4383 = {
 			owned_by = ROOT
-			NOT = { has_building = courthouse }
-			NOT = { has_building = town_hall }
 		}
 		is_year = 1500
 		stability = 2
