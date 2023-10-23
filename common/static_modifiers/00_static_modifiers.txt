@@ -171,7 +171,7 @@ arid = {
 }
 
 sea_zone = {
-	max_attrition = 5						#Maximum Attrition is 5
+	max_attrition = 8						#Maximum Attrition is 5
 }
 
 land_province = {

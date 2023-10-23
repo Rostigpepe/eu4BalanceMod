@@ -1076,14 +1076,14 @@ maritime_ideas = {
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
-		allowed_marine_fraction = 0.25
+		light_ship_number_of_cannons_modifier = 0.2
 	}
 	sheltered_ports = {
 		trade_range_modifier = 0.25
 		trade_steering = 0.25
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.5
+		naval_forcelimit_modifier = 0.25
 		ship_power_propagation = 0.25
 	}
 	ships_penny = {
@@ -1091,11 +1091,12 @@ maritime_ideas = {
 		treasure_fleet_income = 0.25
 	}
 	sea_hawks = {
-		global_ship_trade_power = 0.3
+		hull_size_modifier = 0.1
+		privateer_efficiency = 0.3
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
-		privateer_efficiency = 0.3
+
 	}
 
 	ai_will_do = {
@@ -1619,7 +1620,7 @@ naval_ideas = {
 
 	bonus = {
 		global_naval_barrage_cost = -1
-		disengagement_chance = 0.15
+		disengagement_chance = 0.1
 	}
 
 	boarding_parties = {
@@ -1627,11 +1628,11 @@ naval_ideas = {
 		landing_penalty = -1
 	}
 	improved_rams = {
-		galley_power = 0.25
+		galley_power = 0.15
 	}
 	naval_cadets = {
 		leader_naval_fire = 1
-		sunk_ship_morale_hit_recieved = -0.33
+		sunk_ship_morale_hit_recieved = -0.1
 	}
 	naval_glory = {
 		navy_tradition = 1
@@ -1642,12 +1643,11 @@ naval_ideas = {
 		allowed_marine_fraction = 0.25
 	}
 	oak_forests_for_ships = {
-		heavy_ship_power = 0.20
-		ship_durability = 0.1
+		heavy_ship_power = 0.1
+		ship_durability = 0.05
 	}
 	superior_seamanship = {
 		naval_morale = 0.1
-		global_naval_engagement_modifier = 0.1
 	}
 
 	ai_will_do = {

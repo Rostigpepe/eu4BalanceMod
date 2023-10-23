@@ -1897,13 +1897,15 @@
  BM_pedro_madruga_army: "Pedro Madruga Leads the Army"
  BM_pedro_madruga_naval: "Pedro Madruga Leads the Navy"
 
-
  FEE_Iberia_Events.3.T:0 "The Autonomous Regions"
  FEE_Iberia_Events.3.D:0 "The question of the various constituent kingdoms of our realm has always been a nagging one for the Catholic monarchs of Iberia. The very fact that many of them were recognized by Popes past as kingdoms in their own right has been a source of contention, as nobility and peasant alike have felt unrepresented in our court, causing widespread resentment. \nWith the Reconquista complete, now is the time to reorganize these outlying regions. [Root.Consort.GetName] has recently come up with the idea of a national Cortes where each region has their own representation. [Root.Monarch.GetName], however, desiring increased power in these regions, would prefer a viceroyalty. This would allow some local rule while still maintaining a dependence on the crown. However, this likely would not satisfy the regions. Most radical of all would be either withdrawing royal authority or attempting to assert total control."
  FEE_Iberia_Events.3.OPT1:0 "Establish a National Cortes!"
  FEE_Iberia_Events.3.OPT2:0 "Appoint Viceroys to these regions."
  FEE_Iberia_Events.3.OPT3:0 "These people are more trouble than they are worth - let the local nobles deal with them."
  FEE_Iberia_Events.3.OPT4:0 "Am I not the monarch? Curtail these impudent provinces!"
+
+ BM_the_iberian_crown: "The Iberian Crowns"
+ BM_iberian_crown_subject: "The Iberian Crown (Subject)"
 
  FEE_Iberia_Events.4.T:0 "Fate of the Fueros"
  FEE_Iberia_Events.4.D:0 "With the Basque people finally fully integrated into our realm, the question of how best to manage their affairs remains to be settled. Being one of the oldest and most proud kingdoms of Christian Iberia, the former kingdom of Navarra stubbornly guarded its ancient institutions. \nAmong those was the Fueros, the royal charter of Navarra which not only gave Navarra kingdom rank but granted considerable autonomy to its nobles and guaranteed rights to its peasants. Now, representatives of these parties have approached us, requesting that we continue to respect these rights. In exchange, they promise their fullest support for us in other internal and external affairs."
@@ -2582,6 +2584,13 @@
  desc_fee_lw_refugees_antwerp:0 ""
  fee_lw_legacy_antwerp:0 "Legacy of Antwerp"
  desc_fee_lw_legacy_antwerp:0 ""
+
+ BM_admiralty_college_institute: "Admiralty College Institute"
+ BM_Dutch_reaching_the_seas: "Reaching for the Seas"
+ BM_amsterdam_stock_exchange: "Amsterdam Stock Exchange"
+ BM_Dutch_Binnenhof: "Binnenhof"
+
+
 
  #Opinion Modifier
  fee_lw_sacked_antwerp:0 "Sacked Antwerp!"

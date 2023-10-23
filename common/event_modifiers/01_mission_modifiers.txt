@@ -5423,7 +5423,7 @@ BM_dutc_control_of_east_indies = {
 }
 
 ned_sea_beggar_activity = {
-	blockade_efficiency = 0.33
+	blockade_efficiency = 0.5
 	light_ship_power = 0.2
 	may_perform_slave_raid_on_same_religion = yes
 }
@@ -5434,7 +5434,8 @@ ned_west_indies_charter = {
 }
 
 ned_distributed_tax_burden = {
-	global_tax_modifier = 0.2
+	global_tax_modifier = 0.33
+	centralize_state_cost = -0.3
 }
 
 ned_dutch_overseas_trade = {

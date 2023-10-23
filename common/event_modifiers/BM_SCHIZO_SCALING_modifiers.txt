@@ -100,7 +100,7 @@ BM_admin_tech_24_26 = { #Bonds and Tontines
 	ae_impact = 0.1
 	unjustified_demands = 0.1
 	interest = -0.5
-	inflation_action_cost = 0.1
+	inflation_action_cost = -0.1
 }
 BM_admin_tech_26_27 = { #Separation of Powers
 	state_maintenance_modifier = 0.06
@@ -113,7 +113,7 @@ BM_admin_tech_27_29 = { #Modern Bureaucracy
 	state_maintenance_modifier = 0.08
 	ae_impact = 0.2
 	unjustified_demands = 0.2
-	interest = -0.5
+	interest = -1
 	inflation_action_cost = 0.1
 }
 BM_admin_tech_29_31 = { #Rights of Man
@@ -134,60 +134,55 @@ BM_admin_tech_31 = { #Revolutionary Ideals
 }
 
 BM_diplo_tech_13_16 = { #Chartered Companies
-	interest = 0.25
+	interest = -0.25
 }
 BM_diplo_tech_16_20 = { #Development of Maritime Law
-	interest = 0.5
+	interest = -0.5
 }
 BM_diplo_tech_20_26 = { #Naval Professionalization
-	interest = 1
+	interest = -0.75
 }
 BM_diplo_tech_26_28 = { #The Eastindiaman
-	interest = 1.25
+	interest = 1
 	merchants = 1
 }
 BM_diplo_tech_28_30 = { #Joint Stock Companies
-	interest = 1.5
+	interest = -1.5
 	merchants = 1
 }
 BM_diplo_tech_30_32 = { #Insurance Companies
-	interest = 2
+	interest = -2
 	merchants = 1
 }
 BM_diplo_tech_32 = { #The Gold Standard
-	interest = 2.5
-	monthly_gold_inflation_modifier = 0.25
+	interest = -2
+	monthly_gold_inflation_modifier = -0.1
 	merchants = 2
 }
 
 
 BM_mil_tech_9_16 = { #Professional Officers
-	land_maintenance_modifier = 0.02
+	reinforce_cost_modifier = 0.02
 }
 BM_mil_tech_16_18 = { #Standardization of Calibre
-	land_maintenance_modifier = 0.02
-	reinforce_cost_modifier = 0.02
-}
-BM_mil_tech_18_22 = { #Carbine
-	land_maintenance_modifier = 0.04
-	reinforce_cost_modifier = 0.02
-}
-BM_mil_tech_22_26 = { #Cartridge
-	land_maintenance_modifier = 0.04
 	reinforce_cost_modifier = 0.04
 }
-BM_mil_tech_26_30 = { #Light Infantry Companies
-	land_maintenance_modifier = 0.06
+BM_mil_tech_18_22 = { #Carbine
 	reinforce_cost_modifier = 0.06
+}
+BM_mil_tech_22_26 = { #Cartridge
+	reinforce_cost_modifier = 0.08
+}
+BM_mil_tech_26_30 = { #Light Infantry Companies
+	reinforce_cost_modifier = 0.1
 	regiment_recruit_speed = -0.1
 }
 BM_mil_tech_30_31 = { #Impulsive Warfare
-	land_maintenance_modifier = 0.08
-	reinforce_cost_modifier = 0.08
-	regiment_recruit_speed = -0.15
+	reinforce_cost_modifier = 0.1
+	regiment_recruit_speed = -0.25
 }
 BM_mil_tech_31 = { #Rifle
 	land_maintenance_modifier = 0.1
-	reinforce_cost_modifier = 0.1
-	regiment_recruit_speed = -0.2
+	reinforce_cost_modifier = 0.15
+	regiment_recruit_speed = -0.3
 }

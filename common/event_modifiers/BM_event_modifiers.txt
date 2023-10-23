@@ -756,3 +756,26 @@ BM_iberian_crown_subject = {
 	global_defender_dice_roll_bonus = 1
 	land_forcelimit = 5
 }
+
+BM_admiralty_college_institute = {
+	light_ship_hull_size = 0.2
+	light_ship_power = 0.15
+	allowed_voc_indiamen_fraction = 0.15
+}
+
+BM_Dutch_reaching_the_seas = {
+	may_explore = yes
+	range = 0.5
+	colonists = 1
+}
+
+BM_amsterdam_stock_exchange = {
+	interest = -1
+	trade_company_investment_cost = -0.1
+	trade_value = 1
+}
+
+BM_Dutch_Binnenhof = {
+	monthly_reform_progress = 0.2
+	state_governing_cost = -0.05
+}
