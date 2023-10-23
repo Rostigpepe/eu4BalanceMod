@@ -779,3 +779,14 @@ BM_Dutch_Binnenhof = {
 	monthly_reform_progress = 0.2
 	state_governing_cost = -0.05
 }
+
+
+BM_Hussite_wars_destruction = {
+	global_unrest = 2
+	tolerance_own = -1
+}
+
+BM_Bohemia_charles_university = {
+	institution_growth = 0.33
+	local_development_cost = -0.1
+}

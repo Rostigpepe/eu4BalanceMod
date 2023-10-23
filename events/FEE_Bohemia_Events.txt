@@ -768,3 +768,87 @@ country_event = {
 		}
 	}
 }
+
+#Devestation of the Hussite Wars
+country_event = {
+	id = FEE_Bohemia_Events.14
+	title = FEE_Bohemia_Events.14.T
+	desc = FEE_Bohemia_Events.14.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+ 	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.14.OPT1 #Only the dead have seen the end of war...
+		every_owned_province = {
+			add_devastation = 26
+		}
+		custom_tooltip = BM_Hussite_wars_destruction_TT
+		hidden_effect = {
+			add_country_modifier = { #Perma until Devestation is 0 in all Bohemian Heartlands
+			name = BM_Hussite_wars_destruction
+			duration = -1
+		}
+		}
+	}
+}
+
+#Recovery from the Hussite Wars
+country_event = {
+	id = FEE_Bohemia_Events.15
+	title = FEE_Bohemia_Events.15.T
+	desc = FEE_Bohemia_Events.15.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		bohemia_area = {
+			devastation = 0
+		}
+		erzgebirge_area = {
+			devastation = 0
+		}
+		moravia_area = {
+			devastation = 0
+		}
+ 	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.15.OPT1 #A bit of the old and new...
+		266 = {
+			add_province_modifier = {
+				name = BM_Bohemia_charles_university
+				duration = -1
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		hidden_effect = {
+			remove_country_modifier = BM_Hussite_wars_destruction
+			moravia_area = {
+				add_prosperity = 25
+			}
+			erzgebirge_area = {
+				add_prosperity = 25
+			}
+			bohemia_area = {
+				add_prosperity = 25
+			}
+		}
+	}
+}

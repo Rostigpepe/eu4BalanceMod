@@ -426,6 +426,14 @@
  FEE_Bohemia_Events.13.D:0 "Disaster has befallen us! Prague, once one of the great cultural and economic centers, has fallen to the invading enemy! We can only curse the foolishness of our rulers who, scorning the example of past rulers, sought peace with enemies on the field rather than through a siege of their capital city. A full quarter of the city has been levelled and even the great cathedral has suffered damage."
  FEE_Bohemia_Events.13.OPT1:0 "Will we ever recover?"
 
+ FEE_Bohemia_Events.14.T: "Aftermath of the Hussite Wars"
+ FEE_Bohemia_Events.14.D: "The Hussite Wars (sometimes referred to as the Hussite Revolution) were a series of wars fought between the Christian Hussites and the combined Christian Catholic forces of the Holy Roman Emperor Sigismund, the Papacy, European monarchs loyal to the Catholic Church as well as various Hussite factions. After initial clashes, the Ultraquists, known as the more open-minded and tolerant branch of the Hussite faith, changed sides in 1432 to fight alongside Roman Catholics and opposed the Taborites and other Hussite spinoffs, who wanted no compromise with Catholicism. These wars lasted from 1419 to 1434 and left the Bohemian countryside as well as many of its once glorious and prosperous cities in total ruin."
+ FEE_Bohemia_Events.14.OPT1: "Only the dead have seen the end of war..."
+
+ FEE_Bohemia_Events.15.T: "Recovery from the Hussite Wars"
+ FEE_Bohemia_Events.15.D: "Though only a few years ago, the Bohemian countryside was laid desolate with only burnt fields and empty cities to be seen, now much of the Bohemian Heartland has recovered. With the final stones laid in the Centre Square of Prague, now our attention can turn to not only restoration of what once was, but to building something new. Already plans are being made to reconstruct the Charles University, founded by a Papal Bull from Pope Clemens VI, where Jan Hus himself would instruct his first teachings of Hussitism to the Czech people. A better candidate to stand as the first building blocks of a 'new Bohemia' we could not ask for."
+ FEE_Bohemia_Events.15.OPT1: "A bit of the old and new..."
+
  #Modifiers
  fee_boh_infertility:0 "Infertility"
  fee_boh_noble_concesions:0 "Noble Concessions"
@@ -440,6 +448,12 @@
  fee_boh_charter_universal_peace_union:0 "Charter of a Universal Peace Union"
  fee_boh_charter_universal_peace_union_france:0 "Charter of a Universal Peace Union"
 
+ BM_Hussite_wars_destruction: "Hussite Wars Destruction"
+ desc_BM_Hussite_wars_destruction: "The Hussite Wars has incured massive devestation and led to much of the population distraught."
+
+ BM_Bohemia_charles_university: "Univerzita Karlova"
+ desc_BM_Bohemia_charles_university: "Founded in 1348 and rebuilt after the Hussite Wars, the Charles University is one of the oldest universities in Europe."
+
  #Opinion
  fee_boh_linked_thrones:0 "Linked Thrones"
  fee_boh_claiming_thrones:0 "Claimed Thrones"
@@ -448,7 +462,7 @@
 
  fee_boh_thaler_princes_tt:0 "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"
 
-
+ BM_Hussite_wars_destruction_TT: "§YBohemia§!, §YErzgebirge§!, and §YMoravia§! area gets '§YHussite Wars Destruction§! until all provinces no longer have '§YDevastation§!, giving the following effects: \nGlobal Unrest §R+2§! \nTolerance of True Faith §R-1§!"
 
  ##### Brandenburg Proper Events #####  ##### Brandenburg Proper Events #####  ##### Brandenburg Proper Events #####
  ##### Brandenburg Proper Events #####  ##### Brandenburg Proper Events #####  ##### Brandenburg Proper Events #####

@@ -203,8 +203,6 @@ country_decisions = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = infrastructure_ideas
-			}
-			OR = {
 				full_idea_group = aristocracy_ideas
 				full_idea_group = court_ideas
 			}
@@ -250,8 +248,6 @@ country_decisions = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = infrastructure_ideas
-			}
-			OR = {
 				full_idea_group = aristocracy_ideas
 				full_idea_group = court_ideas
 			}
@@ -297,8 +293,6 @@ country_decisions = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = infrastructure_ideas
-			}
-			OR = {
 				full_idea_group = aristocracy_ideas
 				full_idea_group = court_ideas
 			}
@@ -344,8 +338,6 @@ country_decisions = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = infrastructure_ideas
-			}
-			OR = {
 				full_idea_group = aristocracy_ideas
 				full_idea_group = court_ideas
 			}
@@ -391,8 +383,6 @@ country_decisions = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = infrastructure_ideas
-			}
-			OR = {
 				full_idea_group = aristocracy_ideas
 				full_idea_group = court_ideas
 			}
