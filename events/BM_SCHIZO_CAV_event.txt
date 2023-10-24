@@ -1,6 +1,9 @@
 #####################################################
 ##### Various benefits from high cavalry ratio. #####
 #####################################################
+#####################################################
+##### Various benefits from high cavalry ratio. #####
+#####################################################
 country_event = {
 	id = BM_schizo_cav_event.1
 	title = BM_schizo_cav_event.1.t
@@ -34,7 +37,7 @@ country_event = {
 						value = 0.70
 					} 
 				}
-				NOT = { has_country_modifier = BM_cav_ratio_60_71 }
+				NOT = { has_country_modifier = BM_cav_ratio_61_70 }
 			}
 			AND = {
 				has_global_modifier_value = {
@@ -99,94 +102,114 @@ country_event = {
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.25
+						value = 0.51
 					}
 				}
 			}
-			add_country_modifier = {
-				name = BM_cav_ratio_0_24
-				duration = -1
-			}
-			remove_country_modifier = BM_cav_ratio_25_39
-			remove_country_modifier = BM_cav_ratio_40_59
-			remove_country_modifier = BM_cav_ratio_60_79
-			remove_country_modifier = BM_cav_ratio_80_99
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_81_90
+			remove_country_modifier = BM_cav_ratio_91_99
 			remove_country_modifier = BM_cav_ratio_100
 		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-				value = 0.25
+					value = 0.51
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.4
+						value = 0.61
 					}
 				}
 			}
 			add_country_modifier = {
-				name = BM_cav_ratio_25_39
+				name = BM_cav_ratio_51_60
 				duration = -1
 			}
-			remove_country_modifier = BM_cav_ratio_0_24
-			remove_country_modifier = BM_cav_ratio_40_59
-			remove_country_modifier = BM_cav_ratio_60_79
-			remove_country_modifier = BM_cav_ratio_80_99
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_81_90
+			remove_country_modifier = BM_cav_ratio_91_99
 			remove_country_modifier = BM_cav_ratio_100
 		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.4
+					value = 0.61
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.60
+						value = 0.71
 					}
 				}
 			}
 			add_country_modifier = {
-				name = BM_cav_ratio_40_59
+				name = BM_cav_ratio_61_70
 				duration = -1
 			}
-			remove_country_modifier = BM_cav_ratio_0_24
-			remove_country_modifier = BM_cav_ratio_25_39
-			remove_country_modifier = BM_cav_ratio_60_79
-			remove_country_modifier = BM_cav_ratio_80_99
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_81_90
+			remove_country_modifier = BM_cav_ratio_91_99
 			remove_country_modifier = BM_cav_ratio_100
 		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.6
+					value = 0.71
 				}
 				NOT = { 
 					has_global_modifier_value = {
 						which = cav_to_inf_ratio
-						value = 0.8
+						value = 0.81
 					}
 				}
 			}
 			add_country_modifier = {
-				name = BM_cav_ratio_60_79
+				name = BM_cav_ratio_71_80
 				duration = -1
 			}
-			remove_country_modifier = BM_cav_ratio_0_24
-			remove_country_modifier = BM_cav_ratio_25_39
-			remove_country_modifier = BM_cav_ratio_40_59
-			remove_country_modifier = BM_cav_ratio_80_99
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_81_90
+			remove_country_modifier = BM_cav_ratio_91_99
 			remove_country_modifier = BM_cav_ratio_100
 		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cav_to_inf_ratio
-					value = 0.8
+					value = 0.81
+				}
+				NOT = { 
+					has_global_modifier_value = {
+						which = cav_to_inf_ratio
+						value = 0.91
+					}
+				}
+			}
+			add_country_modifier = {
+				name = BM_cav_ratio_81_90
+				duration = -1
+			}
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_91_99
+			remove_country_modifier = BM_cav_ratio_100
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 0.91
 				}
 				NOT = { 
 					has_global_modifier_value = {
@@ -196,13 +219,13 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = BM_cav_ratio_80_99
+				name = BM_cav_ratio_91_99
 				duration = -1
 			}
-			remove_country_modifier = BM_cav_ratio_0_24
-			remove_country_modifier = BM_cav_ratio_25_39
-			remove_country_modifier = BM_cav_ratio_40_59
-			remove_country_modifier = BM_cav_ratio_60_79
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_81_90
 			remove_country_modifier = BM_cav_ratio_100
 		}
 		if = {
@@ -216,11 +239,11 @@ country_event = {
 				name = BM_cav_ratio_100
 				duration = -1
 			}
-			remove_country_modifier = BM_cav_ratio_0_24
-			remove_country_modifier = BM_cav_ratio_25_39
-			remove_country_modifier = BM_cav_ratio_40_59
-			remove_country_modifier = BM_cav_ratio_60_79
-			remove_country_modifier = BM_cav_ratio_80_99
+			remove_country_modifier = BM_cav_ratio_51_60
+			remove_country_modifier = BM_cav_ratio_61_70
+			remove_country_modifier = BM_cav_ratio_71_80
+			remove_country_modifier = BM_cav_ratio_81_90
+			remove_country_modifier = BM_cav_ratio_91_99
 		}
 	}
 

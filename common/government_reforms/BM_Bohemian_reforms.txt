@@ -69,7 +69,12 @@ vladislavs_provincial_establishment_reform = {
 hussite_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
-	
+	effect = {
+		set_consort_flag = BM_four_articles_flag
+	}
+	removed_effect = {
+		clr_country_flag = BM_four_articles_flag
+	}
 	potential = {
 		OR = {
 			religion = hussite
@@ -84,9 +89,6 @@ hussite_reform = {
 	}
 	modifiers = {
 		missionaries = 1
-	}
-	custom_attributes = {
-		enables_four_articles = yes
 	}
 	ai = {
 		factor = 100

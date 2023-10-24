@@ -2,23 +2,23 @@
  # HUSSITE CHURCH
 estate_church_four_articles_of_prague = {
 	icon = privilege_grant_autonomy
-	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
-		has_government_attribute = enables_four_articles
+		has_country_flag = BM_four_articles_flag
 	}
 	can_select = {
-		has_government_attribute = enables_four_articles
+		has_country_flag = BM_four_articles_flag
 	}
 	on_granted = {
 	}
 	penalties = {
 	}
 	modifier_by_land_ownership = {
-		tolerance_own = 3
-		tolerance_heretic = -3
+		tolerance_own = 1
+		tolerance_heretic = -1
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -31,73 +31,81 @@ estate_church_four_articles_of_prague = {
 	}
 }
 
- # GEORGIA
-estate_pacification_of_the_north_privilege = {
-	icon = privilege_raise_host
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = 0.10
-	influence = 0.05
-	is_valid = {
-		has_country_flag = geo_pacified_north_caucasus
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	modifier_by_land_ownership = {
-	}
-	penalties = {
-	}
-	benefits = {
-	    special_unit_forcelimit = 0.15
-		cav_to_inf_ratio = 0.25
-	}
-	mechanics = {
-		enables_cossack_regiments
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			any_owned_province = {
-				has_terrain = steppe
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
-		}
-	}
-}
-
 
  # PEASANTS PRIVILIGES
- estate_peasants_land_rights = {
+estate_peasants_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
-	influence = 0.10
+	influence = 0.05
 	can_select = {
-
 	}
 	on_granted = {
 	}
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 50
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_reduce_wheat_taxes = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.1
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		production_efficiency = 0.05
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_representation_in_government = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.10
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_representation_in_government = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.10
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
 	}
 	ai_will_do = {
 		factor = 0
@@ -106,15 +114,14 @@ estate_pacification_of_the_north_privilege = {
 
 estate_peasants_guild_assembly = {
 	icon = privilege_empty_throne
-	land_share = 0
 	max_absolutism = -10
-	loyalty = 0.05
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
 	influence = 0.15
 	can_select = {
-
 	}
 	modifier_by_land_ownership = {
-		global_trade_goods_size_modifier = 0.20
+		global_trade_goods_size_modifier = 0.2
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -131,14 +138,17 @@ estate_peasants_guild_assembly = {
 estate_peasants_manpower_drive = {
 	icon = privilege_demand_more_troops
 	land_share = 0
-	max_absolutism = -10
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-
+		NOT = {
+			has_estate_privilege = estate_nobles_levies
+		}
 	}
 	modifier_by_land_ownership = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.5
 	}
 	mechanics = {
 		exempt_from_seize_land

@@ -23,7 +23,6 @@ estate_peasants = {
 	}
 	land_ownership_modifier = {
 		peasants_loyalty_modifier = 0.2
-
 	}
 
 	province_independence_weight = {

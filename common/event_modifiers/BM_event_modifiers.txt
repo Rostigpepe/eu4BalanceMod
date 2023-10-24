@@ -1,9 +1,3 @@
-BM_ven_arsenal_marines = {
-	recover_army_morale_speed = 0.10
-	shock_damage = 0.10
-	is_marine_modifier = yes
-}
-
 anglican_aspect_aspect_modifier = {
 	yearly_absolutism = 1 
 }
@@ -444,7 +438,7 @@ eic_bombay_presidency_modifier = {
 eic_conquest_of_punjab = {
 	can_recruit_rajputs = yes
 	allowed_rajput_fraction = 0.25
-	manpower_recovery_speed = 0.1d
+	manpower_recovery_speed = 0.1
 }
 eic_rush_of_new_sepoys = {
 	manpower_recovery_speed = 0.2

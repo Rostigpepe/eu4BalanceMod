@@ -114,12 +114,6 @@ monarchy = {
 				hessian_modern_militarized_monarchy_reform
 				office_of_lord_regent
 				kingdom_of_sicily_reform
-				#Georgian modded Governments
-				georgian_principality_reform
-				georgian_monarchy_reform
-				georgian_empire_reform
-				#Gothic
-				gothic_principality_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -186,9 +180,6 @@ monarchy = {
 				revive_the_hisbah_mamluks
 				vladislavs_provincial_establishment_reform
 				swedish_house_of_knights
-				#Georgian Mechanics			
-				saeristavo_reform_mon
-				sadrosho_reform_mon
 			}
 		}
 		state_and_religion = {
@@ -230,8 +221,6 @@ monarchy = {
 				#BM MODDED
 				hussite_reform
 				imperial_inquisition_reform
-				#Georgia
-				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -296,8 +285,6 @@ monarchy = {
 				hessian_elite_jaegers_reform
 				imperial_circles_reform
 				portugese_marines_reform
-				#Revolutionary Georgia
-				geo_revolutionary_army_reform
 			}
 		}
 		deliberative_assembly = {
@@ -331,8 +318,6 @@ monarchy = {
 				diverse_estates_of_austria
 				swedish_parliamentary_order
 				parliament_of_sicily_reform
-				#Georgian Parliament-Karavi				
-				karavi_reform
 			}
 		}
 		growth_of_administration = {
@@ -635,12 +620,6 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
-				# BM GOVERNMENTS
-				#Georgian Elective government ruled by Eristavis
-				georgian_republic_reform
-				#Gothic
-				gothic_republic_reform
-				new_eic_reform
 			}
 		}
 		republican_virtues = {
@@ -722,8 +701,6 @@ republic = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
-				#Georgia
-				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -783,8 +760,6 @@ republic = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
-				#Revolutionary Georgia
-				geo_revolutionary_army_reform
 				sepoy_troops_reform
 			}
 		}
@@ -816,9 +791,6 @@ republic = {
 				union_of_states_reform
 				cultural_administration_reform
 				penal_colonies_reform
-				#Georgian Administration				
-				saeristavo_reform_rep
-				sadrosho_reform_rep
 				cornwallis_code_reform
 			}
 		}
@@ -857,9 +829,6 @@ republic = {
 				power_to_the_captains_reform
 				absolute_president_reform
 				revolutionary_council_reform
-				#Georgian Parliament - Karavi				
-				broaden_functions_of_karavi_reform
-				broaden_functions_of_darbazi_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -1192,10 +1161,7 @@ theocracy = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				sisterhood_of_jeanne_darc_reform
-				#Chorepiscopate
-				georgian_theocracy_reform
-				#Gothic
-				metropolitanate_of_gothia_reform
+				#BM
 				bm_taiping_heavenly_kingdom_reform
 			}
 		}
@@ -1250,8 +1216,6 @@ theocracy = {
 				strengthened_the_patriarchy_reform
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
-				#Georgia
-				decretals_of_the_georgian_orthodox_church_reform
 			}
 		}
 		military_doctrines = {
@@ -1337,9 +1301,6 @@ theocracy = {
 				pious_merchants_reform
 				monastic_breweries_reform
 				warrior_monks_reform
-				#Georgian Reform
-				saeristavo_reform_theo
-				sadrosho_reform_theo
 			}
 		}
 		economical_matters = {

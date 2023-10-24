@@ -332,7 +332,7 @@ country_event = { #You guessed it, removes natives
 	desc = remove_natives_events.2.d
 	picture = NATIVES_eventPicture
 	
-hidden = yes
+	hidden = yes
 	trigger = {
 		NOT = { has_global_flag = africa_removed_flag }
 	}
@@ -578,7 +578,7 @@ country_event = {
 			151  = {
 				add_province_modifier = {
 					name = bm_walls_of_constantinople
-					duration = -1
+					duration = 36500
 				}
 			}
 		}

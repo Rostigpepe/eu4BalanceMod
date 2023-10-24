@@ -176,6 +176,10 @@
  estate_peasants_guild_assembly_desc: "The Peasant-Guild deserves the right to organize in formal guilds with full recognition of the state."
  estate_peasants_manpower_drive: "Peasant Manpower Drive"
  estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is."
+ estate_peasants_representation_in_government: "Peasants Representation In Parliament"
+ estate_peasants_representation_in_government_desc: "By paying further lip service to the Peasants by granting the more seats in Parliament we can ensure their loyalty."
+ estate_peasants_reduce_wheat_taxes: "Reduce Farm Taxes"
+ estate_peasants_reduce_wheat_taxes_desc: "By increasing the taxes that we collect off of our peasants in the form of agricultural taxes, the Peasants will be given the necessary motivation to increase their production."
 
  #Peasant Events
  peasants_estate_events.1.t: "Representation Pays Off"

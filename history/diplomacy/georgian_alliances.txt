@@ -1,6 +1,0 @@
-vassal = {
-	first = GEO
-	second = SME
-	start_date = 1415.1.1
-	end_date = 1465.1.1 #Kvarkvare II defeats and captures king George VIII, Samtskhe becomes de-facto independent
-}

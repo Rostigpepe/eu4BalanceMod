@@ -814,7 +814,7 @@ NED_ideas = {
 	}
 	
 	bonus = {
-		global_trade_goods_size_modifier = 0.20
+		trade_efficiency = 0.15
 	}
 
 	trigger = {
@@ -826,7 +826,8 @@ NED_ideas = {
 	free = yes		#will be added at load.
 	
 	amsterdam_wisselbank = {
-		trade_efficiency = 0.20
+		interest = -0.5
+		trade_range_modifier = 0.1
 	}
 	dutch_trading_spirit = {
 		merchants = 1
@@ -842,7 +843,7 @@ NED_ideas = {
 	}
 	embrace_humanism = {
 		idea_cost = -0.05
-		native_assimilation = 0.25
+		native_assimilation = 0.5
 	}
 	army_sappers = {
 		siege_ability = 0.2
