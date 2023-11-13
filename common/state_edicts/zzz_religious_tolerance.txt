@@ -11,8 +11,7 @@ religious_tolerance_state_edict = {
 	
 	modifier = {
 		local_religious_unity_contribution = -0.5
-		local_tolerance_of_heretics = 1
-		local_tolerance_of_heathens = 1
+		local_tolerance_of_heretics = 3
 	}
 	
 	color = { 255 255 128 }

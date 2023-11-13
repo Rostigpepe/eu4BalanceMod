@@ -868,7 +868,7 @@ swabian_ideas = {
 	swabian_thorn_of_the_empire = {
 		legitimacy = 1
 		devotion = 1
-		republican_tradition = 0.5
+		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
 	}
@@ -1016,7 +1016,7 @@ latin_ideas = {
 	bonus = {
 		legitimacy = 1
 		devotion = 1
-		republican_tradition = 0.5
+		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
 	}

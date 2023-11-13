@@ -22,6 +22,7 @@ feudalism = {
 
 	trade_company_efficiency = 0.2
 
+	#effect = { } # When a country embraces it
 
 	history = {
 		is_year = 1000
@@ -1298,23 +1299,23 @@ global_trade = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.1 #Not scaled
+			factor = 0.2 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.4 #Not Scaled
 			province_trade_power = 25
 		}
 		modifier = {
-			factor = 0.2 #Not Scaled
+			factor = 0.6 #Not Scaled
 			province_trade_power = 35
 		}
 		modifier = {
-			factor = 0.3 #Not Scaled
+			factor = 0.8 #Not Scaled
 			province_trade_power = 45
 		}
 		modifier = {
-			factor = 0.5 #Not Scaled
-			province_trade_power = 55
-		}
-		modifier = {
-			factor = 0.05
+			factor = 0.2
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
