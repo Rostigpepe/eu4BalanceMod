@@ -3390,7 +3390,6 @@ polish_great_sejm = {
 		max_absolutism = -20
 		global_unrest = -1 
 		reform_progress_growth = -0.2
-		governing_capacity = -100
 	}
 
 	conditional = {
@@ -3428,7 +3427,6 @@ polish_elective_monarchy = {
 		max_absolutism = -30
 		nobles_influence_modifier = 0.1
 		reform_progress_growth = -0.2
-		governing_capacity = -100
 	}
 
 	conditional = {

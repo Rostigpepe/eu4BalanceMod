@@ -781,6 +781,11 @@ BM_Hussite_wars_destruction = {
 }
 
 BM_Bohemia_charles_university = {
-	institution_growth = 0.33
+	institution_growth = 3
 	local_development_cost = -0.1
+}
+
+BM_westernisation_start = {
+	development_cost = -0.05
+	technology_cost = -0.05
 }

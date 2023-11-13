@@ -136,3 +136,46 @@ country_decisions = {
 		}
 	}
 }
+
+country_decisions = {
+	BM_non_western_westernisation = {	
+		potential = {
+			is_bankrupt = no
+			OR = {
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+				technology_group = indian
+				technology_group = east_african
+				technology_group = chinese
+				technology_group = sub_saharan
+				technology_group = central_african
+				technology_group = nomad_group
+				technology_group = north_american
+				technology_group = nomad_group
+			}
+			is_year = 1550
+		}
+		allow = {
+			any_country = {
+				tech_difference = 1
+			}
+			is_lacking_institutions = no
+			OR = {
+				innovativeness = 40
+				army_professionalism = 0.8
+			}
+			any_neighbor_country = {
+				technology_group = western
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BM_westernisation_start
+				duration = 3650
+			}
+			set_country_flag = BM_westernisation_flag
+		}
+	}
+}
+

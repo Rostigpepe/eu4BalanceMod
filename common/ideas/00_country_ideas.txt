@@ -175,8 +175,8 @@ ENG_ideas = {
 
 GBR_ideas = {
 	start = {
-		naval_morale = 0.20
-		infantry_power = 0.10
+		naval_morale = 0.2
+		infantry_power = 0.1
 	}
 
 	bonus = {
@@ -189,7 +189,7 @@ GBR_ideas = {
 	free = yes		#will be added at load.
 
 	gbr_acts_of_union = {
-		diplomatic_annexation_cost = -0.15
+		num_accepted_cultures = 1
 		governing_capacity_modifier = 0.2
 	}
 	city_upon_a_hill = {
@@ -215,8 +215,8 @@ GBR_ideas = {
 	}
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
-		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
+		heavy_ship_power = 0.15
+		blockade_efficiency = 0.3
 	}
 }
 
@@ -357,7 +357,7 @@ DAN_ideas = {
 	}
 	
 	bonus = {
-		global_naval_engagement_modifier = 0.15
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -438,7 +438,7 @@ NOR_ideas = {
 FIN_ideas = {
 	start = {
 		discipline = 0.05
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.25
 	}
 	
 	bonus = {
@@ -451,10 +451,11 @@ FIN_ideas = {
 	free = yes
 	
 	expand_viborg = {
-		defensiveness = 0.15
+		defensiveness = 0.25
 	}
 	hakkapelitta_fin = {
- 		cavalry_power = 0.15
+ 		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.1
 	}	
 	the_fourth_estate = {
 		production_efficiency = 0.1
@@ -590,7 +591,7 @@ GOT_ideas = {
 		naval_forcelimit_modifier = 0.33
 	}
 	found_visby_bank = {
-		interest = -0.5
+		interest = -1
 	}
 }
 
@@ -826,7 +827,7 @@ NED_ideas = {
 	free = yes		#will be added at load.
 	
 	amsterdam_wisselbank = {
-		interest = -0.5
+		interest = -1.5
 		trade_range_modifier = 0.1
 	}
 	dutch_trading_spirit = {
@@ -1905,7 +1906,7 @@ HAB_ideas = {
 	}
 	fugger_banks = {
 		inflation_reduction = 0.05
-		interest = -0.5
+		interest = -1
 	}
 	habsburg_dominance = {
 		diplomatic_reputation = 2
@@ -2049,7 +2050,7 @@ BUR_Ideas = {
 GEN_Ideas = {
 	start = {
 		trade_efficiency = 0.10
-		interest = -0.5
+		interest = -1
 	}
 	
 	bonus = {
@@ -2504,7 +2505,7 @@ HSA_ideas = {
 		global_prov_trade_power_modifier = 0.20
 	}
 	the_hansa_bank = {
-		interest = -0.5
+		interest = -1.5
 	}
 }
 
@@ -3811,7 +3812,7 @@ TUS_ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	tuscan_banking = {
-		interest = -0.5
+		interest = -2
 	}
 	tuscan_arts = {
 		prestige = 1
@@ -7165,7 +7166,7 @@ HAM_ideas = {
 		idea_cost = -0.1
 	}
 	berenberg_bank = {
-		interest = -0.5
+		interest = -1
 		production_efficiency = 0.1
 	}
 	elbe_shipyards = {
@@ -12209,7 +12210,7 @@ AUG_ideas = {
     }
     aug_fugger_welser = {
         merchants = 1
-        interest = -0.5
+        interest = -1
     }
     aug_elias_holl = {
         build_cost = -0.1
@@ -12243,7 +12244,7 @@ FRN_ideas = {
 		diplomatic_reputation = 1
 	}
 	frn_stock_exchange = {
-		interest = -0.5
+		interest = -1
 	}
 	frn_postzeitung = {
 		improve_relation_modifier = 0.15
@@ -14222,7 +14223,7 @@ BRB_ideas = {
 		trade_steering = 0.2
 	}
 	brb_antwerp_banking = {
-		interest = -0.5
+		interest = -1
 	}
 	brb_religious_tolerance = {
 		tolerance_heretic = 2

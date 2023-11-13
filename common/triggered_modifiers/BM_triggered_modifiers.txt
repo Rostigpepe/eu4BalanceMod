@@ -157,8 +157,11 @@ BRA_diplo_slot = {
 tech_eastern = {
 	potential = {
 		technology_group = eastern
-		Not = {
+		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 
@@ -167,6 +170,9 @@ tech_eastern = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -177,8 +183,11 @@ tech_eastern = {
 tech_eastern = {
 	potential = {
 		technology_group = eastern
-		Not = {
+		NOT = {
 		is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 
@@ -187,6 +196,9 @@ tech_eastern = {
 		is_year = 1600
 		NOT = {
 			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -202,7 +214,11 @@ tech_eastern = {
 	trigger = {
 		technology_group = eastern
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
+	
 	
 	global_institution_spread = -0.15
 	embracement_cost = 0.2
@@ -214,6 +230,9 @@ tech_ottoman = {
 		Not = {
 			is_year = 1600
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -221,6 +240,9 @@ tech_ottoman = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -231,7 +253,7 @@ tech_ottoman = {
 tech_ottoman = {
 
     potential = {
-			technology_group = ottoman
+		technology_group = ottoman
 	}
 
 	trigger = {
@@ -239,6 +261,9 @@ tech_ottoman = {
 		is_year = 1600
 		NOT = {
 			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -249,12 +274,15 @@ tech_ottoman = {
 tech_ottoman = {
 
     potential = {
-			technology_group = ottoman
+		technology_group = ottoman
 	}
 
 	trigger = {
 		technology_group = ottoman
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.15
@@ -268,6 +296,9 @@ tech_muslim = {
 		Not = {
 			is_year = 1600
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -275,6 +306,9 @@ tech_muslim = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -294,6 +328,9 @@ tech_muslim = {
 		NOT = {
 			is_year = 1700
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.15
@@ -303,12 +340,15 @@ tech_muslim = {
 tech_muslim = {
 
     potential = {
-			technology_group = muslim
+		technology_group = muslim
 	}
 
 	trigger = {
 		technology_group = muslim
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.2
@@ -319,9 +359,12 @@ tech_indian = {
 
     potential = {
 		technology_group = indian
-			Not = {
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -329,6 +372,9 @@ tech_indian = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -346,7 +392,10 @@ tech_indian = {
 		technology_group = indian
 		is_year = 1600
 		NOT = {
-		is_year = 1700
+			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -363,6 +412,9 @@ tech_indian = {
 	trigger = {
 		technology_group = indian
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.35
@@ -373,9 +425,12 @@ tech_east_african = {
 
     potential = {
 		technology_group = east_african
-			Not = {
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -383,6 +438,9 @@ tech_east_african = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -402,6 +460,9 @@ tech_east_african = {
 		NOT = {
 			is_year = 1700
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.3
@@ -417,6 +478,9 @@ tech_east_african = {
 	trigger = {
 		technology_group = east_african
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.4
@@ -430,6 +494,9 @@ tech_chinese = {
 		Not = {
 			is_year = 1600
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -437,6 +504,9 @@ tech_chinese = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -447,7 +517,7 @@ tech_chinese = {
 tech_chinese = {
 
     potential = {
-			technology_group = chinese
+		technology_group = chinese
 	}
 
 	trigger = {
@@ -455,6 +525,9 @@ tech_chinese = {
 		is_year = 1600
 		NOT = {
 			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -465,12 +538,15 @@ tech_chinese = {
 tech_chinese = {
 
     potential = {
-			technology_group = chinese
+		technology_group = chinese
 	}
 
 	trigger = {
 		technology_group = chinese
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.80
@@ -481,9 +557,12 @@ tech_sub_saharan = {
 
     potential = {
 		technology_group = sub_saharan
-			Not = {
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -491,6 +570,9 @@ tech_sub_saharan = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -510,6 +592,9 @@ tech_sub_saharan = {
 		NOT = {
 			is_year = 1700
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.6
@@ -525,6 +610,9 @@ tech_sub_saharan = {
 	trigger = {
 		technology_group = sub_saharan
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.8
@@ -535,9 +623,12 @@ tech_central_african = {
 
     potential = {
 		technology_group = central_african
-			Not = {
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -545,6 +636,9 @@ tech_central_african = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -564,6 +658,9 @@ tech_central_african = {
 		NOT = {
 			is_year = 1700
 		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -0.6
@@ -579,6 +676,9 @@ tech_central_african = {
 	trigger = {
 		technology_group = central_african
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -1.2
@@ -588,10 +688,13 @@ tech_central_african = {
 tech_nomad_group = {
 
     potential = {
-			technology_group = nomad_group
-			Not = {
+		technology_group = nomad_group
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -599,6 +702,9 @@ tech_nomad_group = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -609,7 +715,7 @@ tech_nomad_group = {
 tech_nomad_group = {
 
     potential = {
-			technology_group = nomad_group
+		technology_group = nomad_group
 	}
 
 	trigger = {
@@ -617,6 +723,9 @@ tech_nomad_group = {
 		is_year = 1600
 		NOT = {
 			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -627,12 +736,15 @@ tech_nomad_group = {
 tech_nomad_group = {
 
     potential = {
-			technology_group = nomad_group
+		technology_group = nomad_group
 	}
 
 	trigger = {
 		technology_group = nomad_group
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -1
@@ -642,10 +754,13 @@ tech_nomad_group = {
 tech_north_american_group = {
 
     potential = {
-			technology_group = north_american
-			Not = {
+		technology_group = north_american
+		Not = {
 			is_year = 1600
-			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 
 	trigger = {
@@ -653,6 +768,9 @@ tech_north_american_group = {
 		is_year = 1500
 		NOT = {
 			is_year = 1600
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -663,7 +781,7 @@ tech_north_american_group = {
 tech_north_american_group = {
 
     potential = {
-			technology_group = north_american
+		technology_group = north_american
 	}
 
 	trigger = {
@@ -671,6 +789,9 @@ tech_north_american_group = {
 		is_year = 1600
 		NOT = {
 			is_year = 1700
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	
@@ -681,12 +802,15 @@ tech_north_american_group = {
 tech_nomad_group = {
 
     potential = {
-			technology_group = nomad_group
+		technology_group = nomad_group
 	}
 
 	trigger = {
 		technology_group = nomad_group
 		is_year = 1700
+		NOT = {
+			has_country_flag = BM_westernisation_flag
+		}
 	}
 	
 	global_institution_spread = -1
@@ -701,6 +825,9 @@ social_conservatism_title = {
 				is_revolutionary = yes
 				government = republic
 			}
+		}
+		NOT = {
+			has_country_flag = BM_westernisation_flag
 		}
 	}
 	trigger = {

@@ -9,7 +9,7 @@ AHE_ideas = {
 	}
 	
 	trigger = {
-			tag = AHE
+		tag = AHE
 	}
 	free = yes		#will be added at load.
 
