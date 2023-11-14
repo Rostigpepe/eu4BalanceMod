@@ -7,8 +7,6 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
-#ideas in the group can have effect = {} and removed_effect = {}
-
 aristocracy_ideas = {
 	category = MIL
 
@@ -164,7 +162,7 @@ horde_gov_ideas = {
 	
 	horse_lords = {
 		cavalry_cost = -0.25
-		cav_to_inf_ratio = 0.10
+		mil_advisor_cost = -0.1
 	}
 	beyond_the_sun = {
 		ae_impact = -0.1
@@ -502,7 +500,6 @@ spy_ideas = {
 	blackmailing = {
 		monthly_favor_modifier = 0.33
 		accept_vassalization_reasons = 15
-		num_of_pronoiars = 1
 	}
 
 	ai_will_do = {
@@ -577,56 +574,35 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.1
-		qizilbash_loyalty_modifier = 0.1
+		discipline = 0.05
 	}
 
 	bayonet_leaders = {
 		leader_land_shock = 1
+		shock_damage = 0.05
 	}
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.1
 	}
 	superior_firepower = {
 		leader_land_fire = 1
+		fire_damage = 0.05
 	}
 	glorious_arms = {
 		prestige_from_land = 1.0
-		num_of_pronoiars = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.15
-		artillery_barrage_cost = -0.25
+		assault_fort_ability = 0.15
 	}
 	grand_army = {
 		land_forcelimit_modifier = 0.15
-		special_unit_cost_modifier = -0.2
 	}
 	napoleonic_warfare = {
-		discipline = 0.05
+		backrow_artillery_damage = 0.1
+		artillery_barrage_cost = -0.25
 	}
 
-	#shock_tactics = {
-	#	morale_damage = 0.1
-	#}
-	#
-	#melee_combat_training = {
-	#	shock_damage = 0.1
-	#}
-	#
-	#volley_fire = {
-	#	fire_damage = 0.1
-	#}
-	#
-	#fort_breaker = {
-	#	assault_fort_ability = 0.1
-	#	assault_fort_cost_modifier = -1
-	#}
-	#
-	#glory_on_the_battlefield = {
-	#	artillery_barrage_cost = -0.25
-	#	warscore_from_battles_modifier = 0.15
-	#}
 
 	ai_will_do = {
 		factor = 3.51
@@ -918,7 +894,6 @@ exploration_ideas = {
 	}
 	colonial_ventures = {
 		colonists = 1
-		effect = { remove_temporary_colonist = yes }
 	}
 	overseas_exploration = {
 		range = 0.5
@@ -1193,7 +1168,6 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
-		ghulams_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {
@@ -1287,11 +1261,9 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
-		num_of_pronoiars = 1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
-		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -1370,7 +1342,6 @@ expansion_ideas = {
 
 	additional_colonists = {
 		colonists = 1
-		effect = { remove_temporary_colonist = yes }
 	}
 	additional_merchants = {
 		merchants = 1
@@ -1387,9 +1358,7 @@ expansion_ideas = {
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonists = 1
-		colonist_placement_chance = 0.05
-		effect = { remove_temporary_colonist = yes }
+		colonist_placement_chance = 0.1
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.15
@@ -1460,7 +1429,6 @@ administrative_ideas = {
 	}
 	local_rule = {
 		advisor_pool = 1
-		num_of_pronoiars = 1
 	}
 	cultural_regulations = {
 		promote_culture_cost = -0.3
@@ -1716,28 +1684,26 @@ naval_ideas = {
 court_ideas = {
 	category = DIP
 
-
 	bonus = {
-		legitimacy = 0.5 
+		legitimacy = 05 
 		republican_tradition = 0.2
 		devotion = 0.5
 		horde_unity = 0.5
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
-		imperial_authority = 0.05
+		imperial_authority_value = 0.1
 	}
 	
 	long_echo = {
 		power_projection_from_insults = 1
-		diplomatic_reputation = 1 
+		prestige = 1 
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
 		loyalty_change_on_revoked = 0.05
 	}
 	welcoming_ceremonies = {
-		prestige = 1 
-		monthly_persian_influence = 0.1
+		estate_interaction_cooldown_modifier = -0.2
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
@@ -1751,8 +1717,9 @@ court_ideas = {
 		great_project_upgrade_cost = -0.25
 	}
 	court_embassies = {
-		possible_dip_policy = 1 
-		monarch_diplomatic_power = 1
+		monarch_power_tribute = 1
+		vassal_manpower_bonus = 0.15
+		vassal_sailors_bonus = 0.15
 	}
 
 	ai_will_do = {

@@ -110,8 +110,14 @@ estate_cossacks = {
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			has_any_estate_disaster_active = yes
-			has_not_own_estate_disaster_active = { estate = estate_cossacks }
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
 		}
 		influence = -40
 	}
@@ -121,8 +127,14 @@ estate_cossacks = {
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			has_any_estate_disaster_active = yes
-			has_not_own_estate_disaster_active = { estate = estate_cossacks }
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
 		}
 		loyalty = -20
 	}
@@ -140,6 +152,7 @@ estate_cossacks = {
 		estate_cossacks_exempt_from_bureaucracy
 		estate_cossacks_military_service
 		estate_cossacks_expand_cossacks_raiders
+		estate_pacification_of_the_north_privilege
 	}
 
 	agendas = {

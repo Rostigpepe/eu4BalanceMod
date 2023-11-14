@@ -10,8 +10,8 @@ state_integration_state_edict = {
 	}
 	
 	modifier = {
-		local_culture_conversion_cost = -0.2
-		local_culture_conversion_time = -0.2
+		local_years_of_nationalism = -10
+		local_culture_conversion_time = -0.15
 	}
 	
 	color = { 255 255 128 }

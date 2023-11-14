@@ -10,7 +10,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_tributary_trigger = yes
+				#is_free_or_tributary_trigger = yes																																		#Mod: Disabled 'is_free_or_tributary_trigger'
 				ai = no
 			}
 			NOT = { tag = HLR }
@@ -68,7 +68,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
+			#is_free_or_tributary_trigger = yes																																			#Mod: Disabled 'is_free_or_tributary_trigger'
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 146 #Athens
@@ -166,7 +166,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_tributary_trigger = yes
+				#is_free_or_tributary_trigger = yes																																		#Mod: Disabled 'is_free_or_tributary_trigger'
 				ai = no
 			}
 			OR = {

@@ -1,0 +1,135 @@
+georgian_crisis = {
+	potential = {
+		tag = GEO
+		current_age = age_of_discovery
+		NOT = { mission_completed = geo_consolidate_georgia }
+		NOT = { has_country_modifier = georgian_crisis_aftermath }
+		is_free_or_tributary_trigger = yes
+		IME = ( 
+		    core_claim = GEO
+		}
+		SME = {
+		    core_claim = GEO
+		}
+		government = monarchy
+		normal_or_historical_nations = yes
+		uses_doom = no
+	}
+
+
+	can_start = {
+		current_age = age_of_discovery
+		is_at_war = no
+		has_any_disaster = no
+		has_heir = yes
+		OR = {
+		    NOT = { heir_claim = 90 }
+		    NOT = { heir_adm = 1 }
+		    NOT = { heir_adm = 1 }
+		    NOT = { heir_adm = 1 }
+	    }
+		is_lesser_in_union = no
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			is_lesser_in_union = yes
+			NOT = { government = monarchy }
+			mission_completed = geo_consolidate_georgia
+		}
+		
+	}
+	
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 5
+			custom_tooltip = geo_fall_of_constantinople
+			151 = {
+			    owner = {
+				    NOT = {
+					    AND = {
+						religion_group = christian
+						    OR = {
+						    technology_group = western
+							technology_group = eastern
+						    }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { ADM = 2 }
+		}		
+		modifier = {
+			factor = 1
+			NOT = { DIP = 2 }
+		}		
+		modifier = {
+			factor = 1
+			NOT = { MIL = 2 }
+		}	
+		modifier = {
+			factor = -1
+			stability = 3
+		}
+		modifier = { 
+			factor = -1
+			is_at_war = yes
+		}
+	}
+
+	can_end = {
+	    OR = {
+		    capital_scope = {
+		        OR = {
+                    controlled_by = REB
+		            controlled_by = SME
+			    }
+		    }	
+			AND = {
+		        stability = 1
+		        NOT = { num_of_rebel_controlled_provinces = 1 }
+		        NOT = {
+		            num_of_rebel_armies = 1
+	        	}
+		        mission_completed = geo_consolidate_georgia
+			}
+		}
+	}
+	
+
+
+
+	modifier = {
+		global_unrest = 10
+	}	
+	
+	
+	on_start = georgian_crisis.1
+	on_end = georgian_crisis.100
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			120 = 0
+			1 = georgian_crisis.2 #Pretenders gather forces
+			1 = georgian_crisis.3 #Nobility Revolts
+		}
+	}
+}
