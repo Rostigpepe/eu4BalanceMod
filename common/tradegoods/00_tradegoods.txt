@@ -151,10 +151,10 @@ wine = {
 		modifier = {
 			factor = 1.5
 			OR = {
-			area = cuyo_area
-			region = france_region
-			region = italy_region
-		}
+				area = cuyo_area
+				region = france_region
+				region = italy_region
+			}
 		}
 		modifier = {
 			factor = 1.1
@@ -236,11 +236,11 @@ wool = {
 		modifier = {
 			factor = 0.15
 			OR = {
-			has_terrain = grasslands
-			has_terrain = hills
-			has_terrain = forest
-			has_terrain = woods
-		}
+				has_terrain = grasslands
+				has_terrain = hills
+				has_terrain = forest
+				has_terrain = woods
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -737,13 +737,9 @@ gold = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				province_id = 2613		# Sitka (Alaska)
-				province_id = 977		#Yakutat (Alaska)
-				province_id = 2612		#Eyak (Alaska)
-				province_id = 978		#Kenai (Alaska)
-				province_id = 2611		#Kodiak (Alaska)
-			}
+			is_random_new_world = yes
+			has_terrain = mountain
+			continent = new_world #Always in RNW
 		}
 		modifier = {
 			factor = 1.5
@@ -754,7 +750,7 @@ gold = {
 			region = peru_region
 		}
 		modifier = {
-			factor = 4
+			factor = 4.0
 			OR = {
 				province_id = 852		# Mexico
 				province_id = 853		# Huastec
@@ -975,9 +971,9 @@ ivory = {
 		modifier = {
 			factor = 0.5
 			OR = {
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
 			}
 		}
 		modifier = {
@@ -1123,8 +1119,8 @@ chinaware = {
 		legitimacy = 0.25
 		devotion = 0.25
 		horde_unity = 0.25
-		republican_tradition = 0.25
-		meritocracy = 0.25
+		republican_tradition = 0.12
+		meritocracy = 0.1
 	}
 	province = {
 		allowed_num_of_buildings = 1
@@ -1170,7 +1166,7 @@ chinaware = {
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		trade_steering = 0.15
+		trade_steering = 0.1
 	}
 	province = {
 		local_monthly_devastation = -0.1
@@ -1766,9 +1762,9 @@ tropical_wood = {
 		modifier = {
 			factor = 0.5
 			OR = {
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
 			}
 		}
 		modifier = {
@@ -2213,11 +2209,11 @@ coal = {
 					NOT = { has_country_flag = earlier_coal_available }
 				}
 			}
-		provincial_institution_progress = {
-			which = enlightenment
-			value = 100
-		}
-		owner = { has_institution = enlightenment }
+			provincial_institution_progress = {
+				which = enlightenment
+				value = 100
+			}
+			owner = { has_institution = enlightenment }
 		}
 		else = {
 			provincial_institution_progress = {
@@ -2232,7 +2228,7 @@ coal = {
 	}
 	
 	modifier = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	province = {

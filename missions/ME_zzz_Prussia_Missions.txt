@@ -3,19 +3,20 @@ PRU_generic_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = PRU
-			tag = NGF
-		}
-		
-		NOT = {
+		AND = {
 			OR = {
-				was_tag = TEU
-				was_tag = BRA
-				was_tag = STE
-				was_tag = POM
-				was_tag = WOL
-				was_tag = RUG
+				tag = PRU
+				tag = NGF
+			}
+			NOT = {
+				OR = {
+					was_tag = TEU
+					was_tag = BRA
+					was_tag = STE
+					was_tag = POM
+					was_tag = WOL
+					was_tag = RUG
+				}
 			}
 		}
 	}
@@ -77,6 +78,15 @@ PRU_generic_missions_3 = {
 				duration = 5475
 			}
 			complete_prussian_ascendance_missions = yes
+			custom_tooltip = pru_spread_dev_tt
+			hidden_effect = { 
+				west_prussia_area = {
+					add_base_manpower = 2
+				}
+				east_prussia_area = {
+					add_base_manpower = 2
+				}
+			}
 		}
 	}
 }
@@ -162,8 +172,6 @@ PRU_missions_1_2 = {
 			tag = PRU
 			tag = NGF
 		}
-		
-		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
@@ -296,7 +304,7 @@ PRU_missions_1_2 = {
 			NOT = { average_unrest = 1 }
 		}
 		effect = {
-			change_innovativeness = 3
+			change_innovativeness = 5
 			add_country_modifier = {
 				name = PRU_freeing_the_peasants
 				duration = 7300
@@ -314,8 +322,6 @@ PRU_missions_2 = {
 			tag = PRU
 			tag = NGF
 		}
-		
-		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
@@ -382,8 +388,6 @@ PRU_missions_2_2 = {
 			tag = PRU
 			tag = NGF
 		}
-		
-		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
@@ -565,7 +569,7 @@ PRU_missions_2_2 = {
 					}
 					add_province_modifier = {
 						name = PRU_the_prussian_main
-						duration = -1
+						duration = 18250
 					}
 				}
 			}
@@ -843,8 +847,6 @@ PRU_missions_3 = {
 			tag = PRU
 			tag = NGF
 		}
-		
-		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
@@ -931,6 +933,10 @@ PRU_missions_3 = {
 				type = mission_rewards_power_projection
 				amount = 15
 			}
+			custom_tooltip = PRU_CONGRESS_OF_PADERBORN_CAN_HAPPEN
+			hidden_effect = {
+				set_country_flag = ME_Eligible_for_Paderborn
+			}
 			restore_country_name = yes
 			
 			if = {
@@ -951,6 +957,7 @@ PRU_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = kuyavia_area
+				area = silesia_area
 				area = neumark_area
 				area = wielkopolska_area
 				area = east_prussia_area
@@ -1464,8 +1471,6 @@ PRU_missions_4 = {
 			tag = PRU
 			tag = NGF
 		}
-		
-		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	

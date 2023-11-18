@@ -16,6 +16,7 @@ client_ideas = {
 	free = yes
 		
 	client_self_rule = {
+		land_morale = 0.1
 		global_unrest = -2
 	}
 	foreign_tax_collectors = {	

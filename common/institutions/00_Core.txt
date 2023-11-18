@@ -22,6 +22,7 @@ feudalism = {
 
 	trade_company_efficiency = 0.2
 
+	#effect = { } # When a country embraces it
 
 	history = {
 		is_year = 1000
@@ -129,7 +130,7 @@ feudalism = {
 
 	embracement_speed = {
 		modifier = {
-			factor = 0
+			factor = 0.5
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
@@ -182,7 +183,7 @@ feudalism = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -222,7 +223,7 @@ feudalism = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			scale = yes
 			potential = {
 				owner = {
@@ -467,7 +468,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.05
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -694,7 +695,7 @@ new_world_i = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.5
+			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
@@ -762,7 +763,7 @@ new_world_i = {
 		}
 		
 		modifier = {
-			factor = 0.1
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -1029,7 +1030,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.5
 			potential = {
 				owner = {
 					religion_group = christian
@@ -1066,7 +1067,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.5
 			if = {
 				limit = {
 					has_dlc = "Rule Britannia"
@@ -1094,7 +1095,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.75
 			scale = yes
 			potential = {
 				owner = {
@@ -1114,7 +1115,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			scale = yes
 			potential = {
 				owner = {
@@ -1131,7 +1132,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.25
 			scale = yes
 			potential = {
 				owner = {
@@ -1298,23 +1299,23 @@ global_trade = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.1 #Not scaled
-			province_trade_power = 25
+			factor = 0.2 #Not scaled
+			province_trade_power = 20
 		}
 		modifier = {
-			factor = 0.2 #Not Scaled
-			province_trade_power = 35
+			factor = 0.4 #Not Scaled
+			province_trade_power = 30
 		}
 		modifier = {
-			factor = 0.3 #Not Scaled
-			province_trade_power = 45
+			factor = 0.6 #Not Scaled
+			province_trade_power = 40
 		}
 		modifier = {
-			factor = 0.5 #Not Scaled
-			province_trade_power = 55
+			factor = 0.8 #Not Scaled
+			province_trade_power = 50
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.4
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -1325,7 +1326,7 @@ global_trade = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.05
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -1336,7 +1337,7 @@ global_trade = {
 			}
 		}
 		modifier = {
-			factor = 0.01
+			factor = 0.05
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1378,7 +1379,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 0.2
+			factor = 0.25
 			scale = yes
 			potential = {
 				has_port = yes
@@ -1394,7 +1395,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 0.15
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -1419,7 +1420,7 @@ global_trade = {
 			printing_press = 100
 		}
 		modifier = {
-			factor = 1
+			factor = 0.5
 			scale = yes
 			potential = {
 				owner = {
@@ -2093,7 +2094,7 @@ enlightenment = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.02
+			factor = 0.04
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
@@ -2121,7 +2122,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.02
+			factor = 0.05
 			potential = {
 				is_capital = yes
 			}
@@ -2147,7 +2148,6 @@ enlightenment = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_university_on_institution_continent
 				has_building = university
-				has_development = 20
 			}
 		}
 		modifier = {
@@ -2161,7 +2161,6 @@ enlightenment = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_university_not_institution_continent
 				has_building = university
-				has_development = 30
 			}
 		}
 		modifier = {
@@ -2181,7 +2180,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.02
+			factor = 0.05
 			potential = {
 				owner = {
 					has_parliament = yes
@@ -2417,7 +2416,6 @@ industrialization = {
 		development = 30
 		manufactories = 100
 		enlightenment = 100
-		
 		if = {
 			limit = {
 				has_dlc = "Rule Britannia"

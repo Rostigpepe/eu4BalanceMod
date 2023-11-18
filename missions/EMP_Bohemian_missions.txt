@@ -79,7 +79,7 @@ emp_bohemia_1 = {
 				limit = {
 					religion = hussite
 				}
-				religious_unity = 1
+				religious_unity = 90
 				bohemia_area = {
 					type = all
 					religion = hussite
@@ -186,6 +186,7 @@ emp_bohemia_1 = {
 			}
 		}
 		effect = {
+			add_power_projection = 25
 			add_country_modifier = {
 				name = "defenestrations_of_prague"
 				duration = -1
@@ -221,6 +222,15 @@ emp_bohemia_1 = {
 				country_event = { id = prices.43 }
 			}
 			add_prestige = 20
+			add_years_of_owned_provinces_production_income = {
+				years = 10
+				trigger = {
+					OR = {
+						trade_goods = glass
+					}
+				}
+				custom_tooltip = MONOPOLY_INCOME_GLASS_DESC
+			}
 		}
 		ai_weight = {
 			factor = 500	#Tall
@@ -868,6 +878,8 @@ emp_bohemia_4 = {
 			}
 		}
 		effect = {
+			add_mil_power = 100
+			add_power_projection = 10
 			if = {
 				limit = {
 					exists = BRA
@@ -924,6 +936,7 @@ emp_bohemia_4 = {
 			is_subject = no
 		}
 		effect = {
+			add_army_tradition = 20
 			if = {	
 				limit = {
 					exists = BRA
@@ -997,6 +1010,7 @@ emp_bohemia_4 = {
 			is_subject = no
 		}
 		effect = {
+			add_prestige = 20
 			if = {	
 				limit = {
 					exists = SAX

@@ -241,6 +241,7 @@ prussian_republic_reform = {
 		monthly_militarized_society = 0.05
 		global_autonomy = -0.075
 		development_cost = -0.05
+		republican_tradition = -0.5
 		max_absolutism = 30
 		governing_capacity_modifier = -0.35
 	}
@@ -358,7 +359,6 @@ venice_merchants_reform = {
 	modifiers = {
 		max_absolutism = -10
 		merchants = 1
-		candidate_random_bonus = 1
 		yearly_corruption = -0.1
 		monarch_lifespan = 0.25
 	}
@@ -523,6 +523,7 @@ noble_elite_reform = {
 presidential_despot_reform = {
 	allow_normal_conversion = no
 	dictatorship = yes
+	is_eligible_for_hre_emperor = no
 	lock_level_when_selected = yes
 	icon = "parliament_hall"
 	potential = {
@@ -592,6 +593,7 @@ revolutionary_republic_reform = {
 		max_revolutionary_zeal = 50
 		max_absolutism = 40
 		papal_influence = -100
+		allowed_rev_guard_fraction = 0.2	
 	}
 	fixed_rank = 3
 	effect = {
@@ -656,6 +658,16 @@ revolutionary_republic_reform = {
 				override_country_name = GURKANI_EMPIRE_STRING
 				set_country_flag = is_gurkani_flag
 			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_iran_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_iran_flag
+				restore_country_name = yes
+				override_country_name = IRAN_STRING
+				set_country_flag = is_iran_flag
+			}
 		}
 	}
 }
@@ -684,6 +696,7 @@ junior_revolutionary_republic_reform = {
 		max_revolutionary_zeal = 25
 		max_absolutism = 40
 		papal_influence = -100
+		allowed_rev_guard_fraction = 0.2
 	}
 	fixed_rank = 2
 	effect = {
@@ -737,6 +750,16 @@ junior_revolutionary_republic_reform = {
 				restore_country_name = yes
 				override_country_name = GURKANI_EMPIRE_STRING
 				set_country_flag = is_gurkani_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_iran_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_iran_flag
+				restore_country_name = yes
+				override_country_name = IRAN_STRING
+				set_country_flag = is_iran_flag
 			}
 		}
 	}
@@ -1184,7 +1207,7 @@ great_russian_republic_reform = {
 	nation_designer_cost = 40
 
 	modifiers = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.2
 		merchants = 2
 		governing_capacity = 350
 		yearly_absolutism = 0.5
@@ -1253,10 +1276,9 @@ american_republic = {
 	}
 	legacy_equivalent = american_republic_legacy
 	modifiers = {
-		war_exhaustion = -0.1
-		stability_cost_modifier = -0.1
+		war_exhaustion = -0.05
+		stability_cost_modifier = -0.15
 		max_absolutism = 20
-		candidate_random_bonus = 1
 	}
 
 	custom_attributes = {
@@ -1305,8 +1327,8 @@ federal_republic = {
 		has_dlc = "American Dream"
 	}
 	modifiers = {
-		reelection_cost = -0.2
-		candidate_random_bonus = 1
+		diplomatic_reputation = 1
+		reelection_cost = -0.1
 		max_absolutism = 20
 	}
 
@@ -1349,7 +1371,7 @@ colonial_government = {
 	modifiers = {
 		global_autonomy = -0.05
 		recover_army_morale_speed = 0.05
-		embracement_cost = -0.15
+		embracement_cost = -0.1
 		governing_capacity = 100
 		may_explore = yes
 	}
@@ -1415,7 +1437,7 @@ crown_colony_government = {
 	modifiers = {
 		recover_army_morale_speed = 0.05
 		land_attrition = -0.1
-		embracement_cost = -0.15
+		embracement_cost = -0.1
 		governing_capacity = 100
 		max_absolutism = 40
 	}
@@ -1472,7 +1494,7 @@ private_enterprise_colony_government = {
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
 		global_ship_trade_power = 0.25
-		embracement_cost = -0.15
+		embracement_cost = -0.1
 		merchants = 1
 		production_efficiency = 0.1
 		max_absolutism = 40
@@ -1723,6 +1745,12 @@ roman_republic_government = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
+	}
 	duration = 5
 }
 
@@ -1871,9 +1899,9 @@ dutch_republic = {
 
 		states_general_mechanic = {
 			statists = {
-				development_cost = -0.1
-				global_trade_power = 0.25
-				republican_tradition = 0.5
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				republican_tradition = 1
 			}
 
 			orangists = {
@@ -1943,7 +1971,7 @@ cossacks_reform = {
 	modifiers = {
 		cavalry_power = 0.2
 		cavalry_cost = -0.2
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 0.3
 		governing_capacity = 50
 		allowed_cossack_fraction = 0.25
 	}
@@ -2039,7 +2067,7 @@ republicanism_reform = {
 		}
 	}
 	modifiers = {
-		republican_tradition = 0.3
+		republican_tradition = 0.2
 	}
 	ai = {
 		factor = 1.5
@@ -2450,10 +2478,9 @@ devotee_to_the_people_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = -20
+		max_absolutism = -10
 		years_of_nationalism = -5
-		land_morale = 0.05
-		republican_tradition = 0.2
+		republican_tradition = 0.1
 	}
 }
 
@@ -2516,6 +2543,7 @@ consolidate_power_in_cities_reform = {
 		global_foreign_trade_power = 0.1
 	}
 	has_term_election = yes
+	is_eligible_for_hre_emperor = no
 	duration = 4
 	ai = {
 		factor = 10
@@ -2708,7 +2736,6 @@ administrative_divisions_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		governing_capacity = 250
-		state_maintenance_modifier = -0.25
 	}
 	ai = {
 		factor = 1
@@ -2949,6 +2976,7 @@ feuillant_reform = {
 		allow = { has_dlc = "Res Publica" }
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			revolutionaries = {
 				land_morale = 0.1

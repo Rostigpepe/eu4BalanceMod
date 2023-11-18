@@ -55,6 +55,9 @@ emp_ven_slot_1 = {
 			custom_tooltip = emp_ven_plague_doctor_training_tt
 			set_country_flag = has_competent_doctors
 		}
+		every_owned_province = {
+			add_prosperity = 25
+		}
 	}
 	
 	emp_ven_promote_the_carnevale = {
@@ -115,10 +118,16 @@ emp_ven_slot_2 = {
 			}
 		}
 		effect = {
-			112 = {
+			venetia_area = {
 				add_province_modifier = {
 					name = "ven_urban_renewal"
 					duration = 7300
+				}
+			}
+			112 = {
+				add_province_modifier = {
+					name = "BM_venizian_expansion_projects"
+					duration = -1
 				}
 			}
 		}
@@ -151,6 +160,7 @@ emp_ven_slot_2 = {
 		effect = {
 			add_adm_power = 100
 			add_dip_power = 100
+			add_mil_power = 100
 		}
 	}
 	
@@ -198,12 +208,16 @@ emp_ven_slot_2 = {
 				else =  {
 					112 = {
 						add_base_tax = 2
+						add_production_tax = 2
+						add_base_manpower = 2
 					}
 				}
 			}
 			else = {
 				112 = {
 					add_base_tax = 2
+					add_production_tax = 2
+					add_base_manpower = 2
 				}
 			}
 		}
@@ -222,10 +236,7 @@ emp_ven_slot_2 = {
 				absolutism = 30
 			}
 			else = {
-				OR = {
-					revolutionary_zeal = 30
-					diplomatic_reputation = 5
-				}
+				revolutionary_zeal = 30
 			}
 		}
 		effect = {
@@ -321,10 +332,11 @@ emp_ven_slot_3 = {
 		required_missions = { emp_ven_hire_more_venture_captains }
 		
 		trigger = {
-			total_development = 200
+			total_development = 250
 		}
 		effect = {
 			add_country_modifier = {
+				add_mil_power = 100
 				name = ven_mercenaries_paid_with_land
 				duration = 7300
 			}
@@ -558,7 +570,7 @@ emp_ven_slot_4 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 1
+			add_mercantilism = 5
 			add_country_modifier = {
 				name = "ven_genoese_humiliation"
 				duration = 3650
@@ -659,7 +671,7 @@ emp_ven_slot_5 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_mercantilism = 5
 			add_dip_power = 100
 		}
 	}
@@ -827,7 +839,8 @@ emp_ven_slot_5 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_mercantilism = 10
+			add_years_of_income = 5
 		}
 	}
 	

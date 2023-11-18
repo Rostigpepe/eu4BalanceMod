@@ -223,7 +223,7 @@ mos_rus_conquer_west = {
 				}
 			}
 			else = {
-				add_mil_power = 50
+				add_adm_power = 75
 			}
 			add_country_modifier = {
 				name = "conquest_of_finland"
@@ -258,7 +258,6 @@ mos_rus_conquer_west = {
 			}
 		}
 		effect = {
-			add_prestige_or_monarch_power = yes
 			if = {
 				limit = {
 					has_dlc = "Lions of the North"
@@ -379,11 +378,11 @@ mos_rus_conquer_west = {
 			}
 		}
 		effect = {
-			add_prestige = 25
 			add_permanent_power_projection = {
 				type = 25_permanent_power_projection
 				amount = 25
 			}
+			add_ruler_modifier = legendary_conqueror_personality
 		}
 
 		ai_weight = {
@@ -951,7 +950,7 @@ nov_rus_conquer_west = {
 			}
 		}
 		effect = {
-			add_mercantilism = 5
+			add_mercantilism = 15
 			45 = {
 				set_center_level_3_center_of_trade = yes
 				add_base_production = 4
@@ -1638,10 +1637,7 @@ mos_rus_russian_consolidation = {
 			num_of_cities = 30
 		}
 		effect = {
-			change_estate_land_share = {
-				estate = estate_nobles
-				share = -2.5
-			}
+			change_estate_land_share = { estate = all share = -5 }
 			add_ruler_modifier = {
 				name = rus_unifier_of_russia
 				duration = -1
@@ -1707,6 +1703,7 @@ mos_rus_russian_consolidation = {
 			}
 		}
 		effect = {
+			add_mercantilism = 10
 			add_country_modifier = {
 				name = "controlling_the_steppes"
 				duration = 5475
@@ -2353,6 +2350,7 @@ mos_rus_russian_consolidation = {
 			tag = RUS
 		}
 		effect = {
+			add_stability = 1
 			remove_country_modifier = centralization_modifier
 			add_country_modifier = {
 				name = rus_the_realm_of_the_rus
@@ -2487,6 +2485,22 @@ mos_rus_russian_steppes = {
 					duration = 36500
 				}"
 			}
+			every_owned_province = {
+				add_province_modifier = { 
+					name = recovering_from_the_hordes
+					duration =  7300
+					desc = recovering_from_the_hordes_tooltip
+				}
+				limit = {
+					region = crimea_region
+					region = ural_region 
+					area = tambov_area 
+					area = sloboda_ukraine_area 
+					area = ryazan_area 
+					area = lower_yik_area 
+					area = nogai_area 
+				}
+			}
 		}
 
 		ai_weight = {
@@ -2558,7 +2572,14 @@ mos_rus_russian_steppes = {
 			}
 			custom_tooltip = mos_rus_conquer_central_asia_at
 			tooltip = {
-				add_base_production = 2
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_building_construction = {
+					building = marketplace 
+					speed = 0.5
+					cost = 0.5
+				}
 				add_province_modifier = {
 					name = rus_local_russian_trade_center
 					duration = -1
@@ -2637,6 +2658,8 @@ mos_rus_russian_steppes = {
 					name = "russian_pacific_port"
 					duration = -1
 				}
+				add_building = grand_shipyard 
+				add_building = drydock  
 			}
 		}
 		ai_weight = {
@@ -2750,25 +2773,10 @@ mos_rus_russian_subjects = {
 			NOT = { exists = PSK }
 		}
 		effect = {
+			change_estate_land_share = { estate = all share = -5 }
 			remove_country_modifier = annexers_legacy
 			add_dip_power = 100
 			add_prestige = 10
-			change_estate_land_share = {
-				estate = estate_nobles
-				share = -1
-			}
-			change_estate_land_share = {
-				estate = estate_church
-				share = -1
-			}
-			change_estate_land_share = {
-				estate = estate_burghers
-				share = -1
-			}
-			change_estate_land_share = {
-				estate = estate_cossacks
-				share = -1
-			}
 		}
 
 		ai_weight = {
@@ -3326,6 +3334,15 @@ mos_rus_new_world = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					OR = {
+						trade_goods = gold
+					}
+				}
+				custom_tooltip = ALASKA_RICHES_tooltip
+			}
 		}
 
 		ai_weight = {
@@ -3713,7 +3730,7 @@ rus_russian_disaster = {
 				trigger = {
 					trade_goods = grain
 				}
-				years = 4
+				years = 5
 			}
 		}
 
@@ -3747,7 +3764,7 @@ rus_russian_disaster = {
 				first_effect = "add_country_modifier = { name = rus_the_strong_motherland duration = -1 }"
 				second_custom_tooltip = rus_the_time_of_troubles_bt
 				second_limit = "NOT = { current_age = age_of_discovery } NOT = { current_age = age_of_reformation }"
-				second_effect = "add_country_modifier = { name = rus_the_stable_empire duration = 9125 }"
+				second_effect = "add_country_modifier = { name = rus_the_stable_empire duration = 18250 }"
 			}
 		}
 
@@ -3921,12 +3938,7 @@ rus_russian_streltsy = {
 				}
 				legitimacy_equivalent = 90
 				stability = 3
-				num_of_subjects = 7
-				NOT = {
-					any_subject_country = {
-						liberty_desire = 20
-					}
-				}
+				crown_land_share = 75
 				custom_trigger_tooltip = {
 					tooltip = absolutism_dynamic_reward_tt
 					is_absolutism_active = no
@@ -3984,6 +3996,7 @@ rus_russian_streltsy = {
 		}
 		effect = {
 			add_adm_power = 50
+			add_splendor = 200
 			add_country_modifier = {
 				name = "russian_autocracy"
 				duration = 7300
@@ -4324,7 +4337,7 @@ rus_russian_government = {
 							total_development = 100
 							NOT = { liberty_desire = 20 }
 						}
-						amount = 7
+						amount = 5
 					}
 				}
 				crown_land_share = 90
@@ -4864,6 +4877,15 @@ rus_russian_westernization = {
 			add_country_modifier = {
 				name = rus_state_investment
 				duration = -1
+			}
+			add_years_of_owned_provinces_production_income = {
+				years = 10
+				trigger = {
+					OR = {
+						trade_goods = fur
+					}
+				}
+				custom_tooltip = RUSSIAN_FUR_INCOME_tooltip
 			}
 		}
 

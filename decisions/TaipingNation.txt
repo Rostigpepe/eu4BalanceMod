@@ -25,7 +25,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			change_government = theocracy
-			set_legacy_government = bm_taiping_heavenly_kingdom_reform
 			change_technology_group = chinese
 			change_unit_type = chinese
 			if = {

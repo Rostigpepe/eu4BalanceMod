@@ -158,7 +158,7 @@ french_missions_1 = {
 						BUR = { is_subject_of = ROOT } 
 						has_dlc = "Emperor"
 					}
-					add_prestige_or_monarch_power = 100
+					add_prestige_or_monarch_power = yes
 				}
 				else_if = { 
 					limit = { 
@@ -2495,7 +2495,7 @@ french_missions_3 = {
 							desc = until_we_peace_desc
 						}
 					}
-					add_adm_power = 50
+					add_mil_power = 50 
 				}
 				else = { 
 					add_country_modifier = {
@@ -2504,10 +2504,10 @@ french_missions_3 = {
 					}
 					173 = { add_devastation = -10 } 
 					174 = { add_devastation = -10 }
-					change_estate_land_share = {
-						estate = estate_nobles
-						share = -2.5
-					}
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -2.5
 				}
 			}
 		}
@@ -3369,7 +3369,7 @@ french_missions_3_normal_continued = {
 		position = 17
 		trigger = {
 			OR = { 
-				crown_land_share = 90 
+				crown_land_share = 70 
 				monthly_mil = 16
 				if = {
 					limit = { has_dlc = "Cradle of Civilization" }
@@ -3786,14 +3786,17 @@ french_missions_4_normal = {
 							}
 						}
 					}
-					FRA= { 
-						inherit = PRO
-						inherit = LOR
-					}
+					inherit = PRO
 					add_country_modifier = {
 						name = fra_close_ties_modifier
 						duration = 9125
 					}
+					limit = { 
+						LOR = { 
+							is_subject_of = PRO 
+						}
+					}
+					inherit = LOR
 				}
 			}
 		}
@@ -5094,6 +5097,7 @@ french_missions_5_normal = {
 						duration = 5475 
 					}
 					add_prestige = 20
+					add_adm_power = 50
 				}
 			}
 		}
